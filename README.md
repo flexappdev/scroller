@@ -1,19 +1,9 @@
-# SCROLLER — Scroller
+# Scroller — Mstravel vertical feed
 
-Drop in a JSON spec. Get a TikTok-style feed. FAD scroller engine.
+Next.js 15 app · TikTok-style snap-scroll mixing videos + GitHub stars + top-100 AI prompts + apps catalogue · deterministic daily shuffle · basePath `/mstravel/scroller` · port **19013** · accent #10b981.
 
-## Run
+Routes: `/` (the scroller itself), `/about` + shared FAD `/apps`, `/videos`, `/github`, `/prompts`.
 
-```
-npm install
-npm run dev    # http://localhost:13012
-```
+Sources (live): YouTube (@mat-siems-production), GitHub stars (@flexappdev), `f/awesome-chatgpt-prompts` top 100, `~/APPS/apps-registry.json`.
 
-## Structure
-
-- `/` — claude.ai-style home with categories + 6 feature tiles
-- `/about` — long-form story, anchor links per feature
-- `/contact` — LinkedIn / email / GitHub
-- `legacy/` — the previous v2 codebase, archived
-
-Registered in `~/APPS/apps-registry.json` (id `scroller`, port 13012).
+Previous codebase preserved under [`2022/`](./2022).

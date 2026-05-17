@@ -1,55 +1,21 @@
-import { PageHeader } from "@/components/PageHeader";
-import { APP, FEATURES, CATEGORIES } from "@/lib/app-config";
-
 export default function AboutPage() {
   return (
-    <>
-      <PageHeader
-        eyebrow={APP.name}
-        title={`${APP.long}.`}
-        description={APP.description}
-      />
-
-      <section className="container max-w-3xl py-14">
-        <div className="space-y-6">
-          <p className="text-base leading-relaxed text-muted-foreground">
-            {APP.description}
-          </p>
-          <p className="text-base leading-relaxed text-muted-foreground">
-            Built as a calm, claude.ai-inspired surface — dark by default, light
-            on chrome, mobile-first. Categories below give the lay of the land;
-            individual feature blocks describe what each page actually does.
-          </p>
+    <div className="space-y-8 p-8">
+      <header className="rounded-lg border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-8">
+        <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500">
+          <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: "var(--app-accent)" }} />
+          MS26 · MSTRAVEL · Scroller
         </div>
+        <h1 className="mt-3 text-4xl font-bold text-zinc-100">Scroller</h1>
+        <p className="mt-2 text-zinc-400">
+          Mobile-first vertical feed across videos, repos, prompts, and apps. Deterministic daily shuffle seeded by today&apos;s date.
+        </p>
+      </header>
 
-        <div className="mt-12">
-          <div className="text-xs uppercase tracking-wider text-muted-foreground">
-            Covered
-          </div>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {CATEGORIES.map((c) => (
-              <span
-                key={c}
-                className="rounded-full border border-border bg-card px-3 py-1 text-sm"
-              >
-                {c}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-12 space-y-8">
-          <div className="text-xs uppercase tracking-wider text-muted-foreground">
-            The surfaces
-          </div>
-          {FEATURES.map((f) => (
-            <section key={f.anchor} id={f.anchor} className="scroll-mt-20">
-              <h2 className="font-serif text-2xl font-medium">{f.title}</h2>
-              <p className="mt-2 text-sm text-muted-foreground">{f.body}</p>
-            </section>
-          ))}
-        </div>
+      <section className="rounded-lg border border-zinc-800 bg-zinc-900/60 p-6 text-sm text-zinc-400" style={{ borderLeftWidth: 3, borderLeftColor: "var(--app-accent)" }}>
+        <p>The home page (<code>/</code>) is the scroller itself. Open in mobile portrait view for the snap-scroll experience.</p>
+        <p className="mt-2">Sources: YouTube (@mat-siems-production), GitHub stars (@flexappdev), top-100 AI prompts, and the wider apps catalogue from <code>~/APPS/apps-registry.json</code>.</p>
       </section>
-    </>
+    </div>
   );
 }

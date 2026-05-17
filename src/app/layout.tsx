@@ -1,41 +1,20 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
-import { APP } from "@/lib/app-config";
+import AppShell from "@/components/AppShell";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `${APP.name} — ${APP.long}`,
-  description: APP.description,
+  title: "Scroller · Mstravel",
+  description: "Mobile-first vertical feed across videos, repos, prompts, apps, and travel destinations.",
 };
-
-const themeBoot = `
-(function() {
-  try {
-    var t = localStorage.getItem('${APP.themeKey}');
-    var d = t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    if (d) document.documentElement.classList.add('dark');
-  } catch (e) {}
-})();
-`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeBoot }} />
-      </head>
-      <body className={`${inter.variable} font-sans min-h-screen flex flex-col`}>
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
+    <html lang="en" className="dark">
+      <body className={`${inter.className} min-h-screen bg-[#0a0a0a] text-zinc-100`}>
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

@@ -1,19 +1,14 @@
 {
-  "name": "scroller-v2",
+  "name": "scroller",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 19013",
+    "dev": "next dev --port 13012",
     "build": "next build",
-    "start": "next start --port 19013",
+    "start": "next start --port 13012",
     "lint": "next lint"
   },
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.15",
-    "@radix-ui/react-label": "^2.1.8",
-    "@radix-ui/react-select": "^2.2.6",
-    "@radix-ui/react-separator": "^1.1.8",
-    "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.441.0",

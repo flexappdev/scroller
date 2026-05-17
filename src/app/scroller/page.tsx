@@ -14,7 +14,7 @@ function shuffle<T>(arr: T[], seed: number): T[] {
   return out;
 }
 
-export default async function HomePage() {
+export default async function ScrollerPage() {
   const [{ videos }, { stars }, { prompts }, { apps }] = await Promise.all([
     getVideos(),
     getStars(),
@@ -28,10 +28,26 @@ export default async function HomePage() {
     | { kind: "prompt"; act: string; prompt: string }
     | { kind: "app"; id: string; display_name: string; domain_name: string; subdomain: string; accent: string }
   > = [
-    ...videos.map((v) => ({ kind: "video" as const, ...v })),
-    ...stars.slice(0, 50).map((s) => ({ kind: "star" as const, full_name: s.full_name, description: s.description, html_url: s.html_url, stars: s.stargazers_count, language: s.language })),
-    ...prompts.slice(0, 50).map((p) => ({ kind: "prompt" as const, ...p })),
-    ...apps.filter((a) => !a.placeholder).map((a) => ({ kind: "app" as const, id: a.id, display_name: a.display_name, domain_name: a.domain_name, subdomain: a.subdomain, accent: a.accent })),
+    ...videos.slice(0, 15).map((v) => ({ kind: "video" as const, ...v })),
+    ...stars.slice(0, 30).map((s) => ({
+      kind: "star" as const,
+      full_name: s.full_name,
+      description: s.description,
+      html_url: s.html_url,
+      stars: s.stargazers_count,
+      language: s.language,
+    })),
+    ...prompts.slice(0, 30).map((p) => ({ kind: "prompt" as const, ...p })),
+    ...apps
+      .filter((a) => !a.placeholder)
+      .map((a) => ({
+        kind: "app" as const,
+        id: a.id,
+        display_name: a.display_name,
+        domain_name: a.domain_name,
+        subdomain: a.subdomain,
+        accent: a.accent,
+      })),
   ];
 
   const today = new Date();

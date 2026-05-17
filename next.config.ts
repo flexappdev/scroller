@@ -1,13 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  images: { unoptimized: true },
-  eslint: { ignoreDuringBuilds: true },
-  typescript: { ignoreBuildErrors: false },
-  webpack: (config) => {
-    // Don't try to bundle the legacy/ archive when this app builds.
-    config.watchOptions = { ...config.watchOptions, ignored: /legacy\// };
-    return config;
+  basePath: "/mstravel/scroller",
+  images: {
+    unoptimized: true,
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/mstravel/scroller",
+        permanent: false,
+        basePath: false,
+      },
+    ];
   },
 };
 
