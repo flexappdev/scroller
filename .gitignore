@@ -1,0 +1,22 @@
+# build output
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+**/out/
+build/
+**/build/
+dist/
+**/dist/
+
+# misc
+.DS_Store
+*.log
+.env*.local
+.vercel
+next-env.d.ts
+
+# legacy build / cache artifacts only — keep source
+legacy/**/.cache/
+legacy/**/tsconfig.tsbuildinfo
