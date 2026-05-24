@@ -1,12 +1,12 @@
 # Scroller — Status
 
-_Last updated: 2026-05-20_
+_Last updated: 2026-05-24_
 
 ## Latest
 
-- **Repo**: [flexappdev/scroller](https://github.com/flexappdev/scroller) · port `19013` · accent `#10b981` · basePath `/mstravel/scroller`
-- **Branch**: `main` even with `origin/main` (0 ahead / 0 behind)
-- **Local UAT**: http://localhost:19013/mstravel/scroller
+- **Repo**: [flexappdev/scroller](https://github.com/flexappdev/scroller) · port `19013` · accent `#10b981`
+- **Branch**: `main` even with `origin/main`
+- **Local UAT**: http://localhost:19013/
 - **Recent commits**:
   - `2ad305a` bump next to ^15.5.18 (CVE-2025-66478)
   - `a027f47` chore: archive 2022 codebase under `2022/` + scaffold Next.js 15 v2 app
@@ -15,10 +15,10 @@ _Last updated: 2026-05-20_
   - YouTube RSS @mat-siems-production — ISR 600s
   - GitHub stars @flexappdev (paginated, optional `GITHUB_TOKEN`) — ISR 1800s
   - `f/awesome-chatgpt-prompts` CSV → top 100 — ISR 3600s
-  - `~/APPS/apps-registry.json` (read at request time via `fs.readFile`) — `force-dynamic`
-- **Routes**: `/` (307 → basePath), `/mstravel/scroller`, `/about`, `/apps`, `/videos`, `/github`, `/prompts`, plus a duplicate `/scroller` page byte-identical to `/`
+  - bundled snapshot at `data/apps-registry.json` (static import in `getApps()`)
+- **Routes**: `/`, `/about`, `/apps`, `/videos`, `/github`, `/prompts`, plus a duplicate `/scroller` page byte-identical to `/`
 - **`2022/`**: preserved legacy codebase, not imported anywhere live — safe cold storage
-- **Caveat**: `getApps()` does `fs.readFile(os.homedir() + "/APPS/apps-registry.json")` — works locally, will fail on Vercel unless the registry is bundled or fetched over HTTP
+- **Caveat**: `getApps()` reads the bundled registry snapshot at `~/APPS/scroller/data/apps-registry.json` — re-sync from cockpit + redeploy when the cockpit registry changes
 
 ## Next steps
 

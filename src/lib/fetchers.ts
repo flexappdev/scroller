@@ -1,6 +1,4 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-import os from "node:os";
+import registry from "../../data/apps-registry.json";
 import { DOMAINS, TARGET_APP_COUNT, domainForApp, proptypeForApp, subdomainForApp, type PropType } from "./taxonomy";
 
 export type AppEntry = {
@@ -18,9 +16,7 @@ export type AppEntry = {
 };
 
 export async function getApps(): Promise<{ apps: AppEntry[]; domains: typeof DOMAINS; target: number }> {
-  const registryPath = path.join(os.homedir(), "APPS", "apps-registry.json");
-  const raw = await fs.readFile(registryPath, "utf8");
-  const data = JSON.parse(raw) as { apps: Array<Record<string, unknown>> };
+  const data = registry as { apps: Array<Record<string, unknown>> };
 
   const real: AppEntry[] = (data.apps || []).map((a) => {
     const id = String(a.id);
