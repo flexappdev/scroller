@@ -33,10 +33,9 @@ Ordered by blast radius — smallest first.
 
 ## Prod link
 
-**TBD** — not yet deployed.
+**Live**: https://scroller-psi.vercel.app (alias) · canonical deploy `scroller-mszfmp69h-cleverfox-71aa03f5.vercel.app`
 
-- `flexappdev/scroller` has no `homepageUrl` set
-- No `vercel.json` present, no Vercel CLI available locally to query
-- No domain recorded in `~/APPS/REPOS.md` or `~/APPS/apps-registry.json`
-
-Once deployed, update this section and run `gh repo edit flexappdev/scroller --homepage <url>` so it surfaces from the GitHub API.
+- Vercel project: `cleverfox-71aa03f5/scroller` (no GitHub auto-link yet — connect via Vercel dashboard when ready for push-to-deploy)
+- No env vars set on Vercel (none required; `GITHUB_TOKEN` is optional)
+- `gh repo view flexappdev/scroller --json homepageUrl` returns the alias above
+- Update `~/APPS/apps-registry.json` scroller entry with `homepage: https://scroller-psi.vercel.app` from the cockpit when convenient
