@@ -10,7 +10,7 @@ export default async function VideosPage() {
       <header className="rounded-lg border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-8">
         <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500">
           <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: "var(--app-accent)" }} />
-          FAD · Videos
+          Scroller · Videos
         </div>
         <h1 className="mt-3 text-4xl font-bold text-zinc-100">Videos</h1>
         <p className="mt-2 text-zinc-400">

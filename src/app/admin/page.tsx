@@ -38,8 +38,8 @@ export default async function AdminHomePage() {
 
   const sections = [
     { href: "/admin/sites", title: "Sites", desc: "Curate the /sites public listing" },
-    { href: "/admin/mongo", title: "Mongo console", desc: "Browse AIDB collections (UI coming soon)", disabled: true },
-    { href: "/admin/s3", title: "S3 console", desc: "Browse com27/scroller/* (UI coming soon)", disabled: true },
+    { href: "/admin/mongo", title: "Mongo console", desc: "Browse AIDB collections and ping cluster" },
+    { href: "/admin/s3", title: "S3 console", desc: "Browse com27/scroller/* files and prefixes" },
   ];
 
   return (
@@ -78,25 +78,17 @@ export default async function AdminHomePage() {
       <section>
         <h2 className="text-sm font-semibold text-zinc-300 mb-3">Consoles</h2>
         <div className="grid gap-3" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
-          {sections.map((s) =>
-            s.disabled ? (
-              <div key={s.href} className="rounded-lg border border-zinc-800 bg-zinc-950/30 p-5 opacity-50">
-                <h3 className="text-sm font-semibold text-zinc-300">{s.title}</h3>
-                <p className="text-xs text-zinc-500 mt-1">{s.desc}</p>
-                <p className="text-[10px] text-zinc-600 mt-3 font-mono">{s.href}</p>
-              </div>
-            ) : (
-              <Link
-                key={s.href}
-                href={s.href}
-                className="rounded-lg border border-zinc-800 bg-zinc-950/60 p-5 hover:border-emerald-700/50 transition-colors"
-              >
-                <h3 className="text-sm font-semibold text-zinc-100">{s.title}</h3>
-                <p className="text-xs text-zinc-400 mt-1">{s.desc}</p>
-                <p className="text-[10px] text-zinc-500 mt-3 font-mono">{s.href}</p>
-              </Link>
-            )
-          )}
+          {sections.map((s) => (
+            <Link
+              key={s.href}
+              href={s.href}
+              className="rounded-lg border border-zinc-800 bg-zinc-950/60 p-5 hover:border-emerald-700/50 transition-colors"
+            >
+              <h3 className="text-sm font-semibold text-zinc-100">{s.title}</h3>
+              <p className="text-xs text-zinc-400 mt-1">{s.desc}</p>
+              <p className="text-[10px] text-zinc-500 mt-3 font-mono">{s.href}</p>
+            </Link>
+          ))}
         </div>
       </section>
     </div>
