@@ -4,6 +4,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import { getApps, getPrompts, getStars, getVideos } from "@/lib/fetchers";
 import { listSites, getSite } from "@/lib/cms/sites";
 import { getAmazonItems } from "@/lib/scroll/amazon";
+import { getImageByKey } from "@/lib/scroll/images";
 
 export const dynamic = "force-dynamic";
 
@@ -24,6 +25,20 @@ async function resolveDetail(id: string): Promise<Detail | null> {
   if (colon < 0) return null;
   const kind = decoded.slice(0, colon);
   const inner = decoded.slice(colon + 1);
+
+  if (kind === "image") {
+    const key = decodeURIComponent(inner);
+    const img = await getImageByKey(key);
+    if (!img) return null;
+    return {
+      title: img.title,
+      subtitle: `Image · ${img.key}`,
+      image: img.url,
+      url: img.url,
+      urlLabel: "Open full size",
+      accent: "#22d3ee",
+    };
+  }
 
   if (kind === "amazon") {
     const { items } = await getAmazonItems();
@@ -160,6 +175,7 @@ export default async function ItemDetailPage({ params }: { params: Promise<{ id:
   const kind = decoded.split(":")[0];
   const backHref =
     kind === "amazon" ? "/?source=amazon" :
+    kind === "image" ? "/?source=images" :
     kind === "site" ? "/sites" :
     kind === "wiki" || kind === "wikivoyage" ? `/?source=${kind}` :
     kind === "video" ? "/videos" :

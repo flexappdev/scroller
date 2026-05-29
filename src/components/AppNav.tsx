@@ -1,6 +1,10 @@
 "use client";
 import Link from "next/link";
-import { Home, Smartphone, LayoutGrid, Video, Github, Sparkles, ChevronLeft, ChevronRight, Bookmark, Settings } from "lucide-react";
+import {
+  Home, Smartphone, LayoutGrid, Video, Github, Sparkles,
+  ChevronLeft, ChevronRight, Bookmark, Settings, Globe, Plane, ShoppingBag, Image as ImageIcon, Layers,
+} from "lucide-react";
+import { SCROLL_SOURCES, type ScrollSourceId } from "@/lib/scroll/sources";
 
 interface AppNavProps { collapsed: boolean; onToggle: () => void; }
 
@@ -9,12 +13,24 @@ const themeItems = [
   { href: "/sites", label: "Sites", icon: Bookmark },
   { href: "/about", label: "About", icon: Home },
 ];
-const genericItems = [
-  { href: "/apps", label: "Apps", icon: LayoutGrid },
-  { href: "/videos", label: "Videos", icon: Video },
-  { href: "/github", label: "GitHub", icon: Github },
-  { href: "/prompts", label: "Prompts", icon: Sparkles },
-];
+
+const SOURCE_ICONS: Record<ScrollSourceId, typeof Layers> = {
+  all: Layers,
+  videos: Video,
+  github: Github,
+  prompts: Sparkles,
+  apps: LayoutGrid,
+  sites: Bookmark,
+  wiki: Globe,
+  wikivoyage: Plane,
+  amazon: ShoppingBag,
+  images: ImageIcon,
+};
+
+const sourceItems = SCROLL_SOURCES
+  .filter((s) => s.id !== "all")
+  .map((s) => ({ href: s.href, label: s.label, icon: SOURCE_ICONS[s.id] ?? Layers }));
+
 const adminItems = [
   { href: "/admin", label: "Admin", icon: Settings },
 ];
@@ -35,8 +51,8 @@ export default function AppNav({ collapsed, onToggle }: AppNavProps) {
           </Link>
         ))}
         <div className="my-2 border-t border-zinc-800" />
-        {!collapsed && <div className="px-3 py-1 text-[10px] uppercase tracking-wider text-zinc-600">Shared</div>}
-        {genericItems.map(({ href, label, icon: Icon }) => (
+        {!collapsed && <div className="px-3 py-1 text-[10px] uppercase tracking-wider text-zinc-600">Sources</div>}
+        {sourceItems.map(({ href, label, icon: Icon }) => (
           <Link key={href} href={href} className="flex items-center gap-3 px-3 py-2 text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800/50 transition-colors">
             <Icon className="h-4 w-4 shrink-0" />{!collapsed && <span className="text-sm truncate">{label}</span>}
           </Link>

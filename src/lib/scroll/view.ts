@@ -21,3 +21,8 @@ export function dailySeed(): number {
   const d = new Date();
   return d.getFullYear() * 10000 + (d.getMonth() + 1) * 100 + d.getDate();
 }
+
+/** One-off random integer seed for seededShuffle when caller wants a fresh order. */
+export function randomSeed(): number {
+  return (Math.random() * 233280) | 0;
+}

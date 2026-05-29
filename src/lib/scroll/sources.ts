@@ -7,7 +7,8 @@ export type ScrollSourceId =
   | "sites"
   | "wiki"
   | "wikivoyage"
-  | "amazon";
+  | "amazon"
+  | "images";
 
 export interface ScrollSource {
   id: ScrollSourceId;
@@ -28,6 +29,7 @@ export const SCROLL_SOURCES: ScrollSource[] = [
   { id: "wiki", label: "Wikipedia", description: "Random Wikipedia articles.", accent: "#e5e7eb", href: "/?source=wiki" },
   { id: "wikivoyage", label: "WikiVoyage", description: "Random WikiVoyage destinations.", accent: "#3b82f6", href: "/?source=wikivoyage" },
   { id: "amazon", label: "Amazon", description: "Amazon Associates picks (UK).", accent: "#ff9900", href: "/?source=amazon" },
+  { id: "images", label: "Images", description: "S3 image gallery.", accent: "#22d3ee", href: "/?source=images" },
 ];
 
 export function sourceById(id: string | undefined | null): ScrollSource {

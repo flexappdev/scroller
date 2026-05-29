@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Copy, Check, ExternalLink, Globe, Plane, ShoppingBag } from "lucide-react";
+import { Copy, Check, ExternalLink, Globe, Plane, ShoppingBag, ImageIcon } from "lucide-react";
 import ItemModal, { type ItemModalDetail } from "./ItemModal";
 
 export type Card =
@@ -11,9 +11,10 @@ export type Card =
   | { kind: "app"; id: string; display_name: string; domain_name: string; subdomain: string; accent: string }
   | { kind: "site"; id: string; title: string; description: string | null; url: string; accent: string | null; category: string }
   | { kind: "wiki"; id: string; title: string; extract: string; url: string; thumbnail: string | null; source: "wiki" | "wikivoyage" }
-  | { kind: "amazon"; id: string; title: string; description: string | null; url: string; image: string | null; category: string; price: string | null; rating: string | null };
+  | { kind: "amazon"; id: string; title: string; description: string | null; url: string; image: string | null; category: string; price: string | null; rating: string | null }
+  | { kind: "image"; id: string; key: string; url: string; title: string; size: number };
 
-export default function ScrollerFeed({ cards }: { cards: Card[] }) {
+export default function ScrollerFeed({ cards, embedded = false }: { cards: Card[]; embedded?: boolean }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [modal, setModal] = useState<ItemModalDetail | null>(null);
 
@@ -38,9 +39,14 @@ export default function ScrollerFeed({ cards }: { cards: Card[] }) {
 
   return (
     <>
-      <div ref={containerRef} className="h-[calc(100dvh-6rem)] w-full snap-y snap-mandatory overflow-y-scroll">
+      <div
+        ref={containerRef}
+        className={`w-full snap-y snap-mandatory overflow-y-scroll ${
+          embedded ? "h-[calc(100dvh-12rem)]" : "h-[calc(100dvh-6rem)]"
+        }`}
+      >
         {cards.map((c, i) => (
-          <ScrollerCardSection key={`${c.kind}-${i}`} card={c} index={i} total={cards.length} onOpen={() => openCard(c)} />
+          <ScrollerCardSection key={`${c.kind}-${i}`} card={c} index={i} total={cards.length} embedded={embedded} onOpen={() => openCard(c)} />
         ))}
       </div>
       <ItemModal item={modal} onClose={() => setModal(null)} />
@@ -48,17 +54,20 @@ export default function ScrollerFeed({ cards }: { cards: Card[] }) {
   );
 }
 
-function ScrollerCardSection({ card, index, total, onOpen }: { card: Card; index: number; total: number; onOpen: () => void }) {
+function ScrollerCardSection({ card, index, total, embedded, onOpen }: { card: Card; index: number; total: number; embedded: boolean; onOpen: () => void }) {
   const accent =
     card.kind === "app" ? card.accent :
     card.kind === "site" ? (card.accent ?? "var(--app-accent)") :
     card.kind === "wiki" ? (card.source === "wikivoyage" ? "#3b82f6" : "#e5e7eb") :
     card.kind === "amazon" ? "#ff9900" :
+    card.kind === "image" ? "#22d3ee" :
     "var(--app-accent)";
 
   return (
     <section
-      className="relative flex h-[calc(100dvh-6rem)] w-full snap-start items-center justify-center bg-zinc-950 p-4 cursor-pointer"
+      className={`relative flex w-full snap-start items-center justify-center bg-zinc-950 p-4 cursor-pointer ${
+        embedded ? "h-[calc(100dvh-12rem)]" : "h-[calc(100dvh-6rem)]"
+      }`}
       style={{ borderLeftWidth: 4, borderLeftColor: accent }}
       onClick={onOpen}
       role="button"
@@ -75,6 +84,7 @@ function ScrollerCardSection({ card, index, total, onOpen }: { card: Card; index
       {card.kind === "site" && <SiteCard c={card} />}
       {card.kind === "wiki" && <WikiCard c={card} />}
       {card.kind === "amazon" && <AmazonCard c={card} />}
+      {card.kind === "image" && <ImageCard c={card} />}
     </section>
   );
 }
@@ -88,6 +98,7 @@ export function cardItemId(card: Card): string {
     case "site": return `site:${card.id}`;
     case "wiki": return `${card.source}:${card.id}`;
     case "amazon": return `amazon:${card.id}`;
+    case "image": return `image:${card.id}`;
   }
 }
 
@@ -108,6 +119,8 @@ export function toModalDetail(card: Card): ItemModalDetail {
       return { id, title: card.title, subtitle: card.source === "wikivoyage" ? "WikiVoyage" : "Wikipedia", description: card.extract, image: card.thumbnail, url: card.url, urlLabel: `Read on ${card.source === "wikivoyage" ? "WikiVoyage" : "Wikipedia"}`, internalHref: `/items/${encodeURIComponent(id)}` };
     case "amazon":
       return { id, title: card.title, subtitle: `Amazon · ${card.category}${card.price ? ` · ${card.price}` : ""}`, description: card.description, image: card.image, url: card.url, urlLabel: "Buy on Amazon", accent: "#ff9900", internalHref: `/items/${encodeURIComponent(id)}` };
+    case "image":
+      return { id, title: card.title, subtitle: `Image · ${(card.size / 1024).toFixed(0)} KB`, image: card.url, url: card.url, urlLabel: "Open full size", accent: "#22d3ee", internalHref: `/items/${encodeURIComponent(id)}` };
   }
 }
 
@@ -230,6 +243,20 @@ function AmazonCard({ c }: { c: Extract<Card, { kind: "amazon" }> }) {
       </div>
       <h2 className="text-2xl font-bold text-zinc-100">{c.title}</h2>
       {c.description && <p className="line-clamp-[6] text-sm text-zinc-400">{c.description}</p>}
+    </div>
+  );
+}
+
+function ImageCard({ c }: { c: Extract<Card, { kind: "image" }> }) {
+  return (
+    <div className="flex max-w-3xl flex-col gap-3 pointer-events-none">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={c.url} alt={c.title} className="max-h-[60vh] w-full rounded-lg object-contain bg-zinc-900" />
+      <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-zinc-500">
+        <ImageIcon className="h-3 w-3" />
+        Image · {(c.size / 1024).toFixed(0)} KB
+      </div>
+      <h2 className="text-lg font-semibold text-zinc-100 truncate" title={c.key}>{c.title}</h2>
     </div>
   );
 }

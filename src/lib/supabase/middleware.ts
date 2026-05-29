@@ -21,6 +21,7 @@ const PUBLIC_PREFIXES = [
   "/api/videos",
   "/api/github",
   "/api/prompts",
+  "/api/scroll",
 ];
 
 const ADMIN_LANDING = "/admin";
