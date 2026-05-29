@@ -1,4 +1,4 @@
-import { cmsAdmin, isMissingTable } from "./supabase";
+import { cmsAdmin, cmsAdminOrNull, isMissingTable } from "./supabase";
 import { mirrorUpsert, mirrorRemove } from "./mongo-mirror";
 
 export interface SiteRow {
@@ -17,7 +17,8 @@ export interface SiteRow {
 }
 
 export async function listSites(opts: { status?: "draft" | "published" | "all" } = {}): Promise<SiteRow[]> {
-  const supabase = cmsAdmin();
+  const supabase = cmsAdminOrNull();
+  if (!supabase) return [];
   const status = opts.status ?? "all";
   let q = supabase.from("scroller_sites").select("*").order("sort_order", { ascending: true }).order("title", { ascending: true });
   if (status !== "all") q = q.eq("status", status);
@@ -30,7 +31,8 @@ export async function listSites(opts: { status?: "draft" | "published" | "all" }
 }
 
 export async function getSite(id: string): Promise<SiteRow | null> {
-  const supabase = cmsAdmin();
+  const supabase = cmsAdminOrNull();
+  if (!supabase) return null;
   const { data, error } = await supabase.from("scroller_sites").select("*").eq("id", id).maybeSingle();
   if (error) {
     if (isMissingTable(error)) return null;

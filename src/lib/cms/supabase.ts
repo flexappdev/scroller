@@ -23,6 +23,19 @@ export function cmsAdmin() {
   });
 }
 
+/**
+ * Same as cmsAdmin() but returns null instead of throwing when envs are absent.
+ * Use in server components/routes that should degrade gracefully when Supabase
+ * isn't wired (e.g. orphan Vercel deployments without env sync).
+ */
+export function cmsAdminOrNull(): ReturnType<typeof cmsAdmin> | null {
+  try {
+    return cmsAdmin();
+  } catch {
+    return null;
+  }
+}
+
 /** PostgREST returns PGRST205 when a table hasn't been migrated yet — treat as empty. */
 export function isMissingTable(err: { code?: string; message?: string } | null | undefined): boolean {
   if (!err) return false;
