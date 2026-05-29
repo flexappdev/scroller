@@ -1,5 +1,5 @@
 import { getPrompts } from "@/lib/fetchers";
-import PromptCard from "./PromptCard";
+import PromptsClient from "./PromptsClient";
 
 export const revalidate = 3600;
 
@@ -23,11 +23,7 @@ export default async function PromptsPage() {
         </p>
       </header>
 
-      <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {prompts.map((p, i) => (
-          <PromptCard key={`${p.act}-${i}`} index={i + 1} act={p.act} prompt={p.prompt} />
-        ))}
-      </section>
+      <PromptsClient prompts={prompts} />
     </div>
   );
 }

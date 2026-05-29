@@ -1,37 +1,64 @@
 "use client";
 
-import { useState } from "react";
-import { Copy, Check, ExternalLink } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
+import { Copy, Check, ExternalLink, Globe, Plane } from "lucide-react";
 
-type Card =
+export type Card =
   | { kind: "video"; id: string; title: string; url: string; thumbnail: string; published: string }
   | { kind: "star"; full_name: string; description: string | null; html_url: string; stars: number; language: string | null }
   | { kind: "prompt"; act: string; prompt: string }
-  | { kind: "app"; id: string; display_name: string; domain_name: string; subdomain: string; accent: string };
+  | { kind: "app"; id: string; display_name: string; domain_name: string; subdomain: string; accent: string }
+  | { kind: "site"; id: string; title: string; description: string | null; url: string; accent: string | null; category: string }
+  | { kind: "wiki"; id: string; title: string; extract: string; url: string; thumbnail: string | null; source: "wiki" | "wikivoyage" };
 
 export default function ScrollerFeed({ cards }: { cards: Card[] }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function onNav(e: Event) {
+      const ce = e as CustomEvent<{ direction: "prev" | "next" }>;
+      const el = containerRef.current;
+      if (!el) return;
+      const cardHeight = el.clientHeight;
+      const current = Math.round(el.scrollTop / cardHeight);
+      const target = ce.detail.direction === "next" ? current + 1 : current - 1;
+      const clamped = Math.max(0, Math.min(cards.length - 1, target));
+      el.scrollTo({ top: clamped * cardHeight, behavior: "smooth" });
+    }
+    window.addEventListener("scroller:nav", onNav as EventListener);
+    return () => window.removeEventListener("scroller:nav", onNav as EventListener);
+  }, [cards.length]);
+
   return (
-    <div className="h-[100dvh] w-full snap-y snap-mandatory overflow-y-scroll">
+    <div ref={containerRef} className="h-[calc(100dvh-6rem)] w-full snap-y snap-mandatory overflow-y-scroll">
       {cards.map((c, i) => (
-        <ScrollerCard key={i} card={c} index={i} total={cards.length} />
+        <ScrollerCard key={`${c.kind}-${i}`} card={c} index={i} total={cards.length} />
       ))}
     </div>
   );
 }
 
 function ScrollerCard({ card, index, total }: { card: Card; index: number; total: number }) {
+  const accent =
+    card.kind === "app" ? card.accent :
+    card.kind === "site" ? (card.accent ?? "var(--app-accent)") :
+    card.kind === "wiki" ? (card.source === "wikivoyage" ? "#3b82f6" : "#e5e7eb") :
+    "var(--app-accent)";
+
   return (
     <section
-      className="relative flex h-[100dvh] w-full snap-start items-center justify-center bg-zinc-950 p-4"
-      style={{ borderLeftWidth: 4, borderLeftColor: "var(--app-accent)" }}
+      className="relative flex h-[calc(100dvh-6rem)] w-full snap-start items-center justify-center bg-zinc-950 p-4"
+      style={{ borderLeftWidth: 4, borderLeftColor: accent }}
     >
-      <div className="absolute right-4 top-4 text-[10px] uppercase tracking-wider text-zinc-500">
+      <div className="absolute right-4 top-4 text-[10px] uppercase tracking-wider text-zinc-500 font-mono">
         {card.kind} · {index + 1}/{total}
       </div>
       {card.kind === "video" && <VideoCard c={card} />}
       {card.kind === "star" && <StarCard c={card} />}
       {card.kind === "prompt" && <PromptCard c={card} />}
       {card.kind === "app" && <AppCard c={card} />}
+      {card.kind === "site" && <SiteCard c={card} />}
+      {card.kind === "wiki" && <WikiCard c={card} />}
     </section>
   );
 }
@@ -96,5 +123,46 @@ function AppCard({ c }: { c: Extract<Card, { kind: "app" }> }) {
       <h2 className="text-3xl font-bold text-zinc-100">{c.display_name}</h2>
       <p className="text-sm text-zinc-500">App id: {c.id}</p>
     </div>
+  );
+}
+
+function SiteCard({ c }: { c: Extract<Card, { kind: "site" }> }) {
+  const host = (() => { try { return new URL(c.url).hostname.replace(/^www\./, ""); } catch { return c.url; } })();
+  return (
+    <a href={c.url} target="_blank" rel="noreferrer" className="max-w-2xl space-y-3">
+      <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500">
+        <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: c.accent ?? "#10b981" }} />
+        Site · {c.category}
+      </div>
+      <h2 className="text-3xl font-bold text-zinc-100">{c.title}</h2>
+      {c.description && <p className="text-sm text-zinc-400">{c.description}</p>}
+      <span className="inline-flex items-center gap-1 text-sm text-zinc-300">
+        Visit {host} <ExternalLink className="h-3 w-3" />
+      </span>
+    </a>
+  );
+}
+
+function WikiCard({ c }: { c: Extract<Card, { kind: "wiki" }> }) {
+  const Icon = c.source === "wikivoyage" ? Plane : Globe;
+  const label = c.source === "wikivoyage" ? "WikiVoyage" : "Wikipedia";
+  return (
+    <a href={c.url} target="_blank" rel="noreferrer" className="flex max-w-2xl flex-col gap-3">
+      {c.thumbnail && (
+        <>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={c.thumbnail} alt={c.title} className="aspect-video w-full rounded-lg object-cover bg-zinc-900" />
+        </>
+      )}
+      <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-zinc-500">
+        <Icon className="h-3 w-3" />
+        {label}
+      </div>
+      <h2 className="text-2xl font-bold text-zinc-100">{c.title}</h2>
+      {c.extract && <p className="line-clamp-[6] text-sm text-zinc-400">{c.extract}</p>}
+      <span className="inline-flex items-center gap-1 text-sm text-zinc-300">
+        Read on {label} <ExternalLink className="h-3 w-3" />
+      </span>
+    </a>
   );
 }

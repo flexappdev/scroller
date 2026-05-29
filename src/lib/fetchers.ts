@@ -156,6 +156,61 @@ export async function getPrompts(): Promise<{ prompts: Prompt[]; source: string 
   return { prompts, source };
 }
 
+export type WikiCard = {
+  id: string;
+  title: string;
+  extract: string;
+  url: string;
+  thumbnail: string | null;
+  source: "wiki" | "wikivoyage";
+};
+
+async function fetchWikiRandom(host: "en.wikipedia.org" | "en.wikivoyage.org", count: number): Promise<WikiCard[]> {
+  const out: WikiCard[] = [];
+  const source: "wiki" | "wikivoyage" = host.includes("voyage") ? "wikivoyage" : "wiki";
+  const seen = new Set<string>();
+  let tries = 0;
+  while (out.length < count && tries < count * 2) {
+    tries++;
+    try {
+      const res = await fetch(`https://${host}/api/rest_v1/page/random/summary`, {
+        headers: { "User-Agent": "scroller (https://scroller-psi.vercel.app)" },
+        next: { revalidate: 0 },
+      });
+      if (!res.ok) break;
+      const j = (await res.json()) as {
+        title: string;
+        extract: string;
+        thumbnail?: { source: string };
+        content_urls?: { desktop?: { page: string } };
+        pageid?: number;
+      };
+      const id = String(j.pageid ?? j.title);
+      if (seen.has(id)) continue;
+      seen.add(id);
+      out.push({
+        id,
+        title: j.title,
+        extract: j.extract ?? "",
+        url: j.content_urls?.desktop?.page ?? `https://${host}/wiki/${encodeURIComponent(j.title)}`,
+        thumbnail: j.thumbnail?.source ?? null,
+        source,
+      });
+    } catch {
+      break;
+    }
+  }
+  return out;
+}
+
+export async function getWiki(count = 12): Promise<{ items: WikiCard[] }> {
+  return { items: await fetchWikiRandom("en.wikipedia.org", count) };
+}
+
+export async function getWikiVoyage(count = 12): Promise<{ items: WikiCard[] }> {
+  return { items: await fetchWikiRandom("en.wikivoyage.org", count) };
+}
+
 function parseCSV(text: string): string[][] {
   const rows: string[][] = [];
   let row: string[] = [];
