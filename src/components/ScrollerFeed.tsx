@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Copy, Check, ExternalLink, Globe, Plane } from "lucide-react";
+import { Copy, Check, ExternalLink, Globe, Plane, ShoppingBag } from "lucide-react";
+import ItemModal, { type ItemModalDetail } from "./ItemModal";
 
 export type Card =
   | { kind: "video"; id: string; title: string; url: string; thumbnail: string; published: string }
@@ -9,10 +10,12 @@ export type Card =
   | { kind: "prompt"; act: string; prompt: string }
   | { kind: "app"; id: string; display_name: string; domain_name: string; subdomain: string; accent: string }
   | { kind: "site"; id: string; title: string; description: string | null; url: string; accent: string | null; category: string }
-  | { kind: "wiki"; id: string; title: string; extract: string; url: string; thumbnail: string | null; source: "wiki" | "wikivoyage" };
+  | { kind: "wiki"; id: string; title: string; extract: string; url: string; thumbnail: string | null; source: "wiki" | "wikivoyage" }
+  | { kind: "amazon"; id: string; title: string; description: string | null; url: string; image: string | null; category: string; price: string | null; rating: string | null };
 
 export default function ScrollerFeed({ cards }: { cards: Card[] }) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const [modal, setModal] = useState<ItemModalDetail | null>(null);
 
   useEffect(() => {
     function onNav(e: Event) {
@@ -29,28 +32,40 @@ export default function ScrollerFeed({ cards }: { cards: Card[] }) {
     return () => window.removeEventListener("scroller:nav", onNav as EventListener);
   }, [cards.length]);
 
+  function openCard(card: Card) {
+    setModal(toModalDetail(card));
+  }
+
   return (
-    <div ref={containerRef} className="h-[calc(100dvh-6rem)] w-full snap-y snap-mandatory overflow-y-scroll">
-      {cards.map((c, i) => (
-        <ScrollerCard key={`${c.kind}-${i}`} card={c} index={i} total={cards.length} />
-      ))}
-    </div>
+    <>
+      <div ref={containerRef} className="h-[calc(100dvh-6rem)] w-full snap-y snap-mandatory overflow-y-scroll">
+        {cards.map((c, i) => (
+          <ScrollerCardSection key={`${c.kind}-${i}`} card={c} index={i} total={cards.length} onOpen={() => openCard(c)} />
+        ))}
+      </div>
+      <ItemModal item={modal} onClose={() => setModal(null)} />
+    </>
   );
 }
 
-function ScrollerCard({ card, index, total }: { card: Card; index: number; total: number }) {
+function ScrollerCardSection({ card, index, total, onOpen }: { card: Card; index: number; total: number; onOpen: () => void }) {
   const accent =
     card.kind === "app" ? card.accent :
     card.kind === "site" ? (card.accent ?? "var(--app-accent)") :
     card.kind === "wiki" ? (card.source === "wikivoyage" ? "#3b82f6" : "#e5e7eb") :
+    card.kind === "amazon" ? "#ff9900" :
     "var(--app-accent)";
 
   return (
     <section
-      className="relative flex h-[calc(100dvh-6rem)] w-full snap-start items-center justify-center bg-zinc-950 p-4"
+      className="relative flex h-[calc(100dvh-6rem)] w-full snap-start items-center justify-center bg-zinc-950 p-4 cursor-pointer"
       style={{ borderLeftWidth: 4, borderLeftColor: accent }}
+      onClick={onOpen}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onOpen(); } }}
     >
-      <div className="absolute right-4 top-4 text-[10px] uppercase tracking-wider text-zinc-500 font-mono">
+      <div className="absolute right-4 top-4 text-[10px] uppercase tracking-wider text-zinc-500 font-mono pointer-events-none">
         {card.kind} · {index + 1}/{total}
       </div>
       {card.kind === "video" && <VideoCard c={card} />}
@@ -59,40 +74,74 @@ function ScrollerCard({ card, index, total }: { card: Card; index: number; total
       {card.kind === "app" && <AppCard c={card} />}
       {card.kind === "site" && <SiteCard c={card} />}
       {card.kind === "wiki" && <WikiCard c={card} />}
+      {card.kind === "amazon" && <AmazonCard c={card} />}
     </section>
   );
 }
 
+export function cardItemId(card: Card): string {
+  switch (card.kind) {
+    case "video": return `video:${card.id}`;
+    case "star": return `star:${encodeURIComponent(card.full_name)}`;
+    case "prompt": return `prompt:${encodeURIComponent(card.act)}`;
+    case "app": return `app:${card.id}`;
+    case "site": return `site:${card.id}`;
+    case "wiki": return `${card.source}:${card.id}`;
+    case "amazon": return `amazon:${card.id}`;
+  }
+}
+
+export function toModalDetail(card: Card): ItemModalDetail {
+  const id = cardItemId(card);
+  switch (card.kind) {
+    case "video":
+      return { id, title: card.title, subtitle: "Video · YouTube", image: card.thumbnail, url: card.url, urlLabel: "Watch on YouTube", internalHref: `/items/${encodeURIComponent(id)}` };
+    case "star":
+      return { id, title: card.full_name, subtitle: `GitHub · ${card.language ?? "Repo"} · ★ ${card.stars.toLocaleString()}`, description: card.description, url: card.html_url, urlLabel: "Open on GitHub", internalHref: `/items/${encodeURIComponent(id)}` };
+    case "prompt":
+      return { id, title: card.act, subtitle: "AI Prompt", description: card.prompt, internalHref: `/items/${encodeURIComponent(id)}` };
+    case "app":
+      return { id, title: card.display_name, subtitle: `${card.domain_name} · ${card.subdomain}`, description: `App id: ${card.id}`, accent: card.accent, internalHref: `/items/${encodeURIComponent(id)}` };
+    case "site":
+      return { id, title: card.title, subtitle: `Site · ${card.category}`, description: card.description, url: card.url, urlLabel: "Visit site", accent: card.accent ?? undefined, internalHref: `/items/${encodeURIComponent(id)}` };
+    case "wiki":
+      return { id, title: card.title, subtitle: card.source === "wikivoyage" ? "WikiVoyage" : "Wikipedia", description: card.extract, image: card.thumbnail, url: card.url, urlLabel: `Read on ${card.source === "wikivoyage" ? "WikiVoyage" : "Wikipedia"}`, internalHref: `/items/${encodeURIComponent(id)}` };
+    case "amazon":
+      return { id, title: card.title, subtitle: `Amazon · ${card.category}${card.price ? ` · ${card.price}` : ""}`, description: card.description, image: card.image, url: card.url, urlLabel: "Buy on Amazon", accent: "#ff9900", internalHref: `/items/${encodeURIComponent(id)}` };
+  }
+}
+
 function VideoCard({ c }: { c: Extract<Card, { kind: "video" }> }) {
   return (
-    <a href={c.url} target="_blank" rel="noreferrer" className="flex max-w-2xl flex-col gap-3">
+    <div className="flex max-w-2xl flex-col gap-3 pointer-events-none">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={c.thumbnail} alt={c.title} className="aspect-video w-full rounded-lg object-cover" />
       <h2 className="text-xl font-bold text-zinc-100">{c.title}</h2>
       <p className="text-xs text-zinc-500">{new Date(c.published).toLocaleDateString()}</p>
       <span className="inline-flex items-center gap-1 text-sm text-zinc-300">
-        Watch on YouTube <ExternalLink className="h-3 w-3" />
+        Tap to preview <ExternalLink className="h-3 w-3" />
       </span>
-    </a>
+    </div>
   );
 }
 
 function StarCard({ c }: { c: Extract<Card, { kind: "star" }> }) {
   return (
-    <a href={c.html_url} target="_blank" rel="noreferrer" className="max-w-2xl space-y-3">
+    <div className="max-w-2xl space-y-3 pointer-events-none">
       <div className="text-[11px] uppercase tracking-wider text-zinc-500">{c.language ?? "Repo"} · ★ {c.stars.toLocaleString()}</div>
       <h2 className="text-2xl font-bold text-zinc-100">{c.full_name}</h2>
       {c.description && <p className="text-sm text-zinc-400">{c.description}</p>}
       <span className="inline-flex items-center gap-1 text-sm text-zinc-300">
-        Open repo <ExternalLink className="h-3 w-3" />
+        Tap to preview <ExternalLink className="h-3 w-3" />
       </span>
-    </a>
+    </div>
   );
 }
 
 function PromptCard({ c }: { c: Extract<Card, { kind: "prompt" }> }) {
   const [copied, setCopied] = useState(false);
-  async function copy() {
+  async function copy(e: React.MouseEvent) {
+    e.stopPropagation();
     await navigator.clipboard.writeText(c.prompt);
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
@@ -115,7 +164,7 @@ function PromptCard({ c }: { c: Extract<Card, { kind: "prompt" }> }) {
 
 function AppCard({ c }: { c: Extract<Card, { kind: "app" }> }) {
   return (
-    <div className="max-w-2xl space-y-3">
+    <div className="max-w-2xl space-y-3 pointer-events-none">
       <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500">
         <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: c.accent }} />
         {c.domain_name} · {c.subdomain}
@@ -129,7 +178,7 @@ function AppCard({ c }: { c: Extract<Card, { kind: "app" }> }) {
 function SiteCard({ c }: { c: Extract<Card, { kind: "site" }> }) {
   const host = (() => { try { return new URL(c.url).hostname.replace(/^www\./, ""); } catch { return c.url; } })();
   return (
-    <a href={c.url} target="_blank" rel="noreferrer" className="max-w-2xl space-y-3">
+    <div className="max-w-2xl space-y-3 pointer-events-none">
       <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500">
         <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: c.accent ?? "#10b981" }} />
         Site · {c.category}
@@ -137,9 +186,9 @@ function SiteCard({ c }: { c: Extract<Card, { kind: "site" }> }) {
       <h2 className="text-3xl font-bold text-zinc-100">{c.title}</h2>
       {c.description && <p className="text-sm text-zinc-400">{c.description}</p>}
       <span className="inline-flex items-center gap-1 text-sm text-zinc-300">
-        Visit {host} <ExternalLink className="h-3 w-3" />
+        {host} <ExternalLink className="h-3 w-3" />
       </span>
-    </a>
+    </div>
   );
 }
 
@@ -147,7 +196,7 @@ function WikiCard({ c }: { c: Extract<Card, { kind: "wiki" }> }) {
   const Icon = c.source === "wikivoyage" ? Plane : Globe;
   const label = c.source === "wikivoyage" ? "WikiVoyage" : "Wikipedia";
   return (
-    <a href={c.url} target="_blank" rel="noreferrer" className="flex max-w-2xl flex-col gap-3">
+    <div className="flex max-w-2xl flex-col gap-3 pointer-events-none">
       {c.thumbnail && (
         <>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -160,9 +209,27 @@ function WikiCard({ c }: { c: Extract<Card, { kind: "wiki" }> }) {
       </div>
       <h2 className="text-2xl font-bold text-zinc-100">{c.title}</h2>
       {c.extract && <p className="line-clamp-[6] text-sm text-zinc-400">{c.extract}</p>}
-      <span className="inline-flex items-center gap-1 text-sm text-zinc-300">
-        Read on {label} <ExternalLink className="h-3 w-3" />
-      </span>
-    </a>
+    </div>
+  );
+}
+
+function AmazonCard({ c }: { c: Extract<Card, { kind: "amazon" }> }) {
+  return (
+    <div className="flex max-w-2xl flex-col gap-3 pointer-events-none">
+      {c.image && (
+        <>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={c.image} alt={c.title} className="aspect-video w-full rounded-lg object-cover bg-zinc-900" />
+        </>
+      )}
+      <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-zinc-500">
+        <ShoppingBag className="h-3 w-3" />
+        Amazon · {c.category}
+        {c.price && <span className="text-amber-400 ml-1">· {c.price}</span>}
+        {c.rating && <span className="text-amber-400 ml-1">· {c.rating}</span>}
+      </div>
+      <h2 className="text-2xl font-bold text-zinc-100">{c.title}</h2>
+      {c.description && <p className="line-clamp-[6] text-sm text-zinc-400">{c.description}</p>}
+    </div>
   );
 }

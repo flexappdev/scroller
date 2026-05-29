@@ -1,20 +1,11 @@
 import { getApps, getPrompts, getStars, getVideos, getWiki, getWikiVoyage } from "@/lib/fetchers";
 import { listSites } from "@/lib/cms/sites";
+import { getAmazonItems } from "@/lib/scroll/amazon";
 import ScrollerFeed, { type Card } from "@/components/ScrollerFeed";
 import { sourceById } from "@/lib/scroll/sources";
+import { seededShuffle, dailySeed } from "@/lib/scroll/view";
 
 export const dynamic = "force-dynamic";
-
-function shuffle<T>(arr: T[], seed: number): T[] {
-  const out = arr.slice();
-  let s = seed;
-  for (let i = out.length - 1; i > 0; i--) {
-    s = (s * 9301 + 49297) % 233280;
-    const j = Math.floor((s / 233280) * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
 
 export default async function HomePage({ searchParams }: { searchParams: Promise<{ source?: string }> }) {
   const { source: sourceParam } = await searchParams;
@@ -73,10 +64,22 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
     const { items } = await getWikiVoyage(wantsAll ? 6 : 20);
     cards.push(...items.map((w) => ({ kind: "wiki" as const, ...w })));
   }
+  if (wantsAll || source.id === "amazon") {
+    const { items } = await getAmazonItems();
+    cards.push(...items.map((a) => ({
+      kind: "amazon" as const,
+      id: a.id,
+      title: a.title,
+      description: a.description,
+      url: a.url,
+      image: a.image,
+      category: a.category,
+      price: a.price,
+      rating: a.rating,
+    })));
+  }
 
-  const today = new Date();
-  const seed = today.getFullYear() * 10000 + (today.getMonth() + 1) * 100 + today.getDate();
-  const ordered = shuffle(cards, seed);
+  const ordered = seededShuffle(cards, dailySeed());
 
   return <ScrollerFeed cards={ordered} />;
 }

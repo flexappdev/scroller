@@ -12,6 +12,7 @@ const PUBLIC_PREFIXES = [
   "/prompts",
   "/scroller",
   "/sites",
+  "/items",
   "/login",
   "/auth/callback",
   "/auth/error",

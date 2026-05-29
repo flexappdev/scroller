@@ -10,8 +10,6 @@ export const metadata = {
   description: "The fleet, curated picks, and every scroll source.",
 };
 
-// Known live URLs not yet sync'd into the bundled apps-registry snapshot.
-// Source: memory snapshots from 2026-05-24 ship pass.
 const FLEET_LIVE_URL_FALLBACKS: Record<string, string> = {
   fad: "https://fad-rosy.vercel.app",
   ms: "https://ms-lake-eta.vercel.app",
@@ -36,11 +34,10 @@ export default async function PublicSitesPage() {
 
   const items: SiteItem[] = [];
 
-  // 1. Fleet — the 13 sites
   for (const a of fleetSites) {
     const liveUrl = FLEET_LIVE_URL_FALLBACKS[a.id] ?? `https://github.com/flexappdev/${a.id}`;
     items.push({
-      id: `fleet-${a.id}`,
+      id: `fleet:${a.id}`,
       title: a.display_name,
       description: `${a.domain_name} · ${a.subdomain} fleet site`,
       url: liveUrl,
@@ -51,10 +48,9 @@ export default async function PublicSitesPage() {
     });
   }
 
-  // 2. Curated — scroller_sites from Supabase
   for (const s of curated) {
     items.push({
-      id: `curated-${s.id}`,
+      id: `curated:${s.id}`,
       title: s.title,
       description: s.description,
       url: s.url,
@@ -62,14 +58,14 @@ export default async function PublicSitesPage() {
       accent: s.accent ?? "#10b981",
       category: "Curated",
       badge: s.category,
+      rank: s.sort_order,
     });
   }
 
-  // 3. Sources — every scroll source as an internal link
   for (const src of SCROLL_SOURCES) {
     if (src.id === "all") continue;
     items.push({
-      id: `source-${src.id}`,
+      id: `source:${src.id}`,
       title: src.label,
       description: src.description,
       url: src.href,

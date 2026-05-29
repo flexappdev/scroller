@@ -2,6 +2,7 @@
 import { useRouter, usePathname } from "next/navigation";
 import { Shuffle, ChevronLeft, ChevronRight, User } from "lucide-react";
 import { SCROLL_SOURCES } from "@/lib/scroll/sources";
+import pkg from "../../package.json";
 
 export default function StickyFooter() {
   const router = useRouter();
@@ -51,9 +52,12 @@ export default function StickyFooter() {
         <span className="hidden sm:inline">Next</span>
         <ChevronRight className="h-3.5 w-3.5" />
       </button>
+      <span className="ml-auto text-[10px] font-mono text-zinc-600" title={`scroller v${pkg.version}`}>
+        v{pkg.version}
+      </span>
       <a
         href="/admin"
-        className="ml-auto flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+        className="flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
         title="Account / admin"
       >
         <User className="h-3.5 w-3.5" />
