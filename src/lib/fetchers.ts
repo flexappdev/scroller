@@ -166,19 +166,31 @@ export type WikiCard = {
 };
 
 async function fetchWikiRandom(host: "en.wikipedia.org" | "en.wikivoyage.org", count: number): Promise<WikiCard[]> {
-  const out: WikiCard[] = [];
   const source: "wiki" | "wikivoyage" = host.includes("voyage") ? "wikivoyage" : "wiki";
+  // Wikipedia/Wikivoyage throttle high parallelism. Batch in groups of CHUNK
+  // sequentially — each batch is parallel, batches run back-to-back. Empirically
+  // CHUNK=8 stays under throttling on the random/summary endpoint.
+  const CHUNK = 8;
+  const target = Math.ceil(count * 1.3);
+  const out: WikiCard[] = [];
   const seen = new Set<string>();
-  let tries = 0;
-  while (out.length < count && tries < count * 2) {
-    tries++;
-    try {
-      const res = await fetch(`https://${host}/api/rest_v1/page/random/summary`, {
-        headers: { "User-Agent": "scroller (https://scroller-psi.vercel.app)" },
-        next: { revalidate: 0 },
-      });
-      if (!res.ok) break;
-      const j = (await res.json()) as {
+
+  for (let issued = 0; issued < target && out.length < count; issued += CHUNK) {
+    const size = Math.min(CHUNK, target - issued);
+    const batch = await Promise.allSettled(
+      Array.from({ length: size }, () =>
+        fetch(`https://${host}/api/rest_v1/page/random/summary`, {
+          headers: {
+            "User-Agent": "scroller/0.2.2 (https://scroller-psi.vercel.app; mat@matsiems.com)",
+            "Accept": "application/json",
+          },
+          cache: "no-store",
+        }).then((r) => (r.ok ? r.json() : Promise.reject(r.status))),
+      ),
+    );
+    for (const r of batch) {
+      if (r.status !== "fulfilled") continue;
+      const j = r.value as {
         title: string;
         extract: string;
         thumbnail?: { source: string };
@@ -196,19 +208,42 @@ async function fetchWikiRandom(host: "en.wikipedia.org" | "en.wikivoyage.org", c
         thumbnail: j.thumbnail?.source ?? null,
         source,
       });
-    } catch {
-      break;
+      if (out.length >= count) break;
     }
   }
   return out;
 }
 
-export async function getWiki(count = 12): Promise<{ items: WikiCard[] }> {
-  return { items: await fetchWikiRandom("en.wikipedia.org", count) };
+// Module-level in-memory cache so a batch of N random articles serves many
+// page loads for `WIKI_CACHE_TTL_MS` (defaults to 10 minutes). Wikipedia's
+// random endpoint is rate-limited and slow to fan out — caching keeps the
+// home page snappy for users hitting it close together.
+const WIKI_CACHE_TTL_MS = 10 * 60 * 1000;
+type WikiCache = { items: WikiCard[]; expires: number };
+const wikiCache: { wiki: WikiCache | null; wikivoyage: WikiCache | null } = {
+  wiki: null,
+  wikivoyage: null,
+};
+
+async function getWikiCached(host: "en.wikipedia.org" | "en.wikivoyage.org", count: number): Promise<WikiCard[]> {
+  const key = host.includes("voyage") ? "wikivoyage" : "wiki";
+  const c = wikiCache[key];
+  if (c && c.expires > Date.now() && c.items.length >= count) {
+    return c.items.slice(0, count);
+  }
+  const items = await fetchWikiRandom(host, count);
+  if (items.length) {
+    wikiCache[key] = { items, expires: Date.now() + WIKI_CACHE_TTL_MS };
+  }
+  return items;
 }
 
-export async function getWikiVoyage(count = 12): Promise<{ items: WikiCard[] }> {
-  return { items: await fetchWikiRandom("en.wikivoyage.org", count) };
+export async function getWiki(count = 100): Promise<{ items: WikiCard[] }> {
+  return { items: await getWikiCached("en.wikipedia.org", count) };
+}
+
+export async function getWikiVoyage(count = 100): Promise<{ items: WikiCard[] }> {
+  return { items: await getWikiCached("en.wikivoyage.org", count) };
 }
 
 function parseCSV(text: string): string[][] {

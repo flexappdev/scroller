@@ -39,7 +39,7 @@ export default function SitesBrowser({ items }: { items: SiteItem[] }) {
   }
 
   return (
-    <div className="px-6 py-8 max-w-5xl mx-auto space-y-6">
+    <div className="px-6 py-8 space-y-6">
       <header className="space-y-2">
         <h1 className="text-3xl font-semibold tracking-tight text-zinc-100">Sites</h1>
         <p className="text-sm text-zinc-400 max-w-xl">

@@ -1,10 +1,9 @@
-// Amazon Associates picks — sourced from a Google Sheet.
-//
-// Sheet must be either public ("Anyone with the link can view") or published
-// via File → Publish to web. Until then the fetcher returns [] gracefully.
-//
-// CSV columns (case-insensitive, all optional except url):
-//   title, description, url, image, category, price, rating, rank, asin
+// Amazon Associates picks — primary source is Mongo (AzDB.MAIN +
+// AmazonDB.topSellers), falling back to a Google Sheet CSV if Mongo
+// returns nothing. The Mongo collections already contain pre-tagged
+// `cta` URLs (?tag=fs08-21).
+
+import { tryGetDb } from "@/lib/mongo-admin";
 
 export const AMAZON_TAG = process.env.AMAZON_ASSOCIATES_TAG || "fs08-21";
 
@@ -63,7 +62,116 @@ function extractAsin(url: string): string | null {
   return m ? m[1].toUpperCase() : null;
 }
 
-export async function getAmazonItems(): Promise<{ items: AmazonItem[]; source: string; reachable: boolean }> {
+type MongoListEntry = {
+  status?: string;
+  cat?: string;
+  rank?: string | number;
+  id?: string;
+  name?: string;
+  title?: string;
+  tagline?: string;
+  description?: string;
+  cta?: string;
+  data?: string;
+  year?: string;
+  image?: string;
+  asin?: string;
+  price?: string;
+  rating?: string;
+};
+
+function entryToItem(it: MongoListEntry, sourceKey: string, idx: number): AmazonItem | null {
+  const rawUrl = it.cta || it.data || "";
+  if (!rawUrl || !/amazon\./i.test(rawUrl)) return null;
+  const url = withAmazonTag(rawUrl);
+  const asin = it.asin || extractAsin(rawUrl);
+  return {
+    id: asin ?? it.id ?? `${sourceKey}-${idx}`,
+    title: it.title || it.name || asin || "Amazon",
+    description: it.description || it.tagline || null,
+    url,
+    image: it.image || null,
+    category: it.cat || sourceKey,
+    price: it.price ?? null,
+    rating: it.rating ?? null,
+    rank: Number(it.rank ?? idx) || idx,
+    asin,
+  };
+}
+
+let mongoCache: { items: AmazonItem[]; expires: number } | null = null;
+const MONGO_TTL_MS = 10 * 60 * 1000;
+
+async function getMongoAmazonItems(limit: number): Promise<AmazonItem[]> {
+  if (mongoCache && mongoCache.expires > Date.now() && mongoCache.items.length >= limit) {
+    return mongoCache.items.slice(0, limit);
+  }
+
+  const items: AmazonItem[] = [];
+  const seen = new Set<string>();
+
+  function ingest(arr: unknown, key: string) {
+    if (!Array.isArray(arr)) return;
+    arr.forEach((entry, idx) => {
+      const it = entryToItem(entry as MongoListEntry, key, idx);
+      if (!it || seen.has(it.url)) return;
+      seen.add(it.url);
+      items.push(it);
+    });
+  }
+
+  try {
+    // 1. AzDB.MAIN — latest docs, each has listItems[]
+    const azDb = await tryGetDb("AzDB");
+    if (azDb) {
+      const docs = await azDb
+        .collection("MAIN")
+        .find({})
+        .sort({ _id: -1 })
+        .limit(10)
+        .toArray();
+      for (const d of docs) {
+        ingest((d as { listItems?: unknown }).listItems, `AzDB.MAIN`);
+        if (items.length >= limit) break;
+      }
+    }
+
+    // 2. AmazonDB.topSellers — same shape under mainItems[]
+    if (items.length < limit) {
+      const amzDb = await tryGetDb("AmazonDB");
+      if (amzDb) {
+        const docs = await amzDb
+          .collection("topSellers")
+          .find({})
+          .sort({ _id: -1 })
+          .limit(5)
+          .toArray();
+        for (const d of docs) {
+          ingest((d as { mainItems?: unknown }).mainItems, "AmazonDB.topSellers");
+          if (items.length >= limit) break;
+        }
+      }
+    }
+  } catch (err) {
+    console.warn("[amazon] mongo fetch failed:", (err as Error).message);
+  }
+
+  if (items.length) {
+    mongoCache = { items, expires: Date.now() + MONGO_TTL_MS };
+  }
+  return items.slice(0, limit);
+}
+
+export async function getAmazonItems(opts: { limit?: number } = {}): Promise<{ items: AmazonItem[]; source: string; reachable: boolean }> {
+  const limit = opts.limit ?? 200;
+
+  // Primary: Mongo (AzDB + AmazonDB)
+  const fromMongo = await getMongoAmazonItems(limit);
+  if (fromMongo.length > 0) {
+    return { items: fromMongo, source: "mongo:AzDB.MAIN+AmazonDB.topSellers", reachable: true };
+  }
+
+  // Fallback: Google Sheet CSV
   const source = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${SHEET_GID}`;
   try {
     const res = await fetch(source, {

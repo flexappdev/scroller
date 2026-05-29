@@ -24,6 +24,13 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
   };
   const initialKind = sourceParam ? sourceToKind[sourceParam] : undefined;
 
+  // When a single source is requested, load 100 of that source. For the
+  // mixed "all" feed, load smaller counts so the page doesn't choke.
+  const isWiki = sourceParam === "wiki";
+  const isVoyage = sourceParam === "wikivoyage";
+  const wikiCount = isWiki ? 100 : 20;
+  const voyageCount = isVoyage ? 100 : 12;
+
   const [
     videosRes, starsRes, promptsRes, appsRes, sites, wikiRes, voyageRes, amazonRes, imagesRes,
   ] = await Promise.all([
@@ -32,9 +39,9 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
     getPrompts(),
     getApps(),
     listSites({ status: "published" }),
-    getWiki(12),
-    getWikiVoyage(8),
-    getAmazonItems(),
+    getWiki(wikiCount),
+    getWikiVoyage(voyageCount),
+    getAmazonItems({ limit: 200 }),
     getImageItems({ limit: 100 }),
   ]);
 

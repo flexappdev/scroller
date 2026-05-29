@@ -61,7 +61,7 @@ export default function HomeClient({
   }, [imageCursor, loadingMore]);
 
   return (
-    <div className="px-6 py-8 max-w-6xl mx-auto space-y-4">
+    <div className="px-6 py-8 space-y-4">
       <PageBrowser<ScrollerCard>
         pageKey="home"
         items={cards}
