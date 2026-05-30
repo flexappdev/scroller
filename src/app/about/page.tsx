@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "About",
+  description: "About Scroller — one feed for everything worth scrolling.",
+};
+
 export default function AboutPage() {
   return (
     <div className="space-y-8 p-8">

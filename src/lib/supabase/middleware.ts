@@ -3,28 +3,15 @@ import { NextResponse, type NextRequest } from "next/server";
 
 export const ALLOWED_EMAILS = ["mat@matsiems.com"];
 
-const PUBLIC_PREFIXES = [
-  "/",
-  "/about",
-  "/apps",
-  "/videos",
-  "/github",
-  "/prompts",
-  "/scroller",
-  "/sites",
-  "/items",
-  "/login",
-  "/auth/callback",
-  "/auth/error",
-  "/api/public",
-  "/api/apps",
-  "/api/videos",
-  "/api/github",
-  "/api/prompts",
-  "/api/scroll",
-];
+// Routes that require authentication. Everything else flows through to
+// Next.js (which will 404 cleanly via not-found.tsx for unknown paths).
+const PROTECTED_PREFIXES = ["/admin", "/api/admin"];
 
 const ADMIN_LANDING = "/admin";
+
+function isProtected(path: string): boolean {
+  return PROTECTED_PREFIXES.some((p) => path === p || path.startsWith(`${p}/`));
+}
 
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
@@ -82,7 +69,6 @@ export async function updateSession(request: NextRequest) {
   }
 
   const path = request.nextUrl.pathname;
-  const isPublic = PUBLIC_PREFIXES.some((p) => path === p || path.startsWith(`${p}/`));
 
   if (devBypass) {
     if (path === "/login") {
@@ -105,7 +91,7 @@ export async function updateSession(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (!user && !isPublic) {
+  if (!user && isProtected(path)) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
     if (path !== "/") {

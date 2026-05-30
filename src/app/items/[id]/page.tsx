@@ -165,6 +165,29 @@ async function resolveDetail(id: string): Promise<Detail | null> {
   return null;
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const detail = await resolveDetail(id);
+  if (!detail) return { title: "Item not found" };
+  const description = (detail.description ?? `${detail.subtitle} — open in Scroller.`).slice(0, 160);
+  return {
+    title: detail.title,
+    description,
+    openGraph: {
+      title: detail.title,
+      description,
+      type: "article" as const,
+      ...(detail.image ? { images: [{ url: detail.image }] } : {}),
+    },
+    twitter: {
+      card: detail.image ? ("summary_large_image" as const) : ("summary" as const),
+      title: detail.title,
+      description,
+      ...(detail.image ? { images: [detail.image] } : {}),
+    },
+  };
+}
+
 export default async function ItemDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const detail = await resolveDetail(id);

@@ -3,6 +3,11 @@ import AppsClient from "./AppsClient";
 
 export const dynamic = "force-dynamic";
 
+export const metadata = {
+  title: "Apps",
+  description: "Fleet apps catalogue — every cleverfox/flexappdev site, grouped by domain.",
+};
+
 export default async function AppsPage() {
   const { apps, domains, target } = await getApps();
   const real = apps.filter((a) => !a.placeholder);

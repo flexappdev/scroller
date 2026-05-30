@@ -3,6 +3,11 @@ import GithubClient from "./GithubClient";
 
 export const revalidate = 1800;
 
+export const metadata = {
+  title: "GitHub Stars",
+  description: "Repositories starred by @flexappdev, grouped by language.",
+};
+
 export default async function GithubPage() {
   const { stars, truncated } = await getStars();
 

@@ -3,6 +3,11 @@ import PromptsClient from "./PromptsClient";
 
 export const revalidate = 3600;
 
+export const metadata = {
+  title: "Top 100 AI Prompts",
+  description: "Curated from f/awesome-chatgpt-prompts. Click any card to copy.",
+};
+
 export default async function PromptsPage() {
   const { prompts, source } = await getPrompts();
 

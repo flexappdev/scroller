@@ -3,6 +3,11 @@ import VideosClient from "./VideosClient";
 
 export const revalidate = 600;
 
+export const metadata = {
+  title: "Videos",
+  description: "Videos from @mat-siems-production on YouTube.",
+};
+
 export default async function VideosPage() {
   const { videos } = await getVideos();
 
