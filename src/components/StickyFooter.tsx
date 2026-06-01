@@ -1,6 +1,6 @@
 "use client";
 import { useRouter, usePathname } from "next/navigation";
-import { Shuffle, ChevronLeft, ChevronRight, User } from "lucide-react";
+import { Shuffle, ChevronLeft, ChevronRight, User, Github, Info } from "lucide-react";
 import { SCROLL_SOURCES } from "@/lib/scroll/sources";
 import pkg from "../../package.json";
 
@@ -55,6 +55,24 @@ export default function StickyFooter() {
       <span className="ml-auto text-[10px] font-mono text-zinc-600" title={`scroller v${pkg.version}`}>
         v{pkg.version}
       </span>
+      <a
+        href="https://github.com/flexappdev/scroller"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden md:flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+        title="Source on GitHub"
+      >
+        <Github className="h-3.5 w-3.5" />
+        <span>GitHub</span>
+      </a>
+      <a
+        href="/about"
+        className="hidden md:flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+        title="About Scroller"
+      >
+        <Info className="h-3.5 w-3.5" />
+        <span>About</span>
+      </a>
       <a
         href="/admin"
         className="flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"

@@ -1,41 +1,29 @@
 # Scroller — Status
 
-_Last updated: 2026-05-24_
+_Last updated: 2026-05-30 · v0.4.0_
 
 ## Latest
 
 - **Repo**: [flexappdev/scroller](https://github.com/flexappdev/scroller) · port `19013` · accent `#10b981`
-- **Branch**: `main` even with `origin/main`
 - **Local UAT**: http://localhost:19013/
-- **Recent commits**:
-  - `2ad305a` bump next to ^15.5.18 (CVE-2025-66478)
-  - `a027f47` chore: archive 2022 codebase under `2022/` + scaffold Next.js 15 v2 app
-  - `04805d4` init: Scroller — FAD scroller engine
-- **Data sources** (`src/lib/fetchers.ts`):
-  - YouTube RSS @mat-siems-production — ISR 600s
-  - GitHub stars @flexappdev (paginated, optional `GITHUB_TOKEN`) — ISR 1800s
-  - `f/awesome-chatgpt-prompts` CSV → top 100 — ISR 3600s
-  - bundled snapshot at `data/apps-registry.json` (static import in `getApps()`)
-- **Routes**: `/`, `/about`, `/apps`, `/videos`, `/github`, `/prompts`, plus a duplicate `/scroller` page byte-identical to `/`
-- **`2022/`**: preserved legacy codebase, not imported anywhere live — safe cold storage
-- **Caveat**: `getApps()` reads the bundled registry snapshot at `~/APPS/scroller/data/apps-registry.json` — re-sync from cockpit + redeploy when the cockpit registry changes
+- **Prod**:
+  - `https://scroller-psi.vercel.app` — canonical (cleverfox-71aa03f5 scope, manual deploy)
+  - `https://scroller-bay.vercel.app` — auto-deploys from GitHub via the matsiems Vercel scope
+- **Version**: v0.4.0 — prod-ready Phase 6 + CTAs everywhere
+- **Recent feature highlights** (most recent first):
+  - **v0.4.0** — CTAs on every card kind (App "Open app"/"View on GitHub", Prompts "Try in Claude/ChatGPT", modal "Copy link"); empty-state CTAs; header tagline; footer GitHub+About links; About page rewrite; README + STATUS refresh; `.env.example`; `/scroller` duplicate dropped; user-added `/wiki` master index (Mongo + Supabase) + admin
+  - **v0.3.0** — Error boundaries (error/global-error/not-found + admin + items), SEO surfaces (robots, sitemap, dynamic icon, dynamic OG image), security headers (HSTS, X-Frame-Options, Referrer-Policy, X-Content-Type-Options, Permissions-Policy), per-route metadata + `generateMetadata` on items, middleware semantics flipped to admin-only denylist
+  - **v0.2.2** — Mongo Amazon (`AzDB.MAIN` + `AmazonDB.topSellers`, 10-min cache, `fs08-21` tag enforcement); wiki/wikivoyage batched 8-per-chunk parallelism + 10-min cache; full-width `/sites`; home page loader skeleton
+  - **v0.2.1** — Home page parity with PageBrowser + kind dropdown; fresh-on-mount random seed; S3 images source with cursor pagination; "Sources" sidebar section; `/items/[id]` resolves all 8 kinds
+  - **v0.2.0** — Unified view+sort, modal-first nav, `/items/[id]` generic detail route, Amazon source
+  - **v0.1.0** — Sticky shell, source registry, wiki + wikivoyage sources, `/sites` merge
 
-## Next steps
+## Sources (9)
 
-Ordered by blast radius — smallest first.
+videos · github · prompts · apps · sites · wiki · wikivoyage · amazon · images
 
-1. **Promote in registry** — `~/APPS/apps-registry.json` entry for `scroller` is missing `github` and `role: site` (every other site has both). Add them. _Belongs in `appai`, not here._
-2. **Consolidate `/` and `/scroller`** — both render the same component. Pick one canonical route and redirect or delete the other.
-3. **Drop the `2022/` archive** — keep as cold-storage or delete to slim the repo. Last touched in `a027f47`; not referenced.
-4. **Fix prod registry read** — replace the `os.homedir()` `fs.readFile` in `getApps()` with either (a) bundled JSON import at build time, or (b) `fetch()` to a cockpit-hosted endpoint. Required before Vercel deploys `/apps` correctly.
-5. **Set the GitHub homepage URL** — repo currently has none; once deployed, set it via `gh repo edit flexappdev/scroller --homepage <url>` so the prod link is discoverable.
-6. **Consider merge with `~/APPS/scrollerai`** — same vertical-snap UI metaphor, different content (scrollerai = gamified knowledge cards, port `24001`, accent `#ff2d8d`). Could become one repo with two modes, or stay separate.
+## Owed
 
-## Prod link
-
-**Live**: https://scroller-psi.vercel.app (alias) · canonical deploy `scroller-mszfmp69h-cleverfox-71aa03f5.vercel.app`
-
-- Vercel project: `cleverfox-71aa03f5/scroller` (no GitHub auto-link yet — connect via Vercel dashboard when ready for push-to-deploy)
-- No env vars set on Vercel (none required; `GITHUB_TOKEN` is optional)
-- `gh repo view flexappdev/scroller --json homepageUrl` returns the alias above
-- Update `~/APPS/apps-registry.json` scroller entry with `homepage: https://scroller-psi.vercel.app` from the cockpit when convenient
+1. **Apply Supabase migration** `supabase/migrations/0001_sites.sql` against project `tciqizkiseraumwdzxya` — unblocks the `/sites` Curated section (8 starter sites). Path: `supabase logout && supabase login` as mat@matsiems.com → `npx supabase db query --linked --file supabase/migrations/0001_sites.sql`. Or paste into Studio SQL Editor.
+2. **Deploy v0.4.0 to scroller-psi** — `vercel logout && vercel login` as mat-flexappdev → `vercel deploy --prod`. Bay auto-deploys via GitHub webhook on the matsiems Vercel project.
+3. **v0.5.0 backlog**: Playwright E2E (auth, modal flow, kind dropdown), ESLint CLI migration (Next.js 16 prep), Vercel Analytics, Sentry, next/image migration, loading skeletons on non-home pages.

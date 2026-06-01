@@ -5,18 +5,36 @@ import type { AppEntry } from "@/lib/fetchers";
 import PageBrowser from "@/components/PageBrowser";
 import ItemModal, { type ItemModalDetail } from "@/components/ItemModal";
 import type { Card as ScrollerCard } from "@/components/ScrollerFeed";
+import { liveUrl, githubUrl } from "@/lib/scroll/fleet-urls";
 
 export default function AppsClient({ apps }: { apps: AppEntry[] }) {
   const [modal, setModal] = useState<ItemModalDetail | null>(null);
 
   function openApp(a: AppEntry) {
+    if (a.placeholder) {
+      setModal({
+        id: `app:${a.id}`,
+        title: a.display_name,
+        subtitle: `${a.domain_name} · ${a.subdomain}`,
+        description: `Slot reserved · ${a.subdomain}. Real app TBD.`,
+        accent: a.accent,
+        internalHref: `/items/${encodeURIComponent(`app:${a.id}`)}`,
+      });
+      return;
+    }
+    const live = liveUrl(a.id);
+    const gh = githubUrl(a.id);
+    const isLive = !live.includes("github.com");
     setModal({
       id: `app:${a.id}`,
       title: a.display_name,
       subtitle: `${a.domain_name} · ${a.subdomain}`,
-      description: a.monorepo ? `${a.monorepo} · ${a.subdomain} · ${a.proptype}` : `placeholder · ${a.subdomain}`,
+      description: a.monorepo ? `${a.monorepo} · ${a.subdomain} · ${a.proptype}` : `${a.subdomain} · ${a.proptype}`,
       accent: a.accent,
+      url: isLive ? live : gh,
+      urlLabel: isLive ? "Open app" : "View on GitHub",
       internalHref: `/items/${encodeURIComponent(`app:${a.id}`)}`,
+      extraActions: isLive ? [{ href: gh, label: "View on GitHub", external: true }] : [],
     });
   }
 

@@ -1,8 +1,15 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { X, ExternalLink, ArrowUpRight } from "lucide-react";
+import { X, ExternalLink, ArrowUpRight, Link as LinkIcon, Check } from "lucide-react";
+
+export type ItemModalAction = {
+  href: string;
+  label: string;
+  external?: boolean;     // true → opens in new tab
+  primary?: boolean;      // emerald style
+};
 
 export type ItemModalDetail = {
   /** Composite id, e.g. "amazon:B07X..." or "wiki:12345" — used by /items/[id]. */
@@ -11,10 +18,12 @@ export type ItemModalDetail = {
   subtitle?: string;
   description?: string | null;
   image?: string | null;
-  url?: string;          // external URL (Amazon, Wikipedia, GitHub etc.)
+  url?: string;          // primary external URL
   urlLabel?: string;     // e.g. "Buy on Amazon", "Read on Wikipedia"
   accent?: string;
   internalHref?: string; // /items/<id> route
+  /** Extra CTAs rendered after the primary url button. */
+  extraActions?: ItemModalAction[];
 };
 
 export default function ItemModal({
@@ -24,6 +33,8 @@ export default function ItemModal({
   item: ItemModalDetail | null;
   onClose: () => void;
 }) {
+  const [copied, setCopied] = useState(false);
+
   useEffect(() => {
     if (!item) return;
     function onKey(e: KeyboardEvent) {
@@ -38,6 +49,18 @@ export default function ItemModal({
   }, [item, onClose]);
 
   if (!item) return null;
+
+  async function copyLink() {
+    if (!item?.internalHref) return;
+    const base = typeof window !== "undefined" ? window.location.origin : "";
+    try {
+      await navigator.clipboard.writeText(`${base}${item.internalHref}`);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      // ignore
+    }
+  }
 
   return (
     <div
@@ -98,6 +121,49 @@ export default function ItemModal({
                 <ExternalLink className="h-3.5 w-3.5" />
                 {item.urlLabel ?? "Open"}
               </a>
+            )}
+            {item.extraActions?.map((a) => (
+              a.external ? (
+                <a
+                  key={a.href}
+                  href={a.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors ${
+                    a.primary
+                      ? "border-emerald-700/40 bg-emerald-950/40 text-emerald-300 hover:border-emerald-500"
+                      : "border-zinc-700 bg-zinc-900 text-zinc-100 hover:border-zinc-500"
+                  }`}
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  {a.label}
+                </a>
+              ) : (
+                <Link
+                  key={a.href}
+                  href={a.href}
+                  onClick={onClose}
+                  className={`flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors ${
+                    a.primary
+                      ? "border-emerald-700/40 bg-emerald-950/40 text-emerald-300 hover:border-emerald-500"
+                      : "border-zinc-700 bg-zinc-900 text-zinc-100 hover:border-zinc-500"
+                  }`}
+                >
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                  {a.label}
+                </Link>
+              )
+            ))}
+            {item.internalHref && (
+              <button
+                type="button"
+                onClick={copyLink}
+                className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-300 hover:border-zinc-500 hover:text-zinc-100 transition-colors"
+                title="Copy link to this item"
+              >
+                {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <LinkIcon className="h-3.5 w-3.5" />}
+                {copied ? "Copied" : "Copy link"}
+              </button>
             )}
           </div>
         </div>

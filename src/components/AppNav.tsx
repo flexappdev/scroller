@@ -11,6 +11,7 @@ interface AppNavProps { collapsed: boolean; onToggle: () => void; }
 const themeItems = [
   { href: "/", label: "Scroller", icon: Smartphone },
   { href: "/sites", label: "Sites", icon: Bookmark },
+  { href: "/wiki", label: "Wiki", icon: Globe },
   { href: "/about", label: "About", icon: Home },
 ];
 

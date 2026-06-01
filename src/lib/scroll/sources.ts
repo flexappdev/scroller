@@ -26,7 +26,7 @@ export const SCROLL_SOURCES: ScrollSource[] = [
   { id: "prompts", label: "Prompts", description: "Top 100 AI prompts.", accent: "#f59e0b", href: "/prompts" },
   { id: "apps", label: "Apps", description: "Fleet apps catalogue.", accent: "#06b6d4", href: "/apps" },
   { id: "sites", label: "Sites", description: "Curated sites worth scrolling.", accent: "#10b981", href: "/sites" },
-  { id: "wiki", label: "Wikipedia", description: "Random Wikipedia articles.", accent: "#e5e7eb", href: "/?source=wiki" },
+  { id: "wiki", label: "Wikipedia", description: "Cached Wikipedia articles — full copy, sections, media.", accent: "#e5e7eb", href: "/wiki" },
   { id: "wikivoyage", label: "WikiVoyage", description: "Random WikiVoyage destinations.", accent: "#3b82f6", href: "/?source=wikivoyage" },
   { id: "amazon", label: "Amazon", description: "Amazon Associates picks (UK).", accent: "#ff9900", href: "/?source=amazon" },
   { id: "images", label: "Images", description: "S3 image gallery.", accent: "#22d3ee", href: "/?source=images" },

@@ -28,9 +28,10 @@ export default function StickyHeader() {
 
   return (
     <header className="fixed top-0 right-0 z-30 flex h-12 items-center gap-3 border-b border-zinc-800 bg-zinc-950/85 backdrop-blur-md px-4" style={{ left: "var(--sidebar-w, 180px)" }}>
-      <Link href="/" className="flex items-center gap-2 text-zinc-100 hover:text-emerald-400 transition-colors">
-        <Dices className="h-5 w-5" style={{ color: "var(--app-accent)" }} />
+      <Link href="/" className="flex items-baseline gap-2 text-zinc-100 hover:text-emerald-400 transition-colors">
+        <Dices className="h-5 w-5 self-center" style={{ color: "var(--app-accent)" }} />
         <span className="text-sm font-semibold tracking-tight">Scroller</span>
+        <span className="hidden md:inline text-[10px] text-zinc-600 font-mono">one feed · every source</span>
       </Link>
       <span className="text-zinc-700">/</span>
       <div ref={wrapRef} className="relative">

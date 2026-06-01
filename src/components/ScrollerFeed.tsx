@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Copy, Check, ExternalLink, Globe, Plane, ShoppingBag, ImageIcon } from "lucide-react";
 import ItemModal, { type ItemModalDetail } from "./ItemModal";
+import { liveUrl, githubUrl } from "@/lib/scroll/fleet-urls";
 
 export type Card =
   | { kind: "video"; id: string; title: string; url: string; thumbnail: string; published: string }
@@ -109,10 +110,38 @@ export function toModalDetail(card: Card): ItemModalDetail {
       return { id, title: card.title, subtitle: "Video · YouTube", image: card.thumbnail, url: card.url, urlLabel: "Watch on YouTube", internalHref: `/items/${encodeURIComponent(id)}` };
     case "star":
       return { id, title: card.full_name, subtitle: `GitHub · ${card.language ?? "Repo"} · ★ ${card.stars.toLocaleString()}`, description: card.description, url: card.html_url, urlLabel: "Open on GitHub", internalHref: `/items/${encodeURIComponent(id)}` };
-    case "prompt":
-      return { id, title: card.act, subtitle: "AI Prompt", description: card.prompt, internalHref: `/items/${encodeURIComponent(id)}` };
-    case "app":
-      return { id, title: card.display_name, subtitle: `${card.domain_name} · ${card.subdomain}`, description: `App id: ${card.id}`, accent: card.accent, internalHref: `/items/${encodeURIComponent(id)}` };
+    case "prompt": {
+      const claudeUrl = `https://claude.ai/new?q=${encodeURIComponent(card.prompt)}`;
+      const chatGptUrl = `https://chat.openai.com/?q=${encodeURIComponent(card.prompt)}`;
+      return {
+        id,
+        title: card.act,
+        subtitle: "AI Prompt",
+        description: card.prompt,
+        url: claudeUrl,
+        urlLabel: "Try in Claude",
+        internalHref: `/items/${encodeURIComponent(id)}`,
+        extraActions: [
+          { href: chatGptUrl, label: "Try in ChatGPT", external: true },
+        ],
+      };
+    }
+    case "app": {
+      const live = liveUrl(card.id);
+      const gh = githubUrl(card.id);
+      const isLive = !live.includes("github.com");
+      return {
+        id,
+        title: card.display_name,
+        subtitle: `${card.domain_name} · ${card.subdomain}`,
+        description: `App id: ${card.id}`,
+        accent: card.accent,
+        url: isLive ? live : gh,
+        urlLabel: isLive ? "Open app" : "View on GitHub",
+        internalHref: `/items/${encodeURIComponent(id)}`,
+        extraActions: isLive ? [{ href: gh, label: "View on GitHub", external: true }] : [],
+      };
+    }
     case "site":
       return { id, title: card.title, subtitle: `Site · ${card.category}`, description: card.description, url: card.url, urlLabel: "Visit site", accent: card.accent ?? undefined, internalHref: `/items/${encodeURIComponent(id)}` };
     case "wiki":

@@ -1,10 +1,12 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search, LayoutGrid, List, Smartphone, ArrowDownAZ, Star, Shuffle, MoreHorizontal } from "lucide-react";
+import Link from "next/link";
+import { Search, LayoutGrid, List, Smartphone, ArrowDownAZ, Star, Shuffle, MoreHorizontal, X, ArrowRight } from "lucide-react";
 import ScrollerFeed, { type Card as ScrollerCard } from "./ScrollerFeed";
 import { useViewPrefs } from "./useViewPrefs";
 import { seededShuffle, type ViewMode, type SortMode } from "@/lib/scroll/view";
+import { SCROLL_SOURCES } from "@/lib/scroll/sources";
 
 export type KindOption = { value: string; label: string };
 
@@ -138,8 +140,39 @@ export default function PageBrowser<T>({
       </div>
 
       {filtered.length === 0 ? (
-        <div className="rounded-lg border border-zinc-800 bg-zinc-950/40 p-8 text-center">
+        <div className="rounded-lg border border-zinc-800 bg-zinc-950/40 p-8 text-center space-y-3">
           <p className="text-sm text-zinc-400">No matches{q ? ` for "${q}"` : ""}.</p>
+          <div className="flex flex-wrap gap-2 justify-center pt-2">
+            {(q || kindFilter !== "all") && (
+              <button
+                type="button"
+                onClick={() => { setQ(""); setKindFilter("all"); }}
+                className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+              >
+                <X className="h-3 w-3" />
+                Clear filters
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() => {
+                const pickable = SCROLL_SOURCES.filter((s) => s.id !== "all");
+                const pick = pickable[Math.floor(Math.random() * pickable.length)];
+                window.location.href = pick.href;
+              }}
+              className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+            >
+              <Shuffle className="h-3 w-3" />
+              Random source
+            </button>
+            <Link
+              href="/"
+              className="flex items-center gap-1.5 rounded-md border border-emerald-700/40 bg-emerald-950/40 px-3 py-2 text-xs text-emerald-300 hover:border-emerald-500 hover:text-emerald-200 transition-colors"
+            >
+              <ArrowRight className="h-3 w-3" />
+              Open scroller
+            </Link>
+          </div>
         </div>
       ) : effectiveView === "scroller" && supportsScroller && toScrollerCard ? (
         <ScrollerFeed cards={filtered.map(toScrollerCard)} embedded />
