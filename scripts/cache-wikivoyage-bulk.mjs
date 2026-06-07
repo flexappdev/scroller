@@ -69,7 +69,7 @@ let safety = 0;
 let totalSeen = 0, totalUpserted = 0, totalSkipped = 0;
 const startedAt = Date.now();
 
-outer: while (safety < 1200) {
+outer: while (safety < 4000) {
   safety++;
   // Skip `extracts` prop here — it triggers a separate `excontinue` chain
   // (capped at 20 extracts per call) that blocks gapcontinue from advancing.
