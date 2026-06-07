@@ -106,9 +106,51 @@ export interface ListWikiResult {
   total: number;
 }
 
+async function listWikiIndexFromMongo(opts: ListWikiOptions): Promise<ListWikiResult> {
+  try {
+    const db = await getMongoDb();
+    if (!db) return { rows: [], total: 0 };
+    const limit = Math.min(200, Math.max(1, opts.limit ?? 30));
+    const offset = Math.max(0, opts.offset ?? 0);
+    const filter: Record<string, unknown> = { pageid: { $exists: true } };
+    if (opts.category && opts.category !== "all") filter.category = opts.category;
+    if (opts.q && opts.q.trim()) filter.title = { $regex: opts.q.trim(), $options: "i" };
+    const coll = db.collection(WIKI_COLLECTION);
+    const total = await coll.countDocuments(filter);
+    const docs = await coll.find(filter).sort({ fetched_at: -1 }).skip(offset).limit(limit).toArray();
+    const rows: WikiIndexRow[] = docs.map((d) => {
+      const doc = d as unknown as WikiFullDoc & { _id?: unknown };
+      return {
+        pageid: doc.pageid,
+        title: doc.title,
+        slug: doc.slug,
+        lang: doc.lang,
+        category: doc.category,
+        description: doc.description,
+        extract: doc.extract,
+        lead_image_url: doc.lead_image_url,
+        source_url: doc.source_url,
+        read_mins: doc.read_mins,
+        word_count: doc.word_count,
+        media_count: doc.media?.length ?? 0,
+        section_count: doc.sections?.length ?? 0,
+        mongo_ref: String(doc.pageid),
+        sync_status: "ok",
+        data: {},
+        fetched_at: doc.fetched_at,
+        updated_at: doc.fetched_at,
+      };
+    });
+    return { rows, total };
+  } catch (err) {
+    console.warn("[wiki/storage] mongo index read failed:", (err as Error).message);
+    return { rows: [], total: 0 };
+  }
+}
+
 export async function listWikiIndex(opts: ListWikiOptions = {}): Promise<ListWikiResult> {
   const supabase = cmsAdminOrNull();
-  if (!supabase) return { rows: [], total: 0 };
+  if (!supabase) return listWikiIndexFromMongo(opts);
   const limit = Math.min(200, Math.max(1, opts.limit ?? 30));
   const offset = Math.max(0, opts.offset ?? 0);
   let q = supabase
@@ -122,9 +164,14 @@ export async function listWikiIndex(opts: ListWikiOptions = {}): Promise<ListWik
   }
   const { data, error, count } = await q.range(offset, offset + limit - 1);
   if (error) {
-    if (isMissingTable(error)) return { rows: [], total: 0 };
+    // Table missing OR Supabase down → fall back to Mongo. The Mongo cache is
+    // the heavy payload regardless; the Supabase index is just a flat copy.
+    if (isMissingTable(error)) return listWikiIndexFromMongo(opts);
     throw new Error(error.message);
   }
+  // Supabase reachable but empty → cover with Mongo too so the page never reads
+  // as "0 cached" when the converter has populated Mongo from a prior run.
+  if ((count ?? 0) === 0) return listWikiIndexFromMongo(opts);
   return { rows: (data ?? []) as WikiIndexRow[], total: count ?? 0 };
 }
 
@@ -143,18 +190,34 @@ export async function getWikiIndexByPageid(pageid: number): Promise<WikiIndexRow
   return (data ?? null) as WikiIndexRow | null;
 }
 
+async function listWikiCategoriesFromMongo(): Promise<Array<{ category: string; count: number }>> {
+  try {
+    const db = await getMongoDb();
+    if (!db) return [];
+    const cursor = db.collection(WIKI_COLLECTION).aggregate([
+      { $match: { category: { $exists: true } } },
+      { $group: { _id: "$category", count: { $sum: 1 } } },
+      { $project: { _id: 0, category: "$_id", count: 1 } },
+      { $sort: { count: -1 } },
+    ]);
+    return (await cursor.toArray()) as Array<{ category: string; count: number }>;
+  } catch (err) {
+    console.warn("[wiki/storage] mongo categories read failed:", (err as Error).message);
+    return [];
+  }
+}
+
 export async function listWikiCategories(): Promise<Array<{ category: string; count: number }>> {
   const supabase = cmsAdminOrNull();
-  if (!supabase) return [];
-  // Supabase has no group-by in the simple client; aggregate client-side over the
-  // category column. The index stays small relative to Mongo so this is cheap.
+  if (!supabase) return listWikiCategoriesFromMongo();
   const { data, error } = await supabase.from("scroller_wiki_index").select("category");
   if (error) {
-    if (isMissingTable(error)) return [];
+    if (isMissingTable(error)) return listWikiCategoriesFromMongo();
     throw new Error(error.message);
   }
+  if (!data || data.length === 0) return listWikiCategoriesFromMongo();
   const counts = new Map<string, number>();
-  for (const r of data ?? []) {
+  for (const r of data) {
     const c = (r as { category?: string }).category ?? "random";
     counts.set(c, (counts.get(c) ?? 0) + 1);
   }
