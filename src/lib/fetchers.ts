@@ -222,6 +222,10 @@ async function fetchWikiRandom(host: "en.wikipedia.org" | "en.wikivoyage.org", c
   while (out.length < count && safety < 6) {
     safety++;
     const grnlimit = Math.min(50, Math.max(10, count - out.length + 5));
+    // Next.js dedupes identical fetch URLs within a single request. The MediaWiki
+    // generator=random endpoint is non-idempotent (different pages per call), so
+    // we tack on a unique `_iter` param per loop iteration to keep each fetch
+    // distinct in Next.js's request memoization.
     const url =
       `https://${host}/w/api.php?` +
       `action=query&format=json&origin=*` +
@@ -229,7 +233,8 @@ async function fetchWikiRandom(host: "en.wikipedia.org" | "en.wikivoyage.org", c
       `&prop=extracts|pageimages|info` +
       `&exintro=1&explaintext=1&exlimit=max` +
       `&piprop=thumbnail&pithumbsize=600` +
-      `&inprop=url`;
+      `&inprop=url` +
+      `&_iter=${safety}-${Date.now()}`;
 
     let json: unknown;
     try {
@@ -294,7 +299,7 @@ const fetchWikiBucket = unstable_cache(
   async (host: "en.wikipedia.org" | "en.wikivoyage.org"): Promise<WikiCard[]> => {
     return fetchWikiRandom(host, BUCKET_SIZE);
   },
-  ["wiki-bucket-v2"],
+  ["wiki-bucket-v4-iter"],
   { revalidate: WIKI_CACHE_REVALIDATE_S, tags: ["wiki-bucket"] },
 );
 
