@@ -167,83 +167,122 @@ export type WikiCard = {
 
 async function fetchWikiRandom(host: "en.wikipedia.org" | "en.wikivoyage.org", count: number): Promise<WikiCard[]> {
   const source: "wiki" | "wikivoyage" = host.includes("voyage") ? "wikivoyage" : "wiki";
-  // Wikipedia/Wikivoyage throttle high parallelism. Batch in groups of CHUNK
-  // sequentially — each batch is parallel, batches run back-to-back. Empirically
-  // CHUNK=8 stays under throttling on the random/summary endpoint.
-  const CHUNK = 8;
-  const target = Math.ceil(count * 1.3);
+
+  // Use the Action API's `generator=random` to get N random page summaries in
+  // a SINGLE request. Wikipedia caps `grnlimit` at 50 per call (500 for bots),
+  // so we paginate with `gsrcontinue` if needed. Far more reliable than
+  // hammering /api/rest_v1/page/random/summary in parallel.
   const out: WikiCard[] = [];
   const seen = new Set<string>();
+  const headers = {
+    "User-Agent": "scroller/0.4.0 (https://scroller-psi.vercel.app; mat@matsiems.com)",
+    "Accept": "application/json",
+  };
 
-  for (let issued = 0; issued < target && out.length < count; issued += CHUNK) {
-    const size = Math.min(CHUNK, target - issued);
-    const batch = await Promise.allSettled(
-      Array.from({ length: size }, () =>
-        fetch(`https://${host}/api/rest_v1/page/random/summary`, {
-          headers: {
-            "User-Agent": "scroller/0.2.2 (https://scroller-psi.vercel.app; mat@matsiems.com)",
-            "Accept": "application/json",
-          },
-          cache: "no-store",
-        }).then((r) => (r.ok ? r.json() : Promise.reject(r.status))),
-      ),
-    );
-    for (const r of batch) {
-      if (r.status !== "fulfilled") continue;
-      const j = r.value as {
-        title: string;
-        extract: string;
-        thumbnail?: { source: string };
-        content_urls?: { desktop?: { page: string } };
-        pageid?: number;
-      };
-      const id = String(j.pageid ?? j.title);
+  let safety = 0;
+  while (out.length < count && safety < 6) {
+    safety++;
+    const grnlimit = Math.min(50, Math.max(10, count - out.length + 5));
+    const url =
+      `https://${host}/w/api.php?` +
+      `action=query&format=json&origin=*` +
+      `&generator=random&grnnamespace=0&grnlimit=${grnlimit}` +
+      `&prop=extracts|pageimages|info` +
+      `&exintro=1&explaintext=1&exlimit=max` +
+      `&piprop=thumbnail&pithumbsize=600` +
+      `&inprop=url`;
+
+    let json: unknown;
+    try {
+      const res = await fetch(url, { headers, cache: "no-store" });
+      if (!res.ok) break;
+      json = await res.json();
+    } catch {
+      break;
+    }
+    const pages = (json as { query?: { pages?: Record<string, {
+      pageid: number;
+      title: string;
+      extract?: string;
+      thumbnail?: { source: string };
+      fullurl?: string;
+    }> } })?.query?.pages;
+    if (!pages) break;
+    let addedThisRound = 0;
+    for (const p of Object.values(pages)) {
+      const id = String(p.pageid);
       if (seen.has(id)) continue;
       seen.add(id);
       out.push({
         id,
-        title: j.title,
-        extract: j.extract ?? "",
-        url: j.content_urls?.desktop?.page ?? `https://${host}/wiki/${encodeURIComponent(j.title)}`,
-        thumbnail: j.thumbnail?.source ?? null,
+        title: p.title,
+        extract: p.extract ?? "",
+        url: p.fullurl ?? `https://${host}/wiki/${encodeURIComponent(p.title)}`,
+        thumbnail: p.thumbnail?.source ?? null,
         source,
       });
+      addedThisRound++;
       if (out.length >= count) break;
     }
+    if (addedThisRound === 0) break;
   }
   return out;
 }
 
-// Module-level in-memory cache so a batch of N random articles serves many
-// page loads for `WIKI_CACHE_TTL_MS` (defaults to 10 minutes). Wikipedia's
-// random endpoint is rate-limited and slow to fan out — caching keeps the
-// home page snappy for users hitting it close together.
-const WIKI_CACHE_TTL_MS = 10 * 60 * 1000;
+// Wikipedia cache. Two layers:
+// 1. Next.js unstable_cache (shared across Vercel lambda instances via the
+//    Next.js data cache, 10-min revalidate). Stored per (host, bucket).
+// 2. Module-level fallback for environments where unstable_cache mis-behaves
+//    (dev server HMR, etc).
+//
+// Bucket sizes: we cache big batches (BUCKET_SIZE) so single-source pages
+// (?source=wiki, 100 items) and small mixed-feed home pages (12 items) all
+// share the same cached batch.
+import { unstable_cache } from "next/cache";
+
+const BUCKET_SIZE = 100;
+const WIKI_CACHE_REVALIDATE_S = 10 * 60;
+const WIKI_CACHE_TTL_MS = WIKI_CACHE_REVALIDATE_S * 1000;
+
 type WikiCache = { items: WikiCard[]; expires: number };
 const wikiCache: { wiki: WikiCache | null; wikivoyage: WikiCache | null } = {
   wiki: null,
   wikivoyage: null,
 };
 
+// Next.js cache: keyed by host. Stores a single big bucket per host.
+const fetchWikiBucket = unstable_cache(
+  async (host: "en.wikipedia.org" | "en.wikivoyage.org"): Promise<WikiCard[]> => {
+    return fetchWikiRandom(host, BUCKET_SIZE);
+  },
+  ["wiki-bucket-v2"],
+  { revalidate: WIKI_CACHE_REVALIDATE_S, tags: ["wiki-bucket"] },
+);
+
 async function getWikiCached(host: "en.wikipedia.org" | "en.wikivoyage.org", count: number): Promise<WikiCard[]> {
   const key = host.includes("voyage") ? "wikivoyage" : "wiki";
+  // Layer 1: module cache (cheapest, in-process). Skip if stale or too small.
   const c = wikiCache[key];
-  // Cache hit: return cached items if we have enough for this request.
   if (c && c.expires > Date.now() && c.items.length >= count) {
     return c.items.slice(0, count);
   }
-  // Cache miss / partial. Fetch fresh, but if a previous cache has more items
-  // than the new fetch (e.g. Wikipedia is throttling us right now), prefer the
-  // larger cached set rather than overwriting with a smaller throttled result.
-  const fresh = await fetchWikiRandom(host, count);
+  // Layer 2: Next.js cache (shared across lambda instances on Vercel).
+  let bucket: WikiCard[] = [];
+  try {
+    bucket = await fetchWikiBucket(host);
+  } catch {
+    bucket = [];
+  }
+  // Some throttled fetches return a short bucket. Merge with any module cache
+  // so we don't shrink under sustained throttling.
   const existing = c?.items ?? [];
-  const merged = (() => {
-    if (fresh.length >= existing.length) return fresh;
-    // Merge fresh into existing; dedupe by id.
+  let merged: WikiCard[];
+  if (bucket.length >= existing.length) {
+    merged = bucket;
+  } else {
     const seen = new Set(existing.map((i) => i.id));
-    const extra = fresh.filter((i) => !seen.has(i.id));
-    return existing.concat(extra);
-  })();
+    merged = existing.concat(bucket.filter((i) => !seen.has(i.id)));
+  }
   if (merged.length) {
     wikiCache[key] = { items: merged, expires: Date.now() + WIKI_CACHE_TTL_MS };
   }
