@@ -18,6 +18,7 @@ export type SiteItem = {
   badge?: string;
   internal?: boolean;
   rank?: number;
+  thumbnail?: string | null;
 };
 
 export default function SitesBrowser({ items }: { items: SiteItem[] }) {
@@ -148,17 +149,31 @@ function Tile({ item, onOpen }: { item: SiteItem; onOpen: () => void }) {
     <button
       type="button"
       onClick={onOpen}
-      className="w-full text-left block rounded-lg border border-zinc-800/60 hover:border-emerald-700/50 bg-zinc-950/40 p-4 transition-colors group"
+      className="w-full text-left block rounded-lg border border-zinc-800/60 hover:border-emerald-700/50 bg-zinc-950/40 overflow-hidden transition-colors group"
       style={{ borderLeftWidth: 3, borderLeftColor: item.accent }}
     >
-      <div className="flex items-baseline justify-between gap-2 mb-1">
-        <h3 className="text-sm font-semibold text-zinc-100 group-hover:text-emerald-400 transition-colors truncate">
-          {item.title}
-        </h3>
-        {item.badge && <span className="text-[10px] font-mono text-zinc-500 shrink-0">{item.badge}</span>}
+      {item.thumbnail ? (
+        <div className="aspect-[16/9] bg-zinc-900 overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={item.thumbnail}
+            alt={item.title}
+            className="w-full h-full object-cover transition group-hover:scale-[1.02]"
+            loading="lazy"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+          />
+        </div>
+      ) : null}
+      <div className="p-4">
+        <div className="flex items-baseline justify-between gap-2 mb-1">
+          <h3 className="text-sm font-semibold text-zinc-100 group-hover:text-emerald-400 transition-colors truncate">
+            {item.title}
+          </h3>
+          {item.badge && <span className="text-[10px] font-mono text-zinc-500 shrink-0">{item.badge}</span>}
+        </div>
+        {item.description && <p className="text-xs text-zinc-400 line-clamp-2">{item.description}</p>}
+        <p className="mt-2 text-[10px] font-mono text-zinc-600 truncate">{host}</p>
       </div>
-      {item.description && <p className="text-xs text-zinc-400 line-clamp-2">{item.description}</p>}
-      <p className="mt-2 text-[10px] font-mono text-zinc-600 truncate">{host}</p>
     </button>
   );
 }

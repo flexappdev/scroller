@@ -75,6 +75,12 @@ export default async function WikiPage({ searchParams }: PageProps) {
               Open scroller feed
             </Link>
             <Link
+              href="/wikivoyage"
+              className="flex items-center gap-1.5 rounded-md border border-blue-700/40 bg-blue-950/40 px-3 py-2 text-xs text-blue-300 hover:border-blue-500 transition-colors"
+            >
+              Open WikiVoyage
+            </Link>
+            <Link
               href="/admin/wiki"
               className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-300 hover:border-zinc-500 transition-colors"
             >

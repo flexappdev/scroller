@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { Star as StarIcon, GitFork } from "lucide-react";
 import type { Star } from "@/lib/fetchers";
 import PageBrowser from "@/components/PageBrowser";
 import ItemModal, { type ItemModalDetail } from "@/components/ItemModal";
 import type { Card as ScrollerCard } from "@/components/ScrollerFeed";
+
+const ogImageFor = (fullName: string) => `https://opengraph.githubassets.com/1/${fullName}`;
+const avatarFor = (owner: string) => `https://github.com/${owner}.png?size=80`;
 
 export default function GithubClient({ stars }: { stars: Star[] }) {
   const [modal, setModal] = useState<ItemModalDetail | null>(null);
@@ -34,28 +38,54 @@ export default function GithubClient({ stars }: { stars: Star[] }) {
         toScrollerCard={(s): ScrollerCard => ({ kind: "star", full_name: s.full_name, description: s.description, html_url: s.html_url, stars: s.stargazers_count, language: s.language })}
         renderGrid={(filtered) => (
           <section className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((s) => (
-              <button
-                key={s.full_name}
-                type="button"
-                onClick={() => openStar(s)}
-                className="text-left rounded-lg border border-zinc-800 bg-zinc-900/60 p-4 transition-colors hover:border-zinc-700"
-                style={{ borderLeftWidth: 3, borderLeftColor: "var(--app-accent)" }}
-              >
-                <div className="flex items-baseline justify-between gap-2">
-                  <h3 className="truncate text-sm font-semibold text-zinc-100">{s.full_name}</h3>
-                  <span className="shrink-0 text-[11px] text-zinc-500">★ {s.stargazers_count.toLocaleString()}</span>
-                </div>
-                {s.description && <p className="mt-1 line-clamp-2 text-xs text-zinc-400">{s.description}</p>}
-                {s.topics.length > 0 && (
-                  <div className="mt-2 flex flex-wrap gap-1">
-                    {s.topics.slice(0, 5).map((t) => (
-                      <span key={t} className="rounded-full border border-zinc-800 bg-zinc-950 px-2 py-0.5 text-[10px] text-zinc-400">{t}</span>
-                    ))}
+            {filtered.map((s) => {
+              const [owner] = s.full_name.split("/");
+              return (
+                <button
+                  key={s.full_name}
+                  type="button"
+                  onClick={() => openStar(s)}
+                  className="text-left rounded-lg border border-zinc-800 bg-zinc-900/60 overflow-hidden transition-colors hover:border-purple-700/50 group"
+                  style={{ borderLeftWidth: 3, borderLeftColor: "#a78bfa" }}
+                >
+                  <div className="aspect-[2/1] bg-zinc-900 overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={ogImageFor(s.full_name)}
+                      alt={s.full_name}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                    />
                   </div>
-                )}
-              </button>
-            ))}
+                  <div className="p-4">
+                    <div className="flex items-center gap-2 mb-2">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={avatarFor(owner)}
+                        alt={owner}
+                        className="h-6 w-6 rounded-full bg-zinc-800"
+                        loading="lazy"
+                        onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                      />
+                      <h3 className="truncate text-sm font-semibold text-zinc-100 group-hover:text-purple-300">{s.full_name}</h3>
+                    </div>
+                    {s.description && <p className="mt-1 line-clamp-2 text-xs text-zinc-400">{s.description}</p>}
+                    <div className="mt-2 flex flex-wrap items-center gap-3 text-[10px] font-mono text-zinc-500">
+                      <span className="flex items-center gap-1"><StarIcon className="h-3 w-3" /> {s.stargazers_count.toLocaleString()}</span>
+                      {s.language && <span className="rounded-full bg-zinc-800/60 px-2 py-0.5 text-zinc-300">{s.language}</span>}
+                    </div>
+                    {s.topics.length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-1">
+                        {s.topics.slice(0, 5).map((t) => (
+                          <span key={t} className="rounded-full border border-zinc-800 bg-zinc-950 px-2 py-0.5 text-[10px] text-zinc-400">{t}</span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </button>
+              );
+            })}
           </section>
         )}
         renderList={(filtered) => (

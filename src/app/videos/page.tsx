@@ -5,7 +5,7 @@ export const revalidate = 600;
 
 export const metadata = {
   title: "Videos",
-  description: "Videos from @mat-siems-production on YouTube.",
+  description: "Videos from @MatSiems and @mat-siems-production on YouTube.",
 };
 
 export default async function VideosPage() {
@@ -20,7 +20,11 @@ export default async function VideosPage() {
         </div>
         <h1 className="mt-3 text-4xl font-bold text-zinc-100">Videos</h1>
         <p className="mt-2 text-zinc-400">
-          {videos.length} videos from{" "}
+          {videos.length} videos · sources:{" "}
+          <a className="underline" href="https://www.youtube.com/@MatSiems" target="_blank" rel="noreferrer">
+            @MatSiems
+          </a>
+          {" "}·{" "}
           <a className="underline" href="https://www.youtube.com/@mat-siems-production" target="_blank" rel="noreferrer">
             @mat-siems-production
           </a>

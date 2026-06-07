@@ -2,6 +2,7 @@ import { listSites } from "@/lib/cms/sites";
 import { getApps } from "@/lib/fetchers";
 import SitesBrowser, { type SiteItem } from "@/components/SitesBrowser";
 import { SCROLL_SOURCES } from "@/lib/scroll/sources";
+import { liveUrl as fleetLiveUrl } from "@/lib/scroll/fleet-urls";
 
 export const dynamic = "force-dynamic";
 
@@ -10,19 +11,11 @@ export const metadata = {
   description: "The fleet, curated picks, and every scroll source.",
 };
 
-const FLEET_LIVE_URL_FALLBACKS: Record<string, string> = {
-  fad: "https://fad-rosy.vercel.app",
-  ms: "https://ms-lake-eta.vercel.app",
-  yb100: "https://yb100-khaki.vercel.app",
-  fs: "https://fs-sand.vercel.app",
-  sp: "https://sp-eta-eight.vercel.app",
-  xmas: "https://xmas-tan-omega.vercel.app",
-  wbp: "https://wbp-eta.vercel.app",
-  ybl: "https://ybl-one.vercel.app",
-  fi: "https://fi-mu-three.vercel.app",
-  mtd: "https://mtd-rose.vercel.app",
-  scroller: "https://scroller-psi.vercel.app",
-};
+const S3_PUBLIC_BASE = "https://com27.s3.eu-west-2.amazonaws.com";
+
+function screenshotFor(id: string): string {
+  return `${S3_PUBLIC_BASE}/scroller/screenshots/${id}.png`;
+}
 
 export default async function PublicSitesPage() {
   const [{ apps }, curated] = await Promise.all([
@@ -35,7 +28,7 @@ export default async function PublicSitesPage() {
   const items: SiteItem[] = [];
 
   for (const a of fleetSites) {
-    const liveUrl = FLEET_LIVE_URL_FALLBACKS[a.id] ?? `https://github.com/flexappdev/${a.id}`;
+    const liveUrl = fleetLiveUrl(a.id);
     items.push({
       id: `fleet:${a.id}`,
       title: a.display_name,
@@ -45,6 +38,7 @@ export default async function PublicSitesPage() {
       accent: a.accent,
       category: "Fleet",
       badge: a.id,
+      thumbnail: screenshotFor(a.id),
     });
   }
 
@@ -59,6 +53,7 @@ export default async function PublicSitesPage() {
       category: "Curated",
       badge: s.category,
       rank: s.sort_order,
+      thumbnail: (s.data?.screenshot_url as string | undefined) ?? s.favicon_url ?? null,
     });
   }
 

@@ -62,21 +62,60 @@ export async function getApps(): Promise<{ apps: AppEntry[]; domains: typeof DOM
 
 export type Video = { id: string; title: string; url: string; published: string; thumbnail: string };
 
+async function resolveChannelIdFromHandle(handle: string): Promise<string | null> {
+  try {
+    const res = await fetch(`https://www.youtube.com/@${handle}`, {
+      next: { revalidate: 86400 },
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; scroller/0.5)" },
+    });
+    if (!res.ok) return null;
+    const html = await res.text();
+    const m = /"channelId":"(UC[A-Za-z0-9_-]{20,})"/.exec(html)
+          ?? /"externalId":"(UC[A-Za-z0-9_-]{20,})"/.exec(html);
+    return m?.[1] ?? null;
+  } catch {
+    return null;
+  }
+}
+
 export async function getVideos(): Promise<{ videos: Video[]; source: string }> {
-  const urls = [
-    "https://www.youtube.com/feeds/videos.xml?channel_id=UC2lkM6tg_EVhsa-GV7XnORg",
-    "https://www.youtube.com/feeds/videos.xml?user=mat-siems-production",
-  ];
-  for (const url of urls) {
+  // Known: mat-siems-production (UC2lkM6tg_EVhsa-GV7XnORg). Resolve @MatSiems
+  // at request time so an upstream rename doesn't silently drop the feed.
+  const knownChannelIds = ["UC2lkM6tg_EVhsa-GV7XnORg"];
+  const handlesToResolve = ["MatSiems", "mat-siems-production"];
+
+  const resolved = await Promise.all(handlesToResolve.map(resolveChannelIdFromHandle));
+  const channelIds = Array.from(new Set([...knownChannelIds, ...resolved.filter((c): c is string => !!c)]));
+
+  const seen = new Set<string>();
+  const all: Video[] = [];
+  const sourcesUsed: string[] = [];
+
+  for (const cid of channelIds) {
+    const url = `https://www.youtube.com/feeds/videos.xml?channel_id=${cid}`;
     try {
       const res = await fetch(url, { next: { revalidate: 600 } });
       if (!res.ok) continue;
       const xml = await res.text();
       const videos = parseYouTubeRSS(xml);
-      if (videos.length) return { videos, source: url };
+      let added = 0;
+      for (const v of videos) {
+        if (seen.has(v.id)) continue;
+        seen.add(v.id);
+        all.push(v);
+        added++;
+      }
+      if (added > 0) sourcesUsed.push(cid);
     } catch {}
   }
-  return { videos: [], source: urls[0] };
+
+  // Sort newest first
+  all.sort((a, b) => new Date(b.published).getTime() - new Date(a.published).getTime());
+
+  return {
+    videos: all,
+    source: sourcesUsed.length ? `youtube:${sourcesUsed.join(",")}` : "youtube:none",
+  };
 }
 
 function parseYouTubeRSS(xml: string): Video[] {

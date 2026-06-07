@@ -3,50 +3,41 @@
 import { useEffect, useState } from "react";
 import type { ViewMode, SortMode } from "@/lib/scroll/view";
 
-const MOBILE_BREAKPOINT = 768;
-
-function isMobile(): boolean {
-  if (typeof window === "undefined") return false;
-  return window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`).matches;
-}
+const GLOBAL_VIEW_KEY = "scroller:view";
+const GLOBAL_SORT_KEY = "scroller:sort";
 
 /**
- * View + sort preferences with per-page key persistence in localStorage.
- *
- * Defaults:
- *   mobile  → view: scroller, sort: random
- *   desktop → view: grid, sort: random
+ * Cross-page view + sort preferences. Choosing a view on /sites carries over to
+ * /apps, /wiki, etc. Default view = scroller everywhere. pageKey is accepted
+ * for legacy callers but no longer namespaces the storage key.
  */
 export function useViewPrefs(pageKey: string) {
   const [hydrated, setHydrated] = useState(false);
-  const [view, setView] = useState<ViewMode>("grid");
+  const [view, setView] = useState<ViewMode>("scroller");
   const [sort, setSort] = useState<SortMode>("random");
 
   useEffect(() => {
-    const mobile = isMobile();
-    const defaultView: ViewMode = mobile ? "scroller" : "grid";
-    const defaultSort: SortMode = "random";
-
     try {
-      const storedView = localStorage.getItem(`scroller:view:${pageKey}`) as ViewMode | null;
-      const storedSort = localStorage.getItem(`scroller:sort:${pageKey}`) as SortMode | null;
-      setView(storedView ?? defaultView);
-      setSort(storedSort ?? defaultSort);
+      const legacy = localStorage.getItem(`scroller:view:${pageKey}`) as ViewMode | null;
+      const storedView = (localStorage.getItem(GLOBAL_VIEW_KEY) as ViewMode | null) ?? legacy;
+      const storedSort = localStorage.getItem(GLOBAL_SORT_KEY) as SortMode | null;
+      setView(storedView ?? "scroller");
+      setSort(storedSort ?? "random");
     } catch {
-      setView(defaultView);
-      setSort(defaultSort);
+      setView("scroller");
+      setSort("random");
     }
     setHydrated(true);
   }, [pageKey]);
 
   function updateView(v: ViewMode) {
     setView(v);
-    try { localStorage.setItem(`scroller:view:${pageKey}`, v); } catch {}
+    try { localStorage.setItem(GLOBAL_VIEW_KEY, v); } catch {}
   }
 
   function updateSort(s: SortMode) {
     setSort(s);
-    try { localStorage.setItem(`scroller:sort:${pageKey}`, s); } catch {}
+    try { localStorage.setItem(GLOBAL_SORT_KEY, s); } catch {}
   }
 
   return { view, sort, setView: updateView, setSort: updateSort, hydrated };
