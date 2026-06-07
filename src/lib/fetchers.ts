@@ -228,14 +228,26 @@ const wikiCache: { wiki: WikiCache | null; wikivoyage: WikiCache | null } = {
 async function getWikiCached(host: "en.wikipedia.org" | "en.wikivoyage.org", count: number): Promise<WikiCard[]> {
   const key = host.includes("voyage") ? "wikivoyage" : "wiki";
   const c = wikiCache[key];
+  // Cache hit: return cached items if we have enough for this request.
   if (c && c.expires > Date.now() && c.items.length >= count) {
     return c.items.slice(0, count);
   }
-  const items = await fetchWikiRandom(host, count);
-  if (items.length) {
-    wikiCache[key] = { items, expires: Date.now() + WIKI_CACHE_TTL_MS };
+  // Cache miss / partial. Fetch fresh, but if a previous cache has more items
+  // than the new fetch (e.g. Wikipedia is throttling us right now), prefer the
+  // larger cached set rather than overwriting with a smaller throttled result.
+  const fresh = await fetchWikiRandom(host, count);
+  const existing = c?.items ?? [];
+  const merged = (() => {
+    if (fresh.length >= existing.length) return fresh;
+    // Merge fresh into existing; dedupe by id.
+    const seen = new Set(existing.map((i) => i.id));
+    const extra = fresh.filter((i) => !seen.has(i.id));
+    return existing.concat(extra);
+  })();
+  if (merged.length) {
+    wikiCache[key] = { items: merged, expires: Date.now() + WIKI_CACHE_TTL_MS };
   }
-  return items;
+  return merged.slice(0, count);
 }
 
 export async function getWiki(count = 100): Promise<{ items: WikiCard[] }> {
