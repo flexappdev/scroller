@@ -7,6 +7,14 @@
 
 create extension if not exists pgcrypto;
 
+-- pg_trgm enables fuzzy/trigram indexes on title. Best-effort: some Supabase
+-- plans lack it. Must be created BEFORE any gin_trgm_ops index references it.
+do $$
+begin
+  create extension if not exists pg_trgm;
+exception when others then null;
+end$$;
+
 -- ─────────────────────────────────────────────────────────────────────────────
 -- scroller_wiki_index — one row per cached article
 create table if not exists public.scroller_wiki_index (
@@ -33,13 +41,15 @@ create table if not exists public.scroller_wiki_index (
 create index if not exists scroller_wiki_index_cat_idx on public.scroller_wiki_index(category, fetched_at desc);
 create index if not exists scroller_wiki_index_updated_idx on public.scroller_wiki_index(updated_at desc);
 create index if not exists scroller_wiki_index_slug_idx on public.scroller_wiki_index(slug);
-create index if not exists scroller_wiki_index_title_trgm on public.scroller_wiki_index using gin (title gin_trgm_ops);
 
--- pg_trgm is best-effort: ignore if not available on the project
+-- Trigram index is only created if pg_trgm is available. Wrap in DO block so
+-- a missing extension is non-fatal (the search path falls back to ilike).
 do $$
 begin
-  create extension if not exists pg_trgm;
-exception when others then null;
+  if exists (select 1 from pg_extension where extname = 'pg_trgm') then
+    execute 'create index if not exists scroller_wiki_index_title_trgm
+             on public.scroller_wiki_index using gin (title gin_trgm_ops)';
+  end if;
 end$$;
 
 -- ─────────────────────────────────────────────────────────────────────────────
