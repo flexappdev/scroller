@@ -2,7 +2,11 @@ import { cmsAdmin, cmsAdminOrNull, isMissingTable } from "@/lib/cms/supabase";
 import { getMongoDb } from "@/lib/mongo";
 import type { WikiFullDoc, WikiIndexRow } from "./types";
 
-export const WIKI_COLLECTION = "WIKI_articles";
+// AIDB.WIKI_articles can't be created — Mongo Atlas free-tier cluster is at the
+// 500-collection cap. Reuse the existing `wiki` collection in AIDB instead.
+// Documents from the converter carry the same shape (pageid, html, sections,
+// media) regardless of which collection they live in.
+export const WIKI_COLLECTION = "wiki";
 
 export async function upsertWikiFullToMongo(doc: WikiFullDoc): Promise<string | null> {
   try {
