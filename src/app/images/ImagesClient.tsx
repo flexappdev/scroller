@@ -46,14 +46,29 @@ export default function ImagesClient({
   }, [cursor, loading]);
 
   function openItem(img: ImageItem) {
+    const lines = [
+      `key:           ${img.key}`,
+      `filename:      ${img.filename}`,
+      `extension:     ${img.ext || "—"}`,
+      `content-type:  ${img.contentType || "—"}`,
+      `size:          ${humanBytes(img.size)}  (${img.size.toLocaleString()} bytes)`,
+      `bucket:        ${img.bucket}`,
+      `region:        ${img.region}`,
+      `storage class: ${img.storageClass || "STANDARD"}`,
+      `etag:          ${img.etag || "—"}`,
+      `last modified: ${img.lastModified || "—"}`,
+    ].join("\n");
+
     setModal({
       id: `image:${img.id}`,
       title: img.title,
       subtitle: `${folderOf(img.key)} · ${humanBytes(img.size)}${img.lastModified ? ` · ${img.lastModified.slice(0, 10)}` : ""}`,
-      description: img.key,
+      description: lines,
+      image: img.url,
       url: img.url,
       urlLabel: "Open original",
       accent: "#22d3ee",
+      internalHref: `/items/${encodeURIComponent(`image:${img.id}`)}`,
     });
   }
 

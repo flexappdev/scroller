@@ -30,13 +30,31 @@ async function resolveDetail(id: string): Promise<Detail | null> {
     const key = decodeURIComponent(inner);
     const img = await getImageByKey(key);
     if (!img) return null;
+    const sizeKb = (img.size / 1024).toFixed(1);
+    const sizeMb = (img.size / 1024 / 1024).toFixed(2);
+    const lastMod = img.lastModified ? new Date(img.lastModified) : null;
     return {
       title: img.title,
-      subtitle: `Image · ${img.key}`,
+      subtitle: `Image · ${img.filename}`,
       image: img.url,
       url: img.url,
       urlLabel: "Open full size",
       accent: "#22d3ee",
+      extra: [
+        { label: "Filename", value: img.filename },
+        { label: "Extension", value: img.ext || "—" },
+        { label: "Content-Type", value: img.contentType || "—" },
+        { label: "Size", value: img.size >= 1024 * 1024 ? `${sizeMb} MB` : `${sizeKb} KB` },
+        { label: "Bytes", value: img.size.toLocaleString() },
+        { label: "Prefix", value: img.prefix || "(root)" },
+        { label: "S3 Key", value: img.key },
+        { label: "Bucket", value: img.bucket },
+        { label: "Region", value: img.region },
+        img.storageClass ? { label: "Storage class", value: img.storageClass } : null,
+        img.etag ? { label: "ETag", value: img.etag } : null,
+        lastMod ? { label: "Last modified", value: `${lastMod.toLocaleString()} (${lastMod.toISOString()})` } : null,
+        { label: "Public URL", value: img.publicUrl },
+      ].filter(Boolean) as { label: string; value: string }[],
     };
   }
 
