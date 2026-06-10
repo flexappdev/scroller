@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import PageBrowser from "./PageBrowser";
 import ItemModal, { type ItemModalDetail } from "./ItemModal";
+import SourceHero from "./SourceHero";
 import type { Card as ScrollerCard } from "./ScrollerFeed";
 
 export type SiteItem = {
@@ -41,12 +42,14 @@ export default function SitesBrowser({ items }: { items: SiteItem[] }) {
 
   return (
     <div className="px-6 py-8 space-y-6">
-      <header className="space-y-2">
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-100">Sites</h1>
-        <p className="text-sm text-zinc-400 max-w-xl">
-          The fleet, curated picks, and every scroll source — searchable, sortable, scrollable.
-        </p>
-      </header>
+      <SourceHero
+        source="sites"
+        accent="#10b981"
+        label="Scroller · Sites"
+        title="Sites"
+        subtitle="The fleet, curated picks, and every scroll source — searchable, sortable, scrollable. Screenshots auto-captured from each site's live URL."
+        rightChip={`${items.length} sites`}
+      />
 
       <PageBrowser<SiteItem>
         pageKey="sites"

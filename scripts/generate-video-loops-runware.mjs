@@ -107,42 +107,52 @@ async function s3Exists(key) {
 
 // ── Runware Seedance video API ────────────────────────────────────────────────
 
-async function runwareGenerateVideo(prompt) {
-  const body = JSON.stringify([
-    {
-      taskType: "videoInference",
-      taskUUID: crypto.randomUUID(),
-      positivePrompt: prompt,
-      model: "bytedance:2@2",     // Seedance — hard-pin (see feedback memory)
-      width: 1280,
-      height: 720,
-      duration: 5,                // seconds
-      numberResults: 1,
-      outputFormat: "MP4",
-      outputType: "URL",
-    },
-  ]);
-
+async function runwarePost(payload) {
   const res = await fetch("https://api.runware.ai/v1/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${RUNWARE_API_KEY}`,
     },
-    body,
+    body: JSON.stringify(payload),
   });
-
   if (!res.ok) {
     const txt = await res.text();
     throw new Error(`Runware ${res.status}: ${txt.slice(0, 300)}`);
   }
+  return res.json();
+}
 
-  const json = await res.json();
-  const item = json.data?.[0];
-  if (!item?.videoURL && !item?.imageURL) {
-    throw new Error(`No videoURL in response: ${JSON.stringify(json).slice(0, 300)}`);
+async function runwareGenerateVideo(prompt) {
+  const taskUUID = crypto.randomUUID();
+  // Submit — Seedance 864x480 is the supported 16:9 size at this model
+  await runwarePost([
+    {
+      taskType: "videoInference",
+      taskUUID,
+      positivePrompt: prompt,
+      model: "bytedance:2@2",   // Seedance — hard-pin (see feedback memory)
+      width: 864,
+      height: 480,
+      duration: 5,
+      numberResults: 1,
+      outputFormat: "MP4",
+      outputType: "URL",
+    },
+  ]);
+
+  // Poll — videoInference is async; status flips processing → success
+  for (let attempt = 0; attempt < 60; attempt++) {
+    await sleep(5000);
+    const json = await runwarePost([{ taskType: "getResponse", taskUUID }]);
+    const item = json.data?.[0];
+    if (!item) continue;
+    if (item.errors?.length) throw new Error(`Runware error: ${JSON.stringify(item.errors).slice(0, 200)}`);
+    if (item.status === "success" && item.videoURL) return item.videoURL;
+    if (item.status === "failed") throw new Error(`Task failed: ${JSON.stringify(item).slice(0, 200)}`);
+    // else still processing
   }
-  return item.videoURL || item.imageURL;
+  throw new Error("timeout after 5 minutes");
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────

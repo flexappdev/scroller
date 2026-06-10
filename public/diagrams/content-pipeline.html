@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Scroller — Content Generation Pipeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{--paper:#fafaf9;--paper-2:#ffffff;--ink:#1c1917;--ink-90:#292524;--muted:#a8a29e;--hairline:#e7e5e4;--hairline-strong:#d6d3d1;--accent:#006699;--accent-soft:rgba(0,102,153,.10);--accent-ink:#ffffff;--link:#2563eb}
+[data-theme="dark"]{--paper:#0c0a09;--paper-2:#1c1917;--ink:#fafaf9;--ink-90:#e7e5e4;--muted:#a8a29e;--hairline:#44403c;--hairline-strong:#57534e;--accent:#2EA3D6;--accent-soft:rgba(46,163,214,.18);--accent-ink:#0c0a09;--link:#60a5fa}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:14px;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:32px 24px 48px}
+.title{font-family:'Instrument Serif','Iowan Old Style',Georgia,serif;font-weight:400;font-size:28px;line-height:1.2;letter-spacing:-.01em;margin:0 0 8px}
+.subtitle{color:var(--muted);font-size:14px;margin:0 0 32px}
+.toggle{position:fixed;top:16px;right:16px;padding:8px 16px;border:1px solid var(--hairline);background:var(--paper-2);color:var(--ink);font:12px 'Inter',sans-serif;border-radius:8px;cursor:pointer}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="var t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;localStorage.setItem('cf-theme',t)">☀ / ☾</button>
+<div class="wrap">
+  <p class="title">Scroller — Content Generation Pipeline</p>
+  <p class="subtitle">How AI-generated content lands on com27 and into the live app</p>
+
+  <svg viewBox="0 0 880 480" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block">
+    <defs>
+      <marker id="arr" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--ink)"/>
+      </marker>
+      <marker id="arr-a" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--accent)"/>
+      </marker>
+    </defs>
+
+    <!-- GROUP LABELS -->
+    <text x="32"  y="24" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">SKILLS</text>
+    <text x="256" y="24" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">SCRIPTS</text>
+    <text x="488" y="24" font-size="11" font-weight="600" fill="var(--accent)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">com27 S3</text>
+    <text x="704" y="24" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">RENDERED IN</text>
+
+    <!-- GROUP CONTAINERS -->
+    <rect x="24"  y="32" width="208" height="408" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+    <rect x="248" y="32" width="208" height="408" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+    <rect x="472" y="32" width="200" height="408" rx="8" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1"/>
+    <rect x="688" y="32" width="168" height="408" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+
+    <!-- SKILL BOXES -->
+    <!-- abc-diagrams -->
+    <rect x="40" y="56" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="128" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/abc-diagrams</text>
+    <text x="128" y="100" text-anchor="middle" font-size="11" fill="var(--muted)">editorial HTML+SVG</text>
+
+    <!-- iad -->
+    <rect x="40" y="140" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="128" y="164" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/iad   /abc-iad</text>
+    <text x="128" y="184" text-anchor="middle" font-size="11" fill="var(--muted)">image gen (FLUX, nb)</text>
+
+    <!-- Runware -->
+    <rect x="40" y="224" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="128" y="248" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Runware FLUX</text>
+    <text x="128" y="268" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">runware:100@1</text>
+
+    <!-- Seedance -->
+    <rect x="40" y="308" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="128" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Runware Seedance</text>
+    <text x="128" y="352" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">bytedance:2@2 · async</text>
+
+    <!-- abc-supabase -->
+    <rect x="40" y="392" width="176" height="40" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="128" y="416" text-anchor="middle" font-size="12" fill="var(--ink)">/abc-supabase migrate</text>
+
+    <!-- SCRIPT BOXES -->
+    <!-- public/diagrams/*.html -->
+    <rect x="264" y="56" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="352" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">public/diagrams/</text>
+    <text x="352" y="100" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">*.html (committed)</text>
+
+    <!-- generate-prompt-images-runware -->
+    <rect x="264" y="140" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="352" y="164" text-anchor="middle" font-size="12" font-weight="500" fill="var(--ink)">prompt-images-</text>
+    <text x="352" y="180" text-anchor="middle" font-size="12" font-weight="500" fill="var(--ink)">runware.mjs</text>
+    <text x="352" y="196" text-anchor="middle" font-size="11" fill="var(--muted)">100 heroes · ~100s</text>
+
+    <!-- generate-video-loops-runware -->
+    <rect x="264" y="224" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="352" y="248" text-anchor="middle" font-size="12" font-weight="500" fill="var(--ink)">video-loops-</text>
+    <text x="352" y="264" text-anchor="middle" font-size="12" font-weight="500" fill="var(--ink)">runware.mjs</text>
+    <text x="352" y="280" text-anchor="middle" font-size="11" fill="var(--muted)">10 loops · ~3 min</text>
+
+    <!-- capture-screenshots -->
+    <rect x="264" y="308" width="176" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="352" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">capture-screenshots</text>
+    <text x="352" y="348" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">thum.io · 1280w</text>
+
+    <!-- backfill-wiki-supabase -->
+    <rect x="264" y="392" width="176" height="40" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="352" y="416" text-anchor="middle" font-size="12" fill="var(--ink)">backfill-wiki-supabase</text>
+
+    <!-- S3 PREFIX BOXES (FOCAL) -->
+    <!-- scroller/diagrams -->
+    <rect x="488" y="56" width="168" height="60" rx="6" fill="var(--paper-2)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="572" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">(in-repo)</text>
+    <text x="572" y="100" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">/diagrams/*.html</text>
+
+    <!-- scroller/prompts -->
+    <rect x="488" y="140" width="168" height="60" rx="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="572" y="164" text-anchor="middle" font-size="13" font-weight="600" fill="var(--accent-ink)">prompts/</text>
+    <text x="572" y="184" text-anchor="middle" font-size="11" fill="var(--accent-ink)">100 PNG · 1024×1024</text>
+
+    <!-- scroller/video-loops -->
+    <rect x="488" y="224" width="168" height="60" rx="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="572" y="248" text-anchor="middle" font-size="13" font-weight="600" fill="var(--accent-ink)">video-loops/</text>
+    <text x="572" y="264" text-anchor="middle" font-size="11" fill="var(--accent-ink)">10 MP4 · 864×480 · 5s</text>
+
+    <!-- scroller/screenshots -->
+    <rect x="488" y="308" width="168" height="60" rx="6" fill="var(--paper-2)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="572" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">screenshots/</text>
+    <text x="572" y="348" text-anchor="middle" font-size="11" fill="var(--muted)">17 PNG · 1280w</text>
+
+    <!-- scroller_wiki_index -->
+    <rect x="488" y="392" width="168" height="40" rx="6" fill="var(--paper-2)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="572" y="416" text-anchor="middle" font-size="12" fill="var(--ink)">scroller_wiki_index</text>
+
+    <!-- RENDER TARGETS -->
+    <rect x="704" y="56" width="136" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="772" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/about</text>
+    <text x="772" y="100" text-anchor="middle" font-size="11" fill="var(--muted)">iframe embed</text>
+
+    <rect x="704" y="140" width="136" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="772" y="164" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/prompts</text>
+    <text x="772" y="180" text-anchor="middle" font-size="11" fill="var(--muted)">PageBrowser cards</text>
+
+    <rect x="704" y="224" width="136" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="772" y="248" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">SourceHero</text>
+    <text x="772" y="264" text-anchor="middle" font-size="11" fill="var(--muted)">video bg · 9 pages</text>
+
+    <rect x="704" y="308" width="136" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="772" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/sites · /apps</text>
+    <text x="772" y="348" text-anchor="middle" font-size="11" fill="var(--muted)">card thumbnails</text>
+
+    <rect x="704" y="392" width="136" height="40" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="772" y="416" text-anchor="middle" font-size="12" fill="var(--ink)">/wiki search</text>
+
+    <!-- CONNECTORS (skill → script) -->
+    <line x1="216" y1="86"  x2="256" y2="86"  stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="216" y1="170" x2="256" y2="170" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="216" y1="254" x2="256" y2="254" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="216" y1="338" x2="256" y2="338" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="216" y1="412" x2="256" y2="412" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- CONNECTORS (script → S3) — accent on the two FLUX/Seedance flows -->
+    <line x1="440" y1="86"  x2="480" y2="86"  stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="440" y1="170" x2="480" y2="170" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr-a)"/>
+    <line x1="440" y1="254" x2="480" y2="254" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr-a)"/>
+    <line x1="440" y1="338" x2="480" y2="338" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="440" y1="412" x2="480" y2="412" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- CONNECTORS (S3 → render) -->
+    <line x1="656" y1="86"  x2="696" y2="86"  stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="656" y1="170" x2="696" y2="170" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="656" y1="254" x2="696" y2="254" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="656" y1="338" x2="696" y2="338" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="656" y1="412" x2="696" y2="412" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- ANNOTATION -->
+    <text x="440" y="464" text-anchor="middle" font-size="13" font-family="'Instrument Serif',Georgia,serif" font-style="italic" fill="var(--ink-90)">scripts are idempotent — re-run with --skip-existing to top up only the missing assets</text>
+
+  </svg>
+</div>
+<script>
+if(localStorage.getItem('cf-theme')==='dark')document.documentElement.dataset.theme='dark';
+document.querySelector('.toggle').addEventListener('click',function(){
+  var t=document.documentElement.dataset.theme==='dark'?'light':'dark';
+  document.documentElement.dataset.theme=t;localStorage.setItem('cf-theme',t);
+});
+</script>
+</body>
+</html>

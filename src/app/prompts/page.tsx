@@ -1,4 +1,5 @@
 import { getPrompts } from "@/lib/fetchers";
+import SourceHero from "@/components/SourceHero";
 import PromptsClient from "./PromptsClient";
 
 export const revalidate = 3600;
@@ -9,25 +10,18 @@ export const metadata = {
 };
 
 export default async function PromptsPage() {
-  const { prompts, source } = await getPrompts();
+  const { prompts } = await getPrompts();
 
   return (
     <div className="space-y-8 p-8">
-      <header className="rounded-lg border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-950 p-8">
-        <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500">
-          <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: "var(--app-accent)" }} />
-          Scroller · Prompts
-        </div>
-        <h1 className="mt-3 text-4xl font-bold text-zinc-100">Top 100 AI Prompts</h1>
-        <p className="mt-2 text-zinc-400">
-          Curated from{" "}
-          <a className="underline" href={source} target="_blank" rel="noreferrer">
-            f/awesome-chatgpt-prompts
-          </a>
-          . Click any card to copy.
-        </p>
-      </header>
-
+      <SourceHero
+        source="prompts"
+        accent="#f59e0b"
+        label="Scroller · Prompts"
+        title="Top 100 AI Prompts"
+        subtitle="Curated from f/awesome-chatgpt-prompts on GitHub. Click any card to copy the prompt. Each hero is a FLUX-generated illustration."
+        rightChip={`${prompts.length} prompts`}
+      />
       <PromptsClient prompts={prompts} />
     </div>
   );

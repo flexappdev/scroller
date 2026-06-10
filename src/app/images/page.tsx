@@ -1,4 +1,5 @@
 import { getImageItems } from "@/lib/scroll/images";
+import SourceHero from "@/components/SourceHero";
 import ImagesClient from "./ImagesClient";
 
 export const dynamic = "force-dynamic";
@@ -13,17 +14,14 @@ export default async function ImagesPage() {
   const { items, nextCursor } = await getImageItems({ limit: 200 });
   return (
     <main className="mx-auto w-full max-w-6xl px-6 py-8 space-y-6">
-      <header>
-        <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500 font-mono mb-2">
-          <span className="inline-block h-2 w-2 rounded-full" style={{ background: "#22d3ee" }} />
-          Scroller · Images
-        </div>
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-100">Images</h1>
-        <p className="mt-2 max-w-2xl text-sm text-zinc-400">
-          S3 gallery. {items.length} loaded {nextCursor && "(more on demand)"}. Each card carries key, size, and last-modified
-          metadata; search across filenames and folders.
-        </p>
-      </header>
+      <SourceHero
+        source="images"
+        accent="#22d3ee"
+        label="Scroller · Images"
+        title="Images"
+        subtitle="S3 gallery from com27 — signed URLs, 15-field metadata per item, paginated cursor. Search across filenames and folders."
+        rightChip={`${items.length} loaded${nextCursor ? " · more on scroll" : ""}`}
+      />
       <ImagesClient initialItems={items} initialCursor={nextCursor} />
     </main>
   );

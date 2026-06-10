@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { getAmazonItems, withAmazonTag } from "@/lib/scroll/amazon";
 import { AMAZON_ZGBS_CATEGORIES } from "@/lib/scroll/amazon-categories";
+import SourceHero from "@/components/SourceHero";
 import AmazonClient from "./AmazonClient";
 
 export const dynamic = "force-dynamic";
@@ -16,26 +17,14 @@ export default async function AmazonPage() {
   const { items, source, reachable } = await getAmazonItems({ limit: 500 });
   return (
     <main className="mx-auto w-full max-w-6xl px-6 py-8 space-y-8">
-      <header>
-        <div className="flex items-center gap-2 text-[11px] uppercase tracking-wider text-zinc-500 font-mono mb-2">
-          <span className="inline-block h-2 w-2 rounded-full" style={{ background: "#ff9900" }} />
-          Scroller · Amazon Best-Sellers
-        </div>
-        <h1 className="text-3xl font-semibold tracking-tight text-zinc-100">Amazon</h1>
-        <p className="mt-2 max-w-2xl text-sm text-zinc-400">
-          UK Best-Sellers from{" "}
-          <a
-            href="https://www.amazon.co.uk/Best-Sellers/zgbs"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-amber-300"
-          >
-            amazon.co.uk/Best-Sellers/zgbs
-          </a>
-          . {AMAZON_ZGBS_CATEGORIES.length} category landing pages + {items.length} ASIN-tagged picks.
-          {!reachable && " · source unreachable"}
-        </p>
-      </header>
+      <SourceHero
+        source="amazon"
+        accent="#ff9900"
+        label="Scroller · Amazon Best-Sellers"
+        title="Amazon"
+        subtitle={`UK Best-Sellers from amazon.co.uk/Best-Sellers/zgbs. ${AMAZON_ZGBS_CATEGORIES.length} category landing pages + ${items.length} ASIN-tagged picks.${!reachable ? " · source unreachable" : ""}`}
+        rightChip={`${items.length} picks · tag fs08-21`}
+      />
 
       <section>
         <div className="mb-3 flex items-baseline justify-between">
