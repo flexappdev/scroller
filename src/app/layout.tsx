@@ -21,11 +21,13 @@ export const metadata: Metadata = {
     title: "Scroller",
     description: DEFAULT_DESCRIPTION,
     url: BASE_URL,
+    images: [{ url: "/og-hero.png", width: 1024, height: 576, alt: "Scroller — One feed. Every source." }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Scroller",
     description: DEFAULT_DESCRIPTION,
+    images: ["/og-hero.png"],
   },
   robots: { index: true, follow: true },
 };

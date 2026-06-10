@@ -83,6 +83,30 @@ export default function AboutPage() {
         </ul>
       </section>
 
+      <section className="space-y-4">
+        <h2 className="text-xs uppercase tracking-wider text-zinc-500 font-mono">Architecture</h2>
+        <p className="text-sm text-zinc-400">
+          Nine sources are fetched by Next.js server components, normalised through a shared
+          fetcher layer, and rendered by a single{" "}
+          <code className="text-emerald-400 text-xs">PageBrowser</code> client component
+          that drives scroller, list, and grid views across every page.
+          On desktop (lg+) clicking a card opens an inline side-panel instead of a modal overlay,
+          keeping the grid visible.
+        </p>
+        <div className="rounded-lg border border-zinc-800 bg-zinc-950 overflow-hidden">
+          <iframe
+            src="/diagrams/architecture.html"
+            title="Scroller data-flow architecture diagram"
+            className="w-full border-0"
+            style={{ height: 480 }}
+            loading="lazy"
+          />
+        </div>
+        <p className="text-xs text-zinc-600">
+          Light / dark toggle in the diagram frame · full screen: <a href="/diagrams/architecture.html" className="underline hover:text-zinc-400" target="_blank" rel="noreferrer">open diagram</a>
+        </p>
+      </section>
+
       <section className="space-y-3">
         <h2 className="text-xs uppercase tracking-wider text-zinc-500 font-mono">Attribution &amp; disclosures</h2>
         <div className="rounded-lg border border-zinc-800 bg-zinc-950/60 p-4 text-sm text-zinc-400 space-y-2">

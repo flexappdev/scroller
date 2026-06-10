@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Scroller — Data Flow Architecture</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{--paper:#fafaf9;--paper-2:#ffffff;--ink:#1c1917;--ink-90:#292524;--muted:#a8a29e;--hairline:#e7e5e4;--hairline-strong:#d6d3d1;--accent:#006699;--accent-soft:rgba(0,102,153,.10);--accent-ink:#ffffff;--link:#2563eb}
+[data-theme="dark"]{--paper:#0c0a09;--paper-2:#1c1917;--ink:#fafaf9;--ink-90:#e7e5e4;--muted:#a8a29e;--hairline:#44403c;--hairline-strong:#57534e;--accent:#2EA3D6;--accent-soft:rgba(46,163,214,.18);--accent-ink:#0c0a09;--link:#60a5fa}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:14px;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:32px 24px 48px}
+.title{font-family:'Instrument Serif','Iowan Old Style',Georgia,serif;font-weight:400;font-size:28px;line-height:1.2;letter-spacing:-.01em;margin:0 0 8px}
+.subtitle{color:var(--muted);font-size:14px;margin:0 0 32px}
+.toggle{position:fixed;top:16px;right:16px;padding:8px 16px;border:1px solid var(--hairline);background:var(--paper-2);color:var(--ink);font:12px 'Inter',sans-serif;border-radius:8px;cursor:pointer}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="var t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;localStorage.setItem('cf-theme',t)">☀ / ☾</button>
+<div class="wrap">
+  <p class="title">Scroller — Data Flow Architecture</p>
+  <p class="subtitle">Nine sources → Next.js 15 server components → PageBrowser client → Vercel Edge</p>
+
+  <svg viewBox="0 0 880 440" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:880px;display:block">
+    <defs>
+      <marker id="arr" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--ink)"/>
+      </marker>
+      <marker id="arr-a" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--accent)"/>
+      </marker>
+    </defs>
+
+    <!-- ── GROUP LABELS ── -->
+    <text x="32" y="24" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">DATA SOURCES</text>
+    <text x="232" y="24" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">SERVER</text>
+    <text x="432" y="24" font-size="11" font-weight="600" fill="var(--accent)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">CLIENT</text>
+    <text x="656" y="24" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">DELIVERY</text>
+
+    <!-- ── GROUP CONTAINERS ── -->
+    <rect x="24"  y="32" width="176" height="372" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+    <rect x="224" y="32" width="176" height="372" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+    <rect x="424" y="32" width="200" height="372" rx="8" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1"/>
+    <rect x="648" y="32" width="200" height="372" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+
+    <!-- ── DATA SOURCE BOXES ── -->
+
+    <!-- Box 1: Live APIs  (y=52 h=64 center-y=84) -->
+    <rect x="40" y="52" width="144" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="80" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Live APIs</text>
+    <text x="112" y="96" text-anchor="middle" font-size="11" fill="var(--muted)">Wikipedia · WikiVoyage</text>
+
+    <!-- Box 2: Social feeds  (y=140 h=64 center-y=172) -->
+    <rect x="40" y="140" width="144" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="168" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Social feeds</text>
+    <text x="112" y="184" text-anchor="middle" font-size="11" fill="var(--muted)">YouTube · GitHub Stars</text>
+
+    <!-- Box 3: Databases  (y=228 h=64 center-y=260) -->
+    <rect x="40" y="228" width="144" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="256" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Databases</text>
+    <text x="112" y="272" text-anchor="middle" font-size="11" fill="var(--muted)">MongoDB · Supabase</text>
+
+    <!-- Box 4: Storage / Static  (y=316 h=64 center-y=348) -->
+    <rect x="40" y="316" width="144" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="344" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Storage / Static</text>
+    <text x="112" y="360" text-anchor="middle" font-size="11" fill="var(--muted)">S3 com27 · CSV · Registry</text>
+
+    <!-- ── SERVER BOX (x=240 y=120 w=144 h=164) ── -->
+    <rect x="240" y="120" width="144" height="164" rx="6" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1"/>
+    <text x="312" y="148" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Server</text>
+    <text x="312" y="164" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Components</text>
+    <line x1="252" y1="176" x2="372" y2="176" stroke="var(--hairline)" stroke-width="1"/>
+    <text x="312" y="196" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">fetchers.ts</text>
+    <text x="312" y="212" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">scroll/*.ts</text>
+    <text x="312" y="228" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">cms/*.ts</text>
+    <text x="312" y="244" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">/api/scroll/*</text>
+    <text x="312" y="268" text-anchor="middle" font-size="10" fill="var(--muted)">unstable_cache · 10 min TTL</text>
+
+    <!-- ── CLIENT BOXES ── -->
+
+    <!-- PageBrowser (FOCAL) (x=440 y=76 w=168 h=104) -->
+    <rect x="440" y="76" width="168" height="104" rx="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="524" y="104" text-anchor="middle" font-size="14" font-weight="600" fill="var(--accent-ink)">PageBrowser</text>
+    <line x1="452" y1="112" x2="596" y2="112" stroke="var(--accent-ink)" stroke-width="1" opacity=".4"/>
+    <text x="524" y="128" text-anchor="middle" font-size="11" fill="var(--accent-ink)">scroller / list / grid</text>
+    <text x="524" y="144" text-anchor="middle" font-size="11" fill="var(--accent-ink)">search · sort · side-panel</text>
+    <text x="524" y="160" text-anchor="middle" font-size="11" fill="var(--accent-ink)">view prefs (localStorage)</text>
+
+    <!-- ItemModal (x=440 y=204 w=168 h=80) -->
+    <rect x="440" y="204" width="168" height="80" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="524" y="240" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">ItemModal</text>
+    <text x="524" y="256" text-anchor="middle" font-size="11" fill="var(--muted)">overlay mobile · side-panel lg+</text>
+
+    <!-- AppShell (x=440 y=308 w=168 h=60) -->
+    <rect x="440" y="308" width="168" height="60" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="524" y="332" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">AppShell</text>
+    <text x="524" y="352" text-anchor="middle" font-size="11" fill="var(--muted)">sidebar · sticky nav · shell</text>
+
+    <!-- ── DELIVERY BOXES ── -->
+
+    <!-- Vercel Edge (x=664 y=60 w=168 h=80) -->
+    <rect x="664" y="60" width="168" height="80" rx="6" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1"/>
+    <text x="748" y="96" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Vercel Edge</text>
+    <text x="748" y="112" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">scroller-bay.vercel.app</text>
+
+    <!-- com27 S3 (x=664 y=164 w=168 h=80) -->
+    <rect x="664" y="164" width="168" height="80" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="748" y="200" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">com27 S3</text>
+    <text x="748" y="216" text-anchor="middle" font-size="11" fill="var(--muted)">screenshots · prompts</text>
+    <text x="748" y="232" text-anchor="middle" font-size="11" fill="var(--muted)">wiki-thumbs · images</text>
+
+    <!-- GitHub (x=664 y=268 w=168 h=64) -->
+    <rect x="664" y="268" width="168" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="748" y="296" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">GitHub</text>
+    <text x="748" y="312" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">flexappdev/scroller</text>
+
+    <!-- ── CONNECTORS ── -->
+
+    <!-- Source fan-in bus: vertical at x=208, spans y=84→348 -->
+    <line x1="208" y1="84"  x2="208" y2="348" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <!-- Short h-lines: source right (x=184) → bus (x=208) at each center-y -->
+    <line x1="184" y1="84"  x2="208" y2="84"  stroke="var(--hairline-strong)" stroke-width="1"/>
+    <line x1="184" y1="172" x2="208" y2="172" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <line x1="184" y1="260" x2="208" y2="260" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <line x1="184" y1="348" x2="208" y2="348" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <!-- Bus midpoint (y=216) → server left edge (x=240) -->
+    <line x1="208" y1="216" x2="232" y2="216" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- Server → PageBrowser (ACCENT focal connector) -->
+    <!-- Exit server right (384,200) → route up to PageBrowser center (424,128) -->
+    <path d="M 384 200 L 408 200 L 408 128 L 424 128" fill="none" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr-a)"/>
+
+    <!-- PageBrowser → Vercel Edge -->
+    <!-- Exit client right (608,128) → Vercel center y=100 -->
+    <path d="M 608 128 L 628 128 L 628 100 L 648 100" fill="none" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- ItemModal ↔ com27 S3 (asset reads, dashed) -->
+    <!-- ItemModal right (608,244) → com27 S3 center y=204 -->
+    <path d="M 608 244 L 628 244 L 628 204 L 648 204" fill="none" stroke="var(--hairline)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+
+    <!-- GitHub → Vercel (auto-deploy, upward dashed) -->
+    <line x1="748" y1="268" x2="748" y2="144" stroke="var(--hairline)" stroke-width="1" stroke-dasharray="4 4" marker-end="url(#arr)"/>
+
+    <!-- ── ANNOTATION ── -->
+    <path d="M 560 76 C 576 52, 596 44, 624 40" stroke="var(--muted)" stroke-width="1" fill="none" stroke-dasharray="2 4"/>
+    <text x="628" y="40" font-size="13" font-family="'Instrument Serif',Georgia,serif" font-style="italic" fill="var(--ink-90)">one composable shell for all nine sources</text>
+
+  </svg>
+</div>
+<script>
+if(localStorage.getItem('cf-theme')==='dark')document.documentElement.dataset.theme='dark';
+document.querySelector('.toggle').addEventListener('click',function(){
+  var t=document.documentElement.dataset.theme==='dark'?'light':'dark';
+  document.documentElement.dataset.theme=t;localStorage.setItem('cf-theme',t);
+});
+</script>
+</body>
+</html>
