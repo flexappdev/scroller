@@ -103,7 +103,28 @@ export default function AboutPage() {
           />
         </div>
         <p className="text-xs text-zinc-600">
-          Light / dark toggle in the diagram frame · full screen: <a href="/diagrams/architecture.html" className="underline hover:text-zinc-400" target="_blank" rel="noreferrer">open diagram</a>
+          Light / dark toggle in frame · full screen:{" "}
+          <a href="/diagrams/architecture.html" className="underline hover:text-zinc-400" target="_blank" rel="noreferrer">open diagram</a>
+        </p>
+
+        <h3 className="text-xs uppercase tracking-wider text-zinc-600 font-mono pt-2">Cache &amp; fallback flow</h3>
+        <p className="text-sm text-zinc-400">
+          Every source has a cache layer — <code className="text-emerald-400 text-xs">unstable_cache</code> for live APIs,
+          MongoDB for the 67k WikiVoyage corpus, S3 signed URLs for images —
+          so a single cold lambda serves warm data within 10 minutes of a cache miss.
+        </p>
+        <div className="rounded-lg border border-zinc-800 bg-zinc-950 overflow-hidden">
+          <iframe
+            src="/diagrams/cache-flow.html"
+            title="Scroller cache and fallback flow diagram"
+            className="w-full border-0"
+            style={{ height: 480 }}
+            loading="lazy"
+          />
+        </div>
+        <p className="text-xs text-zinc-600">
+          Dashed lines = fallback path · full screen:{" "}
+          <a href="/diagrams/cache-flow.html" className="underline hover:text-zinc-400" target="_blank" rel="noreferrer">open diagram</a>
         </p>
       </section>
 

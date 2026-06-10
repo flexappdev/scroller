@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Scroller — Cache & Fallback Flow</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{--paper:#fafaf9;--paper-2:#ffffff;--ink:#1c1917;--ink-90:#292524;--muted:#a8a29e;--hairline:#e7e5e4;--hairline-strong:#d6d3d1;--accent:#006699;--accent-soft:rgba(0,102,153,.10);--accent-ink:#ffffff;--link:#2563eb}
+[data-theme="dark"]{--paper:#0c0a09;--paper-2:#1c1917;--ink:#fafaf9;--ink-90:#e7e5e4;--muted:#a8a29e;--hairline:#44403c;--hairline-strong:#57534e;--accent:#2EA3D6;--accent-soft:rgba(46,163,214,.18);--accent-ink:#0c0a09;--link:#60a5fa}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:14px;line-height:1.5}
+.wrap{max-width:960px;margin:0 auto;padding:32px 24px 48px}
+.title{font-family:'Instrument Serif','Iowan Old Style',Georgia,serif;font-weight:400;font-size:28px;line-height:1.2;letter-spacing:-.01em;margin:0 0 8px}
+.subtitle{color:var(--muted);font-size:14px;margin:0 0 32px}
+.toggle{position:fixed;top:16px;right:16px;padding:8px 16px;border:1px solid var(--hairline);background:var(--paper-2);color:var(--ink);font:12px 'Inter',sans-serif;border-radius:8px;cursor:pointer}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="var t=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=t;localStorage.setItem('cf-theme',t)">☀ / ☾</button>
+<div class="wrap">
+  <p class="title">Scroller — Cache &amp; Fallback Flow</p>
+  <p class="subtitle">How wiki, wikivoyage, and images degrade gracefully when upstream is unavailable</p>
+
+  <svg viewBox="0 0 800 520" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:800px;display:block">
+    <defs>
+      <marker id="arr" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--ink)"/>
+      </marker>
+      <marker id="arr-a" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--accent)"/>
+      </marker>
+      <marker id="arr-m" viewBox="0 0 8 8" refX="8" refY="4" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M 0 0 L 8 4 L 0 8 z" fill="var(--muted)"/>
+      </marker>
+    </defs>
+
+    <!-- COLUMN LABELS -->
+    <text x="48" y="20" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">REQUEST</text>
+    <text x="248" y="20" font-size="11" font-weight="500" fill="var(--accent)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">CACHE LAYER</text>
+    <text x="524" y="20" font-size="11" font-weight="500" fill="var(--muted)" font-family="'JetBrains Mono',monospace" letter-spacing=".05em">ORIGIN</text>
+
+    <!-- GROUP: REQUEST -->
+    <rect x="24" y="28" width="176" height="464" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+
+    <!-- GROUP: CACHE -->
+    <rect x="224" y="28" width="248" height="464" rx="8" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1"/>
+
+    <!-- GROUP: ORIGIN -->
+    <rect x="496" y="28" width="280" height="464" rx="8" fill="none" stroke="var(--hairline)" stroke-width="1"/>
+
+    <!-- REQUEST BOXES -->
+    <!-- Wiki request -->
+    <rect x="40" y="52" width="144" height="48" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="72" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/wiki</text>
+    <text x="112" y="88" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">getWiki(100)</text>
+
+    <!-- WikiVoyage request -->
+    <rect x="40" y="148" width="144" height="48" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="168" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/wikivoyage</text>
+    <text x="112" y="184" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">getWikiVoyage(100)</text>
+
+    <!-- Images request -->
+    <rect x="40" y="244" width="144" height="48" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="264" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/images</text>
+    <text x="112" y="280" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">getImageItems()</text>
+
+    <!-- Amazon request -->
+    <rect x="40" y="340" width="144" height="48" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="112" y="360" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">/amazon</text>
+    <text x="112" y="376" text-anchor="middle" font-size="11" fill="var(--muted)" font-family="'JetBrains Mono',monospace">getAmazonItems()</text>
+
+    <!-- CACHE BOXES -->
+    <!-- unstable_cache (FOCAL) -->
+    <rect x="240" y="44" width="216" height="64" rx="6" fill="var(--accent)" stroke="var(--accent)" stroke-width="1"/>
+    <text x="348" y="68" text-anchor="middle" font-size="13" font-weight="600" fill="var(--accent-ink)">unstable_cache</text>
+    <text x="348" y="84" text-anchor="middle" font-size="11" fill="var(--accent-ink)">10 min TTL · shared across lambdas</text>
+    <text x="348" y="100" text-anchor="middle" font-size="10" fill="var(--accent-ink)" font-family="'JetBrains Mono',monospace">key: wiki-bucket-v4-iter</text>
+
+    <!-- MongoDB cache -->
+    <rect x="240" y="140" width="216" height="64" rx="6" fill="var(--paper-2)" stroke="var(--ink)" stroke-width="1"/>
+    <text x="348" y="164" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">MongoDB</text>
+    <text x="348" y="180" text-anchor="middle" font-size="11" fill="var(--muted)">AIDB.wiki · 67,856 articles</text>
+    <text x="348" y="196" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="'JetBrains Mono',monospace">fallback when Supabase empty</text>
+
+    <!-- S3 signed URLs -->
+    <rect x="240" y="236" width="216" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="348" y="260" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">S3 signed URLs</text>
+    <text x="348" y="276" text-anchor="middle" font-size="11" fill="var(--muted)">com27 · ListObjectsV2</text>
+    <text x="348" y="292" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="'JetBrains Mono',monospace">HeadObject on detail only</text>
+
+    <!-- Mongo Amazon -->
+    <rect x="240" y="332" width="216" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="348" y="356" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">MongoDB</text>
+    <text x="348" y="372" text-anchor="middle" font-size="11" fill="var(--muted)">AzDB.MAIN + AmazonDB</text>
+    <text x="348" y="388" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="'JetBrains Mono',monospace">fallback: Google Sheet CSV</text>
+
+    <!-- ORIGIN BOXES -->
+    <!-- Wikipedia API -->
+    <rect x="512" y="44" width="248" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="636" y="68" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Wikipedia Action API</text>
+    <text x="636" y="84" text-anchor="middle" font-size="11" fill="var(--muted)">generator=random · 50/call</text>
+    <text x="636" y="100" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="'JetBrains Mono',monospace">_iter param defeats dedup</text>
+
+    <!-- WikiVoyage API -->
+    <rect x="512" y="140" width="248" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="636" y="164" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">WikiVoyage Action API</text>
+    <text x="636" y="180" text-anchor="middle" font-size="11" fill="var(--muted)">generator=allpages · bulk cached</text>
+    <text x="636" y="196" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="'JetBrains Mono',monospace">67,856 articles in AIDB.wiki</text>
+
+    <!-- AWS S3 -->
+    <rect x="512" y="236" width="248" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="636" y="260" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">AWS S3 com27</text>
+    <text x="636" y="276" text-anchor="middle" font-size="11" fill="var(--muted)">eu-west-2 · BucketOwnerEnforced</text>
+    <text x="636" y="292" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="'JetBrains Mono',monospace">PublicReadScroller policy</text>
+
+    <!-- Amazon ZGBS -->
+    <rect x="512" y="332" width="248" height="64" rx="6" fill="var(--paper-2)" stroke="var(--hairline-strong)" stroke-width="1"/>
+    <text x="636" y="356" text-anchor="middle" font-size="13" font-weight="500" fill="var(--ink)">Amazon ZGBS</text>
+    <text x="636" y="372" text-anchor="middle" font-size="11" fill="var(--muted)">34 categories · tag fs08-21</text>
+    <text x="636" y="388" text-anchor="middle" font-size="10" fill="var(--muted)" font-family="'JetBrains Mono',monospace">withAmazonTag() normaliser</text>
+
+    <!-- CONNECTORS: request → cache -->
+    <line x1="184" y1="76" x2="232" y2="76" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="184" y1="172" x2="232" y2="172" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="184" y1="268" x2="232" y2="268" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <line x1="184" y1="364" x2="232" y2="364" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- CONNECTORS: cache → origin (solid = primary, dashed = fallback) -->
+    <!-- unstable_cache → Wikipedia -->
+    <line x1="456" y1="76" x2="504" y2="76" stroke="var(--accent)" stroke-width="2" marker-end="url(#arr-a)"/>
+    <!-- Mongo → WikiVoyage (bulk cache, dashed fallback) -->
+    <line x1="456" y1="172" x2="504" y2="172" stroke="var(--hairline-strong)" stroke-width="1" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+    <!-- S3 → AWS -->
+    <line x1="456" y1="268" x2="504" y2="268" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+    <!-- Mongo → Amazon -->
+    <line x1="456" y1="364" x2="504" y2="364" stroke="var(--hairline-strong)" stroke-width="1" marker-end="url(#arr)"/>
+
+    <!-- ANNOTATION -->
+    <path d="M 348 108 C 348 120, 348 124, 348 132" stroke="var(--muted)" stroke-width="1" fill="none" stroke-dasharray="2 4"/>
+    <text x="348" y="476" text-anchor="middle" font-size="13" font-family="'Instrument Serif',Georgia,serif" font-style="italic" fill="var(--ink-90)">cache miss → origin · hit → cached response in &lt;1ms</text>
+
+  </svg>
+</div>
+<script>
+if(localStorage.getItem('cf-theme')==='dark')document.documentElement.dataset.theme='dark';
+document.querySelector('.toggle').addEventListener('click',function(){
+  var t=document.documentElement.dataset.theme==='dark'?'light':'dark';
+  document.documentElement.dataset.theme=t;localStorage.setItem('cf-theme',t);
+});
+</script>
+</body>
+</html>
