@@ -11,7 +11,9 @@ const envText = fs.readFileSync(new URL("../.env.local", import.meta.url), "utf8
 const env = (k) => envText.match(new RegExp("^" + k + "=(.*)", "m"))?.[1] || "";
 
 const MONGO_URI = env("MONGO_URI");
-const MONGO_DB = env("MONGO_DB") || "AIDB";
+// Wiki cache lives in the shared FLEET DB per the 2026-06-16 restructure.
+// No {app} discriminator on FLEET.wiki — wiki is a global cache keyed by pageid.
+const MONGO_DB = "FLEET";
 const USER_AGENT = "Scroller/0.5 (+https://scroller-psi.vercel.app; claude@cleverfox-ai.com)";
 
 const argv = process.argv.slice(2);
