@@ -1,16 +1,29 @@
+import { headers } from "next/headers";
 import { getApps, getPrompts, getStars, getVideos, getWiki, getWikiVoyage } from "@/lib/fetchers";
+import { DOMAINS } from "@/lib/taxonomy";
 import { listSites } from "@/lib/cms/sites";
 import { getAmazonItems } from "@/lib/scroll/amazon";
 import { getImageItems } from "@/lib/scroll/images";
 import HomeClient from "./HomeClient";
 import type { Card } from "@/components/ScrollerFeed";
 
-export const dynamic = "force-dynamic";
+// v2.1: switch from force-dynamic to ISR so the home is CDN-cached.
+// 5-minute revalidate keeps the mixed feed fresh without hammering
+// Mongo/S3/Supabase on every request.
+export const revalidate = 300;
 
-export default async function HomePage({ searchParams }: { searchParams: Promise<{ source?: string }> }) {
-  const { source: sourceParam } = await searchParams;
+function warn(label: string, err: unknown): void {
+  console.warn(`[home] ${label} failed, using fallback:`, err instanceof Error ? err.message : err);
+}
 
-  // Map ?source= to an initial kind filter when it corresponds to a card kind.
+function isMobileUA(ua: string | null): boolean {
+  if (!ua) return false;
+  return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(ua);
+}
+
+export default async function HomePage({ searchParams }: { searchParams: Promise<{ source?: string; view?: string }> }) {
+  const { source: sourceParam, view: viewParam } = await searchParams;
+
   const sourceToKind: Record<string, string> = {
     videos: "video",
     github: "star",
@@ -24,25 +37,26 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
   };
   const initialKind = sourceParam ? sourceToKind[sourceParam] : undefined;
 
-  // When a single source is requested, load 100 of that source. For the
-  // mixed "all" feed, load smaller counts so the page doesn't choke.
   const isWiki = sourceParam === "wiki";
   const isVoyage = sourceParam === "wikivoyage";
   const wikiCount = isWiki ? 100 : 20;
   const voyageCount = isVoyage ? 100 : 12;
 
+  // Belt-and-braces: any one source throwing must not crash the whole page.
+  // Each fetcher gets a per-source .catch() with a fallback that satisfies
+  // its Promise type.
   const [
     videosRes, starsRes, promptsRes, appsRes, sites, wikiRes, voyageRes, amazonRes, imagesRes,
   ] = await Promise.all([
-    getVideos(),
-    getStars(),
-    getPrompts(),
-    getApps(),
-    listSites({ status: "published" }),
-    getWiki(wikiCount),
-    getWikiVoyage(voyageCount),
-    getAmazonItems({ limit: 200 }),
-    getImageItems({ limit: 100 }),
+    getVideos().catch((e) => { warn("videos", e); return { videos: [], source: "" }; }),
+    getStars().catch((e) => { warn("stars", e); return { stars: [], truncated: false }; }),
+    getPrompts().catch((e) => { warn("prompts", e); return { prompts: [], source: "" }; }),
+    getApps().catch((e) => { warn("apps", e); return { apps: [], domains: DOMAINS, target: 0 }; }),
+    listSites({ status: "published" }).catch((e) => { warn("sites", e); return []; }),
+    getWiki(wikiCount).catch((e) => { warn("wiki", e); return { items: [] }; }),
+    getWikiVoyage(voyageCount).catch((e) => { warn("wikivoyage", e); return { items: [] }; }),
+    getAmazonItems({ limit: 200 }).catch((e) => { warn("amazon", e); return { items: [] }; }),
+    getImageItems({ limit: 100 }).catch((e) => { warn("images", e); return { items: [], nextCursor: null }; }),
   ]);
 
   const cards: Card[] = [];
@@ -95,11 +109,21 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
     size: i.size,
   })));
 
+  // v2.1: mobile devices default to the wiki-scroll experience (wikai-style
+  // vertical snap feed). Users can opt back to the desktop mixed feed with
+  // ?view=desktop. Server-side UA sniff keeps first paint correct without a
+  // client-side flash.
+  const ua = (await headers()).get("user-agent");
+  const forceDesktop = viewParam === "desktop";
+  const wikiOnly = await getWiki(30).catch((e) => { warn("wiki-mobile", e); return { items: [] }; });
+
   return (
     <HomeClient
       initialCards={cards}
       initialImageCursor={imagesRes.nextCursor}
       initialKind={initialKind}
+      isMobileUA={isMobileUA(ua) && !forceDesktop}
+      wikiInitial={wikiOnly.items}
     />
   );
 }

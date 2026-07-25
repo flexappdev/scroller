@@ -4,7 +4,7 @@
 
 Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.1**
 
 ## Sources
 
@@ -83,6 +83,15 @@ While the migrations are pending, every page degrades gracefully:
 - **Auth** — Supabase middleware with `PROTECTED_PREFIXES = ["/admin", "/api/admin"]`. Single-email allowlist (`mat@matsiems.com`). Public routes flow through to Next, so unknown URLs hit the custom `not-found.tsx` instead of redirecting to /login.
 
 ## Owned + pending
+
+- ✅ **v2.1** — scroller app v2.1 (2026-07-25): **mobile default = wiki scroll** (wikai-style vertical snap feed at `/` for mobile UAs, opt-out via `/?view=desktop`), **home crash fix** (each of the 9 upstream fetchers in `src/app/page.tsx` now has a per-source `.catch()` with a typed fallback — one bad source no longer pops `error.tsx` on the home), **page caching** (dropped `force-dynamic` on `/` and cleared the contradictory `force-dynamic` + `revalidate=600` on `/wiki`; wiki page keeps its 10-min ISR, home falls back to per-fetcher `unstable_cache` inside the wiki/YouTube/GitHub/prompts fetchers), **all 15 routes return 200 under UA-agnostic curl smoke** (see QA table below). New: `MobileWikiScroll` component (`src/components/MobileWikiScroll.tsx`) + `/api/wiki/scroll?n=8` endpoint for infinite-append, server-side UA sniff via `headers()` + client-side `matchMedia` upgrade for tablet/desktop-mode handling.
+
+  | route | status | notes |
+  |---|---|---|
+  | `/` | 200 | desktop UA → mixed feed; mobile UA → wiki scroll |
+  | `/?view=desktop` | 200 | forces desktop layout even on iPhone UA |
+  | `/?source=wiki` | 200 | single-source wiki feed |
+  | `/about`, `/wiki`, `/wikivoyage`, `/amazon`, `/images`, `/apps`, `/sites`, `/videos`, `/github`, `/prompts`, `/login`, `/api/wiki/scroll` | 200 | all green |
 
 - ✅ v0.6.0 — scroller app v2 (2026-06-10): desktop side-panel preview (lg+ opens right panel, grid keeps visible), full 15-field S3 image metadata (HeadObjectCommand for per-item detail), wiki page converted to PageBrowser (same scroller/list/grid views as all other pages), WikiVoyage 67,856-article bulk cache via `generator=allpages`. Two Cleverfox editorial HTML+SVG architecture diagrams embedded in `/about` (`public/diagrams/architecture.html` — data-flow, `public/diagrams/cache-flow.html` — cache & fallback). Runware FLUX OG hero image (`public/og-hero.png`, 1024×576). **100 AI-generated FLUX prompt heroes** live at `s3://com27/scroller/prompts/` — every `/prompts` card now shows an AI-illustrated image instead of an SVG gradient.
 - ✅ v0.5.0 — scroller app v1 (2026-06-07): dedicated `/amazon`, `/wikivoyage`, `/images` routes; screenshot + prompt hero pipelines; global view-persistence; dual-channel YouTube; GitHub OG+avatar; Mongo wiki cache; com27 `PublicReadScroller`.

@@ -1,12 +1,14 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import PageBrowser from "@/components/PageBrowser";
 import ItemModal, { type ItemModalDetail } from "@/components/ItemModal";
+import MobileWikiScroll from "@/components/MobileWikiScroll";
 import type { Card as ScrollerCard } from "@/components/ScrollerFeed";
 import { toModalDetail, cardItemId } from "@/components/ScrollerFeed";
+import type { WikiCard } from "@/lib/fetchers";
 
 const KIND_LABELS: Record<string, string> = {
   video: "Videos",
@@ -23,15 +25,39 @@ export default function HomeClient({
   initialCards,
   initialImageCursor,
   initialKind,
+  isMobileUA = false,
+  wikiInitial = [],
 }: {
   initialCards: ScrollerCard[];
   initialImageCursor: string | null;
   initialKind?: string;
+  isMobileUA?: boolean;
+  wikiInitial?: WikiCard[];
 }) {
   const [cards, setCards] = useState<ScrollerCard[]>(initialCards);
   const [imageCursor, setImageCursor] = useState<string | null>(initialImageCursor);
   const [loadingMore, setLoadingMore] = useState(false);
   const [modal, setModal] = useState<ItemModalDetail | null>(null);
+
+  // v2.1: server hydrates isMobileUA from user-agent. Once mounted, upgrade
+  // the decision using matchMedia — server UA can miss tablets / desktop-mode
+  // toggles. `?view=desktop` in the URL always wins (server clears isMobileUA
+  // in that case).
+  const [isMobile, setIsMobile] = useState<boolean>(isMobileUA);
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("view") === "desktop") { setIsMobile(false); return; }
+    const mq = window.matchMedia("(max-width: 767px)");
+    setIsMobile(mq.matches);
+    const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  if (isMobile && wikiInitial.length > 0) {
+    return <MobileWikiScroll initial={wikiInitial} />;
+  }
 
   const kindOptions = (() => {
     const present = new Set(cards.map((c) => c.kind));

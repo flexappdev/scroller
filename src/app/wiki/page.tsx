@@ -2,7 +2,8 @@ import { getWiki } from "@/lib/fetchers";
 import SourceHero from "@/components/SourceHero";
 import WikiClient from "./WikiClient";
 
-export const dynamic = "force-dynamic";
+// v2.1: drop contradictory `force-dynamic`; keep ISR only so the wiki bucket
+// is served from the CDN edge for 10 minutes before revalidation.
 export const revalidate = 600;
 
 export const metadata = {
