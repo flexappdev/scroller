@@ -4,7 +4,7 @@
 
 Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.3.0**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.4.0**
 
 ## Sources
 
@@ -83,6 +83,8 @@ While the migrations are pending, every page degrades gracefully:
 - **Auth** — Supabase middleware with `PROTECTED_PREFIXES = ["/admin", "/api/admin"]`. Single-email allowlist (`mat@matsiems.com`). Public routes flow through to Next, so unknown URLs hit the custom `not-found.tsx` instead of redirecting to /login.
 
 ## Owned + pending
+
+- ✅ **v2.4.0** — mobile home = wikai clone (2026-07-26): rewrote `MobileWikiScroll` to faithfully match wikai's `ArticleCard` anatomy — right-side action rail (Like / Read / Save / Share as 42 px round backdrop-blur pills with labels), bottom-left overlay with Wikipedia eyebrow chip + 32 px bold title + 4-line extract clamp + read-min & points meta + "Tap for details" chevron. Cover uses wikai's 5-gradient palette (aquatic/mechanism/aurora/manuscript/abyss) hashed off article id. Points HUD in TopBar (+1 per card seen, +2 like, +3 save); Like/Save persist to `scroller.wiki.liked.v1` + `scroller.wiki.saved.v1` in `localStorage`. Native Web Share API with clipboard fallback.
 
 - ✅ **v2.3.0** — images on every card kind (2026-07-26): new `src/lib/scroll/card-images.ts` — single `imageFor(card)` resolver covering all 8 kinds. `star` → `https://opengraph.githubassets.com/1/<full_name>` (GitHub's public OG endpoint); `prompt` → `s3://com27/scroller/prompts/<slug>.png` (the 100 FLUX heroes from v0.6.0); `app` + `site` → `s3://com27/scroller/screenshots/<id>.png` (the thum.io pipeline from v0.5.0). Every `<img>` gets a deterministic `gradientFor(seed)` background rendered underneath; on 404 the `<img>` hides itself so the gradient shows through — no blank frames. Wired into `HomeTile` (grid) + `ScrollerFeed`'s `StarCard`/`PromptCard`/`AppCard`/`SiteCard` (snap feed). Bundle check: chunk 4618 contains both `opengraph.githubassets` + `com27` screenshot URLs.
 

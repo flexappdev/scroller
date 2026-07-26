@@ -22,6 +22,20 @@ type Release = {
 // does, not marketing polish — this page doubles as an engineering changelog.
 const RELEASES: Release[] = [
   {
+    version: "2.4.0",
+    date: "2026-07-26",
+    headline: "Mobile home = wikai clone",
+    bullets: [
+      "MobileWikiScroll rewritten to match wikai's ArticleCard anatomy",
+      "Right-side action rail: Like / Read / Save / Share (42px round backdrop-blur pills with label under each)",
+      "Bottom-left overlay: Wikipedia eyebrow chip · 32px bold title · 4-line extract clamp · read-min + points meta · Tap for details chevron",
+      "Wikai-parity gradient fallback palette (aquatic/mechanism/aurora/manuscript/abyss)",
+      "Points HUD in TopBar — +1 per new card seen, +2 like, +3 save; persists via localStorage",
+      "Like/Save persist to localStorage (scroller.wiki.liked.v1 / scroller.wiki.saved.v1)",
+      "Native Web Share API with clipboard fallback",
+    ],
+  },
+  {
     version: "2.3.0",
     date: "2026-07-26",
     headline: "Images on every card kind",
