@@ -4,7 +4,7 @@
 
 Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.1**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.2**
 
 ## Sources
 
@@ -83,6 +83,8 @@ While the migrations are pending, every page degrades gracefully:
 - **Auth** — Supabase middleware with `PROTECTED_PREFIXES = ["/admin", "/api/admin"]`. Single-email allowlist (`mat@matsiems.com`). Public routes flow through to Next, so unknown URLs hit the custom `not-found.tsx` instead of redirecting to /login.
 
 ## Owned + pending
+
+- ✅ **v2.2** — scroller app v2.2 (2026-07-26): new **`/version` page** listing every release with dated feature bullets + commit links, static-generated (`force-static`) so it's cached at the edge indefinitely. StickyFooter version chip now links to `/version` (was a plain span). Version bumped `2.1.0` → `2.2.0`. All 16 routes (`/version` added) re-verified 200. Uncovered + fixed during QA: a stale `next-server` from the prior session was still bound to `:19013` and served a prerendered 404 for `/version` — `pkill -f "next start"` misses it because the surviving child is `next-server`, not `next start`; kill the pid directly.
 
 - ✅ **v2.1** — scroller app v2.1 (2026-07-25): **mobile default = wiki scroll** (wikai-style vertical snap feed at `/` for mobile UAs, opt-out via `/?view=desktop`), **home crash fix** (each of the 9 upstream fetchers in `src/app/page.tsx` now has a per-source `.catch()` with a typed fallback — one bad source no longer pops `error.tsx` on the home), **page caching** (dropped `force-dynamic` on `/` and cleared the contradictory `force-dynamic` + `revalidate=600` on `/wiki`; wiki page keeps its 10-min ISR, home falls back to per-fetcher `unstable_cache` inside the wiki/YouTube/GitHub/prompts fetchers), **all 15 routes return 200 under UA-agnostic curl smoke** (see QA table below). New: `MobileWikiScroll` component (`src/components/MobileWikiScroll.tsx`) + `/api/wiki/scroll?n=8` endpoint for infinite-append, server-side UA sniff via `headers()` + client-side `matchMedia` upgrade for tablet/desktop-mode handling.
 
