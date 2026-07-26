@@ -22,8 +22,20 @@ type Release = {
 // does, not marketing polish — this page doubles as an engineering changelog.
 const RELEASES: Release[] = [
   {
+    version: "2.2.1",
+    date: "2026-07-26",
+    commit: "fd9ff8f",
+    headline: "Mobile wiki-scroll z-50 hotfix",
+    bullets: [
+      "MobileWikiScroll wrapper bumped to z-50 so the wiki feed layers above AppNav (z-40) and Sticky*Header/Footer (z-30) on mobile",
+      "Before the fix, the fixed sidebar covered the left ~180 px of every article card and clipped the title/description/CTA text",
+      "Verified in served HTML under a mobile UA — all 16 QA routes still 200",
+    ],
+  },
+  {
     version: "2.2.0",
     date: "2026-07-26",
+    commit: "0dda2e7",
     headline: "Version page + footer version-link",
     bullets: [
       "New /version page listing every release with dated feature bullets",

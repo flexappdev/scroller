@@ -4,7 +4,7 @@
 
 Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.2**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.2.1**
 
 ## Sources
 
@@ -83,6 +83,8 @@ While the migrations are pending, every page degrades gracefully:
 - **Auth** — Supabase middleware with `PROTECTED_PREFIXES = ["/admin", "/api/admin"]`. Single-email allowlist (`mat@matsiems.com`). Public routes flow through to Next, so unknown URLs hit the custom `not-found.tsx` instead of redirecting to /login.
 
 ## Owned + pending
+
+- ✅ **v2.2.1** — mobile z-50 hotfix (2026-07-26, commit `fd9ff8f`): `MobileWikiScroll` had no explicit z-index while `AppNav` is fixed `z-40` and Sticky*Header/Footer are `z-30`, so the sidebar covered the left ~180 px of every article card and clipped the title/description/CTA text. Wrapper bumped to `z-50` so the wiki feed layers above all AppShell chrome on mobile. Verified in served HTML under a mobile UA; all 16 QA routes still 200.
 
 - ✅ **v2.2** — scroller app v2.2 (2026-07-26): new **`/version` page** listing every release with dated feature bullets + commit links, static-generated (`force-static`) so it's cached at the edge indefinitely. StickyFooter version chip now links to `/version` (was a plain span). Version bumped `2.1.0` → `2.2.0`. All 16 routes (`/version` added) re-verified 200. Uncovered + fixed during QA: a stale `next-server` from the prior session was still bound to `:19013` and served a prerendered 404 for `/version` — `pkill -f "next start"` misses it because the surviving child is `next-server`, not `next start`; kill the pid directly.
 
