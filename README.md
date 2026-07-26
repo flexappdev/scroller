@@ -4,7 +4,7 @@
 
 Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.2.1**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.3.0**
 
 ## Sources
 
@@ -83,6 +83,8 @@ While the migrations are pending, every page degrades gracefully:
 - **Auth** — Supabase middleware with `PROTECTED_PREFIXES = ["/admin", "/api/admin"]`. Single-email allowlist (`mat@matsiems.com`). Public routes flow through to Next, so unknown URLs hit the custom `not-found.tsx` instead of redirecting to /login.
 
 ## Owned + pending
+
+- ✅ **v2.3.0** — images on every card kind (2026-07-26): new `src/lib/scroll/card-images.ts` — single `imageFor(card)` resolver covering all 8 kinds. `star` → `https://opengraph.githubassets.com/1/<full_name>` (GitHub's public OG endpoint); `prompt` → `s3://com27/scroller/prompts/<slug>.png` (the 100 FLUX heroes from v0.6.0); `app` + `site` → `s3://com27/scroller/screenshots/<id>.png` (the thum.io pipeline from v0.5.0). Every `<img>` gets a deterministic `gradientFor(seed)` background rendered underneath; on 404 the `<img>` hides itself so the gradient shows through — no blank frames. Wired into `HomeTile` (grid) + `ScrollerFeed`'s `StarCard`/`PromptCard`/`AppCard`/`SiteCard` (snap feed). Bundle check: chunk 4618 contains both `opengraph.githubassets` + `com27` screenshot URLs.
 
 - ✅ **v2.2.1** — mobile z-50 hotfix (2026-07-26, commit `fd9ff8f`): `MobileWikiScroll` had no explicit z-index while `AppNav` is fixed `z-40` and Sticky*Header/Footer are `z-30`, so the sidebar covered the left ~180 px of every article card and clipped the title/description/CTA text. Wrapper bumped to `z-50` so the wiki feed layers above all AppShell chrome on mobile. Verified in served HTML under a mobile UA; all 16 QA routes still 200.
 

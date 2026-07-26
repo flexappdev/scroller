@@ -22,6 +22,19 @@ type Release = {
 // does, not marketing polish — this page doubles as an engineering changelog.
 const RELEASES: Release[] = [
   {
+    version: "2.3.0",
+    date: "2026-07-26",
+    headline: "Images on every card kind",
+    bullets: [
+      "New src/lib/scroll/card-images.ts — single imageFor(card) resolver covering all 8 kinds",
+      "star → https://opengraph.githubassets.com/1/<full_name> (GitHub's public OG endpoint)",
+      "prompt → s3://com27/scroller/prompts/<slug>.png (the 100 FLUX heroes from v0.6.0)",
+      "app + site → s3://com27/scroller/screenshots/<id>.png (the thum.io pipeline from v0.5.0)",
+      "Deterministic gradientFor(seed) fallback rendered under every <img>; on 404 the img hides itself and the gradient shows through",
+      "Wired into HomeTile (grid), ScrollerFeed StarCard/PromptCard/AppCard/SiteCard (snap feed)",
+    ],
+  },
+  {
     version: "2.2.1",
     date: "2026-07-26",
     commit: "fd9ff8f",

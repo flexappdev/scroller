@@ -8,6 +8,7 @@ import ItemModal, { type ItemModalDetail } from "@/components/ItemModal";
 import MobileWikiScroll from "@/components/MobileWikiScroll";
 import type { Card as ScrollerCard } from "@/components/ScrollerFeed";
 import { toModalDetail, cardItemId } from "@/components/ScrollerFeed";
+import { imageFor, gradientFor } from "@/lib/scroll/card-images";
 import type { WikiCard } from "@/lib/fetchers";
 
 const KIND_LABELS: Record<string, string> = {
@@ -177,13 +178,8 @@ function HomeTile({ card, onOpen }: { card: ScrollerCard; onOpen: () => void }) 
       default: return (card as { title?: string }).title ?? card.kind;
     }
   })();
-  const image = (() => {
-    if (card.kind === "video") return card.thumbnail;
-    if (card.kind === "amazon") return card.image;
-    if (card.kind === "wiki") return card.thumbnail;
-    if (card.kind === "image") return card.url;
-    return null;
-  })();
+  const image = imageFor(card);
+  const fallback = gradientFor(cardItemId(card));
   const subtitle = (() => {
     if (card.kind === "amazon") return card.category;
     if (card.kind === "wiki") return card.source === "wikivoyage" ? "WikiVoyage" : "Wikipedia";
@@ -201,12 +197,18 @@ function HomeTile({ card, onOpen }: { card: ScrollerCard; onOpen: () => void }) 
       className="text-left rounded-lg border border-zinc-800/60 hover:border-emerald-700/50 bg-zinc-950/40 overflow-hidden transition-colors group"
       style={{ borderLeftWidth: 3, borderLeftColor: accent }}
     >
-      {image && (
-        <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={image} alt={title} className="aspect-video w-full object-cover bg-zinc-900" />
-        </>
-      )}
+      <div className="aspect-video w-full overflow-hidden" style={{ background: fallback }}>
+        {image && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={image}
+            alt={title}
+            loading="lazy"
+            className="h-full w-full object-cover"
+            onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+          />
+        )}
+      </div>
       <div className="p-3 space-y-1">
         <div className="text-[10px] uppercase tracking-wider font-mono" style={{ color: accent }}>{kindBadge(card)}</div>
         <h3 className="text-sm font-semibold text-zinc-100 group-hover:text-emerald-400 line-clamp-2">{title}</h3>
