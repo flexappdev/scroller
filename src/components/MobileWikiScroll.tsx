@@ -73,7 +73,10 @@ export default function MobileWikiScroll({ initial }: { initial: WikiCard[] }) {
   }, []);
 
   return (
-    <div className="fixed inset-0 bg-black">
+    // z-50 lifts the feed above AppNav (z-40) and Sticky* (z-30). Without
+    // this the sidebar covers the left ~180 px of every article card because
+    // AppShell's <main> keeps its sidebar margin even on mobile.
+    <div className="fixed inset-0 z-50 bg-black">
       <div
         ref={feedRef}
         className="h-[100dvh] w-full overflow-y-auto"
