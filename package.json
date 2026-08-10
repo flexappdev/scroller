@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 19013",
-    "build": "next build",
+    "build": "npm run scroller:validate && next build",
     "start": "next start --port 19013",
     "lint": "next lint",
-    "wiki:sync": "node scripts/wiki-sync.mjs"
+    "wiki:sync": "node scripts/wiki-sync.mjs",
+    "scroller:new": "node scripts/scroller-new.mjs",
+    "scroller:validate": "node scripts/scroller-validate.mjs"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.1053.0",

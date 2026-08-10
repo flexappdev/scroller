@@ -1,0 +1,14 @@
+{
+  "slug": "ai-use-cases",
+  "name": "100 AI Use Cases",
+  "tagline": "100 practical ways to put AI to work.",
+  "description": "A fast vertical guide to practical AI use cases across productivity, research, product, engineering, sales, operations, analytics and automation.",
+  "theme": "dark",
+  "monetization": {
+    "type": "lead",
+    "gateAfter": 20,
+    "ctaLabel": "Turn this into a working AI workflow",
+    "ctaUrl": "https://www.matsiems.com/",
+    "offer": "Pick the highest-value use case and implement it"
+  }
+}
