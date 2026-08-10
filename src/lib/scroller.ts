@@ -1,3 +1,4 @@
+import type { Dirent } from "node:fs";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
@@ -127,7 +128,7 @@ export async function getScrollerPack(slug: string): Promise<ScrollerPack | null
 }
 
 export async function listScrollerPacks(): Promise<ScrollerPack[]> {
-  let entries: Awaited<ReturnType<typeof fs.readdir>>;
+  let entries: Dirent[];
   try {
     entries = await fs.readdir(SCROLLERS_ROOT, { withFileTypes: true });
   } catch (error) {
