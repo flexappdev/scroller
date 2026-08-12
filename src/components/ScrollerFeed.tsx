@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import { Copy, Check, ExternalLink, Globe, Plane, ShoppingBag, ImageIcon } from "lucide-react";
 import ItemModal, { type ItemModalDetail } from "./ItemModal";
 import { liveUrl, githubUrl } from "@/lib/scroll/fleet-urls";
@@ -157,8 +158,16 @@ export function toModalDetail(card: Card): ItemModalDetail {
 function VideoCard({ c }: { c: Extract<Card, { kind: "video" }> }) {
   return (
     <div className="flex max-w-2xl flex-col gap-3 pointer-events-none">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={c.thumbnail} alt={c.title} className="aspect-video w-full rounded-lg object-cover" />
+      <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-zinc-900">
+        <Image
+          src={c.thumbnail}
+          alt={c.title}
+          fill
+          sizes="(min-width: 768px) 42rem, 100vw"
+          className="object-cover"
+          unoptimized
+        />
+      </div>
       <h2 className="text-xl font-bold text-zinc-100">{c.title}</h2>
       <p className="text-xs text-zinc-500">{new Date(c.published).toLocaleDateString()}</p>
       <span className="inline-flex items-center gap-1 text-sm text-zinc-300">
@@ -277,10 +286,16 @@ function WikiCard({ c }: { c: Extract<Card, { kind: "wiki" }> }) {
   return (
     <div className="flex max-w-2xl flex-col gap-3 pointer-events-none">
       {c.thumbnail && (
-        <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={c.thumbnail} alt={c.title} className="aspect-video w-full rounded-lg object-cover bg-zinc-900" />
-        </>
+        <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-zinc-900">
+          <Image
+            src={c.thumbnail}
+            alt={c.title}
+            fill
+            sizes="(min-width: 768px) 42rem, 100vw"
+            className="object-cover"
+            unoptimized
+          />
+        </div>
       )}
       <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-zinc-500">
         <Icon className="h-3 w-3" />
@@ -296,10 +311,16 @@ function AmazonCard({ c }: { c: Extract<Card, { kind: "amazon" }> }) {
   return (
     <div className="flex max-w-2xl flex-col gap-3 pointer-events-none">
       {c.image && (
-        <>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={c.image} alt={c.title} className="aspect-video w-full rounded-lg object-cover bg-zinc-900" />
-        </>
+        <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-zinc-900">
+          <Image
+            src={c.image}
+            alt={c.title}
+            fill
+            sizes="(min-width: 768px) 42rem, 100vw"
+            className="object-cover"
+            unoptimized
+          />
+        </div>
       )}
       <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-zinc-500">
         <ShoppingBag className="h-3 w-3" />
@@ -316,8 +337,16 @@ function AmazonCard({ c }: { c: Extract<Card, { kind: "amazon" }> }) {
 function ImageCard({ c }: { c: Extract<Card, { kind: "image" }> }) {
   return (
     <div className="flex max-w-3xl flex-col gap-3 pointer-events-none">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src={c.url} alt={c.title} className="max-h-[60vh] w-full rounded-lg object-contain bg-zinc-900" />
+      <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-zinc-900">
+        <Image
+          src={c.url}
+          alt={c.title}
+          fill
+          sizes="(min-width: 1024px) 48rem, 100vw"
+          className="object-contain"
+          unoptimized
+        />
+      </div>
       <div className="flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-zinc-500">
         <ImageIcon className="h-3 w-3" />
         Image · {(c.size / 1024).toFixed(0)} KB

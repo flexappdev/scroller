@@ -4,7 +4,16 @@
 
 Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.4.0**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.5.0**
+
+## What's new in v2.5.0
+
+- **Light mode is now the default** — dark mode moves to opt-in via the footer Sun/Moon `ThemeToggle`; FOUC-safe pre-hydration script writes `data-theme` on `<html>` before first paint (backed by `localStorage.scroller-theme`).
+- **`/diagrams` page** — 8 editorial inline-SVG panels in the `/abc-diagrams` style: stack overview, system architecture, cache flow, source fetchers, `imageFor` resolver, mobile ArticleCard anatomy, auth gate, content pipeline. Components live under `src/components/admin/diagrams/`.
+- **`/about` cross-link** — the 3 iframe embeds moved out; `/about` now points to `/diagrams` as the single source of truth for architecture visuals.
+- **Skeletons** — `loading.tsx` in `/wiki /images /prompts /videos /sites /apps /github /amazon /diagrams`, driven by `PageBrowserSkeleton` + `DiagramsSkeleton`.
+- **Playwright E2E scaffold** — `playwright.config.ts` + `e2e/smoke.spec.ts` (5 route smoke checks + light-mode default + 8-SVG count). Run with `npm run test:e2e` after `npx playwright install chromium`.
+- **`next/image` kickoff** — `remotePatterns` extended for `opengraph.githubassets.com`, `image.thum.io`, `raw.githubusercontent.com`. `WikiCard` is the reference conversion; other card kinds keep `<img>` with `onError` fallbacks pending a v2.6 rewrite.
 
 ## Sources
 

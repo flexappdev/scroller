@@ -93,12 +93,56 @@ async function resolveDetail(id: string): Promise<Detail | null> {
 
   if (kind === "wiki" || kind === "wikivoyage") {
     const host = kind === "wikivoyage" ? "en.wikivoyage.org" : "en.wikipedia.org";
-    // Fetch by pageid if numeric, otherwise by title
     const isNumericId = /^\d+$/.test(inner);
-    const endpoint = isNumericId
-      ? `https://${host}/api/rest_v1/page/summary/${inner}` // Wikipedia accepts title here too; pageid fallback below
-      : `https://${host}/api/rest_v1/page/summary/${encodeURIComponent(inner)}`;
     try {
+      if (isNumericId) {
+        // REST page summaries are title-addressed. Scroller's wiki cards use
+        // MediaWiki pageids, so numeric IDs must be resolved through the
+        // Action API instead.
+        const params = new URLSearchParams({
+          action: "query",
+          format: "json",
+          formatversion: "2",
+          prop: "extracts|pageimages|info",
+          pageids: inner,
+          exintro: "1",
+          explaintext: "1",
+          inprop: "url",
+          piprop: "thumbnail",
+          pithumbsize: "1200",
+          redirects: "1",
+          origin: "*",
+        });
+        const res = await fetch(`https://${host}/w/api.php?${params}`, {
+          next: { revalidate: 0 },
+          headers: { "User-Agent": "scroller" },
+        });
+        if (!res.ok) return null;
+        const payload = (await res.json()) as {
+          query?: {
+            pages?: Array<{
+              missing?: boolean;
+              title: string;
+              extract?: string;
+              thumbnail?: { source: string };
+              fullurl?: string;
+            }>;
+          };
+        };
+        const page = payload.query?.pages?.[0];
+        if (!page || page.missing) return null;
+        return {
+          title: page.title,
+          subtitle: kind === "wikivoyage" ? "WikiVoyage" : "Wikipedia",
+          description: page.extract ?? "",
+          image: page.thumbnail?.source ?? null,
+          url: page.fullurl ?? `https://${host}/wiki/${encodeURIComponent(page.title)}`,
+          urlLabel: `Read on ${kind === "wikivoyage" ? "WikiVoyage" : "Wikipedia"}`,
+          accent: kind === "wikivoyage" ? "#3b82f6" : "#e5e7eb",
+        };
+      }
+
+      const endpoint = `https://${host}/api/rest_v1/page/summary/${encodeURIComponent(inner)}`;
       const res = await fetch(endpoint, { next: { revalidate: 0 }, headers: { "User-Agent": "scroller" } });
       if (!res.ok) return null;
       const j = (await res.json()) as { title: string; extract: string; thumbnail?: { source: string }; content_urls?: { desktop?: { page: string } } };

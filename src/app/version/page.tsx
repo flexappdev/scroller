@@ -22,6 +22,25 @@ type Release = {
 // does, not marketing polish — this page doubles as an engineering changelog.
 const RELEASES: Release[] = [
   {
+    version: "2.5.0",
+    date: "2026-07-27",
+    headline: "Light mode default + /diagrams page + BACKLOG sweep",
+    bullets: [
+      "Light mode is now the default theme; dark mode moves to opt-in via a footer Sun/Moon ThemeToggle",
+      "FOUC-safe pre-hydration <script> sets data-theme on <html> before first paint, backed by localStorage.scroller-theme",
+      "CSS-variable token layer in globals.css: --surface / --ink / --hairline etc. for both themes; existing zinc classes flipped by [data-theme=\"light\"] attribute selectors so no component sweep required",
+      "New /diagrams page — 8 inline-SVG editorial panels in the abc-diagrams style (Stack overview, System architecture, Cache flow, Source fetchers, imageFor resolver, Mobile ArticleCard anatomy, Auth gate, Content pipeline)",
+      "Diagram components under src/components/admin/diagrams/ + a shared _primitives.tsx (Node / Edge / Pill)",
+      "/about architecture section rebuilt: 3 iframe embeds replaced by a single 'See all diagrams →' link to /diagrams",
+      "Page skeletons: PageBrowserSkeleton (12-tile grid) + DiagramsSkeleton wired via loading.tsx in /wiki /images /prompts /videos /sites /apps /github /amazon /diagrams",
+      "Playwright E2E scaffold — playwright.config.ts (baseURL 19013 + webServer reuse) + e2e/smoke.spec.ts (5 route smoke checks + light-mode-default check + 8-SVG count check)",
+      "next/image migration: remotePatterns extended for opengraph.githubassets.com + image.thum.io + raw.githubusercontent.com; WikiCard + VideoCard + AmazonCard + ImageCard converted to <Image fill>; remaining sites with onError-hide fallback pattern (StarCard, PromptCard, AppCard, SiteCard, plus per-source Client tiles) deferred to v2.6",
+      "Vercel Analytics wired via @vercel/analytics in layout.tsx — enables Vercel dashboard visits + top-pages once deployed",
+      "docs/MOBILE-V16.md scoping document for the v2.6 mobile port based on wikai v1.6 Feed.tsx (deferred to a separate session per user's original v2.23 goal)",
+      "BACKLOG.md at repo root — living list of v2.6 (mobile port, Sentry, full next/image sweep), v2.7 (10K item universe, /audio + /podcasts sources), v2.8 (admin CMS extensions), and housekeeping items",
+    ],
+  },
+  {
     version: "2.4.0",
     date: "2026-07-26",
     headline: "Mobile home = wikai clone",

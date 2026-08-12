@@ -21,8 +21,8 @@ function isMobileUA(ua: string | null): boolean {
   return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile/i.test(ua);
 }
 
-export default async function HomePage({ searchParams }: { searchParams: Promise<{ source?: string; view?: string }> }) {
-  const { source: sourceParam, view: viewParam } = await searchParams;
+export default async function HomePage({ searchParams }: { searchParams: Promise<{ source?: string; view?: string; legacy?: string }> }) {
+  const { source: sourceParam, view: viewParam, legacy: legacyParam } = await searchParams;
 
   const sourceToKind: Record<string, string> = {
     videos: "video",
@@ -124,6 +124,7 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
       initialKind={initialKind}
       isMobileUA={isMobileUA(ua) && !forceDesktop}
       wikiInitial={wikiOnly.items}
+      legacyMobile={legacyParam === "1"}
     />
   );
 }

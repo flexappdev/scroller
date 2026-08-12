@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scroller Daily Top 100"
+  short_description: "Create ranked daily 24-second vertical shorts"
+  default_prompt: "Use $scroller to create today’s Top 100 batch of 24-second vertical shorts."

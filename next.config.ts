@@ -26,6 +26,9 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "siems.s3-eu-west-1.amazonaws.com" },
       { protocol: "https", hostname: "siems.s3.eu-west-1.amazonaws.com" },
       { protocol: "https", hostname: "avatars.githubusercontent.com" },
+      { protocol: "https", hostname: "opengraph.githubassets.com" },
+      { protocol: "https", hostname: "image.thum.io" },
+      { protocol: "https", hostname: "raw.githubusercontent.com" },
     ],
   },
   async headers() {

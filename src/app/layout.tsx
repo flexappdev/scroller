@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
 
@@ -32,11 +33,19 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
+// FOUC-safe theme init — runs before hydration so the correct theme
+// is on <html> at first paint. Default when unset: light.
+const THEME_INIT = `(function(){try{var t=localStorage.getItem('scroller-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`;
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} min-h-screen bg-[#0a0a0a] text-zinc-100`}>
+    <html lang="en" data-theme="light">
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
+      </head>
+      <body className={`${inter.className} min-h-screen`}>
         <AppShell>{children}</AppShell>
+        <Analytics />
       </body>
     </html>
   );

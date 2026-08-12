@@ -6,6 +6,7 @@ import { ExternalLink } from "lucide-react";
 import PageBrowser from "@/components/PageBrowser";
 import ItemModal, { type ItemModalDetail } from "@/components/ItemModal";
 import MobileWikiScroll from "@/components/MobileWikiScroll";
+import MobileFeed from "@/components/mobile/MobileFeed";
 import type { Card as ScrollerCard } from "@/components/ScrollerFeed";
 import { toModalDetail, cardItemId } from "@/components/ScrollerFeed";
 import { imageFor, gradientFor } from "@/lib/scroll/card-images";
@@ -28,12 +29,14 @@ export default function HomeClient({
   initialKind,
   isMobileUA = false,
   wikiInitial = [],
+  legacyMobile = false,
 }: {
   initialCards: ScrollerCard[];
   initialImageCursor: string | null;
   initialKind?: string;
   isMobileUA?: boolean;
   wikiInitial?: WikiCard[];
+  legacyMobile?: boolean;
 }) {
   const [cards, setCards] = useState<ScrollerCard[]>(initialCards);
   const [imageCursor, setImageCursor] = useState<string | null>(initialImageCursor);
@@ -56,8 +59,9 @@ export default function HomeClient({
     return () => mq.removeEventListener("change", onChange);
   }, []);
 
-  if (isMobile && wikiInitial.length > 0) {
-    return <MobileWikiScroll initial={wikiInitial} />;
+  if (isMobile) {
+    if (legacyMobile && wikiInitial.length > 0) return <MobileWikiScroll initial={wikiInitial} />;
+    return <MobileFeed cards={cards} />;
   }
 
   const kindOptions = (() => {

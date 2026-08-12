@@ -3,6 +3,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { Shuffle, ChevronLeft, ChevronRight, User, Github, Info } from "lucide-react";
 import { SCROLL_SOURCES } from "@/lib/scroll/sources";
 import pkg from "../../package.json";
+import ThemeToggle from "./ThemeToggle";
 
 export default function StickyFooter() {
   const router = useRouter();
@@ -52,13 +53,16 @@ export default function StickyFooter() {
         <span className="hidden sm:inline">Next</span>
         <ChevronRight className="h-3.5 w-3.5" />
       </button>
-      <a
-        href="/version"
-        className="ml-auto text-[10px] font-mono text-zinc-600 hover:text-emerald-400 transition-colors"
-        title={`scroller v${pkg.version} — release notes`}
-      >
-        v{pkg.version}
-      </a>
+      <div className="ml-auto flex items-center gap-2">
+        <ThemeToggle />
+        <a
+          href="/version"
+          className="text-[10px] font-mono text-zinc-600 hover:text-emerald-400 transition-colors"
+          title={`scroller v${pkg.version} — release notes`}
+        >
+          v{pkg.version}
+        </a>
+      </div>
       <a
         href="https://github.com/flexappdev/scroller"
         target="_blank"
