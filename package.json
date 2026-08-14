@@ -10,6 +10,7 @@
     "wiki:sync": "node scripts/wiki-sync.mjs",
     "scroller:new": "node scripts/scroller-new.mjs",
     "scroller:validate": "node scripts/scroller-validate.mjs",
+    "scroller:chatgpt-images": "node scripts/chatgpt-image-import.mjs",
     "test:e2e": "playwright test"
   },
   "dependencies": {
