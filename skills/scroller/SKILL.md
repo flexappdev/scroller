@@ -19,7 +19,7 @@ Interpret “Top 100 video” as 100 individual shorts unless the user explicitl
 
 ## Daily workflow
 
-1. Resolve the date in the user's timezone and create ~/VIDEOS/2026/scroller/YYYY-MM-DD/ with manifest.json, sources.json, videos/, thumbnails/, and batch.log.
+1. Resolve the date in the user's timezone and create ~/BO/videoai/2026/scroller/YYYY-MM-DD/ with manifest.json, sources.json, videos/, thumbnails/, and batch.log.
 2. Read references/sources.md. Research current candidates from primary or attributable sources. Record retrieval time, source URL, ranking window, metric, and evidence.
 3. Normalize and deduplicate candidates. Prefer canonical URLs. Do not reuse the same story, repository, show, article, or AI announcement across categories.
 4. Rank within each category. Use published chart order when available. Otherwise label the result editorial_rank and score: source authority 35%, freshness 25%, measurable traction 25%, usefulness 15%.
@@ -61,7 +61,7 @@ Split AI context into a balanced mix of personal productivity, business operatio
 
 ## Rendering integration
 
-Reuse an existing Remotion, FFmpeg, and TTS pipeline when available. In Mat's ecosystem, inspect ~/VIDEOS/plugins/ before creating another renderer; the VAD wiki short pipeline is the closest existing composition. Keep deterministic timing, captions, file naming, resume state, and ffprobe QA in code. Use models for research synthesis, hooks, narration, visual prompts, and editorial judgement.
+Reuse an existing Remotion, FFmpeg, and TTS pipeline when available. In Mat's ecosystem, inspect ~/BO/videoai/plugins/ before creating another renderer; the VAD wiki short pipeline is the closest existing composition. Keep deterministic timing, captions, file naming, resume state, and ffprobe QA in code. Use models for research synthesis, hooks, narration, visual prompts, and editorial judgement.
 
 If no renderer is available, stop after a valid manifest and identify the missing renderer or credential. Do not claim MP4s were created.
 

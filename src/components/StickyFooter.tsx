@@ -22,13 +22,23 @@ export default function StickyFooter() {
 
   const onScroller = pathname === "/";
 
+  const chipStyle: React.CSSProperties = {
+    border: "1px solid var(--border)",
+    background: "var(--surface-soft)",
+    color: "var(--foreground-subtle)",
+  };
+
   return (
-    <footer className="fixed bottom-0 right-0 z-30 flex h-12 items-center justify-center gap-2 border-t border-zinc-800 bg-zinc-950/85 backdrop-blur-md px-4" style={{ left: "var(--sidebar-w, 180px)" }}>
+    <footer
+      className="fixed bottom-0 right-0 z-30 flex h-12 items-center justify-center gap-2 px-4 chrome-glass-bottom"
+      style={{ left: "var(--sidebar-w, 200px)" }}
+    >
       <button
         type="button"
         onClick={() => emitScrollerNav("prev")}
         disabled={!onScroller}
-        className="flex items-center gap-1 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        className="flex items-center gap-1 rounded-md px-3 py-1.5 text-xs transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        style={chipStyle}
         title={onScroller ? "Previous card" : "Open the scroller to navigate"}
       >
         <ChevronLeft className="h-3.5 w-3.5" />
@@ -37,7 +47,12 @@ export default function StickyFooter() {
       <button
         type="button"
         onClick={randomSource}
-        className="flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/80 px-3 py-1.5 text-xs text-zinc-200 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+        className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-medium transition-colors"
+        style={{
+          border: "1px solid color-mix(in oklch, var(--accent) 45%, transparent)",
+          background: "color-mix(in oklch, var(--accent) 14%, transparent)",
+          color: "var(--accent)",
+        }}
         title="Jump to a random scroll source"
       >
         <Shuffle className="h-3.5 w-3.5" />
@@ -47,7 +62,8 @@ export default function StickyFooter() {
         type="button"
         onClick={() => emitScrollerNav("next")}
         disabled={!onScroller}
-        className="flex items-center gap-1 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        className="flex items-center gap-1 rounded-md px-3 py-1.5 text-xs transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+        style={chipStyle}
         title={onScroller ? "Next card" : "Open the scroller to navigate"}
       >
         <span className="hidden sm:inline">Next</span>
@@ -57,7 +73,8 @@ export default function StickyFooter() {
         <ThemeToggle />
         <a
           href="/version"
-          className="text-[10px] font-mono text-zinc-600 hover:text-emerald-400 transition-colors"
+          className="text-[10px] font-mono transition-colors"
+          style={{ color: "var(--foreground-muted)" }}
           title={`scroller v${pkg.version} — release notes`}
         >
           v{pkg.version}
@@ -67,7 +84,8 @@ export default function StickyFooter() {
         href="https://github.com/flexappdev/scroller"
         target="_blank"
         rel="noopener noreferrer"
-        className="hidden md:flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+        className="hidden md:flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs transition-colors"
+        style={chipStyle}
         title="Source on GitHub"
       >
         <Github className="h-3.5 w-3.5" />
@@ -75,7 +93,8 @@ export default function StickyFooter() {
       </a>
       <a
         href="/about"
-        className="hidden md:flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+        className="hidden md:flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs transition-colors"
+        style={chipStyle}
         title="About Scroller"
       >
         <Info className="h-3.5 w-3.5" />
@@ -83,7 +102,8 @@ export default function StickyFooter() {
       </a>
       <a
         href="/admin"
-        className="flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-3 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+        className="flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs transition-colors"
+        style={chipStyle}
         title="Account / admin"
       >
         <User className="h-3.5 w-3.5" />

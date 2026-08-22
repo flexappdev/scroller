@@ -9,6 +9,7 @@ const ROUTES: Array<{ path: string; heading: RegExp }> = [
   { path: "/diagrams", heading: /diagrams/i },
   { path: "/about", heading: /one feed/i },
   { path: "/version", heading: /release|version/i },
+  { path: "/funny", heading: /100 funniest things/i },
 ];
 
 for (const { path, heading } of ROUTES) {
@@ -30,6 +31,16 @@ test("/diagrams renders 8 SVG panels", async ({ page }) => {
   await page.goto("/diagrams");
   const svgs = page.locator("main svg[role='img']");
   await expect(svgs).toHaveCount(8);
+});
+
+test("/funny exposes 100 ranked things in four formats", async ({ page }) => {
+  await page.goto("/funny");
+  await expect(page.getByText("100 of 100 things")).toBeVisible();
+  for (const mode of ["Copy", "Diagram", "Image", "Video"]) {
+    await expect(page.getByRole("tab", { name: mode })).toBeVisible();
+  }
+  await page.getByRole("tab", { name: "Diagram" }).click();
+  await expect(page.getByRole("img", { name: /How .* works/ }).first()).toBeVisible();
 });
 
 test("numeric Wikipedia item IDs resolve through the Action API", async ({ page }) => {

@@ -1,10 +1,7 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://scroller-psi.vercel.app";
 const DEFAULT_DESCRIPTION =
@@ -33,17 +30,22 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 
-// FOUC-safe theme init — runs before hydration so the correct theme
-// is on <html> at first paint. Default when unset: light.
-const THEME_INIT = `(function(){try{var t=localStorage.getItem('scroller-theme');if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`;
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0a0a0a",
+};
+
+// FOUC-safe theme init — dark default (v3.0 wikai port).
+const THEME_INIT = `(function(){try{var t=localStorage.getItem('scroller-theme');if(t!=='light'&&t!=='dark'){t='dark';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-theme="light">
+    <html lang="en" data-theme="dark" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
       </head>
-      <body className={`${inter.className} min-h-screen`}>
+      <body suppressHydrationWarning className="min-h-screen">
         <AppShell>{children}</AppShell>
         <Analytics />
       </body>

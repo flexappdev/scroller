@@ -9,11 +9,13 @@ import StickyFooter from "./StickyFooter";
 const PREVIEW_PANEL_WIDTH = 448;
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(true);
   const [previewOpen, setPreviewOpen] = useState(false);
-  const sidebarWidth = collapsed ? 52 : 180;
+  const sidebarWidth = collapsed ? 60 : 200;
   const rightMargin = previewOpen ? PREVIEW_PANEL_WIDTH : 0;
 
+  // v3.1 — always icon-rail (wikai-style). Was expanded on desktop, collapsed
+  // on mobile. Wikai's DesktopNav is a fixed 60px rail; matching that.
   useEffect(() => {
     document.documentElement.style.setProperty("--sidebar-w", `${sidebarWidth}px`);
   }, [sidebarWidth]);
@@ -32,7 +34,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
 
   return (
     <>
-      <AppNav collapsed={collapsed} onToggle={() => setCollapsed(!collapsed)} />
+      <AppNav collapsed={collapsed} />
       <Suspense fallback={null}>
         <StickyHeader />
       </Suspense>

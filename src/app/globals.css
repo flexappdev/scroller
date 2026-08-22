@@ -1,79 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --app-accent: #10b981;
-  --app-accent-dark: #059669;
-  --app-accent-light: #6ee7b7;
-}
+/* v3.0 — Wikai design system port. Dark-default OKLCH tokens + pink accent.
+   Keeps HSL shadcn mirrors so tailwind's bg-background / text-foreground etc
+   still work throughout the existing components. */
 
-/* LIGHT (default) — v2.5 flipped from dark-only to light-default. */
 :root,
-:root[data-theme="light"] {
-  --background: 0 0% 98%;
-  --foreground: 220 13% 13%;
-  --card: 0 0% 100%;
-  --card-foreground: 220 13% 13%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 220 13% 13%;
-  --primary: 220 13% 13%;
-  --primary-foreground: 0 0% 98%;
-  --secondary: 220 14% 96%;
-  --secondary-foreground: 220 13% 13%;
-  --muted: 220 14% 96%;
-  --muted-foreground: 220 9% 46%;
-  --accent: 220 14% 96%;
-  --accent-foreground: 220 13% 13%;
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 0 0% 98%;
-  --border: 220 13% 91%;
-  --input: 220 13% 91%;
-  --ring: 158 64% 40%;
-  --radius: 0.5rem;
+[data-theme='dark'] {
+  --background: oklch(0.145 0 0);
+  --surface: oklch(0.185 0 0);
+  --card: oklch(0.205 0 0);
+  --card-hover: oklch(0.235 0 0);
+  --popover: oklch(0.22 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
 
-  --surface: #fafafa;
-  --surface-elevated: #ffffff;
-  --surface-chrome: rgba(255, 255, 255, 0.88);
-  --surface-panel: rgba(255, 255, 255, 0.7);
-  --surface-hover: rgba(0, 0, 0, 0.05);
-  --ink: #111827;
-  --ink-muted: #6b7280;
-  --ink-faint: #9ca3af;
-  --hairline: #e5e7eb;
-  --hairline-strong: #d1d5db;
-  --scrollbar-track: #f4f4f5;
-  --scrollbar-thumb: #d4d4d8;
-  --scrollbar-thumb-hover: #a1a1aa;
-}
+  --foreground: oklch(0.985 0 0);
+  --foreground-subtle: oklch(0.875 0 0);
+  --foreground-muted: oklch(0.708 0 0);
 
-/* DARK (opt-in via ThemeToggle) — legacy zinc palette. */
-:root[data-theme="dark"] {
-  --background: 224 71% 4%;
-  --foreground: 213 31% 91%;
-  --card: 224 71% 6%;
-  --card-foreground: 213 31% 91%;
-  --popover: 224 71% 4%;
-  --popover-foreground: 213 31% 91%;
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 1.2%;
-  --secondary: 222.2 47.4% 11.2%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 223 47% 11%;
-  --muted-foreground: 215.4 16.3% 56.9%;
-  --accent: 216 34% 17%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 63% 31%;
-  --destructive-foreground: 210 40% 98%;
-  --border: 216 34% 17%;
-  --input: 216 34% 17%;
-  --ring: 216 34% 17%;
+  --border: oklch(1 0 0 / 0.1);
+  --border-strong: oklch(1 0 0 / 0.15);
+  --border-hover: oklch(1 0 0 / 0.2);
+  --input: oklch(1 0 0 / 0.12);
+  --ring: oklch(0.556 0 0);
 
-  --surface: #0a0a0a;
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+
+  --page-bg: #0a0a0a;
+  --viewport-bg: #000;
+  --header-glass: linear-gradient(180deg, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.7) 80%, rgba(10,10,10,0) 100%);
+  --footer-glass: linear-gradient(0deg, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.7) 70%, rgba(10,10,10,0) 100%);
+  --reader-glass: rgba(10,10,10,0.94);
+  --surface-hover: rgba(255,255,255,0.06);
+  --surface-soft: rgba(255,255,255,0.04);
+  --surface-softer: rgba(255,255,255,0.02);
+
+  /* Legacy scroller surface tokens (kept so admin/preview panels keep working). */
   --surface-elevated: #161616;
-  --surface-chrome: rgba(10, 10, 10, 0.85);
-  --surface-panel: rgba(24, 24, 27, 0.6);
-  --surface-hover: rgba(255, 255, 255, 0.06);
+  --surface-chrome: rgba(10,10,10,0.85);
+  --surface-panel: rgba(24,24,27,0.6);
   --ink: #f5f5f5;
   --ink-muted: #a1a1aa;
   --ink-faint: #71717a;
@@ -84,101 +54,314 @@
   --scrollbar-thumb-hover: #555;
 }
 
+[data-theme='light'] {
+  --background: oklch(0.985 0 0);
+  --surface: oklch(0.965 0 0);
+  --card: oklch(0.94 0 0);
+  --card-hover: oklch(0.9 0 0);
+  --popover: oklch(1 0 0);
+  --muted: oklch(0.9 0 0);
+  --muted-foreground: oklch(0.4 0 0);
+
+  --foreground: oklch(0.18 0 0);
+  --foreground-subtle: oklch(0.28 0 0);
+  --foreground-muted: oklch(0.45 0 0);
+
+  --border: oklch(0 0 0 / 0.1);
+  --border-strong: oklch(0 0 0 / 0.16);
+  --border-hover: oklch(0 0 0 / 0.24);
+  --input: oklch(0 0 0 / 0.12);
+  --ring: oklch(0.5 0 0);
+
+  --primary: oklch(0.18 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+
+  --page-bg: #f7f7f7;
+  --viewport-bg: #fff;
+  --header-glass: linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.75) 80%, rgba(255,255,255,0) 100%);
+  --footer-glass: linear-gradient(0deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0) 100%);
+  --reader-glass: rgba(255,255,255,0.96);
+  --surface-hover: rgba(0,0,0,0.05);
+  --surface-soft: rgba(0,0,0,0.04);
+  --surface-softer: rgba(0,0,0,0.02);
+
+  --surface-elevated: #ffffff;
+  --surface-chrome: rgba(255,255,255,0.88);
+  --surface-panel: rgba(255,255,255,0.7);
+  --ink: #111827;
+  --ink-muted: #6b7280;
+  --ink-faint: #9ca3af;
+  --hairline: #e5e7eb;
+  --hairline-strong: #d1d5db;
+  --scrollbar-track: #f4f4f5;
+  --scrollbar-thumb: #d4d4d8;
+  --scrollbar-thumb-hover: #a1a1aa;
+}
+
+:root,
+[data-theme='dark'],
+[data-theme='light'] {
+  --success: oklch(0.68 0.17 145);
+  --warning: oklch(0.75 0.16 75);
+  --destructive: oklch(0.65 0.22 25);
+  --destructive-foreground: oklch(0.985 0 0);
+
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Pink accent — Tailwind pink-500 (wikai v1.4+). */
+  --accent: #ec4899;
+  --accent-strong: #db2777;
+  --accent-soft: color-mix(in oklch, #ec4899 22%, transparent);
+
+  /* Bridge legacy scroller vars to the wikai accent so per-source cards
+     that still read var(--app-accent) render in-brand. */
+  --app-accent: #ec4899;
+  --app-accent-dark: #db2777;
+  --app-accent-light: #f9a8d4;
+
+  --radius: 0.5rem;
+}
+
+/* Shadcn HSL mirrors — kept so `bg-background`, `border-border`, `text-foreground`
+   etc still resolve (tailwind.config.ts consumes hsl(var(--*))). Values approximate
+   the OKLCH tokens above. Dark by default. */
+:root,
+[data-theme='dark'] {
+  --hsl-background: 0 0% 8%;
+  --hsl-foreground: 0 0% 98%;
+  --hsl-card: 0 0% 11%;
+  --hsl-card-foreground: 0 0% 98%;
+  --hsl-popover: 0 0% 12%;
+  --hsl-popover-foreground: 0 0% 98%;
+  --hsl-primary: 0 0% 98%;
+  --hsl-primary-foreground: 0 0% 12%;
+  --hsl-secondary: 0 0% 15%;
+  --hsl-secondary-foreground: 0 0% 98%;
+  --hsl-muted: 0 0% 15%;
+  --hsl-muted-foreground: 0 0% 65%;
+  --hsl-accent: 330 81% 60%;              /* pink-500 */
+  --hsl-accent-foreground: 0 0% 100%;
+  --hsl-destructive: 0 62% 50%;
+  --hsl-destructive-foreground: 0 0% 98%;
+  --hsl-border: 0 0% 20%;
+  --hsl-input: 0 0% 22%;
+  --hsl-ring: 330 81% 60%;
+}
+[data-theme='light'] {
+  --hsl-background: 0 0% 98%;
+  --hsl-foreground: 0 0% 12%;
+  --hsl-card: 0 0% 100%;
+  --hsl-card-foreground: 0 0% 12%;
+  --hsl-popover: 0 0% 100%;
+  --hsl-popover-foreground: 0 0% 12%;
+  --hsl-primary: 0 0% 12%;
+  --hsl-primary-foreground: 0 0% 98%;
+  --hsl-secondary: 0 0% 94%;
+  --hsl-secondary-foreground: 0 0% 12%;
+  --hsl-muted: 0 0% 94%;
+  --hsl-muted-foreground: 0 0% 40%;
+  --hsl-accent: 330 81% 60%;
+  --hsl-accent-foreground: 0 0% 100%;
+  --hsl-destructive: 0 62% 50%;
+  --hsl-destructive-foreground: 0 0% 98%;
+  --hsl-border: 0 0% 88%;
+  --hsl-input: 0 0% 86%;
+  --hsl-ring: 330 81% 60%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--page-bg);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100dvh;
+  overscroll-behavior: none;
+}
+
+button { font-family: inherit; }
+
+*::-webkit-scrollbar { display: none; }
+* { scrollbar-width: none; }
+
 @layer base {
   * {
-    @apply border-border;
-  }
-  html {
-    background-color: var(--surface);
-  }
-  body {
-    background-color: var(--surface);
-    color: var(--ink);
-    font-feature-settings: "rlig" 1, "calt" 1;
+    border-color: hsl(var(--hsl-border));
   }
 }
 
-::-webkit-scrollbar {
-  width: 6px;
+/* --- Icon + footer button primitives (wikai) --- */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--foreground);
+  transition: background 120ms var(--ease-out);
 }
-::-webkit-scrollbar-track {
-  background: var(--scrollbar-track);
+.icon-btn:hover { background: var(--surface-hover); }
+
+.footer-btn {
+  flex: 1;
+  max-width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 38px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background 120ms var(--ease-out), border-color 120ms var(--ease-out);
 }
-::-webkit-scrollbar-thumb {
-  background: var(--scrollbar-thumb);
-  border-radius: 3px;
+.footer-btn:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-hover);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: var(--scrollbar-thumb-hover);
+.footer-btn.primary {
+  background: var(--foreground);
+  color: var(--primary-foreground);
+  border-color: var(--foreground);
 }
+
+/* --- Wikai animations --- */
+@keyframes wikai-rise {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+@keyframes wikai-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+@keyframes wikai-pulse {
+  0%,100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
+  50%     { opacity: 0.9; transform: translateX(-50%) translateY(3px); }
+}
+
+.wikai-skeleton {
+  background: linear-gradient(90deg, var(--surface-soft) 0%, var(--surface-hover) 50%, var(--surface-soft) 100%);
+  background-size: 200% 100%;
+  animation: wikai-shimmer 1.6s ease-in-out infinite;
+}
+
+/* v3.1 — Ambient wikai body wash on desktop (dark radial haze behind the
+   fixed sidebar + sticky chrome). Layered on top of --page-bg so the
+   light-theme override still resolves the correct base colour. */
+[data-theme='dark'] body {
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(231, 143, 142, 0.06), transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(158, 206, 154, 0.05), transparent 50%);
+  background-attachment: fixed;
+}
+
+/* --- Wikai .viewport (phone-shaped feed frame, used by /m routes + mobile) --- */
+.viewport {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  height: 100dvh;
+  margin: 0 auto;
+  background: var(--viewport-bg);
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+}
+@media (min-width: 768px) {
+  .viewport {
+    height: min(880px, calc(100dvh - 48px));
+    border-radius: 28px;
+    border: 1px solid var(--border);
+  }
+}
+
+/* --- Sticky chrome tokens (used by StickyHeader / StickyFooter) --- */
+.chrome-glass-top {
+  background: var(--header-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border);
+}
+.chrome-glass-bottom {
+  background: var(--footer-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid var(--border);
+}
+
+/* --- Legacy scrollbar (used by ItemModal / admin panels; we hide global bars
+   above but preserve slim scrollbar styling for opt-in panels) --- */
+.slim-scrollbar::-webkit-scrollbar { display: block; width: 6px; }
+.slim-scrollbar::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+.slim-scrollbar::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+.slim-scrollbar::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover); }
 
 /* ---------------------------------------------------------------------
- * Theme overrides: when [data-theme="light"] is set, flip the hardcoded
- * dark-palette classes that live throughout the components so we don't
- * need to touch every file. Kept scoped so dark mode remains untouched.
+ * Zinc → token overrides. Scroller components use hardcoded tailwind
+ * zinc classes (bg-zinc-950/85, border-zinc-800, text-zinc-300, hover:
+ * text-emerald-400 …). Instead of editing every component we retint
+ * those classes to the wikai palette globally. Applies in BOTH themes.
  * ------------------------------------------------------------------- */
 
-:root[data-theme="light"] body {
-  background-color: var(--surface);
-  color: var(--ink);
-}
-
 /* Surface backgrounds */
-:root[data-theme="light"] .bg-\[\#0a0a0a\],
-:root[data-theme="light"] .bg-zinc-950 {
-  background-color: var(--surface) !important;
-}
-:root[data-theme="light"] .bg-zinc-950\/85,
-:root[data-theme="light"] .bg-zinc-950\/90,
-:root[data-theme="light"] .bg-zinc-950\/95 {
-  background-color: var(--surface-chrome) !important;
-}
-:root[data-theme="light"] .bg-zinc-900,
-:root[data-theme="light"] .bg-zinc-900\/50,
-:root[data-theme="light"] .bg-zinc-900\/60,
-:root[data-theme="light"] .bg-zinc-900\/70,
-:root[data-theme="light"] .bg-zinc-900\/80 {
-  background-color: var(--surface-panel) !important;
-}
-:root[data-theme="light"] .bg-zinc-800,
-:root[data-theme="light"] .bg-zinc-800\/50,
-:root[data-theme="light"] .bg-zinc-800\/60 {
-  background-color: var(--surface-hover) !important;
-}
+.bg-\[\#0a0a0a\],
+.bg-zinc-950 { background-color: var(--page-bg) !important; }
+.bg-zinc-950\/85,
+.bg-zinc-950\/90,
+.bg-zinc-950\/95 { background-color: transparent !important; }
+.bg-zinc-900,
+.bg-zinc-900\/50,
+.bg-zinc-900\/60,
+.bg-zinc-900\/70,
+.bg-zinc-900\/80 { background-color: var(--surface-soft) !important; }
+.bg-zinc-800,
+.bg-zinc-800\/50,
+.bg-zinc-800\/60 { background-color: var(--surface-hover) !important; }
 
 /* Borders */
-:root[data-theme="light"] .border-zinc-950,
-:root[data-theme="light"] .border-zinc-900,
-:root[data-theme="light"] .border-zinc-800,
-:root[data-theme="light"] .border-zinc-700 {
-  border-color: var(--hairline) !important;
-}
+.border-zinc-950,
+.border-zinc-900,
+.border-zinc-800,
+.border-zinc-700 { border-color: var(--border) !important; }
 
-/* Ink (text) */
-:root[data-theme="light"] .text-zinc-100,
-:root[data-theme="light"] .text-zinc-200,
-:root[data-theme="light"] .text-white {
-  color: var(--ink) !important;
-}
-:root[data-theme="light"] .text-zinc-300,
-:root[data-theme="light"] .text-zinc-400 {
-  color: var(--ink-muted) !important;
-}
-:root[data-theme="light"] .text-zinc-500,
-:root[data-theme="light"] .text-zinc-600,
-:root[data-theme="light"] .text-zinc-700 {
-  color: var(--ink-faint) !important;
-}
+/* Ink */
+.text-zinc-100,
+.text-zinc-200,
+.text-white { color: var(--foreground) !important; }
+.text-zinc-300,
+.text-zinc-400 { color: var(--foreground-subtle) !important; }
+.text-zinc-500,
+.text-zinc-600,
+.text-zinc-700 { color: var(--foreground-muted) !important; }
 
-/* Hover states — brighten in light mode, not lighten */
-:root[data-theme="light"] .hover\:text-zinc-100:hover,
-:root[data-theme="light"] .hover\:text-white:hover {
-  color: var(--ink) !important;
-}
-:root[data-theme="light"] .hover\:bg-zinc-800\/50:hover,
-:root[data-theme="light"] .hover\:bg-zinc-800:hover {
-  background-color: var(--surface-hover) !important;
-}
-:root[data-theme="light"] .hover\:border-emerald-700\/50:hover {
-  border-color: var(--app-accent) !important;
-}
+/* Hover states */
+.hover\:text-zinc-100:hover,
+.hover\:text-white:hover { color: var(--foreground) !important; }
+.hover\:bg-zinc-800\/50:hover,
+.hover\:bg-zinc-800:hover { background-color: var(--surface-hover) !important; }
+
+/* Emerald → pink accent (was scroller's old brand colour) */
+.text-emerald-400,
+.hover\:text-emerald-400:hover { color: var(--accent) !important; }
+.border-emerald-700\/50,
+.hover\:border-emerald-700\/50:hover { border-color: color-mix(in oklch, var(--accent) 45%, transparent) !important; }
+.bg-emerald-500,
+.bg-emerald-600 { background-color: var(--accent) !important; }
+.ring-emerald-500,
+.focus\:ring-emerald-500:focus { --tw-ring-color: var(--accent) !important; }

@@ -5,11 +5,11 @@ import { Sun, Moon } from "lucide-react";
 type Theme = "light" | "dark";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>("dark");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const current = (document.documentElement.getAttribute("data-theme") as Theme) || "light";
+    const current = (document.documentElement.getAttribute("data-theme") as Theme) || "dark";
     setTheme(current);
     setMounted(true);
   }, []);
@@ -31,12 +31,12 @@ export default function ThemeToggle() {
       onClick={toggle}
       aria-label={label}
       title={label}
-      className="flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/60 px-2.5 py-1.5 text-xs text-zinc-300 hover:border-emerald-700/50 hover:text-emerald-400 transition-colors"
+      className="icon-btn"
     >
       {mounted && theme === "light" ? (
-        <Moon className="h-3.5 w-3.5" />
+        <Moon className="h-4 w-4" />
       ) : (
-        <Sun className="h-3.5 w-3.5" />
+        <Sun className="h-4 w-4" />
       )}
     </button>
   );
