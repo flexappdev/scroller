@@ -1,5 +1,6 @@
 "use client";
 import { Suspense, useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import AppNav from "./AppNav";
 import StickyHeader from "./StickyHeader";
 import StickyFooter from "./StickyFooter";
@@ -9,13 +10,16 @@ import StickyFooter from "./StickyFooter";
 const PREVIEW_PANEL_WIDTH = 448;
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
-  const [collapsed, setCollapsed] = useState(true);
+  const pathname = usePathname();
+  const immersiveHome = pathname === "/";
+  const [collapsed] = useState(true);
   const [previewOpen, setPreviewOpen] = useState(false);
-  const sidebarWidth = collapsed ? 60 : 200;
-  const rightMargin = previewOpen ? PREVIEW_PANEL_WIDTH : 0;
+  const sidebarWidth = immersiveHome ? 0 : collapsed ? 60 : 200;
+  const rightMargin = immersiveHome ? 0 : previewOpen ? PREVIEW_PANEL_WIDTH : 0;
 
-  // v3.1 — always icon-rail (wikai-style). Was expanded on desktop, collapsed
-  // on mobile. Wikai's DesktopNav is a fixed 60px rail; matching that.
+  // The root route is now the actual swipe feed, not a page inside the app
+  // shell. Setting the variable to zero also prevents a first-paint sidebar
+  // offset while the MediaAI route is hydrating.
   useEffect(() => {
     document.documentElement.style.setProperty("--sidebar-w", `${sidebarWidth}px`);
   }, [sidebarWidth]);
@@ -31,6 +35,10 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
     observer.observe(root, { attributes: true, attributeFilter: ["data-preview-open"] });
     return () => observer.disconnect();
   }, []);
+
+  if (immersiveHome) {
+    return <main className="min-h-[100dvh] bg-black">{children}</main>;
+  }
 
   return (
     <>
