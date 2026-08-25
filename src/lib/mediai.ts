@@ -1,4 +1,4 @@
-import { getMongoDb } from "@/lib/mongo";
+import { tryGetDb } from "@/lib/mongo-admin";
 
 export type MediaAiArticle = {
   id: string;
@@ -29,6 +29,7 @@ type NormalizedAsset = {
   ts: number;
 };
 
+const DB_NAME = process.env.MEDIAI_MONGO_DB || "AIDB";
 const COLLECTION = process.env.MEDIAI_MONGO_COLLECTION || "media_baseline";
 const DEFAULT_RAW_PAGE = 220;
 const MAX_RAW_PAGE = 800;
@@ -138,7 +139,7 @@ export async function getMediaAiPage({
   offset?: number;
   rawLimit?: number;
 } = {}): Promise<MediaAiPage> {
-  const db = await getMongoDb();
+  const db = await tryGetDb(DB_NAME);
   if (!db) return { items: [], nextOffset: null };
 
   const safeOffset = Math.max(0, Math.floor(offset));
