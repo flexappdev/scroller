@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ExternalLink, Layers3, Share2, Shuffle, Volume2, VolumeX } from "lucide-react";
 import type { MediaAiArticle, MediaAiPage } from "@/lib/mediai";
@@ -23,7 +23,9 @@ function mergeArticles(current: MediaAiArticle[], incoming: MediaAiArticle[]): M
     existing.videoUrls = [...new Set([...existing.videoUrls, ...item.videoUrls])];
   }
 
-  return [...byId.values()].sort((a, b) => b.updatedAt - a.updatedAt);
+  // Map preserves the existing display order. New pages append without moving
+  // the card currently under the user's finger.
+  return [...byId.values()];
 }
 
 function shuffled<T>(input: T[]): T[] {
@@ -40,15 +42,7 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   const [nextOffset, setNextOffset] = useState<number | null>(initial.nextOffset);
   const [activeIndex, setActiveIndex] = useState(0);
   const [loadingMore, setLoadingMore] = useState(false);
-  const [shuffleNonce, setShuffleNonce] = useState(0);
   const feedRef = useRef<HTMLDivElement>(null);
-
-  const visibleItems = useMemo(() => {
-    if (!shuffleNonce) return items;
-    return shuffled(items);
-    // shuffleNonce intentionally forces a fresh shuffled copy.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [items, shuffleNonce]);
 
   const loadMore = useCallback(async () => {
     if (nextOffset == null || loadingMore) return;
@@ -57,7 +51,7 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
       const response = await fetch(`/api/mediai?offset=${nextOffset}&limit=220`);
       if (!response.ok) return;
       const page = (await response.json()) as MediaAiPage;
-      setItems((current) => mergeArticles(current, page.items));
+      setItems((current) => mergeArticles(current, shuffled(page.items)));
       setNextOffset(page.nextOffset);
     } catch (error) {
       console.warn("[mediai-feed] load more failed", error);
@@ -67,27 +61,27 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   }, [loadingMore, nextOffset]);
 
   useEffect(() => {
-    if (activeIndex >= visibleItems.length - 6) void loadMore();
-  }, [activeIndex, loadMore, visibleItems.length]);
+    if (activeIndex >= items.length - 6) void loadMore();
+  }, [activeIndex, items.length, loadMore]);
 
   useEffect(() => {
     const el = feedRef.current;
     if (!el) return;
     const onScroll = () => {
       const next = Math.round(el.scrollTop / Math.max(1, el.clientHeight));
-      setActiveIndex(Math.max(0, Math.min(visibleItems.length - 1, next)));
+      setActiveIndex(Math.max(0, Math.min(items.length - 1, next)));
     };
     el.addEventListener("scroll", onScroll, { passive: true });
     return () => el.removeEventListener("scroll", onScroll);
-  }, [visibleItems.length]);
+  }, [items.length]);
 
   const shuffle = () => {
-    setShuffleNonce((value) => value + 1);
+    setItems((current) => shuffled(current));
     setActiveIndex(0);
     feedRef.current?.scrollTo({ top: 0, behavior: "instant" });
   };
 
-  if (visibleItems.length === 0) {
+  if (items.length === 0) {
     return (
       <main className="fixed inset-0 flex items-center justify-center bg-black px-8 text-white">
         <div className="max-w-sm text-center">
@@ -106,7 +100,7 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
         <div className="pointer-events-auto inline-flex min-h-10 items-center gap-2 rounded-full border border-white/15 bg-black/45 px-3 backdrop-blur-xl">
           <span className="h-2 w-2 rounded-full bg-pink-500" />
           <span className="text-[11px] font-black uppercase tracking-[0.15em]">MediaAI</span>
-          <span className="text-[10px] font-bold text-white/45">{visibleItems.length}{nextOffset != null ? "+" : ""}</span>
+          <span className="text-[10px] font-bold text-white/45">{items.length}{nextOffset != null ? "+" : ""}</span>
         </div>
         <div className="pointer-events-auto flex items-center gap-2">
           <button type="button" onClick={shuffle} className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-black/45 text-white/85 backdrop-blur-xl" aria-label="Shuffle MediaAI feed">
@@ -119,12 +113,12 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
       </div>
 
       <div ref={feedRef} className="h-[100dvh] w-full snap-y snap-mandatory overflow-y-auto overscroll-y-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        {visibleItems.map((item, index) => (
+        {items.map((item, index) => (
           <MediaCard
             key={item.id}
             item={item}
             index={index}
-            total={visibleItems.length}
+            total={items.length}
             active={index === activeIndex}
           />
         ))}

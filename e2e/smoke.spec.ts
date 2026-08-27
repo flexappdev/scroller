@@ -21,10 +21,10 @@ for (const { path, heading } of ROUTES) {
   });
 }
 
-test("light mode is the default theme on first visit", async ({ page }) => {
+test("dark mode is the default theme on first visit", async ({ page }) => {
   await page.goto("/");
   const theme = await page.evaluate(() => document.documentElement.getAttribute("data-theme"));
-  expect(theme).toBe("light");
+  expect(theme).toBe("dark");
 });
 
 test("/diagrams renders 8 SVG panels", async ({ page }) => {

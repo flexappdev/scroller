@@ -63,12 +63,9 @@ function publicS3Url(key: string): string {
   return `https://${bucket}.s3.amazonaws.com/${key.split("/").map(encodeURIComponent).join("/")}`;
 }
 
-function wikipediaUrl(topic: string): string {
-  const title = topic
-    .split("/")
-    .map((part) => encodeURIComponent(part.replace(/ /g, "_")))
-    .join("/");
-  return `https://en.wikipedia.org/wiki/${title}`;
+function wikaiUrl(topic: string): string {
+  const title = topic.replaceAll(" ", "_").replaceAll("/", "_");
+  return `https://wikai.matsiems.com/a/${encodeURIComponent(title)}`;
 }
 
 function normalizeAsset(doc: Record<string, unknown>): NormalizedAsset | null {
@@ -96,7 +93,10 @@ function groupAssets(assets: NormalizedAsset[]): MediaAiArticle[] {
   const grouped = new Map<string, MediaAiArticle>();
 
   for (const asset of assets) {
-    const key = `${asset.baseId}::${asset.topic}`;
+    // MediaAI can regenerate the same article under several asset IDs. One
+    // topic card should expose every available variant without repeating the
+    // article later in the feed.
+    const key = `topic:${asset.topic}`;
     const current = grouped.get(key) || {
       id: key,
       assetId: asset.baseId,
@@ -104,7 +104,7 @@ function groupAssets(assets: NormalizedAsset[]): MediaAiArticle[] {
       imageUrl: null,
       videoUrls: [],
       audioUrl: null,
-      sourceUrl: asset.sourceUrl || wikipediaUrl(asset.topic),
+      sourceUrl: asset.sourceUrl || wikaiUrl(asset.topic),
       updatedAt: asset.ts,
       assetCount: 0,
     };
@@ -145,10 +145,20 @@ export async function getMediaAiPage({
   const safeOffset = Math.max(0, Math.floor(offset));
   const safeLimit = Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit)));
 
+  const usableAsset = {
+    $or: [
+      { url: { $type: "string", $ne: "" } },
+      { s3_url: { $type: "string", $ne: "" } },
+      { public_url: { $type: "string", $ne: "" } },
+      { s3_key: { $type: "string", $ne: "" } },
+      { key: { $type: "string", $ne: "" } },
+    ],
+  };
+
   const docs = await db
     .collection(COLLECTION)
-    .find({})
-    .sort({ ts: -1, _id: -1 })
+    .find(usableAsset)
+    .sort({ updated_at: -1, ts: -1, _id: -1 })
     .skip(safeOffset)
     .limit(safeLimit)
     .toArray();
