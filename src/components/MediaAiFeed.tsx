@@ -4,36 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ExternalLink, Info, Share2, Volume2, VolumeX } from "lucide-react";
 import type { MediaAiArticle, MediaAiPage } from "@/lib/mediai";
-import ItemModal, { type ItemModalDetail, type ItemModalAction } from "./ItemModal";
-
-function toMediaDetail(item: MediaAiArticle): ItemModalDetail {
-  const wikaiTopic = item.topic.replaceAll(" ", "_").replaceAll("/", "_");
-  const mediaLine = [
-    item.imageUrl ? "1 image" : null,
-    item.videoUrls.length ? `${item.videoUrls.length} motion clip${item.videoUrls.length === 1 ? "" : "s"}` : null,
-    item.audioUrl ? "audio narration" : null,
-    `${item.assetCount} total assets`,
-  ].filter(Boolean).join(" · ");
-
-  const extraActions: ItemModalAction[] = [];
-  if (item.audioUrl) extraActions.push({ href: item.audioUrl, label: "Listen (audio)", external: true });
-  item.videoUrls.slice(0, 3).forEach((url, i) => {
-    extraActions.push({ href: url, label: item.videoUrls.length > 1 ? `Motion clip ${i + 1}` : "Motion clip", external: true });
-  });
-  extraActions.push({ href: `https://wikai.matsiems.com/read/${encodeURIComponent(wikaiTopic)}`, label: "Read on WIKAI", external: true });
-
-  return {
-    id: item.id,
-    title: item.topic,
-    subtitle: "Wikipedia · MediaAI",
-    description: mediaLine,
-    image: item.imageUrl ?? undefined,
-    url: item.sourceUrl,
-    urlLabel: "Open article",
-    accent: "#ec4899",
-    extraActions,
-  };
-}
+import MediaDetailSheet from "./MediaDetailSheet";
 
 function mergeArticles(current: MediaAiArticle[], incoming: MediaAiArticle[]): MediaAiArticle[] {
   const byId = new Map(current.map((item) => [item.id, { ...item, videoUrls: [...item.videoUrls] }]));
@@ -72,7 +43,7 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   const [nextOffset, setNextOffset] = useState<number | null>(initial.nextOffset);
   const [activeIndex, setActiveIndex] = useState(0);
   const [loadingMore, setLoadingMore] = useState(false);
-  const [detail, setDetail] = useState<ItemModalDetail | null>(null);
+  const [detail, setDetail] = useState<MediaAiArticle | null>(null);
   const feedRef = useRef<HTMLDivElement>(null);
 
   const loadMore = useCallback(async () => {
@@ -113,7 +84,10 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   const goTo = useCallback((index: number) => {
     const el = feedRef.current;
     if (!el || items.length === 0) return;
-    const target = Math.max(0, Math.min(items.length - 1, index));
+    // v3.2 — wrap around so prev on card 0 lands on the last card
+    // and next on the last card lands on card 0. Always scrollable.
+    const total = items.length;
+    const target = ((index % total) + total) % total;
     el.scrollTo({ top: target * el.clientHeight, behavior: "smooth" });
     setActiveIndex(target);
   }, [items.length]);
@@ -175,12 +149,12 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
             index={index}
             total={items.length}
             active={index === activeIndex}
-            onOpenDetail={() => setDetail(toMediaDetail(item))}
+            onOpenDetail={() => setDetail(item)}
           />
         ))}
         {loadingMore && <div className="h-1 w-full bg-pink-500/60" aria-label="Loading more MediaAI items" />}
       </div>
-      <ItemModal item={detail} onClose={() => setDetail(null)} />
+      <MediaDetailSheet item={detail} onClose={() => setDetail(null)} />
     </main>
   );
 }
@@ -278,14 +252,24 @@ function MediaCard({ item, index, total, active, onOpenDetail }: { item: MediaAi
         </a>
       </div>
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 pr-[78px]" style={{ paddingLeft: 18, paddingBottom: "calc(96px + env(safe-area-inset-bottom))" }}>
+      {/* v3.2 — sits between sticky header (56px) and sticky footer (~72px);
+          title clamped to two lines so the tagline is always visible. */}
+      <div
+        className="pointer-events-none absolute inset-x-0 z-10 flex flex-col justify-end pr-[78px]"
+        style={{
+          top: "calc(56px + env(safe-area-inset-top))",
+          bottom: "calc(84px + env(safe-area-inset-bottom))",
+          paddingLeft: 18,
+          paddingBottom: 12,
+        }}
+      >
         <div className="mb-2 flex items-center gap-2">
           <span className="rounded-full border border-[color-mix(in_oklch,var(--accent)_52%,transparent)] bg-[color-mix(in_oklch,var(--accent)_16%,transparent)] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[var(--accent)] backdrop-blur">Wikipedia · MediaAI</span>
           <span className="text-[10px] font-bold tabular-nums text-white/55">{index + 1} / {total}</span>
         </div>
-        <h1 className="scroller-display line-clamp-3 max-w-5xl text-[clamp(2rem,9vw,4.7rem)] font-black uppercase leading-[0.9] tracking-[-0.065em] text-white [text-shadow:0_2px_24px_rgba(0,0,0,.75)]">{item.topic}</h1>
-        <p className="mt-3 text-xs font-bold uppercase tracking-[0.12em] text-white/55">{mediaLabel || `${item.assetCount} generated assets`}</p>
-        <p className="mt-2 text-sm font-medium text-white/65">Swipe, use ↓, or hit Next scroll.</p>
+        <h1 className="scroller-display line-clamp-2 max-w-5xl text-[clamp(1.5rem,6.5vw,3.25rem)] font-black uppercase leading-[0.95] tracking-[-0.055em] text-white [text-shadow:0_2px_24px_rgba(0,0,0,.75)]">{item.topic}</h1>
+        <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--accent)]/85">{mediaLabel || `${item.assetCount} generated assets`}</p>
+        <p className="mt-1 text-sm font-medium text-white/70 line-clamp-1">Tap card for details · ↑↓ or swipe to scroll.</p>
       </div>
     </section>
   );

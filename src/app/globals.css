@@ -112,11 +112,11 @@
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Signal palette — acid scroll CTA + hot publish lane. */
-  --accent: #ddff52;
-  --accent-strong: #c4ed28;
-  --accent-soft: color-mix(in oklch, #ddff52 22%, transparent);
-  --publish-accent: #ff5a8a;
+  /* v3.2 — pink accent across the app (was acid yellow-green). */
+  --accent: #ec4899;
+  --accent-strong: #db2777;
+  --accent-soft: color-mix(in oklch, #ec4899 22%, transparent);
+  --publish-accent: #ec4899;
 
   /* Bridge legacy scroller vars to the wikai accent so per-source cards
      that still read var(--app-accent) render in-brand. */
