@@ -17,6 +17,17 @@ test("mobile home renders the immersive MediaAI snap feed", async ({ page }) => 
   await expect(feed.locator("section").first()).toBeVisible();
   await expect(page.getByRole("button", { name: "Shuffle MediaAI feed" })).toBeVisible();
   await expect(page.getByRole("link", { name: "Open all Scroller sources" })).toHaveAttribute("href", "/browse");
+  await expect(page.getByRole("button", { name: "Next scroll" })).toBeVisible();
+
+  await page.getByRole("button", { name: "Open asset navigation" }).click();
+  await expect(page.getByRole("link", { name: /S3 · com27/ })).toHaveAttribute("href", "/admin/s3");
+  await expect(page.getByRole("link", { name: /MediaAI · Mongo/ })).toHaveAttribute("href", "/admin/mongo");
+  await page.getByRole("button", { name: "Close navigation" }).click();
+
+  await page.getByRole("button", { name: "Open publish destinations" }).click();
+  await expect(page.getByRole("link", { name: /Gorai/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: /^Siems Production/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: /WIKAI/ })).toBeVisible();
 });
 
 test("browse route keeps the mixed-source browser available", async ({ page }) => {

@@ -165,7 +165,18 @@ export async function getStars(): Promise<{ stars: Star[]; truncated: boolean }>
       truncated = true;
       break;
     }
-    const items = (await res.json()) as Array<Record<string, unknown>>;
+    let items: Array<Record<string, unknown>>;
+    try {
+      items = (await res.json()) as Array<Record<string, unknown>>;
+    } catch (error) {
+      console.warn("[github-stars] malformed response, returning the pages already loaded", error);
+      truncated = true;
+      break;
+    }
+    if (!Array.isArray(items)) {
+      truncated = true;
+      break;
+    }
     if (!items.length) break;
     for (const it of items) {
       stars.push({

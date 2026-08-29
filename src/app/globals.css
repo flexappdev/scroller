@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Unbounded:wght@600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -106,15 +106,17 @@
   --destructive: oklch(0.65 0.22 25);
   --destructive-foreground: oklch(0.985 0 0);
 
-  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: 'Chivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Unbounded', 'Chivo', ui-sans-serif, system-ui, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
-  /* Pink accent — Tailwind pink-500 (wikai v1.4+). */
-  --accent: #ec4899;
-  --accent-strong: #db2777;
-  --accent-soft: color-mix(in oklch, #ec4899 22%, transparent);
+  /* Signal palette — acid scroll CTA + hot publish lane. */
+  --accent: #ddff52;
+  --accent-strong: #c4ed28;
+  --accent-soft: color-mix(in oklch, #ddff52 22%, transparent);
+  --publish-accent: #ff5a8a;
 
   /* Bridge legacy scroller vars to the wikai accent so per-source cards
      that still read var(--app-accent) render in-brand. */
@@ -190,6 +192,8 @@ body {
 
 button { font-family: inherit; }
 
+.scroller-display { font-family: var(--font-display); }
+
 *::-webkit-scrollbar { display: none; }
 * { scrollbar-width: none; }
 
@@ -254,6 +258,17 @@ button { font-family: inherit; }
 @keyframes wikai-pulse {
   0%,100% { opacity: 0.4; transform: translateX(-50%) translateY(0); }
   50%     { opacity: 0.9; transform: translateX(-50%) translateY(3px); }
+}
+
+@keyframes dice-roll {
+  0% { transform: rotate(0deg) scale(1); }
+  30% { transform: rotate(150deg) scale(1.28); }
+  65% { transform: rotate(285deg) scale(0.9); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+.dice-is-rolling {
+  animation: dice-roll 620ms cubic-bezier(0.2, 0.85, 0.2, 1);
 }
 
 .wikai-skeleton {

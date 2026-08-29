@@ -37,7 +37,15 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
   }, []);
 
   if (immersiveHome) {
-    return <main className="min-h-[100dvh] bg-black">{children}</main>;
+    return (
+      <>
+        <Suspense fallback={null}>
+          <StickyHeader />
+        </Suspense>
+        <main className="min-h-[100dvh] bg-black">{children}</main>
+        <StickyFooter />
+      </>
+    );
   }
 
   return (

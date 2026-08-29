@@ -3,6 +3,59 @@
 Living list of what's queued after v2.5. Prune when items ship; move to
 `/version` page on release.
 
+## v3.1 — Ultimate home scroller (wikai parity)
+
+Ship on top of the v3.0 wikai skin. `/` is now `MediaAiFeed` (immersive
+swipe) with `StickyHeader` + `StickyFooter` from `AppShell` — the goal is
+to make the home feed the best-in-class scroller across the fleet.
+
+- [x] **Tap-to-details on home cards** — full-card tap zone + `Details`
+      action opens `ItemModal` with image, media summary, article link,
+      audio, motion clips, WIKAI read link. (`MediaAiFeed.tsx`, 2026-08-29)
+- [ ] **Deep-link a card** — `/?card=<mediai-id>` opens the detail sheet
+      on load and scrolls the feed to that card. Powers share links.
+- [ ] **Copy-link + native share sheet** — replace the current
+      `navigator.share`-with-clipboard-fallback with a two-tier: primary
+      = share sheet, secondary = copy `/?card=<id>` link.
+- [ ] **Swipe-left / swipe-right hint** — left = open details, right =
+      save/bookmark. Reuse existing snap-y feed; horizontal swipe on a
+      card should not scroll vertically.
+- [ ] **Bookmarks / Saved** — `localStorage` list of saved MediaAI ids
+      surfaced at `/saved` and a "Save" action on each card.
+- [ ] **Sticky header polish (wikai parity)** — active-tab underline,
+      breadcrumbs on non-home routes, per-source accent chip on left.
+- [ ] **Sticky footer polish (wikai parity)** — progress bar for
+      `activeIndex/total`, keyboard-cheatsheet popover (↑ ↓ Space R),
+      "Jump to top" chevron on scroll.
+- [ ] **Home search overlay** — `/` opens command-K sheet that searches
+      MediaAI topics + all sources.
+- [ ] **Filter chips overlay** — image-only, motion-only, audio-only
+      toggles (mirrors `HomeClient` kindOptions on the immersive feed).
+- [ ] **Playlist / queue mode** — pause after N cards, "watch next 10",
+      autoplay through motion clips.
+- [ ] **Related rail inside detail sheet** — "More like this" list of
+      sibling MediaAI topics (topic-cluster or same domain).
+- [ ] **Reactions** — 👍 / 🔥 / 🎯 tallies persisted in Mongo
+      `AIDB.reactions` keyed by mediai id.
+- [ ] **PWA install + offline shell** — manifest + service-worker cache
+      of last-N cards for offline swiping.
+- [ ] **Card metadata footer** — dominant colour + provenance line
+      (`bucket/prefix/id`) toggled behind an "i" tap.
+- [ ] **Per-source accent theming** — pull accent from
+      `KIND_LABELS`/source registry so cards + header chip match.
+- [ ] **A11y sweep** — swipe-feed `role=feed`, live-region for
+      `Loading more MediaAI items`, focus ring restore on modal close,
+      reduced-motion path.
+- [ ] **Cheatsheet page** — `/keys` renders every keyboard binding
+      (currently only ↑ ↓ PageUp PageDown documented in code).
+- [ ] **RSS feed** — `/rss.xml` from MediaAI topics (mirrors wikai v1.13
+      shorts feed pattern).
+- [ ] **Sitemap for MediaAI topics** — expand `sitemap.ts` beyond the
+      static routes to include one entry per MediaAI card.
+- [ ] **Prev/next skip smoothing** — use IntersectionObserver instead of
+      the current `scrollTop / clientHeight` maths so `activeIndex` stays
+      accurate on rapid swipes.
+
 ## v2.6 — Mobile port + observability
 
 - [ ] **Mobile port based on wikai v1.6** — full plan in `docs/MOBILE-V16.md`.
