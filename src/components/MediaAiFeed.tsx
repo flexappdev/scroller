@@ -46,6 +46,15 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   const [detail, setDetail] = useState<MediaAiArticle | null>(null);
   const feedRef = useRef<HTMLDivElement>(null);
 
+  const closeDetail = useCallback(() => {
+    setDetail(null);
+    if (typeof window === "undefined") return;
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has("card")) return;
+    url.searchParams.delete("card");
+    window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+  }, []);
+
   const loadMore = useCallback(async () => {
     if (nextOffset == null || loadingMore) return;
     setLoadingMore(true);
@@ -91,6 +100,18 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
     el.scrollTo({ top: target * el.clientHeight, behavior: "smooth" });
     setActiveIndex(target);
   }, [items.length]);
+
+  // Links copied from the detail sheet are real restorable deep links. The
+  // topic card is part of the initial MediaAI window, even though its display
+  // order is shuffled on each request.
+  useEffect(() => {
+    const cardId = new URLSearchParams(window.location.search).get("card");
+    if (!cardId) return;
+    const index = items.findIndex((item) => item.id === cardId);
+    if (index < 0) return;
+    setDetail(items[index]);
+    goTo(index);
+  }, [goTo, items]);
 
   const shuffle = useCallback(() => {
     setItems((current) => shuffled(current));
@@ -154,7 +175,7 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
         ))}
         {loadingMore && <div className="h-1 w-full bg-pink-500/60" aria-label="Loading more MediaAI items" />}
       </div>
-      <MediaDetailSheet item={detail} onClose={() => setDetail(null)} />
+      <MediaDetailSheet item={detail} onClose={closeDetail} />
     </main>
   );
 }

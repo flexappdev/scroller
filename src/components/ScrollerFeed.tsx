@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { Copy, Check, ExternalLink, Globe, Plane, ShoppingBag, ImageIcon } from "lucide-react";
-import ItemModal, { type ItemModalDetail } from "./ItemModal";
+import ItemModal, { type ItemModalDetail, youtubeEmbedFrom } from "./ItemModal";
 import { liveUrl, githubUrl } from "@/lib/scroll/fleet-urls";
 import { imageFor, gradientFor } from "@/lib/scroll/card-images";
 
@@ -108,8 +108,16 @@ export function cardItemId(card: Card): string {
 export function toModalDetail(card: Card): ItemModalDetail {
   const id = cardItemId(card);
   switch (card.kind) {
-    case "video":
-      return { id, title: card.title, subtitle: "Video · YouTube", image: card.thumbnail, url: card.url, urlLabel: "Watch on YouTube", internalHref: `/items/${encodeURIComponent(id)}` };
+    case "video": {
+      const embedUrl = youtubeEmbedFrom(card.url);
+      const isMp4 = /\.mp4($|\?)/i.test(card.url);
+      const embed = embedUrl
+        ? ({ kind: "youtube" as const, url: embedUrl })
+        : isMp4
+          ? ({ kind: "mp4" as const, url: card.url })
+          : undefined;
+      return { id, title: card.title, subtitle: "Video · YouTube", image: card.thumbnail, url: card.url, urlLabel: "Watch on YouTube", internalHref: `/items/${encodeURIComponent(id)}`, embed };
+    }
     case "star":
       return { id, title: card.full_name, subtitle: `GitHub · ${card.language ?? "Repo"} · ★ ${card.stars.toLocaleString()}`, description: card.description, url: card.html_url, urlLabel: "Open on GitHub", internalHref: `/items/${encodeURIComponent(id)}` };
     case "prompt": {

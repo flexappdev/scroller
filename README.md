@@ -4,9 +4,16 @@
 
 Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#10b981** · **v2.5.0**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#ec4899** · **v3.2.0**
 
-## What's new in v2.5.0
+## What's new in v3.2.0
+
+- **MediaAI-first immersive home** — full-screen generated image, motion and narration cards with wrap-around keyboard, button and swipe navigation.
+- **App-style sticky chrome** — all media, knowledge, source, S3 and Mongo destinations are in the Assets menu; Gorai, Siems Production, WIKAI and MediaAI are prioritized under Publish.
+- **Scroll is always the CTA** — persistent `Next scroll`, animated Random dice and position-aware previous navigation.
+- **Article-rich details** — responsive sheet with Wikipedia context, inline media, source actions and restorable `?card=` deep links.
+
+## Previously in v2.5.0
 
 - **Light mode is now the default** — dark mode moves to opt-in via the footer Sun/Moon `ThemeToggle`; FOUC-safe pre-hydration script writes `data-theme` on `<html>` before first paint (backed by `localStorage.scroller-theme`).
 - **`/diagrams` page** — 8 editorial inline-SVG panels in the `/abc-diagrams` style: stack overview, system architecture, cache flow, source fetchers, `imageFor` resolver, mobile ArticleCard anatomy, auth gate, content pipeline. Components live under `src/components/admin/diagrams/`.

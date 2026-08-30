@@ -90,8 +90,12 @@ export default function MobileFeed({ cards }: { cards: Card[] }) {
   };
 
   return (
-    <div data-testid="mobile-feed" className="mobile-feed fixed inset-0 z-50 overflow-hidden bg-black" style={{ color: "white" }}>
-      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-center justify-between gap-2 px-3 pt-[calc(env(safe-area-inset-top)+10px)]">
+    <div
+      data-testid="mobile-feed"
+      className="mobile-feed fixed inset-x-0 z-30 overflow-hidden bg-black"
+      style={{ color: "white", top: "calc(56px + env(safe-area-inset-top))", bottom: "calc(72px + env(safe-area-inset-bottom))" }}
+    >
+      <header className="pointer-events-none absolute inset-x-0 top-0 z-20 flex items-center justify-between gap-2 px-3 pt-3">
         <button type="button" onClick={() => setPickerOpen(true)} className="pointer-events-auto inline-flex min-h-10 items-center gap-2 rounded-full border border-white/15 bg-black/45 px-3 text-[11px] font-bold uppercase tracking-[0.14em] text-white/90 backdrop-blur-xl">
           <span className="h-2 w-2 rounded-full" style={{ background: source === "all" ? "#10b981" : MOBILE_SOURCE_ACCENTS[source] }} />
           {source === "all" ? "Every source" : MOBILE_SOURCE_LABELS[source]}
@@ -103,7 +107,7 @@ export default function MobileFeed({ cards }: { cards: Card[] }) {
         </div>
       </header>
 
-      <div ref={feedRef} data-testid="mobile-snap-container" className="h-[100dvh] w-full snap-y snap-mandatory overflow-y-auto overscroll-y-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div ref={feedRef} data-testid="mobile-snap-container" className="h-full w-full snap-y snap-mandatory overflow-y-auto overscroll-y-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {items.map((item, index) => (
           <FeedCard key={item.id} item={item} index={index} total={items.length} active={index === activeIndex} liked={liked.has(item.id)} saved={saved.has(item.id)} onOpen={() => setSelected(item)} onLike={() => toggle("liked", item.id)} onSave={() => toggle("saved", item.id)} />
         ))}
@@ -124,7 +128,7 @@ function FeedCard({ item, index, total, active, liked, saved, onOpen, onLike, on
   };
 
   return (
-    <section className="relative h-[100dvh] w-full snap-start snap-always overflow-hidden bg-zinc-950" aria-label={`${item.sourceLabel}: ${item.title}`}>
+    <section className="relative h-full w-full snap-start snap-always overflow-hidden bg-zinc-950" aria-label={`${item.sourceLabel}: ${item.title}`}>
       <div className="absolute inset-0" style={{ background: item.fallback }} />
       {item.image && <img src={item.image} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover" loading={active ? "eager" : "lazy"} onError={(event) => { event.currentTarget.style.display = "none"; }} />}
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,.55)_0%,rgba(0,0,0,.06)_31%,rgba(0,0,0,.38)_58%,rgba(0,0,0,.96)_100%)]" />

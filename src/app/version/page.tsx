@@ -22,6 +22,31 @@ type Release = {
 // does, not marketing polish — this page doubles as an engineering changelog.
 const RELEASES: Release[] = [
   {
+    version: "3.2.0",
+    date: "2026-08-29",
+    commit: "c3c17c3",
+    headline: "One immersive feed, rich details, folded navigation",
+    bullets: [
+      "Sticky app header exposes every media, knowledge, source, S3 and MediaAI destination without a permanent sidebar",
+      "Persistent footer makes Next scroll the primary CTA and adds animated Random dice plus wrap-around previous/next navigation",
+      "Priority publish menu links Gorai, Siems Production, WIKAI and MediaAI",
+      "MediaAI detail sheet adds Wikipedia context, inline motion and narration, article actions and restorable card deep links",
+      "Pink signal system, mobile-safe card text and responsive desktop/mobile detail layouts",
+    ],
+  },
+  {
+    version: "3.1.0",
+    date: "2026-08-29",
+    commit: "922b0d6",
+    headline: "MediaAI-first Scroller homepage",
+    bullets: [
+      "Generated MediaAI assets became the default full-screen snap feed",
+      "All asset stores and publishing destinations were consolidated into sticky app chrome",
+      "Random feed shuffling preserves order while later MediaAI pages append",
+      "Mobile E2E coverage added for the core feed, navigation and publishing controls",
+    ],
+  },
+  {
     version: "2.5.0",
     date: "2026-07-27",
     headline: "Light mode default + /diagrams page + BACKLOG sweep",

@@ -11,6 +11,8 @@ export type ItemModalAction = {
   primary?: boolean;
 };
 
+export type ItemModalEmbed = { kind: "youtube" | "mp4"; url: string };
+
 export type ItemModalDetail = {
   id: string;
   title: string;
@@ -22,7 +24,25 @@ export type ItemModalDetail = {
   accent?: string;
   internalHref?: string;
   extraActions?: ItemModalAction[];
+  embed?: ItemModalEmbed;
 };
+
+export function youtubeEmbedFrom(url: string): string | null {
+  try {
+    const u = new URL(url);
+    if (u.hostname.includes("youtu.be")) {
+      const id = u.pathname.replace(/^\//, "");
+      return id ? `https://www.youtube.com/embed/${id}` : null;
+    }
+    if (u.hostname.includes("youtube.com")) {
+      const v = u.searchParams.get("v");
+      if (v) return `https://www.youtube.com/embed/${v}`;
+      const m = u.pathname.match(/\/(?:embed|shorts)\/([\w-]+)/);
+      if (m) return `https://www.youtube.com/embed/${m[1]}`;
+    }
+    return null;
+  } catch { return null; }
+}
 
 const SIDE_PANEL_BREAKPOINT_PX = 1024; // lg
 const PREVIEW_OPEN_FLAG = "data-preview-open";
@@ -89,7 +109,23 @@ export default function ItemModal({
         <X className="h-4 w-4" />
       </button>
 
-      {item.image && (
+      {item.embed?.kind === "youtube" && (
+        <div className="relative w-full bg-black">
+          <iframe
+            src={item.embed.url}
+            title={item.title}
+            className="w-full aspect-video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
+      )}
+      {item.embed?.kind === "mp4" && (
+        <div className="relative w-full bg-black">
+          <video src={item.embed.url} controls playsInline preload="metadata" poster={item.image ?? undefined} className="w-full aspect-video bg-black" />
+        </div>
+      )}
+      {!item.embed && item.image && (
         <div className="relative w-full bg-zinc-900">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={item.image} alt={item.title} className="w-full aspect-video object-cover" />

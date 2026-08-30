@@ -1,5 +1,6 @@
 export type ScrollSourceId =
   | "all"
+  | "mediai"
   | "videos"
   | "github"
   | "prompts"
@@ -8,7 +9,8 @@ export type ScrollSourceId =
   | "wiki"
   | "wikivoyage"
   | "amazon"
-  | "images";
+  | "images"
+  | "funny";
 
 export interface ScrollSource {
   id: ScrollSourceId;
@@ -20,7 +22,8 @@ export interface ScrollSource {
 }
 
 export const SCROLL_SOURCES: ScrollSource[] = [
-  { id: "all", label: "All", description: "Random feed across every scroll source.", accent: "#10b981", href: "/" },
+  { id: "all", label: "All", description: "Random feed across every scroll source.", accent: "#ec4899", href: "/" },
+  { id: "mediai", label: "MediaAI", description: "Generated Wikipedia-derived image, motion and audio.", accent: "#ec4899", href: "/" },
   { id: "videos", label: "Videos", description: "@MatSiems + @mat-siems-production on YouTube.", accent: "#ef4444", href: "/videos" },
   { id: "github", label: "GitHub", description: "Stars from @flexappdev.", accent: "#a78bfa", href: "/github" },
   { id: "prompts", label: "Prompts", description: "Top 100 AI prompts.", accent: "#f59e0b", href: "/prompts" },
@@ -30,6 +33,7 @@ export const SCROLL_SOURCES: ScrollSource[] = [
   { id: "wikivoyage", label: "WikiVoyage", description: "Random WikiVoyage destinations.", accent: "#3b82f6", href: "/wikivoyage" },
   { id: "amazon", label: "Amazon", description: "Amazon UK Best-Sellers (zgbs).", accent: "#ff9900", href: "/amazon" },
   { id: "images", label: "Images", description: "S3 image gallery with metadata + search.", accent: "#22d3ee", href: "/images" },
+  { id: "funny", label: "Funny 100", description: "Top 100 funniest things ever — editorial ranked.", accent: "#f472b6", href: "/funny" },
 ];
 
 export function sourceById(id: string | undefined | null): ScrollSource {

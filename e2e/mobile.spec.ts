@@ -30,8 +30,24 @@ test("mobile home renders the immersive MediaAI snap feed", async ({ page }) => 
   await expect(page.getByRole("link", { name: /WIKAI/ })).toBeVisible();
 });
 
+test("MediaAI card details open and copied card links restore the sheet", async ({ page }) => {
+  await page.route(/\.s3\.amazonaws\.com\//, (route) => route.abort());
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+
+  const detailsButton = page.getByRole("button", { name: /^Open details for / }).first();
+  const topic = (await detailsButton.getAttribute("aria-label"))?.replace("Open details for ", "");
+  expect(topic).toBeTruthy();
+  await detailsButton.click();
+  await expect(page.getByRole("dialog", { name: `Details: ${topic}` })).toBeVisible();
+  await page.getByRole("button", { name: "Close" }).click();
+
+  const cardId = encodeURIComponent(`topic:${topic}`);
+  await page.goto(`/?card=${cardId}`, { waitUntil: "domcontentloaded" });
+  await expect(page.getByRole("dialog", { name: `Details: ${topic}` })).toBeVisible();
+});
+
 test("browse route keeps the mixed-source browser available", async ({ page }) => {
-  const response = await page.goto("/browse");
+  const response = await page.goto("/browse", { waitUntil: "domcontentloaded" });
   expect(response?.status()).toBeLessThan(400);
   await expect(page.getByTestId("mobile-feed")).toBeVisible();
 });

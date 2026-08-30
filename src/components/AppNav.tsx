@@ -19,6 +19,7 @@ const themeItems = [
 
 const SOURCE_ICONS: Record<ScrollSourceId, typeof Layers> = {
   all: Layers,
+  mediai: Smartphone,
   videos: Video,
   github: Github,
   prompts: Sparkles,
@@ -28,6 +29,7 @@ const SOURCE_ICONS: Record<ScrollSourceId, typeof Layers> = {
   wikivoyage: Plane,
   amazon: ShoppingBag,
   images: ImageIcon,
+  funny: Laugh,
 };
 
 const sourceItems = SCROLL_SOURCES

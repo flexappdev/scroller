@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import StickyHeader from "./StickyHeader";
 import StickyFooter from "./StickyFooter";
 
-// Width of the desktop preview side-panel — must match the value used
-// in ItemModal's side-panel render (`w-[28rem]`).
+// Width of the desktop preview side-panel — must match the value used by the
+// detail sheets (`w-[28rem]`).
 const PREVIEW_PANEL_WIDTH = 448;
 
 export default function AppShell({ children }: { children: React.ReactNode }) {
