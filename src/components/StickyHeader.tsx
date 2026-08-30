@@ -23,6 +23,7 @@ import {
   X,
 } from "lucide-react";
 import { useEffect, useRef, useState, type ComponentType } from "react";
+import BrowseModal from "./BrowseModal";
 
 type MenuName = "assets" | "publish" | null;
 
@@ -149,6 +150,7 @@ function NavItemLink({ item, onSelect }: { item: NavItem; onSelect: () => void }
 export default function StickyHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState<MenuName>(null);
+  const [browseOpen, setBrowseOpen] = useState(false);
   const wrapRef = useRef<HTMLElement>(null);
   const onHome = pathname === "/";
 
@@ -176,13 +178,13 @@ export default function StickyHeader() {
       style={{ left: "var(--sidebar-w, 0px)" }}
     >
       <Link href="/" aria-label="Scroller home" className="group flex min-w-0 items-center gap-2.5">
-        <span className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[var(--accent)] text-black shadow-[0_0_28px_color-mix(in_oklch,var(--accent)_28%,transparent)]">
+        <span className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[var(--accent)] text-white shadow-[0_0_28px_color-mix(in_oklch,var(--accent)_28%,transparent)]">
           <span className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,.5),transparent_48%)]" />
           <ScrollText className="relative h-[18px] w-[18px]" />
         </span>
-        <span className="hidden min-w-0 sm:block">
-          <span className="scroller-display block text-[11px] font-black uppercase leading-none tracking-[-0.03em]">Scroller</span>
-          <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.16em]" style={{ color: "var(--foreground-muted)" }}>
+        <span className="min-w-0">
+          <span className="scroller-display block text-[15px] font-black uppercase leading-none tracking-[-0.03em]">SCROLLER</span>
+          <span className="mt-1 hidden text-[9px] font-semibold uppercase tracking-[0.16em] sm:block" style={{ color: "var(--foreground-muted)" }}>
             one feed · every source
           </span>
         </span>
@@ -201,15 +203,16 @@ export default function StickyHeader() {
       </div>
 
       <div className="ml-auto flex items-center gap-1.5">
-        <Link
-          href="/browse"
-          aria-label="Open all Scroller sources"
+        <button
+          type="button"
+          onClick={() => setBrowseOpen(true)}
+          aria-label="Open browse — all sources and topics"
           className="flex h-9 items-center gap-2 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
           style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
         >
           <Layers3 className="h-4 w-4" />
-          <span className="hidden lg:inline">All media</span>
-        </Link>
+          <span className="hidden sm:inline">Browse</span>
+        </button>
         <button
           type="button"
           onClick={() => setOpen((current) => (current === "assets" ? null : "assets"))}
@@ -283,6 +286,7 @@ export default function StickyHeader() {
           )}
         </div>
       )}
+      <BrowseModal open={browseOpen} onClose={() => setBrowseOpen(false)} />
     </header>
   );
 }

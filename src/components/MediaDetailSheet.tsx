@@ -9,21 +9,34 @@ type WikiSummary = {
   description?: string;
   thumbnail?: string;
   desktopUrl?: string;
+  fullText?: string;
 };
 
 async function fetchWikiSummary(topic: string): Promise<WikiSummary | null> {
   const title = topic.replaceAll(" ", "_").replaceAll("/", "_");
   try {
-    const res = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`, {
-      headers: { accept: "application/json" },
-    });
-    if (!res.ok) return null;
-    const j = await res.json();
+    // Summary + full plaintext extract in parallel — summary gives the
+    // description + thumbnail, action=query gives the whole article.
+    const [summaryRes, fullRes] = await Promise.all([
+      fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title)}`, { headers: { accept: "application/json" } }),
+      fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&prop=extracts&explaintext=1&redirects=1&origin=*&titles=${encodeURIComponent(topic)}`, { headers: { accept: "application/json" } }),
+    ]);
+    const summary = summaryRes.ok ? await summaryRes.json() : null;
+    let fullText: string | undefined;
+    if (fullRes.ok) {
+      const j = await fullRes.json();
+      const pages = j?.query?.pages;
+      if (pages && typeof pages === "object") {
+        const first = Object.values(pages)[0] as { extract?: string } | undefined;
+        if (first?.extract) fullText = first.extract;
+      }
+    }
     return {
-      extract: typeof j.extract === "string" ? j.extract : "",
-      description: typeof j.description === "string" ? j.description : undefined,
-      thumbnail: j.thumbnail?.source,
-      desktopUrl: j.content_urls?.desktop?.page,
+      extract: typeof summary?.extract === "string" ? summary.extract : "",
+      description: typeof summary?.description === "string" ? summary.description : undefined,
+      thumbnail: summary?.thumbnail?.source,
+      desktopUrl: summary?.content_urls?.desktop?.page,
+      fullText,
     };
   } catch {
     return null;
@@ -115,12 +128,27 @@ export default function MediaDetailSheet({
         <X className="h-4 w-4" />
       </button>
 
-      {heroImage && (
+      {item.videoUrls[0] ? (
+        <div className="relative w-full bg-black">
+          <video
+            src={item.videoUrls[0]}
+            poster={heroImage ?? undefined}
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="w-full aspect-video bg-black object-cover"
+            aria-label={`Video for ${item.topic}`}
+          />
+        </div>
+      ) : heroImage ? (
         <div className="relative w-full bg-zinc-900">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src={heroImage} alt={item.topic} className="w-full aspect-video object-cover" />
         </div>
-      )}
+      ) : null}
 
       <div className="p-5 space-y-4">
         <div>
@@ -144,19 +172,37 @@ export default function MediaDetailSheet({
 
         <article className="text-sm leading-6 text-zinc-300">
           {loadingWiki && <p className="text-zinc-500">Loading article…</p>}
-          {!loadingWiki && wiki?.extract && <p className="whitespace-pre-line">{wiki.extract}</p>}
-          {!loadingWiki && !wiki?.extract && (
-            <p className="text-zinc-500">No Wikipedia extract available for this topic.</p>
+          {!loadingWiki && (wiki?.fullText || wiki?.extract) && (
+            <div className="space-y-3">
+              {(wiki?.fullText ?? wiki?.extract ?? "")
+                .split(/\n{2,}/)
+                .filter((para) => para.trim().length > 0)
+                .map((para, i) => {
+                  // Wikipedia plaintext uses '\n\n== Heading ==\n\n' — surface headings.
+                  const heading = para.match(/^==+\s*(.+?)\s*==+$/);
+                  if (heading) {
+                    return (
+                      <h3 key={i} className="mt-3 text-[13px] font-black uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
+                        {heading[1]}
+                      </h3>
+                    );
+                  }
+                  return <p key={i} className="whitespace-pre-line">{para}</p>;
+                })}
+            </div>
+          )}
+          {!loadingWiki && !wiki?.fullText && !wiki?.extract && (
+            <p className="text-zinc-500">No Wikipedia article available for this topic.</p>
           )}
         </article>
 
-        {item.videoUrls.length > 0 && (
+        {item.videoUrls.length > 1 && (
           <section className="space-y-2">
-            <div className="text-[10px] uppercase tracking-wider text-zinc-500 font-mono">Motion clips</div>
+            <div className="text-[10px] uppercase tracking-wider text-zinc-500 font-mono">More motion clips</div>
             <ul className="space-y-2">
-              {item.videoUrls.map((url, i) => (
+              {item.videoUrls.slice(1).map((url, i) => (
                 <li key={url}>
-                  <video src={url} controls playsInline preload="metadata" className="w-full rounded-md border border-zinc-800 bg-black" aria-label={`Motion clip ${i + 1}`} />
+                  <video src={url} controls playsInline preload="metadata" className="w-full rounded-md border border-zinc-800 bg-black" aria-label={`Motion clip ${i + 2}`} />
                 </li>
               ))}
             </ul>
