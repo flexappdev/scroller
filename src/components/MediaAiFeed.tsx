@@ -55,6 +55,14 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
     window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
   }, []);
 
+  const openDetail = useCallback((item: MediaAiArticle) => {
+    setDetail(item);
+    if (typeof window === "undefined") return;
+    const url = new URL(window.location.href);
+    url.searchParams.set("card", item.id);
+    window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+  }, []);
+
   const loadMore = useCallback(async () => {
     if (nextOffset == null || loadingMore) return;
     setLoadingMore(true);
@@ -77,13 +85,24 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
 
   useEffect(() => {
     const el = feedRef.current;
-    if (!el) return;
-    const onScroll = () => {
-      const next = Math.round(el.scrollTop / Math.max(1, el.clientHeight));
-      setActiveIndex(Math.max(0, Math.min(items.length - 1, next)));
-    };
-    el.addEventListener("scroll", onScroll, { passive: true });
-    return () => el.removeEventListener("scroll", onScroll);
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    // v3.4 — IO picks the card the user is actually on, which stays correct
+    // under fast swipes where scrollTop maths lags a frame or two.
+    const sections = Array.from(el.querySelectorAll<HTMLElement>("[data-card-index]"));
+    if (sections.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (!visible) return;
+        const idx = Number(visible.target.getAttribute("data-card-index"));
+        if (Number.isFinite(idx)) setActiveIndex(idx);
+      },
+      { root: el, threshold: [0.5, 0.75, 1] },
+    );
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, [items.length]);
 
   useEffect(() => {
@@ -170,7 +189,7 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
             index={index}
             total={items.length}
             active={index === activeIndex}
-            onOpenDetail={() => setDetail(item)}
+            onOpenDetail={() => openDetail(item)}
           />
         ))}
         {loadingMore && <div className="h-1 w-full bg-pink-500/60" aria-label="Loading more MediaAI items" />}
@@ -231,7 +250,7 @@ function MediaCard({ item, index, total, active, onOpenDetail }: { item: MediaAi
   ].filter(Boolean).join(" · ");
 
   return (
-    <section className="relative h-[100dvh] w-full snap-start snap-always overflow-hidden bg-zinc-950" aria-label={item.topic}>
+    <section data-card-index={index} className="relative h-[100dvh] w-full snap-start snap-always overflow-hidden bg-zinc-950" aria-label={item.topic}>
       <button
         type="button"
         onClick={onOpenDetail}
