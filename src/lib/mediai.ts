@@ -123,6 +123,27 @@ function groupAssets(assets: NormalizedAsset[]): MediaAiArticle[] {
   return [...grouped.values()].sort((a, b) => b.updatedAt - a.updatedAt);
 }
 
+async function getMediaAiSnapshotPage(offset: number, limit: number): Promise<MediaAiPage> {
+  const snapshotUrl = process.env.MEDIAI_SNAPSHOT_URL || "https://mediai-public.vercel.app/data.json";
+  try {
+    const response = await fetch(snapshotUrl, { next: { revalidate: 300 } });
+    if (!response.ok) return { items: [], nextOffset: null };
+    const snapshot = (await response.json()) as { items?: Array<Record<string, unknown>> };
+    const all = Array.isArray(snapshot.items) ? snapshot.items : [];
+    const docs = all.slice(offset, offset + limit);
+    const assets = docs
+      .map((doc) => normalizeAsset(doc))
+      .filter((asset): asset is NormalizedAsset => Boolean(asset));
+    return {
+      items: groupAssets(assets),
+      nextOffset: offset + docs.length < all.length ? offset + docs.length : null,
+    };
+  } catch (error) {
+    console.warn("[mediai] public snapshot fallback failed", error);
+    return { items: [], nextOffset: null };
+  }
+}
+
 /**
  * Read MediaAI's continuously-updated AIDB.media_baseline collection and
  * collapse the generated image + motion variants + narration into one
@@ -140,7 +161,7 @@ export async function getMediaAiPage({
   rawLimit?: number;
 } = {}): Promise<MediaAiPage> {
   const db = await tryGetDb(DB_NAME);
-  if (!db) return { items: [], nextOffset: null };
+  if (!db) return getMediaAiSnapshotPage(Math.max(0, Math.floor(offset)), Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit))));
 
   const safeOffset = Math.max(0, Math.floor(offset));
   const safeLimit = Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit)));
