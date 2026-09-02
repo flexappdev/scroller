@@ -13,24 +13,29 @@ plane. One engine, per-site config. Do not build a new Scroller per app.
 Ship as one release. No new pixels — the current v3.5 UI stays; the
 guts change so the next 100 apps can reuse them.
 
-- [ ] **Refresh `STATUS.md`** — currently pinned at v0.4.0, code is at
-      v3.5. Bring it up to date (MediaAI default, snapshot fallback,
-      wikai skin, deep-link URL, IO-based active card, pink favicon).
-- [ ] **Universal `ContentItem`** — collapse the 9-shape `Card` union in
-      `src/lib/types.ts` into one record: `id, rank, title, slug,
-      summary, markdown, topic, tags[], imageAssetId, videoAssetId,
-      audioAssetId, galleryAssetIds[], sources[], apps[], score,
-      status, metadata`. Fetchers keep source-specific loaders but
-      return `ContentItem`. (PRD §10)
+- [x] **Refresh `STATUS.md`** — v0.4.0 → v3.5. (2026-09-02, `b71dd4e`)
+- [x] **Universal `ContentItem` type + adapter** — added in
+      `src/lib/types.ts` alongside `AssetRef`, `MediaKind`,
+      `ContentAudience`, `ContentSource`, `ContentStatus`, and
+      `cardToContentItem()`. The 9-shape `Card` union in
+      `ScrollerFeed.tsx` still ships v3.5 UI unchanged; fetchers migrate
+      one at a time. (PRD §10, 2026-09-02)
+- [x] **`SiteConfig` schema + first consumer** — `src/lib/site-config.ts`
+      defines `SiteConfig` (brand, content, scroller mode, navigation).
+      `sites/scroller.config.ts` = first instance. `src/lib/site.ts`
+      resolves the active site via `SITE_ID` env or defaults to
+      scroller. (PRD §13, 2026-09-02)
+- [ ] **Migrate fetchers to return `ContentItem`** — one source per
+      commit (video → wiki → images → prompts → apps → sites → amazon →
+      github → mediai). Use `cardToContentItem()` as the reference
+      mapping.
 - [ ] **Extract `packages/scroller` shell** — move `AppShell`,
       `MediaAiFeed`, `ItemModal`, `StickyHeader`, `StickyFooter` out of
       `src/components/` into a package the next 100 apps consume.
-      Scroller itself becomes the first consumer. (PRD §17)
-- [ ] **`site.config.ts` stub** — schema: `{ id, brand: {name, accent},
-      content: {collection, defaultLimit}, scroller: {mode, ranking,
-      comments, audio, video}, navigation: {home, explore, create,
-      saved, profile} }`. Scroller's own config = the first file.
-      (PRD §13)
+      Requires npm workspaces setup. (PRD §17)
+- [ ] **Wire `getSite()` into `AppShell`** — read `brand.accent` and
+      `brand.name` from the resolved SiteConfig; drop the hard-coded pink
+      and "Scroller" strings.
 
 ## v4.1 — Five-button nav (PRD §11 + §12)
 
