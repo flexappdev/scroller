@@ -1,0 +1,30 @@
+{
+  "slug": "ai-context-2026",
+  "name": "Top 100 AI Context 2026",
+  "tagline": "The 100 models, platforms, concepts and people that explain AI at the end of Q3 2026.",
+  "description": "A ranked end-of-Q3 snapshot designed to give a practical mental model of the AI landscape heading into Q4 2026.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-03",
+  "defaultView": "scroller",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "LTX-2.5",
+    "videoFallback": "Runware"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
