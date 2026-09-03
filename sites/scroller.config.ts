@@ -5,7 +5,7 @@ import type { SiteConfig } from "@/lib/site-config";
 
 const scrollerSite: SiteConfig = {
   id: "scroller",
-  version: "4.0.0",
+  version: "4.1.0",
   brand: {
     name: "Scroller",
     accent: "#ec4899",
@@ -27,7 +27,7 @@ const scrollerSite: SiteConfig = {
   navigation: {
     home: true,
     explore: true,
-    create: { label: "Ask MediaAI", href: "/create" },
+    create: { label: "Gen", href: "/create" },
     saved: true,
     profile: true,
   },
