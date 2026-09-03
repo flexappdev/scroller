@@ -25,10 +25,15 @@ guts change so the next 100 apps can reuse them.
       `sites/scroller.config.ts` = first instance. `src/lib/site.ts`
       resolves the active site via `SITE_ID` env or defaults to
       scroller. (PRD §13, 2026-09-02)
-- [ ] **Migrate fetchers to return `ContentItem`** — one source per
-      commit (video → wiki → images → prompts → apps → sites → amazon →
-      github → mediai). Use `cardToContentItem()` as the reference
-      mapping.
+- [~] **Migrate fetchers to return `ContentItem`** — slice-2
+      (2026-09-03): added `src/lib/vault.ts` façade
+      `getContentItems({source, audience, limit})` covering 5 sources
+      (video, wiki, wikivoyage, prompt, github). Wraps existing fetchers
+      through `cardToContentItem()`. Enforces PRD §19 (rejects
+      audience: "private"). Legacy `getVideos()` / `getWiki()` etc.
+      still ship unchanged. Remaining sources: apps, sites, amazon,
+      images, mediai. Then routes migrate one at a time to consume
+      `getContentItems` instead of raw fetchers.
 - [ ] **Extract `packages/scroller` shell** — move `AppShell`,
       `MediaAiFeed`, `ItemModal`, `StickyHeader`, `StickyFooter` out of
       `src/components/` into a package the next 100 apps consume.
