@@ -5,11 +5,11 @@ import { usePathname } from "next/navigation";
 import { Bookmark, Compass, Home, Plus, UserRound } from "lucide-react";
 
 const NAV = [
-  { label: "Home", href: "/", icon: Home },
-  { label: "Explore", href: "/explore", icon: Compass },
+  { label: "Home", href: "/", icon: Home, primary: false },
+  { label: "Explore", href: "/explore", icon: Compass, primary: false },
   { label: "Gen", href: "/create", icon: Plus, primary: true },
-  { label: "Saved", href: "/saved", icon: Bookmark },
-  { label: "Me", href: "/me", icon: UserRound },
+  { label: "Saved", href: "/saved", icon: Bookmark, primary: false },
+  { label: "Me", href: "/me", icon: UserRound, primary: false },
 ] as const;
 
 function isActive(pathname: string, href: string) {
