@@ -25,6 +25,8 @@ Default behavior: research the topic live, create or refresh a ranked Top 100, v
 /scrollai refresh <slug>
 /scrollai embed <slug> --site <site-id>
 /scrollai status [slug]
+/scrollai daily
+/scrollai daily --status
 ```
 
 ## Non-negotiable architecture
@@ -211,3 +213,121 @@ Track by day, list and item:
 - gross and net revenue.
 
 Scale proven winners **Top 100 → 1K → 10K** while keeping the same pack/item schema.
+
+
+## Live Scroller status
+
+When the user asks for ScrollAI status, live status, fleet status, or "what scrollers are live":
+
+1. Run `npm run scroller:status`.
+2. Probe every pack under `data/scrollers/*` against each configured production base URL.
+3. Default production bases:
+   - `https://scroller-psi.vercel.app`
+   - `https://scroller-bay.vercel.app`
+4. Report one compact table with:
+   - slug;
+   - item count;
+   - local validation state;
+   - PSI HTTP state;
+   - BAY HTTP state;
+   - preferred live URL.
+5. Never infer "live" from GitHub presence alone. HTTP 2xx/3xx is live; failures/timeouts are degraded or offline.
+6. If a deployment cannot be reached from the current environment, say **unverified**, not live.
+7. `SCROLLER_LIVE_URLS` may override the production base list with comma-separated URLs.
+
+## Daily News Scroller
+
+`/scrollai daily` creates one dated Scroller Pack around the single most consequential fresh story of the day.
+
+### Editorial priority
+
+Select from the previous 24 hours using this order:
+
+1. **AI** — frontier models, agents, compute, safety, policy, major AI companies, copyright/IP, scientific AI.
+2. **Technology** — chips, cybersecurity, platforms, infrastructure, major product or industry shifts.
+3. **World affairs** — geopolitics, war/peace, trade, elections/policy, energy or events with broad global consequences.
+4. Other categories only when clearly more consequential than the available AI/tech/world stories.
+
+Priority is not blind category sorting. A trivial AI product update must not beat a genuinely major world event.
+
+### Story selection gate
+
+Before creating the pack:
+
+- resolve the current Europe/London date;
+- search fresh reporting from the last 24 hours;
+- compare **event time** and **publication time**;
+- prefer primary reporting and high-quality wires/public institutions;
+- require at least two credible independent sources when possible;
+- include a primary/official source when available;
+- reject rumours, thin rewrites, duplicate wire copies and low-impact promotional announcements;
+- choose exactly one lead story;
+- record why it won in `page.md`.
+
+Suggested scoring:
+
+```
+score =
+  category_priority     # AI 5, tech 4, world affairs 3
+  + significance 0..5
+  + freshness 0..3
+  + source_diversity 0..2
+  + durable_impact 0..3
+```
+
+### Daily pack contract
+
+Slug:
+
+```
+news-YYYY-MM-DD-<short-topic>
+```
+
+Title:
+
+```
+<Story>: 100 Things to Know
+```
+
+Default list shape:
+
+- 001–010 — what happened;
+- 011–025 — verified facts;
+- 026–040 — background;
+- 041–055 — key actors and institutions;
+- 056–070 — technical/legal/economic mechanics;
+- 071–085 — implications and competing interpretations;
+- 086–100 — what to watch next.
+
+Use careful language:
+- facts are facts;
+- allegations remain allegations;
+- forecasts are marked as scenarios;
+- unanswered questions are written as questions;
+- do not fill 100 slots with invented specificity.
+
+`page.md` must include:
+- snapshot date/timezone;
+- winning headline;
+- selection rationale;
+- source list with publication dates;
+- what is verified;
+- what remains disputed/unknown;
+- refresh policy.
+
+The daily pack is a historical snapshot. Tomorrow creates a new slug; it does **not** mutate yesterday's pack.
+
+### Daily publish flow
+
+1. research;
+2. select story;
+3. create `manifest.json`, `page.md`, `items.json`;
+4. reuse existing MediaAI/WIKAI assets when relevant;
+5. queue media gaps after text/list is valid;
+6. run `npm run scroller:validate`;
+7. run `npm run build` for runtime changes;
+8. publish through the normal production branch/deployment path;
+9. run `npm run scroller:status`;
+10. report the new live URL plus fleet status.
+
+`/scrollai daily --status` performs the generation flow and finishes with the live fleet table.
