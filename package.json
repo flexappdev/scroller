@@ -10,7 +10,8 @@
     "wiki:sync": "node scripts/wiki-sync.mjs",
     "scroller:new": "node scripts/scroller-new.mjs",
     "scroller:validate": "node scripts/scroller-validate.mjs",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "scroller:status": "node scripts/scroller-status.mjs"
   },
   "dependencies": {
     "@fleet/scroller": "file:./packages/scroller",
