@@ -1,0 +1,33 @@
+{
+  "slug": "news-2026-09-08-openai-nyt-copyright",
+  "name": "OpenAI v. The New York Times: 100 Things to Know",
+  "tagline": "Today’s lead AI story: the court fight that could shape how generative AI may train on copyrighted work.",
+  "description": "A dated 8 September 2026 ScrollAI news snapshot explaining the OpenAI/Microsoft v. publisher copyright fight, fair use, market harm, the competing arguments and what to watch next.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-08",
+  "snapshot": "2026-09-08 Europe/London",
+  "defaultView": "scroller",
+  "category": "AI",
+  "newsPriority": 1,
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "local-first",
+    "videoFallback": "Runware"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
