@@ -18,6 +18,7 @@ export { getSite, defineSite, registerSite } from "./config";
 
 export { Feed, type FeedProps } from "./components/Feed";
 export { Chrome, type ChromeProps } from "./components/Chrome";
+export { BottomNav, type BottomNavProps, type BottomNavItem } from "./components/BottomNav";
 export { Card, accentFor } from "./components/Cards";
 export { gradientFor } from "./lib/gradient";
 

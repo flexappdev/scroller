@@ -34,10 +34,27 @@ guts change so the next 100 apps can reuse them.
       still ship unchanged. Remaining sources: apps, sites, amazon,
       images, mediai. Then routes migrate one at a time to consume
       `getContentItems` instead of raw fetchers.
-- [ ] **Extract `packages/scroller` shell** — move `AppShell`,
+- [~] **Extract `packages/scroller` shell** — move `AppShell`,
       `MediaAiFeed`, `ItemModal`, `StickyHeader`, `StickyFooter` out of
       `src/components/` into a package the next 100 apps consume.
       Requires npm workspaces setup. (PRD §17)
+      - [x] `StickyFooter` → `@fleet/scroller/BottomNav` (config-driven,
+            props-first, defaults preserve v3.5 behavior). App
+            `StickyFooter.tsx` is now a 5-line adapter. tsc clean. (2026-09-08)
+      - [ ] `AppShell` → `@fleet/scroller/AppShell` (thin `Chrome` wrapper).
+      - [ ] `StickyHeader` (292L, 30 hardcoded nav items + "SCROLLER"
+            wordmark) → package. Needs `NavConfig` prop shape
+            (ASSET_GROUPS + PUBLISH_ITEMS externalized) OR split into
+            `<Header brand={...} slots={...} />` primitive + per-site
+            content. Do alongside SiteConfig-schema reconcile.
+      - [ ] `MediaAiFeed` (325L) → package. Depends on `ContentItem`
+            migration completing (feed still consumes 9-shape `Card` union).
+      - [ ] `ItemModal` (249L) → package. Do with `MediaAiFeed`.
+      - [ ] **Schema reconcile:** `packages/scroller/src/config.ts`
+            `SiteConfig` (sources/nav[]/monetisation/baseUrl) diverges from
+            app `src/lib/site-config.ts` `SiteConfig`
+            (content/scroller/navigation-flags). Pick one shape before more
+            package components read from `getSite()`.
 - [ ] **Wire `getSite()` into `AppShell`** — read `brand.accent` and
       `brand.name` from the resolved SiteConfig; drop the hard-coded pink
       and "Scroller" strings.
