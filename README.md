@@ -70,6 +70,33 @@ GET /api/scrollai/status
 
 AdSense is loaded only when `NEXT_PUBLIC_ADSENSE_CLIENT` is configured. Amazon URLs continue to enforce `AMAZON_ASSOCIATES_TAG`.
 
+## ScrollAI daily news + live status
+
+ScrollAI now supports:
+
+```text
+/scrollai status
+/scrollai daily
+/scrollai daily --status
+```
+
+Local fleet probe:
+
+```bash
+npm run scroller:status
+npm run scroller:status -- --json
+```
+
+The probe reads every `data/scrollers/*` pack and checks its `/scroller/<slug>` route against the configured live bases. Override production bases with `SCROLLER_LIVE_URLS`.
+
+Daily-news packs use immutable dated slugs:
+
+```text
+news-YYYY-MM-DD-<short-topic>
+```
+
+The first daily pack is `news-2026-09-08-openai-nyt-copyright`.
+
 ## Run locally
 
 ```sh
