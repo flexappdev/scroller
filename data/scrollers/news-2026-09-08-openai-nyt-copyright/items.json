@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "001",
+    "title": "The lead story",
+    "content": "A major U.S. copyright case involving OpenAI, Microsoft, The New York Times and other authors/publishers is moving toward a decision on whether AI training can qualify as fair use.",
+    "hook": "#1 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Why it matters today",
+    "content": "Reuters reported on 8 September that the dispute is shaping up as a key test of U.S. copyright law for generative-AI training.",
+    "hook": "#2 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "The central legal question",
+    "content": "The court must evaluate whether using copyrighted works to train large language models is protected by fair use under U.S. law.",
+    "hook": "#3 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "The venue",
+    "content": "The consolidated litigation is in the U.S. District Court for the Southern District of New York.",
+    "hook": "#4 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "The judge",
+    "content": "Judge Sidney H. Stein is handling the key fair-use questions highlighted in current reporting.",
+    "hook": "#5 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "OpenAI is a defendant",
+    "content": "OpenAI is accused of using copyrighted material without permission in the development of generative-AI systems.",
+    "hook": "#6 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "Microsoft is also a defendant",
+    "content": "Microsoft is part of the litigation because of its close commercial and product relationship with OpenAI and AI products such as Copilot.",
+    "hook": "#7 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "The New York Times is a plaintiff",
+    "content": "The Times argues that its copyrighted journalism was used without permission and that AI products can harm markets for original reporting.",
+    "hook": "#8 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "Authors are involved too",
+    "content": "The consolidated fight also includes claims from authors and other copyright owners, making the dispute broader than one newspaper.",
+    "hook": "#9 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "A ruling could arrive without a full trial",
+    "content": "Recent summary-judgment filings ask the judge to resolve important legal questions before trial if the court concludes the record permits it.",
+    "hook": "#10 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "The lawsuit began in 2023",
+    "content": "The New York Times filed its original federal lawsuit against OpenAI and Microsoft in December 2023.",
+    "hook": "#11 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "Training is different from output",
+    "content": "One core issue is whether copying works during model training should be analysed separately from what an AI system later produces for users.",
+    "hook": "#12 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "Fair use is fact-specific",
+    "content": "U.S. fair-use analysis does not turn on one automatic rule; courts weigh statutory factors and the particular facts of the use.",
+    "hook": "#13 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "Transformation is central",
+    "content": "OpenAI and Microsoft argue that training transforms source material into statistical/model capabilities rather than republishing the original works.",
+    "hook": "#14 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "Market harm is central too",
+    "content": "Publishers argue that AI products can substitute for or reduce the economic value of original journalism and licensed content.",
+    "hook": "#15 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "The government entered the fight",
+    "content": "The U.S. government filed a brief supporting OpenAI’s broad fair-use position in the litigation in early September 2026.",
+    "hook": "#16 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "The government brief is not binding",
+    "content": "A government amicus position may influence the court but does not decide the case; Judge Stein remains responsible for applying copyright law.",
+    "hook": "#17 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "National-security arguments are now in the record",
+    "content": "The government tied permissive AI-training rules to U.S. scientific, economic and national-security interests.",
+    "hook": "#18 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "Publishers reject that framing",
+    "content": "The New York Times and other rights holders argue that innovation policy should not erase creators’ rights to control and monetise protected works.",
+    "hook": "#19 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Courts have already split on AI-training issues",
+    "content": "Earlier U.S. cases have produced differing results depending on source acquisition, transformation, outputs and market evidence.",
+    "hook": "#20 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "Lawful acquisition can matter",
+    "content": "Recent AI copyright rulings have drawn distinctions between lawfully obtained material and content acquired from allegedly pirated sources.",
+    "hook": "#21 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "Output substitution can matter",
+    "content": "The more an AI output competes with the original work or replaces demand for it, the more important market-harm arguments may become.",
+    "hook": "#22 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "Memorisation is not the whole case",
+    "content": "The legal fight is wider than whether a chatbot can repeat text verbatim; it also concerns the act of copying works for training.",
+    "hook": "#23 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "Licensing markets are part of the economics",
+    "content": "Publishers increasingly point to existing or emerging AI-content licensing deals as evidence that training rights can carry market value.",
+    "hook": "#24 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "More newspapers are suing",
+    "content": "Seattle Times and Newsday recently joined the wider wave of publishers suing OpenAI and Microsoft over alleged training-related infringement.",
+    "hook": "#25 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Copyright protects expression",
+    "content": "Copyright generally protects original expression, not bare facts, ideas or general concepts.",
+    "hook": "#26 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "News articles can contain protected expression",
+    "content": "Journalistic works can combine uncopyrightable facts with copyright-protected wording, structure and creative choices.",
+    "hook": "#27 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "Fair use is a limitation on exclusive rights",
+    "content": "U.S. copyright law permits some unlicensed uses when the overall statutory analysis favours fair use.",
+    "hook": "#28 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "Factor one asks about purpose and character",
+    "content": "Courts examine why and how the work was used, including whether the use is transformative and commercial.",
+    "hook": "#29 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "Factor two looks at the source work",
+    "content": "The nature of the copyrighted work can influence the analysis, including how factual or creative it is.",
+    "hook": "#30 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Factor three looks at amount used",
+    "content": "Courts consider the quantity and qualitative importance of what was copied in relation to the original work.",
+    "hook": "#31 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Factor four looks at markets",
+    "content": "Courts examine the effect of the use on existing and reasonably expected markets for the copyrighted work.",
+    "hook": "#32 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "No factor works alone",
+    "content": "The four factors are weighed together rather than applied as a mechanical scorecard.",
+    "hook": "#33 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "AI training uses works at scale",
+    "content": "Generative models may train on extremely large datasets, making the scale of copying unlike many older fair-use disputes.",
+    "hook": "#34 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "Scale cuts both ways",
+    "content": "Developers say scale is necessary for general-purpose learning; copyright owners say scale magnifies uncompensated use and potential market effects.",
+    "hook": "#35 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "The Copyright Office studied the issue",
+    "content": "The U.S. Copyright Office has published a multi-part AI report that includes generative-AI training and fair-use questions.",
+    "hook": "#36 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "The Copyright Office rejected a one-size-fits-all answer",
+    "content": "Its training report says some uses may be fair and some may not, depending on facts such as purpose, source and market effect.",
+    "hook": "#37 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "Research uses can look different",
+    "content": "Noncommercial research that does not enable expressive substitution can present a stronger fair-use case than commercial systems that compete with source markets.",
+    "hook": "#38 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "Pirated datasets raise extra problems",
+    "content": "Acquiring source material through unlawful channels can create a legally different problem from training on lawfully obtained material.",
+    "hook": "#39 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "This dispute is about modern journalism markets",
+    "content": "The Times case squarely raises whether generative-AI systems compete with publishers for users, attention, subscriptions or licensing value.",
+    "hook": "#40 · Background",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "background"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "OpenAI’s core position",
+    "content": "OpenAI says training on publicly available information is a transformative analytical use protected by fair use.",
+    "hook": "#41 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "OpenAI also stresses public benefit",
+    "content": "The company argues that model training enables scientific, educational, business and creative uses that differ from the source works.",
+    "hook": "#42 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "OpenAI disputes substitution",
+    "content": "OpenAI argues its models are not designed to function as copies of individual copyrighted works.",
+    "hook": "#43 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "Microsoft’s role",
+    "content": "Microsoft argues that its AI products and use of OpenAI technology should be evaluated under the same broader fair-use and output-substitution framework.",
+    "hook": "#44 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "The Times’ core position",
+    "content": "The Times argues that OpenAI and Microsoft copied protected journalism without permission while building products that can compete with news publishers.",
+    "hook": "#45 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "The Times emphasises economic harm",
+    "content": "Its theory includes harm to subscriptions, traffic, licensing opportunities and the incentive to fund original journalism.",
+    "hook": "#46 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "Authors emphasise creative markets",
+    "content": "Book authors and other writers argue that unlicensed training can undermine markets for their expressive work and future licensing.",
+    "hook": "#47 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "The Justice Department supports broad training latitude",
+    "content": "The U.S. government’s recent brief argues that a restrictive interpretation of fair use could impede U.S. AI leadership.",
+    "hook": "#48 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "The court is not an AI regulator",
+    "content": "Judge Stein’s job is to apply copyright law to the record, not to design a comprehensive national AI policy.",
+    "hook": "#49 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "Congress still matters",
+    "content": "If courts expose gaps or unstable policy outcomes, Congress can revise copyright law or create targeted licensing rules.",
+    "hook": "#50 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "The Copyright Office informs but does not decide",
+    "content": "The Office’s reports are influential policy analysis, but federal judges decide individual infringement and fair-use cases.",
+    "hook": "#51 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "Publishers are not all taking the same route",
+    "content": "Some media companies litigate, some license content to AI companies, and some do both across different partners.",
+    "hook": "#52 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "AI developers are not all identically situated",
+    "content": "Different models, datasets, acquisition methods and product outputs can create materially different copyright risks.",
+    "hook": "#53 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "Users are indirect stakeholders",
+    "content": "The outcome can affect model capability, product pricing, access to information and the design of AI answers.",
+    "hook": "#54 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "055",
+    "title": "Newsrooms are direct stakeholders",
+    "content": "The case could influence whether publishers can demand licences or technical controls for AI training and retrieval.",
+    "hook": "#55 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "056",
+    "title": "Training involves copying somewhere in the pipeline",
+    "content": "Model development normally requires ingesting source data into computational systems, which is why copyright’s reproduction right is implicated.",
+    "hook": "#56 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "057",
+    "title": "Models are not simple databases",
+    "content": "A trained neural network generally stores learned parameters rather than a human-readable library of every source document.",
+    "hook": "#57 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "058",
+    "title": "But outputs can still resemble sources",
+    "content": "Some prompts can elicit text that overlaps with training material, which creates separate questions about memorisation and output infringement.",
+    "hook": "#58 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "059",
+    "title": "Transformative use is about purpose, not magic",
+    "content": "Calling a process 'AI' does not itself make it transformative; courts examine what the copying is doing in context.",
+    "hook": "#59 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "060",
+    "title": "Commercial purpose matters but is not decisive",
+    "content": "A profitable product can still make fair use, but commercial exploitation can weigh in the analysis.",
+    "hook": "#60 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "061",
+    "title": "Factual journalism has mixed characteristics",
+    "content": "News contains facts that copyright does not monopolise, but the expressive form of reporting remains protected.",
+    "hook": "#61 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "062",
+    "title": "Using entire works can sometimes be fair",
+    "content": "Courts have allowed complete copying in some transformative contexts, but only where the overall fair-use balance supported it.",
+    "hook": "#62 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "063",
+    "title": "Licensing evidence can reshape factor four",
+    "content": "If a functioning market exists for AI-training rights, courts may ask whether unlicensed use harms that market.",
+    "hook": "#63 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "064",
+    "title": "Hypothetical markets have limits",
+    "content": "Copyright law does not automatically recognise every imagined licensing opportunity as a protected market.",
+    "hook": "#64 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "065",
+    "title": "Substitution is broader than verbatim copying",
+    "content": "A product can potentially compete with an original even when it does not reproduce the exact text word for word.",
+    "hook": "#65 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "066",
+    "title": "Search precedents matter",
+    "content": "Older cases involving search engines and mass digitisation are part of the legal background because they addressed large-scale copying for new technical purposes.",
+    "hook": "#66 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "067",
+    "title": "Generative AI adds a new wrinkle",
+    "content": "Unlike a conventional index, a generative model can produce new prose, summaries and answers, making market-substitution arguments more complex.",
+    "hook": "#67 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "068",
+    "title": "Source provenance is becoming product infrastructure",
+    "content": "Developers increasingly need to know where training data came from and under what licence or access conditions.",
+    "hook": "#68 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "069",
+    "title": "Output controls can affect risk",
+    "content": "Filtering memorised passages, respecting paywalls and limiting long reproductions can reduce some output-side copyright exposure.",
+    "hook": "#69 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "070",
+    "title": "Training and retrieval should not be conflated",
+    "content": "Training a model, retrieving a current article and quoting that article in a response can involve different legal acts and different licences.",
+    "hook": "#70 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "071",
+    "title": "A broad OpenAI win could lower training friction",
+    "content": "If the court strongly endorses fair use for the challenged training, developers could gain more confidence using large public corpora without individual licences.",
+    "hook": "#71 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "072",
+    "title": "A publisher win could strengthen licensing",
+    "content": "If the court finds the challenged training unlawful, publishers may gain leverage to demand licences or exclude content from training pipelines.",
+    "hook": "#72 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "073",
+    "title": "A narrow ruling is plausible",
+    "content": "The judge could decide only the facts before the court, leaving many training scenarios unresolved.",
+    "hook": "#73 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "074",
+    "title": "Source quality may become a competitive advantage",
+    "content": "Well-documented, licensed datasets could become more valuable if provenance becomes central to litigation risk.",
+    "hook": "#74 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "075",
+    "title": "Smaller AI firms face asymmetric risk",
+    "content": "Licensing obligations could burden startups more than large incumbents with cash, data partnerships and legal teams.",
+    "hook": "#75 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "076",
+    "title": "Creators could gain new revenue streams",
+    "content": "A stronger licensing norm could create payments to publishers, authors and other rights holders for model-training access.",
+    "hook": "#76 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "077",
+    "title": "Consumers could pay indirectly",
+    "content": "Higher licensing and compliance costs could raise AI subscription or API prices.",
+    "hook": "#77 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "078",
+    "title": "Model quality could shift by region",
+    "content": "Different copyright rules across jurisdictions may cause developers to train or deploy different models in different markets.",
+    "hook": "#78 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "079",
+    "title": "Open datasets could become more important",
+    "content": "Public-domain, permissively licensed and first-party data would become even more strategic if legal uncertainty rises.",
+    "hook": "#79 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "080",
+    "title": "Synthetic data could gain strategic value",
+    "content": "Developers may rely more on generated or licensed synthetic data to reduce exposure to disputed source material.",
+    "hook": "#80 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "081",
+    "title": "Publisher blocking tools may matter more",
+    "content": "Technical controls signalling whether crawling or model use is permitted could become more important, though their legal effect depends on context.",
+    "hook": "#81 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "082",
+    "title": "AI partnerships with media may accelerate",
+    "content": "Litigation risk can push developers toward licensing, attribution and revenue-sharing deals with publishers.",
+    "hook": "#82 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "083",
+    "title": "News discovery could change",
+    "content": "If AI systems must show clearer sourcing or limit substitutes for articles, referral patterns back to publishers could improve.",
+    "hook": "#83 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "084",
+    "title": "The decision will not settle global law",
+    "content": "A U.S. district-court ruling is influential but does not determine copyright rules in the EU, UK, Canada or elsewhere.",
+    "hook": "#84 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "085",
+    "title": "Appeals could extend uncertainty",
+    "content": "Whatever Judge Stein decides, major parties may appeal, meaning the legal rule could remain unsettled for years.",
+    "hook": "#85 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "implications"
+    ]
+  },
+  {
+    "id": "086",
+    "title": "Watch the summary-judgment ruling",
+    "content": "The next major milestone is how Judge Stein resolves the competing legal arguments on the existing record.",
+    "hook": "#86 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "087",
+    "title": "Watch how the court defines transformation",
+    "content": "The wording on whether model training serves a genuinely different purpose from the source works could influence many later cases.",
+    "hook": "#87 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "088",
+    "title": "Watch factor four",
+    "content": "Market harm may become the most commercially important part of the decision for both developers and publishers.",
+    "hook": "#88 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "089",
+    "title": "Watch the treatment of licensing markets",
+    "content": "A key question is how much weight the court gives to existing and emerging markets for AI-training licences.",
+    "hook": "#89 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "090",
+    "title": "Watch source-acquisition facts",
+    "content": "Any distinction between lawfully accessed material and unauthorised or pirated copies could narrow or broaden the ruling.",
+    "hook": "#90 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "091",
+    "title": "Watch output evidence",
+    "content": "Examples of verbatim or near-verbatim output may influence how the court views substitution and harm, even if training is analysed separately.",
+    "hook": "#91 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "092",
+    "title": "Watch the DOJ argument",
+    "content": "The ruling may show how much persuasive weight the court gives the government’s innovation and national-security position.",
+    "hook": "#92 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "093",
+    "title": "Watch publisher coalition strategy",
+    "content": "More news organisations may join litigation or pursue collective licensing depending on how the ruling develops.",
+    "hook": "#93 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "094",
+    "title": "Watch OpenAI’s licensing strategy",
+    "content": "Further content deals could indicate how the company hedges legal risk regardless of the court outcome.",
+    "hook": "#94 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "095",
+    "title": "Watch Microsoft separately",
+    "content": "Microsoft’s own product logs, retrieval systems and Copilot behaviour may create issues that differ from OpenAI’s model-training arguments.",
+    "hook": "#95 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "096",
+    "title": "Watch appeals",
+    "content": "A losing party could ask the Second Circuit to review the legal framework, potentially creating more authoritative regional precedent.",
+    "hook": "#96 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "097",
+    "title": "Watch Congress",
+    "content": "A politically divisive or economically disruptive outcome could renew calls for a statutory AI-training licence or other legislative compromise.",
+    "hook": "#97 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "098",
+    "title": "Watch the Copyright Office",
+    "content": "Future final guidance and policy work may influence lawmakers and courts even though it is not binding precedent.",
+    "hook": "#98 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "099",
+    "title": "Watch international divergence",
+    "content": "The same dataset may be lawful to use in one jurisdiction and risky in another, increasing demand for region-aware AI governance.",
+    "hook": "#99 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "100",
+    "title": "Watch data provenance tooling",
+    "content": "Expect more investment in dataset lineage, rights metadata, opt-out records and auditable training pipelines.",
+    "hook": "#100 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-copyright",
+      "what-to-watch"
+    ]
+  }
+]
