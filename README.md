@@ -50,6 +50,26 @@ Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013*
 - `/api/diag` — JSON diagnostics (mongo, supabase, wiki counts)
 - `/robots.txt`, `/sitemap.xml`, `/icon`, `/opengraph-image` — SEO surfaces
 
+## ScrollAI
+
+Scroller is the canonical runtime for the **ScrollAI** orchestration skill at `skills/scrollai/SKILL.md`.
+
+ScrollAI coordinates:
+- **Scroller** for the feed, interaction model and monetisation;
+- **WIKAI** for source research and structured knowledge;
+- **MediaAI** for reusable image/audio/motion/video enrichment;
+- **ABC Revenue** for evidence-backed AdSense + Amazon revenue, cost and profit reporting.
+
+Commercial 1G: **$100/day gross revenue**. Missing provider telemetry remains **Unknown**, never zero.
+
+Runtime status:
+
+```
+GET /api/scrollai/status
+```
+
+AdSense is loaded only when `NEXT_PUBLIC_ADSENSE_CLIENT` is configured. Amazon URLs continue to enforce `AMAZON_ASSOCIATES_TAG`.
+
 ## Run locally
 
 ```sh
