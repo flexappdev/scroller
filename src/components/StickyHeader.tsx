@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import {
   Blocks,
   BookOpen,
@@ -149,6 +149,7 @@ function NavItemLink({ item, onSelect }: { item: NavItem; onSelect: () => void }
 
 export default function StickyHeader() {
   const pathname = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState<MenuName>(null);
   const [browseOpen, setBrowseOpen] = useState(false);
   const wrapRef = useRef<HTMLElement>(null);
@@ -177,7 +178,17 @@ export default function StickyHeader() {
       className="fixed right-0 top-0 z-50 flex h-14 items-center gap-2 px-2.5 chrome-glass-top sm:px-4"
       style={{ left: "var(--sidebar-w, 0px)" }}
     >
-      <Link href="/" aria-label="Scroller home" className="group flex min-w-0 items-center gap-2.5">
+      <Link
+        href="/"
+        aria-label={onHome ? "Refresh Scroller home" : "Scroller home"}
+        className="group flex min-w-0 items-center gap-2.5"
+        onClick={(event) => {
+          if (!onHome) return;
+          event.preventDefault();
+          window.dispatchEvent(new CustomEvent("scroller:random"));
+          router.refresh();
+        }}
+      >
         <span className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[var(--accent)] text-white shadow-[0_0_28px_color-mix(in_oklch,var(--accent)_28%,transparent)]">
           <span className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,.5),transparent_48%)]" />
           <ScrollText className="relative h-[18px] w-[18px]" />
