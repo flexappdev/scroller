@@ -1,0 +1,1302 @@
+[
+  {
+    "id": "001",
+    "title": "The lead story",
+    "content": "Google announced a €13 billion investment in Finland over 2027–2028 covering AI/digital infrastructure, energy projects and local partnerships.",
+    "hook": "#1 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Why it matters today",
+    "content": "Google describes the commitment as its largest single investment in Europe, making Finland a major node in the company’s next AI-infrastructure expansion.",
+    "hook": "#2 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "AI demand is the driver",
+    "content": "The build is designed to support rising demand for Google services including Gemini alongside Search, Maps and other products.",
+    "hook": "#3 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "Nuclear is part of the plan",
+    "content": "Google and Fortum signed a 22-year power purchase agreement tied to the lifetime extension of the Loviisa nuclear plant.",
+    "hook": "#4 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "The PPA is unusually strategic",
+    "content": "The contract can cover up to 50% of Loviisa’s capacity during its extended operating period.",
+    "hook": "#5 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "The deal begins in stages",
+    "content": "Fortum says contracted capacity starts smaller in 2028 and reaches 50% for 2030–2049.",
+    "hook": "#6 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "Google is expanding beyond one Finnish site",
+    "content": "The investment covers infrastructure and partnerships in Hamina, Kajaani, Muhos and Vaala.",
+    "hook": "#7 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "Battery storage is included",
+    "content": "Google has contracted for a new 94 MW battery system near its new Kajaani data center.",
+    "hook": "#8 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "Wind is part of the energy mix",
+    "content": "Google says it is adding new onshore wind capacity alongside nuclear and battery projects.",
+    "hook": "#9 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "This is an AI-and-energy story",
+    "content": "The announcement links compute growth directly to long-duration power procurement, grid resilience and low-carbon generation.",
+    "hook": "#10 · What happened",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-happened"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "€13B is the headline investment",
+    "content": "Google says the Finland commitment totals €13 billion over the next two years, 2027 and 2028.",
+    "hook": "#11 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "Reuters values it at about $15.1B",
+    "content": "Reuters converted the announced investment to roughly $15.1 billion.",
+    "hook": "#12 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "Google has been in Hamina for 15 years",
+    "content": "The company converted a former paper mill in Hamina into a data center and has operated there for about 15 years.",
+    "hook": "#13 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "More than 600 Finnish suppliers were involved recently",
+    "content": "Google says its Hamina presence supported an ecosystem of more than 600 Finnish suppliers from 2023 to 2025.",
+    "hook": "#14 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "Construction impact is projected at over 37,000 jobs",
+    "content": "Google says the 2027–2028 construction phase will support more than 37,000 jobs nationwide.",
+    "hook": "#15 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "GDP impact is projected at €3.6B annually during construction",
+    "content": "Google says the initial build phase will contribute €3.6 billion annually to Finland’s GDP.",
+    "hook": "#16 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "Permanent employment continues after construction",
+    "content": "Google says the facilities will support thousands of permanent jobs once operational.",
+    "hook": "#17 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "Local community investment is €31M",
+    "content": "Google says it will invest €31 million in local communities in Hamina, Kajaani, Muhos and Vaala over four years.",
+    "hook": "#18 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "AI upskilling covers more than 4,400 workers",
+    "content": "Google says it is partnering with local colleges on AI upskilling for more than 4,400 workers.",
+    "hook": "#19 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Student training is included",
+    "content": "The program includes new training opportunities for 100 Finnish students for future data-center careers.",
+    "hook": "#20 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "The Loviisa PPA lasts 22 years",
+    "content": "Fortum says the nuclear power purchase agreement spans the plant’s life-extension period.",
+    "hook": "#21 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "The contract supports operation through 2050",
+    "content": "Fortum says the agreement improves the economics of keeping Loviisa operating through the end of its licenses in 2050.",
+    "hook": "#22 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "Loviisa currently supplies about 10% of Finland’s electricity",
+    "content": "Fortum says the plant currently produces roughly one-tenth of Finland’s electricity.",
+    "hook": "#23 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "Loviisa employs about 580 people",
+    "content": "Fortum lists approximately 580 current employees at the plant.",
+    "hook": "#24 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "Fortum is already investing about €1B in Loviisa",
+    "content": "The company says its existing lifetime-extension investment program is approximately €1 billion.",
+    "hook": "#25 · Verified facts",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Most of the Loviisa extension capex is still ahead",
+    "content": "Fortum says around €700 million, about 80% of the required capital expenditure, remains pending investment decisions.",
+    "hook": "#26 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "The PPA improves revenue certainty",
+    "content": "Long-term contracted demand gives Fortum more predictable cash flow for life-extension investments.",
+    "hook": "#27 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "Google is not buying the nuclear plant",
+    "content": "The arrangement is a long-term power purchase agreement, not an acquisition of Loviisa.",
+    "hook": "#28 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "A PPA links a buyer to future electricity output",
+    "content": "Power purchase agreements can give generators revenue visibility while giving buyers long-term access to electricity.",
+    "hook": "#29 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "Data centers need firm power",
+    "content": "AI data centers run continuously, so operators value electricity sources that are available beyond intermittent weather-dependent generation.",
+    "hook": "#30 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Nuclear provides low-carbon baseload",
+    "content": "Existing nuclear plants can deliver large volumes of low-carbon electricity with high capacity factors.",
+    "hook": "#31 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Finland already has a low-carbon power system",
+    "content": "Its nuclear and renewable generation makes the country attractive to operators seeking lower-carbon data-center power.",
+    "hook": "#32 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "Cold climate helps data-center efficiency",
+    "content": "Finland’s climate can reduce cooling requirements compared with hotter regions.",
+    "hook": "#33 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "Google already uses seawater cooling in Hamina",
+    "content": "The company highlights seawater-based cooling as one of its long-running Finnish efficiency initiatives.",
+    "hook": "#34 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "Heat recovery is already part of the model",
+    "content": "Google says offsite heat recovery from Hamina has been distributed to local homes.",
+    "hook": "#35 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "AI infrastructure is more than GPUs",
+    "content": "Large AI deployments also need buildings, substations, fiber, cooling, storage, backup systems and grid upgrades.",
+    "hook": "#36 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "Electricity is becoming a core AI bottleneck",
+    "content": "As model training and inference scale, access to power can constrain how quickly new compute capacity comes online.",
+    "hook": "#37 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "Inference demand matters as much as training",
+    "content": "Services like Gemini need ongoing compute after models are trained, so operating power demand persists every day.",
+    "hook": "#38 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "European AI capacity is strategically important",
+    "content": "More European data-center capacity can reduce dependence on a smaller number of regions and improve regional resilience.",
+    "hook": "#39 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "Finland is competing as an AI-infrastructure location",
+    "content": "The announcement positions Finland alongside other Northern European locations seeking data-center investment through power availability and climate advantages.",
+    "hook": "#40 · Background",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "background"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "Hamina remains foundational",
+    "content": "Google’s original Finnish data-center base gives the company an established workforce, supplier network and operational footprint.",
+    "hook": "#41 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "Kajaani is part of the next expansion",
+    "content": "Google identifies Kajaani as one of the locations for new infrastructure and energy activity.",
+    "hook": "#42 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "Muhos is included",
+    "content": "Muhos is named as one of the Finnish locations receiving investment and partnership activity.",
+    "hook": "#43 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "Vaala is included",
+    "content": "Vaala is also part of the announced expansion footprint.",
+    "hook": "#44 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "Fortum is the energy partner",
+    "content": "Fortum is the Finnish utility counterpart to the long-term nuclear PPA and broader energy cooperation.",
+    "hook": "#45 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "Loviisa is the nuclear anchor",
+    "content": "The Loviisa plant is central to the announced firm low-carbon power arrangement.",
+    "hook": "#46 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "Google Global Infrastructure leads the build",
+    "content": "The announcement is framed through Google’s global infrastructure organization rather than as a standalone consumer-product launch.",
+    "hook": "#47 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "Google’s EMEA energy team is involved",
+    "content": "The company’s regional energy strategy group is part of the nuclear, wind and grid-integration plan.",
+    "hook": "#48 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "Fortum’s board-level economics matter",
+    "content": "The utility says the deal should improve group comparable return on net assets over time once the contracted share reaches 50%.",
+    "hook": "#49 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "Finland’s government welcomes the investment",
+    "content": "Prime Minister Petteri Orpo publicly presented the project as evidence of Finland’s digital and innovation strengths.",
+    "hook": "#50 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "Local colleges are part of the workforce plan",
+    "content": "Google says local education partners will support AI upskilling and data-center career training.",
+    "hook": "#51 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "Finnish suppliers gain from the build",
+    "content": "Construction, networking, operations and service firms are positioned to benefit from the expansion.",
+    "hook": "#52 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "Grid operators become critical stakeholders",
+    "content": "Large new loads and generation agreements require coordination with Finland’s electricity system and transmission capacity.",
+    "hook": "#53 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "Local communities are direct stakeholders",
+    "content": "The investment includes money for community projects and will change infrastructure demand around host locations.",
+    "hook": "#54 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "055",
+    "title": "European regulators will watch the build",
+    "content": "A project of this scale intersects with energy, competition, data-center planning and environmental policy.",
+    "hook": "#55 · Key actors",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "key-actors"
+    ]
+  },
+  {
+    "id": "056",
+    "title": "The PPA starts in 2028",
+    "content": "Fortum says the nuclear contract begins with smaller capacity in 2028.",
+    "hook": "#56 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "057",
+    "title": "The 50% level arrives in 2030",
+    "content": "Fortum says contracted capacity rises to 50% of Loviisa’s output for 2030–2049.",
+    "hook": "#57 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "058",
+    "title": "The contract supports the full life extension",
+    "content": "Fortum says the revenue certainty helps enable investment needed to operate Loviisa through 2050.",
+    "hook": "#58 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "059",
+    "title": "A 10 MW uprate is newly enabled",
+    "content": "Fortum says the Google arrangement is expected to enable an additional 10 MW power increase.",
+    "hook": "#59 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "060",
+    "title": "A separate 38 MW uprate was already planned",
+    "content": "Fortum says an existing 38 MW uprate is expected to be live in 2028.",
+    "hook": "#60 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "061",
+    "title": "Battery storage adds flexibility",
+    "content": "The 94 MW battery near Kajaani can help smooth demand and support the grid during periods of stress.",
+    "hook": "#61 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "062",
+    "title": "Wind adds variable low-carbon supply",
+    "content": "New onshore wind capacity broadens the energy portfolio beyond nuclear.",
+    "hook": "#62 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "063",
+    "title": "Google and Fortum signed a wider MoU",
+    "content": "The companies will explore new nuclear, renewables, flexibility and energy-portfolio-management solutions.",
+    "hook": "#63 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "064",
+    "title": "New nuclear is on the table, not committed",
+    "content": "Fortum and Google plan to explore business models for potential new nuclear at Loviisa; no new reactor is yet guaranteed.",
+    "hook": "#64 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "065",
+    "title": "Powered land could support future data centers",
+    "content": "The companies will examine whether Fortum sites with grid connections could suit additional Google data-center development.",
+    "hook": "#65 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "066",
+    "title": "Fortum may also use Google technology",
+    "content": "The utility says it will explore Google Cloud, AI and data services for its own operations.",
+    "hook": "#66 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "067",
+    "title": "Grid resilience is part of the design",
+    "content": "The energy package is explicitly framed around keeping AI growth compatible with a resilient Finnish electricity system.",
+    "hook": "#67 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "068",
+    "title": "Long contracts change investment math",
+    "content": "A 22-year buyer commitment can lower uncertainty for capital-intensive power assets.",
+    "hook": "#68 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "069",
+    "title": "AI demand becomes bankable load",
+    "content": "Large hyperscaler commitments can turn future electricity demand into a financeable signal for generators and infrastructure investors.",
+    "hook": "#69 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "070",
+    "title": "Compute and energy planning are converging",
+    "content": "The deal shows that AI capacity planning increasingly requires simultaneous decisions about chips, sites, transmission and generation.",
+    "hook": "#70 · Mechanics",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "mechanics"
+    ]
+  },
+  {
+    "id": "071",
+    "title": "Finland could become a larger European AI hub",
+    "content": "The investment substantially increases the country’s role in Google’s European infrastructure footprint.",
+    "hook": "#71 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "072",
+    "title": "Europe gets more hyperscale capacity",
+    "content": "Additional Finnish infrastructure adds regional capacity for Google services and AI workloads.",
+    "hook": "#72 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "073",
+    "title": "Nuclear gains another AI customer",
+    "content": "The agreement extends the trend of major technology companies using long-term nuclear contracts to support data-center demand.",
+    "hook": "#73 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "074",
+    "title": "Existing reactors may become more valuable",
+    "content": "AI demand can improve the economics of extending nuclear plants that might otherwise face uncertain post-license investment decisions.",
+    "hook": "#74 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "075",
+    "title": "Power procurement becomes a competitive weapon",
+    "content": "Hyperscalers with long-term energy deals may gain an advantage in securing reliable capacity before rivals.",
+    "hook": "#75 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "076",
+    "title": "Energy availability can shape AI geography",
+    "content": "Future AI clusters may form where large blocks of affordable, low-carbon, dependable electricity are easiest to secure.",
+    "hook": "#76 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "077",
+    "title": "Northern Europe gains strategic leverage",
+    "content": "Countries with cool climates, stable grids and low-carbon power can compete for increasingly capital-intensive AI infrastructure.",
+    "hook": "#77 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "078",
+    "title": "Finland’s supplier ecosystem can deepen",
+    "content": "Repeated hyperscale investment can create specialist construction, operations, fiber and electrical capabilities locally.",
+    "hook": "#78 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "079",
+    "title": "Workforce policy becomes part of AI policy",
+    "content": "The 4,400-worker upskilling plan shows that infrastructure strategy now includes training, not just hardware.",
+    "hook": "#79 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "080",
+    "title": "Community acceptance matters",
+    "content": "Long-term expansion depends on local support around land, power, water, heat, transport and workforce effects.",
+    "hook": "#80 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "081",
+    "title": "Grid constraints could still slow growth",
+    "content": "Even with generation secured, transmission and connection capacity can become bottlenecks.",
+    "hook": "#81 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "082",
+    "title": "Nuclear economics may improve beyond Google",
+    "content": "If the PPA helps fund life extension, other Finnish electricity users can also benefit from continued plant availability.",
+    "hook": "#82 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "083",
+    "title": "Battery projects become more important",
+    "content": "Storage can make very large data-center loads easier to integrate with variable renewable generation and grid conditions.",
+    "hook": "#83 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "084",
+    "title": "AI infrastructure is becoming industrial policy",
+    "content": "Deals this large increasingly influence national investment, energy planning, workforce strategy and regional competitiveness.",
+    "hook": "#84 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "085",
+    "title": "The compute boom is becoming an energy boom",
+    "content": "The story reinforces that scaling AI is no longer just a semiconductor problem; it is an electricity-and-infrastructure problem too.",
+    "hook": "#85 · Implications",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "implications"
+    ]
+  },
+  {
+    "id": "086",
+    "title": "Watch the 2027 construction start",
+    "content": "The announced two-year investment window means execution milestones should begin becoming visible in 2027.",
+    "hook": "#86 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "087",
+    "title": "Watch permitting and grid connections",
+    "content": "Site construction can only scale as fast as approvals, transmission work and connection capacity allow.",
+    "hook": "#87 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "088",
+    "title": "Watch whether the €13B plan stays on schedule",
+    "content": "Large infrastructure programs can shift with demand, supply chains, regulation and financing conditions.",
+    "hook": "#88 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "089",
+    "title": "Watch Gemini demand",
+    "content": "Faster growth in Google’s AI services could increase pressure to bring new capacity online sooner.",
+    "hook": "#89 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "090",
+    "title": "Watch the 94 MW battery project",
+    "content": "Its commissioning and operational role will show how Google integrates flexible demand with the Finnish grid.",
+    "hook": "#90 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "091",
+    "title": "Watch Loviisa investment approvals",
+    "content": "Fortum still has major life-extension capex decisions ahead.",
+    "hook": "#91 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "092",
+    "title": "Watch the 2028 uprates",
+    "content": "The planned 38 MW increase and newly enabled 10 MW increment are concrete milestones.",
+    "hook": "#92 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "093",
+    "title": "Watch the PPA ramp to 50%",
+    "content": "The contract’s progression toward half of Loviisa capacity is a key commercial milestone.",
+    "hook": "#93 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "094",
+    "title": "Watch new nuclear discussions",
+    "content": "The MoU could evolve into feasibility work, financing structures or eventually a project proposal.",
+    "hook": "#94 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "095",
+    "title": "Watch additional Google sites",
+    "content": "Fortum-powered land could create options for further Finnish data-center expansion beyond today’s announced footprint.",
+    "hook": "#95 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "096",
+    "title": "Watch local power prices",
+    "content": "A core policy question is whether the combination of new load and new generation keeps electricity affordable for other users.",
+    "hook": "#96 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "097",
+    "title": "Watch Finnish AI employment",
+    "content": "The promised construction and permanent jobs will be an important test of how much local economic value hyperscale infrastructure creates.",
+    "hook": "#97 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "098",
+    "title": "Watch supplier growth",
+    "content": "The number and sophistication of Finnish firms serving data-center, fiber, grid and energy projects should reveal the wider industrial effect.",
+    "hook": "#98 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "099",
+    "title": "Watch Europe copy the model",
+    "content": "Other countries may try to pair low-carbon power, grid investment and hyperscaler commitments in similar AI-infrastructure packages.",
+    "hook": "#99 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "100",
+    "title": "Watch ABC revenue signals",
+    "content": "For ScrollAI, this story is also a test case: measure whether major AI-infrastructure explainers attract sustained traffic, scroll depth and monetisation better than narrower product-news scrollers.",
+    "hook": "#100 · What to watch",
+    "tags": [
+      "daily-news",
+      "ai-infrastructure",
+      "google",
+      "finland",
+      "what-to-watch"
+    ]
+  }
+]
