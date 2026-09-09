@@ -68,7 +68,7 @@ Runtime status:
 GET /api/scrollai/status
 ```
 
-AdSense is loaded only when `NEXT_PUBLIC_ADSENSE_CLIENT` is configured. Amazon URLs continue to enforce `AMAZON_ASSOCIATES_TAG`.
+AdSense is loaded only when `NEXT_PUBLIC_ADSENSE_CLIENT` is configured. When `NEXT_PUBLIC_ADSENSE_FEED_SLOT` is also configured, anonymous visitors receive a clearly labelled responsive display-ad card after every 20 content items; authenticated Supabase users do not receive feed ads. Amazon URLs continue to enforce `AMAZON_ASSOCIATES_TAG`.
 
 ## ScrollAI daily news + live status
 
