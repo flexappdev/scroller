@@ -1,0 +1,33 @@
+{
+  "slug": "news-2026-09-09-google-finland-ai-nuclear",
+  "name": "Google’s Finland AI Build: 100 Things to Know",
+  "tagline": "Today’s lead AI story: Google is committing €13B to Finnish AI infrastructure while locking in long-term nuclear power.",
+  "description": "A dated 9 September 2026 ScrollAI news snapshot on Google’s largest single investment in Europe, its Finland data-center expansion, Fortum nuclear PPA, grid implications, jobs and AI-infrastructure strategy.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-09",
+  "snapshot": "2026-09-09 Europe/London",
+  "defaultView": "scroller",
+  "category": "AI",
+  "newsPriority": 1,
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "local-first",
+    "videoFallback": "Runware"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
