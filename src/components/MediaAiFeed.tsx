@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { ExternalLink, Info, Share2, Volume2, VolumeX } from "lucide-react";
+import { Bookmark, ExternalLink, Info, Share2, Volume2, VolumeX } from "lucide-react";
 import type { MediaAiArticle, MediaAiPage } from "@/lib/mediai";
 import MediaDetailSheet from "./MediaDetailSheet";
 
@@ -44,7 +44,40 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [loadingMore, setLoadingMore] = useState(false);
   const [detail, setDetail] = useState<MediaAiArticle | null>(null);
+  const [refreshing, setRefreshing] = useState(false);
+  const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
   const feedRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    try {
+      const rows = JSON.parse(localStorage.getItem("scroller:saved") || "[]") as Array<{ id?: string }>;
+      setSavedIds(new Set(rows.map((row) => row.id).filter((id): id is string => Boolean(id))));
+    } catch {
+      setSavedIds(new Set());
+    }
+  }, []);
+
+  const toggleSave = useCallback((item: MediaAiArticle) => {
+    try {
+      const key = "scroller:saved";
+      const rows = JSON.parse(localStorage.getItem(key) || "[]") as Array<{
+        id: string;
+        topic: string;
+        sourceUrl: string;
+        imageUrl: string | null;
+        savedAt: number;
+      }>;
+      const exists = rows.some((row) => row.id === item.id);
+      const next = exists
+        ? rows.filter((row) => row.id !== item.id)
+        : [{ id: item.id, topic: item.topic, sourceUrl: item.sourceUrl, imageUrl: item.imageUrl, savedAt: Date.now() }, ...rows];
+      localStorage.setItem(key, JSON.stringify(next.slice(0, 250)));
+      setSavedIds(new Set(next.map((row) => row.id)));
+      window.dispatchEvent(new CustomEvent("scroller:saved-changed"));
+    } catch {
+      // Saving is a progressive enhancement; the feed still works if storage is unavailable.
+    }
+  }, []);
 
   const closeDetail = useCallback(() => {
     setDetail(null);
@@ -133,9 +166,11 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   }, [goTo, items]);
 
   const shuffle = useCallback(() => {
+    setRefreshing(true);
     setItems((current) => shuffled(current));
     setActiveIndex(0);
     feedRef.current?.scrollTo({ top: 0, behavior: "instant" });
+    window.setTimeout(() => setRefreshing(false), 220);
   }, []);
 
   useEffect(() => {
@@ -180,8 +215,15 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   }
 
   return (
-    <main className="fixed inset-0 z-20 overflow-hidden bg-black text-white" data-testid="mediai-feed">
-      <div ref={feedRef} className="h-[100dvh] w-full snap-y snap-mandatory overflow-y-auto overscroll-y-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+    <main className="fixed inset-0 z-20 overflow-hidden bg-black text-white" data-testid="mediai-feed" aria-busy={refreshing}>
+      <div
+        ref={feedRef}
+        className={[
+          "h-[100dvh] w-full snap-y snap-mandatory overflow-y-auto overscroll-y-contain [scrollbar-width:none] [&::-webkit-scrollbar]:hidden",
+          "transition-[opacity,transform] duration-200",
+          refreshing ? "scale-[0.992] opacity-60" : "scale-100 opacity-100",
+        ].join(" ")}
+      >
         {items.map((item, index) => (
           <MediaCard
             key={item.id}
@@ -190,6 +232,8 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
             total={items.length}
             active={index === activeIndex}
             onOpenDetail={() => openDetail(item)}
+            saved={savedIds.has(item.id)}
+            onToggleSave={() => toggleSave(item)}
           />
         ))}
         {loadingMore && <div className="h-1 w-full bg-pink-500/60" aria-label="Loading more MediaAI items" />}
@@ -199,7 +243,23 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
   );
 }
 
-function MediaCard({ item, index, total, active, onOpenDetail }: { item: MediaAiArticle; index: number; total: number; active: boolean; onOpenDetail: () => void }) {
+function MediaCard({
+  item,
+  index,
+  total,
+  active,
+  onOpenDetail,
+  saved,
+  onToggleSave,
+}: {
+  item: MediaAiArticle;
+  index: number;
+  total: number;
+  active: boolean;
+  onOpenDetail: () => void;
+  saved: boolean;
+  onToggleSave: () => void;
+}) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [audioPlaying, setAudioPlaying] = useState(false);
@@ -280,6 +340,9 @@ function MediaCard({ item, index, total, active, onOpenDetail }: { item: MediaAi
 
       <div className="absolute right-3 z-20 flex flex-col gap-4" style={{ bottom: "calc(184px + env(safe-area-inset-bottom))" }} onClick={(e) => e.stopPropagation()}>
         <Action label="Details" onClick={onOpenDetail}><Info className="h-5 w-5" /></Action>
+        <Action label={saved ? "Saved" : "Save"} onClick={onToggleSave}>
+          <Bookmark className={saved ? "h-5 w-5 fill-current" : "h-5 w-5"} />
+        </Action>
         {item.audioUrl && (
           <Action label={audioPlaying ? "Mute" : "Listen"} onClick={toggleAudio}>
             {audioPlaying ? <VolumeX className="h-5 w-5" /> : <Volume2 className="h-5 w-5" />}
