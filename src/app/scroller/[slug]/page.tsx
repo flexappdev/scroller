@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ScrollerFeed from "@/components/scroller/ScrollerFeed";
 import { getScrollerPack, listScrollerPacks } from "@/lib/scroller";
+import { isScrollerLoggedIn } from "@/lib/auth-state";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -34,12 +35,16 @@ export default async function ScrollerPage({ params }: PageProps) {
   const visibleCount = gateAfter
     ? Math.min(Math.max(gateAfter, 1), pack.items.length)
     : pack.items.length;
+  const loggedIn = await isScrollerLoggedIn();
 
   return (
     <ScrollerFeed
       manifest={pack.manifest}
       items={pack.items.slice(0, visibleCount)}
       totalCount={pack.items.length}
+      showAds={!loggedIn}
+      adsenseClient={process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || null}
+      adsenseSlot={process.env.NEXT_PUBLIC_ADSENSE_FEED_SLOT?.trim() || null}
     />
   );
 }
