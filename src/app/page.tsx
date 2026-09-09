@@ -1,5 +1,6 @@
 import MediaAiFeed from "@/components/MediaAiFeed";
 import { getMediaAiPage, type MediaAiPage } from "@/lib/mediai";
+import { isScrollerLoggedIn } from "@/lib/auth-state";
 
 // Home must feel fresh on every visit. Do not reuse a previously rendered
 // order; repeated Home taps also reshuffle instantly on the client.
@@ -25,5 +26,14 @@ export default async function HomePage() {
     console.error("[home] MediaAI feed failed", error);
   }
 
-  return <MediaAiFeed initial={initial} />;
+  const loggedIn = await isScrollerLoggedIn();
+
+  return (
+    <MediaAiFeed
+      initial={initial}
+      showAds={!loggedIn}
+      adsenseClient={process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || null}
+      adsenseSlot={process.env.NEXT_PUBLIC_ADSENSE_FEED_SLOT?.trim() || null}
+    />
+  );
 }
