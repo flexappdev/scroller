@@ -1,9 +1,10 @@
 import MediaAiFeed from "@/components/MediaAiFeed";
 import { getMediaAiPage, type MediaAiPage } from "@/lib/mediai";
 
-// MediaAI is continuously producing new Wikipedia-derived assets. Keep the
-// initial swipe feed fresh while still allowing Vercel to cache the route.
-export const revalidate = 20;
+// Home must feel fresh on every visit. Do not reuse a previously rendered
+// order; repeated Home taps also reshuffle instantly on the client.
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 function shuffled<T>(input: T[]): T[] {
   const next = [...input];
