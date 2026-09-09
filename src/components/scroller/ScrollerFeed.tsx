@@ -1,6 +1,8 @@
 "use client";
 
+import { Fragment } from "react";
 import type { ScrollerItem, ScrollerManifest } from "@/lib/scroller";
+import AdSenseFeedCard from "@/components/AdSenseFeedCard";
 
 function isExternalUrl(url: string) {
   return /^https?:\/\//.test(url);
@@ -10,11 +12,18 @@ export default function ScrollerFeed({
   manifest,
   items,
   totalCount,
+  showAds = false,
+  adsenseClient,
+  adsenseSlot,
 }: {
   manifest: ScrollerManifest;
   items: ScrollerItem[];
   totalCount: number;
+  showAds?: boolean;
+  adsenseClient?: string | null;
+  adsenseSlot?: string | null;
 }) {
+  const adsEnabled = Boolean(showAds && adsenseClient && adsenseSlot);
   const monetization = manifest.monetization;
   const dark = manifest.theme !== "light";
 
@@ -33,8 +42,8 @@ export default function ScrollerFeed({
       </header>
 
       {items.map((item, index) => (
+        <Fragment key={item.id}>
         <section
-          key={item.id}
           className="relative flex min-h-[100svh] snap-start items-center justify-center px-5 py-20 md:px-10"
         >
           <article className="w-full max-w-3xl rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl backdrop-blur md:p-12">
@@ -66,6 +75,14 @@ export default function ScrollerFeed({
 
           <div className="absolute bottom-5 text-xs text-white/35">Scroll for next</div>
         </section>
+        {adsEnabled && (index + 1) % 20 === 0 ? (
+          <AdSenseFeedCard
+            client={adsenseClient!}
+            slot={adsenseSlot!}
+            afterItem={index + 1}
+          />
+        ) : null}
+        </Fragment>
       ))}
 
       {monetization ? (
