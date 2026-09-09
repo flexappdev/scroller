@@ -190,6 +190,8 @@ Unknown revenue stays unknown. Never convert missing telemetry to zero.
 4. Affiliate relationships must remain clearly disclosed.
 5. For personalised ads to EEA/UK/Switzerland traffic, configure a Google-certified TCF CMP first.
 6. Rank items primarily for usefulness; never create thin pages solely to manufacture ad inventory.
+7. Feed cadence: for anonymous visitors only, insert one clearly labelled responsive AdSense unit after every 20 content items (20, 40, 60, ...). Authenticated Supabase users get no feed ads.
+8. A feed ad is not a content item: do not increment Top 100 ranks, content counters, or saved-item indexes for ads. Keep ad cards visually separated from primary navigation and content CTAs.
 
 ### Revenue ladder
 
