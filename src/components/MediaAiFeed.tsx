@@ -1,10 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Bookmark, ExternalLink, Info, Share2, Volume2, VolumeX } from "lucide-react";
 import type { MediaAiArticle, MediaAiPage } from "@/lib/mediai";
 import MediaDetailSheet from "./MediaDetailSheet";
+import AdSenseFeedCard from "./AdSenseFeedCard";
 
 function mergeArticles(current: MediaAiArticle[], incoming: MediaAiArticle[]): MediaAiArticle[] {
   const byId = new Map(current.map((item) => [item.id, { ...item, videoUrls: [...item.videoUrls] }]));
@@ -38,7 +39,18 @@ function shuffled<T>(input: T[]): T[] {
   return next;
 }
 
-export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
+export default function MediaAiFeed({
+  initial,
+  showAds = false,
+  adsenseClient,
+  adsenseSlot,
+}: {
+  initial: MediaAiPage;
+  showAds?: boolean;
+  adsenseClient?: string | null;
+  adsenseSlot?: string | null;
+}) {
+  const adsEnabled = Boolean(showAds && adsenseClient && adsenseSlot);
   const [items, setItems] = useState<MediaAiArticle[]>(initial.items);
   const [nextOffset, setNextOffset] = useState<number | null>(initial.nextOffset);
   const [activeIndex, setActiveIndex] = useState(0);
@@ -149,7 +161,8 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
     // and next on the last card lands on card 0. Always scrollable.
     const total = items.length;
     const target = ((index % total) + total) % total;
-    el.scrollTo({ top: target * el.clientHeight, behavior: "smooth" });
+    const targetCard = el.querySelector<HTMLElement>(`[data-card-index="${target}"]`);
+    targetCard?.scrollIntoView({ behavior: "smooth", block: "start" });
     setActiveIndex(target);
   }, [items.length]);
 
@@ -225,16 +238,24 @@ export default function MediaAiFeed({ initial }: { initial: MediaAiPage }) {
         ].join(" ")}
       >
         {items.map((item, index) => (
-          <MediaCard
-            key={item.id}
-            item={item}
-            index={index}
-            total={items.length}
-            active={index === activeIndex}
-            onOpenDetail={() => openDetail(item)}
-            saved={savedIds.has(item.id)}
-            onToggleSave={() => toggleSave(item)}
-          />
+          <Fragment key={item.id}>
+            <MediaCard
+              item={item}
+              index={index}
+              total={items.length}
+              active={index === activeIndex}
+              onOpenDetail={() => openDetail(item)}
+              saved={savedIds.has(item.id)}
+              onToggleSave={() => toggleSave(item)}
+            />
+            {adsEnabled && (index + 1) % 20 === 0 ? (
+              <AdSenseFeedCard
+                client={adsenseClient!}
+                slot={adsenseSlot!}
+                afterItem={index + 1}
+              />
+            ) : null}
+          </Fragment>
         ))}
         {loadingMore && <div className="h-1 w-full bg-pink-500/60" aria-label="Loading more MediaAI items" />}
       </div>
