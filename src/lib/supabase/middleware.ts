@@ -5,7 +5,7 @@ export const ALLOWED_EMAILS = ["mat@matsiems.com"];
 
 // Routes that require authentication. Everything else flows through to
 // Next.js (which will 404 cleanly via not-found.tsx for unknown paths).
-const PROTECTED_PREFIXES = ["/admin", "/api/admin"];
+const PROTECTED_PREFIXES = ["/admin", "/api/admin", "/live", "/api/live"];
 
 const ADMIN_LANDING = "/admin";
 
@@ -15,13 +15,13 @@ function isProtected(path: string): boolean {
 
 export async function updateSession(request: NextRequest) {
   let supabaseResponse = NextResponse.next({ request });
+  const path = request.nextUrl.pathname;
 
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
   const supabaseAnon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
   if (!supabaseUrl || !supabaseAnon) {
-    // Env not configured (e.g. Vercel env push pending) — let public routes
-    // render; gate /admin via a soft redirect instead of 500-ing the site.
-    if (request.nextUrl.pathname.startsWith("/admin")) {
+    // Never leak private dashboard/admin data when auth env is missing.
+    if (isProtected(path)) {
       const url = request.nextUrl.clone();
       url.pathname = "/login";
       url.search = "?error=supabase-env-missing";
@@ -68,8 +68,6 @@ export async function updateSession(request: NextRequest) {
     }
   }
 
-  const path = request.nextUrl.pathname;
-
   if (devBypass) {
     if (path === "/login") {
       const url = request.nextUrl.clone();
@@ -94,9 +92,7 @@ export async function updateSession(request: NextRequest) {
   if (!user && isProtected(path)) {
     const url = request.nextUrl.clone();
     url.pathname = "/login";
-    if (path !== "/") {
-      url.searchParams.set("next", path);
-    }
+    url.searchParams.set("next", path);
     return NextResponse.redirect(url);
   }
 
