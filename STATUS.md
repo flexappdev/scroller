@@ -4,11 +4,9 @@ _Last updated: 2026-09-02 · v3.5_
 
 ## Latest
 
-- **Repo**: [flexappdev/scroller](https://github.com/flexappdev/scroller) · port `19013` · accent `#ec4899` (pink)
-- **Local UAT**: http://localhost:19013/
-- **Prod**:
-  - `https://scroller-bay.vercel.app` — auto-deploys from GitHub via the matsiems Vercel scope
-  - `https://scroller-psi.vercel.app` — cleverfox-71aa03f5 scope, manual deploy (owed since v2.4)
+- **Repo**: [flexappdev/scroller](https://github.com/flexappdev/scroller) · port `25000` · accent `#ec4899` (pink)
+- **Local UAT**: http://localhost:25000/
+- **Prod**: https://www.scroller.tv/
 - **Version**: v3.5 — MediaAI-first immersive scroller, wikai design system
 - **PRD alignment**: [`docs/PRD-ALIGNMENT.md`](docs/PRD-ALIGNMENT.md) — mapped to ABC + VaultAI + MediaAI + ScrollerAI PRD v0.1 (2026-09-02).
 - **v4.0 foundation slice-1 shipped (2026-09-02)**: `ContentItem` + `AssetRef` types in `src/lib/types.ts` (with `cardToContentItem()` adapter), `SiteConfig` schema in `src/lib/site-config.ts`, first consumer `sites/scroller.config.ts`, resolver `src/lib/site.ts`.

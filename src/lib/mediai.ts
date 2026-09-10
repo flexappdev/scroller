@@ -1,6 +1,6 @@
 import { tryGetDb } from "@/lib/mongo-admin";
 
-export type MediaAiArticle = {
+export type MediaiArticle = {
   id: string;
   assetId: string;
   topic: string;
@@ -12,8 +12,8 @@ export type MediaAiArticle = {
   assetCount: number;
 };
 
-export type MediaAiPage = {
-  items: MediaAiArticle[];
+export type MediaiPage = {
+  items: MediaiArticle[];
   nextOffset: number | null;
 };
 
@@ -89,11 +89,11 @@ function normalizeAsset(doc: Record<string, unknown>): NormalizedAsset | null {
   };
 }
 
-function groupAssets(assets: NormalizedAsset[]): MediaAiArticle[] {
-  const grouped = new Map<string, MediaAiArticle>();
+function groupAssets(assets: NormalizedAsset[]): MediaiArticle[] {
+  const grouped = new Map<string, MediaiArticle>();
 
   for (const asset of assets) {
-    // MediaAI can regenerate the same article under several asset IDs. One
+    // Mediai can regenerate the same article under several asset IDs. One
     // topic card should expose every available variant without repeating the
     // article later in the feed.
     const key = `topic:${asset.topic}`;
@@ -123,7 +123,7 @@ function groupAssets(assets: NormalizedAsset[]): MediaAiArticle[] {
   return [...grouped.values()].sort((a, b) => b.updatedAt - a.updatedAt);
 }
 
-async function getMediaAiSnapshotPage(offset: number, limit: number): Promise<MediaAiPage> {
+async function getMediaiSnapshotPage(offset: number, limit: number): Promise<MediaiPage> {
   const snapshotUrl = process.env.MEDIAI_SNAPSHOT_URL || "https://mediai-public.vercel.app/data.json";
   try {
     const response = await fetch(snapshotUrl, { next: { revalidate: 300 } });
@@ -145,7 +145,7 @@ async function getMediaAiSnapshotPage(offset: number, limit: number): Promise<Me
 }
 
 /**
- * Read MediaAI's continuously-updated AIDB.media_baseline collection and
+ * Read Mediai's continuously-updated AIDB.media_baseline collection and
  * collapse the generated image + motion variants + narration into one
  * swipeable Wikipedia-topic card.
  *
@@ -153,15 +153,15 @@ async function getMediaAiSnapshotPage(offset: number, limit: number): Promise<Me
  * articles. A page boundary can therefore repeat an article; the client
  * merges repeated article IDs so no asset is lost.
  */
-export async function getMediaAiPage({
+export async function getMediaiPage({
   offset = 0,
   rawLimit = DEFAULT_RAW_PAGE,
 }: {
   offset?: number;
   rawLimit?: number;
-} = {}): Promise<MediaAiPage> {
+} = {}): Promise<MediaiPage> {
   const db = await tryGetDb(DB_NAME);
-  if (!db) return getMediaAiSnapshotPage(Math.max(0, Math.floor(offset)), Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit))));
+  if (!db) return getMediaiSnapshotPage(Math.max(0, Math.floor(offset)), Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit))));
 
   const safeOffset = Math.max(0, Math.floor(offset));
   const safeLimit = Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit)));

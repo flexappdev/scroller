@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import { X, ExternalLink, ArrowUpRight, Link as LinkIcon, Check } from "lucide-react";
+import { X } from "lucide-react";
+import DetailSidebar from "./DetailSidebar";
 
 export type ItemModalAction = {
   href: string;
@@ -54,7 +54,6 @@ export default function ItemModal({
   item: ItemModalDetail | null;
   onClose: () => void;
 }) {
-  const [copied, setCopied] = useState(false);
   // null until hydration finishes so SSR doesn't pick the wrong layout.
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
 
@@ -87,18 +86,6 @@ export default function ItemModal({
 
   if (!item) return null;
 
-  async function copyLink() {
-    if (!item?.internalHref) return;
-    const base = typeof window !== "undefined" ? window.location.origin : "";
-    try {
-      await navigator.clipboard.writeText(`${base}${item.internalHref}`);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
-    } catch {
-      // ignore
-    }
-  }
-
   const body = (
     <>
       <button
@@ -108,108 +95,7 @@ export default function ItemModal({
       >
         <X className="h-4 w-4" />
       </button>
-
-      {item.embed?.kind === "youtube" && (
-        <div className="relative w-full bg-black">
-          <iframe
-            src={item.embed.url}
-            title={item.title}
-            className="w-full aspect-video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
-      )}
-      {item.embed?.kind === "mp4" && (
-        <div className="relative w-full bg-black">
-          <video src={item.embed.url} controls playsInline preload="metadata" poster={item.image ?? undefined} className="w-full aspect-video bg-black" />
-        </div>
-      )}
-      {!item.embed && item.image && (
-        <div className="relative w-full bg-zinc-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={item.image} alt={item.title} className="w-full aspect-video object-cover" />
-        </div>
-      )}
-
-      <div className="p-5 space-y-3">
-        {item.subtitle && (
-          <div className="text-[10px] uppercase tracking-wider text-zinc-500 font-mono">
-            {item.subtitle}
-          </div>
-        )}
-        <h2 className="text-xl font-semibold text-zinc-100 break-words">{item.title}</h2>
-        {item.description && (
-          <p className="text-sm text-zinc-400 whitespace-pre-line">{item.description}</p>
-        )}
-
-        <div className="flex flex-wrap gap-2 pt-2">
-          {item.internalHref && (
-            <Link
-              href={item.internalHref}
-              onClick={onClose}
-              className="flex items-center gap-1.5 rounded-md border border-emerald-700/40 bg-emerald-950/40 px-3 py-2 text-sm text-emerald-300 hover:border-emerald-500 hover:text-emerald-200 transition-colors"
-            >
-              <ArrowUpRight className="h-3.5 w-3.5" />
-              View details
-            </Link>
-          )}
-          {item.url && (
-            <a
-              href={item.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-100 hover:border-zinc-500 transition-colors"
-            >
-              <ExternalLink className="h-3.5 w-3.5" />
-              {item.urlLabel ?? "Open"}
-            </a>
-          )}
-          {item.extraActions?.map((a) =>
-            a.external ? (
-              <a
-                key={a.href}
-                href={a.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors ${
-                  a.primary
-                    ? "border-emerald-700/40 bg-emerald-950/40 text-emerald-300 hover:border-emerald-500"
-                    : "border-zinc-700 bg-zinc-900 text-zinc-100 hover:border-zinc-500"
-                }`}
-              >
-                <ExternalLink className="h-3.5 w-3.5" />
-                {a.label}
-              </a>
-            ) : (
-              <Link
-                key={a.href}
-                href={a.href}
-                onClick={onClose}
-                className={`flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors ${
-                  a.primary
-                    ? "border-emerald-700/40 bg-emerald-950/40 text-emerald-300 hover:border-emerald-500"
-                    : "border-zinc-700 bg-zinc-900 text-zinc-100 hover:border-zinc-500"
-                }`}
-              >
-                <ArrowUpRight className="h-3.5 w-3.5" />
-                {a.label}
-              </Link>
-            ),
-          )}
-          {item.internalHref && (
-            <button
-              type="button"
-              onClick={copyLink}
-              className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-300 hover:border-zinc-500 hover:text-zinc-100 transition-colors"
-              title="Copy link to this item"
-            >
-              {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <LinkIcon className="h-3.5 w-3.5" />}
-              {copied ? "Copied" : "Copy link"}
-            </button>
-          )}
-        </div>
-      </div>
+      <DetailSidebar item={item} onClose={onClose} onNavigate={onClose} />
     </>
   );
 

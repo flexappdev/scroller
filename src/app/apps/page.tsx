@@ -1,29 +1,22 @@
 import { getApps } from "@/lib/fetchers";
-import SourceHero from "@/components/SourceHero";
-import AppsClient from "./AppsClient";
+import MediaiFeed from "@/components/MediaiFeed";
+import { cardToMediai } from "@/lib/scroll/toMediai";
 
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Apps",
-  description: "Fleet apps catalogue — every cleverfox/flexappdev site, grouped by domain.",
+  title: "Apps · Scroller",
+  description: "Fullscreen fleet apps feed.",
 };
 
 export default async function AppsPage() {
-  const { apps, domains, target } = await getApps();
+  const { apps } = await getApps();
   const real = apps.filter((a) => !a.placeholder);
-
-  return (
-    <div className="space-y-8 p-8">
-      <SourceHero
-        source="apps"
-        accent="#06b6d4"
-        label="Scroller · Apps"
-        title="Apps"
-        subtitle={`Fleet apps catalogue from apps-registry.json. Each card carries an S3 screenshot. ${domains.length} domains, ${domains.reduce((n, d) => n + d.subdomains.length, 0)} subdomains.`}
-        rightChip={`${real.length} live · ${target} target`}
-      />
-      <AppsClient apps={apps} />
-    </div>
-  );
+  const initial = {
+    items: real.map((a) => cardToMediai({
+      kind: "app", id: a.id, display_name: a.display_name, domain_name: a.domain_name, subdomain: a.subdomain, accent: a.accent,
+    })),
+    nextOffset: null,
+  };
+  return <MediaiFeed initial={initial} />;
 }

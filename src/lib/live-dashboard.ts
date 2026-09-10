@@ -102,7 +102,7 @@ const SITES: Array<{
   },
   {
     id: "mediai",
-    name: "MediaAI TV",
+    name: "Mediai TV",
     role: "Media-first feed",
     domain: "mediai.tv",
     url: "https://mediai.tv",

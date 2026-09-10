@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getMediaAiPage } from "@/lib/mediai";
+import { getMediaiPage } from "@/lib/mediai";
 
 export const dynamic = "force-dynamic";
 
@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
   const rawLimit = Number(params.get("limit") || 220);
 
   try {
-    const page = await getMediaAiPage({
+    const page = await getMediaiPage({
       offset: Number.isFinite(offset) ? offset : 0,
       rawLimit: Number.isFinite(rawLimit) ? rawLimit : 220,
     });

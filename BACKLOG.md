@@ -41,7 +41,10 @@ guts change so the next 100 apps can reuse them.
       - [x] `StickyFooter` → `@fleet/scroller/BottomNav` (config-driven,
             props-first, defaults preserve v3.5 behavior). App
             `StickyFooter.tsx` is now a 5-line adapter. tsc clean. (2026-09-08)
-      - [ ] `AppShell` → `@fleet/scroller/AppShell` (thin `Chrome` wrapper).
+      - [x] `AppShell` → `@fleet/scroller/AppShell` (thin `Chrome` wrapper
+            with header/footer slots + auto-immersive on "/"). App
+            `AppShell.tsx` is now a 9-line adapter passing StickyHeader +
+            StickyFooter as slots. tsc clean. (2026-09-09)
       - [ ] `StickyHeader` (292L, 30 hardcoded nav items + "SCROLLER"
             wordmark) → package. Needs `NavConfig` prop shape
             (ASSET_GROUPS + PUBLISH_ITEMS externalized) OR split into
@@ -50,11 +53,13 @@ guts change so the next 100 apps can reuse them.
       - [ ] `MediaAiFeed` (325L) → package. Depends on `ContentItem`
             migration completing (feed still consumes 9-shape `Card` union).
       - [ ] `ItemModal` (249L) → package. Do with `MediaAiFeed`.
-      - [ ] **Schema reconcile:** `packages/scroller/src/config.ts`
-            `SiteConfig` (sources/nav[]/monetisation/baseUrl) diverges from
-            app `src/lib/site-config.ts` `SiteConfig`
-            (content/scroller/navigation-flags). Pick one shape before more
-            package components read from `getSite()`.
+      - [x] **Schema reconcile:** merged both shapes into a single
+            canonical `SiteConfig` in `packages/scroller/src/config.ts`
+            (brand+tagline, content, scroller, navigation, sources, nav,
+            monetisation, baseUrl — all app-side fields are now optional
+            on the package type). `src/lib/site-config.ts` is now a thin
+            re-export shim from `@fleet/scroller`. `sites/scroller.config.ts`
+            unchanged — satisfies merged shape. tsc clean. (2026-09-09)
 - [ ] **Wire `getSite()` into `AppShell`** — read `brand.accent` and
       `brand.name` from the resolved SiteConfig; drop the hard-coded pink
       and "Scroller" strings.

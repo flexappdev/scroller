@@ -4,7 +4,7 @@ import { DOMAINS } from "@/lib/taxonomy";
 import { listSites } from "@/lib/cms/sites";
 import { getAmazonItems } from "@/lib/scroll/amazon";
 import { getImageItems } from "@/lib/scroll/images";
-import { getMediaAiPage } from "@/lib/mediai";
+import { getMediaiPage } from "@/lib/mediai";
 import { funnyThings } from "@/lib/funny";
 import HomeClient from "../HomeClient";
 import type { Card } from "@/components/ScrollerFeed";
@@ -75,7 +75,7 @@ export default async function BrowsePage({ searchParams }: { searchParams: Promi
     sourceOrFallback("wikivoyage", () => getWikiVoyage(voyageCount), { items: [] }),
     sourceOrFallback("amazon", () => getAmazonItems({ limit: 200 }), { items: [], source: "", reachable: false }),
     sourceOrFallback("images", () => getImageItems({ limit: 100 }), { items: [], nextCursor: null }),
-    sourceOrFallback("mediai", () => getMediaAiPage({ rawLimit: 220 }), { items: [], nextOffset: null }),
+    sourceOrFallback("mediai", () => getMediaiPage({ rawLimit: 220 }), { items: [], nextOffset: null }),
   ]);
 
   const cards: Card[] = [];
@@ -127,7 +127,7 @@ export default async function BrowsePage({ searchParams }: { searchParams: Promi
     title: i.title,
     size: i.size,
   })));
-  // MediaAI generated media — surfaced as wiki cards (Wikipedia-derived) with
+  // Mediai generated media — surfaced as wiki cards (Wikipedia-derived) with
   // the generated image as thumbnail.
   cards.push(...mediaiRes.items.slice(0, 80).map((m) => ({
     kind: "wiki" as const,

@@ -40,7 +40,7 @@ const ASSET_GROUPS: Array<{ label: string; items: NavItem[] }> = [
   {
     label: "Watch",
     items: [
-      { href: "/", label: "MediaAI feed", description: "Generated image, motion and audio", icon: Radio },
+      { href: "/", label: "Mediai feed", description: "Generated image, motion and audio", icon: Radio },
       { href: "/browse", label: "All media", description: "Every Scroller source in one browser", icon: Layers3 },
       { href: "/videos", label: "Videos", description: "Mat Siems + Siems Production", icon: Film },
       { href: "/images", label: "Images", description: "Search the generated S3 image vault", icon: Images },
@@ -68,8 +68,8 @@ const ASSET_GROUPS: Array<{ label: string; items: NavItem[] }> = [
     label: "Stores",
     items: [
       { href: "/admin/s3", label: "S3 · com27", description: "Buckets, prefixes and raw assets", icon: Cloud },
-      { href: "/admin/mongo", label: "MediaAI · Mongo", description: "AIDB media_baseline records", icon: Database },
-      { href: "https://mediai-public.vercel.app", label: "MediaAI studio", description: "Public generated-media surface", icon: Radio, external: true },
+      { href: "/admin/mongo", label: "Mediai · Mongo", description: "AIDB media_baseline records", icon: Database },
+      { href: "https://mediai-public.vercel.app", label: "Mediai studio", description: "Public generated-media surface", icon: Radio, external: true },
       { href: "https://github.com/flexappdev/scroller", label: "Source code", description: "Scroller repository on GitHub", icon: Github, external: true },
     ],
   },
@@ -102,7 +102,7 @@ const PUBLISH_ITEMS: NavItem[] = [
   },
   {
     href: "https://mediai-public.vercel.app",
-    label: "MediaAI",
+    label: "Mediai",
     description: "Review generated media before release",
     icon: Radio,
     external: true,
@@ -209,7 +209,7 @@ export default function StickyHeader() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--accent)] opacity-60" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
           </span>
-          {onHome ? "MediaAI live" : pathname.slice(1).replaceAll("-", " ") || "feed"}
+          {onHome ? "Mediai live" : pathname.slice(1).replaceAll("-", " ") || "feed"}
         </span>
       </div>
 

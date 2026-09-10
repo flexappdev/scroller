@@ -1,39 +1,19 @@
 import { getVideos } from "@/lib/fetchers";
-import SourceHero from "@/components/SourceHero";
-import VideosClient from "./VideosClient";
+import MediaiFeed from "@/components/MediaiFeed";
+import { cardToMediai } from "@/lib/scroll/toMediai";
 
 export const revalidate = 600;
 
 export const metadata = {
-  title: "Videos",
-  description: "Videos from @MatSiems and @mat-siems-production on YouTube.",
+  title: "Videos · Scroller",
+  description: "Fullscreen video feed from @MatSiems + @mat-siems-production.",
 };
 
 export default async function VideosPage() {
   const { videos } = await getVideos();
-
-  return (
-    <div className="space-y-8 p-8">
-      <SourceHero
-        source="videos"
-        accent="#ef4444"
-        label="Scroller · Videos"
-        title="Videos"
-        subtitle="Dual-channel YouTube feed — @MatSiems + @mat-siems-production, merged via handle resolver and deduplicated by video id."
-        rightChip={`${videos.length} videos`}
-      />
-
-      {videos.length === 0 ? (
-        <div className="rounded-lg border border-zinc-800 bg-zinc-900/60 p-6 text-sm text-zinc-400">
-          No videos resolved from RSS. Check{" "}
-          <a className="underline" href="https://www.youtube.com/@mat-siems-production" target="_blank" rel="noreferrer">
-            the channel
-          </a>{" "}
-          directly.
-        </div>
-      ) : (
-        <VideosClient videos={videos} />
-      )}
-    </div>
-  );
+  const initial = {
+    items: videos.map((v) => cardToMediai({ kind: "video", id: v.id, title: v.title, url: v.url, thumbnail: v.thumbnail, published: v.published })),
+    nextOffset: null,
+  };
+  return <MediaiFeed initial={initial} />;
 }

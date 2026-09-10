@@ -3,11 +3,13 @@
 import { Fragment, useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { Bookmark, ExternalLink, Info, Share2, Volume2, VolumeX } from "lucide-react";
-import type { MediaAiArticle, MediaAiPage } from "@/lib/mediai";
+import type { MediaiArticle, MediaiPage } from "@/lib/mediai";
 import MediaDetailSheet from "./MediaDetailSheet";
 import AdSenseFeedCard from "./AdSenseFeedCard";
+import CardActions from "./CardActions";
+import { pushHistory } from "@/lib/likes-saves";
 
-function mergeArticles(current: MediaAiArticle[], incoming: MediaAiArticle[]): MediaAiArticle[] {
+function mergeArticles(current: MediaiArticle[], incoming: MediaiArticle[]): MediaiArticle[] {
   const byId = new Map(current.map((item) => [item.id, { ...item, videoUrls: [...item.videoUrls] }]));
 
   for (const item of incoming) {
@@ -39,23 +41,23 @@ function shuffled<T>(input: T[]): T[] {
   return next;
 }
 
-export default function MediaAiFeed({
+export default function MediaiFeed({
   initial,
   showAds = false,
   adsenseClient,
   adsenseSlot,
 }: {
-  initial: MediaAiPage;
+  initial: MediaiPage;
   showAds?: boolean;
   adsenseClient?: string | null;
   adsenseSlot?: string | null;
 }) {
   const adsEnabled = Boolean(showAds && adsenseClient && adsenseSlot);
-  const [items, setItems] = useState<MediaAiArticle[]>(initial.items);
+  const [items, setItems] = useState<MediaiArticle[]>(initial.items);
   const [nextOffset, setNextOffset] = useState<number | null>(initial.nextOffset);
   const [activeIndex, setActiveIndex] = useState(0);
   const [loadingMore, setLoadingMore] = useState(false);
-  const [detail, setDetail] = useState<MediaAiArticle | null>(null);
+  const [detail, setDetail] = useState<MediaiArticle | null>(null);
   const [refreshing, setRefreshing] = useState(false);
   const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
   const feedRef = useRef<HTMLDivElement>(null);
@@ -69,7 +71,7 @@ export default function MediaAiFeed({
     }
   }, []);
 
-  const toggleSave = useCallback((item: MediaAiArticle) => {
+  const toggleSave = useCallback((item: MediaiArticle) => {
     try {
       const key = "scroller:saved";
       const rows = JSON.parse(localStorage.getItem(key) || "[]") as Array<{
@@ -100,11 +102,14 @@ export default function MediaAiFeed({
     window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
   }, []);
 
-  const openDetail = useCallback((item: MediaAiArticle) => {
-    setDetail(item);
+  const openDetail = useCallback((item: MediaiArticle) => {
+    setDetail((current) => (current?.id === item.id ? null : item));
+    pushHistory(`mediai:${item.id}`, { title: item.topic, kind: "mediai", href: `/items/${encodeURIComponent(`wiki:${item.assetId}`)}` });
     if (typeof window === "undefined") return;
     const url = new URL(window.location.href);
-    url.searchParams.set("card", item.id);
+    const already = url.searchParams.get("card") === item.id;
+    if (already) url.searchParams.delete("card");
+    else url.searchParams.set("card", item.id);
     window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
   }, []);
 
@@ -114,7 +119,7 @@ export default function MediaAiFeed({
     try {
       const response = await fetch(`/api/mediai?offset=${nextOffset}&limit=220`);
       if (!response.ok) return;
-      const page = (await response.json()) as MediaAiPage;
+      const page = (await response.json()) as MediaiPage;
       setItems((current) => mergeArticles(current, shuffled(page.items)));
       setNextOffset(page.nextOffset);
     } catch (error) {
@@ -167,7 +172,7 @@ export default function MediaAiFeed({
   }, [items.length]);
 
   // Links copied from the detail sheet are real restorable deep links. The
-  // topic card is part of the initial MediaAI window, even though its display
+  // topic card is part of the initial Mediai window, even though its display
   // order is shuffled on each request.
   useEffect(() => {
     const cardId = new URLSearchParams(window.location.search).get("card");
@@ -218,9 +223,9 @@ export default function MediaAiFeed({
     return (
       <main className="fixed inset-0 z-20 flex items-center justify-center bg-black px-8 text-white">
         <div className="max-w-sm text-center">
-          <p className="text-xs font-black uppercase tracking-[0.24em] text-pink-400">Scroller · MediaAI</p>
-          <h1 className="mt-3 text-3xl font-black tracking-tight">No MediaAI rows yet.</h1>
-          <p className="mt-3 text-sm leading-6 text-white/55">The home feed now reads AIDB.media_baseline directly. Check the MediaAI Mongo sync if this stays empty.</p>
+          <p className="text-xs font-black uppercase tracking-[0.24em] text-pink-400">Scroller · Mediai</p>
+          <h1 className="mt-3 text-3xl font-black tracking-tight">No Mediai rows yet.</h1>
+          <p className="mt-3 text-sm leading-6 text-white/55">The home feed now reads AIDB.media_baseline directly. Check the Mediai Mongo sync if this stays empty.</p>
           <Link href="/browse" className="mt-6 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-bold text-white/85">Open legacy browser</Link>
         </div>
       </main>
@@ -257,7 +262,7 @@ export default function MediaAiFeed({
             ) : null}
           </Fragment>
         ))}
-        {loadingMore && <div className="h-1 w-full bg-pink-500/60" aria-label="Loading more MediaAI items" />}
+        {loadingMore && <div className="h-1 w-full bg-pink-500/60" aria-label="Loading more Mediai items" />}
       </div>
       <MediaDetailSheet item={detail} onClose={closeDetail} />
     </main>
@@ -273,7 +278,7 @@ function MediaCard({
   saved,
   onToggleSave,
 }: {
-  item: MediaAiArticle;
+  item: MediaiArticle;
   index: number;
   total: number;
   active: boolean;
@@ -388,7 +393,7 @@ function MediaCard({
         }}
       >
         <div className="mb-2 flex items-center gap-2">
-          <span className="rounded-full border border-[color-mix(in_oklch,var(--accent)_52%,transparent)] bg-[color-mix(in_oklch,var(--accent)_16%,transparent)] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[var(--accent)] backdrop-blur">Wikipedia · MediaAI</span>
+          <span className="rounded-full border border-[color-mix(in_oklch,var(--accent)_52%,transparent)] bg-[color-mix(in_oklch,var(--accent)_16%,transparent)] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[var(--accent)] backdrop-blur">Wikipedia · Mediai</span>
           <span className="text-[10px] font-bold tabular-nums text-white/55">{index + 1} / {total}</span>
         </div>
         <h1 className="scroller-display line-clamp-2 max-w-5xl text-[clamp(1.5rem,6.5vw,3.25rem)] font-black uppercase leading-[0.95] tracking-[-0.055em] text-white [text-shadow:0_2px_24px_rgba(0,0,0,.75)]">{item.topic}</h1>

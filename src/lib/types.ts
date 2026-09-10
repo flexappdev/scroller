@@ -1,4 +1,4 @@
-// Universal types for the ABC + VaultAI + MediaAI + ScrollerAI platform.
+// Universal types for the ABC + VaultAI + Mediai + ScrollerAI platform.
 // See docs/PRD-ALIGNMENT.md §10 (ContentItem) and §9 (AssetRef).
 //
 // v4.0 introduces ContentItem alongside the legacy per-source `Card` union in

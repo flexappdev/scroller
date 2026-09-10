@@ -1,28 +1,21 @@
 import { getStars } from "@/lib/fetchers";
-import SourceHero from "@/components/SourceHero";
-import GithubClient from "./GithubClient";
+import MediaiFeed from "@/components/MediaiFeed";
+import { cardToMediai } from "@/lib/scroll/toMediai";
 
 export const revalidate = 1800;
 
 export const metadata = {
-  title: "GitHub Stars",
-  description: "Repositories starred by @flexappdev, grouped by language.",
+  title: "GitHub Stars · Scroller",
+  description: "Fullscreen GitHub stars feed.",
 };
 
 export default async function GithubPage() {
-  const { stars, truncated } = await getStars();
-
-  return (
-    <div className="space-y-8 p-8">
-      <SourceHero
-        source="github"
-        accent="#a78bfa"
-        label="Scroller · GitHub Stars"
-        title="GitHub Stars"
-        subtitle={`Repos starred by @flexappdev, fetched via the public GitHub REST API and grouped by language.${truncated ? " · rate-limited, list may be partial" : ""}`}
-        rightChip={`${stars.length} repos`}
-      />
-      <GithubClient stars={stars} />
-    </div>
-  );
+  const { stars } = await getStars();
+  const initial = {
+    items: stars.map((s) => cardToMediai({
+      kind: "star", full_name: s.full_name, description: s.description, html_url: s.html_url, stars: s.stargazers_count, language: s.language,
+    })),
+    nextOffset: null,
+  };
+  return <MediaiFeed initial={initial} />;
 }

@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { X, ExternalLink, Volume2, Film, BookOpen, Link as LinkIcon, Check } from "lucide-react";
-import type { MediaAiArticle } from "@/lib/mediai";
+import type { MediaiArticle } from "@/lib/mediai";
 
 type WikiSummary = {
   extract: string;
@@ -50,7 +50,7 @@ export default function MediaDetailSheet({
   item,
   onClose,
 }: {
-  item: MediaAiArticle | null;
+  item: MediaiArticle | null;
   onClose: () => void;
 }) {
   const [copied, setCopied] = useState(false);
@@ -153,7 +153,7 @@ export default function MediaDetailSheet({
       <div className="p-5 space-y-4">
         <div>
           <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">
-            Wikipedia · MediaAI
+            Wikipedia · Mediai
           </div>
           <h2 className="mt-1 text-xl font-semibold text-zinc-100 break-words">{item.topic}</h2>
           {wiki?.description && (

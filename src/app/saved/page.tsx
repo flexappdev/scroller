@@ -1,4 +1,5 @@
 import SavedPageClient from "@/components/SavedPageClient";
+import SavedClient from "./SavedClient";
 
 export default function SavedPage() {
   return (
@@ -9,6 +10,9 @@ export default function SavedPage() {
         Save cards from Home and return to them here. Saves stay on this device.
       </p>
       <SavedPageClient />
+      <div className="mt-10 border-t pt-8" style={{ borderColor: "var(--border)" }}>
+        <SavedClient />
+      </div>
     </main>
   );
 }

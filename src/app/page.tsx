@@ -1,5 +1,5 @@
-import MediaAiFeed from "@/components/MediaAiFeed";
-import { getMediaAiPage, type MediaAiPage } from "@/lib/mediai";
+import MediaiFeed from "@/components/MediaiFeed";
+import { getMediaiPage, type MediaiPage } from "@/lib/mediai";
 import { isScrollerLoggedIn } from "@/lib/auth-state";
 
 // Home must feel fresh on every visit. Do not reuse a previously rendered
@@ -17,19 +17,19 @@ function shuffled<T>(input: T[]): T[] {
 }
 
 export default async function HomePage() {
-  let initial: MediaAiPage = { items: [], nextOffset: null };
+  let initial: MediaiPage = { items: [], nextOffset: null };
 
   try {
-    initial = await getMediaAiPage({ rawLimit: 220 });
+    initial = await getMediaiPage({ rawLimit: 220 });
     initial = { ...initial, items: shuffled(initial.items) };
   } catch (error) {
-    console.error("[home] MediaAI feed failed", error);
+    console.error("[home] Mediai feed failed", error);
   }
 
   const loggedIn = await isScrollerLoggedIn();
 
   return (
-    <MediaAiFeed
+    <MediaiFeed
       initial={initial}
       showAds={!loggedIn}
       adsenseClient={process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || null}

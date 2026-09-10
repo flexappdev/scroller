@@ -1,29 +1,19 @@
 import { getWiki } from "@/lib/fetchers";
-import SourceHero from "@/components/SourceHero";
-import WikiClient from "./WikiClient";
+import MediaiFeed from "@/components/MediaiFeed";
+import { cardToMediai } from "@/lib/scroll/toMediai";
 
-// v2.1: drop contradictory `force-dynamic`; keep ISR only so the wiki bucket
-// is served from the CDN edge for 10 minutes before revalidation.
 export const revalidate = 600;
 
 export const metadata = {
   title: "Wiki · Scroller",
-  description: "Random Wikipedia articles — full content via the Wikipedia REST API.",
+  description: "Fullscreen Wikipedia feed.",
 };
 
 export default async function WikiPage() {
   const { items } = await getWiki(100);
-  return (
-    <main className="mx-auto w-full max-w-6xl px-6 py-8 space-y-6">
-      <SourceHero
-        source="wiki"
-        accent="#e5e7eb"
-        label="Scroller · Wikipedia"
-        title="Wiki"
-        subtitle="Random articles from en.wikipedia.org. Refresh to rotate. Cache layer: unstable_cache → Supabase index → MongoDB."
-        rightChip={`${items.length} articles`}
-      />
-      <WikiClient items={items} />
-    </main>
-  );
+  const initial = {
+    items: items.map((w) => cardToMediai({ kind: "wiki", ...w })),
+    nextOffset: null,
+  };
+  return <MediaiFeed initial={initial} />;
 }

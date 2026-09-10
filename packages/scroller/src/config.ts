@@ -1,6 +1,10 @@
 /**
  * site.config.ts schema for @fleet/scroller consumers.
  * PBI-S-3 in ~/.claude/plans/staus-of-all-apps-groovy-turing.md.
+ *
+ * This is the CANONICAL SiteConfig shape. The app-side re-export at
+ * `src/lib/site-config.ts` is a thin compatibility shim — do not diverge.
+ * See docs/PRD-ALIGNMENT.md §13.
  */
 
 import type { ContentItemKind } from "./types/ContentItem";
@@ -10,6 +14,8 @@ export interface BrandTokens {
   accent: string;
   logo?: string;
   themeDefault?: "light" | "dark";
+  /** Short one-liner shown under the wordmark / in meta description. */
+  tagline?: string;
 }
 
 export interface NavItem {
@@ -26,13 +32,50 @@ export interface MonetisationFlags {
   affiliateTag?: string;
 }
 
+export type ScrollerMode = "media" | "article" | "product" | "mixed";
+
+export interface SiteContent {
+  /** Mongo/S3 collection name this site pulls from. */
+  collection: string;
+  /** Default page size for feed queries. */
+  defaultLimit: number;
+  /** VaultAI audience gate. `"private"` is rejected in public app code. */
+  audience?: "public" | "shared";
+}
+
+export interface SiteScroller {
+  mode: ScrollerMode;
+  ranking?: boolean;
+  comments?: boolean;
+  audio?: boolean;
+  video?: boolean;
+  articles?: boolean;
+}
+
+export interface SiteNavigation {
+  home: boolean;
+  explore: boolean;
+  create: boolean | { label: string; href: string };
+  saved: boolean;
+  profile: boolean;
+}
+
 export interface SiteConfig {
   id: string;
+  version?: string;
   brand: BrandTokens;
-  sources: ContentItemKind[];
-  nav: NavItem[];
+  /** Content pipeline config — collection + audience gate. */
+  content?: SiteContent;
+  /** Scroller feed capabilities. */
+  scroller?: SiteScroller;
+  /** Per-destination navigation flags (drives five-button nav). */
+  navigation?: SiteNavigation;
+  /** Explicit source kinds allowed in feed (if omitted, engine defaults). */
+  sources?: ContentItemKind[];
+  /** Explicit nav items (advanced override; usually derived from `navigation`). */
+  nav?: NavItem[];
   monetisation?: MonetisationFlags;
-  baseUrl: string;
+  baseUrl?: string;
 }
 
 /** Identity helper for authoring a site.config.ts with type-checking. */

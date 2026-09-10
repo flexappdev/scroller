@@ -2,9 +2,9 @@
 
 > One feed. Every source.
 
-Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[scroller-psi.vercel.app](https://scroller-psi.vercel.app)** + **[scroller-bay.vercel.app](https://scroller-bay.vercel.app)**.
+Mobile-first vertical feed that mixes nine sources into a single daily-shuffled stream, with snap-scroll UI, modal-first navigation, per-item detail pages, and a sticky source selector. Live at **[www.scroller.tv](https://www.scroller.tv/)**.
 
-Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **19013** · Accent **#ec4899** · **v3.2.0**
+Next.js 15 · React 19 · Tailwind · Supabase · MongoDB · S3 · Port **25000** · Accent **#ec4899** · **v3.2.0**
 
 ## What's new in v3.2.0
 
@@ -102,7 +102,7 @@ The first daily pack is `news-2026-09-08-openai-nyt-copyright`.
 ```sh
 cp .env.example .env.local       # fill in Supabase/Mongo/S3 keys
 npm install
-npm run dev                       # http://localhost:19013
+npm run dev                       # http://localhost:25000
 ```
 
 ## Build & deploy

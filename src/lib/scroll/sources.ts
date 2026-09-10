@@ -1,6 +1,8 @@
 export type ScrollSourceId =
   | "all"
   | "mediai"
+  | "mediai-videos"
+  | "mediai-audio"
   | "videos"
   | "github"
   | "prompts"
@@ -23,7 +25,9 @@ export interface ScrollSource {
 
 export const SCROLL_SOURCES: ScrollSource[] = [
   { id: "all", label: "All", description: "Random feed across every scroll source.", accent: "#ec4899", href: "/" },
-  { id: "mediai", label: "MediaAI", description: "Generated Wikipedia-derived image, motion and audio.", accent: "#ec4899", href: "/" },
+  { id: "mediai", label: "Mediai", description: "Generated Wikipedia-derived image, motion and audio.", accent: "#ec4899", href: "/" },
+  { id: "mediai-videos", label: "Mediai Videos", description: "Mediai topics with a motion/video asset (kenburns + ltx).", accent: "#f472b6", href: "/mediai-videos" },
+  { id: "mediai-audio", label: "Mediai Audio", description: "Mediai topics with a narration audio asset.", accent: "#f9a8d4", href: "/mediai-audio" },
   { id: "videos", label: "Videos", description: "@MatSiems + @mat-siems-production on YouTube.", accent: "#ef4444", href: "/videos" },
   { id: "github", label: "GitHub", description: "Stars from @flexappdev.", accent: "#a78bfa", href: "/github" },
   { id: "prompts", label: "Prompts", description: "Top 100 AI prompts.", accent: "#f59e0b", href: "/prompts" },
