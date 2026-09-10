@@ -1,0 +1,80 @@
+{
+  "scroller": [
+    {
+      "id": "scroller-nav-random",
+      "title": "Home refresh randomisation + Home · Explore · Gen · Saved · Me navigation",
+      "status": "done",
+      "priority": "P0"
+    },
+    {
+      "id": "scroller-tv-domain",
+      "title": "Verify scroller.tv routes to the shared Scroller production runtime",
+      "status": "todo",
+      "priority": "P0"
+    },
+    {
+      "id": "scroller-adsense-prod",
+      "title": "Set the production AdSense feed slot and verify anonymous ads after 20/40/60/80 items",
+      "status": "todo",
+      "priority": "P0"
+    },
+    {
+      "id": "scroller-33-packs",
+      "title": "Publish and track the initial 33 Scroller packs in one fleet view",
+      "status": "wip",
+      "priority": "P1"
+    }
+  ],
+  "wikai": [
+    {
+      "id": "wikai-tv-domain",
+      "title": "Verify wikai.tv routes to the knowledge-first production experience",
+      "status": "todo",
+      "priority": "P0"
+    },
+    {
+      "id": "wikai-shared-shell",
+      "title": "Align the WIKAI flagship with the shared Scroller navigation and domain contract",
+      "status": "todo",
+      "priority": "P0"
+    },
+    {
+      "id": "wikai-monetisation",
+      "title": "Wire anonymous AdSense + affiliate telemetry into the shared revenue loop",
+      "status": "todo",
+      "priority": "P1"
+    },
+    {
+      "id": "wikai-content",
+      "title": "Validate Top Today / All Time / Top 100 feeds end-to-end on the .tv domain",
+      "status": "todo",
+      "priority": "P1"
+    }
+  ],
+  "mediai": [
+    {
+      "id": "mediai-tv-domain",
+      "title": "Verify mediai.tv routes to the media-first public experience",
+      "status": "todo",
+      "priority": "P0"
+    },
+    {
+      "id": "mediai-shared-shell",
+      "title": "Align the MediaAI flagship with the shared Scroller navigation and domain contract",
+      "status": "todo",
+      "priority": "P0"
+    },
+    {
+      "id": "mediai-live-stats",
+      "title": "Surface MediaAI library / asset completion stats into Scroller Live",
+      "status": "wip",
+      "priority": "P1"
+    },
+    {
+      "id": "mediai-revenue",
+      "title": "Connect media views, outbound clicks and monetisation events to the shared revenue loop",
+      "status": "todo",
+      "priority": "P1"
+    }
+  ]
+}
