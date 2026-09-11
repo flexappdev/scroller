@@ -1,0 +1,33 @@
+{
+  "slug": "news-2026-09-11-uae-ai-campus-resilience",
+  "name": "UAE Hardens Its AI Future: 100 Things to Know",
+  "tagline": "Today’s lead AI story: the UAE is redesigning its 5GW AI campus for wartime resilience after attacks on Gulf data centres.",
+  "description": "A dated 11 September 2026 ScrollAI news snapshot on the UAE’s reported shift from one giant AI campus toward a distributed, hardened network of data centres, and what it means for Stargate, sovereign AI and infrastructure security.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-11",
+  "snapshot": "2026-09-11 Europe/London",
+  "defaultView": "scroller",
+  "category": "AI",
+  "newsPriority": 1,
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "local-first",
+    "videoFallback": "Runware"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
