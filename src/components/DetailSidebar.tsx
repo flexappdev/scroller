@@ -82,29 +82,20 @@ export default function DetailSidebar({
   return (
     <div className="flex h-full flex-col">
       {/* Hero */}
-      {item.embed?.kind === "youtube" ? (
-        <div className="relative w-full bg-black">
-          <iframe src={item.embed.url} title={item.title} className="w-full aspect-video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
-        </div>
-      ) : item.embed?.kind === "mp4" ? (
-        <div className="relative w-full bg-black">
-          <video src={item.embed.url} controls playsInline preload="metadata" poster={item.image ?? undefined} className="w-full aspect-video bg-black" />
-        </div>
-      ) : item.image ? (
-        <div className="relative w-full bg-zinc-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={item.image} alt={item.title} className="w-full aspect-video object-cover" />
-        </div>
-      ) : null}
-
+      {/* Compact header — no hero image (the feed card behind already shows it),
+          so all five accordion rows stay above the fold on any viewport. */}
       <div className="border-b border-zinc-800 px-4 py-3 flex items-start gap-3">
+        {item.image && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={item.image} alt="" className="h-12 w-12 shrink-0 rounded-lg object-cover" />
+        )}
         <div className="min-w-0 flex-1">
           {item.subtitle && (
             <div className="text-[10px] uppercase tracking-wider text-zinc-500 font-mono">{item.subtitle}</div>
           )}
-          <h2 className="mt-1 text-lg font-semibold text-zinc-100 break-words leading-tight">{item.title}</h2>
+          <h2 className="mt-0.5 text-sm font-semibold text-zinc-100 break-words leading-tight line-clamp-2">{item.title}</h2>
         </div>
-        <CardActions id={item.id} size={16} />
+        <CardActions id={item.id} size={14} />
       </div>
 
       <div className="flex-1 overflow-y-auto">
@@ -263,7 +254,7 @@ function Section({
       <button
         type="button"
         onClick={onToggle}
-        className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors ${
+        className={`flex w-full items-center justify-between px-4 py-2.5 text-left text-sm transition-colors ${
           disabled ? "text-zinc-600" : "text-zinc-100 hover:bg-zinc-900/40"
         }`}
         aria-expanded={open}
