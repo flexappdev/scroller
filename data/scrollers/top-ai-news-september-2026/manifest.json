@@ -1,0 +1,15 @@
+{
+  "slug": "top-ai-news-september-2026",
+  "name": "Top AI News — September 2026 So Far",
+  "tagline": "The 20 highest-impact AI stories through September 11, 2026.",
+  "description": "A Trinity/ScrollAI month-to-date editorial ranking staged for verification, child-pack generation and media reuse.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-11",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "partial",
+  "publishState": "blocked_until_verified",
+  "pipeline": {"page":"ready","list":"ready","verification":"queued","images":"queued","audio":"queued","video":"queued"},
+  "navigation": ["home","explore","create","saved","me"]
+}
