@@ -13,19 +13,16 @@ plane. One engine, per-site config. Do not build a new Scroller per app.
 
 ## v3.7 — Wire the v3.6 chrome (queued 2026-09-11)
 
-- [ ] **MediaiFeed listens for `scroller:sort`** — sort the loaded items
-      by Random / Ranked / A–Z when the header Sort menu picks one.
-      Random already dispatches `scroller:random`; add ranked (index)
-      and alpha (`topic.localeCompare`).
-- [ ] **MediaiFeed listens for `scroller:view`** — swap the fullscreen
-      swipe layout for Grid (tiny boxes filling the screen) or Table
-      (compact rows) when View picks non-scroll. Persist across route
-      changes via `scroller:view` localStorage key.
-- [ ] **Grid view renderer** — CSS `grid-auto-rows: minmax(...)` with
-      120–160px tiles, image `object-cover`, no chrome. Tap opens
-      DetailSidebar (same as scroll view).
-- [ ] **Table view renderer** — one-line rows: `[thumb 40×40] [title]
-      [kind chip] [source host]`. Tap opens DetailSidebar.
+- [x] **MediaiFeed listens for `scroller:sort`** — Ranked sorts by
+      `assetCount desc`, A–Z by `topic.localeCompare`, Random reshuffles.
+      (v3.6.2, 2026-09-11)
+- [x] **MediaiFeed listens for `scroller:view`** — Grid + Table
+      renderers ship; scroll stays default. Hydrated from
+      `localStorage:scroller:view`. (v3.6.2, 2026-09-11)
+- [x] **Grid view renderer** — auto-fill 90px tiles, `object-cover`,
+      hover title overlay, click opens DetailSidebar. (v3.6.2)
+- [x] **Table view renderer** — 40×40 thumb + title + kind chip rows.
+      (v3.6.2)
 - [ ] **Header Assets menu — total asset count per row** — fetch the
       counts server-side (same `safe(...)` pattern as `/explore`), pass
       into the menu, render a chip next to each entry.
@@ -44,13 +41,12 @@ plane. One engine, per-site config. Do not build a new Scroller per app.
 - [ ] **Sidebar auto-open first section when nothing else is expanded**
       — soft UX polish: if the user hasn't opened anything for 5s,
       subtly pulse the Article header.
-- [ ] **Header version chip auto-reads `package.json`** — replace the
-      hardcoded `APP_VERSION = "3.6.0"` const with a build-time inject
-      (or export from `src/lib/version.ts`).
+- [x] **Header version chip auto-reads `package.json`** — one export
+      `APP_VERSION` from `src/lib/version.ts`. (v3.6.2, 2026-09-11)
 - [ ] **`/version` page pulls the same source of truth** — one export,
       one commit-log-derived history table.
-- [ ] **Random dice haptic on mobile** — `navigator.vibrate?.(20)` on
-      footer Random tap (progressive enhancement).
+- [x] **Random dice haptic on mobile** — `navigator.vibrate(20)` fires
+      before the shuffle event. (v3.6.2, 2026-09-11)
 - [ ] **Footer Random tooltip on hover (desktop)** — "Shuffle this
       feed" copy; not just aria-label.
 

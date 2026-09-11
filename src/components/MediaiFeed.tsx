@@ -192,6 +192,27 @@ export default function MediaiFeed({
     window.setTimeout(() => setRefreshing(false), 220);
   }, []);
 
+  const applySort = useCallback((mode: "random" | "ranked" | "alpha") => {
+    setRefreshing(true);
+    setItems((current) => {
+      if (mode === "alpha") return [...current].sort((a, b) => a.topic.localeCompare(b.topic));
+      if (mode === "ranked") return [...current].sort((a, b) => (b.assetCount ?? 0) - (a.assetCount ?? 0));
+      return shuffled(current);
+    });
+    setActiveIndex(0);
+    feedRef.current?.scrollTo({ top: 0, behavior: "instant" });
+    window.setTimeout(() => setRefreshing(false), 220);
+  }, []);
+
+  const [viewMode, setViewMode] = useState<"scroll" | "grid" | "table">("scroll");
+
+  useEffect(() => {
+    try {
+      const v = localStorage.getItem("scroller:view");
+      if (v === "grid" || v === "table" || v === "scroll") setViewMode(v);
+    } catch {}
+  }, []);
+
   useEffect(() => {
     function onNavigate(event: Event) {
       const detail = (event as CustomEvent<{ direction: "prev" | "next" }>).detail;
@@ -199,6 +220,14 @@ export default function MediaiFeed({
     }
     function onRandom() {
       shuffle();
+    }
+    function onSort(event: Event) {
+      const detail = (event as CustomEvent<"random" | "ranked" | "alpha">).detail;
+      if (detail === "random" || detail === "ranked" || detail === "alpha") applySort(detail);
+    }
+    function onView(event: Event) {
+      const detail = (event as CustomEvent<"scroll" | "grid" | "table">).detail;
+      if (detail === "scroll" || detail === "grid" || detail === "table") setViewMode(detail);
     }
     function onKey(event: KeyboardEvent) {
       if (event.key === "ArrowDown" || event.key === "PageDown") {
@@ -212,13 +241,17 @@ export default function MediaiFeed({
     }
     window.addEventListener("scroller:nav", onNavigate as EventListener);
     window.addEventListener("scroller:random", onRandom);
+    window.addEventListener("scroller:sort", onSort as EventListener);
+    window.addEventListener("scroller:view", onView as EventListener);
     window.addEventListener("keydown", onKey);
     return () => {
       window.removeEventListener("scroller:nav", onNavigate as EventListener);
       window.removeEventListener("scroller:random", onRandom);
+      window.removeEventListener("scroller:sort", onSort as EventListener);
+      window.removeEventListener("scroller:view", onView as EventListener);
       window.removeEventListener("keydown", onKey);
     };
-  }, [activeIndex, goTo, shuffle]);
+  }, [activeIndex, goTo, shuffle, applySort]);
 
   if (items.length === 0) {
     return (
@@ -229,6 +262,62 @@ export default function MediaiFeed({
           <p className="mt-3 text-sm leading-6 text-white/55">The home feed now reads AIDB.media_baseline directly. Check the Mediai Mongo sync if this stays empty.</p>
           <Link href="/browse" className="mt-6 inline-flex rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-bold text-white/85">Open legacy browser</Link>
         </div>
+      </main>
+    );
+  }
+
+  if (viewMode === "grid") {
+    return (
+      <main className="fixed inset-0 z-20 overflow-hidden bg-black text-white" data-testid="mediai-feed">
+        <div className="h-[100dvh] w-full overflow-y-auto pb-[5rem] pt-14">
+          <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-1 p-1">
+            {items.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => openDetail(item)}
+                className="relative aspect-square overflow-hidden bg-zinc-900 group"
+                aria-label={item.topic}
+                title={item.topic}
+              >
+                {item.imageUrl && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={item.imageUrl} alt="" className="h-full w-full object-cover transition-transform group-hover:scale-105" loading="lazy" />
+                )}
+                <span className="absolute inset-x-0 bottom-0 truncate bg-gradient-to-t from-black/80 to-transparent px-1.5 py-1 text-[9px] font-bold text-white opacity-0 group-hover:opacity-100">{item.topic}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+        <MediaDetailSheet item={detail} onClose={closeDetail} />
+      </main>
+    );
+  }
+
+  if (viewMode === "table") {
+    return (
+      <main className="fixed inset-0 z-20 overflow-hidden bg-black text-white" data-testid="mediai-feed">
+        <div className="h-[100dvh] w-full overflow-y-auto pb-[5rem] pt-14">
+          <ul className="divide-y divide-zinc-900">
+            {items.map((item) => (
+              <li key={item.id}>
+                <button
+                  type="button"
+                  onClick={() => openDetail(item)}
+                  className="flex w-full items-center gap-3 px-3 py-2 text-left hover:bg-zinc-950/60"
+                >
+                  {item.imageUrl && (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img src={item.imageUrl} alt="" className="h-10 w-10 shrink-0 rounded object-cover" loading="lazy" />
+                  )}
+                  <span className="min-w-0 flex-1 truncate text-sm font-medium">{item.topic}</span>
+                  <span className="shrink-0 rounded-full border border-zinc-800 px-2 py-0.5 text-[10px] font-mono text-zinc-500">mediai</span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <MediaDetailSheet item={detail} onClose={closeDetail} />
       </main>
     );
   }

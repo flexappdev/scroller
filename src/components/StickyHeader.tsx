@@ -33,9 +33,9 @@ import {
 import { useEffect, useRef, useState, type ComponentType } from "react";
 import BrowseModal from "./BrowseModal";
 
-type MenuName = "assets" | "gen" | "sort" | "view" | null;
+import { APP_VERSION } from "@/lib/version";
 
-const APP_VERSION = "3.6.0";
+type MenuName = "assets" | "gen" | "sort" | "view" | null;
 type SortKey = "random" | "ranked" | "alpha";
 type ViewKey = "scroll" | "grid" | "table";
 

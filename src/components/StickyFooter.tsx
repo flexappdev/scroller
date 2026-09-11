@@ -36,6 +36,9 @@ export default function StickyFooter() {
   }
 
   function fireRandom() {
+    if (typeof navigator !== "undefined" && typeof navigator.vibrate === "function") {
+      try { navigator.vibrate(20); } catch {}
+    }
     window.dispatchEvent(new CustomEvent("scroller:random"));
   }
 

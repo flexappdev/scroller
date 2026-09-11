@@ -1,6 +1,6 @@
 {
   "name": "scroller-v2",
-  "version": "3.6.0",
+  "version": "3.6.2",
   "private": true,
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --port 25000",
