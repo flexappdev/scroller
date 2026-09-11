@@ -1,0 +1,30 @@
+{
+  "slug": "news-2026-09-11-openai-slow-ai",
+  "name": "OpenAI Is Talking About Slowing the AI Race",
+  "tagline": "100 things to know about OpenAI, frontier AI pacing, safety gates and who gets to hit the brakes.",
+  "description": "A 100-card ScrollAI news pack on OpenAI's September 2026 shift toward explicit capability pacing, independent evaluation and the possibility of slowing or stopping development or deployment when safeguards fall behind.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-11",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "sourceRank": 62,
+  "weeklyRank": 1,
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "provider-neutral",
+    "videoFallback": "Runware"
+  },
+  "navigation": ["home", "explore", "create", "saved", "me"]
+}
