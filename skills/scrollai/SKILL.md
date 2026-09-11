@@ -10,14 +10,27 @@ ScrollAI turns **any topic** into one validated Scroller Pack consumed by the sh
 ## Core command
 
 ```text
+/scrollai
 /scrollai <topic>
 ```
 
-Default behavior: research the topic live, create or refresh a ranked Top 100, validate it, and publish it through the existing Scroller engine when the current environment has deployment access.
+Bare `/scrollai` opens the ScrollAI control-plane dashboard. It does **not** generate content. Return a compact operational view with:
+
+1. the three flagship domains: `scroller.tv`, `wikai.tv`, `mediai.tv`;
+2. Scroller fleet counts / known live-state when available;
+3. the $100/day 1G KPI and current monetisation readiness;
+4. highest-priority open rollout tasks;
+5. direct links to the private `/live` cockpit when known;
+6. the most useful next ScrollAI command.
+
+When live telemetry is unavailable, say **unverified** or **unknown** rather than inventing a healthy state or zero values.
+
+`/scrollai <topic>` default behavior: research the topic live, create or refresh a ranked Top 100, validate it, and publish it through the existing Scroller engine when the current environment has deployment access.
 
 ## Commands
 
 ```text
+/scrollai
 /scrollai <topic>
 /scrollai plan <topic>
 /scrollai build <topic> [--count 100] [--stage page|list|images|audio|video|all]
@@ -318,18 +331,3 @@ Use careful language:
 - refresh policy.
 
 The daily pack is a historical snapshot. Tomorrow creates a new slug; it does **not** mutate yesterday's pack.
-
-### Daily publish flow
-
-1. research;
-2. select story;
-3. create `manifest.json`, `page.md`, `items.json`;
-4. reuse existing MediaAI/WIKAI assets when relevant;
-5. queue media gaps after text/list is valid;
-6. run `npm run scroller:validate`;
-7. run `npm run build` for runtime changes;
-8. publish through the normal production branch/deployment path;
-9. run `npm run scroller:status`;
-10. report the new live URL plus fleet status.
-
-`/scrollai daily --status` performs the generation flow and finishes with the live fleet table.
