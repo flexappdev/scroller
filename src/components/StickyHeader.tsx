@@ -13,19 +13,31 @@ import {
   Film,
   Github,
   Images,
+  Info,
   Laugh,
   Layers3,
+  LogIn,
   Radio,
   Rocket,
   ScrollText,
   ShoppingBag,
+  Shuffle,
+  ArrowDownAZ,
+  Star,
+  Smartphone,
+  LayoutGrid,
+  Table as TableIcon,
   Sparkles,
   X,
 } from "lucide-react";
 import { useEffect, useRef, useState, type ComponentType } from "react";
 import BrowseModal from "./BrowseModal";
 
-type MenuName = "assets" | "publish" | null;
+type MenuName = "assets" | "gen" | "sort" | "view" | null;
+
+const APP_VERSION = "3.6.0";
+type SortKey = "random" | "ranked" | "alpha";
+type ViewKey = "scroll" | "grid" | "table";
 
 type NavItem = {
   href: string;
@@ -108,6 +120,42 @@ const PUBLISH_ITEMS: NavItem[] = [
     external: true,
   },
 ];
+
+function dispatchSort(v: SortKey) {
+  if (typeof window === "undefined") return;
+  try { localStorage.setItem("scroller:sort", v); } catch {}
+  window.dispatchEvent(new CustomEvent("scroller:sort", { detail: v }));
+  if (v === "random") window.dispatchEvent(new CustomEvent("scroller:random"));
+}
+
+function dispatchView(v: ViewKey) {
+  if (typeof window === "undefined") return;
+  try { localStorage.setItem("scroller:view", v); } catch {}
+  window.dispatchEvent(new CustomEvent("scroller:view", { detail: v }));
+}
+
+function SortRow({ icon, label, desc, value, onPick }: { icon: React.ReactNode; label: string; desc: string; value: SortKey; onPick: (v: SortKey) => void }) {
+  return (
+    <button type="button" onClick={() => onPick(value)} className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-left hover:bg-[var(--surface-hover)] transition-colors">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border" style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}>{icon}</span>
+      <span className="min-w-0 flex-1">
+        <span className="block text-sm font-semibold">{label}</span>
+        <span className="mt-0.5 block truncate text-[11px]" style={{ color: "var(--foreground-muted)" }}>{desc}</span>
+      </span>
+    </button>
+  );
+}
+function ViewRow({ icon, label, desc, value, onPick }: { icon: React.ReactNode; label: string; desc: string; value: ViewKey; onPick: (v: ViewKey) => void }) {
+  return (
+    <button type="button" onClick={() => onPick(value)} className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-left hover:bg-[var(--surface-hover)] transition-colors">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border" style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}>{icon}</span>
+      <span className="min-w-0 flex-1">
+        <span className="block text-sm font-semibold">{label}</span>
+        <span className="mt-0.5 block truncate text-[11px]" style={{ color: "var(--foreground-muted)" }}>{desc}</span>
+      </span>
+    </button>
+  );
+}
 
 function NavItemLink({ item, onSelect }: { item: NavItem; onSelect: () => void }) {
   const Icon = item.icon;
@@ -201,57 +249,99 @@ export default function StickyHeader() {
         </span>
       </Link>
 
-      <span className="ml-1 hidden h-5 w-px sm:block" style={{ background: "var(--border)" }} />
+      <Link
+        href="/version"
+        onClick={(e) => e.stopPropagation()}
+        className="hidden shrink-0 items-center gap-1 rounded-full border px-2 py-0.5 font-mono text-[10px] font-bold tabular-nums hover:text-[var(--accent)] sm:flex"
+        style={{ borderColor: "var(--border)", color: "var(--foreground-muted)" }}
+        title="Version history"
+      >
+        v{APP_VERSION}
+      </Link>
 
-      <div className="flex min-w-0 items-center gap-1.5">
-        <span className="hidden items-center gap-1.5 rounded-full border px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em] md:flex" style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}>
-          <span className="relative flex h-1.5 w-1.5">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[var(--accent)] opacity-60" />
-            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-[var(--accent)]" />
-          </span>
-          {onHome ? "Mediai live" : pathname.slice(1).replaceAll("-", " ") || "feed"}
-        </span>
-      </div>
+      <span className="ml-1 hidden h-5 w-px sm:block" style={{ background: "var(--border)" }} />
 
       <div className="ml-auto flex items-center gap-1.5">
         <button
           type="button"
+          onClick={() => setOpen((current) => (current === "sort" ? null : "sort"))}
+          aria-expanded={open === "sort"}
+          aria-label="Sort feed"
+          title="Sort"
+          className="flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
+          style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
+        >
+          <Shuffle className="h-4 w-4" />
+          <span className="hidden md:inline">Sort</span>
+        </button>
+        <button
+          type="button"
+          onClick={() => setOpen((current) => (current === "view" ? null : "view"))}
+          aria-expanded={open === "view"}
+          aria-label="Change view"
+          title="View"
+          className="flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
+          style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
+        >
+          <LayoutGrid className="h-4 w-4" />
+          <span className="hidden md:inline">View</span>
+        </button>
+        <button
+          type="button"
           onClick={() => setBrowseOpen(true)}
           aria-label="Open browse — all sources and topics"
-          className="flex h-9 items-center gap-2 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
+          className="flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
           style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
         >
           <Layers3 className="h-4 w-4" />
-          <span className="hidden sm:inline">Browse</span>
+          <span className="hidden lg:inline">Browse</span>
         </button>
         <button
           type="button"
           onClick={() => setOpen((current) => (current === "assets" ? null : "assets"))}
           aria-expanded={open === "assets"}
           aria-label="Open asset navigation"
-          className="flex h-9 items-center gap-2 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
+          className="flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
           style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
         >
           <Cloud className="h-4 w-4" />
-          <span className="hidden sm:inline">Assets</span>
-          <ChevronDown className={`hidden h-3 w-3 transition-transform sm:block ${open === "assets" ? "rotate-180" : ""}`} />
+          <span className="hidden lg:inline">Assets</span>
+          <ChevronDown className={`hidden h-3 w-3 transition-transform lg:block ${open === "assets" ? "rotate-180" : ""}`} />
         </button>
         <button
           type="button"
-          onClick={() => setOpen((current) => (current === "publish" ? null : "publish"))}
-          aria-expanded={open === "publish"}
-          aria-label="Open publish destinations"
-          className="flex h-9 items-center gap-2 rounded-xl border px-2.5 text-xs font-black transition-transform hover:-translate-y-0.5"
+          onClick={() => setOpen((current) => (current === "gen" ? null : "gen"))}
+          aria-expanded={open === "gen"}
+          aria-label="Open generation destinations"
+          className="flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-black transition-transform hover:-translate-y-0.5"
           style={{
             borderColor: "color-mix(in oklch, var(--publish-accent) 55%, transparent)",
             background: "color-mix(in oklch, var(--publish-accent) 16%, transparent)",
             color: "var(--publish-accent)",
           }}
         >
-          <Rocket className="h-4 w-4" />
-          <span className="hidden sm:inline">Publish</span>
-          <ChevronDown className={`hidden h-3 w-3 transition-transform sm:block ${open === "publish" ? "rotate-180" : ""}`} />
+          <Sparkles className="h-4 w-4" />
+          <span className="hidden lg:inline">Gen</span>
+          <ChevronDown className={`hidden h-3 w-3 transition-transform lg:block ${open === "gen" ? "rotate-180" : ""}`} />
         </button>
+        <Link
+          href="/about"
+          className="flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
+          style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
+          title="About Scroller"
+        >
+          <Info className="h-4 w-4" />
+          <span className="hidden lg:inline">About</span>
+        </Link>
+        <Link
+          href="/login"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border transition-colors hover:bg-[var(--surface-hover)]"
+          style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
+          aria-label="Sign in with Google"
+          title="Sign in"
+        >
+          <LogIn className="h-4 w-4" />
+        </Link>
       </div>
 
       {open && (
@@ -266,10 +356,10 @@ export default function StickyHeader() {
           <div className="flex items-center justify-between px-2 pb-2 pt-1">
             <div>
               <p className="scroller-display text-[11px] font-black uppercase tracking-[-0.02em]">
-                {open === "assets" ? "Asset orbit" : "Publish first"}
+                {open === "assets" ? "Asset orbit" : open === "gen" ? "Gen destinations" : open === "sort" ? "Sort" : "View"}
               </p>
               <p className="mt-1 text-[10px]" style={{ color: "var(--foreground-muted)" }}>
-                {open === "assets" ? "Every generated surface and store" : "Priority destinations for the next release"}
+                {open === "assets" ? "Every generated surface and store" : open === "gen" ? "Publish + generate surfaces" : open === "sort" ? "How to order this feed" : "How to lay it out"}
               </p>
             </div>
             <button type="button" onClick={() => setOpen(null)} className="icon-btn" aria-label="Close navigation">
@@ -290,9 +380,21 @@ export default function StickyHeader() {
                 </section>
               ))}
             </div>
-          ) : (
+          ) : open === "gen" ? (
             <div className="grid gap-1 sm:grid-cols-2">
               {PUBLISH_ITEMS.map((item) => <NavItemLink key={item.href} item={item} onSelect={() => setOpen(null)} />)}
+            </div>
+          ) : open === "sort" ? (
+            <div className="grid gap-1">
+              <SortRow icon={<Shuffle className="h-4 w-4" />} label="Random" desc="Fresh shuffle every visit (default)" value="random" onPick={(v) => { dispatchSort(v); setOpen(null); }} />
+              <SortRow icon={<Star className="h-4 w-4" />} label="Ranked" desc="Source-defined rank first" value="ranked" onPick={(v) => { dispatchSort(v); setOpen(null); }} />
+              <SortRow icon={<ArrowDownAZ className="h-4 w-4" />} label="A–Z" desc="Alphabetical by title" value="alpha" onPick={(v) => { dispatchSort(v); setOpen(null); }} />
+            </div>
+          ) : (
+            <div className="grid gap-1">
+              <ViewRow icon={<Smartphone className="h-4 w-4" />} label="Scroll" desc="Fullscreen swipe feed (default)" value="scroll" onPick={(v) => { dispatchView(v); setOpen(null); }} />
+              <ViewRow icon={<LayoutGrid className="h-4 w-4" />} label="Grid" desc="Very small boxes filling the screen" value="grid" onPick={(v) => { dispatchView(v); setOpen(null); }} />
+              <ViewRow icon={<TableIcon className="h-4 w-4" />} label="Table" desc="Compact row list" value="table" onPick={(v) => { dispatchView(v); setOpen(null); }} />
             </div>
           )}
         </div>

@@ -375,10 +375,15 @@ function MediaCard({
           </Action>
         )}
         <Action label="Share" onClick={share}><Share2 className="h-5 w-5" /></Action>
-        <a href={item.sourceUrl} target="_blank" rel="noreferrer" className="flex min-w-12 flex-col items-center gap-1 text-white/90" aria-label={`Open article for ${item.topic}`} onClick={(e) => e.stopPropagation()}>
+        <Link
+          href={`/items/${encodeURIComponent(`wiki:${item.assetId}`)}/scroller`}
+          className="flex min-w-12 flex-col items-center gap-1 text-white/90"
+          aria-label={`Open article page for ${item.topic}`}
+          onClick={(e) => e.stopPropagation()}
+        >
           <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/35 backdrop-blur-xl"><ExternalLink className="h-5 w-5" /></span>
           <span className="text-[10px] font-bold [text-shadow:0_1px_3px_rgba(0,0,0,.8)]">Article</span>
-        </a>
+        </Link>
       </div>
 
       {/* v3.2 — sits between sticky header (56px) and sticky footer (~72px);

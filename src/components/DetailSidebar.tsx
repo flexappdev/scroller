@@ -2,42 +2,73 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ChevronDown, ExternalLink, Link as LinkIcon, Check, ArrowUpRight, Share2, Copy } from "lucide-react";
+import {
+  ChevronDown,
+  ExternalLink,
+  Check,
+  ArrowUpRight,
+  Share2,
+  Copy,
+  BookOpen,
+  Image as ImageIcon,
+  Film,
+  Volume2,
+  Info,
+  Send,
+  Heart,
+} from "lucide-react";
 import type { ItemModalDetail } from "./ItemModal";
 import CardActions from "./CardActions";
 
-type SectionKey = "article" | "media" | "metadata" | "share";
+type SectionKey = "article" | "images" | "video" | "audio" | "metadata" | "share" | "actions";
 
 export default function DetailSidebar({
   item,
-  onClose,
   onNavigate,
 }: {
   item: ItemModalDetail;
   onClose: () => void;
   onNavigate?: () => void;
 }) {
+  const has = {
+    article: Boolean(item.description || item.title),
+    images: Boolean(item.image),
+    video: Boolean(item.embed),
+    audio: false, // ItemModalDetail doesn't carry audio today; kept as a section so the shape is stable.
+  };
+
+  // All sections closed by default so users can scan every section header at once.
   const [open, setOpen] = useState<Record<SectionKey, boolean>>({
-    article: true,
-    media: false,
+    article: false,
+    images: false,
+    video: false,
+    audio: false,
     metadata: false,
     share: false,
+    actions: false,
   });
   const [copied, setCopied] = useState(false);
+  const [copiedTitle, setCopiedTitle] = useState(false);
 
   const toggle = (k: SectionKey) => setOpen((prev) => ({ ...prev, [k]: !prev[k] }));
 
   const internalHref = item.internalHref;
   const articleScrollerHref = internalHref ? `${internalHref}/scroller` : null;
+  const wordCount = item.description ? item.description.trim().split(/\s+/).length : 0;
+  const host = item.url ? safeHost(item.url) : null;
+
+  async function copy(text: string, which: "link" | "title") {
+    try {
+      await navigator.clipboard.writeText(text);
+      if (which === "link") { setCopied(true); setTimeout(() => setCopied(false), 1500); }
+      else { setCopiedTitle(true); setTimeout(() => setCopiedTitle(false), 1500); }
+    } catch {}
+  }
 
   async function copyLink() {
     if (!internalHref) return;
     const base = typeof window !== "undefined" ? window.location.origin : "";
-    try {
-      await navigator.clipboard.writeText(`${base}${internalHref}`);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
-    } catch {}
+    await copy(`${base}${internalHref}`, "link");
   }
 
   async function shareNative() {
@@ -79,13 +110,13 @@ export default function DetailSidebar({
       </div>
 
       <div className="flex-1 overflow-y-auto">
-        <Section title="Article" open={open.article} onToggle={() => toggle("article")}>
+        <Section title="Article" icon={<BookOpen className="h-4 w-4" />} chip={wordCount ? `${wordCount} words` : "no copy"} open={open.article} onToggle={() => toggle("article")}>
           {item.description ? (
-            <p className="text-sm text-zinc-300 whitespace-pre-line">{item.description}</p>
+            <p className="text-sm text-zinc-200 leading-6 whitespace-pre-line">{item.description}</p>
           ) : (
-            <p className="text-sm text-zinc-500 italic">No description available.</p>
+            <p className="text-sm text-zinc-500 italic">No description available for this item.</p>
           )}
-          <div className="flex flex-wrap gap-2 pt-3">
+          <div className="flex flex-wrap gap-2 pt-4">
             {articleScrollerHref && (
               <Link
                 href={articleScrollerHref}
@@ -106,18 +137,93 @@ export default function DetailSidebar({
                 Item page
               </Link>
             )}
+            {item.url && (
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-300 hover:border-zinc-500 hover:text-zinc-100 transition-colors"
+              >
+                <ExternalLink className="h-3.5 w-3.5" />
+                {item.urlLabel ?? "Open source"}
+              </a>
+            )}
           </div>
         </Section>
 
-        <Section title="Media" open={open.media} onToggle={() => toggle("media")}>
-          <MediaBlock item={item} />
+        <Section
+          title="Images"
+          icon={<ImageIcon className="h-4 w-4" />}
+          chip={has.images ? "1" : "0"}
+          disabled={!has.images}
+          open={open.images}
+          onToggle={() => toggle("images")}
+        >
+          {item.image ? (
+            <div className="space-y-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={item.image} alt={item.title} className="w-full rounded border border-zinc-800" />
+              <a
+                href={item.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:underline"
+              >
+                <ExternalLink className="h-3 w-3" />
+                Open full size
+              </a>
+            </div>
+          ) : (
+            <EmptyLine text="No image attached." />
+          )}
         </Section>
 
-        <Section title="Metadata" open={open.metadata} onToggle={() => toggle("metadata")}>
+        <Section
+          title="Video"
+          icon={<Film className="h-4 w-4" />}
+          chip={has.video ? (item.embed?.kind === "youtube" ? "YouTube" : "MP4") : "0"}
+          disabled={!has.video}
+          open={open.video}
+          onToggle={() => toggle("video")}
+        >
+          {item.embed?.kind === "youtube" ? (
+            <div className="space-y-2">
+              <iframe
+                src={item.embed.url}
+                title={item.title}
+                className="w-full aspect-video rounded border border-zinc-800"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+              <a href={item.embed.url.replace("/embed/", "/watch?v=")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:underline">
+                <ExternalLink className="h-3 w-3" /> Open on YouTube
+              </a>
+            </div>
+          ) : item.embed?.kind === "mp4" ? (
+            <video src={item.embed.url} controls playsInline className="w-full rounded border border-zinc-800" />
+          ) : (
+            <EmptyLine text="No video attached." />
+          )}
+        </Section>
+
+        <Section
+          title="Audio"
+          icon={<Volume2 className="h-4 w-4" />}
+          chip="0"
+          disabled
+          open={open.audio}
+          onToggle={() => toggle("audio")}
+        >
+          <EmptyLine text="No audio track for this item." />
+        </Section>
+
+        <Section title="Metadata" icon={<Info className="h-4 w-4" />} open={open.metadata} onToggle={() => toggle("metadata")}>
           <dl className="grid grid-cols-[max-content_1fr] gap-x-3 gap-y-1.5 text-xs">
             <Meta k="ID" v={item.id} mono />
             {item.subtitle && <Meta k="Kind" v={item.subtitle} />}
+            {host && <Meta k="Host" v={host} />}
             {item.url && <Meta k="Source" v={item.url} link />}
+            {internalHref && <Meta k="Local" v={internalHref} mono />}
             {item.accent && (
               <>
                 <dt className="text-zinc-500">Accent</dt>
@@ -127,46 +233,93 @@ export default function DetailSidebar({
                 </dd>
               </>
             )}
+            {wordCount > 0 && <Meta k="Words" v={String(wordCount)} mono />}
           </dl>
         </Section>
 
-        <Section title="Share" open={open.share} onToggle={() => toggle("share")}>
+        <Section title="Share" icon={<Send className="h-4 w-4" />} open={open.share} onToggle={() => toggle("share")}>
           <div className="flex flex-wrap gap-2">
-            <button type="button" onClick={shareNative} className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500 transition-colors">
-              <Share2 className="h-3.5 w-3.5" /> Share
-            </button>
-            <button type="button" onClick={copyLink} className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500 transition-colors">
-              {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
-              {copied ? "Copied" : "Copy link"}
-            </button>
+            <ShareBtn onClick={shareNative} icon={<Share2 className="h-3.5 w-3.5" />} label="Share…" />
+            <ShareBtn
+              onClick={copyLink}
+              icon={copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
+              label={copied ? "Copied" : "Copy link"}
+            />
+            <ShareBtn
+              onClick={() => copy(item.title, "title")}
+              icon={copiedTitle ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
+              label={copiedTitle ? "Copied" : "Copy title"}
+            />
             {item.url && (
               <a href={item.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500 transition-colors">
-                <ExternalLink className="h-3.5 w-3.5" />
-                {item.urlLabel ?? "Open source"}
+                <ExternalLink className="h-3.5 w-3.5" /> {item.urlLabel ?? "Open source"}
               </a>
             )}
           </div>
+        </Section>
+
+        <Section title="Actions" icon={<Heart className="h-4 w-4" />} open={open.actions} onToggle={() => toggle("actions")}>
+          <p className="mb-3 text-xs text-zinc-500">Favorite it to see it in Saved. Like counts toward your Likes tab.</p>
+          <CardActions id={item.id} size={18} />
         </Section>
       </div>
     </div>
   );
 }
 
-function Section({ title, open, onToggle, children }: { title: string; open: boolean; onToggle: () => void; children: React.ReactNode }) {
+function Section({
+  title,
+  icon,
+  chip,
+  disabled,
+  open,
+  onToggle,
+  children,
+}: {
+  title: string;
+  icon: React.ReactNode;
+  chip?: string;
+  disabled?: boolean;
+  open: boolean;
+  onToggle: () => void;
+  children: React.ReactNode;
+}) {
   return (
     <div className="border-b border-zinc-800">
       <button
         type="button"
         onClick={onToggle}
-        className="flex w-full items-center justify-between px-4 py-3 text-left text-sm text-zinc-200 hover:bg-zinc-900/40 transition-colors"
+        className={`flex w-full items-center justify-between px-4 py-3 text-left text-sm transition-colors ${
+          disabled ? "text-zinc-600" : "text-zinc-100 hover:bg-zinc-900/40"
+        }`}
         aria-expanded={open}
       >
-        <span className="font-medium">{title}</span>
+        <span className="flex items-center gap-2">
+          <span className={disabled ? "text-zinc-700" : "text-zinc-500"}>{icon}</span>
+          <span className="font-medium">{title}</span>
+          {chip && (
+            <span className={`rounded-full border px-2 py-0.5 text-[10px] font-mono ${
+              disabled ? "border-zinc-800 text-zinc-600" : "border-zinc-700 text-zinc-400"
+            }`}>{chip}</span>
+          )}
+        </span>
         <ChevronDown className={`h-4 w-4 text-zinc-500 transition-transform ${open ? "rotate-180" : ""}`} />
       </button>
       {open && <div className="px-4 pb-4">{children}</div>}
     </div>
   );
+}
+
+function ShareBtn({ onClick, icon, label }: { onClick: () => void; icon: React.ReactNode; label: string }) {
+  return (
+    <button type="button" onClick={onClick} className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500 transition-colors">
+      {icon} {label}
+    </button>
+  );
+}
+
+function EmptyLine({ text }: { text: string }) {
+  return <p className="text-xs text-zinc-500 italic">{text}</p>;
 }
 
 function Meta({ k, v, mono, link }: { k: string; v: string; mono?: boolean; link?: boolean }) {
@@ -182,59 +335,6 @@ function Meta({ k, v, mono, link }: { k: string; v: string; mono?: boolean; link
   );
 }
 
-function MediaBlock({ item }: { item: ItemModalDetail }) {
-  const [tab, setTab] = useState<"image" | "audio" | "video" | "status">(
-    item.embed?.kind === "mp4" || item.embed?.kind === "youtube" ? "video" : item.image ? "image" : "status"
-  );
-  const has = {
-    image: !!item.image,
-    audio: false,
-    video: !!item.embed,
-    status: true,
-  };
-
-  return (
-    <div className="space-y-3">
-      <div className="flex gap-1 text-xs">
-        {(["image", "audio", "video", "status"] as const).map((t) => (
-          <button
-            key={t}
-            type="button"
-            onClick={() => setTab(t)}
-            disabled={!has[t]}
-            className={`px-2 py-1 rounded border transition-colors ${
-              tab === t
-                ? "border-emerald-600/60 bg-emerald-950/40 text-emerald-300"
-                : has[t]
-                ? "border-zinc-700 bg-zinc-900 text-zinc-300 hover:border-zinc-500"
-                : "border-zinc-800 bg-zinc-950/40 text-zinc-600 cursor-not-allowed"
-            }`}
-          >
-            {t}
-          </button>
-        ))}
-      </div>
-      {tab === "image" && item.image && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={item.image} alt={item.title} className="w-full rounded border border-zinc-800" />
-      )}
-      {tab === "video" && item.embed?.kind === "youtube" && (
-        <a href={item.embed.url.replace("/embed/", "/watch?v=")} target="_blank" rel="noopener noreferrer" className="text-xs text-emerald-400 hover:underline">
-          Open on YouTube ↗
-        </a>
-      )}
-      {tab === "video" && item.embed?.kind === "mp4" && (
-        <video src={item.embed.url} controls className="w-full rounded border border-zinc-800" />
-      )}
-      {tab === "audio" && <p className="text-xs text-zinc-500 italic">No audio track.</p>}
-      {tab === "status" && (
-        <ul className="text-xs text-zinc-400 space-y-1">
-          <li>• Image: {has.image ? "yes" : "—"}</li>
-          <li>• Video: {has.video ? "yes" : "—"}</li>
-          <li>• Audio: —</li>
-          <li>• Source URL: {item.url ? "yes" : "—"}</li>
-        </ul>
-      )}
-    </div>
-  );
+function safeHost(url: string): string | null {
+  try { return new URL(url).host; } catch { return null; }
 }

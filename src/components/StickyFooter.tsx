@@ -2,22 +2,24 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Bookmark, Compass, Home, Plus, UserRound, type LucideIcon } from "lucide-react";
+import { Bookmark, Compass, Dices, Home, UserRound, type LucideIcon } from "lucide-react";
 
 type Item = {
+  id: string;
   label: string;
-  href: string;
+  href?: string;
   icon: LucideIcon;
   primary?: boolean;
   active: (pathname: string) => boolean;
+  onClick?: "home" | "random";
 };
 
 const ITEMS: Item[] = [
-  { label: "Home", href: "/", icon: Home, active: (p) => p === "/" || p.startsWith("/scroller/") },
-  { label: "Explore", href: "/explore", icon: Compass, active: (p) => p === "/explore" || p.startsWith("/browse") },
-  { label: "Gen", href: "/create", icon: Plus, primary: true, active: (p) => p === "/create" },
-  { label: "Saved", href: "/saved", icon: Bookmark, active: (p) => p === "/saved" },
-  { label: "Me", href: "/me", icon: UserRound, active: (p) => p === "/me" },
+  { id: "home", label: "Home", href: "/", icon: Home, active: (p) => p === "/" || p.startsWith("/scroller/"), onClick: "home" },
+  { id: "explore", label: "Explore", href: "/explore", icon: Compass, active: (p) => p === "/explore" || p.startsWith("/browse") },
+  { id: "random", label: "Random", icon: Dices, primary: true, active: () => false, onClick: "random" },
+  { id: "saved", label: "Saved", href: "/saved", icon: Bookmark, active: (p) => p === "/saved" },
+  { id: "me", label: "Me", href: "/me", icon: UserRound, active: (p) => p === "/me" },
 ];
 
 export default function StickyFooter() {
@@ -33,6 +35,10 @@ export default function StickyFooter() {
     router.refresh();
   }
 
+  function fireRandom() {
+    window.dispatchEvent(new CustomEvent("scroller:random"));
+  }
+
   return (
     <footer
       className="fixed bottom-0 right-0 z-50 h-[4.5rem] chrome-glass-bottom"
@@ -40,7 +46,7 @@ export default function StickyFooter() {
       aria-label="Primary navigation"
     >
       <nav className="mx-auto grid h-full w-full max-w-2xl grid-cols-5 items-center px-1 sm:px-3">
-        {ITEMS.map(({ label, href, icon: Icon, primary, active }) => {
+        {ITEMS.map(({ id, label, href, icon: Icon, primary, active, onClick }) => {
           const isActive = active(pathname);
           const classes =
             "group flex h-full min-w-0 flex-col items-center justify-center gap-1 text-[10px] font-semibold transition-colors sm:text-xs";
@@ -62,10 +68,10 @@ export default function StickyFooter() {
 
           const style = { color: isActive || primary ? "var(--accent)" : "var(--foreground-muted)" };
 
-          if (href === "/") {
+          if (onClick === "home") {
             return (
               <button
-                key={href}
+                key={id}
                 type="button"
                 onClick={refreshHome}
                 aria-label={pathname === "/" ? "Refresh Home with a random Scroller" : "Home"}
@@ -78,10 +84,25 @@ export default function StickyFooter() {
             );
           }
 
+          if (onClick === "random") {
+            return (
+              <button
+                key={id}
+                type="button"
+                onClick={fireRandom}
+                aria-label="Shuffle to a random card"
+                className={classes}
+                style={style}
+              >
+                {content}
+              </button>
+            );
+          }
+
           return (
             <Link
-              key={href}
-              href={href}
+              key={id}
+              href={href!}
               aria-label={label}
               aria-current={isActive ? "page" : undefined}
               className={classes}
