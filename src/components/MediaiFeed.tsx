@@ -6,8 +6,9 @@ import { Bookmark, ExternalLink, Info, Share2, Volume2, VolumeX } from "lucide-r
 import type { MediaiArticle, MediaiPage } from "@/lib/mediai";
 import MediaDetailSheet from "./MediaDetailSheet";
 import AdSenseFeedCard from "./AdSenseFeedCard";
+import { Heart } from "lucide-react";
 import CardActions from "./CardActions";
-import { pushHistory } from "@/lib/likes-saves";
+import { pushHistory, useLikesSaves } from "@/lib/likes-saves";
 
 function mergeArticles(current: MediaiArticle[], incoming: MediaiArticle[]): MediaiArticle[] {
   const byId = new Map(current.map((item) => [item.id, { ...item, videoUrls: [...item.videoUrls] }]));
@@ -104,7 +105,7 @@ export default function MediaiFeed({
 
   const openDetail = useCallback((item: MediaiArticle) => {
     setDetail((current) => (current?.id === item.id ? null : item));
-    pushHistory(`mediai:${item.id}`, { title: item.topic, kind: "mediai", href: `/items/${encodeURIComponent(`wiki:${item.assetId}`)}` });
+    pushHistory(`mediai:${item.id}`, { title: item.topic, kind: "mediai", href: `/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}` });
     if (typeof window === "undefined") return;
     const url = new URL(window.location.href);
     const already = url.searchParams.get("card") === item.id;
@@ -290,6 +291,9 @@ function MediaCard({
   const audioRef = useRef<HTMLAudioElement>(null);
   const [audioPlaying, setAudioPlaying] = useState(false);
   const videoUrl = item.videoUrls.length ? item.videoUrls[index % item.videoUrls.length] : null;
+  const { isLiked, toggleLike, hydrated } = useLikesSaves();
+  const likeId = `mediai:${item.id}`;
+  const liked = hydrated && isLiked(likeId);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -365,6 +369,24 @@ function MediaCard({
       {item.audioUrl && <audio ref={audioRef} src={item.audioUrl} preload="none" onEnded={() => setAudioPlaying(false)} />}
 
       <div className="absolute right-3 z-20 flex flex-col gap-4" style={{ bottom: "calc(184px + env(safe-area-inset-bottom))" }} onClick={(e) => e.stopPropagation()}>
+        <button
+          type="button"
+          onClick={() => toggleLike(likeId)}
+          aria-label={liked ? "Unlike" : "Like"}
+          className="flex min-w-12 flex-col items-center gap-1"
+          style={{ color: liked ? "var(--accent)" : "rgba(255,255,255,0.9)" }}
+        >
+          <span
+            className="flex h-11 w-11 items-center justify-center rounded-full border backdrop-blur-xl transition-colors"
+            style={{
+              borderColor: liked ? "var(--accent)" : "rgba(255,255,255,0.15)",
+              background: liked ? "color-mix(in oklch, var(--accent) 24%, rgba(0,0,0,0.35))" : "rgba(0,0,0,0.35)",
+            }}
+          >
+            <Heart className="h-5 w-5" fill={liked ? "currentColor" : "none"} strokeWidth={liked ? 0 : 2} />
+          </span>
+          <span className="text-[10px] font-bold [text-shadow:0_1px_3px_rgba(0,0,0,.8)]">{liked ? "Liked" : "Like"}</span>
+        </button>
         <Action label="Details" onClick={onOpenDetail}><Info className="h-5 w-5" /></Action>
         <Action label={saved ? "Saved" : "Save"} onClick={onToggleSave}>
           <Bookmark className={saved ? "h-5 w-5 fill-current" : "h-5 w-5"} />
@@ -376,7 +398,7 @@ function MediaCard({
         )}
         <Action label="Share" onClick={share}><Share2 className="h-5 w-5" /></Action>
         <Link
-          href={`/items/${encodeURIComponent(`wiki:${item.assetId}`)}/scroller`}
+          href={`/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}/scroller`}
           className="flex min-w-12 flex-col items-center gap-1 text-white/90"
           aria-label={`Open article page for ${item.topic}`}
           onClick={(e) => e.stopPropagation()}

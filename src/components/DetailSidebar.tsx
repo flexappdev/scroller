@@ -20,7 +20,7 @@ import {
 import type { ItemModalDetail } from "./ItemModal";
 import CardActions from "./CardActions";
 
-type SectionKey = "article" | "images" | "video" | "audio" | "metadata" | "share" | "actions";
+type SectionKey = "article" | "images" | "audio" | "video" | "share";
 
 export default function DetailSidebar({
   item,
@@ -41,11 +41,9 @@ export default function DetailSidebar({
   const [open, setOpen] = useState<Record<SectionKey, boolean>>({
     article: false,
     images: false,
-    video: false,
     audio: false,
-    metadata: false,
+    video: false,
     share: false,
-    actions: false,
   });
   const [copied, setCopied] = useState(false);
   const [copiedTitle, setCopiedTitle] = useState(false);
@@ -179,7 +177,18 @@ export default function DetailSidebar({
         </Section>
 
         <Section
-          title="Video"
+          title="Audio"
+          icon={<Volume2 className="h-4 w-4" />}
+          chip="0"
+          disabled
+          open={open.audio}
+          onToggle={() => toggle("audio")}
+        >
+          <EmptyLine text="No audio track for this item." />
+        </Section>
+
+        <Section
+          title="Videos"
           icon={<Film className="h-4 w-4" />}
           chip={has.video ? (item.embed?.kind === "youtube" ? "YouTube" : "MP4") : "0"}
           disabled={!has.video}
@@ -206,37 +215,6 @@ export default function DetailSidebar({
           )}
         </Section>
 
-        <Section
-          title="Audio"
-          icon={<Volume2 className="h-4 w-4" />}
-          chip="0"
-          disabled
-          open={open.audio}
-          onToggle={() => toggle("audio")}
-        >
-          <EmptyLine text="No audio track for this item." />
-        </Section>
-
-        <Section title="Metadata" icon={<Info className="h-4 w-4" />} open={open.metadata} onToggle={() => toggle("metadata")}>
-          <dl className="grid grid-cols-[max-content_1fr] gap-x-3 gap-y-1.5 text-xs">
-            <Meta k="ID" v={item.id} mono />
-            {item.subtitle && <Meta k="Kind" v={item.subtitle} />}
-            {host && <Meta k="Host" v={host} />}
-            {item.url && <Meta k="Source" v={item.url} link />}
-            {internalHref && <Meta k="Local" v={internalHref} mono />}
-            {item.accent && (
-              <>
-                <dt className="text-zinc-500">Accent</dt>
-                <dd className="flex items-center gap-2 text-zinc-300">
-                  <span className="inline-block h-3 w-3 rounded-sm border border-white/10" style={{ background: item.accent }} />
-                  <span className="font-mono">{item.accent}</span>
-                </dd>
-              </>
-            )}
-            {wordCount > 0 && <Meta k="Words" v={String(wordCount)} mono />}
-          </dl>
-        </Section>
-
         <Section title="Share" icon={<Send className="h-4 w-4" />} open={open.share} onToggle={() => toggle("share")}>
           <div className="flex flex-wrap gap-2">
             <ShareBtn onClick={shareNative} icon={<Share2 className="h-3.5 w-3.5" />} label="Share…" />
@@ -258,10 +236,6 @@ export default function DetailSidebar({
           </div>
         </Section>
 
-        <Section title="Actions" icon={<Heart className="h-4 w-4" />} open={open.actions} onToggle={() => toggle("actions")}>
-          <p className="mb-3 text-xs text-zinc-500">Favorite it to see it in Saved. Like counts toward your Likes tab.</p>
-          <CardActions id={item.id} size={18} />
-        </Section>
       </div>
     </div>
   );

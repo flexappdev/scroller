@@ -237,13 +237,16 @@ export default function StickyHeader() {
           router.refresh();
         }}
       >
-        <span className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[var(--accent)] text-white shadow-[0_0_28px_color-mix(in_oklch,var(--accent)_28%,transparent)]">
+        <span className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[var(--accent)] text-white shadow-[0_0_28px_color-mix(in_oklch,var(--accent)_28%,transparent)]">
           <span className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,.5),transparent_48%)]" />
-          <ScrollText className="relative h-[18px] w-[18px]" />
+          <ScrollText className="relative h-[20px] w-[20px]" />
         </span>
         <span className="min-w-0">
-          <span className="scroller-display block text-[15px] font-black uppercase leading-none tracking-[-0.03em]">SCROLLER</span>
-          <span className="mt-1 hidden text-[9px] font-semibold uppercase tracking-[0.16em] sm:block" style={{ color: "var(--foreground-muted)" }}>
+          <span className="scroller-display block text-[22px] font-black uppercase leading-none tracking-[-0.035em]">SCROLLER</span>
+          <span
+            className="mt-1 hidden text-[9px] font-semibold uppercase tracking-[0.16em] opacity-0 transition-opacity duration-150 group-hover:opacity-100 sm:block"
+            style={{ color: "var(--foreground-muted)" }}
+          >
             one feed · every source
           </span>
         </span>
