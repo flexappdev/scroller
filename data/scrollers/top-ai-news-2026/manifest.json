@@ -1,0 +1,34 @@
+{
+  "slug": "top-ai-news-2026",
+  "name": "Top 100 AI News 2026",
+  "tagline": "The 100 AI stories shaping 2026 — year to date through September 11.",
+  "description": "An editorial year-to-date ranking imported from Trinity Daily and staged in ScrollAI for source verification, refresh, media enrichment and publication.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-11",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "pending",
+  "publishState": "blocked_until_verified",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "queued",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "provider-neutral",
+    "videoFallback": "Runware"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
