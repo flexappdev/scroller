@@ -1,0 +1,15 @@
+{
+  "slug": "top-ai-news-week-2026-09-11",
+  "name": "Top AI News — This Week",
+  "tagline": "The 10 highest-impact AI stories for September 5–11, 2026.",
+  "description": "A weekly Trinity/ScrollAI editorial ranking weighted toward capability change, economic impact, safety and long-term importance.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-11",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "pipeline": {"page":"ready","list":"ready","verification":"ready","images":"queued","audio":"queued","video":"queued"},
+  "navigation": ["home","explore","create","saved","me"]
+}
