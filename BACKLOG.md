@@ -5,8 +5,54 @@ Living list of what's queued. Prune when items ship; move to `/version` page on 
 **Anchor doc:** [`docs/PRD-ALIGNMENT.md`](docs/PRD-ALIGNMENT.md) — how this
 backlog maps to the ABC + VaultAI + MediaAI + ScrollerAI PRD v0.1 (2026-09-02).
 
+**UX doc:** [`UX.md`](UX.md) — every page, chrome, workflow and event
+in the current build (v3.6, 2026-09-11).
+
 **Working principle:** Scroller is the fleet's experience/distribution
 plane. One engine, per-site config. Do not build a new Scroller per app.
+
+## v3.7 — Wire the v3.6 chrome (queued 2026-09-11)
+
+- [ ] **MediaiFeed listens for `scroller:sort`** — sort the loaded items
+      by Random / Ranked / A–Z when the header Sort menu picks one.
+      Random already dispatches `scroller:random`; add ranked (index)
+      and alpha (`topic.localeCompare`).
+- [ ] **MediaiFeed listens for `scroller:view`** — swap the fullscreen
+      swipe layout for Grid (tiny boxes filling the screen) or Table
+      (compact rows) when View picks non-scroll. Persist across route
+      changes via `scroller:view` localStorage key.
+- [ ] **Grid view renderer** — CSS `grid-auto-rows: minmax(...)` with
+      120–160px tiles, image `object-cover`, no chrome. Tap opens
+      DetailSidebar (same as scroll view).
+- [ ] **Table view renderer** — one-line rows: `[thumb 40×40] [title]
+      [kind chip] [source host]`. Tap opens DetailSidebar.
+- [ ] **Header Assets menu — total asset count per row** — fetch the
+      counts server-side (same `safe(...)` pattern as `/explore`), pass
+      into the menu, render a chip next to each entry.
+- [ ] **Google OAuth on `/login`** — enable Google provider in Supabase
+      via `/abc-google` + `/abc-supabase`; wire NextAuth or the
+      Supabase client per whichever the codebase already uses; header
+      Login icon should show avatar + name when signed in.
+- [ ] **`/create` — actually generate** — currently a stub linked from
+      the header Gen menu. Wire it to the mediai / wikai / gorai
+      generation surfaces (or embed a request form that queues into
+      the existing pipelines).
+- [ ] **Per-item pages for `wiki-numeric` ids** — `resolveDetail` already
+      handles pageids, but confirm all `/items/wiki:{numeric}` +
+      `/items/wiki:{numeric}/scroller` resolve on cold fetch. Add e2e
+      smoke for each of the 9 id prefixes.
+- [ ] **Sidebar auto-open first section when nothing else is expanded**
+      — soft UX polish: if the user hasn't opened anything for 5s,
+      subtly pulse the Article header.
+- [ ] **Header version chip auto-reads `package.json`** — replace the
+      hardcoded `APP_VERSION = "3.6.0"` const with a build-time inject
+      (or export from `src/lib/version.ts`).
+- [ ] **`/version` page pulls the same source of truth** — one export,
+      one commit-log-derived history table.
+- [ ] **Random dice haptic on mobile** — `navigator.vibrate?.(20)` on
+      footer Random tap (progressive enhancement).
+- [ ] **Footer Random tooltip on hover (desktop)** — "Shuffle this
+      feed" copy; not just aria-label.
 
 ## v4.0 — Foundation (blocks everything else)
 
