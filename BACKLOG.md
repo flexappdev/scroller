@@ -47,6 +47,18 @@ plane. One engine, per-site config. Do not build a new Scroller per app.
       one commit-log-derived history table.
 - [x] **Random dice haptic on mobile** — `navigator.vibrate(20)` fires
       before the shuffle event. (v3.6.2, 2026-09-11)
+- [x] **BrowseModal — Topics section** — 18 topic chips (AI, Tech,
+      Movies, Music, Books, Travel, Food, Sports, Science, News, Art,
+      Games, History, Fashion, Business, Space, Nature, Cars) render
+      above the Sources grid. Each links to
+      `/browse?topic=<slug>&q=<seed>`. (v3.6.3, 2026-09-11)
+- [ ] **`/browse` reads `?topic=<slug>`** — filter the merged Card[]
+      by topic seed (server-side) instead of relying on the client
+      search box. Currently the `q=` param is passed but ignored;
+      wire it into `searchParams` handling in `browse/page.tsx`.
+- [ ] **Per-topic landing pages** — `/topics/[slug]` fullscreen
+      MediaiFeed filtered by topic. Requires topic tagging on the
+      MediaAI baseline (topic → asset link).
 - [ ] **Footer Random tooltip on hover (desktop)** — "Shuffle this
       feed" copy; not just aria-label.
 

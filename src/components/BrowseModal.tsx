@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { X, Layers3 } from "lucide-react";
+import { X, Layers3, Sparkles } from "lucide-react";
 import { useEffect } from "react";
 import { SCROLL_SOURCES } from "@/lib/scroll/sources";
+import { SCROLLER_TOPICS } from "@/lib/scroll/topics";
 
 export default function BrowseModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   useEffect(() => {
@@ -52,7 +53,35 @@ export default function BrowseModal({ open, onClose }: { open: boolean; onClose:
           </div>
         </header>
 
+        <section className="border-b border-zinc-800 p-3 sm:p-5">
+          <div className="mb-3 flex items-center gap-2">
+            <Sparkles className="h-3.5 w-3.5" style={{ color: "var(--accent)" }} />
+            <span className="text-[10px] font-black uppercase tracking-[0.18em]" style={{ color: "var(--accent)" }}>Topics</span>
+            <span className="text-[10px] font-mono" style={{ color: "var(--foreground-muted)" }}>{SCROLLER_TOPICS.length}</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {SCROLLER_TOPICS.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/browse?topic=${t.slug}${t.q ? `&q=${encodeURIComponent(t.q)}` : ""}`}
+                onClick={onClose}
+                className="group flex items-center gap-2 rounded-full border bg-zinc-950/50 px-3 py-1.5 text-xs font-semibold text-zinc-200 transition-colors hover:text-white"
+                style={{ borderColor: "color-mix(in oklch, " + t.accent + " 40%, transparent)" }}
+                title={t.q ? `${t.label} · search: ${t.q}` : t.label}
+              >
+                <span aria-hidden>{t.emoji}</span>
+                <span>{t.label}</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
         <section className="p-3 sm:p-5">
+          <div className="mb-3 flex items-center gap-2">
+            <Layers3 className="h-3.5 w-3.5" style={{ color: "var(--foreground-muted)" }} />
+            <span className="text-[10px] font-black uppercase tracking-[0.18em]" style={{ color: "var(--foreground-muted)" }}>Sources</span>
+            <span className="text-[10px] font-mono" style={{ color: "var(--foreground-muted)" }}>{SCROLL_SOURCES.length}</span>
+          </div>
           <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {SCROLL_SOURCES.map((s) => (
               <Link
