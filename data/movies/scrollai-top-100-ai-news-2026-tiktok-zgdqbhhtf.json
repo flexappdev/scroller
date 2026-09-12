@@ -1,0 +1,26 @@
+{
+  "slug": "scrollai-top-100-ai-news-2026-tiktok-zgdqbhhtf",
+  "status": "ready-for-local-render",
+  "source_pack": "top-ai-news-2026",
+  "mediai_list": "top-100-ai-news-2026",
+  "reference_url": "https://vm.tiktok.com/ZGdQBhHTF/",
+  "reference_use": [
+    "orientation",
+    "scene-change timing",
+    "cut rhythm"
+  ],
+  "reference_excluded": [
+    "frames",
+    "audio",
+    "dialogue",
+    "music",
+    "captions",
+    "logos",
+    "creator identity",
+    "exact shot compositions"
+  ],
+  "render_command": "cd ~/BO/mediai && git pull && bash scripts/scrollai_movie.sh 'https://vm.tiktok.com/ZGdQBhHTF/'",
+  "output": "C:\\ABC\\MEDIA\\MOVIES\\scrollai-top-100-ai-news-2026-tiktok-zgdqbhhtf\\FINAL-scrollai-top-100-ai-news-2026-tiktok-zgdqbhhtf.mp4",
+  "created_for": "/scrollai movie",
+  "snapshot_date": "2026-09-12"
+}
