@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { X, ExternalLink, Volume2, Film, BookOpen, Link as LinkIcon, Check } from "lucide-react";
+import Link from "next/link";
+import { X, ExternalLink, Volume2, Film, BookOpen, Link as LinkIcon, Check, ChevronDown, Image as ImageIcon, Send, Share2, Copy, ArrowUpRight } from "lucide-react";
 import type { MediaiArticle } from "@/lib/mediai";
+import CardActions from "./CardActions";
 
 type WikiSummary = {
   extract: string;
@@ -57,6 +59,9 @@ export default function MediaDetailSheet({
   const [wiki, setWiki] = useState<WikiSummary | null>(null);
   const [loadingWiki, setLoadingWiki] = useState(false);
   const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
+  // All sections closed by default — headers scannable without scrolling.
+  const [open, setOpen] = useState({ article: false, images: false, audio: false, videos: false, share: false });
+  const toggle = (k: "article" | "images" | "audio" | "videos" | "share") => setOpen((prev) => ({ ...prev, [k]: !prev[k] }));
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -117,6 +122,8 @@ export default function MediaDetailSheet({
 
   const wikaiTopic = item.topic.replaceAll(" ", "_").replaceAll("/", "_");
   const heroImage = item.imageUrl ?? wiki?.thumbnail ?? null;
+  const scrollerHref = `/items/${encodeURIComponent(`wiki:${wikaiTopic}`)}/scroller`;
+  const wordCount = wiki?.fullText ? wiki.fullText.split(/\s+/).length : wiki?.extract ? wiki.extract.split(/\s+/).length : 0;
 
   const body = (
     <>
@@ -128,63 +135,33 @@ export default function MediaDetailSheet({
         <X className="h-4 w-4" />
       </button>
 
-      {item.videoUrls[0] ? (
-        <div className="relative w-full bg-black">
-          <video
-            src={item.videoUrls[0]}
-            poster={heroImage ?? undefined}
-            controls
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-            className="w-full aspect-video bg-black object-cover"
-            aria-label={`Video for ${item.topic}`}
-          />
+      {/* Compact header — no hero image (feed card behind already shows it). */}
+      <div className="border-b border-zinc-800 px-4 py-3 flex items-start gap-3">
+        {heroImage && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={heroImage} alt="" className="h-12 w-12 shrink-0 rounded-lg object-cover" />
+        )}
+        <div className="min-w-0 flex-1">
+          <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">Wikipedia · Mediai</div>
+          <h2 className="mt-0.5 text-sm font-semibold text-zinc-100 break-words leading-tight line-clamp-2">{item.topic}</h2>
         </div>
-      ) : heroImage ? (
-        <div className="relative w-full bg-zinc-900">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={heroImage} alt={item.topic} className="w-full aspect-video object-cover" />
-        </div>
-      ) : null}
+        <CardActions id={`mediai:${item.id}`} size={14} />
+      </div>
 
-      <div className="p-5 space-y-4">
-        <div>
-          <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">
-            Wikipedia · Mediai
-          </div>
-          <h2 className="mt-1 text-xl font-semibold text-zinc-100 break-words">{item.topic}</h2>
-          {wiki?.description && (
-            <p className="mt-1 text-xs uppercase tracking-wide text-zinc-400">{wiki.description}</p>
-          )}
-        </div>
-
-        <div className="text-[11px] font-mono text-zinc-500">
-          {[
-            item.imageUrl ? "1 image" : null,
-            item.videoUrls.length ? `${item.videoUrls.length} motion` : null,
-            item.audioUrl ? "audio narration" : null,
-            `${item.assetCount} generated assets`,
-          ].filter(Boolean).join(" · ")}
-        </div>
-
-        <article className="text-sm leading-6 text-zinc-300">
-          {loadingWiki && <p className="text-zinc-500">Loading article…</p>}
+      <div className="flex-1">
+        <Section title="Article" icon={<BookOpen className="h-4 w-4" />} chip={loadingWiki ? "…" : wordCount ? `${wordCount} words` : "no copy"} open={open.article} onToggle={() => toggle("article")}>
+          {loadingWiki && <p className="text-xs text-zinc-500">Loading article…</p>}
           {!loadingWiki && (wiki?.fullText || wiki?.extract) && (
-            <div className="space-y-3">
+            <div className="space-y-2 text-sm leading-6 text-zinc-300">
               {(wiki?.fullText ?? wiki?.extract ?? "")
                 .split(/\n{2,}/)
                 .filter((para) => para.trim().length > 0)
+                .slice(0, 20)
                 .map((para, i) => {
-                  // Wikipedia plaintext uses '\n\n== Heading ==\n\n' — surface headings.
                   const heading = para.match(/^==+\s*(.+?)\s*==+$/);
                   if (heading) {
                     return (
-                      <h3 key={i} className="mt-3 text-[13px] font-black uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>
-                        {heading[1]}
-                      </h3>
+                      <h3 key={i} className="mt-3 text-[11px] font-black uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>{heading[1]}</h3>
                     );
                   }
                   return <p key={i} className="whitespace-pre-line">{para}</p>;
@@ -192,82 +169,73 @@ export default function MediaDetailSheet({
             </div>
           )}
           {!loadingWiki && !wiki?.fullText && !wiki?.extract && (
-            <p className="text-zinc-500">No Wikipedia article available for this topic.</p>
+            <p className="text-xs text-zinc-500 italic">No Wikipedia article available for this topic.</p>
           )}
-        </article>
+          <div className="flex flex-wrap gap-2 pt-3">
+            <Link href={scrollerHref} onClick={onClose} className="flex items-center gap-1.5 rounded-md border border-emerald-700/40 bg-emerald-950/40 px-3 py-2 text-xs text-emerald-300 hover:border-emerald-500 hover:text-emerald-200 transition-colors">
+              <ArrowUpRight className="h-3.5 w-3.5" /> Open Article
+            </Link>
+          </div>
+        </Section>
 
-        {item.videoUrls.length > 1 && (
-          <section className="space-y-2">
-            <div className="text-[10px] uppercase tracking-wider text-zinc-500 font-mono">More motion clips</div>
+        <Section title="Images" icon={<ImageIcon className="h-4 w-4" />} chip={item.imageUrl ? "1" : "0"} disabled={!item.imageUrl} open={open.images} onToggle={() => toggle("images")}>
+          {item.imageUrl ? (
+            <div className="space-y-2">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={item.imageUrl} alt={item.topic} className="w-full rounded border border-zinc-800" />
+              <a href={item.imageUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:underline">
+                <ExternalLink className="h-3 w-3" /> Open full size
+              </a>
+            </div>
+          ) : (<p className="text-xs text-zinc-500 italic">No image attached.</p>)}
+        </Section>
+
+        <Section title="Audio" icon={<Volume2 className="h-4 w-4" />} chip={item.audioUrl ? "1" : "0"} disabled={!item.audioUrl} open={open.audio} onToggle={() => toggle("audio")}>
+          {item.audioUrl ? (
+            <div className="space-y-2">
+              <audio src={item.audioUrl} controls preload="metadata" className="w-full" />
+              <a href={item.audioUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:underline">
+                <ExternalLink className="h-3 w-3" /> Audio file
+              </a>
+            </div>
+          ) : (<p className="text-xs text-zinc-500 italic">No audio track.</p>)}
+        </Section>
+
+        <Section title="Videos" icon={<Film className="h-4 w-4" />} chip={item.videoUrls.length ? String(item.videoUrls.length) : "0"} disabled={item.videoUrls.length === 0} open={open.videos} onToggle={() => toggle("videos")}>
+          {item.videoUrls.length ? (
             <ul className="space-y-2">
-              {item.videoUrls.slice(1).map((url, i) => (
+              {item.videoUrls.map((url, i) => (
                 <li key={url}>
-                  <video src={url} controls playsInline preload="metadata" className="w-full rounded-md border border-zinc-800 bg-black" aria-label={`Motion clip ${i + 2}`} />
+                  <video src={url} controls playsInline preload="metadata" className="w-full rounded border border-zinc-800 bg-black" aria-label={`Motion clip ${i + 1}`} />
                 </li>
               ))}
             </ul>
-          </section>
-        )}
+          ) : (<p className="text-xs text-zinc-500 italic">No video attached.</p>)}
+        </Section>
 
-        {item.audioUrl && (
-          <section className="space-y-2">
-            <div className="text-[10px] uppercase tracking-wider text-zinc-500 font-mono">Narration</div>
-            <audio src={item.audioUrl} controls preload="metadata" className="w-full" />
-          </section>
-        )}
-
-        <div className="flex flex-wrap gap-2 pt-2">
-          <a
-            href={item.sourceUrl || wiki?.desktopUrl || `https://en.wikipedia.org/wiki/${encodeURIComponent(wikaiTopic)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 rounded-md border px-3 py-2 text-sm transition-colors"
-            style={{ borderColor: "var(--accent)", background: "color-mix(in oklch, var(--accent) 18%, transparent)", color: "var(--accent)" }}
-          >
-            <BookOpen className="h-3.5 w-3.5" />
-            Open article
-          </a>
-          <a
-            href={`https://wikai.matsiems.com/read/${encodeURIComponent(wikaiTopic)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-100 hover:border-zinc-500 transition-colors"
-          >
-            <ExternalLink className="h-3.5 w-3.5" />
-            Read on WIKAI
-          </a>
-          {item.audioUrl && (
+        <Section title="Share" icon={<Send className="h-4 w-4" />} open={open.share} onToggle={() => toggle("share")}>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={async () => { try { if (typeof navigator !== "undefined" && navigator.share) await navigator.share({ title: item.topic, url: `${window.location.origin}/?card=${encodeURIComponent(item.id)}` }); else copyLink(); } catch {} }}
+              className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500 transition-colors"
+            >
+              <Share2 className="h-3.5 w-3.5" /> Share…
+            </button>
+            <button type="button" onClick={copyLink} className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500 transition-colors">
+              {copied ? <Check className="h-3.5 w-3.5 text-emerald-400" /> : <Copy className="h-3.5 w-3.5" />}
+              {copied ? "Copied" : "Copy link"}
+            </button>
             <a
-              href={item.audioUrl}
+              href={item.sourceUrl || wiki?.desktopUrl || `https://en.wikipedia.org/wiki/${encodeURIComponent(wikaiTopic)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-100 hover:border-zinc-500 transition-colors"
+              className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500 transition-colors"
             >
-              <Volume2 className="h-3.5 w-3.5" />
-              Audio file
+              <LinkIcon className="h-3.5 w-3.5" /> Open source
             </a>
-          )}
-          {item.videoUrls[0] && (
-            <a
-              href={item.videoUrls[0]}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-100 hover:border-zinc-500 transition-colors"
-            >
-              <Film className="h-3.5 w-3.5" />
-              Motion file
-            </a>
-          )}
-          <button
-            type="button"
-            onClick={copyLink}
-            className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-sm text-zinc-300 hover:border-zinc-500 hover:text-zinc-100 transition-colors"
-            title="Copy deep-link to this card"
-          >
-            {copied ? <Check className="h-3.5 w-3.5 text-[var(--accent)]" /> : <LinkIcon className="h-3.5 w-3.5" />}
-            {copied ? "Copied" : "Copy link"}
-          </button>
-        </div>
+          </div>
+        </Section>
       </div>
     </>
   );
@@ -300,6 +268,49 @@ export default function MediaDetailSheet({
       >
         {body}
       </div>
+    </div>
+  );
+}
+
+function Section({
+  title,
+  icon,
+  chip,
+  disabled,
+  open,
+  onToggle,
+  children,
+}: {
+  title: string;
+  icon: React.ReactNode;
+  chip?: string;
+  disabled?: boolean;
+  open: boolean;
+  onToggle: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="border-b border-zinc-800">
+      <button
+        type="button"
+        onClick={onToggle}
+        className={`flex w-full items-center justify-between px-4 py-2.5 text-left text-sm transition-colors ${
+          disabled ? "text-zinc-600" : "text-zinc-100 hover:bg-zinc-900/40"
+        }`}
+        aria-expanded={open}
+      >
+        <span className="flex items-center gap-2">
+          <span className={disabled ? "text-zinc-700" : "text-zinc-500"}>{icon}</span>
+          <span className="font-medium">{title}</span>
+          {chip && (
+            <span className={`rounded-full border px-2 py-0.5 text-[10px] font-mono ${
+              disabled ? "border-zinc-800 text-zinc-600" : "border-zinc-700 text-zinc-400"
+            }`}>{chip}</span>
+          )}
+        </span>
+        <ChevronDown className={`h-4 w-4 text-zinc-500 transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+      {open && <div className="px-4 pb-4">{children}</div>}
     </div>
   );
 }
