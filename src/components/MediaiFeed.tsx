@@ -158,7 +158,20 @@ export default function MediaiFeed({
 
   useEffect(() => {
     window.dispatchEvent(new CustomEvent("scroller:position", { detail: { index: activeIndex, total: items.length } }));
-  }, [activeIndex, items.length]);
+    // Sync open sidebar to the active card as the user scrolls.
+    setDetail((current) => {
+      if (!current) return current;
+      const nextItem = items[activeIndex];
+      if (!nextItem || nextItem.id === current.id) return current;
+      // Also update the ?card= URL param so the deep-link stays honest.
+      if (typeof window !== "undefined") {
+        const url = new URL(window.location.href);
+        url.searchParams.set("card", nextItem.id);
+        window.history.replaceState(window.history.state, "", `${url.pathname}${url.search}${url.hash}`);
+      }
+      return nextItem;
+    });
+  }, [activeIndex, items]);
 
   const goTo = useCallback((index: number) => {
     const el = feedRef.current;

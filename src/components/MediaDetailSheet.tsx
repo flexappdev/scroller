@@ -125,27 +125,55 @@ export default function MediaDetailSheet({
   const scrollerHref = `/items/${encodeURIComponent(`wiki:${wikaiTopic}`)}/scroller`;
   const wordCount = wiki?.fullText ? wiki.fullText.split(/\s+/).length : wiki?.extract ? wiki.extract.split(/\s+/).length : 0;
 
+  const shortDesc = wiki?.description ?? (wiki?.extract ? wiki.extract.split(/[.!?]/)[0]?.trim() : null);
+  const assetChips = [
+    item.imageUrl ? "image" : null,
+    item.videoUrls.length ? `${item.videoUrls.length} video${item.videoUrls.length === 1 ? "" : "s"}` : null,
+    item.audioUrl ? "audio" : null,
+    `${item.assetCount} asset${item.assetCount === 1 ? "" : "s"}`,
+  ].filter(Boolean) as string[];
+
   const body = (
     <>
+      {/* Persistent close button — always top-right, over the hero. */}
       <button
         onClick={onClose}
-        className="absolute right-3 top-3 z-10 rounded-full bg-zinc-900/80 p-1.5 text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 transition-colors"
+        className="absolute right-3 top-3 z-20 rounded-full bg-black/70 p-1.5 text-white/85 hover:text-white hover:bg-black/85 backdrop-blur-md border border-white/15 transition-colors"
         aria-label="Close"
       >
         <X className="h-4 w-4" />
       </button>
 
-      {/* Compact header — no hero image (feed card behind already shows it). */}
-      <div className="border-b border-zinc-800 px-4 py-3 flex items-start gap-3">
-        {heroImage && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img src={heroImage} alt="" className="h-12 w-12 shrink-0 rounded-lg object-cover" />
-        )}
-        <div className="min-w-0 flex-1">
-          <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">Wikipedia · Mediai</div>
-          <h2 className="mt-0.5 text-sm font-semibold text-zinc-100 break-words leading-tight line-clamp-2">{item.topic}</h2>
+      {/* Full-width hero image */}
+      {heroImage ? (
+        <div className="relative w-full bg-zinc-900">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={heroImage} alt={item.topic} className="w-full aspect-[16/10] object-cover" />
         </div>
-        <CardActions id={`mediai:${item.id}`} size={14} />
+      ) : null}
+
+      {/* Header: Title · tagline · tags · short description · like/favorite */}
+      <div className="border-b border-zinc-800 px-4 pt-4 pb-3 space-y-2">
+        <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">Wikipedia · Mediai</div>
+        <h2 className="text-lg font-black tracking-tight text-zinc-100 break-words leading-tight">{item.topic}</h2>
+        {wiki?.description && (
+          <p className="text-xs uppercase tracking-wide text-zinc-400">{wiki.description}</p>
+        )}
+        {assetChips.length > 0 && (
+          <div className="flex flex-wrap gap-1.5 pt-1">
+            {assetChips.map((chip) => (
+              <span key={chip} className="rounded-full border border-zinc-700 bg-zinc-950/60 px-2 py-0.5 text-[10px] font-mono text-zinc-400">
+                {chip}
+              </span>
+            ))}
+          </div>
+        )}
+        {shortDesc && (
+          <p className="pt-1 text-sm text-zinc-300 leading-5 line-clamp-3">{shortDesc}</p>
+        )}
+        <div className="flex items-center gap-2 pt-2">
+          <CardActions id={`mediai:${item.id}`} size={16} />
+        </div>
       </div>
 
       <div className="flex-1">
