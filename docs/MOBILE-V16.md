@@ -1,87 +1,141 @@
-# Scroller v2.6 — Mobile port based on wikai v1.6
+# MS Scroll — Mobile UX Reference
 
-> Scope for the follow-up session. v2.5 shipped `/diagrams`, light-mode default,
-> Playwright + skeletons + Vercel Analytics; **the mobile experience below is
-> the next session's work**, per the user's original v2.23 goal that flagged
-> this bullet as "(seperate session wip)".
+> Historical origin: the earlier Scroller v2.6 / WIKAI v1.6 mobile-port work.  
+> Current source of truth: `docs/MS-SCROLL-MASTER-SPEC.md`.  
+> Detailed architecture: `docs/MS-SCROLL-ABC-DIAGRAMS.md`.
 
-## What we're replacing
+The old port plan remains useful as implementation history, but the current product contract is no longer “copy the WIKAI feed.” The goal is one shared mobile Scroll/TV experience driven by channel manifests and canonical items.
 
-Today `MobileWikiScroll.tsx` (~830 lines) drives every mobile route via a
-wiki-only snap feed. v2.5 already made that feed wikai-parity for the article
-anatomy (v2.4 commit `7c7de5d`) — but the underlying navigation model is still
-"one wiki article per card, source picker in TopBar." wikai v1.6 introduced a
-richer shape we want to inherit.
+## Current mobile contract
 
-## What wikai v1.6 gives us
+```mermaid
+flowchart TB
+  HOST["Domain\nscroller.tv | wikai.tv | mediai.tv"]
+  RESOLVER["Channel Resolver"]
+  MANIFEST["Channel Manifest\ntheme · adapter · weights · flags"]
+  SHELL["Shared Mobile Shell"]
+  HEADER["Sticky Header"]
+  FEED["Vertical Snap Feed"]
+  MODE["Scroll ↔ TV"]
+  DETAIL["Article / Detail Sheet"]
+  RAIL["Actions\nlike · save · share · open"]
+  FOOTER["Home · Explore · Gen · Saved · Me"]
 
-Reference paths (all under `~/APPS/wikai/`):
+  HOST --> RESOLVER --> MANIFEST --> SHELL
+  SHELL --> HEADER
+  SHELL --> FEED
+  FEED --> MODE
+  FEED --> DETAIL
+  FEED --> RAIL
+  SHELL --> FOOTER
+```
 
-- `app/page.tsx` (22 lines) — thin server shell that decides mobile vs desktop
-  and hands to `<Feed>` or `<DesktopShell>`
-- `components/Feed.tsx` (3049 lines) — the mobile snap feed with:
-  - Vertical scroll-snap article cards
-  - `Cover.tsx` (464 lines) — image + gradient + article overlay
-  - `StructuredArticle.tsx` (281 lines) — expanded reader when a card is tapped
-  - Bottom sheet interactions (Like / Read / Save / Share)
-  - Points HUD + localStorage streaks
-  - Category picker + topics panel + language picker (RTL-aware)
-  - Pipeline panel for generation status
-- `components/DesktopShell.tsx` (262 lines) — sibling desktop chrome
+### Rules
 
-We want the shape of `Feed.tsx` + `Cover.tsx` + `StructuredArticle.tsx` — not
-the wiki-specific data model.
+- Mobile default = **Scroll** unless the manifest explicitly overrides it.
+- Scroll is full-height and snap-based.
+- TV is one tap away and retains the same canonical item identity.
+- Sticky footer destinations are always **Home · Explore · Gen · Saved · Me**.
+- The centre `Gen` action is visually emphasised.
+- Header/footer/shell are shared engine components; channel differences come from configuration.
+- Item state such as save/history should survive mode changes where authentication/storage allows it.
+- No channel should permanently fork the interaction model simply because its content source differs.
 
-## Port plan (v2.6)
+## Card anatomy
 
-1. **Copy the shell.** Bring `Feed.tsx`, `Cover.tsx`, `StructuredArticle.tsx`,
-   `CategoryPicker.tsx`, `TopicsPanel.tsx` into `src/components/mobile/` and
-   rename `Feed` → `MobileFeed` to avoid collision with the desktop scroller.
-2. **Adapt the data layer.** wikai's `Feed` expects wiki summaries; scroller
-   already has a heterogeneous `Card` union (in `src/components/ScrollerFeed.tsx`).
-   Write a `toWikaiCard(card: Card): WikaiFeedItem` adapter in
-   `src/lib/mobile/adapters.ts` — 8 kinds → single normalized shape.
-3. **Route swap.** In `AppShell` (or a new `MobileShell`), detect UA + swap
-   `MobileWikiScroll` for `<MobileFeed cards={cards} />`. Keep the current
-   `MobileWikiScroll` behind `?legacy=1` for a rollback window.
-4. **Language picker — skip.** Scroller has no i18n. Delete `LangPicker.tsx`
-   from the port.
-5. **Pipeline panel — repurpose.** wikai uses it for AI-generation status.
-   Scroller can reuse it for `/api/wiki/scroll` prefetch progress if we want,
-   or drop it entirely for v2.6.
-6. **Reader (`StructuredArticle`).** Wire it to `/items/[id]` data (existing
-   route). Card tap → reader open, no navigation.
-7. **Points HUD.** wikai's points system uses `localStorage.wikai-points`.
-   Rename to `scroller-points` and keep the same +1 seen / +2 like / +3 save
-   scoring already documented in v2.4 release notes.
-8. **Tests.** Add `e2e/mobile.spec.ts` — smoke test with the iPhone 14 Playwright
-   device preset that hits `/`, expects `MobileFeed` root, expects a snap-scroll
-   container.
+```mermaid
+flowchart LR
+  ITEM["Canonical Item"] --> COVER["Media/Cover"]
+  ITEM --> META["Title · source · tags · rank"]
+  ITEM --> BODY["Context / description"]
+  ITEM --> ACTIONS["Like · Save · Share · Open"]
+  ITEM --> MEDIA["Audio / Video refs"]
+  ITEM --> DETAIL["Detail / article"]
+  ITEM --> EVENTS["view · dwell · completion · click"]
+```
 
-## Risks + gotchas
+Every card is a presentation of the canonical item, not a separate source-specific identity.
 
-- **`Feed.tsx` is 3049 lines** — resist the urge to refactor mid-port. Copy
-  verbatim first, prove the shape, then split later.
-- **Cover overlay in light mode.** wikai's overlay assumes a dark backdrop;
-  scroller now defaults to light. The mobile feed is image-covered, so the
-  card interior stays dark regardless — but the surrounding chrome (TopBar,
-  bottom sheet) needs a light variant. The existing `[data-theme="light"]`
-  attribute-selector overrides in `globals.css` should catch this; verify.
-- **Bundle size.** Adding wikai's `Feed` will roughly double the mobile JS.
-  Consider dynamic import: `const MobileFeed = dynamic(() => import(...), { ssr: false })`.
+## Mode state
 
-## Handoff signals
+```mermaid
+stateDiagram-v2
+  [*] --> Scroll
+  Scroll --> Detail: tap/open
+  Detail --> Scroll: close
+  Scroll --> TV: switch
+  TV --> Scroll: switch
+  TV --> TV: auto-advance
+  Scroll --> Scroll: swipe
+  Scroll --> Saved: save
+  TV --> Saved: save
+  Saved --> Scroll: resume scroll
+  Saved --> TV: watch
+```
 
-- Bundle target: keep mobile route JS under 200 kB gzipped
-- Target device: iPhone 14 (Playwright preset)
-- Version: bump to `v2.6.0`
-- Rollback flag: `?legacy=1` on `/` should still serve `MobileWikiScroll`
-- Delete `MobileWikiScroll.tsx` in v2.7 after two weeks of prod stability
+The `item_id` remains stable across Scroll, Detail, Saved and TV.
+
+## Ranking and mobile feed
+
+The mobile feed should consume the shared feed algorithm rather than implement a separate WIKAI-only order.
+
+```text
+candidate items
+→ eligibility/provenance gate
+→ channel-specific weights
+→ quality + freshness + interest + novelty + diversity
+→ repetition/source caps
+→ ordered feed
+→ viewer events
+→ aggregate feedback
+```
+
+`scroller.tv` raises serendipity; `wikai.tv` raises knowledge continuity; `mediai.tv` raises playability/media completeness.
+
+## Performance expectations
+
+The old port plan identified valid risks that still matter:
+
+- avoid giant single-file feed components;
+- keep above-the-fold interaction fast;
+- lazy/dynamic load expensive readers/players where appropriate;
+- preserve image/media fallbacks;
+- verify on a representative mobile Playwright device;
+- avoid letting sticky chrome cover content/actions;
+- keep transitions stable when switching Scroll ↔ TV.
+
+## Test matrix
+
+```mermaid
+flowchart TB
+  TEST["Mobile parity tests"]
+  TEST --> A["3 domains resolve correct manifest"]
+  TEST --> B["Scroll is default"]
+  TEST --> C["sticky header/footer visible"]
+  TEST --> D["5 canonical nav routes work"]
+  TEST --> E["swipe/snap advances one item"]
+  TEST --> F["Scroll ↔ TV retains item"]
+  TEST --> G["save/share/open actions work"]
+  TEST --> H["anonymous/auth rules correct"]
+  TEST --> I["analytics event IDs correct"]
+```
+
+## Historical implementation notes
+
+The earlier v2.6 idea was to port the shape of WIKAI's `Feed.tsx`, `Cover.tsx` and `StructuredArticle.tsx` into Scroller. That work demonstrated the desired interaction language, but the current architecture changes the implementation strategy:
+
+- **then:** copy/adapt WIKAI components into Scroller;
+- **now:** make the best interaction model part of the shared MS Scroll engine;
+- **then:** adapt heterogeneous card unions into a WIKAI-shaped feed item;
+- **now:** normalize sources into the canonical item contract;
+- **then:** Scroller and WIKAI could continue as separate UI runtimes;
+- **now:** WIKAI becomes a specialist knowledge adapter/channel personality behind shared UX.
+
+Historical commit/version details remain available in Git history and should not override the current `MSSCROLL` contract.
 
 ## Cross-references
 
-- v2.5 release notes: `/version` on prod
-- `/diagrams` panel `MobileFeedAnatomy` — the current v2.4 shape (which is
-  wikai-parity in look, not in structure)
-- wikai memory: `project_wikai_v1_6_auth_swap.md` in
-  `~/.claude/projects/-home-matsiems-APPS-appai/memory/`
+- `docs/MS-SCROLL-MASTER-SPEC.md`
+- `docs/MS-SCROLL-ABC-DIAGRAMS.md`
+- `docs/MS-SCROLL-BACKLOG.md`
+- `skills/abc-diagrams/SKILL.md`
