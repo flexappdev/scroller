@@ -7,7 +7,9 @@
 
 AI26: https://docs.google.com/spreadsheets/d/1W612nquUIzCEWMVCsIsWi1gweh1lG4bU9AqMg5FSUl0/edit
 
-Master spec: `docs/MS-SCROLL-MASTER-SPEC.md`
+Master spec: `docs/MS-SCROLL-MASTER-SPEC.md`  
+Diagram atlas: `docs/MS-SCROLL-ABC-DIAGRAMS.md`  
+Diagram skill: `skills/abc-diagrams/SKILL.md`
 
 ## Rules
 
@@ -15,7 +17,37 @@ Master spec: `docs/MS-SCROLL-MASTER-SPEC.md`
 - Create site-specific child work only when behaviour truly differs.
 - A backlog item is DONE only with evidence: commit, test, live URL, measured result, or source-data proof as appropriate.
 - Spec changes must update impacted `MSS-*` items.
+- Architecture-changing backlog work must update the affected ABC diagrams in the same change.
 - AI26 wins if this mirror drifts.
+
+## Dependency map
+
+```mermaid
+flowchart LR
+  M1["MSS-001\nOne engine"] --> M2["MSS-002\nChannel manifests"]
+  M1 --> M8["MSS-008\nCanonical item"]
+  M2 --> M3["MSS-003\nMobile Scroll default"]
+  M2 --> M4["MSS-004\nUniversal shell"]
+  M8 --> M5["MSS-005\nScroll ↔ TV"]
+  M8 --> M14["MSS-014\nWIKAI adapter"]
+  M8 --> M15["MSS-015\nMediaAI adapter"]
+  M8 --> M16["MSS-016\nMixed adapter"]
+  M14 --> M17["MSS-017\nMigration"]
+  M15 --> M17
+  M16 --> M17
+  M3 --> M6["MSS-006\nFeed algorithm"]
+  M4 --> M6
+  M6 --> M7["MSS-007\nLive / Latest / Top"]
+  M5 --> M9["MSS-009\nTV scheduler"]
+  M7 --> M10["MSS-010\nAnalytics"]
+  M9 --> M10
+  M10 --> M11["MSS-011\nMonetisation"]
+  M10 --> M12["MSS-012\nABC loop"]
+  M12 --> M13["MSS-013\nBO"]
+  M17 --> M20["MSS-020\nParity gate"]
+  M18["MSS-018\nRebuild contract"] --> M20
+  M19["MSS-019\nID graph"] --> M20
+```
 
 ## Current backlog
 
@@ -54,6 +86,19 @@ Master spec: `docs/MS-SCROLL-MASTER-SPEC.md`
 8. **MSS-010 + MSS-011** — close analytics/monetisation feedback loop.
 9. **MSS-012 + MSS-013** — operate it from ABC/BO.
 10. **MSS-020** — parity gate before retiring old runtime code.
+
+## Evidence loop
+
+```mermaid
+flowchart LR
+  SPEC["MSSCROLL decision"] --> TASK["MSS-* backlog"]
+  TASK --> CODE["code / config / data"]
+  CODE --> TEST["validate / test"]
+  TEST --> LIVE["live verification"]
+  LIVE --> EVIDENCE["commit · URL · metric · source proof"]
+  EVIDENCE --> DONE["DONE in AI26"]
+  EVIDENCE -. "update diagrams when architecture changed" .-> SPEC
+```
 
 ## 1G priority
 
