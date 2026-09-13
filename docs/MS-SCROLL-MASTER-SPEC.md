@@ -10,17 +10,58 @@
 
 AI26: https://docs.google.com/spreadsheets/d/1W612nquUIzCEWMVCsIsWi1gweh1lG4bU9AqMg5FSUl0/edit
 
-## Description
+Backlog: `docs/MS-SCROLL-BACKLOG.md`  
+Detailed diagrams: `docs/MS-SCROLL-ABC-DIAGRAMS.md`  
+Diagram standard: `skills/abc-diagrams/SKILL.md`
+
+---
+
+## Architecture at a glance
+
+```mermaid
+flowchart TB
+  AI26["AI26\nMSSCROLL + MSS-*"]
+  ABC["Skai / ABC\norchestration"]
+  SA["ScrollAI\ncollection owner"]
+  SPEC["Master Spec + Channel Manifests"]
+  ENGINE["Shared MS Scroll Engine"]
+  DATA["Canonical Items + Asset References"]
+  STV["scroller.tv"]
+  WTV["wikai.tv"]
+  MTV["mediai.tv"]
+  METRICS["Events · Revenue · Cost"]
+
+  AI26 <--> ABC
+  ABC --> SA
+  AI26 --> SPEC
+  SA --> SPEC
+  SPEC --> ENGINE
+  DATA --> ENGINE
+  ENGINE --> STV
+  ENGINE --> WTV
+  ENGINE --> MTV
+  STV --> METRICS
+  WTV --> METRICS
+  MTV --> METRICS
+  METRICS --> ABC
+```
+
+Full architecture atlas: `docs/MS-SCROLL-ABC-DIAGRAMS.md`.
+
+---
+
+# Description
 
 MS Scroll is one configurable Scroll + TV runtime that powers `scroller.tv`, `wikai.tv`, `mediai.tv`, and future channels without copying the application shell or maintaining a separate runtime per domain.
 
-A channel should be reconstructable from:
+A channel must be reproducible from:
 
 1. this master spec;
 2. one channel manifest;
 3. canonical content/item data;
 4. reusable asset references;
-5. shared engine code.
+5. shared engine code;
+6. environment/provider configuration.
 
 A new channel is primarily **configuration + data**, not a new application fork.
 
@@ -42,6 +83,8 @@ Build one engine that powers N channels and can rebuild any channel from spec + 
 
 **Hard rule:** no permanent per-domain shell/feed/TV forks.
 
+Success means the same shared runtime can resolve a domain/channel manifest and render the appropriate content personality without copying the application architecture.
+
 ## 2. Users
 
 Support anonymous and signed-in viewers, plus private operator surfaces.
@@ -51,6 +94,7 @@ Support anonymous and signed-in viewers, plus private operator surfaces.
 - TV remains one tap away.
 - Logged-in users can retain saves, history and preferences.
 - Operator/admin routes remain private.
+- Human editorial judgement remains a deliberate ranking signal rather than being replaced by automation.
 
 ## 3. Apps / Channels
 
@@ -74,7 +118,7 @@ monetisation: channel/provider config
 analytics: shared event contract
 ```
 
-Future MS Scroll channels should use the same manifest contract.
+Future MS Scroll channels must use the same manifest contract unless the spec is explicitly revised.
 
 ## 4. Product
 
@@ -89,14 +133,14 @@ Every qualified content object can be:
 - monetised;
 - measured.
 
-Core modes are:
+Core modes:
 
 - **Scroll** — immersive vertical feed.
 - **TV / Live** — continuous programmed playback.
 - **Latest** — newest valid content.
 - **Top** — best by day/week/month/year/all-time, including Top 100 → Top 10 → Top 1.
 
-The same item ID should survive switching modes.
+The same canonical `item_id` must survive switching modes.
 
 ## 5. UX
 
@@ -113,9 +157,11 @@ The universal shell should provide:
 
 The ambition is TikTok/YouTube-level simplicity while remaining an original product.
 
+See the mobile and state diagrams in `docs/MS-SCROLL-ABC-DIAGRAMS.md`.
+
 ## 6. Engine
 
-The shared runtime should own:
+The shared runtime owns:
 
 - Next.js app shell;
 - domain/channel resolver;
@@ -135,7 +181,21 @@ The shared runtime should own:
 
 **Data changes do not create new app builds.**
 
-Content, rankings, schedules and asset references should flow through data/config. Runtime deploys happen only when shared code changes.
+Content, rankings, schedules and asset references flow through data/config. Runtime deploys happen only when shared code changes.
+
+```mermaid
+flowchart LR
+  CHANGE{"Change type?"}
+  DATA["data/config"]
+  CODE["shared code"]
+  VALIDATE["validate"]
+  PUBLISH["publish via existing runtime"]
+  TEST["build + tests + e2e"]
+  DEPLOY["controlled deploy"]
+
+  CHANGE -->|data| DATA --> VALIDATE --> PUBLISH
+  CHANGE -->|code| CODE --> TEST --> DEPLOY
+```
 
 ## 7. Data
 
@@ -148,7 +208,7 @@ SPEC → BACKLOG → CHANNEL → ITEM → LIST/RANK → ARTICLE
 
 Canonical content item fields include, where applicable:
 
-- id / slug / canonical topic/entity id;
+- `item_id` / slug / canonical topic/entity id;
 - title;
 - tagline;
 - description;
@@ -167,20 +227,28 @@ Canonical content item fields include, where applicable:
 
 Reuse existing Mongo, Supabase, WIKAI, MediaAI and Vault boundaries. Do not duplicate binaries simply to make the shared engine work.
 
+Start with stable IDs/relations before adding a dedicated graph database.
+
 ## 8. Agents
 
 ABC/Skai is the orchestration layer above the collection.
 
-```text
-Mat ↔ Skai / ABC
-       ↓
-   MS Scroll Spec + Backlog
-       ↓
-    ScrollAI
-   ↙   ↓    ↘
-WIKAI MediaAI ListAI
-VaultAI AppAI  BOAI
-       ↘ CostAI
+```mermaid
+flowchart TB
+  MAT["Mat"] <--> SKAI["Skai / ABC"]
+  SKAI <--> AI26["AI26"]
+  SKAI --> SA["ScrollAI"]
+  SA --> W["WIKAI"]
+  SA --> M["MediaAI"]
+  SA --> L["ListAI"]
+  SA --> V["VaultAI"]
+  SA --> A["AppAI"]
+  SA --> B["BOAI"]
+  SA --> C["CostAI"]
+  W -. evidence .-> AI26
+  M -. evidence .-> AI26
+  A -. commit/test .-> AI26
+  C -. cost/profit .-> AI26
 ```
 
 Responsibilities:
@@ -195,11 +263,11 @@ Responsibilities:
 - **BOAI** — private operational editing/control surfaces.
 - **CostAI** — hosting/generation cost and profitability inputs.
 
-Agents should update AI26 by stable IDs and attach evidence instead of creating parallel truth stores.
+Agents update AI26 by stable IDs and attach evidence instead of creating parallel truth stores.
 
 ## 9. Money
 
-Monetisation should be implemented once at engine level.
+Monetisation is implemented once at engine level.
 
 Initial stack:
 
@@ -218,7 +286,7 @@ Rules:
 
 ## 10. Metrics
 
-Measure the full human + AI feedback loop:
+Measure the human + AI feedback loop:
 
 - sessions/reach;
 - item impressions/views;
@@ -238,15 +306,13 @@ Measure the full human + AI feedback loop:
 - hosting cost;
 - net contribution.
 
-Feed measured performance back into ranking and programming, while retaining human editorial taste as a deliberate signal.
+Feed measured performance back into ranking/programming while retaining human editorial taste as an explicit signal.
 
 ---
 
 # Feed Algorithm v1
 
-Start explainable and deterministic before adding heavier ML/personalisation.
-
-A candidate score can blend:
+Start explainable and deterministic before heavier ML/personalisation.
 
 ```text
 quality
@@ -260,7 +326,7 @@ quality
 - low-quality/ineligible penalty
 ```
 
-Hard constraints should prevent:
+Hard constraints prevent:
 
 - immediate repetition;
 - excessive same-topic clustering;
@@ -268,7 +334,13 @@ Hard constraints should prevent:
 - broken/incomplete media;
 - content that fails provenance or publish eligibility.
 
-`scroller.tv` uses the strongest serendipity/mixed-source weighting. `wikai.tv` emphasises knowledge quality and topical continuity. `mediai.tv` emphasises media completeness, quality and playability.
+Channel personalities:
+
+- `scroller.tv` — strongest serendipity/mixed-source weighting;
+- `wikai.tv` — knowledge quality and topical continuity;
+- `mediai.tv` — media completeness, quality and playability.
+
+Detailed feed loop: `docs/MS-SCROLL-ABC-DIAGRAMS.md`.
 
 ---
 
@@ -278,7 +350,7 @@ Canonical unit: **24-minute POM**.
 
 - 60 POMs/day = exactly 24 hours.
 - 21,900 schedule slots/year.
-- Content library target can exceed the linear schedule capacity to allow rotation and replacement.
+- Content library target can exceed the linear schedule capacity to allow rotation/replacement.
 - Schedule rows reference canonical items/programmes; they do not duplicate media.
 
 The engine exposes **Live/Schedule**, **Latest** and **Top** consistently across all channels.
@@ -331,13 +403,15 @@ Route all three domains through the shared runtime/channel resolver and pass a p
 
 ## Phase 5 — Retire duplication
 
-Only after parity and e2e are green should duplicated WIKAI/MediaAI UI/runtime code be retired. Their specialist data/media services can remain independent where useful.
+Only after parity and e2e are green should duplicated WIKAI/MediaAI UI/runtime code be retired. Specialist data/media services can remain independent where useful.
+
+Migration diagram: `docs/MS-SCROLL-ABC-DIAGRAMS.md`.
 
 ---
 
 # Rebuild-from-spec contract
 
-A clean environment should be able to reconstruct a channel with:
+A clean environment should reconstruct a channel with:
 
 ```text
 MS-SCROLL-MASTER-SPEC.md
@@ -345,10 +419,11 @@ MS-SCROLL-MASTER-SPEC.md
 + canonical item/data access
 + reusable asset references
 + shared engine repository
++ environment/provider config
 = reproducible channel
 ```
 
-The rebuild is accepted only if validation/build/e2e demonstrate functional parity. Manual undocumented production tweaks are considered drift and should be pulled back into the spec/config.
+The rebuild is accepted only if validation/build/e2e demonstrate functional parity. Manual undocumented production tweaks are drift and must be pulled back into spec/config.
 
 ---
 
@@ -360,6 +435,8 @@ The rebuild is accepted only if validation/build/e2e demonstrate functional pari
 - `MS SCROLL` contains the compact master-spec view and operating plan.
 - `BACKLOG` contains executable work items keyed `MSS-*`.
 - `SITES` contains domain/runtime metadata.
+- `DATA` contains source catalogue.
+- `COSTS` contains cost inputs.
 - `TV 2026` contains the annual programme skeleton.
 - GitHub documents mirror the implementation contract for engineers/agents.
 
@@ -367,8 +444,22 @@ When a spec decision changes:
 
 1. update AI26 master spec;
 2. add/update impacted `MSS-*` backlog rows;
-3. update this repo spec/config/code;
-4. attach commit/live/test evidence to the backlog;
-5. only then mark the backlog item DONE.
+3. update the relevant detailed diagrams;
+4. update repo spec/config/code;
+5. validate/test/live-check;
+6. attach commit/live/test evidence to backlog;
+7. only then mark the item DONE.
 
-Backlog mirror: `docs/MS-SCROLL-BACKLOG.md`
+```mermaid
+flowchart LR
+  IDEA["DJ / product decision"] --> SPEC["AI26 MSSCROLL"]
+  SPEC --> BL["MSS-* backlog"]
+  SPEC --> DIAG["ABC diagrams"]
+  BL --> CODE["code/config/data"]
+  DIAG --> CODE
+  CODE --> TEST["test/live evidence"]
+  TEST --> BL
+```
+
+Backlog mirror: `docs/MS-SCROLL-BACKLOG.md`  
+Diagram atlas: `docs/MS-SCROLL-ABC-DIAGRAMS.md`
