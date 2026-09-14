@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import AppShell from "@/components/AppShell";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import AnalyticsBridge from "@/components/AnalyticsBridge";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://scroller-psi.vercel.app";
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim();
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body suppressHydrationWarning className="min-h-screen">
         <AppShell>{children}</AppShell>
         <GoogleAnalytics />
+        <AnalyticsBridge />
       </body>
     </html>
   );
