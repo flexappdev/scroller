@@ -7,6 +7,10 @@ import { trackEvent } from "@/lib/analytics";
 /**
  * Small provider-neutral bridge from the shared Scroller interaction model to
  * GA4. It intentionally sends no user identity or free-form personal data.
+ *
+ * AdSense note: we only record that our own ad slot became visible. We never
+ * instrument or infer ad clicks; provider-side AdSense reporting remains the
+ * authority for ad impressions/clicks/revenue.
  */
 export default function AnalyticsBridge() {
   const pathname = usePathname();
@@ -45,17 +49,6 @@ export default function AnalyticsBridge() {
     function onClick(event: MouseEvent) {
       const target = event.target as HTMLElement | null;
       if (!target) return;
-
-      const ad = target.closest<HTMLElement>("[data-testid='adsense-feed-card']");
-      if (ad) {
-        trackEvent("ad_slot_view", {
-          channel: "scroller",
-          placement: "feed",
-          after_item: Number(ad.dataset.afterItem || 0) || undefined,
-        });
-        return;
-      }
-
       const anchor = target.closest<HTMLAnchorElement>("a[href]");
       if (!anchor) return;
       try {
@@ -72,11 +65,44 @@ export default function AnalyticsBridge() {
       }
     }
 
+    const observedAds = new WeakSet<Element>();
+    const adObserver = typeof IntersectionObserver !== "undefined"
+      ? new IntersectionObserver((entries) => {
+          for (const entry of entries) {
+            if (!entry.isIntersecting || entry.intersectionRatio < 0.5) continue;
+            if (observedAds.has(entry.target)) continue;
+            observedAds.add(entry.target);
+            const ad = entry.target as HTMLElement;
+            trackEvent("ad_slot_view", {
+              channel: "scroller",
+              placement: "feed",
+              after_item: Number(ad.dataset.afterItem || 0) || undefined,
+            });
+            adObserver?.unobserve(entry.target);
+          }
+        }, { threshold: [0.5] })
+      : null;
+
+    const observeAds = () => {
+      if (!adObserver) return;
+      document.querySelectorAll("[data-testid='adsense-feed-card']").forEach((node) => {
+        if (!observedAds.has(node)) adObserver.observe(node);
+      });
+    };
+    observeAds();
+
+    const mutationObserver = typeof MutationObserver !== "undefined"
+      ? new MutationObserver(observeAds)
+      : null;
+    mutationObserver?.observe(document.body, { childList: true, subtree: true });
+
     window.addEventListener("scroller:position", onPosition as EventListener);
     document.addEventListener("click", onClick, true);
     return () => {
       window.removeEventListener("scroller:position", onPosition as EventListener);
       document.removeEventListener("click", onClick, true);
+      mutationObserver?.disconnect();
+      adObserver?.disconnect();
     };
   }, [pathname]);
 
