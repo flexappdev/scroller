@@ -66,27 +66,28 @@ export default function AnalyticsBridge() {
     }
 
     const observedAds = new WeakSet<Element>();
-    const adObserver = typeof IntersectionObserver !== "undefined"
-      ? new IntersectionObserver((entries) => {
-          for (const entry of entries) {
-            if (!entry.isIntersecting || entry.intersectionRatio < 0.5) continue;
-            if (observedAds.has(entry.target)) continue;
-            observedAds.add(entry.target);
-            const ad = entry.target as HTMLElement;
-            trackEvent("ad_slot_view", {
-              channel: "scroller",
-              placement: "feed",
-              after_item: Number(ad.dataset.afterItem || 0) || undefined,
-            });
-            adObserver?.unobserve(entry.target);
-          }
-        }, { threshold: [0.5] })
-      : null;
+    let adObserver: IntersectionObserver | null = null;
+    if (typeof IntersectionObserver !== "undefined") {
+      adObserver = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting || entry.intersectionRatio < 0.5) continue;
+          if (observedAds.has(entry.target)) continue;
+          observedAds.add(entry.target);
+          const ad = entry.target as HTMLElement;
+          trackEvent("ad_slot_view", {
+            channel: "scroller",
+            placement: "feed",
+            after_item: Number(ad.dataset.afterItem || 0) || undefined,
+          });
+          adObserver?.unobserve(entry.target);
+        }
+      }, { threshold: [0.5] });
+    }
 
     const observeAds = () => {
       if (!adObserver) return;
       document.querySelectorAll("[data-testid='adsense-feed-card']").forEach((node) => {
-        if (!observedAds.has(node)) adObserver.observe(node);
+        if (!observedAds.has(node)) adObserver?.observe(node);
       });
     };
     observeAds();
