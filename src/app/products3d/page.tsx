@@ -9,11 +9,9 @@ export const metadata = {
 export default function Product3DPage() {
   return (
     <>
-      <Script
-        type="module"
-        src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"
-        strategy="afterInteractive"
-      />
+      <Script id="ttshop-three" type="module" strategy="afterInteractive">
+        {`import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.170.0/+esm"; window.THREE = THREE; window.dispatchEvent(new Event("ttshop-three-ready"));`}
+      </Script>
       <Product3DClient />
     </>
   );
