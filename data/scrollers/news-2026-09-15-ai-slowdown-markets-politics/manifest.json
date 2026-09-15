@@ -1,0 +1,30 @@
+{
+  "slug": "news-2026-09-15-ai-slowdown-markets-politics",
+  "name": "AI Slowdown Debate Hits Markets and Politics",
+  "tagline": "100 things to know about AI safety calls, market reactions, capex risk and the geopolitical fight over slowing frontier AI.",
+  "description": "A 100-card ScrollAI daily news pack on the September 15, 2026 shift from an AI-lab safety debate into a market, policy and geopolitical issue, as investors reassess infrastructure spending and governments face pressure over frontier AI oversight.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-15",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "sourceRank": 100,
+  "dailyRank": 1,
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "provider-neutral",
+    "videoFallback": "Runware"
+  },
+  "navigation": ["home", "explore", "create", "saved", "me"]
+}
