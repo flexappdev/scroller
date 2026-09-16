@@ -40,7 +40,12 @@ const CHANNELS: Record<ChannelId, ChannelProfile> = {
   },
 };
 
-export function resolveChannelProfile(host?: string | null): ChannelProfile {
+function isChannelId(value?: string | null): value is ChannelId {
+  return value === "scroller" || value === "wikai" || value === "mediai";
+}
+
+export function resolveChannelProfile(host?: string | null, override?: string | null): ChannelProfile {
+  if (isChannelId(override)) return CHANNELS[override];
   const normalized = (host ?? "").toLowerCase().split(":")[0];
   if (normalized === "wikai.tv" || normalized.endsWith(".wikai.tv")) return CHANNELS.wikai;
   if (normalized === "mediai.tv" || normalized.endsWith(".mediai.tv")) return CHANNELS.mediai;
