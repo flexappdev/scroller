@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
-import ChannelScroller from "@/components/ChannelScroller";
+import ChannelTV from "@/components/ChannelTV";
 import { buildRuntimeItems, resolveChannelProfile } from "@/lib/ms-scroll-runtime";
 import { listScrollerPacks } from "@/lib/scroller";
 
@@ -17,14 +17,14 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
   const { channel: override } = await searchParams;
   const channel = await getChannel(override);
   return {
-    title: `${channel.name} Scroller`,
-    description: `${channel.tagline} Full-screen media-first scroll with a compact grid for the complete catalogue.`,
+    title: `${channel.name} TV`,
+    description: `${channel.tagline} Always-on programming with 60 scheduled 24-minute POMs per broadcast day.`,
   };
 }
 
-export default async function ScrollerIndexPage({ searchParams }: PageProps) {
+export default async function TVPage({ searchParams }: PageProps) {
   const { channel: override } = await searchParams;
   const [channel, packs] = await Promise.all([getChannel(override), listScrollerPacks()]);
   const items = buildRuntimeItems(packs, channel);
-  return <ChannelScroller items={items} channel={channel} />;
+  return <ChannelTV items={items} channel={channel} />;
 }
