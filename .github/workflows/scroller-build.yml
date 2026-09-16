@@ -1,0 +1,35 @@
+name: Scroller build
+
+on:
+  pull_request:
+    paths:
+      - 'data/scrollers/**'
+      - 'src/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'next.config.ts'
+      - '.github/workflows/scroller-build.yml'
+  push:
+    branches:
+      - 'scrollai-daily-*'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Validate Scroller packs
+        run: npm run scroller:validate
+      - name: Build
+        run: npm run build
