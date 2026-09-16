@@ -10,9 +10,6 @@ on:
       - 'package-lock.json'
       - 'next.config.ts'
       - '.github/workflows/scroller-build.yml'
-  push:
-    branches:
-      - 'scrollai-daily-*'
   workflow_dispatch:
 
 jobs:
