@@ -1,0 +1,802 @@
+[
+  {
+    "id": "001",
+    "title": "Claude now leads 26% of Anthropic's measured AI R&D",
+    "content": "Anthropic says the August 2026 snapshot places Claude at the 'AI leads' level for 26% of measured model R&D work.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "More than 90% of measured work involves AI collaboration or more",
+    "content": "Anthropic reports that the great majority of measured R&D is now performed with Claude collaborating or leading under human direction.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "Claude is not fully autonomous in the measured workflow",
+    "content": "Anthropic explicitly says no measured subset of its AI R&D is operating at full autonomy.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "The disclosure measures AI helping build future AI",
+    "content": "The metric focuses on the production process used to create later models, not just what current models can do.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "Anthropic wants the public to track the pace",
+    "content": "The company says development-process metrics can reduce the information gap between frontier labs and outsiders.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "Reuters highlighted the quarter-share milestone",
+    "content": "Reuters reported that Claude now leads roughly a quarter of Anthropic's model-development work while remaining supervised.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "AP framed it as Claude helping build its next version",
+    "content": "AP emphasized the growing role of AI in creating successor systems without describing the process as autonomous.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "The headline is about recursive improvement becoming measurable",
+    "content": "The significant change is that labs can now quantify how much of the AI-development loop is itself being automated.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "This is a snapshot, not a forecast",
+    "content": "The current numbers show recent automation levels but do not prove the same growth rate will continue.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "Today's lead is the shift from assistance to AI-led R&D",
+    "content": "The story moves beyond coding copilots toward agents completing larger research and engineering tasks from high-level instructions.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "Anthropic calls the measure its R&D Automation Index",
+    "content": "The index maps model-development work and rates how automated each type of task has become.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "The scale distinguishes collaboration, leadership and autonomy",
+    "content": "Anthropic uses an automation scale developed by Epoch AI to separate different levels of human and AI responsibility.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "At 'AI leads', humans still supervise",
+    "content": "An AI can complete most of a task end to end from a high-level prompt while a person remains responsible for oversight.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "At 'AI collaborates', humans direct more closely",
+    "content": "AI can perform large chunks of a task but works under tighter human guidance.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "The index covers hundreds of task categories",
+    "content": "Anthropic describes a hierarchy with 542 nodes and 378 leaf tasks representing concrete R&D activities.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "The task map came from real internal work records",
+    "content": "The company used internal documentation and communication records to identify what researchers and engineers actually do.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "About 15,000 granular tasks informed the map",
+    "content": "Anthropic says it sampled thousands of model-development activities to construct the task hierarchy.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "The task basket is frozen for repeated measurement",
+    "content": "Keeping categories stable is intended to make changes in automation more comparable over time.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "Anthropic uses AI in the measurement process too",
+    "content": "The company acknowledges that using Claude as part of evaluation can introduce shared-error risks.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Cross-lab comparison is not yet standardized",
+    "content": "Different developers could classify tasks differently until common definitions and methods exist.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "Anthropic reports roughly 30,000 internal research agents",
+    "content": "The number refers to agents active at any one time on the company's most-used internal research and engineering platform.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "The 30,000 figure covers one platform, not necessarily everything",
+    "content": "Anthropic cautions that the measurement is scoped to the system it analyzed.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "Covered actions pass through an online monitor",
+    "content": "The company says the measured agents' actions are checked before execution.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "Offline monitoring reviews activity after the fact",
+    "content": "A second layer is designed to detect slower-emerging patterns that may require investigation.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "Online monitors can block or redirect actions",
+    "content": "These controls target behavior that could cause fast or difficult-to-reverse harm.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Offline monitors look for patterns such as misalignment",
+    "content": "Post-hoc review can surface problems that only become visible across longer sequences of activity.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "Anthropic analyzed more than a billion monitor decisions",
+    "content": "The August dataset covers a very large volume of internal research and engineering agent activity.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "About 0.002% of online decisions were blocked",
+    "content": "Anthropic describes the rate as roughly one blocked action in 47,000.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "Rare events still matter at agent scale",
+    "content": "When systems execute enormous numbers of actions, even low-frequency problems can occur regularly.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "Oversight becomes an infrastructure problem",
+    "content": "Monitoring thousands of agents requires systematic controls rather than ad-hoc human supervision.",
+    "tags": [
+      "agent-scale"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Offline systems flag more activity for review",
+    "content": "Anthropic says roughly one to two transcripts per thousand are flagged for further examination.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Automated classifiers filter many flags",
+    "content": "Additional review stages remove likely false positives before the highest-priority cases reach people.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "About 50 high-priority cases per week reach humans",
+    "content": "Anthropic reports this level of human escalation for its monitored internal platform.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "Coverage is a core oversight metric",
+    "content": "A monitor can only protect the system if enough agent actions actually pass through it.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "Review latency is another proposed metric",
+    "content": "Anthropic suggests tracking how quickly automated and human reviewers examine agent behavior.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "Escalation rate is the third key measure",
+    "content": "This captures how often activity is blocked, redirected or sent for deeper review.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "Action-level monitoring matters more as agents gain tools",
+    "content": "The risk changes when models can modify code, systems and data rather than only generate text.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "Identity and attribution become essential",
+    "content": "Organizations need to know which agent acted, under whose authority and with what permissions.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "Agent transcripts become operational evidence",
+    "content": "They can support debugging, incident analysis, compliance review and future system improvement.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "Human review must focus on consequential cases",
+    "content": "At large scale, it is impractical for people to inspect every low-risk agent action.",
+    "tags": [
+      "oversight"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "Anthropic also measures safety-related compute",
+    "content": "A third metric looks at the share of AI R&D compute allocated to safety work.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "About 6% of sampled AI-R&D compute was classed as safety",
+    "content": "Anthropic calls the estimate deliberately conservative.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "The safety share was about 12% for AI-driven AI R&D",
+    "content": "The company reports a higher percentage for the subset of development work led by AI.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "Compute is an imperfect safety proxy",
+    "content": "Safety work can depend heavily on researcher time while using less accelerator capacity than training.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "Safety and capability work can overlap",
+    "content": "A project may improve robustness and model capability at the same time, complicating classification.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "Definitions strongly affect the reported percentage",
+    "content": "Different labs could produce very different numbers if they categorize mixed work differently.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "Anthropic says developers should justify what counts as safety",
+    "content": "Its proposal places the burden on labs to explain classifications rather than simply self-labeling work.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "Independent checks could reduce self-reporting bias",
+    "content": "Third parties could inspect methods and evidence behind the published percentages.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "Trends may matter more than the absolute number",
+    "content": "Repeated measurements can show whether safety effort keeps pace as automation grows.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "Shared definitions would make the metric more useful",
+    "content": "A common framework could allow meaningful comparisons across frontier developers.",
+    "tags": [
+      "safety-compute"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "This is not an AI independently redesigning itself",
+    "content": "People, organizations, compute systems and release processes remain inside the loop.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "The key shift is how much of the development loop AI performs",
+    "content": "Models are moving from isolated assistance toward completing larger pieces of research and engineering.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "More automation can compress iteration cycles",
+    "content": "AI-led coding, experiments and analysis can allow teams to test ideas faster.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "Faster cycles can accelerate safety work too",
+    "content": "The same tools can run evaluations, build monitors and improve defenses more quickly.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "055",
+    "title": "The loop can become compounding",
+    "content": "A better model can help create an even better model, which can then contribute more strongly to later R&D.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "056",
+    "title": "Compounding does not guarantee runaway growth",
+    "content": "Hardware, data, algorithmic bottlenecks, evaluations and human decisions still constrain progress.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "057",
+    "title": "Concrete metrics are better than vague self-improvement claims",
+    "content": "Task-level measurement helps separate operational reality from hype.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "058",
+    "title": "Method quality determines how meaningful 26% is",
+    "content": "Weak task definitions or inconsistent scoring could make a precise-looking number misleading.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "059",
+    "title": "Independent replication would increase confidence",
+    "content": "Comparable studies from other labs could show whether the pattern is industry-wide.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "060",
+    "title": "The disclosure may pressure competitors to publish similar data",
+    "content": "Stakeholders can now ask other frontier labs for equivalent transparency.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "061",
+    "title": "For software teams, the lesson extends beyond frontier labs",
+    "content": "Large agent fleets can coordinate on coding, testing, debugging and operations under human supervision.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "062",
+    "title": "The bottleneck shifts from typing to orchestration",
+    "content": "Humans increasingly define goals, constraints, evaluations, permissions and escalation rules.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "063",
+    "title": "Monitoring should be designed before agent fleets scale",
+    "content": "Retrofitting observability after thousands of agents are active is much harder.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "064",
+    "title": "Every consequential action should be attributable",
+    "content": "Teams need records tying an action to an agent identity, user authority and input context.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "065",
+    "title": "Read and write permissions should be separated",
+    "content": "Retrieving information is a different risk class from changing production systems or sending messages.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "066",
+    "title": "High-risk writes need deterministic controls",
+    "content": "Policy checks, argument validation and approval gates can limit the consequences of model error.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "067",
+    "title": "Audit trails are part of the product",
+    "content": "Agent systems need durable records of decisions, tool calls and outcomes.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "068",
+    "title": "Productivity metrics alone are incomplete",
+    "content": "Teams should also track monitoring coverage, intervention rates, incident severity and review latency.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "069",
+    "title": "Human gates should concentrate on consequences",
+    "content": "Approving every trivial step removes much of the benefit of autonomous execution.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "070",
+    "title": "The emerging operating model is supervised autonomy",
+    "content": "Agents act independently inside explicit boundaries while humans retain authority over higher-risk decisions.",
+    "tags": [
+      "enterprise-pattern"
+    ]
+  },
+  {
+    "id": "071",
+    "title": "AI is moving inside its own production function",
+    "content": "The technology is becoming part of the machinery that produces the next generation of the technology itself.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "072",
+    "title": "That dynamic can widen gaps between frontier labs",
+    "content": "Organizations with stronger models may use them to accelerate the R&D that creates later models.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "073",
+    "title": "Automation may lower the labor cost of some research tasks",
+    "content": "Smaller teams could perform experiments or analysis that previously required more staff time.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "074",
+    "title": "Compute remains a major constraint",
+    "content": "Agent productivity does not remove the need for expensive training and inference infrastructure.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "075",
+    "title": "Evaluation becomes more important as iteration accelerates",
+    "content": "Faster development increases the need to catch regressions, dangerous capabilities and misleading results.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "076",
+    "title": "Security becomes part of the research loop",
+    "content": "Internal agents with credentials and tool access create new attack surfaces and permission risks.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "077",
+    "title": "Research organizations may need new management structures",
+    "content": "Thousands of agents cannot be supervised using processes designed for small human teams.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "078",
+    "title": "AI-generated research needs provenance",
+    "content": "Teams need traceability for claims, code, experiments and source material produced by agents.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "079",
+    "title": "Operational metrics can improve public debate",
+    "content": "Terms such as 'self-improvement' become more useful when attached to observable task-level data.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "080",
+    "title": "Anthropic's framework is a proposal, not a universal standard",
+    "content": "It should be evaluated alongside independent methods and alternative approaches.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "081",
+    "title": "Watch whether Anthropic publishes the index regularly",
+    "content": "A time series would show whether AI-led R&D continues rising, plateaus or falls.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "082",
+    "title": "Watch whether other frontier labs publish comparable numbers",
+    "content": "OpenAI, Google DeepMind, Meta, xAI and others could make the metric much more informative.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "083",
+    "title": "Watch for independent verification",
+    "content": "External access to methods and evidence will affect confidence in the figures.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "084",
+    "title": "Watch the shift from collaboration to leadership",
+    "content": "The most consequential transition is AI moving from assistance to end-to-end task execution.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "085",
+    "title": "Watch whether full-autonomy categories appear",
+    "content": "Anthropic currently says none of the measured R&D qualifies as fully autonomous.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "086",
+    "title": "Watch intervention rates as agents gain permissions",
+    "content": "More capable agents with broader tools could change both the frequency and severity of blocked actions.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "087",
+    "title": "Watch whether human-review queues stay manageable",
+    "content": "A tiny escalation percentage can still create large workloads when the base volume is enormous.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "088",
+    "title": "Watch whether safety-compute definitions converge",
+    "content": "Without shared categories, published percentages will remain hard to compare.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "089",
+    "title": "Watch whether governments use automation thresholds",
+    "content": "Development-process metrics could eventually inform testing, reporting or release requirements.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "090",
+    "title": "Watch whether internal metrics become release gates",
+    "content": "Labs may tie extra evaluations or pauses to rising automation or oversight-risk indicators.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "091",
+    "title": "Watch AI-driven science as well as AI-driven AI research",
+    "content": "Anthropic has also reported Claude improving biomolecular-modeling software, suggesting similar workflows are spreading into science.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "092",
+    "title": "Watch the boundary between tools and autonomous researchers",
+    "content": "The distinction depends on who sets goals, plans work, executes actions and evaluates results.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "093",
+    "title": "Watch agent-to-agent coordination",
+    "content": "Large fleets may require shared messaging, delegation, conflict resolution and collective monitoring.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "094",
+    "title": "Watch AI systems supervising other AI systems",
+    "content": "At scale, automated monitors will increasingly evaluate automated workers, creating layered dependence on model reliability.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "095",
+    "title": "Watch for common incident-reporting standards",
+    "content": "Comparable definitions could help labs learn from failures across organizations.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "096",
+    "title": "Watch whether model release cycles shorten",
+    "content": "More automated R&D could reduce time between capability jumps, although other bottlenecks may offset the effect.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "097",
+    "title": "Watch whether safety scales as fast as capability",
+    "content": "The critical comparison is whether protective work keeps pace with model power and agent autonomy.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "098",
+    "title": "Watch the quality of evaluator access",
+    "content": "Meaningful independent verification requires enough internal visibility to inspect evidence, not only summaries.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "099",
+    "title": "Watch what happens when research agents gain real-world tools",
+    "content": "The risk profile changes when agents can modify code, infrastructure, data or experiments.",
+    "tags": [
+      "what-to-watch"
+    ]
+  },
+  {
+    "id": "100",
+    "title": "The core question is now measurable",
+    "content": "Anthropic's 26% figure is an early answer to how much of the next AI is being built by today's AI; the important next step is tracking it over time.",
+    "tags": [
+      "what-to-watch"
+    ]
+  }
+]
