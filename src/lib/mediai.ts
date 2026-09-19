@@ -10,6 +10,8 @@ export type MediaiArticle = {
   sourceUrl: string;
   updatedAt: number;
   assetCount: number;
+  provider: string | null;
+  prompt: string | null;
 };
 
 export type MediaiPage = {
@@ -27,6 +29,8 @@ type NormalizedAsset = {
   url: string;
   sourceUrl: string | null;
   ts: number;
+  provider: string | null;
+  prompt: string | null;
 };
 
 const DB_NAME = process.env.MEDIAI_MONGO_DB || "AIDB";
@@ -48,6 +52,13 @@ function numberValue(value: unknown): number {
     if (Number.isFinite(parsed)) return parsed / 1000;
   }
   return 0;
+}
+
+function normalizeProvider(value: unknown): string | null {
+  const provider = stringValue(value)?.toLowerCase() ?? null;
+  if (!provider) return null;
+  if (provider.includes("chatgpt") || provider === "openai") return "chatgpt";
+  return provider;
 }
 
 function normalizeKind(value: unknown): AssetKind | null {
@@ -75,6 +86,9 @@ function normalizeAsset(doc: Record<string, unknown>): NormalizedAsset | null {
   const id = rawId == null ? null : String(rawId);
   const s3Key = stringValue(doc.s3_key ?? doc.key);
   const url = stringValue(doc.url ?? doc.s3_url ?? doc.public_url) || (s3Key ? publicS3Url(s3Key) : null);
+  const provider = normalizeProvider(doc.provider ?? doc.source_provider ?? doc.origin ?? doc.generator)
+    ?? (id?.startsWith("cgpt-") ? "chatgpt" : null);
+  const prompt = stringValue(doc.prompt ?? doc.generation_prompt ?? doc.description);
 
   if (!kind || !topic || !id || !url) return null;
 
@@ -86,6 +100,8 @@ function normalizeAsset(doc: Record<string, unknown>): NormalizedAsset | null {
     url,
     sourceUrl: stringValue(doc.source_url ?? doc.article_url ?? doc.wikipedia_url ?? doc.wikivoyage_url),
     ts: numberValue(doc.ts ?? doc.updated_at ?? doc.created_at ?? doc.modified_at),
+    provider,
+    prompt,
   };
 }
 
@@ -96,7 +112,7 @@ function groupAssets(assets: NormalizedAsset[]): MediaiArticle[] {
     // Mediai can regenerate the same article under several asset IDs. One
     // topic card should expose every available variant without repeating the
     // article later in the feed.
-    const key = `topic:${asset.topic}`;
+    const key = asset.provider === "chatgpt" ? `chatgpt:${asset.id}` : `topic:${asset.topic}`;
     const current = grouped.get(key) || {
       id: key,
       assetId: asset.baseId,
@@ -104,14 +120,18 @@ function groupAssets(assets: NormalizedAsset[]): MediaiArticle[] {
       imageUrl: null,
       videoUrls: [],
       audioUrl: null,
-      sourceUrl: asset.sourceUrl || wikaiUrl(asset.topic),
+      sourceUrl: asset.sourceUrl || (asset.provider === "chatgpt" ? asset.url : wikaiUrl(asset.topic)),
       updatedAt: asset.ts,
       assetCount: 0,
+      provider: asset.provider,
+      prompt: asset.prompt,
     };
 
     current.updatedAt = Math.max(current.updatedAt, asset.ts);
     current.assetCount += 1;
     if (asset.sourceUrl) current.sourceUrl = asset.sourceUrl;
+    current.provider ||= asset.provider;
+    current.prompt ||= asset.prompt;
 
     if (asset.kind === "image" && !current.imageUrl) current.imageUrl = asset.url;
     if (asset.kind === "audio" && !current.audioUrl) current.audioUrl = asset.url;
@@ -123,20 +143,21 @@ function groupAssets(assets: NormalizedAsset[]): MediaiArticle[] {
   return [...grouped.values()].sort((a, b) => b.updatedAt - a.updatedAt);
 }
 
-async function getMediaiSnapshotPage(offset: number, limit: number): Promise<MediaiPage> {
+async function getMediaiSnapshotPage(offset: number, limit: number, provider?: string | null): Promise<MediaiPage> {
   const snapshotUrl = process.env.MEDIAI_SNAPSHOT_URL || "https://mediai-public.vercel.app/data.json";
   try {
     const response = await fetch(snapshotUrl, { next: { revalidate: 300 } });
     if (!response.ok) return { items: [], nextOffset: null };
     const snapshot = (await response.json()) as { items?: Array<Record<string, unknown>> };
     const all = Array.isArray(snapshot.items) ? snapshot.items : [];
-    const docs = all.slice(offset, offset + limit);
-    const assets = docs
+    const allAssets = all
       .map((doc) => normalizeAsset(doc))
-      .filter((asset): asset is NormalizedAsset => Boolean(asset));
+      .filter((asset): asset is NormalizedAsset => Boolean(asset))
+      .filter((asset) => !provider || asset.provider === normalizeProvider(provider));
+    const assets = allAssets.slice(offset, offset + limit);
     return {
       items: groupAssets(assets),
-      nextOffset: offset + docs.length < all.length ? offset + docs.length : null,
+      nextOffset: offset + assets.length < allAssets.length ? offset + assets.length : null,
     };
   } catch (error) {
     console.warn("[mediai] public snapshot fallback failed", error);
@@ -156,12 +177,19 @@ async function getMediaiSnapshotPage(offset: number, limit: number): Promise<Med
 export async function getMediaiPage({
   offset = 0,
   rawLimit = DEFAULT_RAW_PAGE,
+  provider = null,
 }: {
   offset?: number;
   rawLimit?: number;
+  provider?: string | null;
 } = {}): Promise<MediaiPage> {
+  const normalizedProvider = normalizeProvider(provider);
   const db = await tryGetDb(DB_NAME);
-  if (!db) return getMediaiSnapshotPage(Math.max(0, Math.floor(offset)), Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit))));
+  if (!db) return getMediaiSnapshotPage(
+    Math.max(0, Math.floor(offset)),
+    Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit))),
+    normalizedProvider,
+  );
 
   const safeOffset = Math.max(0, Math.floor(offset));
   const safeLimit = Math.max(20, Math.min(MAX_RAW_PAGE, Math.floor(rawLimit)));
@@ -176,9 +204,29 @@ export async function getMediaiPage({
     ],
   };
 
+  const providerFilter = normalizedProvider
+    ? {
+        $or: [
+          { provider: normalizedProvider },
+          { source_provider: normalizedProvider },
+          { origin: normalizedProvider },
+          ...(normalizedProvider === "chatgpt"
+            ? [
+                { provider: "openai" },
+                { source_provider: "openai" },
+                { origin: { $regex: "chatgpt", $options: "i" } },
+                { id: { $regex: "^cgpt-" } },
+              ]
+            : []),
+        ],
+      }
+    : null;
+
+  const query = providerFilter ? { $and: [usableAsset, providerFilter] } : usableAsset;
+
   const docs = await db
     .collection(COLLECTION)
-    .find(usableAsset)
+    .find(query)
     .sort({ updated_at: -1, ts: -1, _id: -1 })
     .skip(safeOffset)
     .limit(safeLimit)

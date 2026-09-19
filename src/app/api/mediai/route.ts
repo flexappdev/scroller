@@ -7,11 +7,13 @@ export async function GET(request: NextRequest) {
   const params = request.nextUrl.searchParams;
   const offset = Number(params.get("offset") || 0);
   const rawLimit = Number(params.get("limit") || 220);
+  const provider = params.get("provider");
 
   try {
     const page = await getMediaiPage({
       offset: Number.isFinite(offset) ? offset : 0,
       rawLimit: Number.isFinite(rawLimit) ? rawLimit : 220,
+      provider,
     });
 
     return NextResponse.json(page, {

@@ -56,6 +56,7 @@ const ASSET_GROUPS: Array<{ label: string; items: NavItem[] }> = [
       { href: "/browse", label: "All media", description: "Every Scroller source in one browser", icon: Layers3 },
       { href: "/videos", label: "Videos", description: "Mat Siems + Siems Production", icon: Film },
       { href: "/images", label: "Images", description: "Search the generated S3 image vault", icon: Images },
+      { href: "/chatgpt", label: "ChatGPT archive", description: "All archived ChatGPT-generated images", icon: Sparkles },
     ],
   },
   {
