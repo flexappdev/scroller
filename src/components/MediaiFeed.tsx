@@ -47,11 +47,13 @@ export default function MediaiFeed({
   showAds = false,
   adsenseClient,
   adsenseSlot,
+  provider = null,
 }: {
   initial: MediaiPage;
   showAds?: boolean;
   adsenseClient?: string | null;
   adsenseSlot?: string | null;
+  provider?: string | null;
 }) {
   const adsEnabled = Boolean(showAds && adsenseClient && adsenseSlot);
   const [items, setItems] = useState<MediaiArticle[]>(initial.items);
@@ -105,7 +107,13 @@ export default function MediaiFeed({
 
   const openDetail = useCallback((item: MediaiArticle) => {
     setDetail((current) => (current?.id === item.id ? null : item));
-    pushHistory(`mediai:${item.id}`, { title: item.topic, kind: "mediai", href: `/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}` });
+    pushHistory(`mediai:${item.id}`, {
+      title: item.topic,
+      kind: "mediai",
+      href: item.provider === "chatgpt"
+        ? `/chatgpt?card=${encodeURIComponent(item.id)}`
+        : `/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}`,
+    });
     if (typeof window === "undefined") return;
     const url = new URL(window.location.href);
     const already = url.searchParams.get("card") === item.id;
@@ -118,7 +126,8 @@ export default function MediaiFeed({
     if (nextOffset == null || loadingMore) return;
     setLoadingMore(true);
     try {
-      const response = await fetch(`/api/mediai?offset=${nextOffset}&limit=220`);
+      const providerQuery = provider ? `&provider=${encodeURIComponent(provider)}` : "";
+      const response = await fetch(`/api/mediai?offset=${nextOffset}&limit=220${providerQuery}`);
       if (!response.ok) return;
       const page = (await response.json()) as MediaiPage;
       setItems((current) => mergeArticles(current, shuffled(page.items)));
@@ -128,7 +137,7 @@ export default function MediaiFeed({
     } finally {
       setLoadingMore(false);
     }
-  }, [loadingMore, nextOffset]);
+  }, [loadingMore, nextOffset, provider]);
 
   useEffect(() => {
     if (activeIndex >= items.length - 6) void loadMore();
@@ -324,7 +333,7 @@ export default function MediaiFeed({
                     <img src={item.imageUrl} alt="" className="h-10 w-10 shrink-0 rounded object-cover" loading="lazy" />
                   )}
                   <span className="min-w-0 flex-1 truncate text-sm font-medium">{item.topic}</span>
-                  <span className="shrink-0 rounded-full border border-zinc-800 px-2 py-0.5 text-[10px] font-mono text-zinc-500">mediai</span>
+                  <span className="shrink-0 rounded-full border border-zinc-800 px-2 py-0.5 text-[10px] font-mono text-zinc-500">{item.provider === "chatgpt" ? "chatgpt" : "mediai"}</span>
                 </button>
               </li>
             ))}
@@ -499,15 +508,17 @@ function MediaCard({
           </Action>
         )}
         <Action label="Share" onClick={share}><Share2 className="h-5 w-5" /></Action>
-        <Link
-          href={`/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}/scroller`}
-          className="flex min-w-12 flex-col items-center gap-1 text-white/90"
-          aria-label={`Open article page for ${item.topic}`}
-          onClick={(e) => e.stopPropagation()}
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/35 backdrop-blur-xl"><ExternalLink className="h-5 w-5" /></span>
-          <span className="text-[10px] font-bold [text-shadow:0_1px_3px_rgba(0,0,0,.8)]">Article</span>
-        </Link>
+        {item.provider !== "chatgpt" && (
+          <Link
+            href={`/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}/scroller`}
+            className="flex min-w-12 flex-col items-center gap-1 text-white/90"
+            aria-label={`Open article page for ${item.topic}`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/35 backdrop-blur-xl"><ExternalLink className="h-5 w-5" /></span>
+            <span className="text-[10px] font-bold [text-shadow:0_1px_3px_rgba(0,0,0,.8)]">Article</span>
+          </Link>
+        )}
       </div>
 
       {/* v3.2 — sits between sticky header (56px) and sticky footer (~72px);
@@ -522,7 +533,7 @@ function MediaCard({
         }}
       >
         <div className="mb-2 flex items-center gap-2">
-          <span className="rounded-full border border-[color-mix(in_oklch,var(--accent)_52%,transparent)] bg-[color-mix(in_oklch,var(--accent)_16%,transparent)] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[var(--accent)] backdrop-blur">Wikipedia · Mediai</span>
+          <span className="rounded-full border border-[color-mix(in_oklch,var(--accent)_52%,transparent)] bg-[color-mix(in_oklch,var(--accent)_16%,transparent)] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[var(--accent)] backdrop-blur">{item.provider === "chatgpt" ? "ChatGPT · Archive" : "Wikipedia · Mediai"}</span>
           <span className="text-[10px] font-bold tabular-nums text-white/55">{index + 1} / {total}</span>
         </div>
         <h1 className="scroller-display line-clamp-2 max-w-5xl text-[clamp(1.5rem,6.5vw,3.25rem)] font-black uppercase leading-[0.95] tracking-[-0.055em] text-white [text-shadow:0_2px_24px_rgba(0,0,0,.75)]">{item.topic}</h1>
