@@ -120,7 +120,7 @@ function groupAssets(assets: NormalizedAsset[]): MediaiArticle[] {
       imageUrl: null,
       videoUrls: [],
       audioUrl: null,
-      sourceUrl: asset.sourceUrl || wikaiUrl(asset.topic),
+      sourceUrl: asset.sourceUrl || (asset.provider === "chatgpt" ? asset.url : wikaiUrl(asset.topic)),
       updatedAt: asset.ts,
       assetCount: 0,
       provider: asset.provider,
@@ -150,14 +150,14 @@ async function getMediaiSnapshotPage(offset: number, limit: number, provider?: s
     if (!response.ok) return { items: [], nextOffset: null };
     const snapshot = (await response.json()) as { items?: Array<Record<string, unknown>> };
     const all = Array.isArray(snapshot.items) ? snapshot.items : [];
-    const docs = all.slice(offset, offset + limit);
-    const assets = docs
+    const allAssets = all
       .map((doc) => normalizeAsset(doc))
       .filter((asset): asset is NormalizedAsset => Boolean(asset))
       .filter((asset) => !provider || asset.provider === normalizeProvider(provider));
+    const assets = allAssets.slice(offset, offset + limit);
     return {
       items: groupAssets(assets),
-      nextOffset: offset + docs.length < all.length ? offset + docs.length : null,
+      nextOffset: offset + assets.length < allAssets.length ? offset + assets.length : null,
     };
   } catch (error) {
     console.warn("[mediai] public snapshot fallback failed", error);
