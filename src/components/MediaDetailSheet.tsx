@@ -77,6 +77,11 @@ export default function MediaDetailSheet({
       setWiki(null);
       return;
     }
+    if (item.provider === "chatgpt") {
+      setWiki(null);
+      setLoadingWiki(false);
+      return;
+    }
     let cancelled = false;
     setLoadingWiki(true);
     setWiki(null);
@@ -110,7 +115,8 @@ export default function MediaDetailSheet({
 
   async function copyLink() {
     if (typeof window === "undefined" || !item) return;
-    const url = `${window.location.origin}/?card=${encodeURIComponent(item.id)}`;
+    const base = item.provider === "chatgpt" ? "/chatgpt" : "/";
+    const url = `${window.location.origin}${base}?card=${encodeURIComponent(item.id)}`;
     try {
       await navigator.clipboard.writeText(url);
       setCopied(true);
@@ -125,7 +131,9 @@ export default function MediaDetailSheet({
   const scrollerHref = `/items/${encodeURIComponent(`wiki:${wikaiTopic}`)}/scroller`;
   const wordCount = wiki?.fullText ? wiki.fullText.split(/\s+/).length : wiki?.extract ? wiki.extract.split(/\s+/).length : 0;
 
-  const shortDesc = wiki?.description ?? (wiki?.extract ? wiki.extract.split(/[.!?]/)[0]?.trim() : null);
+  const shortDesc = item.provider === "chatgpt"
+    ? item.prompt
+    : wiki?.description ?? (wiki?.extract ? wiki.extract.split(/[.!?]/)[0]?.trim() : null);
   const assetChips = [
     item.imageUrl ? "image" : null,
     item.videoUrls.length ? `${item.videoUrls.length} video${item.videoUrls.length === 1 ? "" : "s"}` : null,
@@ -154,7 +162,7 @@ export default function MediaDetailSheet({
 
       {/* Header: Title · tagline · tags · short description · like/favorite */}
       <div className="border-b border-zinc-800 px-4 pt-4 pb-3 space-y-2">
-        <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">Wikipedia · Mediai</div>
+        <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">{item.provider === "chatgpt" ? "ChatGPT · Archive" : "Wikipedia · Mediai"}</div>
         <h2 className="text-lg font-black tracking-tight text-zinc-100 break-words leading-tight">{item.topic}</h2>
         {wiki?.description && (
           <p className="text-xs uppercase tracking-wide text-zinc-400">{wiki.description}</p>
@@ -177,33 +185,47 @@ export default function MediaDetailSheet({
       </div>
 
       <div className="flex-1">
-        <Section title="Article" icon={<BookOpen className="h-4 w-4" />} chip={loadingWiki ? "…" : wordCount ? `${wordCount} words` : "no copy"} open={open.article} onToggle={() => toggle("article")}>
-          {loadingWiki && <p className="text-xs text-zinc-500">Loading article…</p>}
-          {!loadingWiki && (wiki?.fullText || wiki?.extract) && (
-            <div className="space-y-2 text-sm leading-6 text-zinc-300">
-              {(wiki?.fullText ?? wiki?.extract ?? "")
-                .split(/\n{2,}/)
-                .filter((para) => para.trim().length > 0)
-                .slice(0, 20)
-                .map((para, i) => {
-                  const heading = para.match(/^==+\s*(.+?)\s*==+$/);
-                  if (heading) {
-                    return (
-                      <h3 key={i} className="mt-3 text-[11px] font-black uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>{heading[1]}</h3>
-                    );
-                  }
-                  return <p key={i} className="whitespace-pre-line">{para}</p>;
-                })}
-            </div>
+        <Section
+          title={item.provider === "chatgpt" ? "Prompt" : "Article"}
+          icon={<BookOpen className="h-4 w-4" />}
+          chip={item.provider === "chatgpt" ? (item.prompt ? "saved" : "no prompt") : loadingWiki ? "…" : wordCount ? `${wordCount} words` : "no copy"}
+          open={open.article}
+          onToggle={() => toggle("article")}
+        >
+          {item.provider === "chatgpt" ? (
+            <p className="whitespace-pre-line text-sm leading-6 text-zinc-300">
+              {item.prompt || "No generation prompt was available in the imported metadata."}
+            </p>
+          ) : (
+            <>
+              {loadingWiki && <p className="text-xs text-zinc-500">Loading article…</p>}
+              {!loadingWiki && (wiki?.fullText || wiki?.extract) && (
+                <div className="space-y-2 text-sm leading-6 text-zinc-300">
+                  {(wiki?.fullText ?? wiki?.extract ?? "")
+                    .split(/\n{2,}/)
+                    .filter((para) => para.trim().length > 0)
+                    .slice(0, 20)
+                    .map((para, i) => {
+                      const heading = para.match(/^==+\s*(.+?)\s*==+$/);
+                      if (heading) {
+                        return (
+                          <h3 key={i} className="mt-3 text-[11px] font-black uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>{heading[1]}</h3>
+                        );
+                      }
+                      return <p key={i} className="whitespace-pre-line">{para}</p>;
+                    })}
+                </div>
+              )}
+              {!loadingWiki && !wiki?.fullText && !wiki?.extract && (
+                <p className="text-xs text-zinc-500 italic">No Wikipedia article available for this topic.</p>
+              )}
+              <div className="flex flex-wrap gap-2 pt-3">
+                <Link href={scrollerHref} onClick={onClose} className="flex items-center gap-1.5 rounded-md border border-emerald-700/40 bg-emerald-950/40 px-3 py-2 text-xs text-emerald-300 hover:border-emerald-500 hover:text-emerald-200 transition-colors">
+                  <ArrowUpRight className="h-3.5 w-3.5" /> Open Article
+                </Link>
+              </div>
+            </>
           )}
-          {!loadingWiki && !wiki?.fullText && !wiki?.extract && (
-            <p className="text-xs text-zinc-500 italic">No Wikipedia article available for this topic.</p>
-          )}
-          <div className="flex flex-wrap gap-2 pt-3">
-            <Link href={scrollerHref} onClick={onClose} className="flex items-center gap-1.5 rounded-md border border-emerald-700/40 bg-emerald-950/40 px-3 py-2 text-xs text-emerald-300 hover:border-emerald-500 hover:text-emerald-200 transition-colors">
-              <ArrowUpRight className="h-3.5 w-3.5" /> Open Article
-            </Link>
-          </div>
         </Section>
 
         <Section title="Images" icon={<ImageIcon className="h-4 w-4" />} chip={item.imageUrl ? "1" : "0"} disabled={!item.imageUrl} open={open.images} onToggle={() => toggle("images")}>
