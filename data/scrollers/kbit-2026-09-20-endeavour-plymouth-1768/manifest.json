@@ -1,0 +1,28 @@
+{
+  "slug": "kbit-2026-09-20-endeavour-plymouth-1768",
+  "name": "Endeavour Leaves Plymouth — 1768",
+  "tagline": "A scientific voyage to measure Venus also carried sealed orders that reshaped Pacific maps and empire.",
+  "description": "A Scroller KBIT derived from @cunning.conquests on the departure of HM Bark Endeavour from Plymouth in August 1768, expanded with verified historical context on Cook, Banks, the transit of Venus and the search for Terra Australis.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-20",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "prompted",
+    "audio": "prompted",
+    "video": "prompted"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "provider-neutral",
+    "videoFallback": "Runware"
+  },
+  "navigation": ["home", "explore", "create", "saved", "me"]
+}
