@@ -1,0 +1,802 @@
+[
+  {
+    "id": "001",
+    "title": "AI labs are talking about slowing down",
+    "content": "Reuters reported a sharp shift in the frontier-AI debate: leading figures are publicly discussing slower capability growth as safety concerns rise.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Competition has not slowed with the rhetoric",
+    "content": "Anthropic is considering another model release aimed at answering OpenAI's GPT-6 Astra momentum, Reuters reported on September 19.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "Safety and market pressure now collide",
+    "content": "The core tension is simple: labs can support slower frontier progress while still facing customers, investors and rivals that reward frequent releases.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "Anthropic is the clearest current example",
+    "content": "Reuters reported that Anthropic is weighing a new model even after CEO Dario Amodei publicly called for slower capability improvement.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "OpenAI changed the competitive baseline",
+    "content": "Reuters says GPT-6 Astra, released earlier in September, gained enterprise traction and increased pressure on rivals.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "The slowdown idea is becoming international",
+    "content": "European Commission President Ursula von der Leyen backed talks with frontier labs on slowing advanced-AI development and managing risks.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "There is also a strong counterargument",
+    "content": "France's finance minister argued that slowdown calls could protect incumbent U.S. leaders and leave Europe further behind.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "The debate is no longer only technical",
+    "content": "Release timing now links safety, regulation, capital markets, enterprise demand and national competitiveness.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "AI security is entering state-to-state talks",
+    "content": "U.S. and Chinese officials are discussing AI security alongside trade and critical minerals in New York on September 20.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "The next frontier release becomes a test",
+    "content": "A major new model launch will show how much current slowdown language changes real release behavior.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "Anthropic is considering a new model",
+    "content": "Reuters cited three sources saying Anthropic is evaluating a new release to counter OpenAI's recent momentum.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "The possible release is not confirmed",
+    "content": "Anthropic declined to comment to Reuters, so timing and final release plans remain uncertain.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "Safety evaluation is part of the deliberation",
+    "content": "Reuters reported that Anthropic is evaluating the safety of its next model as part of the release decision.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "Amodei called for slower capability improvement",
+    "content": "Reuters quoted Anthropic CEO Dario Amodei's September 12 essay calling for a slower pace of model capability gains.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "OpenAI released GPT-6 Astra on September 3",
+    "content": "Reuters reported that OpenAI's new model arrived this month with gains in computer use, software engineering, cybersecurity and professional work.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "Astra gained enterprise traction",
+    "content": "Reuters reported that the model's adoption by businesses prompted some investors to reassess competitive positioning in enterprise AI.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "Anthropic remains commercially significant",
+    "content": "Reuters reported a large annualized revenue run rate for Anthropic, showing that the company enters this debate from a strong enterprise position.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "Open-source pressure is rising",
+    "content": "Reuters identified open-source and open-weight models as a broader competitive threat to leading commercial AI providers.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "Model leadership may shift repeatedly",
+    "content": "Investors told Reuters they expect leadership among major AI labs to move as new model generations are released.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Meta is reducing some dependence on external models",
+    "content": "Reuters reported that Meta, a major Anthropic customer, is developing more AI capability internally.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "The EU is discussing frontier-risk coordination",
+    "content": "Reuters reported that von der Leyen plans to invite leading frontier labs for talks on advanced-AI risk.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "Europe's position is not uniform",
+    "content": "France's finance minister publicly rejected slowdown logic and argued for faster European AI adoption.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "The French criticism focuses on incentives",
+    "content": "Roland Lescure argued that slowdown proposals could serve the interests of already-dominant U.S. AI companies.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "AI security is now a diplomatic topic",
+    "content": "Reuters reported that U.S. Treasury Secretary Scott Bessent and Chinese Vice Premier He Lifeng are meeting to discuss AI, trade and critical minerals.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "The U.S.-China talks are about safeguards too",
+    "content": "Reuters said the discussions are expected to include safeguards intended to keep powerful AI tools from malicious use.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Frontier AI is governed by release decisions",
+    "content": "Labs choose when to train, test, expose, stage and broadly deploy increasingly capable systems.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "A slowdown can mean several different things",
+    "content": "It can refer to slower training, delayed releases, narrower access, staged deployment or stronger evaluation gates.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "Safety pacing is not the same as stopping AI",
+    "content": "Most current proposals concern thresholds and controls rather than a permanent halt to research.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "Competition creates a coordination problem",
+    "content": "One lab may slow while another gains customers or mindshare by releasing faster.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "Enterprise switching costs matter",
+    "content": "Large customers can make model leadership sticky even when benchmarks shift from one release to another.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Open models change the economics",
+    "content": "Organizations can sometimes lower costs or reduce dependence on closed providers by running open-weight systems themselves.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Investor expectations shape release cadence",
+    "content": "Public-market plans, private financing and profitability targets can all influence how aggressively companies invest in new model generations.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "Compute spending raises the stakes",
+    "content": "Frontier development requires large infrastructure commitments, making delays financially consequential.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "Cyber capability is a major risk category",
+    "content": "More capable models can improve defensive work but can also increase concern about offensive or malicious use.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "Agents extend impact beyond chat",
+    "content": "Tool use, coding, browsing and computer control allow models to affect real systems rather than only generate text.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "Research automation can accelerate the loop",
+    "content": "AI systems that help with experiments and engineering can shorten the time between one model generation and the next.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "Evaluation becomes more important as pace rises",
+    "content": "Faster releases leave less time to detect dangerous capabilities or unexpected behavior before deployment.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "International rules remain fragmented",
+    "content": "Labs operate across markets with different regulatory approaches, incentives and enforcement powers.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "National competitiveness complicates safety policy",
+    "content": "Governments may support stronger safeguards while also trying to build domestic AI industries.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "The real issue is alignment of incentives",
+    "content": "Safety, growth, market share and national strategy do not naturally point toward the same release schedule.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "Anthropic",
+    "content": "Anthropic sits at the center of the current contradiction: a safety-focused public identity alongside pressure to answer a rival's model release.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "Dario Amodei",
+    "content": "Anthropic's CEO has called for slower capability improvement while his company evaluates future releases.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "OpenAI",
+    "content": "OpenAI set a new competitive reference point this month with GPT-6 Astra, according to Reuters.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "Sam Altman",
+    "content": "OpenAI's CEO is part of the wider group of industry leaders now discussing stronger safety pacing and oversight.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "Enterprise customers",
+    "content": "Large companies influence the race by deciding which model providers receive spending, integration depth and long-term contracts.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "Investors",
+    "content": "Investors watch model leadership, revenue growth, profitability and the durability of each lab's enterprise position.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "Open-source developers",
+    "content": "Open and open-weight alternatives broaden the competitive field beyond the best-funded frontier labs.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "Meta",
+    "content": "Meta is both a major AI platform company and, according to Reuters, a customer seeking to reduce some reliance on outside model providers.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "European Commission",
+    "content": "The Commission is positioning model evaluation and AI security as part of Europe's frontier-risk response.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "Ursula von der Leyen",
+    "content": "The Commission president has backed talks with frontier labs about slowing advanced-AI development and managing risk.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "France",
+    "content": "France is pushing a more acceleration-oriented European message focused on adoption and competitiveness.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "Roland Lescure",
+    "content": "France's finance minister has argued that slowdown calls may advantage incumbent U.S. leaders.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "United States",
+    "content": "The U.S. is balancing domestic AI leadership, security concerns and international competition.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "China",
+    "content": "China is both a major AI competitor and a negotiating counterpart in current U.S.-China talks touching AI security.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "055",
+    "title": "Regulators and evaluators",
+    "content": "Their influence grows if release decisions become tied to measurable capability or safety thresholds.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "056",
+    "title": "Capability evaluations",
+    "content": "Measure what a model can actually do before broad deployment.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "057",
+    "title": "Safety evaluations",
+    "content": "Test whether safeguards remain effective as a model becomes more capable.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "058",
+    "title": "Red teaming",
+    "content": "Stress-test models against misuse, evasion and unexpected behavior.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "059",
+    "title": "Cyber evaluations",
+    "content": "Measure offensive and defensive cybersecurity capability under controlled conditions.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "060",
+    "title": "Agent testing",
+    "content": "Observe long-horizon behavior when systems can use tools or take sequences of actions.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "061",
+    "title": "Staged deployment",
+    "content": "Release to limited users first so evidence can accumulate before wider access.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "062",
+    "title": "Access controls",
+    "content": "Restrict who can use the strongest capabilities and under what conditions.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "063",
+    "title": "Rate limits",
+    "content": "Reduce how quickly risky capability can be exercised at scale.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "064",
+    "title": "Human approval gates",
+    "content": "Require explicit authorization before high-consequence actions.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "065",
+    "title": "Monitoring",
+    "content": "Track model behavior during real use for emerging failure modes or misuse.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "066",
+    "title": "Incident reporting",
+    "content": "Create a shared record of serious failures so other organizations can respond.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "067",
+    "title": "Independent assessment",
+    "content": "Bring in external evaluators to reduce conflicts of interest in a lab's own release decision.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "068",
+    "title": "Release thresholds",
+    "content": "Define measurable conditions that must be met before a new model or capability ships.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "069",
+    "title": "Pause mechanisms",
+    "content": "Create operational ways to delay or stop deployment when evidence is insufficient.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "070",
+    "title": "Re-evaluation",
+    "content": "Retest after mitigations rather than assuming a fix is effective.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "071",
+    "title": "Safety promises will be judged by release behavior",
+    "content": "Public statements matter less than whether launch timing actually changes when evaluations raise concerns.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "072",
+    "title": "A fast rival can weaken voluntary restraint",
+    "content": "The more market share is at stake, the harder it is for one company to slow unilaterally.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "073",
+    "title": "Shared standards could reduce first-mover pressure",
+    "content": "Comparable requirements across labs can make restraint less commercially costly.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "074",
+    "title": "Poorly designed rules can entrench incumbents",
+    "content": "Compliance costs may fall more heavily on smaller companies, which is part of the criticism raised in Europe.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "075",
+    "title": "Open models make closed-lab rules incomplete",
+    "content": "Governance focused only on a few frontier companies may miss capability spreading through open ecosystems.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "076",
+    "title": "Enterprise buyers become indirect governors",
+    "content": "Procurement decisions reward some release strategies and discourage others.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "077",
+    "title": "IPO timing can affect product strategy",
+    "content": "A company preparing for public markets faces pressure to show growth, margins and durable competitive advantage.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "078",
+    "title": "Profitability matters more as capital gets expensive",
+    "content": "Higher financing costs can make repeated large training runs and uncertain payback harder to justify.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "079",
+    "title": "Model differentiation may become shorter-lived",
+    "content": "If competitors can answer each release quickly, the commercial advantage of any one frontier model can shrink.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "080",
+    "title": "Safety can become a product feature",
+    "content": "Customers in regulated or high-consequence sectors may value stronger controls, auditability and predictable deployment practices.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "081",
+    "title": "Geopolitics pushes the opposite direction",
+    "content": "Governments worried about falling behind may prioritize faster domestic capability growth.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "082",
+    "title": "Europe faces a two-sided problem",
+    "content": "It wants stronger safeguards while also trying to narrow its gap with U.S. and Chinese AI leaders.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "083",
+    "title": "U.S.-China dialogue may focus on misuse boundaries",
+    "content": "Even strategic rivals can have an interest in preventing the most dangerous forms of AI-enabled harm.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "084",
+    "title": "The debate will move from slogans to thresholds",
+    "content": "The practical question is which measured capabilities trigger which restrictions.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "085",
+    "title": "Trust will depend on evidence",
+    "content": "Labs that publish credible evaluation and incident data can make safety claims more testable.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "086",
+    "title": "Does Anthropic actually release the model?",
+    "content": "A confirmed launch, delay or cancellation would provide a direct test of how safety rhetoric affects product timing.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "087",
+    "title": "What do Anthropic's evaluations show?",
+    "content": "Any disclosed safety findings will matter more than speculation about a release date.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "088",
+    "title": "How quickly does OpenAI answer competitors?",
+    "content": "The next response cycle will show whether the market remains on a rapid release cadence.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "089",
+    "title": "Do enterprise customers switch providers?",
+    "content": "Spending changes will reveal whether recent model gains translate into durable commercial leadership.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "090",
+    "title": "Does open-source adoption accelerate?",
+    "content": "More self-hosting could pressure pricing and weaken dependence on frontier API providers.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "091",
+    "title": "Do frontier labs agree on common thresholds?",
+    "content": "Shared release criteria would be a meaningful step beyond individual public statements.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "092",
+    "title": "Do governments require independent testing?",
+    "content": "Mandatory external assessment would materially change release governance.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "093",
+    "title": "What comes from EU frontier-lab talks?",
+    "content": "Watch for concrete evaluation, security or pacing commitments rather than general principles.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "094",
+    "title": "Does France keep resisting slowdown proposals?",
+    "content": "The disagreement inside Europe could shape how ambitious any common framework becomes.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "095",
+    "title": "What comes from U.S.-China AI talks?",
+    "content": "Specific safeguards or communication channels would be more significant than broad diplomatic language.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "096",
+    "title": "Are cyber thresholds standardized?",
+    "content": "Cyber capability is one of the areas most likely to produce measurable release gates.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "097",
+    "title": "Do labs publish incident data?",
+    "content": "Transparency about failures can show whether safety systems are improving in practice.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "098",
+    "title": "Does IPO pressure change release timing?",
+    "content": "Financing plans may amplify or reduce the incentive to launch new flagship models quickly.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "099",
+    "title": "Can safety become commercially valuable?",
+    "content": "If customers pay for stronger controls, the perceived trade-off between safety and growth may narrow.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "100",
+    "title": "The decisive question",
+    "content": "When safety evidence and competitive pressure point in opposite directions, which one determines the ship date?",
+    "tags": [
+      "watch-next"
+    ]
+  }
+]

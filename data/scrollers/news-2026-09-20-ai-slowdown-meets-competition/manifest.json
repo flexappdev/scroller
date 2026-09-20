@@ -1,0 +1,28 @@
+{
+  "slug": "news-2026-09-20-ai-slowdown-meets-competition",
+  "name": "AI Slowdown Meets Competition",
+  "tagline": "100 things to know about the widening gap between calls to slow frontier AI and the pressure to keep shipping.",
+  "description": "A 100-card ScrollAI Daily snapshot on the September 2026 tension between frontier-AI safety pacing, competitive model releases, investor pressure, regulation and geopolitical rivalry.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-20",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
