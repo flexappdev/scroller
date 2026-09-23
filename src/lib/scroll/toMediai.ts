@@ -10,6 +10,8 @@ export function cardToMediai(card: Card): MediaiArticle {
     audioUrl: null,
     updatedAt: now,
     assetCount: 1,
+    provider: null,
+    prompt: null,
   };
 
   switch (card.kind) {

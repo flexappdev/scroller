@@ -9,6 +9,9 @@ const SECURITY_HEADERS = [
 ];
 
 const nextConfig: NextConfig = {
+  async rewrites() {
+    return [{ source: "/top100/cinema", destination: "/top100/cinema/index.html" }];
+  },
   images: {
     remotePatterns: [
       { protocol: "https", hostname: "i.ytimg.com" },

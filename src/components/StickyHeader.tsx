@@ -75,6 +75,7 @@ const ASSET_GROUPS: Array<{ label: string; items: NavItem[] }> = [
       { href: "/sites", label: "Sites", description: "Curated websites worth scrolling", icon: Bookmark },
       { href: "/amazon", label: "Amazon", description: "Ranked UK product picks", icon: ShoppingBag },
       { href: "/funny", label: "Funny 100", description: "Ranked ideas in four formats", icon: Laugh },
+      { href: "/top100", label: "Top 100", description: "Visual collections and ranked lists", icon: Film },
     ],
   },
   {
