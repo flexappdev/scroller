@@ -1,0 +1,802 @@
+[
+  {
+    "id": "001",
+    "title": "Claude found an unusual biological pattern",
+    "content": "Anthropic says Claude identified a previously uncharacterized enzyme system associated with repeated DNA sequences while searching large genomic databases.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Anthropic calls the system ART",
+    "content": "The company named it array-associated reverse transcriptases, or ART.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "The pattern is CRISPR-like, not CRISPR",
+    "content": "The repeat structure resembles a CRISPR array, but Anthropic says ART's primary biological function is still unknown.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "The search used many AI agents",
+    "content": "Anthropic says roughly 950 agents searched for 21 hours using about 210 million tokens.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "One agent spotted the anomaly",
+    "content": "During the search, an agent noticed an unusual reverse transcriptase next to a repeating DNA array and escalated it for deeper analysis.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "Humans performed the physical lab work",
+    "content": "Anthropic says all wet-lab experiments were carried out by human scientists in its Bay Area biology lab.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "The discovery started with one broad prompt",
+    "content": "Researchers asked Claude to search a large sequence database for interesting reverse transcriptases, then let agents explore candidate families.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "Nature highlighted the result this week",
+    "content": "Nature reported on September 25 that Anthropic's new AI biolab had found CRISPR-like DNA patterns in viruses.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "Reuters independently reported the announcement",
+    "content": "Reuters reported on September 23 that Anthropic said Claude helped discover the new enzyme system.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "This is an early result, not a finished technology",
+    "content": "Anthropic has released a preprint, but further experiments are still required to determine what ART actually does.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "The underlying enzyme type is a reverse transcriptase",
+    "content": "Reverse transcriptases copy RNA into DNA.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "The relevant RT had appeared in prior studies",
+    "content": "Anthropic says the underlying reverse transcriptase was known, but the wider system around it had not been characterized in this way.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "ART appears mainly in bacteriophages",
+    "content": "Anthropic says the system is found mainly in viruses that infect bacteria.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "ART has three notable components",
+    "content": "Anthropic describes an RT gene, a neighboring partner gene and a long array of evenly spaced DNA repeats.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "The repeat array resembles a CRISPR array",
+    "content": "That structural similarity motivated the comparison, but does not establish that ART functions like CRISPR.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "The array is expressed as short RNAs",
+    "content": "Anthropic reports that early experiments show the ART array is transcribed into distinct short RNA molecules.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "Claude gathered a very large RT set",
+    "content": "Anthropic says the agents collected more than 200,000 reverse transcriptases for analysis.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "Agents produced thousands of candidate systems",
+    "content": "The company says Claude identified about 3,500 candidate systems before narrowing the field.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "Twenty candidates received deeper analysis",
+    "content": "Anthropic says the agents selected 20 of the most compelling candidates for detailed human-readable reports.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "The workflow reproduced known results first",
+    "content": "Anthropic says Claude often begins by reading literature and reproducing established analyses before hunting anomalies.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "Candidate reports include proposed functions",
+    "content": "The AI writes summaries of the evidence and a hypothesis for what a candidate system may do.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "Most candidates are discarded",
+    "content": "Anthropic says its workflow filters out many hypotheses before any laboratory work is attempted.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "Human review remains a gate",
+    "content": "A candidate must survive expert review before the team moves to physical experiments.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "The lab uses lower biosafety levels",
+    "content": "Anthropic says the facility works at BSL-1 and BSL-2 and does not handle pathogens that infect humans.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "The current finding is a preprint-stage result",
+    "content": "Anthropic has shared a technical report before full understanding of ART's biological function is complete.",
+    "tags": [
+      "verified-facts"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Genome mining searches nature's codebase",
+    "content": "Researchers examine huge DNA databases to find genes and molecular systems that evolution has already built.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "Many proteins still have unknown functions",
+    "content": "Sequence databases contain vast numbers of proteins whose biological roles have not been experimentally characterized.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "Pattern recognition is central to discovery",
+    "content": "A new system can begin with noticing that a gene repeatedly appears next to an unexpected sequence or partner.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "CRISPR itself began as a strange repeat pattern",
+    "content": "Long before gene editing, CRISPR was first recognized as unusual repetitive DNA in microbes.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "Reverse transcriptases are ancient molecular tools",
+    "content": "These enzymes copy RNA into DNA and appear in viruses, mobile genetic elements and cellular systems.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Bacteriophages are rich discovery territory",
+    "content": "Viruses that infect bacteria contain enormous genetic diversity and many genes with poorly understood functions.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Computational discovery precedes lab validation",
+    "content": "Sequence analysis can nominate a system, but experiments are needed to understand whether the predicted biology is real.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "AI changes the scale of hypothesis generation",
+    "content": "An agent system can inspect far more candidate patterns than a small research team could manually review.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "Scale creates a filtering problem",
+    "content": "Generating thousands of hypotheses is useful only if the system can rank, criticize and discard weak ones.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "Scientific taste becomes part of the workflow",
+    "content": "Anthropic says it studies which AI-generated hypotheses humans choose to test so future agents can better mimic expert judgment.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "Parallel agents trade cost for breadth",
+    "content": "Running many agents at once allows wider exploration but consumes substantial compute and tokens.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "The bottleneck can move from search to experiment",
+    "content": "If AI makes candidate generation cheap, physical validation may become the slower and more expensive part of science.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "Biology remains grounded in matter",
+    "content": "No amount of sequence analysis replaces the need to express proteins, measure activity and observe physical systems.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "AI scientist is better understood as a team role",
+    "content": "The current workflow is a loop between models, software infrastructure and human scientists rather than an isolated autonomous researcher.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "Discovery and invention are different",
+    "content": "Finding a natural biological system is not the same as proving it can become a useful biotechnology or medicine.",
+    "tags": [
+      "background"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "Anthropic",
+    "content": "The AI company created the internal life-sciences research group and wet lab behind the ART work.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "Claude",
+    "content": "Anthropic's model family supplied the agents used to search sequences, analyze candidates and write reports.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "Human biologists",
+    "content": "Scientists designed the initial task, reviewed candidates, performed lab work and interpreted the physical evidence.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "Feng Zhang",
+    "content": "The CRISPR pioneer reviewed the preprint and described the finding as intriguing and worthy of further investigation.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "Nature",
+    "content": "The journal's news team reported on the new AI biolab and the scale of the agent search.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "Reuters",
+    "content": "Reuters covered both Anthropic's wet-lab expansion and its announcement of the enzyme-system discovery.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "Bacteriophages",
+    "content": "These viruses are the biological hosts in which many ART systems were found.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "Reverse transcriptases",
+    "content": "The enzyme family provided the starting point for the computational search.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "Genomics databases",
+    "content": "Large public sequence repositories supplied the raw biological information searched by the agents.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "Wet-lab researchers",
+    "content": "They remain responsible for converting computational leads into physical evidence.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "Bioinformatics researchers",
+    "content": "Their methods connect sequence data, evolutionary relationships and candidate biological function.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "AI safety teams",
+    "content": "Biology-capable models raise questions about access controls, evaluation and safe deployment as scientific capability increases.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "Pharmaceutical companies",
+    "content": "Drug developers are potential users of faster hypothesis generation, but still face long experimental and clinical validation cycles.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "Academic laboratories",
+    "content": "Universities may use similar workflows if tooling and compute become accessible enough.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "055",
+    "title": "Scientific reviewers",
+    "content": "Independent replication and peer review remain essential for separating promising preliminary findings from durable scientific knowledge.",
+    "tags": [
+      "actors"
+    ]
+  },
+  {
+    "id": "056",
+    "title": "Start with a search objective",
+    "content": "Researchers define the biological family or anomaly class worth exploring.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "057",
+    "title": "Read the relevant literature",
+    "content": "The agent builds context from known systems before claiming novelty.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "058",
+    "title": "Reproduce established analyses",
+    "content": "Matching prior results helps test whether the computational approach is working correctly.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "059",
+    "title": "Gather candidate sequences",
+    "content": "Agents collect large sets of related proteins and nearby genomic regions.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "060",
+    "title": "Cluster by similarity",
+    "content": "Related sequences can be grouped to expose unusual families or outliers.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "061",
+    "title": "Inspect genomic neighborhoods",
+    "content": "The genes and DNA around an enzyme often reveal what system it belongs to.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "062",
+    "title": "Look for repeated structure",
+    "content": "Arrays, spacing and recurring neighboring genes can signal a previously unrecognized biological mechanism.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "063",
+    "title": "Generate candidate reports",
+    "content": "Agents summarize evidence, possible function and reasons a candidate deserves attention.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "064",
+    "title": "Critique weak hypotheses",
+    "content": "Follow-up analysis tries to eliminate false leads before scientists spend lab time.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "065",
+    "title": "Rank the survivors",
+    "content": "Only a small set of candidates moves forward.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "066",
+    "title": "Human experts review the shortlist",
+    "content": "Scientists decide whether the computational case is strong enough to justify experiments.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "067",
+    "title": "Express the protein",
+    "content": "Lab researchers produce the candidate protein in a controlled system.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "068",
+    "title": "Measure biochemical behavior",
+    "content": "Experiments test what the protein binds, copies, cuts or otherwise does.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "069",
+    "title": "Study structure and context",
+    "content": "Structural biology and sequence relationships can clarify how the system works.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "070",
+    "title": "Loop results back to the agents",
+    "content": "Experimental evidence becomes new context for the next round of analysis and hypothesis generation.",
+    "tags": [
+      "mechanics"
+    ]
+  },
+  {
+    "id": "071",
+    "title": "Science may become more parallel",
+    "content": "Instead of one researcher following a few leads, many agents can explore hundreds or thousands of directions simultaneously.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "072",
+    "title": "Human attention becomes more valuable",
+    "content": "As machine-generated hypotheses multiply, expert judgment about which ones deserve scarce lab resources matters more.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "073",
+    "title": "Compute becomes a research instrument",
+    "content": "Token budgets and agent orchestration start to resemble other scientific infrastructure such as microscopes or sequencing machines.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "074",
+    "title": "Wet labs may become the new bottleneck",
+    "content": "Physical experiments, instruments, reagents and skilled technicians cannot scale as instantly as software agents.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "075",
+    "title": "Discovery cycles can compress",
+    "content": "If computational search takes hours instead of weeks, scientists can run more hypothesis-test loops in the same year.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "076",
+    "title": "Reproducibility becomes crucial",
+    "content": "Agentic workflows need logs, prompts, datasets, code and model versions so other researchers can understand how a result emerged.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "077",
+    "title": "Cost accounting matters",
+    "content": "A 210-million-token search may be worthwhile for a strong lead, but scientific teams will need to compare AI compute cost with conventional research time.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "078",
+    "title": "Model capability becomes part of laboratory strategy",
+    "content": "Choosing a model may affect which hypotheses are found, how they are ranked and what literature is connected.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "079",
+    "title": "Scientific software becomes more agentic",
+    "content": "Tools may shift from passive databases and notebooks toward systems that actively search, propose and critique.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "080",
+    "title": "The boundary between analysis and experimentation shifts",
+    "content": "AI can increasingly direct computational investigation while humans retain control of the physical lab.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "081",
+    "title": "Biology safety becomes more operational",
+    "content": "As models become more useful for advanced biology, capability evaluation and access controls need to be tied to real workflows.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "082",
+    "title": "Specialized models may not be required for every discovery",
+    "content": "Anthropic is testing whether general-purpose frontier models can perform meaningful scientific search when given tools and orchestration.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "083",
+    "title": "Smaller teams could attempt larger searches",
+    "content": "Parallel agents may let compact research groups explore data at a scale previously reserved for large consortia.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "084",
+    "title": "Not every discovery will become a product",
+    "content": "Most biological findings do not translate into therapies or tools; downstream validation remains difficult.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "085",
+    "title": "The strongest model is human plus AI plus experiment",
+    "content": "This result supports a collaboration pattern where AI expands the search space, humans choose what matters and physical experiments decide what is real.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "086",
+    "title": "What does ART actually do?",
+    "content": "The most important scientific question is the system's natural biological function.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "087",
+    "title": "Is ART programmable?",
+    "content": "The CRISPR-like architecture is interesting partly because programmable systems can become biotechnology tools, but that has not been established.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "088",
+    "title": "Can independent labs reproduce the findings?",
+    "content": "External replication would strengthen confidence in both the biology and the AI-assisted workflow.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "089",
+    "title": "Will the preprint pass peer review?",
+    "content": "Formal scientific review may surface alternative interpretations or methodological limitations.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "090",
+    "title": "How often do AI searches find genuinely novel systems?",
+    "content": "One success does not yet reveal the hit rate across many research campaigns.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "091",
+    "title": "What is the false-positive rate?",
+    "content": "The usefulness of the workflow depends on how many expensive lab experiments are wasted on weak machine-generated hypotheses.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "092",
+    "title": "How much human steering is really needed?",
+    "content": "Future reports should distinguish initial task design, agent decisions, expert intervention and post-hoc interpretation.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "093",
+    "title": "Can this workflow generalize beyond genomics?",
+    "content": "Chemistry, materials science and other data-rich fields may be candidates for similar agent-plus-experiment loops.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "094",
+    "title": "Will labs publish full agent traces?",
+    "content": "Detailed provenance could become important for reproducibility and scientific credit.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "095",
+    "title": "How will scientific authorship adapt?",
+    "content": "AI-generated analyses challenge existing conventions around contribution, attribution and responsibility.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "096",
+    "title": "Can agent systems design better experiments?",
+    "content": "The next step is not only discovering patterns but proposing efficient experiments that distinguish competing explanations.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "097",
+    "title": "How does cost scale with capability?",
+    "content": "More capable models might reduce the number of agents needed, or they might encourage much larger searches.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "098",
+    "title": "What safeguards follow the science gains?",
+    "content": "Biology-capable systems will need access policies proportional to what they can actually do.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "099",
+    "title": "Will AI labs become physical research organizations?",
+    "content": "Anthropic's wet lab suggests frontier-model companies may increasingly operate experimental facilities alongside software infrastructure.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "100",
+    "title": "The key test is repeated discovery",
+    "content": "The milestone becomes more important if AI-assisted teams can repeatedly produce validated, independent scientific results across fields.",
+    "tags": [
+      "watch-next"
+    ]
+  }
+]

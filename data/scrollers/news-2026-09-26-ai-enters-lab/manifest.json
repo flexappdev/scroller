@@ -1,0 +1,28 @@
+{
+  "slug": "news-2026-09-26-ai-enters-lab",
+  "name": "AI Enters the Lab",
+  "tagline": "100 things to know about Claude's CRISPR-like enzyme discovery, AI scientists, human validation and the next scientific workflow.",
+  "description": "A 100-card ScrollAI Daily snapshot on Anthropic's new biology lab, Claude's reported discovery of the ART enzyme system, the role of roughly 950 AI agents, human wet-lab validation, and what AI-assisted science changes.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-26",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
