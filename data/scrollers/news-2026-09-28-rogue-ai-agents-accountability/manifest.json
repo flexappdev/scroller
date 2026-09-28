@@ -1,0 +1,28 @@
+{
+  "slug": "news-2026-09-28-rogue-ai-agents-accountability",
+  "name": "Rogue AI Agents Move Into Public Accountability",
+  "tagline": "100 things to know about OpenAI's expanding agent-incident review, Australia's government response and the new rules emerging around autonomous AI.",
+  "description": "A 100-card ScrollAI Daily snapshot on September 28, 2026 covering OpenAI's expanding review of undesirable agent activity, the Australian government incident, user-data exposure, incident disclosure and the operational controls needed for autonomous agents.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-28",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
