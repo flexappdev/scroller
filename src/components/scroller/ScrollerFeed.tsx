@@ -46,31 +46,55 @@ export default function ScrollerFeed({
         <section
           className="relative flex min-h-[100svh] snap-start items-center justify-center px-5 py-20 md:px-10"
         >
-          <article className="w-full max-w-3xl rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl backdrop-blur md:p-12">
-            <div className="mb-8 flex items-center justify-between gap-4">
-              <span className="rounded-full bg-[#006699] px-3 py-1 text-xs font-semibold text-white">
-                {String(index + 1).padStart(2, "0")} / {String(totalCount).padStart(2, "0")}
-              </span>
-              {item.tags?.[0] ? (
-                <span className="text-xs uppercase tracking-[0.18em] text-white/45">{item.tags[0]}</span>
-              ) : null}
-            </div>
+          <article className={item.image ? "flex h-[calc(100svh-6rem)] w-full max-w-6xl flex-col overflow-hidden rounded-[2rem] border border-white/10 bg-black shadow-2xl" : "w-full max-w-3xl rounded-[2rem] border border-white/10 bg-white/[0.06] p-7 shadow-2xl backdrop-blur md:p-12"}>
+            {item.image ? (
+              <>
+                <div className="relative min-h-0 flex-1 bg-zinc-950">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={item.image} alt={item.title} className="h-full w-full object-contain" loading={index < 2 ? "eager" : "lazy"} />
+                  <span className="absolute left-4 top-4 rounded-full bg-black/65 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
+                    {String(index + 1).padStart(2, "0")} / {String(totalCount).padStart(2, "0")}
+                  </span>
+                </div>
+                <div className="border-t border-white/10 bg-zinc-950 px-5 py-4 md:px-7">
+                  <div className="flex items-start justify-between gap-5">
+                    <div className="min-w-0">
+                      {item.hook ? <p className="text-xs text-white/45">{item.hook}</p> : null}
+                      <h1 className="mt-1 truncate text-lg font-semibold md:text-xl">{item.title}</h1>
+                      <p className="mt-1 line-clamp-2 text-sm leading-5 text-white/55">{item.content}</p>
+                    </div>
+                    {item.tags?.[0] ? <span className="hidden shrink-0 text-xs uppercase tracking-[0.16em] text-white/35 sm:block">{item.tags[0]}</span> : null}
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="mb-8 flex items-center justify-between gap-4">
+                  <span className="rounded-full bg-[#006699] px-3 py-1 text-xs font-semibold text-white">
+                    {String(index + 1).padStart(2, "0")} / {String(totalCount).padStart(2, "0")}
+                  </span>
+                  {item.tags?.[0] ? (
+                    <span className="text-xs uppercase tracking-[0.18em] text-white/45">{item.tags[0]}</span>
+                  ) : null}
+                </div>
 
-            {item.hook ? <p className="mb-3 text-sm font-medium text-[#6cc4e8]">{item.hook}</p> : null}
-            <h1 className="text-balance text-4xl font-semibold tracking-tight md:text-6xl">{item.title}</h1>
-            <p className="mt-6 text-pretty text-lg leading-8 text-white/75 md:text-xl md:leading-9">{item.content}</p>
-            {item.explanation ? <p className="mt-5 text-base leading-7 text-white/55">{item.explanation}</p> : null}
+                {item.hook ? <p className="mb-3 text-sm font-medium text-[#6cc4e8]">{item.hook}</p> : null}
+                <h1 className="text-balance text-4xl font-semibold tracking-tight md:text-6xl">{item.title}</h1>
+                <p className="mt-6 text-pretty text-lg leading-8 text-white/75 md:text-xl md:leading-9">{item.content}</p>
+                {item.explanation ? <p className="mt-5 text-base leading-7 text-white/55">{item.explanation}</p> : null}
 
-            {item.cta ? (
-              <a
-                href={item.cta.url}
-                target={isExternalUrl(item.cta.url) ? "_blank" : undefined}
-                rel={isExternalUrl(item.cta.url) ? "noreferrer" : undefined}
-                className="mt-8 inline-flex rounded-full bg-[#006699] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110"
-              >
-                {item.cta.label}
-              </a>
-            ) : null}
+                {item.cta ? (
+                  <a
+                    href={item.cta.url}
+                    target={isExternalUrl(item.cta.url) ? "_blank" : undefined}
+                    rel={isExternalUrl(item.cta.url) ? "noreferrer" : undefined}
+                    className="mt-8 inline-flex rounded-full bg-[#006699] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110"
+                  >
+                    {item.cta.label}
+                  </a>
+                ) : null}
+              </>
+            )}
           </article>
 
           <div className="absolute bottom-5 text-xs text-white/35">Scroll for next</div>
