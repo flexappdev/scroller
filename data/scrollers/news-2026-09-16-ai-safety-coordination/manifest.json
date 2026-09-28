@@ -1,0 +1,29 @@
+{
+  "slug": "news-2026-09-16-ai-safety-coordination",
+  "name": "AI Rivals Begin Coordinating on Safety",
+  "tagline": "100 things to know about OpenAI, Anthropic and Google DeepMind discussing shared AI-safety work while regulation and antitrust questions remain open.",
+  "description": "A 100-card ScrollAI daily news pack on the September 16, 2026 story that OpenAI says it has been working with Anthropic and Google DeepMind on AI-safety measures, amid broader calls for capability-based safeguards, independent evaluation and clearer rules for frontier AI.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-09-16",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "dailyRank": 1,
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "provider-neutral",
+    "videoFallback": "Runware"
+  },
+  "navigation": ["home", "explore", "create", "saved", "me"]
+}
