@@ -11,7 +11,8 @@
     "scroller:new": "node scripts/scroller-new.mjs",
     "scroller:validate": "node scripts/scroller-validate.mjs",
     "test:e2e": "playwright test",
-    "scroller:status": "node scripts/scroller-status.mjs"
+    "scroller:status": "node scripts/scroller-status.mjs",
+    "scroller:chatgpt-images": "node scripts/chatgpt-image-import.mjs"
   },
   "dependencies": {
     "@fleet/scroller": "file:./packages/scroller",
