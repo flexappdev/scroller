@@ -11,6 +11,9 @@ const DEFAULT_DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
+  alternates: { types: { "application/rss+xml": "/feed.xml" } },
+  // Search Console HTML-tag verification (MSB-030); unset = no tag.
+  verification: { google: process.env.GOOGLE_SITE_VERIFICATION?.trim() || undefined },
   title: { default: "Scroller", template: "%s · Scroller" },
   description: DEFAULT_DESCRIPTION,
   applicationName: "Scroller",
