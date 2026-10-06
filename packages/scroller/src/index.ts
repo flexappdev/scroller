@@ -5,7 +5,16 @@ export type {
   AffiliateBlock,
   PaywallBlock,
   AdBlock,
+  ContentAudience,
+  PublishState,
+  QualityState,
+  RankPeriod,
+  RankEntry,
+  Provenance,
+  ItemRefs,
 } from "./types/ContentItem";
+
+export { CONTENT_ITEM_SCHEMA, isEligible, validateContentItem } from "./types/ContentItem";
 
 export type {
   SiteConfig,
