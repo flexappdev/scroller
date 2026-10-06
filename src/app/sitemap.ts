@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { listSites } from "@/lib/cms/sites";
+import { listScrollerPacks } from "@/lib/scroller";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://scroller-psi.vercel.app";
 
@@ -39,5 +40,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Supabase down or unmigrated — fall back to just static routes.
   }
 
-  return [...staticEntries, ...siteEntries];
+  // ScrollAI Daily and other Scroller packs (data/scrollers) — MSB-030.
+  let packEntries: MetadataRoute.Sitemap = [];
+  try {
+    const packs = await listScrollerPacks();
+    packEntries = packs.map((p) => {
+      const updated = (p.manifest as { updatedAt?: string }).updatedAt;
+      return {
+        url: `${BASE_URL}/scroller/${p.manifest.slug}`,
+        lastModified: updated ? new Date(updated) : now,
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+      };
+    });
+  } catch {
+    // An invalid pack must not take the sitemap down; scroller:validate catches it in CI.
+  }
+
+  return [...staticEntries, ...siteEntries, ...packEntries];
 }
