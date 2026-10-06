@@ -6,6 +6,7 @@ import { Bookmark, ExternalLink, Info, Share2, Volume2, VolumeX } from "lucide-r
 import type { MediaiArticle, MediaiPage } from "@/lib/mediai";
 import MediaDetailSheet from "./MediaDetailSheet";
 import AdSenseFeedCard from "./AdSenseFeedCard";
+import AmazonPickCard from "./AmazonPickCard";
 import { Heart } from "lucide-react";
 import CardActions from "./CardActions";
 import { pushHistory, useLikesSaves } from "@/lib/likes-saves";
@@ -48,12 +49,16 @@ export default function MediaiFeed({
   adsenseClient,
   adsenseSlot,
   provider = null,
+  amazonTag = null,
+  amazonMarketplace = "www.amazon.co.uk",
 }: {
   initial: MediaiPage;
   showAds?: boolean;
   adsenseClient?: string | null;
   adsenseSlot?: string | null;
   provider?: string | null;
+  amazonTag?: string | null;
+  amazonMarketplace?: string;
 }) {
   const adsEnabled = Boolean(showAds && adsenseClient && adsenseSlot);
   const [items, setItems] = useState<MediaiArticle[]>(initial.items);
@@ -369,6 +374,14 @@ export default function MediaiFeed({
               <AdSenseFeedCard
                 client={adsenseClient!}
                 slot={adsenseSlot!}
+                afterItem={index + 1}
+              />
+            ) : null}
+            {amazonTag && (index + 1) % 10 === 0 && (index + 1) % 20 !== 0 ? (
+              <AmazonPickCard
+                topic={item.topic}
+                tag={amazonTag}
+                marketplace={amazonMarketplace}
                 afterItem={index + 1}
               />
             ) : null}
