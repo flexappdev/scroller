@@ -1,0 +1,33 @@
+{
+  "slug": "top-100-cities-to-visit",
+  "name": "Top 100 Cities to Visit",
+  "tagline": "The world's great cities, ranked for a first visit.",
+  "description": "Top 100 Cities to Visit, ranked from 1 to 100. The world's great cities, ranked for a first visit. Every entry has a source and a link to buy, watch or try it.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "More Top 100s on Your Best 100",
+    "ctaUrl": "https://www.yourbest100.com/",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "yb100",
+  "topic": "travel",
+  "kind": "place",
+  "sources": [
+    {
+      "title": "Lonely Planet Best in Travel",
+      "url": "https://www.lonelyplanet.com/best-in-travel"
+    },
+    {
+      "title": "UNESCO World Heritage List",
+      "url": "https://whc.unesco.org/en/list/"
+    },
+    {
+      "title": "Wikipedia: List of largest cities",
+      "url": "https://en.wikipedia.org/wiki/List_of_largest_cities"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-10-07"
+}
