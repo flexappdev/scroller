@@ -1,0 +1,28 @@
+{
+  "slug": "news-2026-10-08-haiku-55-gpt6-price-war",
+  "name": "Cheaper Models, Visual Answers",
+  "tagline": "58 things to know about Claude Haiku 5.5's price cut and GPT-6 arriving in every ChatGPT tier.",
+  "description": "A 58-card ScrollAI Daily snapshot on 8 October 2026 covering Anthropic's Claude Haiku 5.5 (pricing, benchmarks, customers, safeguards) and OpenAI's GPT-6 rollout with Intelligent UI across ChatGPT.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-10-08",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
