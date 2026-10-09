@@ -1,0 +1,15 @@
+{
+  "slug": "top-100-iconic-films",
+  "name": "Top 100 Iconic Films of All Time",
+  "tagline": "The films every film lover should see once.",
+  "description": "A ranked watchlist of 100 iconic films, from Citizen Kane and Tokyo Story to Parasite and Spirited Away, spanning silent cinema, the New Hollywood, world cinema and animation. One card per film, with a link to find it on Blu-ray or DVD.",
+  "theme": "dark",
+  "updatedAt": "2026-10-07",
+  "source": "MediaAI top100/top-100-iconic-films-of-all-time.json",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Browse classic films on Blu-ray",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=classic+films+blu-ray&i=dvd",
+    "offer": "Build the watchlist"
+  }
+}

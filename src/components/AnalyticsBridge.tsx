@@ -53,6 +53,14 @@ export default function AnalyticsBridge() {
       if (!anchor) return;
       try {
         const url = new URL(anchor.href, window.location.href);
+        const provider = anchor.dataset.affiliate;
+        if (provider) {
+          trackEvent("affiliate_click", {
+            channel: "scroller",
+            provider,
+            link_domain: url.hostname,
+          });
+        }
         if (url.origin !== window.location.origin) {
           trackEvent("outbound_click", {
             channel: "scroller",
