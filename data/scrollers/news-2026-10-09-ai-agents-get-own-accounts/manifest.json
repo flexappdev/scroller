@@ -1,0 +1,28 @@
+{
+  "slug": "news-2026-10-09-ai-agents-get-own-accounts",
+  "name": "AI Agents Get Their Own Accounts",
+  "tagline": "54 things to know about Google's universal Gemini agent, which gets its own email, calendar and Drive, and the race for always-on AI coworkers.",
+  "description": "A 54-card ScrollAI Daily snapshot on 9 October 2026 covering Google Cloud's persistent Gemini agents, their memory, identity and controls, rival agents from Microsoft and OpenAI, and the agent security findings from Pwn2Own Ireland.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-10-09",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
