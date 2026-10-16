@@ -1,0 +1,27 @@
+{
+  "slug": "harari-ai-power",
+  "name": "Harari on AI & Power",
+  "tagline": "Yuval Noah Harari on humanity, AI and power over the next 50 years, in 14 cards.",
+  "description": "A 14-card scroller of Yuval Noah Harari's Mind Nutrients episode (8 August 2026): ten timestamped chapters on stories, democracy, AI as an agent, law, money and truth, plus four Harari books to read next. Built from the show notes and Nexus; no transcript.",
+  "theme": "dark",
+  "accent": "#2f46c8",
+  "updatedAt": "2026-10-11",
+  "defaultView": "scroller",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Listen to the episode",
+    "ctaUrl": "https://open.spotify.com/episode/4aJ1tA9QYE1XL3d3xzPrWv",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "topic": "ai",
+  "kind": "podcast",
+  "sources": [
+    {
+      "title": "Mind Nutrients on Spotify",
+      "url": "https://open.spotify.com/episode/4aJ1tA9QYE1XL3d3xzPrWv"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-10-16"
+}
