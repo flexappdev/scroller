@@ -1,0 +1,1982 @@
+[
+  {
+    "id": "001",
+    "rank": 1,
+    "title": "The Mom Test",
+    "content": "How to talk to customers so they can't lie to you, even when they're being nice.",
+    "explanation": "A short, practical guide to customer interviews that produce real evidence instead of polite compliments. It shows how to ask about past behaviour rather than hypothetical futures. Essential before a solo founder writes a line of code.",
+    "hook": "Your mum will lie to you about your startup idea. Here's how to ask better questions.",
+    "tags": [
+      "Product & Validation",
+      "validation",
+      "customer-interviews",
+      "bootstrapping"
+    ],
+    "maker": "Rob Fitzpatrick",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Mom+Test+Rob+Fitzpatrick&tag=fs08-21"
+    }
+  },
+  {
+    "id": "002",
+    "rank": 2,
+    "title": "Rework",
+    "content": "The 37signals founders' contrarian case for staying small, shipping fast and ignoring startup dogma.",
+    "explanation": "Short, punchy essays from the founders of Basecamp arguing against long-term plans, big teams and outside funding. It makes the case that a calm, profitable small company is a legitimate goal. A natural manifesto for one-person businesses.",
+    "hook": "The book that told founders planning is guessing.",
+    "tags": [
+      "Systems & Productivity",
+      "calm-company",
+      "bootstrapping",
+      "small-teams"
+    ],
+    "maker": "Jason Fried & David Heinemeier Hansson",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Rework+Jason+Fried+%26+David+Heinemeier+Hansson&tag=fs08-21"
+    }
+  },
+  {
+    "id": "003",
+    "rank": 3,
+    "title": "The $100 Startup",
+    "content": "Case studies of people who started small businesses on tiny budgets and built a living from them.",
+    "explanation": "Built around interviews with microbusiness owners who launched with little capital. It focuses on the overlap between what you enjoy and what people will pay for. Useful for turning a skill into a first paying offer.",
+    "hook": "You don't need investors. You need one thing people will pay for.",
+    "tags": [
+      "Money & Bootstrapping",
+      "microbusiness",
+      "side-hustle",
+      "launch"
+    ],
+    "maker": "Chris Guillebeau",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+%24100+Startup+Chris+Guillebeau&tag=fs08-21"
+    }
+  },
+  {
+    "id": "004",
+    "rank": 4,
+    "title": "Company of One",
+    "content": "Why staying deliberately small can be a better business strategy than chasing growth.",
+    "explanation": "Paul Jarvis questions the assumption that every business must keep scaling. He argues for building resilience, autonomy and profit before headcount. The philosophical anchor for solo founders.",
+    "hook": "What if growth is the thing killing your business?",
+    "tags": [
+      "Mindset",
+      "solo",
+      "staying-small",
+      "autonomy"
+    ],
+    "maker": "Paul Jarvis",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Company+of+One+Paul+Jarvis&tag=fs08-21"
+    }
+  },
+  {
+    "id": "005",
+    "rank": 5,
+    "title": "The Minimalist Entrepreneur",
+    "content": "Gumroad's founder on building a profitable business around a community, then growing only as much as needed.",
+    "explanation": "Sahil Lavingia shares lessons from building Gumroad and rethinking venture-scale ambitions. The book walks through starting with community, selling early and staying profitable. A modern playbook for creator-led products.",
+    "hook": "The Gumroad founder's playbook for building less and earning more.",
+    "tags": [
+      "Product & Validation",
+      "community",
+      "profitability",
+      "creator-economy"
+    ],
+    "maker": "Sahil Lavingia",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Minimalist+Entrepreneur+Sahil+Lavingia&tag=fs08-21"
+    }
+  },
+  {
+    "id": "006",
+    "rank": 6,
+    "title": "Atomic Habits",
+    "content": "Tiny changes, compounding results: a practical framework for building good habits and breaking bad ones.",
+    "explanation": "James Clear explains how small, consistent behaviours compound over time. He offers simple rules for making habits obvious, attractive, easy and satisfying. Directly useful for founders without a boss to keep them on track.",
+    "hook": "1% better every day. Here's the maths that changes everything.",
+    "tags": [
+      "Systems & Productivity",
+      "habits",
+      "consistency",
+      "behaviour"
+    ],
+    "maker": "James Clear",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Atomic+Habits+James+Clear&tag=fs08-21"
+    }
+  },
+  {
+    "id": "007",
+    "rank": 7,
+    "title": "Deep Work",
+    "content": "The case for distraction-free focus as a rare and valuable skill, with rules for building it.",
+    "explanation": "Cal Newport argues that the ability to concentrate without distraction is becoming both rarer and more valuable. He lays out practical strategies for protecting long blocks of focus. For a solo founder, focus is the whole team.",
+    "hook": "Your inbox is not your job. Deep work is.",
+    "tags": [
+      "Systems & Productivity",
+      "focus",
+      "attention",
+      "productivity"
+    ],
+    "maker": "Cal Newport",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Deep+Work+Cal+Newport&tag=fs08-21"
+    }
+  },
+  {
+    "id": "008",
+    "rank": 8,
+    "title": "$100M Offers",
+    "content": "How to build an offer so good people feel stupid saying no.",
+    "explanation": "Alex Hormozi breaks down how to structure value, pricing, bonuses and guarantees into a compelling offer. The focus is on increasing perceived value rather than cutting price. Directly applicable to any solo service or product launch.",
+    "hook": "Stop competing on price. Make an offer people can't refuse.",
+    "tags": [
+      "Sales & Offers",
+      "offers",
+      "pricing",
+      "conversion"
+    ],
+    "maker": "Alex Hormozi",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=%24100M+Offers+Alex+Hormozi&tag=fs08-21"
+    }
+  },
+  {
+    "id": "009",
+    "rank": 9,
+    "title": "Obviously Awesome",
+    "content": "A step-by-step method for positioning your product so customers instantly get why it matters.",
+    "explanation": "April Dunford provides a practical positioning process: competitive alternatives, unique attributes, value and best-fit customers. It turns a fuzzy product story into a clear market frame. One of the most actionable marketing books for technical founders.",
+    "hook": "If people don't get your product, it's a positioning problem.",
+    "tags": [
+      "Marketing & Positioning",
+      "positioning",
+      "b2b",
+      "messaging"
+    ],
+    "maker": "April Dunford",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Obviously+Awesome+April+Dunford&tag=fs08-21"
+    }
+  },
+  {
+    "id": "010",
+    "rank": 10,
+    "title": "The E-Myth Revisited",
+    "content": "Why most small businesses fail, and how to work on your business instead of just in it.",
+    "explanation": "Michael Gerber distinguishes between the technician, the manager and the entrepreneur inside every founder. He argues for systemising a business as if it were a franchise prototype. A classic for anyone who has built themselves a job.",
+    "hook": "You didn't start a business. You built yourself a job.",
+    "tags": [
+      "Systems & Productivity",
+      "systems",
+      "small-business",
+      "delegation"
+    ],
+    "maker": "Michael E. Gerber",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+E-Myth+Revisited+Michael+E.+Gerber&tag=fs08-21"
+    }
+  },
+  {
+    "id": "011",
+    "rank": 11,
+    "title": "The Almanack of Naval Ravikant",
+    "content": "Naval Ravikant's ideas on wealth, leverage and happiness, curated from his talks, posts and podcasts.",
+    "explanation": "Eric Jorgenson compiles Naval Ravikant's thinking on building wealth through specific knowledge and leverage, alongside his views on happiness. It reads as a set of compact principles. Widely shared among indie hackers.",
+    "hook": "Code and media are leverage that works while you sleep.",
+    "tags": [
+      "Mindset",
+      "leverage",
+      "wealth",
+      "philosophy"
+    ],
+    "maker": "Eric Jorgenson",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Almanack+of+Naval+Ravikant+Eric+Jorgenson&tag=fs08-21"
+    }
+  },
+  {
+    "id": "012",
+    "rank": 12,
+    "title": "This Is Marketing",
+    "content": "Marketing as serving the smallest viable audience, not shouting at everyone.",
+    "explanation": "Seth Godin reframes marketing around empathy, trust and change for a specific group of people. He encourages founders to choose a smallest viable audience and serve it deeply. A strong antidote to spray-and-pray promotion.",
+    "hook": "Stop marketing to everyone. Find your smallest viable audience.",
+    "tags": [
+      "Marketing & Positioning",
+      "audience",
+      "brand",
+      "empathy"
+    ],
+    "maker": "Seth Godin",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=This+Is+Marketing+Seth+Godin&tag=fs08-21"
+    }
+  },
+  {
+    "id": "013",
+    "rank": 13,
+    "title": "Show Your Work!",
+    "content": "Ten ways to share your process and get discovered without self-promotion feeling gross.",
+    "explanation": "Austin Kleon encourages makers to share their process openly and consistently. The short, illustrated book covers building in public, teaching what you know and building a network. Perfect for founders starting to post online.",
+    "hook": "Building in public, explained in a book you can read in an hour.",
+    "tags": [
+      "Marketing & Positioning",
+      "build-in-public",
+      "audience",
+      "content"
+    ],
+    "maker": "Austin Kleon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Show+Your+Work%21+Austin+Kleon&tag=fs08-21"
+    }
+  },
+  {
+    "id": "014",
+    "rank": 14,
+    "title": "Profit First",
+    "content": "A cash management system that takes profit first, then runs the business on what's left.",
+    "explanation": "Mike Michalowicz flips the usual formula so profit is allocated before expenses. The system uses separate bank accounts and regular allocations to make cash flow visible. Simple enough for a one-person business to adopt immediately.",
+    "hook": "Sales minus expenses equals profit? Flip it.",
+    "tags": [
+      "Money & Bootstrapping",
+      "cash-flow",
+      "profit",
+      "bookkeeping"
+    ],
+    "maker": "Mike Michalowicz",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Profit+First+Mike+Michalowicz&tag=fs08-21"
+    }
+  },
+  {
+    "id": "015",
+    "rank": 15,
+    "title": "The Lean Startup",
+    "content": "Build, measure, learn: test assumptions with minimum viable products before betting everything.",
+    "explanation": "Eric Ries popularised the minimum viable product and the build-measure-learn loop. The book frames startups as experiments under uncertainty. Its vocabulary is now standard across the startup world.",
+    "hook": "The book that made 'MVP' part of every founder's vocabulary.",
+    "tags": [
+      "Product & Validation",
+      "mvp",
+      "experimentation",
+      "validation"
+    ],
+    "maker": "Eric Ries",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Lean+Startup+Eric+Ries&tag=fs08-21"
+    }
+  },
+  {
+    "id": "016",
+    "rank": 16,
+    "title": "The Psychology of Money",
+    "content": "Short stories about how people think about money, risk and greed, and why behaviour beats knowledge.",
+    "explanation": "Morgan Housel uses short chapters to explain why financial success depends more on behaviour than intelligence. Themes include compounding, room for error and knowing when you have enough. Grounding for founders with irregular income.",
+    "hook": "Doing well with money has little to do with how smart you are.",
+    "tags": [
+      "Money & Bootstrapping",
+      "personal-finance",
+      "behaviour",
+      "risk"
+    ],
+    "maker": "Morgan Housel",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Psychology+of+Money+Morgan+Housel&tag=fs08-21"
+    }
+  },
+  {
+    "id": "017",
+    "rank": 17,
+    "title": "Never Split the Difference",
+    "content": "A former FBI hostage negotiator's tactics for negotiating in business and life.",
+    "explanation": "Chris Voss shares negotiation techniques drawn from his FBI career, including tactical empathy, mirroring and labelling. The approach focuses on understanding the other side rather than splitting differences. Useful for pricing calls and client negotiations.",
+    "hook": "An FBI hostage negotiator's tricks for your next pricing call.",
+    "tags": [
+      "Sales & Offers",
+      "negotiation",
+      "communication",
+      "pricing"
+    ],
+    "maker": "Chris Voss with Tahl Raz",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Never+Split+the+Difference+Chris+Voss+with+Tahl+Raz&tag=fs08-21"
+    }
+  },
+  {
+    "id": "018",
+    "rank": 18,
+    "title": "Anything You Want",
+    "content": "Derek Sivers' short lessons from accidentally building and selling CD Baby.",
+    "explanation": "A brief book of lessons from founding CD Baby, which Derek Sivers grew and later sold. It argues that a business should serve the founder's ideals and customers, not abstract growth. Readable in one sitting and endlessly re-readable.",
+    "hook": "The founder of CD Baby on building a business by accident.",
+    "tags": [
+      "Founder Stories",
+      "indie",
+      "philosophy",
+      "customer-first"
+    ],
+    "maker": "Derek Sivers",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Anything+You+Want+Derek+Sivers&tag=fs08-21"
+    }
+  },
+  {
+    "id": "019",
+    "rank": 19,
+    "title": "The War of Art",
+    "content": "Name the enemy of creative work, Resistance, and learn to turn pro.",
+    "explanation": "Steven Pressfield describes Resistance as the force that stops people doing their most important work. He argues for showing up daily like a professional. A favourite of founders who struggle to start.",
+    "hook": "The thing stopping you has a name. Pressfield calls it Resistance.",
+    "tags": [
+      "Mindset",
+      "procrastination",
+      "creativity",
+      "discipline"
+    ],
+    "maker": "Steven Pressfield",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+War+of+Art+Steven+Pressfield&tag=fs08-21"
+    }
+  },
+  {
+    "id": "020",
+    "rank": 20,
+    "title": "Four Thousand Weeks",
+    "content": "Time management for mortals: accept your limits and choose what really matters.",
+    "explanation": "Oliver Burkeman notes that an average lifespan is about four thousand weeks and argues that productivity hacks cannot beat finitude. The book encourages deliberate choices about what to neglect. A calming counterweight to hustle culture.",
+    "hook": "You get about 4,000 weeks. Stop trying to do everything.",
+    "tags": [
+      "Systems & Productivity",
+      "time",
+      "priorities",
+      "philosophy"
+    ],
+    "maker": "Oliver Burkeman",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Four+Thousand+Weeks+Oliver+Burkeman&tag=fs08-21"
+    }
+  },
+  {
+    "id": "021",
+    "rank": 21,
+    "title": "Zero to One",
+    "content": "Notes on building companies that create something genuinely new rather than copying what exists.",
+    "explanation": "Based on Peter Thiel's Stanford startup course, the book argues for building monopolies through unique technology and secrets. It challenges founders to find important truths few people agree with. Useful for sharpening a product's thesis.",
+    "hook": "What important truth do very few people agree with you on?",
+    "tags": [
+      "Product & Validation",
+      "strategy",
+      "innovation",
+      "monopoly"
+    ],
+    "maker": "Peter Thiel with Blake Masters",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Zero+to+One+Peter+Thiel+with+Blake+Masters&tag=fs08-21"
+    }
+  },
+  {
+    "id": "022",
+    "rank": 22,
+    "title": "Essentialism",
+    "content": "The disciplined pursuit of less: do fewer things, better.",
+    "explanation": "Greg McKeown makes the case for focusing on the vital few and saying no to the trivial many. The book offers practical ways to explore, eliminate and execute. Ideal for founders spread across too many ideas.",
+    "hook": "If it isn't a clear yes, it's a no.",
+    "tags": [
+      "Systems & Productivity",
+      "focus",
+      "saying-no",
+      "priorities"
+    ],
+    "maker": "Greg McKeown",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Essentialism+Greg+McKeown&tag=fs08-21"
+    }
+  },
+  {
+    "id": "023",
+    "rank": 23,
+    "title": "Co-Intelligence",
+    "content": "A Wharton professor's practical guide to working alongside AI as a co-worker, tutor and creative partner.",
+    "explanation": "Ethan Mollick explains how generative AI can be used as a collaborator and offers practical principles for working with it. He covers creativity, education and work. A grounded starting point for founders building an AI-assisted one-person business.",
+    "hook": "Treat AI like a weird, brilliant intern. Here's how.",
+    "tags": [
+      "AI & Tech",
+      "ai",
+      "workflow",
+      "future-of-work"
+    ],
+    "maker": "Ethan Mollick",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Co-Intelligence+Ethan+Mollick&tag=fs08-21"
+    }
+  },
+  {
+    "id": "024",
+    "rank": 24,
+    "title": "Influence",
+    "content": "The classic on the psychology of persuasion and the principles behind why people say yes.",
+    "explanation": "Robert Cialdini identifies core principles of persuasion such as reciprocity, commitment, social proof, liking, authority and scarcity. The book draws on research and fieldwork. Foundational for landing pages, pricing and launches.",
+    "hook": "Why people say yes, and the principles behind it.",
+    "tags": [
+      "Marketing & Positioning",
+      "persuasion",
+      "psychology",
+      "conversion"
+    ],
+    "maker": "Robert B. Cialdini",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Influence+Robert+B.+Cialdini&tag=fs08-21"
+    }
+  },
+  {
+    "id": "025",
+    "rank": 25,
+    "title": "Building a StoryBrand",
+    "content": "Clarify your message by making the customer the hero and your brand the guide.",
+    "explanation": "Donald Miller applies a story framework to marketing messages. The customer is the hero, the brand is the guide, and the website should make the next step obvious. Practical for rewriting a homepage in an afternoon.",
+    "hook": "Your customer is the hero. You're just the guide.",
+    "tags": [
+      "Marketing & Positioning",
+      "messaging",
+      "copy",
+      "website"
+    ],
+    "maker": "Donald Miller",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Building+a+StoryBrand+Donald+Miller&tag=fs08-21"
+    }
+  },
+  {
+    "id": "026",
+    "rank": 26,
+    "title": "Traction",
+    "content": "A framework for testing distribution channels to find the one that actually grows your startup.",
+    "explanation": "From DuckDuckGo's founder and co-author Justin Mares, Traction introduces the Bullseye framework for testing customer acquisition channels. It surveys a wide range of channels with practical examples. Helps solo founders pick where to spend scarce time.",
+    "hook": "Most startups don't fail on product. They fail on distribution.",
+    "tags": [
+      "Marketing & Positioning",
+      "distribution",
+      "growth",
+      "channels"
+    ],
+    "maker": "Gabriel Weinberg and Justin Mares",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Traction+Gabriel+Weinberg+and+Justin+Mares&tag=fs08-21"
+    }
+  },
+  {
+    "id": "027",
+    "rank": 27,
+    "title": "The 4-Hour Workweek",
+    "content": "Escape the 9-to-5 through elimination, automation and building income that doesn't need you.",
+    "explanation": "Tim Ferriss outlines definition, elimination, automation and liberation as steps toward lifestyle design. The book popularised outsourcing and building automated income streams. Some tactics have dated, but the questions still provoke.",
+    "hook": "The book that launched a million 'lifestyle businesses'.",
+    "tags": [
+      "Systems & Productivity",
+      "automation",
+      "outsourcing",
+      "lifestyle-design"
+    ],
+    "maker": "Timothy Ferriss",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+4-Hour+Workweek+Timothy+Ferriss&tag=fs08-21"
+    }
+  },
+  {
+    "id": "028",
+    "rank": 28,
+    "title": "Shoe Dog",
+    "content": "Nike's founder's candid memoir of the messy, cash-strapped early years.",
+    "explanation": "Phil Knight recounts building Nike from a small importing business, with constant cash crunches and near-failures. It is an honest portrait of founder uncertainty. Reassuring for anyone in the messy middle.",
+    "hook": "Nike nearly died more times than you'd believe.",
+    "tags": [
+      "Founder Stories",
+      "memoir",
+      "perseverance",
+      "cash-flow"
+    ],
+    "maker": "Phil Knight",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Shoe+Dog+Phil+Knight&tag=fs08-21"
+    }
+  },
+  {
+    "id": "029",
+    "rank": 29,
+    "title": "Hooked",
+    "content": "The Hook Model: how products build habits through triggers, actions, rewards and investment.",
+    "explanation": "Nir Eyal describes a four-step model behind habit-forming products. It is useful for designing retention, and also worth reading critically for its ethical implications. Relevant to anyone building consumer apps.",
+    "hook": "Why you open certain apps without thinking.",
+    "tags": [
+      "Product & Validation",
+      "retention",
+      "ux",
+      "habits"
+    ],
+    "maker": "Nir Eyal with Ryan Hoover",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Hooked+Nir+Eyal+with+Ryan+Hoover&tag=fs08-21"
+    }
+  },
+  {
+    "id": "030",
+    "rank": 30,
+    "title": "Made to Stick",
+    "content": "Why some ideas survive and others die, and the six principles that make messages memorable.",
+    "explanation": "The Heath brothers set out six traits of sticky ideas: simple, unexpected, concrete, credible, emotional and stories. The book is full of examples. Useful for taglines, pitches and short-form video scripts.",
+    "hook": "Six reasons some ideas stick and yours don't.",
+    "tags": [
+      "Writing & Copy",
+      "messaging",
+      "storytelling",
+      "memorability"
+    ],
+    "maker": "Chip Heath and Dan Heath",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Made+to+Stick+Chip+Heath+and+Dan+Heath&tag=fs08-21"
+    }
+  },
+  {
+    "id": "031",
+    "rank": 31,
+    "title": "On Writing Well",
+    "content": "The classic guide to writing clear, warm nonfiction by cutting clutter.",
+    "explanation": "William Zinsser teaches simplicity, clarity and humanity in nonfiction writing. His advice on cutting clutter applies to emails, docs and landing pages alike. A lifelong reference for founders who write to sell.",
+    "hook": "Clutter is the disease of writing. Here's the cure.",
+    "tags": [
+      "Writing & Copy",
+      "clarity",
+      "nonfiction",
+      "editing"
+    ],
+    "maker": "William Zinsser",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=On+Writing+Well+William+Zinsser&tag=fs08-21"
+    }
+  },
+  {
+    "id": "032",
+    "rank": 32,
+    "title": "Steal Like an Artist",
+    "content": "Ten things nobody told you about being creative, in a short illustrated book.",
+    "explanation": "Austin Kleon argues that creativity comes from remixing influences and doing the work. The illustrated format makes it fast to read. A good nudge for founders stuck on originality.",
+    "hook": "Nothing is original. Start anyway.",
+    "tags": [
+      "Writing & Copy",
+      "creativity",
+      "influence",
+      "making"
+    ],
+    "maker": "Austin Kleon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Steal+Like+an+Artist+Austin+Kleon&tag=fs08-21"
+    }
+  },
+  {
+    "id": "033",
+    "rank": 33,
+    "title": "Why We Sleep",
+    "content": "A neuroscientist's argument for sleep as the foundation of health, mood and performance.",
+    "explanation": "Matthew Walker explains the science of sleep and its links to memory, health and decision-making. Some claims have been debated by other researchers, so read it as a strong prompt rather than gospel. A wake-up call for founders who brag about little sleep.",
+    "hook": "Sleep-deprived founders make worse decisions. A neuroscientist explains.",
+    "tags": [
+      "Health & Energy",
+      "sleep",
+      "performance",
+      "wellbeing"
+    ],
+    "maker": "Matthew Walker",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Why+We+Sleep+Matthew+Walker&tag=fs08-21"
+    }
+  },
+  {
+    "id": "034",
+    "rank": 34,
+    "title": "The Hard Thing About Hard Things",
+    "content": "Candid advice on the hardest parts of running a company, when there are no easy answers.",
+    "explanation": "Ben Horowitz draws on his experience running Loudcloud and Opsware through crises. The book focuses on painful decisions and managing your own psychology. Even for solo founders, the chapters on the struggle resonate.",
+    "hook": "Nobody tells you about the struggle. Horowitz does.",
+    "tags": [
+      "Founder Stories",
+      "leadership",
+      "resilience",
+      "crisis"
+    ],
+    "maker": "Ben Horowitz",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Hard+Thing+About+Hard+Things+Ben+Horowitz&tag=fs08-21"
+    }
+  },
+  {
+    "id": "035",
+    "rank": 35,
+    "title": "Meditations",
+    "content": "A Roman emperor's private notes on duty, self-control and calm amid chaos.",
+    "explanation": "Marcus Aurelius wrote these personal reflections for himself, never intending publication. They cover handling adversity, other people and one's own judgements. A timeless stoic companion for founders facing uncertainty.",
+    "hook": "A Roman emperor's private journal for staying calm.",
+    "tags": [
+      "Classics",
+      "stoicism",
+      "philosophy",
+      "resilience"
+    ],
+    "maker": "Marcus Aurelius",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Meditations+Marcus+Aurelius&tag=fs08-21"
+    }
+  },
+  {
+    "id": "036",
+    "rank": 36,
+    "title": "$100M Leads",
+    "content": "How to get strangers interested in what you sell, through warm and cold outreach, content and ads.",
+    "explanation": "Alex Hormozi breaks lead generation into core approaches including warm outreach, content, cold outreach and paid ads. The book is highly structured and action-oriented. A companion to $100M Offers for founders with no pipeline.",
+    "hook": "Great offer, no customers? This is the fix.",
+    "tags": [
+      "Sales & Offers",
+      "lead-gen",
+      "outreach",
+      "content"
+    ],
+    "maker": "Alex Hormozi",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=%24100M+Leads+Alex+Hormozi&tag=fs08-21"
+    }
+  },
+  {
+    "id": "037",
+    "rank": 37,
+    "title": "Thinking, Fast and Slow",
+    "content": "A Nobel laureate explains the two systems of thought and the biases that shape our decisions.",
+    "explanation": "Daniel Kahneman describes fast, intuitive System 1 and slow, deliberate System 2 thinking. He catalogues cognitive biases that affect judgement. Valuable for founders making pricing, hiring and strategy calls alone.",
+    "hook": "Your brain has two systems. One of them is lying to you.",
+    "tags": [
+      "Mindset",
+      "decision-making",
+      "biases",
+      "psychology"
+    ],
+    "maker": "Daniel Kahneman",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Thinking%2C+Fast+and+Slow+Daniel+Kahneman&tag=fs08-21"
+    }
+  },
+  {
+    "id": "038",
+    "rank": 38,
+    "title": "Getting Things Done",
+    "content": "The stress-free productivity method: capture everything, clarify it and trust your system.",
+    "explanation": "David Allen's GTD method gets every commitment out of your head into a trusted system. It covers capturing, clarifying, organising, reviewing and engaging. A durable operating system for a founder juggling every role.",
+    "hook": "Your mind is for having ideas, not holding them.",
+    "tags": [
+      "Systems & Productivity",
+      "productivity",
+      "task-management",
+      "workflow"
+    ],
+    "maker": "David Allen",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Getting+Things+Done+David+Allen&tag=fs08-21"
+    }
+  },
+  {
+    "id": "039",
+    "rank": 39,
+    "title": "Building a Second Brain",
+    "content": "A method for capturing and organising what you learn so you can actually use it.",
+    "explanation": "Tiago Forte introduces the CODE method and the PARA organising system for digital notes. The aim is to turn information into finished creative output. A strong fit for founders running on notes, docs and research.",
+    "hook": "Stop losing your best ideas in random notes apps.",
+    "tags": [
+      "Systems & Productivity",
+      "notes",
+      "knowledge-management",
+      "pkm"
+    ],
+    "maker": "Tiago Forte",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Building+a+Second+Brain+Tiago+Forte&tag=fs08-21"
+    }
+  },
+  {
+    "id": "040",
+    "rank": 40,
+    "title": "Contagious",
+    "content": "Why things catch on: the research behind word of mouth and shareable ideas.",
+    "explanation": "Jonah Berger presents research-based principles behind why some products and ideas spread. He covers social currency, triggers, emotion, public visibility, practical value and stories. Useful for designing shareable content.",
+    "hook": "Why some things go viral and most don't.",
+    "tags": [
+      "Marketing & Positioning",
+      "word-of-mouth",
+      "virality",
+      "content"
+    ],
+    "maker": "Jonah Berger",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Contagious+Jonah+Berger&tag=fs08-21"
+    }
+  },
+  {
+    "id": "041",
+    "rank": 41,
+    "title": "Positioning",
+    "content": "The battle for your mind: own a clear position in the customer's head.",
+    "explanation": "Al Ries and Jack Trout introduced positioning as the work of owning a distinct place in a prospect's mind. The examples are dated but the principles remain sharp. The origin text for modern positioning thinking.",
+    "hook": "If you can't be first in a category, make a new one.",
+    "tags": [
+      "Marketing & Positioning",
+      "positioning",
+      "branding",
+      "strategy"
+    ],
+    "maker": "Al Ries and Jack Trout",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Positioning+Al+Ries+and+Jack+Trout&tag=fs08-21"
+    }
+  },
+  {
+    "id": "042",
+    "rank": 42,
+    "title": "Crossing the Chasm",
+    "content": "How tech products move from early adopters to the mainstream market.",
+    "explanation": "Geoffrey Moore describes the gap between enthusiastic early adopters and pragmatic mainstream buyers. He argues for dominating a narrow beachhead segment first. Helpful for choosing a niche.",
+    "hook": "Early adopters love you. The mainstream doesn't care. Yet.",
+    "tags": [
+      "Product & Validation",
+      "go-to-market",
+      "adoption",
+      "niche"
+    ],
+    "maker": "Geoffrey A. Moore",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Crossing+the+Chasm+Geoffrey+A.+Moore&tag=fs08-21"
+    }
+  },
+  {
+    "id": "043",
+    "rank": 43,
+    "title": "The Design of Everyday Things",
+    "content": "Why some products are a joy to use and others baffle us, from a pioneer of user-centred design.",
+    "explanation": "Don Norman explains affordances, signifiers, feedback and mental models through everyday objects. The principles apply directly to software. Essential for founders who design their own interfaces.",
+    "hook": "If people can't use it, it's the design's fault, not theirs.",
+    "tags": [
+      "Product & Validation",
+      "ux",
+      "design",
+      "usability"
+    ],
+    "maker": "Don Norman",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Design+of+Everyday+Things+Don+Norman&tag=fs08-21"
+    }
+  },
+  {
+    "id": "044",
+    "rank": 44,
+    "title": "Don't Make Me Think",
+    "content": "A common-sense approach to web usability that takes an afternoon to read.",
+    "explanation": "Steve Krug's short guide covers how people actually scan web pages and how to make interfaces obvious. It includes simple, low-cost usability testing. Ideal for founders who are also the designer.",
+    "hook": "Users don't read your site. They scan it.",
+    "tags": [
+      "Product & Validation",
+      "usability",
+      "web",
+      "testing"
+    ],
+    "maker": "Steve Krug",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Don%27t+Make+Me+Think+Steve+Krug&tag=fs08-21"
+    }
+  },
+  {
+    "id": "045",
+    "rank": 45,
+    "title": "Hackers & Painters",
+    "content": "Essays from Y Combinator's co-founder on startups, programming and how makers think.",
+    "explanation": "Paul Graham collects essays on wealth creation, programming languages and the culture of hackers. Many ideas later shaped startup orthodoxy. A favourite for technical founders.",
+    "hook": "Y Combinator's founder on why makers think differently.",
+    "tags": [
+      "AI & Tech",
+      "essays",
+      "startups",
+      "programming"
+    ],
+    "maker": "Paul Graham",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Hackers+%26+Painters+Paul+Graham&tag=fs08-21"
+    }
+  },
+  {
+    "id": "046",
+    "rank": 46,
+    "title": "The Pragmatic Programmer",
+    "content": "Practical advice on craftsmanship, automation and thinking clearly as a software developer.",
+    "explanation": "Dave Thomas and Andy Hunt share tips on writing adaptable code, automating repetitive work and taking responsibility for your craft. A 20th anniversary edition updated the material. Valuable for solo technical founders.",
+    "hook": "Don't repeat yourself, and other rules good developers live by.",
+    "tags": [
+      "AI & Tech",
+      "software",
+      "craft",
+      "automation"
+    ],
+    "maker": "David Thomas and Andrew Hunt",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Pragmatic+Programmer+David+Thomas+and+Andrew+Hunt&tag=fs08-21"
+    }
+  },
+  {
+    "id": "047",
+    "rank": 47,
+    "title": "Prediction Machines",
+    "content": "The simple economics of AI: when prediction gets cheap, what becomes valuable?",
+    "explanation": "Three economists frame AI as a drop in the cost of prediction. They explore how that shifts value toward judgement, data and action. A clear lens for spotting AI business opportunities.",
+    "hook": "AI makes prediction cheap. So what gets expensive?",
+    "tags": [
+      "AI & Tech",
+      "ai",
+      "economics",
+      "strategy"
+    ],
+    "maker": "Ajay Agrawal, Joshua Gans and Avi Goldfarb",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Prediction+Machines+Ajay+Agrawal%2C+Joshua+Gans+and+Avi+Goldfarb&tag=fs08-21"
+    }
+  },
+  {
+    "id": "048",
+    "rank": 48,
+    "title": "The Coming Wave",
+    "content": "A DeepMind co-founder on AI, synthetic biology and the challenge of containing powerful technology.",
+    "explanation": "Mustafa Suleyman argues that AI and biotechnology are spreading fast and will be hard to contain. He discusses risks and possible approaches to governance. Big-picture context for founders building on AI.",
+    "hook": "A DeepMind co-founder on the tech wave nobody can stop.",
+    "tags": [
+      "AI & Tech",
+      "ai",
+      "policy",
+      "future"
+    ],
+    "maker": "Mustafa Suleyman with Michael Bhaskar",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Coming+Wave+Mustafa+Suleyman+with+Michael+Bhaskar&tag=fs08-21"
+    }
+  },
+  {
+    "id": "049",
+    "rank": 49,
+    "title": "Outlive",
+    "content": "The science and art of longevity: a proactive approach to living longer and better.",
+    "explanation": "Peter Attia lays out a strategy for reducing risk of major chronic diseases through exercise, nutrition, sleep and emotional health. Exercise gets particular emphasis. A framework for founders playing a long game with their bodies.",
+    "hook": "The long game isn't just your business. It's your body.",
+    "tags": [
+      "Health & Energy",
+      "longevity",
+      "exercise",
+      "health"
+    ],
+    "maker": "Peter Attia with Bill Gifford",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Outlive+Peter+Attia+with+Bill+Gifford&tag=fs08-21"
+    }
+  },
+  {
+    "id": "050",
+    "rank": 50,
+    "title": "Burnout",
+    "content": "The secret to unlocking the stress cycle, and why dealing with stress isn't the same as fixing its cause.",
+    "explanation": "Emily and Amelia Nagoski explain how to complete the stress cycle through things like movement, rest and connection. The book is warm, practical and research-informed. Relevant for anyone running a business alone.",
+    "hook": "Fixing the stressor doesn't fix the stress. Here's what does.",
+    "tags": [
+      "Health & Energy",
+      "stress",
+      "burnout",
+      "wellbeing"
+    ],
+    "maker": "Emily Nagoski and Amelia Nagoski",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Burnout+Emily+Nagoski+and+Amelia+Nagoski&tag=fs08-21"
+    }
+  },
+  {
+    "id": "051",
+    "rank": 51,
+    "title": "Rest",
+    "content": "Why you get more done when you work less, with examples from creative and scientific lives.",
+    "explanation": "Alex Soojung-Kim Pang argues that deliberate rest is a skill and a partner to good work. He draws on the routines of writers and scientists. A useful permission slip for founders who never switch off.",
+    "hook": "Working less might be your best productivity hack.",
+    "tags": [
+      "Health & Energy",
+      "rest",
+      "creativity",
+      "routines"
+    ],
+    "maker": "Alex Soojung-Kim Pang",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Rest+Alex+Soojung-Kim+Pang&tag=fs08-21"
+    }
+  },
+  {
+    "id": "052",
+    "rank": 52,
+    "title": "Stolen Focus",
+    "content": "Why you can't pay attention, and what's driving the attention crisis.",
+    "explanation": "Johann Hari explores factors behind declining attention, from technology design to sleep and stress. He mixes reporting with interviews. A prompt for founders to protect their own attention.",
+    "hook": "Your attention didn't collapse. It was stolen.",
+    "tags": [
+      "Health & Energy",
+      "attention",
+      "technology",
+      "focus"
+    ],
+    "maker": "Johann Hari",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Stolen+Focus+Johann+Hari&tag=fs08-21"
+    }
+  },
+  {
+    "id": "053",
+    "rank": 53,
+    "title": "Ego Is the Enemy",
+    "content": "How ego sabotages ambition, success and recovery from failure, through stoic lessons and history.",
+    "explanation": "Ryan Holiday shows how ego undermines us at every stage: aspiring, succeeding and failing. He draws on historical figures and stoic philosophy. Grounding for founders who build in public.",
+    "hook": "Your ego is quietly sabotaging your startup.",
+    "tags": [
+      "Mindset",
+      "stoicism",
+      "humility",
+      "ambition"
+    ],
+    "maker": "Ryan Holiday",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Ego+Is+the+Enemy+Ryan+Holiday&tag=fs08-21"
+    }
+  },
+  {
+    "id": "054",
+    "rank": 54,
+    "title": "The Obstacle Is the Way",
+    "content": "Turning trials into triumph with stoic ideas on perception, action and will.",
+    "explanation": "Ryan Holiday applies stoic philosophy to adversity in three parts: perception, action and will. The book uses historical stories to show obstacles as raw material. Popular among founders and athletes.",
+    "hook": "The thing blocking your path is the path.",
+    "tags": [
+      "Mindset",
+      "stoicism",
+      "adversity",
+      "resilience"
+    ],
+    "maker": "Ryan Holiday",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Obstacle+Is+the+Way+Ryan+Holiday&tag=fs08-21"
+    }
+  },
+  {
+    "id": "055",
+    "rank": 55,
+    "title": "Antifragile",
+    "content": "Things that gain from disorder, and how to build a life and business that benefits from shocks.",
+    "explanation": "Nassim Taleb introduces antifragility: systems that get stronger under stress and volatility. He critiques fragile, over-optimised systems. A useful lens for designing a resilient solo business with many small bets.",
+    "hook": "Some things break under stress. Others get stronger.",
+    "tags": [
+      "Mindset",
+      "risk",
+      "resilience",
+      "optionality"
+    ],
+    "maker": "Nassim Nicholas Taleb",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Antifragile+Nassim+Nicholas+Taleb&tag=fs08-21"
+    }
+  },
+  {
+    "id": "056",
+    "rank": 56,
+    "title": "Thinking in Bets",
+    "content": "A former professional poker player on making smarter decisions when you don't have all the facts.",
+    "explanation": "Annie Duke separates decision quality from outcome quality. She shows how to think probabilistically and avoid 'resulting'. Ideal for founders who make many uncertain calls alone.",
+    "hook": "A good decision can still lose. Stop judging by results.",
+    "tags": [
+      "Mindset",
+      "decision-making",
+      "probability",
+      "risk"
+    ],
+    "maker": "Annie Duke",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Thinking+in+Bets+Annie+Duke&tag=fs08-21"
+    }
+  },
+  {
+    "id": "057",
+    "rank": 57,
+    "title": "So Good They Can't Ignore You",
+    "content": "Why skills trump passion in the quest for work you love.",
+    "explanation": "Cal Newport argues that 'follow your passion' is poor advice and that rare, valuable skills create career capital. Passion often follows mastery. A useful corrective when choosing what to build.",
+    "hook": "'Follow your passion' might be the worst career advice.",
+    "tags": [
+      "Mindset",
+      "career-capital",
+      "skills",
+      "mastery"
+    ],
+    "maker": "Cal Newport",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=So+Good+They+Can%27t+Ignore+You+Cal+Newport&tag=fs08-21"
+    }
+  },
+  {
+    "id": "058",
+    "rank": 58,
+    "title": "Range",
+    "content": "Why generalists triumph in a specialised world.",
+    "explanation": "David Epstein argues that broad experience and late specialisation often lead to success in complex fields. He uses examples from sport, science and art. Encouraging for founders who wear every hat.",
+    "hook": "Generalists win in a messy world. Solo founders are generalists.",
+    "tags": [
+      "Mindset",
+      "generalists",
+      "learning",
+      "creativity"
+    ],
+    "maker": "David Epstein",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Range+David+Epstein&tag=fs08-21"
+    }
+  },
+  {
+    "id": "059",
+    "rank": 59,
+    "title": "Mindset",
+    "content": "The psychology of success: how a growth mindset changes how we learn and respond to setbacks.",
+    "explanation": "Carol Dweck contrasts fixed and growth mindsets and how each shapes responses to challenge. The book draws on her research in psychology. Foundational reading on learning from failure.",
+    "hook": "Talent isn't fixed. How you see it changes everything.",
+    "tags": [
+      "Mindset",
+      "growth-mindset",
+      "learning",
+      "psychology"
+    ],
+    "maker": "Carol S. Dweck",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Mindset+Carol+S.+Dweck&tag=fs08-21"
+    }
+  },
+  {
+    "id": "060",
+    "rank": 60,
+    "title": "SPIN Selling",
+    "content": "Research-backed questioning for bigger sales: situation, problem, implication, need-payoff.",
+    "explanation": "Neil Rackham's SPIN model came from large-scale research into sales calls. It focuses on asking questions that help buyers see the cost of their problem. Still useful for consultative discovery calls.",
+    "hook": "Stop pitching. Start asking these four types of questions.",
+    "tags": [
+      "Sales & Offers",
+      "discovery",
+      "questions",
+      "b2b"
+    ],
+    "maker": "Neil Rackham",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=SPIN+Selling+Neil+Rackham&tag=fs08-21"
+    }
+  },
+  {
+    "id": "061",
+    "rank": 61,
+    "title": "To Sell Is Human",
+    "content": "The surprising truth about moving others, and why we're all in sales now.",
+    "explanation": "Daniel Pink argues that most people spend much of their work persuading others. He offers ideas on attunement, buoyancy and clarity. A friendly entry point for founders who dislike the idea of selling.",
+    "hook": "Hate selling? You're already doing it all day.",
+    "tags": [
+      "Sales & Offers",
+      "persuasion",
+      "communication",
+      "mindset"
+    ],
+    "maker": "Daniel H. Pink",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=To+Sell+Is+Human+Daniel+H.+Pink&tag=fs08-21"
+    }
+  },
+  {
+    "id": "062",
+    "rank": 62,
+    "title": "Pitch Anything",
+    "content": "A method for presenting, persuading and winning the deal by controlling the frame.",
+    "explanation": "Oren Klaff describes pitching as a battle of frames and offers his STRONG method. The style is punchy and opinionated. Useful for founders pitching partners, clients or investors.",
+    "hook": "Whoever owns the frame wins the pitch.",
+    "tags": [
+      "Sales & Offers",
+      "pitching",
+      "frames",
+      "deals"
+    ],
+    "maker": "Oren Klaff",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Pitch+Anything+Oren+Klaff&tag=fs08-21"
+    }
+  },
+  {
+    "id": "063",
+    "rank": 63,
+    "title": "I Will Teach You to Be Rich",
+    "content": "A six-week programme for automating your personal finances and spending on what you love.",
+    "explanation": "Ramit Sethi covers credit, banking, investing and automation with a focus on conscious spending. A second edition updated the material. Useful for founders whose personal and business money blur together.",
+    "hook": "Spend extravagantly on what you love. Cut ruthlessly on what you don't.",
+    "tags": [
+      "Money & Bootstrapping",
+      "personal-finance",
+      "automation",
+      "investing"
+    ],
+    "maker": "Ramit Sethi",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=I+Will+Teach+You+to+Be+Rich+Ramit+Sethi&tag=fs08-21"
+    }
+  },
+  {
+    "id": "064",
+    "rank": 64,
+    "title": "The Simple Path to Wealth",
+    "content": "A plain-spoken route to financial independence through low-cost index investing.",
+    "explanation": "Originating in letters to his daughter, JL Collins explains a simple investing approach built on low-cost index funds and avoiding debt. The examples are US-centric but the principles travel. Good for founders who want money to be boring.",
+    "hook": "The investing advice a father wrote for his daughter.",
+    "tags": [
+      "Money & Bootstrapping",
+      "investing",
+      "index-funds",
+      "fi"
+    ],
+    "maker": "JL Collins",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Simple+Path+to+Wealth+JL+Collins&tag=fs08-21"
+    }
+  },
+  {
+    "id": "065",
+    "rank": 65,
+    "title": "Your Money or Your Life",
+    "content": "Transforming your relationship with money by measuring it in hours of your life.",
+    "explanation": "Vicki Robin and Joe Dominguez offer a step-by-step programme for aligning spending with values. Its core idea is converting money into life energy. A precursor of the financial independence movement.",
+    "hook": "Every purchase costs hours of your life. Count them.",
+    "tags": [
+      "Money & Bootstrapping",
+      "frugality",
+      "values",
+      "fi"
+    ],
+    "maker": "Vicki Robin and Joe Dominguez",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Your+Money+or+Your+Life+Vicki+Robin+and+Joe+Dominguez&tag=fs08-21"
+    }
+  },
+  {
+    "id": "066",
+    "rank": 66,
+    "title": "Die with Zero",
+    "content": "Getting all you can from your money and your life, rather than hoarding it for later.",
+    "explanation": "Bill Perkins argues for optimising life experiences rather than maximising wealth at death. He introduces ideas like memory dividends and time buckets. A counterbalance for founders deferring life until an exit.",
+    "hook": "Dying with millions in the bank is a waste, not a win.",
+    "tags": [
+      "Money & Bootstrapping",
+      "life-design",
+      "spending",
+      "experiences"
+    ],
+    "maker": "Bill Perkins",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Die+with+Zero+Bill+Perkins&tag=fs08-21"
+    }
+  },
+  {
+    "id": "067",
+    "rank": 67,
+    "title": "Financial Intelligence for Entrepreneurs",
+    "content": "What you really need to know about the numbers, explained for non-accountants.",
+    "explanation": "Karen Berman and Joe Knight explain income statements, balance sheets and cash flow in plain language. They show how financial statements involve judgement. Useful for founders who avoid their books.",
+    "hook": "Profit and cash are not the same thing. Here's why it matters.",
+    "tags": [
+      "Money & Bootstrapping",
+      "accounting",
+      "cash-flow",
+      "finance"
+    ],
+    "maker": "Karen Berman and Joe Knight",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Financial+Intelligence+for+Entrepreneurs+Karen+Berman+and+Joe+Knight&tag=fs08-21"
+    }
+  },
+  {
+    "id": "068",
+    "rank": 68,
+    "title": "Built to Sell",
+    "content": "Creating a business that can thrive without you, told as a business fable.",
+    "explanation": "John Warrillow uses a story about a design agency owner to show how to productise a service and reduce dependence on the founder. The lessons apply even if you never sell. Strong for service-based solo founders.",
+    "hook": "If your business can't run without you, you don't own a business.",
+    "tags": [
+      "Money & Bootstrapping",
+      "productisation",
+      "exit",
+      "services"
+    ],
+    "maker": "John Warrillow",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Built+to+Sell+John+Warrillow&tag=fs08-21"
+    }
+  },
+  {
+    "id": "069",
+    "rank": 69,
+    "title": "Everybody Writes",
+    "content": "A go-to guide to creating ridiculously good content, for people who don't think of themselves as writers.",
+    "explanation": "Ann Handley offers practical rules for writing better marketing content, from structure to grammar. A second edition updated it. Handy for founders writing newsletters, posts and landing pages.",
+    "hook": "If you have a website, you're a publisher. Write like one.",
+    "tags": [
+      "Writing & Copy",
+      "content",
+      "copy",
+      "marketing"
+    ],
+    "maker": "Ann Handley",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Everybody+Writes+Ann+Handley&tag=fs08-21"
+    }
+  },
+  {
+    "id": "070",
+    "rank": 70,
+    "title": "On Writing",
+    "content": "A memoir of the craft: Stephen King's life story and his toolbox for writers.",
+    "explanation": "Part memoir, part guide, Stephen King shares how he became a writer and the habits he relies on. His advice on reading widely and writing daily is simple and demanding. Inspiring for founders who must ship words.",
+    "hook": "Stephen King's writing advice works for founders too.",
+    "tags": [
+      "Writing & Copy",
+      "craft",
+      "habits",
+      "memoir"
+    ],
+    "maker": "Stephen King",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=On+Writing+Stephen+King&tag=fs08-21"
+    }
+  },
+  {
+    "id": "071",
+    "rank": 71,
+    "title": "Bird by Bird",
+    "content": "Some instructions on writing and life, one small task at a time.",
+    "explanation": "Anne Lamott offers warm, funny advice on writing, perfectionism and getting started. The title comes from advice to take big projects one piece at a time. A gentle antidote to overwhelm.",
+    "hook": "Overwhelmed? Take it bird by bird.",
+    "tags": [
+      "Writing & Copy",
+      "writing",
+      "perfectionism",
+      "creativity"
+    ],
+    "maker": "Anne Lamott",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Bird+by+Bird+Anne+Lamott&tag=fs08-21"
+    }
+  },
+  {
+    "id": "072",
+    "rank": 72,
+    "title": "Write Useful Books",
+    "content": "A modern approach to designing and refining nonfiction books that readers recommend.",
+    "explanation": "Rob Fitzpatrick, author of The Mom Test, applies lean product thinking to writing nonfiction. He covers promise, structure, beta readers and iteration. Directly relevant for founders writing a book as a product.",
+    "hook": "Write your book like a startup builds a product.",
+    "tags": [
+      "Writing & Copy",
+      "book-writing",
+      "nonfiction",
+      "iteration"
+    ],
+    "maker": "Rob Fitzpatrick",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Write+Useful+Books+Rob+Fitzpatrick&tag=fs08-21"
+    }
+  },
+  {
+    "id": "073",
+    "rank": 73,
+    "title": "Ogilvy on Advertising",
+    "content": "A legendary ad man's no-nonsense guide to advertising that sells.",
+    "explanation": "David Ogilvy shares lessons on headlines, research, copy and campaigns. Many principles apply directly to digital marketing. A classic for anyone writing ads or landing pages.",
+    "hook": "The ad legend's rules still beat most growth hacks.",
+    "tags": [
+      "Marketing & Positioning",
+      "advertising",
+      "copy",
+      "headlines"
+    ],
+    "maker": "David Ogilvy",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Ogilvy+on+Advertising+David+Ogilvy&tag=fs08-21"
+    }
+  },
+  {
+    "id": "074",
+    "rank": 74,
+    "title": "Alchemy",
+    "content": "The surprising power of ideas that don't make sense, from Ogilvy UK's vice chairman.",
+    "explanation": "Rory Sutherland argues that human behaviour is often not logical and that small psychological changes can beat expensive rational fixes. The book is funny and full of examples. Great for creative marketing thinking.",
+    "hook": "The best marketing ideas often make no logical sense.",
+    "tags": [
+      "Marketing & Positioning",
+      "behavioural-economics",
+      "creativity",
+      "psychology"
+    ],
+    "maker": "Rory Sutherland",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Alchemy+Rory+Sutherland&tag=fs08-21"
+    }
+  },
+  {
+    "id": "075",
+    "rank": 75,
+    "title": "Breakthrough Advertising",
+    "content": "A copywriting classic on market awareness, sophistication and channelling existing desire.",
+    "explanation": "Eugene Schwartz explains how to match copy to a market's level of awareness and sophistication. Copywriters still cite it widely. Dense but valuable for founders writing sales pages.",
+    "hook": "Copy can't create desire. It can only channel it.",
+    "tags": [
+      "Writing & Copy",
+      "copywriting",
+      "awareness",
+      "direct-response"
+    ],
+    "maker": "Eugene M. Schwartz",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Breakthrough+Advertising+Eugene+M.+Schwartz&tag=fs08-21"
+    }
+  },
+  {
+    "id": "076",
+    "rank": 76,
+    "title": "The Boron Letters",
+    "content": "Letters from a legendary copywriter to his son on direct response, sales letters and life.",
+    "explanation": "Gary Halbert's letters to his son mix copywriting lessons with advice on health and discipline. They cover hunting for a starving crowd and writing sales letters. A short, cult favourite among copywriters.",
+    "hook": "A famous copywriter's letters to his son on selling with words.",
+    "tags": [
+      "Writing & Copy",
+      "copywriting",
+      "direct-response",
+      "mentorship"
+    ],
+    "maker": "Gary C. Halbert",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Boron+Letters+Gary+C.+Halbert&tag=fs08-21"
+    }
+  },
+  {
+    "id": "077",
+    "rank": 77,
+    "title": "Purple Cow",
+    "content": "Transform your business by being remarkable, because safe is risky.",
+    "explanation": "Seth Godin argues that ordinary products are invisible and that being worth remarking on is the marketing. It challenges founders to build something people talk about. Short and sharp.",
+    "hook": "Boring products are invisible. Be a purple cow.",
+    "tags": [
+      "Marketing & Positioning",
+      "remarkability",
+      "differentiation",
+      "branding"
+    ],
+    "maker": "Seth Godin",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Purple+Cow+Seth+Godin&tag=fs08-21"
+    }
+  },
+  {
+    "id": "078",
+    "rank": 78,
+    "title": "High Output Management",
+    "content": "Intel's former CEO on output, leverage and managing work as a production process.",
+    "explanation": "Andy Grove treats management as a production system and emphasises high-leverage activities. Concepts like output measures and one-on-ones are explained clearly. Useful for founders managing contractors or AI agents.",
+    "hook": "Intel's CEO on getting more output from every hour.",
+    "tags": [
+      "Systems & Productivity",
+      "management",
+      "leverage",
+      "operations"
+    ],
+    "maker": "Andrew S. Grove",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=High+Output+Management+Andrew+S.+Grove&tag=fs08-21"
+    }
+  },
+  {
+    "id": "079",
+    "rank": 79,
+    "title": "It Doesn't Have to Be Crazy at Work",
+    "content": "The case for a calm company: fewer meetings, less hustle, sane hours.",
+    "explanation": "The Basecamp founders argue that long hours and constant urgency are choices, not requirements. They describe practices for calm, focused work. Encouraging for founders who want a business without burnout.",
+    "hook": "Crazy busy isn't a badge of honour. It's a choice.",
+    "tags": [
+      "Systems & Productivity",
+      "calm-company",
+      "culture",
+      "focus"
+    ],
+    "maker": "Jason Fried & David Heinemeier Hansson",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=It+Doesn%27t+Have+to+Be+Crazy+at+Work+Jason+Fried+%26+David+Heinemeier+Hansson&tag=fs08-21"
+    }
+  },
+  {
+    "id": "080",
+    "rank": 80,
+    "title": "Indistractable",
+    "content": "How to control your attention and choose your life.",
+    "explanation": "Nir Eyal argues that distraction usually starts with internal triggers. He offers a framework for traction, timeboxing and pre-commitment. Practical for solo founders with no one checking on them.",
+    "hook": "Distraction starts inside your head, not your phone.",
+    "tags": [
+      "Systems & Productivity",
+      "focus",
+      "attention",
+      "timeboxing"
+    ],
+    "maker": "Nir Eyal with Julie Li",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Indistractable+Nir+Eyal+with+Julie+Li&tag=fs08-21"
+    }
+  },
+  {
+    "id": "081",
+    "rank": 81,
+    "title": "The Personal MBA",
+    "content": "Master the art of business with a self-taught overview of core business concepts.",
+    "explanation": "Josh Kaufman condenses core business ideas, from value creation to systems, into short entries. It works as a broad self-education. Ideal for founders without formal business training.",
+    "hook": "Skip the MBA. Read this instead.",
+    "tags": [
+      "Systems & Productivity",
+      "business-basics",
+      "self-education",
+      "mental-models"
+    ],
+    "maker": "Josh Kaufman",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Personal+MBA+Josh+Kaufman&tag=fs08-21"
+    }
+  },
+  {
+    "id": "082",
+    "rank": 82,
+    "title": "Sprint",
+    "content": "How to solve big problems and test new ideas in just five days, from Google Ventures.",
+    "explanation": "The design sprint process moves from mapping a problem to testing a realistic prototype with users in one week. It was developed at Google Ventures. Adaptable for a solo founder's validation week.",
+    "hook": "From idea to tested prototype in five days.",
+    "tags": [
+      "Product & Validation",
+      "design-sprint",
+      "prototyping",
+      "testing"
+    ],
+    "maker": "Jake Knapp with John Zeratsky and Braden Kowitz",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Sprint+Jake+Knapp+with+John+Zeratsky+and+Braden+Kowitz&tag=fs08-21"
+    }
+  },
+  {
+    "id": "083",
+    "rank": 83,
+    "title": "Inspired",
+    "content": "How to create tech products customers love, from a veteran product leader.",
+    "explanation": "Marty Cagan explains modern product management, discovery and how strong product teams work. A substantially revised second edition followed later. Helpful for founders acting as their own product manager.",
+    "hook": "Most product ideas fail. Discovery is how you find the ones that won't.",
+    "tags": [
+      "Product & Validation",
+      "product-management",
+      "discovery",
+      "teams"
+    ],
+    "maker": "Marty Cagan",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Inspired+Marty+Cagan&tag=fs08-21"
+    }
+  },
+  {
+    "id": "084",
+    "rank": 84,
+    "title": "The Innovator's Dilemma",
+    "content": "Why great companies fail to respond to disruptive technologies, and where startups find their opening.",
+    "explanation": "Clayton Christensen introduced the theory of disruptive innovation. He shows how well-run incumbents can rationally ignore emerging markets. Explains why small players can win.",
+    "hook": "Why giants miss the very thing that beats them.",
+    "tags": [
+      "Product & Validation",
+      "disruption",
+      "strategy",
+      "incumbents"
+    ],
+    "maker": "Clayton M. Christensen",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Innovator%27s+Dilemma+Clayton+M.+Christensen&tag=fs08-21"
+    }
+  },
+  {
+    "id": "085",
+    "rank": 85,
+    "title": "Competing Against Luck",
+    "content": "The story of innovation and customer choice, built around jobs to be done.",
+    "explanation": "The authors argue that customers 'hire' products to make progress in specific circumstances. Understanding the job reveals what to build. A practical lens for niche product design.",
+    "hook": "People don't buy products. They hire them for a job.",
+    "tags": [
+      "Product & Validation",
+      "jobs-to-be-done",
+      "innovation",
+      "customer-insight"
+    ],
+    "maker": "Clayton M. Christensen, Taddy Hall, Karen Dillon and David S. Duncan",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Competing+Against+Luck+Clayton+M.+Christensen%2C+Taddy+Hall%2C+Karen+Dillon+and+David+S.+Duncan&tag=fs08-21"
+    }
+  },
+  {
+    "id": "086",
+    "rank": 86,
+    "title": "Human Compatible",
+    "content": "Artificial intelligence and the problem of control, from a leading AI researcher.",
+    "explanation": "Stuart Russell argues that AI systems should be designed to be uncertain about human preferences. He discusses risks of misaligned objectives. Useful context for founders building with AI.",
+    "hook": "What happens when AI pursues the wrong goal perfectly?",
+    "tags": [
+      "AI & Tech",
+      "ai-safety",
+      "alignment",
+      "research"
+    ],
+    "maker": "Stuart Russell",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Human+Compatible+Stuart+Russell&tag=fs08-21"
+    }
+  },
+  {
+    "id": "087",
+    "rank": 87,
+    "title": "Working in Public",
+    "content": "The making and maintenance of open source software, and what it teaches about online creators.",
+    "explanation": "Nadia Eghbal studies how open source projects are built and maintained, and how attention shapes them. She connects this to the wider creator economy. Insightful for founders building in public online.",
+    "hook": "What open source reveals about building an audience online.",
+    "tags": [
+      "AI & Tech",
+      "open-source",
+      "creators",
+      "community"
+    ],
+    "maker": "Nadia Eghbal",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Working+in+Public+Nadia+Eghbal&tag=fs08-21"
+    }
+  },
+  {
+    "id": "088",
+    "rank": 88,
+    "title": "Spark",
+    "content": "The revolutionary new science of exercise and the brain.",
+    "explanation": "John Ratey explains research linking aerobic exercise to mood, learning and stress resilience. The book makes a case for exercise as brain maintenance. A practical reason for founders to move daily.",
+    "hook": "Exercise is the cheapest brain upgrade you'll ever get.",
+    "tags": [
+      "Health & Energy",
+      "exercise",
+      "brain",
+      "mood"
+    ],
+    "maker": "John J. Ratey with Eric Hagerman",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Spark+John+J.+Ratey+with+Eric+Hagerman&tag=fs08-21"
+    }
+  },
+  {
+    "id": "089",
+    "rank": 89,
+    "title": "Creative Selection",
+    "content": "Inside Apple's design process during the golden age of Steve Jobs, from an iPhone software engineer.",
+    "explanation": "Ken Kocienda describes demo-driven development at Apple, including his work on iPhone keyboard software. He highlights iteration, taste and small teams. Inspiring for product-focused solo builders.",
+    "hook": "How the iPhone keyboard was built, one demo at a time.",
+    "tags": [
+      "Founder Stories",
+      "apple",
+      "design",
+      "iteration"
+    ],
+    "maker": "Ken Kocienda",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Creative+Selection+Ken+Kocienda&tag=fs08-21"
+    }
+  },
+  {
+    "id": "090",
+    "rank": 90,
+    "title": "Let My People Go Surfing",
+    "content": "The education of a reluctant businessman: Patagonia's founder on values-led business.",
+    "explanation": "Yvon Chouinard tells the story of Patagonia and the philosophy behind it. He argues a business can put quality, values and the environment first. A model for founders who want business on their terms.",
+    "hook": "The founder who never wanted to be a businessman.",
+    "tags": [
+      "Founder Stories",
+      "values",
+      "patagonia",
+      "purpose"
+    ],
+    "maker": "Yvon Chouinard",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Let+My+People+Go+Surfing+Yvon+Chouinard&tag=fs08-21"
+    }
+  },
+  {
+    "id": "091",
+    "rank": 91,
+    "title": "Losing My Virginity",
+    "content": "Richard Branson's autobiography, from student magazine to the Virgin empire.",
+    "explanation": "Richard Branson recounts launching a string of ventures under the Virgin brand. The book is full of risk-taking, setbacks and improvisation. A British founder story with lasting appeal in the UK.",
+    "hook": "From a student magazine to an airline. Branson's story.",
+    "tags": [
+      "Founder Stories",
+      "autobiography",
+      "risk",
+      "uk"
+    ],
+    "maker": "Richard Branson",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Losing+My+Virginity+Richard+Branson&tag=fs08-21"
+    }
+  },
+  {
+    "id": "092",
+    "rank": 92,
+    "title": "How to Win Friends and Influence People",
+    "content": "The enduring classic on getting along with people, building rapport and handling conflict.",
+    "explanation": "Dale Carnegie offers principles for being genuinely interested in others and handling people well. Its advice has survived for generations. Essential for founders whose network is their distribution.",
+    "hook": "Nearly a century old and still the best people skills manual.",
+    "tags": [
+      "Classics",
+      "relationships",
+      "communication",
+      "networking"
+    ],
+    "maker": "Dale Carnegie",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=How+to+Win+Friends+and+Influence+People+Dale+Carnegie&tag=fs08-21"
+    }
+  },
+  {
+    "id": "093",
+    "rank": 93,
+    "title": "Man's Search for Meaning",
+    "content": "A Holocaust survivor and psychiatrist on finding purpose in the worst circumstances.",
+    "explanation": "Viktor Frankl recounts his experiences in Nazi concentration camps and introduces logotherapy. His central claim is that meaning sustains people through suffering. Perspective for any founder's hard days.",
+    "hook": "Purpose kept him alive. What's yours?",
+    "tags": [
+      "Classics",
+      "meaning",
+      "resilience",
+      "psychology"
+    ],
+    "maker": "Viktor E. Frankl",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Man%27s+Search+for+Meaning+Viktor+E.+Frankl&tag=fs08-21"
+    }
+  },
+  {
+    "id": "094",
+    "rank": 94,
+    "title": "Letters from a Stoic",
+    "content": "Seneca's letters on time, wealth, friendship and how to live well.",
+    "explanation": "Written to his friend Lucilius, Seneca's letters cover practical stoic ethics. Themes include the value of time and facing adversity. Short letters suit a daily reading habit.",
+    "hook": "A 2,000-year-old letter on why you're wasting your time.",
+    "tags": [
+      "Classics",
+      "stoicism",
+      "time",
+      "philosophy"
+    ],
+    "maker": "Seneca",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Letters+from+a+Stoic+Seneca&tag=fs08-21"
+    }
+  },
+  {
+    "id": "095",
+    "rank": 95,
+    "title": "The 7 Habits of Highly Effective People",
+    "content": "Principles of personal effectiveness, from being proactive to beginning with the end in mind.",
+    "explanation": "Stephen Covey presents seven habits that move people from dependence to independence and interdependence. Concepts like the urgent-important matrix remain widely used. A foundational framework for self-management.",
+    "hook": "Begin with the end in mind. What does your business look like done?",
+    "tags": [
+      "Classics",
+      "effectiveness",
+      "principles",
+      "self-management"
+    ],
+    "maker": "Stephen R. Covey",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+7+Habits+of+Highly+Effective+People+Stephen+R.+Covey&tag=fs08-21"
+    }
+  },
+  {
+    "id": "096",
+    "rank": 96,
+    "title": "The Effective Executive",
+    "content": "Drucker on managing your time, focusing on contribution and making effective decisions.",
+    "explanation": "Peter Drucker argues that effectiveness can be learned. He covers knowing where your time goes, focusing on contribution and building on strengths. Concise and directly applicable to a solo operator.",
+    "hook": "Know where your time actually goes. Drucker shows how.",
+    "tags": [
+      "Classics",
+      "effectiveness",
+      "time",
+      "decisions"
+    ],
+    "maker": "Peter F. Drucker",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Effective+Executive+Peter+F.+Drucker&tag=fs08-21"
+    }
+  },
+  {
+    "id": "097",
+    "rank": 97,
+    "title": "The Richest Man in Babylon",
+    "content": "Timeless money lessons told as parables set in ancient Babylon.",
+    "explanation": "George Clason uses parables to teach saving a portion of income, controlling spending and investing wisely. The simple lessons have lasted nearly a century. A gentle first money book.",
+    "hook": "Pay yourself first: a money lesson nearly a century old.",
+    "tags": [
+      "Classics",
+      "saving",
+      "parables",
+      "personal-finance"
+    ],
+    "maker": "George S. Clason",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Richest+Man+in+Babylon+George+S.+Clason&tag=fs08-21"
+    }
+  },
+  {
+    "id": "098",
+    "rank": 98,
+    "title": "Poor Charlie's Almanack",
+    "content": "The wit and wisdom of Charlie Munger, including his talks on mental models and human misjudgement.",
+    "explanation": "This collection gathers Charlie Munger's talks and thinking, including his approach of using models from many disciplines. It includes his talk on the psychology of human misjudgement. A deep well for founders' decision-making.",
+    "hook": "Invert, always invert. Munger's mental models.",
+    "tags": [
+      "Classics",
+      "mental-models",
+      "investing",
+      "decision-making"
+    ],
+    "maker": "Charles T. Munger (ed. Peter D. Kaufman)",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Poor+Charlie%27s+Almanack+Charles+T.+Munger+%28ed.+Peter+D.+Kaufman%29&tag=fs08-21"
+    }
+  },
+  {
+    "id": "099",
+    "rank": 99,
+    "title": "Slow Productivity",
+    "content": "The lost art of accomplishment without burnout: do fewer things, work at a natural pace, obsess over quality.",
+    "explanation": "Cal Newport proposes three principles: do fewer things, work at a natural pace and obsess over quality. He draws on the working lives of traditional knowledge workers. A sustainable rhythm for one-person businesses.",
+    "hook": "Do fewer things. Work at a natural pace. Obsess over quality.",
+    "tags": [
+      "Systems & Productivity",
+      "sustainable-pace",
+      "quality",
+      "focus"
+    ],
+    "maker": "Cal Newport",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Slow+Productivity+Cal+Newport&tag=fs08-21"
+    }
+  }
+]

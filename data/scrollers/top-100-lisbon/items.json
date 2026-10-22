@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "001",
+    "rank": 1,
+    "title": "Jerónimos Monastery",
+    "content": "Manueline masterpiece and UNESCO World Heritage Site built with spice-trade wealth.",
+    "explanation": "The Hieronymites Monastery is the showpiece of Portugal's Manueline style, its cloister carved in limestone lace. Vasco da Gama's tomb lies inside the church of Santa Maria. Together with Belém Tower it forms a UNESCO World Heritage Site.",
+    "hook": "This cloister was paid for with pepper.",
+    "tags": [
+      "Landmarks & Monuments",
+      "unesco",
+      "manueline",
+      "belem"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Jer%C3%B3nimos+Monastery+Lisbon"
+    }
+  },
+  {
+    "id": "002",
+    "rank": 2,
+    "title": "Belém Tower",
+    "content": "16th-century riverside fortress and Lisbon's most photographed monument.",
+    "explanation": "Built to guard the Tagus approach in the early 1500s, the Torre de Belém is a UNESCO-listed icon of the Age of Discoveries. Its stone rhino gargoyle is said to reference the rhinoceros sent to Lisbon in 1515.",
+    "hook": "Find the stone rhino hiding on this tower.",
+    "tags": [
+      "Landmarks & Monuments",
+      "unesco",
+      "fortress",
+      "belem"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Bel%C3%A9m+Tower+Lisbon"
+    }
+  },
+  {
+    "id": "003",
+    "rank": 3,
+    "title": "São Jorge Castle",
+    "content": "Moorish hilltop castle with ramparts overlooking the whole city.",
+    "explanation": "Castelo de São Jorge crowns Lisbon's highest historic hill above Alfama. Walk the walls and towers for sweeping views of the Baixa and the Tagus, and look out for the resident peacocks.",
+    "hook": "The best view of Lisbon comes with peacocks.",
+    "tags": [
+      "Landmarks & Monuments",
+      "castle",
+      "moorish",
+      "views"
+    ],
+    "maker": "Castelo",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=S%C3%A3o+Jorge+Castle+Lisbon"
+    }
+  },
+  {
+    "id": "004",
+    "rank": 4,
+    "title": "Tram 28",
+    "content": "The classic yellow tram rattling through Graça, Alfama, Baixa and Estrela.",
+    "explanation": "Lisbon's most famous tram line threads vintage Remodelado carriages through narrow streets and steep hills. Ride early or late to dodge the queues, and keep an eye on your pockets.",
+    "hook": "The tram that squeezes through streets barely wider than it is.",
+    "tags": [
+      "Trams, Lifts & Rides",
+      "tram",
+      "iconic",
+      "alfama"
+    ],
+    "maker": "Graça to Campo de Ourique",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Tram+28+Lisbon"
+    }
+  },
+  {
+    "id": "005",
+    "rank": 5,
+    "title": "Alfama",
+    "content": "Lisbon's oldest quarter: a maze of alleys, laundry lines and fado bars.",
+    "explanation": "Alfama largely survived the 1755 earthquake, so its medieval street pattern still tumbles down from the castle to the river. Get lost on purpose, then follow the sound of fado at night.",
+    "hook": "Lisbon's oldest neighbourhood survived the 1755 earthquake.",
+    "tags": [
+      "Neighbourhoods",
+      "historic",
+      "stay",
+      "fado"
+    ],
+    "maker": "Alfama",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Alfama+Lisbon"
+    }
+  },
+  {
+    "id": "006",
+    "rank": 6,
+    "title": "Pastéis de Belém",
+    "content": "The bakery that has made custard tarts to a secret recipe since 1837.",
+    "explanation": "Antiga Confeitaria de Belém sells its pastéis de Belém warm with cinnamon and icing sugar. The recipe traces back to the monks of nearby Jerónimos Monastery. Eat in the tiled back rooms to skip the takeaway queue.",
+    "hook": "The custard tart recipe only a handful of people know.",
+    "tags": [
+      "Food & Drink",
+      "pastel-de-nata",
+      "bakery",
+      "belem"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Past%C3%A9is+de+Bel%C3%A9m+Lisbon"
+    }
+  },
+  {
+    "id": "007",
+    "rank": 7,
+    "title": "Day trip to Sintra",
+    "content": "Fairytale palaces and forested hills a short train ride from Rossio.",
+    "explanation": "The Cultural Landscape of Sintra is a UNESCO World Heritage Site packed with palaces, gardens and castles. Trains run from Rossio station; go early and book palace tickets ahead in high season.",
+    "hook": "The fairytale town 40 minutes from Lisbon.",
+    "tags": [
+      "Day Trips",
+      "unesco",
+      "palaces",
+      "train"
+    ],
+    "maker": "Sintra",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Day+trip+to+Sintra+Lisbon"
+    }
+  },
+  {
+    "id": "008",
+    "rank": 8,
+    "title": "Pena Palace",
+    "content": "Romanticist palace painted red and yellow on a peak above Sintra.",
+    "explanation": "Built for King Ferdinand II in the 19th century, Pena Palace mixes Gothic, Manueline and Moorish revival styles. Its terraces and surrounding park are among Portugal's most visited sights.",
+    "hook": "A real palace that looks like a cartoon.",
+    "tags": [
+      "Day Trips",
+      "sintra",
+      "palace",
+      "unesco"
+    ],
+    "maker": "Sintra",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Pena+Palace+Lisbon"
+    }
+  },
+  {
+    "id": "009",
+    "rank": 9,
+    "title": "Fado show in Alfama",
+    "content": "Hear Portugal's soulful, UNESCO-listed song tradition in an intimate tavern.",
+    "explanation": "Fado is inscribed on UNESCO's intangible heritage list and Alfama is one of its homes. Silence is expected while the fadista sings, accompanied by Portuguese guitar.",
+    "hook": "Why the room goes silent when fado starts.",
+    "tags": [
+      "Fado & Nightlife",
+      "fado",
+      "unesco",
+      "music"
+    ],
+    "maker": "Alfama",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Fado+show+in+Alfama+Lisbon"
+    }
+  },
+  {
+    "id": "010",
+    "rank": 10,
+    "title": "Miradouro de Santa Luzia",
+    "content": "Bougainvillea, azulejo panels and terracotta rooftops tumbling to the Tagus.",
+    "explanation": "This tiled terrace beside the Santa Luzia church is one of Lisbon's most romantic viewpoints. The tile panels show Praça do Comércio before the 1755 earthquake.",
+    "hook": "The viewpoint every Lisbon postcard steals.",
+    "tags": [
+      "Miradouros (Viewpoints)",
+      "free",
+      "views",
+      "azulejo"
+    ],
+    "maker": "Alfama",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Miradouro+de+Santa+Luzia+Lisbon"
+    }
+  },
+  {
+    "id": "011",
+    "rank": 11,
+    "title": "Quinta da Regaleira",
+    "content": "Mystical estate with an initiation well spiralling down into the earth.",
+    "explanation": "Built for millionaire António Augusto Carvalho Monteiro, the estate is full of grottoes, tunnels and symbolic architecture. Its Initiation Well is one of the most filmed spots in Portugal.",
+    "hook": "A spiral staircase nine floors into the ground.",
+    "tags": [
+      "Day Trips",
+      "sintra",
+      "well",
+      "gardens"
+    ],
+    "maker": "Sintra",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Quinta+da+Regaleira+Lisbon"
+    }
+  },
+  {
+    "id": "012",
+    "rank": 12,
+    "title": "Praça do Comércio",
+    "content": "Vast riverfront square where the royal palace stood before 1755.",
+    "explanation": "Rebuilt after the great earthquake as the grand gateway to Lisbon, the square opens straight onto the Tagus. Arcades in signature yellow frame the King José I statue.",
+    "hook": "The palace that stood here vanished in one morning.",
+    "tags": [
+      "Landmarks & Monuments",
+      "free",
+      "square",
+      "baixa"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Pra%C3%A7a+do+Com%C3%A9rcio+Lisbon"
+    }
+  },
+  {
+    "id": "013",
+    "rank": 13,
+    "title": "National Tile Museum",
+    "content": "Five centuries of azulejos inside a former convent.",
+    "explanation": "The Museu Nacional do Azulejo traces Portuguese tile-making from the 15th century onwards. Highlights include a giant tiled panorama of pre-earthquake Lisbon and the gilded Madre de Deus church.",
+    "hook": "A 23-metre tile picture of Lisbon before it fell.",
+    "tags": [
+      "Museums & Art",
+      "azulejo",
+      "museum",
+      "convent"
+    ],
+    "maker": "Xabregas",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=National+Tile+Museum+Lisbon"
+    }
+  },
+  {
+    "id": "014",
+    "rank": 14,
+    "title": "Calouste Gulbenkian Museum",
+    "content": "A world-class private collection from Egyptian antiquities to Lalique jewellery.",
+    "explanation": "Oil magnate Calouste Gulbenkian left his collection to Portugal, and it is displayed in a modernist building set in landscaped gardens. It spans ancient art, Islamic ceramics, European painting and René Lalique.",
+    "hook": "One oil tycoon's art collection, now Portugal's.",
+    "tags": [
+      "Museums & Art",
+      "art",
+      "collection",
+      "gardens"
+    ],
+    "maker": "Avenidas Novas",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Calouste+Gulbenkian+Museum+Lisbon"
+    }
+  },
+  {
+    "id": "015",
+    "rank": 15,
+    "title": "Bairro Alto",
+    "content": "Grid of narrow streets that turns into one big street party after dark.",
+    "explanation": "By day Bairro Alto is quiet and residential; at night its bars spill drinkers into the lanes. It is also home to small fado houses and independent shops.",
+    "hook": "Quiet by day, Lisbon's street party by night.",
+    "tags": [
+      "Neighbourhoods",
+      "nightlife",
+      "stay",
+      "bars"
+    ],
+    "maker": "Bairro Alto",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Bairro+Alto+Lisbon"
+    }
+  },
+  {
+    "id": "016",
+    "rank": 16,
+    "title": "Miradouro da Senhora do Monte",
+    "content": "One of Lisbon's highest viewpoints, facing the castle at sunset.",
+    "explanation": "Above Graça, this pine-shaded lookout gives a wide panorama across the city to the castle and river. Locals rate it as one of the best sunset spots.",
+    "hook": "The highest free sunset seat in Lisbon.",
+    "tags": [
+      "Miradouros (Viewpoints)",
+      "free",
+      "sunset",
+      "views"
+    ],
+    "maker": "Graça",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Miradouro+da+Senhora+do+Monte+Lisbon"
+    }
+  },
+  {
+    "id": "017",
+    "rank": 17,
+    "title": "Lisbon Oceanarium",
+    "content": "One of Europe's largest aquariums, built around a vast central ocean tank.",
+    "explanation": "Built for Expo 98, the Oceanário de Lisboa is organised around a huge central tank surrounded by habitats representing different oceans. Sunfish, sharks and sea otters are favourites.",
+    "hook": "One giant tank, four oceans around it.",
+    "tags": [
+      "Landmarks & Monuments",
+      "family",
+      "aquarium",
+      "expo98"
+    ],
+    "maker": "Parque das Nações",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Lisbon+Oceanarium+Lisbon"
+    }
+  },
+  {
+    "id": "018",
+    "rank": 18,
+    "title": "Chiado",
+    "content": "Elegant quarter of historic cafés, theatres and bookshops.",
+    "explanation": "Chiado links the Baixa and Bairro Alto with grand shopfronts and literary history. Rebuilt after a major fire in 1988, it remains the city's smart shopping and café district.",
+    "hook": "Lisbon's literary living room.",
+    "tags": [
+      "Neighbourhoods",
+      "cafes",
+      "stay",
+      "shopping"
+    ],
+    "maker": "Chiado",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Chiado+Lisbon"
+    }
+  },
+  {
+    "id": "019",
+    "rank": 19,
+    "title": "Cascais",
+    "content": "Seaside resort town with beaches, a marina and a coastal promenade.",
+    "explanation": "Cascais is an easy train ride along the coast from Cais do Sodré. Once a royal summer retreat, it mixes beaches, old town lanes and museums.",
+    "hook": "The beach town Lisbon escapes to by train.",
+    "tags": [
+      "Day Trips",
+      "beach",
+      "train",
+      "coast"
+    ],
+    "maker": "Cascais",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Cascais+Lisbon"
+    }
+  },
+  {
+    "id": "020",
+    "rank": 20,
+    "title": "Time Out Market Lisboa",
+    "content": "Food hall inside the historic Mercado da Ribeira with stalls from local chefs.",
+    "explanation": "The Time Out Market brings stalls from well-known Lisbon restaurants and chefs under one roof. The traditional fresh market still operates in the other part of the building.",
+    "hook": "Lisbon's best chefs under one roof.",
+    "tags": [
+      "Food & Drink",
+      "food-hall",
+      "market",
+      "cais-do-sodre"
+    ],
+    "maker": "Cais do Sodré",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Time+Out+Market+Lisboa+Lisbon"
+    }
+  },
+  {
+    "id": "021",
+    "rank": 21,
+    "title": "Rua Augusta Arch",
+    "content": "Triumphal arch with a rooftop terrace overlooking Praça do Comércio.",
+    "explanation": "The Arco da Rua Augusta was completed in the 19th century to mark the city's rebuilding after 1755. A lift and stairs lead to a terrace with views along Rua Augusta and over the river.",
+    "hook": "Climb inside the arch for the square's best angle.",
+    "tags": [
+      "Landmarks & Monuments",
+      "arch",
+      "views",
+      "baixa"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Rua+Augusta+Arch+Lisbon"
+    }
+  },
+  {
+    "id": "022",
+    "rank": 22,
+    "title": "Santa Justa Lift",
+    "content": "Neo-Gothic iron elevator lifting passengers from the Baixa towards Carmo.",
+    "explanation": "Designed by Raoul Mesnier du Ponsard and opened in 1902, the Elevador de Santa Justa is part of the public transport network. The top platform looks over the Baixa and castle.",
+    "hook": "A 1902 iron lift that's still public transport.",
+    "tags": [
+      "Trams, Lifts & Rides",
+      "lift",
+      "iron",
+      "views"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Santa+Justa+Lift+Lisbon"
+    }
+  },
+  {
+    "id": "023",
+    "rank": 23,
+    "title": "MAAT",
+    "content": "Riverside museum of art, architecture and technology with a walkable wave roof.",
+    "explanation": "The MAAT's curved building by Amanda Levete sits beside the Tagus, linked to the old Tejo Power Station. Visitors can walk over its roof for river and bridge views.",
+    "hook": "A museum you're allowed to walk on top of.",
+    "tags": [
+      "Museums & Art",
+      "architecture",
+      "contemporary",
+      "river"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=MAAT+Lisbon"
+    }
+  },
+  {
+    "id": "024",
+    "rank": 24,
+    "title": "Padrão dos Descobrimentos",
+    "content": "Monument to the Age of Discoveries shaped like a caravel's prow.",
+    "explanation": "The Monument to the Discoveries depicts Henry the Navigator leading figures from Portugal's maritime past. A lift goes to a viewpoint at the top, and a giant compass-rose map is set into the pavement below.",
+    "hook": "A giant stone ship sailing out of Belém.",
+    "tags": [
+      "Landmarks & Monuments",
+      "monument",
+      "views",
+      "belem"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Padr%C3%A3o+dos+Descobrimentos+Lisbon"
+    }
+  },
+  {
+    "id": "025",
+    "rank": 25,
+    "title": "Miradouro de São Pedro de Alcântara",
+    "content": "Two-level garden terrace facing the castle across the Baixa.",
+    "explanation": "At the top of the Glória funicular, this tree-lined terrace looks east across the city to São Jorge Castle. A kiosk makes it an easy evening stop.",
+    "hook": "Ride the funicular, then look at the castle.",
+    "tags": [
+      "Miradouros (Viewpoints)",
+      "free",
+      "views",
+      "garden"
+    ],
+    "maker": "Bairro Alto",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Miradouro+de+S%C3%A3o+Pedro+de+Alc%C3%A2ntara+Lisbon"
+    }
+  },
+  {
+    "id": "026",
+    "rank": 26,
+    "title": "Lisbon Cathedral",
+    "content": "Fortress-like 12th-century Sé, the city's oldest church.",
+    "explanation": "The Sé de Lisboa was begun after the Christian reconquest in 1147. Its Romanesque towers, Gothic cloister and archaeological excavations reveal layers of Lisbon's history.",
+    "hook": "Lisbon's oldest church looks like a fortress.",
+    "tags": [
+      "Landmarks & Monuments",
+      "church",
+      "romanesque",
+      "alfama"
+    ],
+    "maker": "Sé",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Lisbon+Cathedral+Lisbon"
+    }
+  },
+  {
+    "id": "027",
+    "rank": 27,
+    "title": "National Museum of Ancient Art",
+    "content": "Portugal's national collection of old masters, including the Panels of São Vicente.",
+    "explanation": "The MNAA in a palace on Rua das Janelas Verdes holds the Panels of São Vicente and Bosch's Temptation of St Anthony. Its garden café looks over the river.",
+    "hook": "Bosch's nightmare painting lives in Lisbon.",
+    "tags": [
+      "Museums & Art",
+      "art",
+      "old-masters",
+      "lapa"
+    ],
+    "maker": "Lapa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=National+Museum+of+Ancient+Art+Lisbon"
+    }
+  },
+  {
+    "id": "028",
+    "rank": 28,
+    "title": "Príncipe Real",
+    "content": "Leafy, upmarket area of concept stores, mansions and garden squares.",
+    "explanation": "Príncipe Real is known for its 19th-century palaces, design shops and the giant cedar in its central garden. It is a calmer stay base close to Bairro Alto.",
+    "hook": "Lisbon's chicest square has a cedar tree for a roof.",
+    "tags": [
+      "Neighbourhoods",
+      "stay",
+      "design",
+      "shopping"
+    ],
+    "maker": "Príncipe Real",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Pr%C3%ADncipe+Real+Lisbon"
+    }
+  },
+  {
+    "id": "029",
+    "rank": 29,
+    "title": "LX Factory",
+    "content": "Former industrial complex turned creative hub of shops, cafés and studios.",
+    "explanation": "Under the 25 de Abril Bridge, the LX Factory fills old factory buildings with independent stores, restaurants and street art. Livraria Ler Devagar, a bookshop in a former printworks, is a highlight.",
+    "hook": "An old factory where a bicycle flies over a bookshop.",
+    "tags": [
+      "Markets & Shops",
+      "creative",
+      "street-art",
+      "books"
+    ],
+    "maker": "Alcântara",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=LX+Factory+Lisbon"
+    }
+  },
+  {
+    "id": "030",
+    "rank": 30,
+    "title": "Sunset sail on the Tagus",
+    "content": "See Belém, the bridge and Cristo Rei from the water at golden hour.",
+    "explanation": "Sailing boats leave from the Lisbon marinas for river cruises past the main waterfront monuments. Sunset departures are the most popular.",
+    "hook": "Lisbon is best seen from the river.",
+    "tags": [
+      "Tours & Experiences",
+      "boat",
+      "sunset",
+      "river"
+    ],
+    "maker": "Tagus River",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Sunset+sail+on+the+Tagus+Lisbon"
+    }
+  },
+  {
+    "id": "031",
+    "rank": 31,
+    "title": "Cristo Rei",
+    "content": "Giant Christ statue across the river with a viewing platform above the Tagus.",
+    "explanation": "Inaugurated in 1959 and inspired by Rio's Christ the Redeemer, Cristo Rei stands on the south bank in Almada. A lift takes visitors to a platform with views of Lisbon and the bridge.",
+    "hook": "Lisbon has its own Christ the Redeemer.",
+    "tags": [
+      "Landmarks & Monuments",
+      "statue",
+      "views",
+      "almada"
+    ],
+    "maker": "Almada",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Cristo+Rei+Lisbon"
+    }
+  },
+  {
+    "id": "032",
+    "rank": 32,
+    "title": "Mouraria",
+    "content": "Multicultural old quarter regarded as the birthplace of fado.",
+    "explanation": "Below the castle, Mouraria is where the Moors were resettled after 1147. Today its streets mix multicultural eateries with fado heritage, including tributes to Maria Severa.",
+    "hook": "The neighbourhood where fado was born.",
+    "tags": [
+      "Neighbourhoods",
+      "fado",
+      "multicultural",
+      "stay"
+    ],
+    "maker": "Mouraria",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Mouraria+Lisbon"
+    }
+  },
+  {
+    "id": "033",
+    "rank": 33,
+    "title": "Ginjinha in Rossio",
+    "content": "Knock back a shot of sour-cherry liqueur at a tiny counter bar.",
+    "explanation": "Ginjinha is Lisbon's sour-cherry liqueur, served in a small glass, with or without the fruit. A Ginjinha by Largo de São Domingos has poured it for generations.",
+    "hook": "Lisbon's favourite shot, served at a hole in the wall.",
+    "tags": [
+      "Food & Drink",
+      "drink",
+      "cherry",
+      "rossio"
+    ],
+    "maker": "Rossio",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Ginjinha+in+Rossio+Lisbon"
+    }
+  },
+  {
+    "id": "034",
+    "rank": 34,
+    "title": "Cabo da Roca",
+    "content": "Wind-blasted cliffs at mainland Europe's westernmost point.",
+    "explanation": "Cabo da Roca is the westernmost point of mainland Europe, marked by a lighthouse and monument. It is often combined with Sintra and Cascais on a coastal loop.",
+    "hook": "Stand at the end of continental Europe.",
+    "tags": [
+      "Day Trips",
+      "cliffs",
+      "coast",
+      "sintra"
+    ],
+    "maker": "Sintra coast",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Cabo+da+Roca+Lisbon"
+    }
+  },
+  {
+    "id": "035",
+    "rank": 35,
+    "title": "Rossio Square",
+    "content": "Lisbon's lively central square with wave-patterned cobbles and baroque fountains.",
+    "explanation": "Officially Praça Dom Pedro IV, Rossio is famous for its wave-pattern calçada portuguesa paving. The neo-Manueline Rossio station facade sits just off the square.",
+    "hook": "These cobbles were laid to make you seasick.",
+    "tags": [
+      "Landmarks & Monuments",
+      "free",
+      "square",
+      "calcada"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Rossio+Square+Lisbon"
+    }
+  },
+  {
+    "id": "036",
+    "rank": 36,
+    "title": "Lisbon food tour",
+    "content": "Graze through petiscos, cured meats, cheeses and wines with a local guide.",
+    "explanation": "Guided food walks visit tascas, delis and bakeries across neighbourhoods such as Alfama, Mouraria and Baixa. A good way to try bifanas, bacalhau, ginjinha and more in one outing.",
+    "hook": "Eat your way through Lisbon in three hours.",
+    "tags": [
+      "Tours & Experiences",
+      "food",
+      "walking",
+      "guided"
+    ],
+    "maker": "Lisbon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Lisbon+food+tour+Lisbon"
+    }
+  },
+  {
+    "id": "037",
+    "rank": 37,
+    "title": "Monserrate Palace",
+    "content": "Exotic 19th-century palace set in botanical gardens of world flora.",
+    "explanation": "Monserrate blends Gothic, Indian and Moorish influences in an ornate summer palace. Its gardens hold plants from around the world.",
+    "hook": "Sintra's most underrated palace.",
+    "tags": [
+      "Day Trips",
+      "sintra",
+      "gardens",
+      "palace"
+    ],
+    "maker": "Sintra",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Monserrate+Palace+Lisbon"
+    }
+  },
+  {
+    "id": "038",
+    "rank": 38,
+    "title": "Moorish Castle",
+    "content": "Ramparts snaking over a granite ridge high above Sintra.",
+    "explanation": "The Castelo dos Mouros was built in the medieval period and restored in the 19th century. Its walls offer views to Pena Palace and the Atlantic coast.",
+    "hook": "Walk a castle wall along a mountain ridge.",
+    "tags": [
+      "Day Trips",
+      "sintra",
+      "castle",
+      "views"
+    ],
+    "maker": "Sintra",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Moorish+Castle+Lisbon"
+    }
+  },
+  {
+    "id": "039",
+    "rank": 39,
+    "title": "Miradouro da Graça",
+    "content": "Pine-shaded terrace with a kiosk and sunset view over the castle and Baixa.",
+    "explanation": "Officially named after poet Sophia de Mello Breyner Andresen, this viewpoint sits beside the Graça church and convent. A popular spot for an evening drink.",
+    "hook": "Sunset drinks under pine trees, castle opposite.",
+    "tags": [
+      "Miradouros (Viewpoints)",
+      "free",
+      "sunset",
+      "kiosk"
+    ],
+    "maker": "Graça",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Miradouro+da+Gra%C3%A7a+Lisbon"
+    }
+  },
+  {
+    "id": "040",
+    "rank": 40,
+    "title": "National Pantheon",
+    "content": "Gleaming white dome where Portugal's national heroes rest.",
+    "explanation": "The Church of Santa Engrácia took centuries to complete, inspiring a Portuguese saying about never-ending works. Today it is the National Pantheon, with a terrace looking over the river.",
+    "hook": "The church so slow to build it became a proverb.",
+    "tags": [
+      "Landmarks & Monuments",
+      "dome",
+      "views",
+      "history"
+    ],
+    "maker": "São Vicente",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=National+Pantheon+Lisbon"
+    }
+  },
+  {
+    "id": "041",
+    "rank": 41,
+    "title": "Belém neighbourhood",
+    "content": "Riverside district of monuments, museums and gardens west of the centre.",
+    "explanation": "Belém concentrates the Discoveries-era monuments, major museums and leafy gardens. It is easy to reach by tram 15 from Praça da Figueira or Praça do Comércio.",
+    "hook": "Where Portugal launched its ships.",
+    "tags": [
+      "Neighbourhoods",
+      "stay",
+      "monuments",
+      "river"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Bel%C3%A9m+neighbourhood+Lisbon"
+    }
+  },
+  {
+    "id": "042",
+    "rank": 42,
+    "title": "Feira da Ladra",
+    "content": "Lisbon's flea market spread around Campo de Santa Clara.",
+    "explanation": "The Thieves' Market sells vintage tiles, records, clothes and curios beside the National Pantheon. Go on market days and haggle politely.",
+    "hook": "The thieves' market sells everything but stolen goods.",
+    "tags": [
+      "Markets & Shops",
+      "flea-market",
+      "vintage",
+      "alfama"
+    ],
+    "maker": "São Vicente",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Feira+da+Ladra+Lisbon"
+    }
+  },
+  {
+    "id": "043",
+    "rank": 43,
+    "title": "Ajuda National Palace",
+    "content": "19th-century royal residence with lavish state rooms.",
+    "explanation": "The Palácio Nacional da Ajuda was home to the Portuguese royal family in the late 1800s. It now also houses the Royal Treasure Museum and its crown jewels.",
+    "hook": "The crown jewels in a vault built for them.",
+    "tags": [
+      "Landmarks & Monuments",
+      "palace",
+      "royal",
+      "treasure"
+    ],
+    "maker": "Ajuda",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Ajuda+National+Palace+Lisbon"
+    }
+  },
+  {
+    "id": "044",
+    "rank": 44,
+    "title": "Cais do Sodré",
+    "content": "Former sailors' district turned riverside hub of bars and transport.",
+    "explanation": "Cais do Sodré connects trains to Cascais and ferries across the Tagus. Once rough-edged, it is now home to the Time Out Market and Pink Street's bars.",
+    "hook": "From sailors' dive bars to Lisbon's party street.",
+    "tags": [
+      "Neighbourhoods",
+      "stay",
+      "transport",
+      "nightlife"
+    ],
+    "maker": "Cais do Sodré",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Cais+do+Sodr%C3%A9+Lisbon"
+    }
+  },
+  {
+    "id": "045",
+    "rank": 45,
+    "title": "Pink Street",
+    "content": "Rua Nova do Carvalho, a pink-painted street of late-night bars.",
+    "explanation": "Pink Street's painted asphalt marks the heart of Cais do Sodré nightlife. Its bars occupy former sailors' haunts.",
+    "hook": "A street painted pink to fix its reputation.",
+    "tags": [
+      "Fado & Nightlife",
+      "bars",
+      "nightlife",
+      "free"
+    ],
+    "maker": "Cais do Sodré",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Pink+Street+Lisbon"
+    }
+  },
+  {
+    "id": "046",
+    "rank": 46,
+    "title": "Elevador da Bica",
+    "content": "Funicular climbing one of Lisbon's most photographed streets.",
+    "explanation": "Opened in 1892, the Bica funicular runs up Rua da Bica de Duarte Belo between Rua de São Paulo and Calçada do Combro. The view down the street to the river is a classic photo.",
+    "hook": "Lisbon's most photographed street has a funicular.",
+    "tags": [
+      "Trams, Lifts & Rides",
+      "funicular",
+      "photo",
+      "bica"
+    ],
+    "maker": "Bica",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Elevador+da+Bica+Lisbon"
+    }
+  },
+  {
+    "id": "047",
+    "rank": 47,
+    "title": "Museu Nacional dos Coches",
+    "content": "One of the world's finest collections of royal coaches and carriages.",
+    "explanation": "The National Coach Museum shows ceremonial carriages from the 16th to 19th centuries. The collection is split between a modern building and the historic Royal Riding School.",
+    "hook": "Gold-plated coaches built to impress a Pope.",
+    "tags": [
+      "Museums & Art",
+      "royal",
+      "carriages",
+      "belem"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Museu+Nacional+dos+Coches+Lisbon"
+    }
+  },
+  {
+    "id": "048",
+    "rank": 48,
+    "title": "Miradouro de Santa Catarina",
+    "content": "Laid-back terrace watched over by the giant Adamastor statue.",
+    "explanation": "Known locally as Adamastor after its statue of the mythical sea giant, this viewpoint looks over the river to the bridge. Popular with locals at sunset.",
+    "hook": "The sea monster statue guarding a sunset.",
+    "tags": [
+      "Miradouros (Viewpoints)",
+      "free",
+      "sunset",
+      "bridge"
+    ],
+    "maker": "Santa Catarina",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Miradouro+de+Santa+Catarina+Lisbon"
+    }
+  },
+  {
+    "id": "049",
+    "rank": 49,
+    "title": "Jardim da Estrela",
+    "content": "Romantic 19th-century garden with a bandstand, duck pond and café kiosks.",
+    "explanation": "Opposite the Basílica da Estrela, this garden has exotic trees, a cast-iron bandstand and play areas. Tram 28 stops right outside.",
+    "hook": "Lisbon's prettiest picnic stop is on Tram 28.",
+    "tags": [
+      "Parks & Gardens",
+      "garden",
+      "free",
+      "family"
+    ],
+    "maker": "Estrela",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Jardim+da+Estrela+Lisbon"
+    }
+  },
+  {
+    "id": "050",
+    "rank": 50,
+    "title": "Carmo Convent ruins",
+    "content": "Roofless Gothic church left as a memorial to the 1755 earthquake.",
+    "explanation": "The Convento do Carmo's nave lost its roof in the earthquake and was never rebuilt. The chancel houses the Carmo Archaeological Museum.",
+    "hook": "A church left roofless since 1755.",
+    "tags": [
+      "Landmarks & Monuments",
+      "ruins",
+      "earthquake",
+      "gothic"
+    ],
+    "maker": "Chiado",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Carmo+Convent+ruins+Lisbon"
+    }
+  },
+  {
+    "id": "051",
+    "rank": 51,
+    "title": "Museu do Fado",
+    "content": "The history of fado told through recordings, instruments and portraits.",
+    "explanation": "The Fado Museum traces the music from its 19th-century origins to Amália Rodrigues and beyond. Listening stations let you hear the great voices.",
+    "hook": "Hear Amália before you hear fado live.",
+    "tags": [
+      "Museums & Art",
+      "fado",
+      "music",
+      "alfama"
+    ],
+    "maker": "Alfama",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Museu+do+Fado+Lisbon"
+    }
+  },
+  {
+    "id": "052",
+    "rank": 52,
+    "title": "Belém riverside walk",
+    "content": "Stroll the Tagus promenade from MAAT to Belém Tower.",
+    "explanation": "The riverside path connects the main Belém sights, passing the MAAT, the Padrão dos Descobrimentos and the Belém Tower. Flat and easy for walking or cycling.",
+    "hook": "The flattest walk in Lisbon passes three icons.",
+    "tags": [
+      "Beaches & Coast",
+      "free",
+      "walk",
+      "river"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Bel%C3%A9m+riverside+walk+Lisbon"
+    }
+  },
+  {
+    "id": "053",
+    "rank": 53,
+    "title": "Parque das Nações",
+    "content": "Modern riverside district built for Expo 98 with promenades and architecture.",
+    "explanation": "The former Expo 98 site has Santiago Calatrava's Oriente station, the Oceanarium and a long riverside promenade near the Vasco da Gama Bridge.",
+    "hook": "The Lisbon built for a world fair.",
+    "tags": [
+      "Neighbourhoods",
+      "modern",
+      "stay",
+      "expo98"
+    ],
+    "maker": "Parque das Nações",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Parque+das+Na%C3%A7%C3%B5es+Lisbon"
+    }
+  },
+  {
+    "id": "054",
+    "rank": 54,
+    "title": "Telecabine Lisboa",
+    "content": "Cable car gliding along the riverfront at Parque das Nações.",
+    "explanation": "Built for Expo 98, the cable car runs above the Tagus waterfront between the Oceanarium area and the Vasco da Gama Tower.",
+    "hook": "A cable car over the Tagus.",
+    "tags": [
+      "Trams, Lifts & Rides",
+      "cable-car",
+      "views",
+      "family"
+    ],
+    "maker": "Parque das Nações",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Telecabine+Lisboa+Lisbon"
+    }
+  },
+  {
+    "id": "055",
+    "rank": 55,
+    "title": "Tile painting workshop",
+    "content": "Paint your own azulejo tile to take home.",
+    "explanation": "Several Lisbon studios run hands-on azulejo workshops where you learn traditional techniques and paint a tile that is fired for you.",
+    "hook": "Take home a tile you painted yourself.",
+    "tags": [
+      "Tours & Experiences",
+      "workshop",
+      "azulejo",
+      "hands-on"
+    ],
+    "maker": "Lisbon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Tile+painting+workshop+Lisbon"
+    }
+  },
+  {
+    "id": "056",
+    "rank": 56,
+    "title": "Pastel de nata baking class",
+    "content": "Learn to make custard tarts from scratch with a local baker.",
+    "explanation": "Cooking schools in Lisbon offer pastel de nata classes covering the laminated pastry and the custard. You eat what you bake.",
+    "hook": "Learn the custard tart nobody can stop eating.",
+    "tags": [
+      "Tours & Experiences",
+      "cooking",
+      "pastel-de-nata",
+      "hands-on"
+    ],
+    "maker": "Lisbon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Pastel+de+nata+baking+class+Lisbon"
+    }
+  },
+  {
+    "id": "057",
+    "rank": 57,
+    "title": "Aqueduto das Águas Livres",
+    "content": "18th-century aqueduct whose stone arches survived the 1755 earthquake.",
+    "explanation": "The Águas Livres Aqueduct brought water to Lisbon and stands tall over the Alcântara valley. Parts of it can be walked as part of the Water Museum.",
+    "hook": "The aqueduct that shrugged off the earthquake.",
+    "tags": [
+      "Landmarks & Monuments",
+      "aqueduct",
+      "engineering",
+      "history"
+    ],
+    "maker": "Campolide",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Aqueduto+das+%C3%81guas+Livres+Lisbon"
+    }
+  },
+  {
+    "id": "058",
+    "rank": 58,
+    "title": "Tuk-tuk tour",
+    "content": "Zip up Lisbon's hills in an electric tuk-tuk.",
+    "explanation": "Tuk-tuks are a popular way to cover the steep historic neighbourhoods quickly, with drivers acting as guides to viewpoints and hidden corners.",
+    "hook": "The lazy way up all seven hills.",
+    "tags": [
+      "Tours & Experiences",
+      "guided",
+      "hills",
+      "electric"
+    ],
+    "maker": "Lisbon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Tuk-tuk+tour+Lisbon"
+    }
+  },
+  {
+    "id": "059",
+    "rank": 59,
+    "title": "Elevador da Glória",
+    "content": "Graffiti-covered funicular from Restauradores to Bairro Alto.",
+    "explanation": "Opened in 1885, the Glória funicular links Praça dos Restauradores to the São Pedro de Alcântara viewpoint. Its carriages are often covered in street art.",
+    "hook": "A funicular that doubles as street art.",
+    "tags": [
+      "Trams, Lifts & Rides",
+      "funicular",
+      "graffiti",
+      "bairro-alto"
+    ],
+    "maker": "Restauradores",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Elevador+da+Gl%C3%B3ria+Lisbon"
+    }
+  },
+  {
+    "id": "060",
+    "rank": 60,
+    "title": "Évora",
+    "content": "UNESCO-listed Alentejo city with a Roman temple and a chapel of bones.",
+    "explanation": "Évora's historic centre is a UNESCO World Heritage Site featuring a Roman temple and the Capela dos Ossos, lined with human bones. A popular day trip east of Lisbon.",
+    "hook": "A chapel built from human bones.",
+    "tags": [
+      "Day Trips",
+      "unesco",
+      "roman",
+      "alentejo"
+    ],
+    "maker": "Alentejo",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=%C3%89vora+Lisbon"
+    }
+  },
+  {
+    "id": "061",
+    "rank": 61,
+    "title": "Óbidos",
+    "content": "Walled medieval village of whitewashed houses and cherry liqueur.",
+    "explanation": "Óbidos is famous for its intact walls, flower-draped lanes and ginja served in chocolate cups. It is often paired with Nazaré and Fátima on day tours.",
+    "hook": "Cherry liqueur in an edible chocolate cup.",
+    "tags": [
+      "Day Trips",
+      "medieval",
+      "village",
+      "ginja"
+    ],
+    "maker": "Óbidos",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=%C3%93bidos+Lisbon"
+    }
+  },
+  {
+    "id": "062",
+    "rank": 62,
+    "title": "Gulbenkian Garden",
+    "content": "Modernist garden of ponds, paths and amphitheatre around the foundation.",
+    "explanation": "The Jardim Gulbenkian is a landmark of Portuguese landscape architecture, laid out around the Calouste Gulbenkian Foundation buildings. Free to wander.",
+    "hook": "A city-centre garden built like a forest.",
+    "tags": [
+      "Parks & Gardens",
+      "garden",
+      "free",
+      "modernist"
+    ],
+    "maker": "Avenidas Novas",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Gulbenkian+Garden+Lisbon"
+    }
+  },
+  {
+    "id": "063",
+    "rank": 63,
+    "title": "Nazaré",
+    "content": "Fishing town famous for record-breaking big-wave surfing.",
+    "explanation": "Nazaré's Praia do Norte produces some of the largest surfed waves in the world in winter. The Fort of São Miguel Arcanjo is the classic watching point.",
+    "hook": "Home of the biggest waves ever surfed.",
+    "tags": [
+      "Day Trips",
+      "surf",
+      "waves",
+      "coast"
+    ],
+    "maker": "Nazaré",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Nazar%C3%A9+Lisbon"
+    }
+  },
+  {
+    "id": "064",
+    "rank": 64,
+    "title": "Surf lesson at Costa da Caparica",
+    "content": "Learn to surf on the long beaches just south of the river.",
+    "explanation": "Surf schools on Costa da Caparica run beginner lessons with boards and wetsuits included. It is reachable from Lisbon by bus or ferry plus bus.",
+    "hook": "Surf lesson, then dinner in Lisbon.",
+    "tags": [
+      "Beaches & Coast",
+      "surf",
+      "beach",
+      "lesson"
+    ],
+    "maker": "Costa da Caparica",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Surf+lesson+at+Costa+da+Caparica+Lisbon"
+    }
+  },
+  {
+    "id": "065",
+    "rank": 65,
+    "title": "Costa da Caparica",
+    "content": "Miles of Atlantic beach just across the bridge from the city.",
+    "explanation": "The long sandy coast south of the Tagus is Lisbon's go-to beach escape, with beach bars and surf schools along its length.",
+    "hook": "Lisbon's backyard beach is 30km long.",
+    "tags": [
+      "Beaches & Coast",
+      "beach",
+      "free",
+      "surf"
+    ],
+    "maker": "Almada",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Costa+da+Caparica+Lisbon"
+    }
+  },
+  {
+    "id": "066",
+    "rank": 66,
+    "title": "Pilar 7 Bridge Experience",
+    "content": "Glass-floored viewpoint inside a pillar of the 25 de Abril Bridge.",
+    "explanation": "The Pilar 7 experience takes visitors up inside a support pillar of the 25 de Abril Bridge to a glass-floored platform with views over the Tagus.",
+    "hook": "Stand on glass under a suspension bridge.",
+    "tags": [
+      "Landmarks & Monuments",
+      "bridge",
+      "views",
+      "glass-floor"
+    ],
+    "maker": "Alcântara",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Pilar+7+Bridge+Experience+Lisbon"
+    }
+  },
+  {
+    "id": "067",
+    "rank": 67,
+    "title": "Arrábida and Setúbal",
+    "content": "Turquoise coves, limestone hills and dolphin-watching in the Sado estuary.",
+    "explanation": "The Arrábida Natural Park has some of Portugal's most beautiful beaches. The nearby Sado estuary at Setúbal is home to a resident population of bottlenose dolphins.",
+    "hook": "Wild dolphins an hour from Lisbon.",
+    "tags": [
+      "Day Trips",
+      "nature",
+      "dolphins",
+      "beaches"
+    ],
+    "maker": "Setúbal",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Arr%C3%A1bida+and+Set%C3%BAbal+Lisbon"
+    }
+  },
+  {
+    "id": "068",
+    "rank": 68,
+    "title": "Mafra National Palace",
+    "content": "Colossal baroque palace-convent with a famous rococo library.",
+    "explanation": "The Palace of Mafra is a UNESCO World Heritage Site. Its library holds tens of thousands of books and a colony of bats that help protect them from insects.",
+    "hook": "The library protected by bats.",
+    "tags": [
+      "Day Trips",
+      "unesco",
+      "baroque",
+      "library"
+    ],
+    "maker": "Mafra",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Mafra+National+Palace+Lisbon"
+    }
+  },
+  {
+    "id": "069",
+    "rank": 69,
+    "title": "CAM – Gulbenkian Modern Collection",
+    "content": "Modern and contemporary art centre reopened with a Kengo Kuma redesign.",
+    "explanation": "The Centro de Arte Moderna holds the leading collection of modern Portuguese art. Its revamped building and garden by Kengo Kuma reopened in 2024.",
+    "hook": "Kengo Kuma redesigned Lisbon's modern art house.",
+    "tags": [
+      "Museums & Art",
+      "modern-art",
+      "architecture",
+      "gulbenkian"
+    ],
+    "maker": "Avenidas Novas",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=CAM+%E2%80%93+Gulbenkian+Modern+Collection+Lisbon"
+    }
+  },
+  {
+    "id": "070",
+    "rank": 70,
+    "title": "Cervejaria Ramiro",
+    "content": "Celebrated seafood beer hall famed for prawns, clams and a steak sandwich.",
+    "explanation": "Cervejaria Ramiro has served shellfish since the 1950s. Tradition says finish with a prego, a steak roll, as dessert. Expect queues.",
+    "hook": "The seafood place where dessert is a steak sandwich.",
+    "tags": [
+      "Food & Drink",
+      "seafood",
+      "beer-hall",
+      "intendente"
+    ],
+    "maker": "Intendente",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Cervejaria+Ramiro+Lisbon"
+    }
+  },
+  {
+    "id": "071",
+    "rank": 71,
+    "title": "Museu de Arte Contemporânea – CCB",
+    "content": "Modern and contemporary art inside the Belém Cultural Centre.",
+    "explanation": "The MAC/CCB opened in 2023 in the former Berardo museum space and shows major modern and contemporary works in the Centro Cultural de Belém.",
+    "hook": "Picasso to Warhol, next to the monastery.",
+    "tags": [
+      "Museums & Art",
+      "contemporary",
+      "art",
+      "belem"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Museu+de+Arte+Contempor%C3%A2nea+%E2%80%93+CCB+Lisbon"
+    }
+  },
+  {
+    "id": "072",
+    "rank": 72,
+    "title": "Lisboa Card",
+    "content": "City pass bundling public transport with entry to major sights.",
+    "explanation": "The official Lisboa Card covers metro, buses, trams and trains to Sintra and Cascais, plus free or discounted entry at many museums and monuments.",
+    "hook": "One card for trams, trains and towers.",
+    "tags": [
+      "Tours & Experiences",
+      "pass",
+      "transport",
+      "value"
+    ],
+    "maker": "Lisbon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Lisboa+Card+Lisbon"
+    }
+  },
+  {
+    "id": "073",
+    "rank": 73,
+    "title": "Parque Eduardo VII",
+    "content": "Formal hillside park with a long view down Avenida da Liberdade to the river.",
+    "explanation": "Lisbon's largest central park climbs from Marquês de Pombal with clipped hedges and a viewpoint at the top. It also holds the Estufa Fria greenhouse.",
+    "hook": "The longest straight view in Lisbon.",
+    "tags": [
+      "Parks & Gardens",
+      "park",
+      "views",
+      "free"
+    ],
+    "maker": "Marquês de Pombal",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Parque+Eduardo+VII+Lisbon"
+    }
+  },
+  {
+    "id": "074",
+    "rank": 74,
+    "title": "Estufa Fria",
+    "content": "Lush greenhouse gardens hidden inside Parque Eduardo VII.",
+    "explanation": "The 'cold greenhouse' shelters ferns, palms and ponds beneath slatted roofs, with warmer hot-house sections alongside.",
+    "hook": "A jungle hidden under a Lisbon park.",
+    "tags": [
+      "Parks & Gardens",
+      "greenhouse",
+      "plants",
+      "family"
+    ],
+    "maker": "Parque Eduardo VII",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Estufa+Fria+Lisbon"
+    }
+  },
+  {
+    "id": "075",
+    "rank": 75,
+    "title": "Lisbon Story Centre",
+    "content": "Interactive journey through Lisbon's history, including the 1755 earthquake.",
+    "explanation": "On Praça do Comércio, the Lisbon Story Centre uses multimedia rooms to tell the city's story, with an immersive earthquake recreation.",
+    "hook": "Feel the 1755 earthquake in 4 minutes.",
+    "tags": [
+      "Museums & Art",
+      "history",
+      "interactive",
+      "family"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Lisbon+Story+Centre+Lisbon"
+    }
+  },
+  {
+    "id": "076",
+    "rank": 76,
+    "title": "Quake – Lisbon Earthquake Museum",
+    "content": "Immersive experience recreating the great earthquake of 1755.",
+    "explanation": "Quake uses simulations and storytelling to recreate the 1755 earthquake, tsunami and fires that destroyed much of Lisbon.",
+    "hook": "A museum that shakes the floor.",
+    "tags": [
+      "Museums & Art",
+      "earthquake",
+      "immersive",
+      "family"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Quake+%E2%80%93+Lisbon+Earthquake+Museum+Lisbon"
+    }
+  },
+  {
+    "id": "077",
+    "rank": 77,
+    "title": "Livraria Bertrand",
+    "content": "Recognised as the world's oldest operating bookshop, open since 1732.",
+    "explanation": "Bertrand in Chiado holds a Guinness World Records title as the oldest bookshop in operation. Ask for the certificate stamp in your purchase.",
+    "hook": "The world's oldest working bookshop.",
+    "tags": [
+      "Markets & Shops",
+      "books",
+      "record",
+      "chiado"
+    ],
+    "maker": "Chiado",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Livraria+Bertrand+Lisbon"
+    }
+  },
+  {
+    "id": "078",
+    "rank": 78,
+    "title": "A Vida Portuguesa",
+    "content": "Shop of classic Portuguese brands: soaps, tins, ceramics and sweets.",
+    "explanation": "A Vida Portuguesa revives heritage Portuguese products in beautifully curated shops. A good place for authentic souvenirs.",
+    "hook": "The souvenir shop for people who hate souvenirs.",
+    "tags": [
+      "Markets & Shops",
+      "souvenirs",
+      "design",
+      "heritage"
+    ],
+    "maker": "Chiado",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=A+Vida+Portuguesa+Lisbon"
+    }
+  },
+  {
+    "id": "079",
+    "rank": 79,
+    "title": "Conserveira de Lisboa",
+    "content": "Vintage tinned-fish shop wrapping sardines in paper since 1930.",
+    "explanation": "This family shop on Rua dos Bacalhoeiros sells its own canned fish brands in retro packaging, still wrapped by hand.",
+    "hook": "Sardine tins as pretty as postcards.",
+    "tags": [
+      "Markets & Shops",
+      "tinned-fish",
+      "vintage",
+      "baixa"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Conserveira+de+Lisboa+Lisbon"
+    }
+  },
+  {
+    "id": "080",
+    "rank": 80,
+    "title": "Graça",
+    "content": "Hilltop residential quarter with two of the city's best viewpoints.",
+    "explanation": "Graça grew around its convent and is now known for local life, vilas operárias (workers' housing) and the Senhora do Monte and Graça viewpoints.",
+    "hook": "Where Lisbon locals watch the sunset.",
+    "tags": [
+      "Neighbourhoods",
+      "stay",
+      "views",
+      "local"
+    ],
+    "maker": "Graça",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Gra%C3%A7a+Lisbon"
+    }
+  },
+  {
+    "id": "081",
+    "rank": 81,
+    "title": "Avenida da Liberdade",
+    "content": "Grand tree-lined boulevard of luxury shops and hotels.",
+    "explanation": "Lisbon's showpiece avenue runs from Restauradores to Marquês de Pombal, lined with mosaic pavements, kiosks and flagship stores.",
+    "hook": "Lisbon's Champs-Élysées.",
+    "tags": [
+      "Neighbourhoods",
+      "stay",
+      "boulevard",
+      "shopping"
+    ],
+    "maker": "Avenida da Liberdade",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Avenida+da+Liberdade+Lisbon"
+    }
+  },
+  {
+    "id": "082",
+    "rank": 82,
+    "title": "Museu de Marinha",
+    "content": "Navy museum of ship models, royal barges and seaplanes.",
+    "explanation": "Housed in a wing of the Jerónimos complex, the Navy Museum tells Portugal's maritime history, with royal barges and historic seaplanes in its gallery.",
+    "hook": "The royal barge built for a queen.",
+    "tags": [
+      "Museums & Art",
+      "maritime",
+      "belem",
+      "family"
+    ],
+    "maker": "Belém",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Museu+de+Marinha+Lisbon"
+    }
+  },
+  {
+    "id": "083",
+    "rank": 83,
+    "title": "Ribeira das Naus",
+    "content": "Riverside lawns and steps where locals sit by the Tagus.",
+    "explanation": "The former shipyard by Praça do Comércio was transformed into a promenade with lawns and steps down to the water.",
+    "hook": "Sit with your feet nearly in the Tagus.",
+    "tags": [
+      "Beaches & Coast",
+      "free",
+      "river",
+      "sunset"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Ribeira+das+Naus+Lisbon"
+    }
+  },
+  {
+    "id": "084",
+    "rank": 84,
+    "title": "Mosteiro de São Vicente de Fora",
+    "content": "Monastery with tiled cloisters and a royal pantheon.",
+    "explanation": "São Vicente de Fora is noted for its azulejo panels, including tiles depicting La Fontaine's fables, and the Bragança royal pantheon. The roof offers city views.",
+    "hook": "La Fontaine's fables, told in tiles.",
+    "tags": [
+      "Landmarks & Monuments",
+      "azulejo",
+      "monastery",
+      "views"
+    ],
+    "maker": "São Vicente",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Mosteiro+de+S%C3%A3o+Vicente+de+Fora+Lisbon"
+    }
+  },
+  {
+    "id": "085",
+    "rank": 85,
+    "title": "Jardim Botânico de Lisboa",
+    "content": "Historic university botanical garden with towering palms and cycads.",
+    "explanation": "Part of the National Museum of Natural History and Science, this 19th-century garden is a green escape between Príncipe Real and Avenida da Liberdade.",
+    "hook": "A jungle between the shops.",
+    "tags": [
+      "Parks & Gardens",
+      "botanical",
+      "garden",
+      "quiet"
+    ],
+    "maker": "Príncipe Real",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Jardim+Bot%C3%A2nico+de+Lisboa+Lisbon"
+    }
+  },
+  {
+    "id": "086",
+    "rank": 86,
+    "title": "Jardim do Torel",
+    "content": "Quiet hilltop garden and viewpoint reached via the Lavra funicular.",
+    "explanation": "Jardim do Torel overlooks Avenida da Liberdade and the Baixa. It is reached on foot or via the Elevador do Lavra, Lisbon's oldest funicular.",
+    "hook": "Lisbon's oldest funicular leads to a secret garden.",
+    "tags": [
+      "Miradouros (Viewpoints)",
+      "free",
+      "garden",
+      "funicular"
+    ],
+    "maker": "Santana",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Jardim+do+Torel+Lisbon"
+    }
+  },
+  {
+    "id": "087",
+    "rank": 87,
+    "title": "Monsanto Forest Park",
+    "content": "Huge forested park with trails and city viewpoints.",
+    "explanation": "Parque Florestal de Monsanto is one of Europe's largest urban forest parks. Its trails and viewpoints are popular for hiking and cycling.",
+    "hook": "A forest bigger than Central Park, inside Lisbon.",
+    "tags": [
+      "Parks & Gardens",
+      "hiking",
+      "forest",
+      "free"
+    ],
+    "maker": "Monsanto",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Monsanto+Forest+Park+Lisbon"
+    }
+  },
+  {
+    "id": "088",
+    "rank": 88,
+    "title": "Cacilhas ferry",
+    "content": "Cheap commuter ferry across the Tagus with big skyline views.",
+    "explanation": "Ferries from Cais do Sodré cross to Cacilhas in Almada in minutes, giving a classic view back to the city. Riverside seafood restaurants await on the other side.",
+    "hook": "The cheapest river cruise in Lisbon.",
+    "tags": [
+      "Trams, Lifts & Rides",
+      "ferry",
+      "views",
+      "almada"
+    ],
+    "maker": "Cais do Sodré",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Cacilhas+ferry+Lisbon"
+    }
+  },
+  {
+    "id": "089",
+    "rank": 89,
+    "title": "Fátima",
+    "content": "Major Catholic pilgrimage site of the Sanctuary of Our Lady of Fátima.",
+    "explanation": "The Sanctuary marks the 1917 apparitions reported by three shepherd children. It draws pilgrims from around the world, especially in May and October.",
+    "hook": "Millions of pilgrims come here every year.",
+    "tags": [
+      "Day Trips",
+      "pilgrimage",
+      "religious",
+      "day-trip"
+    ],
+    "maker": "Fátima",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=F%C3%A1tima+Lisbon"
+    }
+  },
+  {
+    "id": "090",
+    "rank": 90,
+    "title": "Casa Fernando Pessoa",
+    "content": "Home of Portugal's great modernist poet, now a literary house.",
+    "explanation": "Fernando Pessoa lived here for the last 15 years of his life. The house holds his library and hosts readings and exhibitions.",
+    "hook": "The poet who wrote as dozens of different people.",
+    "tags": [
+      "Museums & Art",
+      "literature",
+      "pessoa",
+      "museum"
+    ],
+    "maker": "Campo de Ourique",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Casa+Fernando+Pessoa+Lisbon"
+    }
+  },
+  {
+    "id": "091",
+    "rank": 91,
+    "title": "Campo de Ourique",
+    "content": "Village-like neighbourhood centred on a renovated food market.",
+    "explanation": "At the end of Tram 28, Campo de Ourique has a grid of local shops and the Mercado de Campo de Ourique, where stalls serve food to share.",
+    "hook": "The end of Tram 28 is where locals eat.",
+    "tags": [
+      "Neighbourhoods",
+      "local",
+      "market",
+      "stay"
+    ],
+    "maker": "Campo de Ourique",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Campo+de+Ourique+Lisbon"
+    }
+  },
+  {
+    "id": "092",
+    "rank": 92,
+    "title": "Ericeira",
+    "content": "Whitewashed fishing town and World Surfing Reserve.",
+    "explanation": "Ericeira was designated a World Surfing Reserve and is known for seafood and blue-and-white streets above the cliffs.",
+    "hook": "Europe's first World Surfing Reserve.",
+    "tags": [
+      "Day Trips",
+      "surf",
+      "seafood",
+      "coast"
+    ],
+    "maker": "Ericeira",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Ericeira+Lisbon"
+    }
+  },
+  {
+    "id": "093",
+    "rank": 93,
+    "title": "Lisbon walking tour",
+    "content": "Guided walk through the Baixa, Chiado and Alfama with local stories.",
+    "explanation": "Walking tours give context to the earthquake, the Pombaline rebuilding and the city's hills. Many run daily in English from the Baixa.",
+    "hook": "Lisbon's story in two hours on foot.",
+    "tags": [
+      "Tours & Experiences",
+      "guided",
+      "history",
+      "walking"
+    ],
+    "maker": "Baixa",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Lisbon+walking+tour+Lisbon"
+    }
+  },
+  {
+    "id": "094",
+    "rank": 94,
+    "title": "Museu do Oriente",
+    "content": "Collections tracing Portugal's historical links with Asia.",
+    "explanation": "Set in a converted waterfront warehouse, the Museu do Oriente shows Asian art and Portuguese presence in the East, from Macau to Goa.",
+    "hook": "Portugal's Asian story in an old cod warehouse.",
+    "tags": [
+      "Museums & Art",
+      "asia",
+      "art",
+      "alcantara"
+    ],
+    "maker": "Alcântara",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Museu+do+Oriente+Lisbon"
+    }
+  },
+  {
+    "id": "095",
+    "rank": 95,
+    "title": "Bifana at O Trevo",
+    "content": "Garlicky pork sandwich at the snack bar featured by Anthony Bourdain.",
+    "explanation": "A bifana is Lisbon's quintessential snack: thin pork marinated in garlic and wine in a soft roll. O Trevo on Praça Luís de Camões is a well-known stop.",
+    "hook": "The pork sandwich a TV chef made famous.",
+    "tags": [
+      "Food & Drink",
+      "street-food",
+      "bifana",
+      "chiado"
+    ],
+    "maker": "Chiado",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Bifana+at+O+Trevo+Lisbon"
+    }
+  },
+  {
+    "id": "096",
+    "rank": 96,
+    "title": "Manteigaria",
+    "content": "Rival to Belém's famous tarts, baked fresh all day.",
+    "explanation": "Manteigaria in Chiado specialises solely in pastéis de nata, baked in view and served warm. Many locals rate it as Lisbon's best.",
+    "hook": "The custard tart war has a challenger.",
+    "tags": [
+      "Food & Drink",
+      "pastel-de-nata",
+      "bakery",
+      "chiado"
+    ],
+    "maker": "Chiado",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Manteigaria+Lisbon"
+    }
+  },
+  {
+    "id": "097",
+    "rank": 97,
+    "title": "Santo António festival",
+    "content": "June street parties with grilled sardines, arraiais and parades.",
+    "explanation": "Around 12–13 June Lisbon celebrates its popular saint with street parties in Alfama and Mouraria, grilled sardines and marchas populares down Avenida da Liberdade.",
+    "hook": "The night all Lisbon smells of sardines.",
+    "tags": [
+      "Fado & Nightlife",
+      "festival",
+      "june",
+      "sardines"
+    ],
+    "maker": "Alfama",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Santo+Ant%C3%B3nio+festival+Lisbon"
+    }
+  },
+  {
+    "id": "098",
+    "rank": 98,
+    "title": "Fernando Pessoa's 'Lisbon: What the Tourist Should See'",
+    "content": "Read the guidebook Pessoa wrote to his own city, in English.",
+    "explanation": "Fernando Pessoa wrote this guide to Lisbon in English in the 1920s; it was published posthumously. A charming companion to walk the city with.",
+    "hook": "Lisbon's greatest poet wrote a tourist guide.",
+    "tags": [
+      "Tours & Experiences",
+      "book",
+      "pessoa",
+      "guidebook"
+    ],
+    "maker": "Lisbon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Fernando+Pessoa%27s+%27Lisbon%3A+What+the+Tourist+Should+See%27+Lisbon"
+    }
+  },
+  {
+    "id": "099",
+    "rank": 99,
+    "title": "Lisbon pocket guidebook",
+    "content": "Pack a pocket guide with maps for offline planning across the hills.",
+    "explanation": "Pocket guides such as Lonely Planet and DK Eyewitness editions for Lisbon cover neighbourhoods, transport and day trips with fold-out maps.",
+    "hook": "The paper map still wins on Lisbon's hills.",
+    "tags": [
+      "Tours & Experiences",
+      "guidebook",
+      "planning",
+      "maps"
+    ],
+    "maker": "Lisbon",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Lisbon+pocket+guidebook+Lisbon"
+    }
+  },
+  {
+    "id": "100",
+    "rank": 100,
+    "title": "Fronteira Palace",
+    "content": "17th-century palace with some of Portugal's finest azulejo gardens.",
+    "explanation": "The Palácio dos Marqueses de Fronteira is still a family residence. Its formal gardens are decorated with remarkable tiled panels and statues.",
+    "hook": "A private palace with tiled gardens.",
+    "tags": [
+      "Landmarks & Monuments",
+      "palace",
+      "azulejo",
+      "gardens"
+    ],
+    "maker": "Benfica",
+    "cta": {
+      "type": "affiliate",
+      "label": "Find tours & tickets",
+      "url": "https://www.getyourguide.co.uk/s/?q=Fronteira+Palace+Lisbon"
+    }
+  }
+]
