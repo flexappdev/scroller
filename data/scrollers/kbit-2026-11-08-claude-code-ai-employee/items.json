@@ -1,0 +1,222 @@
+[
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:overview",
+    "title": "The AI Employee Map",
+    "hook": "Startup Ideas Podcast · 48 min · 17 Aug 2026",
+    "content": "Stop treating Claude Code as a chat box. Treat it as a new hire and give it what any person joining your company gets on day one. The episode builds this live around one example business and ends with a seven-day setup plan.",
+    "explanation": "The shift is from prompting to onboarding: most of the quality comes from the environment you set up, not the words of a single request.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:workspace",
+    "title": "1 · A workspace",
+    "hook": "Somewhere to keep its work",
+    "content": "A dedicated repo or folder where the agent's files, code and outputs live, separate from everything else.",
+    "explanation": "Without a home, every session starts from zero and outputs scatter across chats.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:memory",
+    "title": "2 · Memory",
+    "hook": "What it learned yesterday",
+    "content": "Persistent notes the agent reads at the start of each session: decisions, preferences, facts about the project.",
+    "explanation": "Memory is what turns a string of one-off sessions into accumulated experience.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:brief",
+    "title": "3 · A brief",
+    "hook": "Who we are and how we work",
+    "content": "A standing instruction file (such as CLAUDE.md) that describes the business, the stack, the conventions and the rules.",
+    "explanation": "The brief is the onboarding pack: write it once, and every session starts aligned.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:ticket",
+    "title": "4 · A clear ticket",
+    "hook": "One goal per task",
+    "content": "Each piece of work gets a specific, scoped request with a definition of done, like a ticket for a human engineer.",
+    "explanation": "Vague asks produce vague work. A ticket makes success checkable.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:eyes",
+    "title": "5 · Eyes",
+    "hook": "A way to see the work",
+    "content": "Give the agent ways to look at what it built: screenshots, a browser, logs, test output.",
+    "explanation": "An agent that can see its own result can catch and fix its own mistakes.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:review",
+    "title": "6 · Review",
+    "hook": "Someone checks before it ships",
+    "content": "Changes go through review, either a human reading a pull request or a second agent checking the diff.",
+    "explanation": "Review is the quality gate that lets you trust more autonomy over time.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:schedule",
+    "title": "7 · A schedule",
+    "hook": "Work that runs without being asked",
+    "content": "Recurring jobs on a timer: daily reports, checks, summaries, follow-ups.",
+    "explanation": "A schedule is what makes it an employee rather than a tool you have to pick up.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:permissions",
+    "title": "8 · Permissions",
+    "hook": "What it may and may not touch",
+    "content": "Explicit rules for which tools, files and actions the agent can use without asking, and which need approval.",
+    "explanation": "Clear permissions let you say yes to more, safely, instead of approving every step.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:loop",
+    "title": "One operating loop",
+    "hook": "Product · feedback · docs · demos · review · recurring work",
+    "content": "The eight pieces connect into one loop: the agent builds the product, reads customer feedback, keeps docs current, records demos, gets reviewed and runs the recurring work.",
+    "explanation": "The example in the episode is a missed-lead responder for med spas, an idea taken from ideabrowser.com.",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  },
+  {
+    "id": "spotify:4lh2LLA04lzp9evZFiR70H:seven-days",
+    "title": "The seven-day plan",
+    "hook": "One piece a day",
+    "content": "The episode closes with a seven-day plan to set up the whole map at your own pace, starting with the workspace and ending with schedule and permissions.",
+    "explanation": "Quick self-check: which of the eight does your setup already have, and which one would most improve the work this week?",
+    "tags": [
+      "ai",
+      "claude-code",
+      "agents",
+      "productivity",
+      "podcast",
+      "spotify"
+    ],
+    "cta": {
+      "type": "lead",
+      "label": "Listen on Spotify",
+      "url": "https://open.spotify.com/episode/4lh2LLA04lzp9evZFiR70H"
+    }
+  }
+]
