@@ -139,5 +139,21 @@
     return { fresh: fresh, rest: rest, ordered: fresh.concat(rest), config: cfg };
   }
 
-  return { DEFAULTS: DEFAULTS, MODES: MODES, merge: merge, batches: batches, score: score, rankFeed: rankFeed, fitScore: fitScore };
+  // Seeded shuffle (mulberry32 + Fisher-Yates): same seed, same order, so a re-render keeps its place.
+  function shuffle(list, seed) {
+    var a = list.slice(), t = (seed >>> 0) || 1;
+    function rnd() {
+      t = (t + 0x6D2B79F5) >>> 0;
+      var x = Math.imul(t ^ (t >>> 15), 1 | t);
+      x = (x + Math.imul(x ^ (x >>> 7), 61 | x)) ^ x;
+      return ((x ^ (x >>> 14)) >>> 0) / 4294967296;
+    }
+    for (var k = a.length - 1; k > 0; k--) {
+      var j = Math.floor(rnd() * (k + 1)), tmp = a[k];
+      a[k] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  return { DEFAULTS: DEFAULTS, MODES: MODES, merge: merge, batches: batches, score: score, rankFeed: rankFeed, fitScore: fitScore, shuffle: shuffle };
 });
