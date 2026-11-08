@@ -15,6 +15,7 @@ import {
   Images,
   Info,
   Laugh,
+  Library,
   Layers3,
   LogIn,
   Radio,
@@ -62,6 +63,7 @@ const ASSET_GROUPS: Array<{ label: string; items: NavItem[] }> = [
   {
     label: "Knowledge",
     items: [
+      { href: "/books", label: "Books", description: "Our books, then top non-fiction of all time", icon: Library },
       { href: "/wiki", label: "Wikipedia", description: "Cached articles and media", icon: BookOpen },
       { href: "/wikivoyage", label: "WikiVoyage", description: "Places, guides and travel assets", icon: ScrollText },
       { href: "/prompts", label: "Prompts", description: "Reusable AI prompt library", icon: Sparkles },

@@ -13,6 +13,7 @@ export type ScrollSourceId =
   | "amazon"
   | "images"
   | "funny"
+  | "books"
   | "top100";
 
 export interface ScrollSource {
@@ -39,6 +40,7 @@ export const SCROLL_SOURCES: ScrollSource[] = [
   { id: "amazon", label: "Amazon", description: "Amazon UK Best-Sellers (zgbs).", accent: "#ff9900", href: "/amazon" },
   { id: "images", label: "Images", description: "S3 image gallery with metadata + search.", accent: "#22d3ee", href: "/images" },
   { id: "funny", label: "Funny 100", description: "Top 100 funniest things ever — editorial ranked.", accent: "#f472b6", href: "/funny" },
+  { id: "books", label: "Books", description: "Our bookai books chapter by chapter, then the top non-fiction books of all time.", accent: "#ec4899", href: "/books" },
   { id: "top100", label: "Top 100", description: "Curated lists and visual collections, starting with 100 cinematic scenes.", accent: "#d3ad6c", href: "/top100" },
 ];
 
