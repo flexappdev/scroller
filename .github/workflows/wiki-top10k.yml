@@ -1,0 +1,39 @@
+# Refresh data/wiki/top10k.json (the home feed's top 10,000 Wikipedia
+# articles). Wikimedia is not reachable from the app build, so the list is
+# built here weekly and committed; Vercel then redeploys.
+name: Wiki top 10k
+
+on:
+  schedule:
+    - cron: "40 4 * * 1" # Mondays 04:40 UTC
+  workflow_dispatch:
+  push:
+    branches: [claude/project-thread-re3vsx]
+    paths: [scripts/wiki-top10k.mjs, .github/workflows/wiki-top10k.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wiki-top10k
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build top 10k
+        run: node scripts/wiki-top10k.mjs --days 365 --target 10000
+      - name: Commit
+        run: |
+          git config user.name "scroller-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/wiki/top10k.json
+          if git diff --cached --quiet; then echo "No change"; exit 0; fi
+          git commit -m "data: refresh Wikipedia top 10k ($(date -u +%F))"
+          git push
