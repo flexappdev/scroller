@@ -7,9 +7,6 @@ on:
   schedule:
     - cron: "40 4 * * 1" # Mondays 04:40 UTC
   workflow_dispatch:
-  push:
-    branches: [claude/project-thread-re3vsx]
-    paths: [scripts/wiki-top10k.mjs, .github/workflows/wiki-top10k.yml]
 
 permissions:
   contents: write

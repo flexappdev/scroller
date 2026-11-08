@@ -29,6 +29,7 @@ const LOW_VALUE = [
   /^Main_Page$/i,
   /^-$/,
   /^\./, // top-level domains (.xxx, .xyz) are bot magnets
+  /^XXX/i, // search-traffic magnets (XXX film series, XXXX beer)
   /^Undefined$/i,
   /^(List|Lists|Index|Outline|Timeline|Glossary)_of_/i,
   /^Deaths_in_/i,

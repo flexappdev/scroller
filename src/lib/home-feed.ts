@@ -62,7 +62,8 @@ let wikiCache: Promise<WikiRow[]> | null = null;
 function loadWiki(): Promise<WikiRow[]> {
   wikiCache ??= readJson<TopFile>(path.join(DATA, "wiki", "top10k.json")).then((file) => {
     if (!file?.rows) return [];
-    return file.rows.map(([title, views, description, thumb], index) => ({
+    // Mirrors the builder's deny list so a stale list can't surface these.
+    return file.rows.filter(([title]) => !/^(XXX|\.)/i.test(title)).map(([title, views, description, thumb], index) => ({
       title,
       views,
       description,
