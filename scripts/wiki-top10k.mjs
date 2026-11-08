@@ -28,6 +28,7 @@ const NAMESPACE = /^(Special|Wikipedia|WP|File|Image|Portal|Help|Category|Templa
 const LOW_VALUE = [
   /^Main_Page$/i,
   /^-$/,
+  /^\./, // top-level domains (.xxx, .xyz) are bot magnets
   /^Undefined$/i,
   /^(List|Lists|Index|Outline|Timeline|Glossary)_of_/i,
   /^Deaths_in_/i,
@@ -77,19 +78,11 @@ async function pool(items, size, fn) {
 
 const pad = (n) => String(n).padStart(2, "0");
 
-async function aggregateViews() {
-  const days = [];
-  const end = new Date();
-  end.setUTCDate(end.getUTCDate() - 1); // yesterday is the latest complete day
-  for (let i = 0; i < DAYS; i += 1) {
-    const d = new Date(end);
-    d.setUTCDate(end.getUTCDate() - i);
-    days.push(d);
-  }
+async function dailyTop(access, days) {
   const views = new Map();
   let ok = 0;
   await pool(days, 8, async (d) => {
-    const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/${d.getUTCFullYear()}/${pad(d.getUTCMonth() + 1)}/${pad(d.getUTCDate())}`;
+    const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/top/en.wikipedia/${access}/${d.getUTCFullYear()}/${pad(d.getUTCMonth() + 1)}/${pad(d.getUTCDate())}`;
     const json = await getJson(url).catch((e) => {
       console.warn(`skip ${url}: ${e.message}`);
       return null;
@@ -101,8 +94,30 @@ async function aggregateViews() {
       views.set(article, (views.get(article) ?? 0) + v);
     }
   });
-  console.log(`days with data: ${ok}/${DAYS}; distinct articles: ${views.size}`);
-  return [...views.entries()].sort((a, b) => b[1] - a[1]);
+  console.log(`${access}: days with data ${ok}/${days.length}; distinct articles ${views.size}`);
+  return views;
+}
+
+async function aggregateViews() {
+  const days = [];
+  const end = new Date();
+  end.setUTCDate(end.getUTCDate() - 1); // yesterday is the latest complete day
+  for (let i = 0; i < DAYS; i += 1) {
+    const d = new Date(end);
+    d.setUTCDate(end.getUTCDate() - i);
+    days.push(d);
+  }
+  const all = await dailyTop("all-access", days);
+  const mobile = await dailyTop("mobile-web", days);
+  // Undetected bots inflate desktop views of odd pages (an unincorporated
+  // Kentucky community, a chemical compound) while real readers are mostly on
+  // phones. Cap each article's score at 3x its mobile views, and quarter
+  // anything that never reached the mobile top 1,000.
+  const scored = [...all.entries()].map(([title, v]) => {
+    const m = mobile.get(title) ?? 0;
+    return [title, m > 0 ? Math.min(v, 3 * m) : Math.round(v / 4)];
+  });
+  return scored.sort((a, b) => b[1] - a[1]);
 }
 
 async function enrich(titles) {
@@ -192,7 +207,7 @@ async function main() {
     generatedAt: new Date().toISOString(),
     windowDays: DAYS,
     target: TARGET,
-    source: "Wikimedia pageviews top API (en.wikipedia, all-access, daily top 1,000 summed) + MediaWiki API",
+    source: "Wikimedia pageviews top API (en.wikipedia daily top 1,000, all-access summed and capped at 3x mobile-web to damp bot traffic) + MediaWiki API",
     thumbPrefix: THUMB_PREFIX,
     columns: ["title", "views", "description", "thumb"],
     dropped,
