@@ -38,16 +38,25 @@ const LOW_VALUE = [
 ];
 const SKIP_TITLE = (t) => NAMESPACE.test(t) || LOW_VALUE.some((re) => re.test(t));
 
-async function getJson(url, tries = 4) {
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function getJson(url, tries = 7) {
   for (let attempt = 1; ; attempt += 1) {
+    let wait = 1000 * 2 ** attempt;
     try {
       const res = await fetch(url, { headers: { "user-agent": UA, accept: "application/json" } });
       if (res.status === 404) return null;
-      if (!res.ok) throw new Error(`${res.status} ${url}`);
+      if (!res.ok) {
+        // Respect rate limits (429) and Retry-After on the MediaWiki API.
+        const retryAfter = Number(res.headers.get("retry-after"));
+        if (Number.isFinite(retryAfter) && retryAfter > 0) wait = Math.max(wait, retryAfter * 1000);
+        throw new Error(`${res.status} ${url.slice(0, 120)}`);
+      }
       return await res.json();
     } catch (error) {
       if (attempt >= tries) throw error;
-      await new Promise((r) => setTimeout(r, 1000 * 2 ** attempt));
+      console.warn(`retry ${attempt} in ${Math.round(wait / 1000)}s: ${error.message}`);
+      await sleep(wait);
     }
   }
 }
@@ -100,7 +109,10 @@ async function enrich(titles) {
   const batches = [];
   for (let i = 0; i < titles.length; i += 50) batches.push(titles.slice(i, i + 50));
   const info = new Map();
-  await pool(batches, 4, async (batch) => {
+  // One request at a time with a short pause: the MediaWiki API rate-limits
+  // parallel anonymous clients (429).
+  await pool(batches, 1, async (batch) => {
+    await sleep(300);
     const params = new URLSearchParams({
       action: "query",
       format: "json",
@@ -111,6 +123,7 @@ async function enrich(titles) {
       piprop: "thumbnail",
       pithumbsize: "640",
       titles: batch.map((t) => t.replaceAll("_", " ")).join("|"),
+      maxlag: "5",
     });
     const json = await getJson(`https://en.wikipedia.org/w/api.php?${params}`);
     const q = json?.query ?? {};
