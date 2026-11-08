@@ -29,6 +29,7 @@ import {
   Table as TableIcon,
   Sparkles,
   X,
+  Dices,
 } from "lucide-react";
 import { useEffect, useRef, useState, type ComponentType } from "react";
 import BrowseModal from "./BrowseModal";
@@ -52,6 +53,7 @@ const ASSET_GROUPS: Array<{ label: string; items: NavItem[] }> = [
   {
     label: "Watch",
     items: [
+      { href: "/play", label: "Play", description: "Smart and funny, one swipe at a time", icon: Dices },
       { href: "/", label: "Mediai feed", description: "Generated image, motion and audio", icon: Radio },
       { href: "/browse", label: "All media", description: "Every Scroller source in one browser", icon: Layers3 },
       { href: "/videos", label: "Videos", description: "Mat Siems + Siems Production", icon: Film },

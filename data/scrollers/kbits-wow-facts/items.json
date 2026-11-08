@@ -1,0 +1,602 @@
+[
+  {
+    "id": "001",
+    "title": "Honey never really goes off",
+    "content": "Archaeologists have found pots of honey in ancient Egyptian tombs that were still edible. Low water and high acidity stop bacteria growing.",
+    "hook": "3,000-year-old snack",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Honey",
+        "url": "https://en.wikipedia.org/wiki/Honey"
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Octopuses have three hearts",
+    "content": "Two hearts pump blood through the gills and one through the body. Their blood is blue because it carries copper, not iron.",
+    "hook": "Blue-blooded",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Octopus",
+        "url": "https://en.wikipedia.org/wiki/Octopus"
+      }
+    ]
+  },
+  {
+    "id": "003",
+    "title": "Bananas are berries. Strawberries aren't.",
+    "content": "In botany a berry grows from one flower with one ovary. Bananas qualify; strawberries carry their seeds on the outside and don't.",
+    "hook": "Botany is weird",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Berry (botany)",
+        "url": "https://en.wikipedia.org/wiki/Berry_(botany)"
+      }
+    ]
+  },
+  {
+    "id": "004",
+    "title": "A day on Venus is longer than its year",
+    "content": "Venus takes about 243 Earth days to spin once, but only about 225 to orbit the Sun. It also spins backwards.",
+    "hook": "Slowest spinner",
+    "tags": [
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Venus",
+        "url": "https://en.wikipedia.org/wiki/Venus"
+      }
+    ]
+  },
+  {
+    "id": "005",
+    "title": "Oxford is older than the Aztec Empire",
+    "content": "Teaching at Oxford had begun by 1096. Tenochtitlan, the Aztec capital, was founded in 1325.",
+    "hook": "History timeline twist",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: University of Oxford",
+        "url": "https://en.wikipedia.org/wiki/University_of_Oxford"
+      }
+    ]
+  },
+  {
+    "id": "006",
+    "title": "Cleopatra lived closer to the Moon landing than to the Great Pyramid",
+    "content": "The Great Pyramid was built around 2560 BC. Cleopatra died in 30 BC, about 2,000 years before Apollo 11.",
+    "hook": "Ancient was already ancient",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Cleopatra",
+        "url": "https://en.wikipedia.org/wiki/Cleopatra"
+      }
+    ]
+  },
+  {
+    "id": "007",
+    "title": "Sharks are older than trees",
+    "content": "Sharks have been around for roughly 450 million years. The first true trees appeared about 385 million years ago.",
+    "hook": "Older than forests",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Shark",
+        "url": "https://en.wikipedia.org/wiki/Shark"
+      }
+    ]
+  },
+  {
+    "id": "008",
+    "title": "Wombats make cube-shaped poo",
+    "content": "The cubes form in the last part of the intestine and stop the droppings rolling away from the rocks and logs wombats use as markers.",
+    "hook": "Geometry, naturally",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Wombat",
+        "url": "https://en.wikipedia.org/wiki/Wombat"
+      }
+    ]
+  },
+  {
+    "id": "009",
+    "title": "The Eiffel Tower grows in summer",
+    "content": "Iron expands in heat, so the tower can be up to about 15 cm taller on a hot day.",
+    "hook": "Summer stretch",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Eiffel Tower",
+        "url": "https://en.wikipedia.org/wiki/Eiffel_Tower"
+      }
+    ]
+  },
+  {
+    "id": "010",
+    "title": "There are more possible chess games than atoms in the universe",
+    "content": "Claude Shannon estimated about 10^120 possible games. The observable universe has roughly 10^80 atoms.",
+    "hook": "Shannon number",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Shannon number",
+        "url": "https://en.wikipedia.org/wiki/Shannon_number"
+      }
+    ]
+  },
+  {
+    "id": "011",
+    "title": "Scotland's national animal is the unicorn",
+    "content": "The unicorn has been a Scottish heraldic symbol since the 12th century and appears on the royal coat of arms.",
+    "hook": "Officially magical",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Unicorn",
+        "url": "https://en.wikipedia.org/wiki/Unicorn"
+      }
+    ]
+  },
+  {
+    "id": "012",
+    "title": "The shortest war lasted under an hour",
+    "content": "The Anglo-Zanzibar War of 27 August 1896 lasted between 38 and 45 minutes.",
+    "hook": "Blink and it's over",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Anglo-Zanzibar War",
+        "url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+      }
+    ]
+  },
+  {
+    "id": "013",
+    "title": "A teaspoon of neutron star weighs about a billion tonnes",
+    "content": "Neutron stars pack more mass than the Sun into a ball about 20 km across.",
+    "hook": "Heaviest teaspoon",
+    "tags": [
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Neutron star",
+        "url": "https://en.wikipedia.org/wiki/Neutron_star"
+      }
+    ]
+  },
+  {
+    "id": "014",
+    "title": "Butterflies taste with their feet",
+    "content": "Taste receptors on their feet tell them whether a leaf is the right place to lay eggs.",
+    "hook": "Foot food critics",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Butterfly",
+        "url": "https://en.wikipedia.org/wiki/Butterfly"
+      }
+    ]
+  },
+  {
+    "id": "015",
+    "title": "You can't see the Great Wall from the Moon",
+    "content": "It is long but only a few metres wide. Astronauts say it is hard to spot even from low Earth orbit.",
+    "hook": "Myth busted",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Great Wall of China",
+        "url": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
+      }
+    ]
+  },
+  {
+    "id": "016",
+    "title": "Lightning strikes Earth about 44 times a second",
+    "content": "That is roughly 1.4 billion flashes a year, mostly over land near the tropics.",
+    "hook": "Always on",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Lightning",
+        "url": "https://en.wikipedia.org/wiki/Lightning"
+      }
+    ]
+  },
+  {
+    "id": "017",
+    "title": "Sloths can hold their breath for 40 minutes",
+    "content": "By slowing their heart rate, sloths can stay underwater far longer than dolphins.",
+    "hook": "Secret swimmers",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Sloth",
+        "url": "https://en.wikipedia.org/wiki/Sloth"
+      }
+    ]
+  },
+  {
+    "id": "018",
+    "title": "The Pringles can inventor was buried in one",
+    "content": "Fredric Baur designed the can. When he died in 2008, some of his ashes were buried in a Pringles tube.",
+    "hook": "Brand loyalty",
+    "tags": [
+      "Weird"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Fredric Baur",
+        "url": "https://en.wikipedia.org/wiki/Fredric_Baur"
+      }
+    ]
+  },
+  {
+    "id": "019",
+    "title": "Water expands about 9% when it freezes",
+    "content": "That is why ice floats and why frozen pipes burst.",
+    "hook": "Ice is roomier",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Ice",
+        "url": "https://en.wikipedia.org/wiki/Ice"
+      }
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Sunlight is eight minutes old",
+    "content": "Light takes about 8 minutes 20 seconds to travel from the Sun to Earth.",
+    "hook": "Old news",
+    "tags": [
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Sunlight",
+        "url": "https://en.wikipedia.org/wiki/Sunlight"
+      }
+    ]
+  },
+  {
+    "id": "021",
+    "title": "Everest isn't the farthest point from Earth's centre",
+    "content": "Earth bulges at the equator, so the summit of Chimborazo in Ecuador is about 2 km farther from the centre.",
+    "hook": "Bulge wins",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Chimborazo",
+        "url": "https://en.wikipedia.org/wiki/Chimborazo"
+      }
+    ]
+  },
+  {
+    "id": "022",
+    "title": "Nintendo began in 1889 selling playing cards",
+    "content": "Fusajiro Yamauchi founded it in Kyoto to make hanafuda cards, almost a century before Mario.",
+    "hook": "Before pixels",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Nintendo",
+        "url": "https://en.wikipedia.org/wiki/Nintendo"
+      }
+    ]
+  },
+  {
+    "id": "023",
+    "title": "Ketchup was once sold as medicine",
+    "content": "In the 1830s, tomato ketchup was marketed in the US as a cure for indigestion.",
+    "hook": "Doctor's orders",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Ketchup",
+        "url": "https://en.wikipedia.org/wiki/Ketchup"
+      }
+    ]
+  },
+  {
+    "id": "024",
+    "title": "A blue whale's heart weighs about 180 kg",
+    "content": "It is the largest heart of any animal, and its beat can be detected from kilometres away.",
+    "hook": "Big-hearted",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Blue whale",
+        "url": "https://en.wikipedia.org/wiki/Blue_whale"
+      }
+    ]
+  },
+  {
+    "id": "025",
+    "title": "Tardigrades have survived open space",
+    "content": "In 2007 these half-millimetre animals were exposed to vacuum and radiation outside a spacecraft, and some survived.",
+    "hook": "Toughest animal",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Tardigrade",
+        "url": "https://en.wikipedia.org/wiki/Tardigrade"
+      }
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Astronauts get taller in space",
+    "content": "Without gravity the spine stretches, and astronauts can grow up to about 3% taller until they return.",
+    "hook": "Temporary growth spurt",
+    "tags": [
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Effect of spaceflight on the human body",
+        "url": "https://en.wikipedia.org/wiki/Effect_of_spaceflight_on_the_human_body"
+      }
+    ]
+  },
+  {
+    "id": "027",
+    "title": "'Robot' comes from the Czech for forced labour",
+    "content": "Karel Čapek's 1920 play R.U.R. introduced the word, from 'robota'.",
+    "hook": "Word origins",
+    "tags": [
+      "Language"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Robot",
+        "url": "https://en.wikipedia.org/wiki/Robot"
+      }
+    ]
+  },
+  {
+    "id": "028",
+    "title": "Australia is wider than the Moon",
+    "content": "The Moon is about 3,474 km across. Australia measures about 4,000 km from east to west.",
+    "hook": "Big island",
+    "tags": [
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Australia",
+        "url": "https://en.wikipedia.org/wiki/Australia"
+      }
+    ]
+  },
+  {
+    "id": "029",
+    "title": "Russia spans 11 time zones",
+    "content": "When it's breakfast in Kaliningrad, it's late evening in Kamchatka.",
+    "hook": "Many clocks",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Time in Russia",
+        "url": "https://en.wikipedia.org/wiki/Time_in_Russia"
+      }
+    ]
+  },
+  {
+    "id": "030",
+    "title": "The first computer bug was a real moth",
+    "content": "In 1947 engineers found a moth stuck in the Harvard Mark II and taped it into the logbook as the 'first actual case of bug being found'.",
+    "hook": "Literal bug",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Software bug",
+        "url": "https://en.wikipedia.org/wiki/Software_bug"
+      }
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Flamingos are pink because of their food",
+    "content": "Carotenoid pigments in the algae and shrimp they eat turn their feathers pink.",
+    "hook": "You are what you eat",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Flamingo",
+        "url": "https://en.wikipedia.org/wiki/Flamingo"
+      }
+    ]
+  },
+  {
+    "id": "032",
+    "title": "A group of flamingos is a flamboyance",
+    "content": "It's a real collective noun, alongside a murder of crows and a parliament of owls.",
+    "hook": "Best collective noun",
+    "tags": [
+      "Language"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Flamingo",
+        "url": "https://en.wikipedia.org/wiki/Flamingo"
+      }
+    ]
+  },
+  {
+    "id": "033",
+    "title": "Antarctica is the world's largest desert",
+    "content": "A desert is defined by low rainfall, not heat. Antarctica gets very little precipitation.",
+    "hook": "Cold desert",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Desert",
+        "url": "https://en.wikipedia.org/wiki/Desert"
+      }
+    ]
+  },
+  {
+    "id": "034",
+    "title": "Saturn would float in water",
+    "content": "Its average density is about 0.69 g/cm³, lower than water's 1 g/cm³. You'd just need a big enough bath.",
+    "hook": "Bath toy planet",
+    "tags": [
+      "Space"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Saturn",
+        "url": "https://en.wikipedia.org/wiki/Saturn"
+      }
+    ]
+  },
+  {
+    "id": "035",
+    "title": "The dot over an i is called a tittle",
+    "content": "The word dates back centuries and also covers the dot over a j.",
+    "hook": "Typography trivia",
+    "tags": [
+      "Language"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Tittle",
+        "url": "https://en.wikipedia.org/wiki/Tittle"
+      }
+    ]
+  },
+  {
+    "id": "036",
+    "title": "Humans glow in the dark, very faintly",
+    "content": "A 2009 study in Japan found the body emits visible light about 1,000 times too weak for our eyes to see.",
+    "hook": "Secret glow",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Biophoton",
+        "url": "https://en.wikipedia.org/wiki/Biophoton"
+      }
+    ]
+  },
+  {
+    "id": "037",
+    "title": "Koalas sleep up to 20 hours a day",
+    "content": "Eucalyptus is low in energy, so koalas save it by sleeping most of the day.",
+    "hook": "Professional nappers",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Koala",
+        "url": "https://en.wikipedia.org/wiki/Koala"
+      }
+    ]
+  },
+  {
+    "id": "038",
+    "title": "Ocean plankton make about half our oxygen",
+    "content": "Phytoplankton photosynthesise like plants and produce roughly half of Earth's oxygen.",
+    "hook": "Breathe thanks",
+    "tags": [
+      "Nature"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Phytoplankton",
+        "url": "https://en.wikipedia.org/wiki/Phytoplankton"
+      }
+    ]
+  },
+  {
+    "id": "039",
+    "title": "The Hundred Years' War lasted 116 years",
+    "content": "It ran from 1337 to 1453, with long truces in between.",
+    "hook": "Bad at counting",
+    "tags": [
+      "History"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Hundred Years' War",
+        "url": "https://en.wikipedia.org/wiki/Hundred_Years'_War"
+      }
+    ]
+  },
+  {
+    "id": "040",
+    "title": "Your stomach gets a new lining every few days",
+    "content": "Stomach lining cells are replaced quickly so the acid doesn't digest the stomach itself.",
+    "hook": "Self-renewing",
+    "tags": [
+      "Science"
+    ],
+    "sources": [
+      {
+        "title": "Wikipedia: Stomach",
+        "url": "https://en.wikipedia.org/wiki/Stomach"
+      }
+    ]
+  }
+]
