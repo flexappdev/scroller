@@ -12,11 +12,36 @@ export type MediaiArticle = {
   assetCount: number;
   provider: string | null;
   prompt: string | null;
+  /** Home feed extras: where the card came from and how popular it is. */
+  kind?: "mediai" | "wiki" | "book";
+  description?: string | null;
+  /** 1-based rank in the Wikipedia top 10,000 (most viewed first). */
+  rank?: number | null;
+  views?: number | null;
+  book?: BookChapterRef | null;
+};
+
+export type BookChapterRef = {
+  slug: string;
+  title: string;
+  chapter: number;
+  chapters: number;
+  part: string | null;
+  tease: string;
+  facts: { label: string; value: string }[];
+  read: string | null;
+  url: string | null;
+  buy: string | null;
+  price: number | null;
+  free: boolean;
+  minutes: number | null;
 };
 
 export type MediaiPage = {
   items: MediaiArticle[];
   nextOffset: number | null;
+  /** Home feed only: the shuffle seed to send back when paging. */
+  seed?: number;
 };
 
 type AssetKind = "image" | "video" | "audio";
@@ -74,7 +99,7 @@ function publicS3Url(key: string): string {
   return `https://${bucket}.s3.amazonaws.com/${key.split("/").map(encodeURIComponent).join("/")}`;
 }
 
-function wikaiUrl(topic: string): string {
+export function wikaiUrl(topic: string): string {
   const title = topic.replaceAll(" ", "_").replaceAll("/", "_");
   return `https://wikai.matsiems.com/a/${encodeURIComponent(title)}`;
 }
@@ -240,4 +265,30 @@ export async function getMediaiPage({
     items: groupAssets(assets),
     nextOffset: docs.length === safeLimit ? safeOffset + docs.length : null,
   };
+}
+
+/**
+ * Generated Mediai media for a known set of topics (one query per feed page),
+ * keyed by topic. Used by the home feed to put Mediai video, image and
+ * narration on top of the Wikipedia top 10,000 cards.
+ */
+export async function getMediaiForTopics(topics: string[]): Promise<Map<string, MediaiArticle>> {
+  const out = new Map<string, MediaiArticle>();
+  if (topics.length === 0) return out;
+  const db = await tryGetDb(DB_NAME).catch(() => null);
+  if (!db) return out;
+  try {
+    const docs = await db
+      .collection(COLLECTION)
+      .find({ topic: { $in: topics } })
+      .limit(topics.length * 12)
+      .toArray();
+    const assets = docs
+      .map((doc) => normalizeAsset(doc as Record<string, unknown>))
+      .filter((asset): asset is NormalizedAsset => Boolean(asset) && asset!.provider !== "chatgpt");
+    for (const article of groupAssets(assets)) out.set(article.topic, article);
+  } catch (error) {
+    console.warn("[mediai] topic lookup failed", error);
+  }
+  return out;
 }

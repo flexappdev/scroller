@@ -5,6 +5,8 @@ import Link from "next/link";
 import { X, ExternalLink, Volume2, Film, BookOpen, Link as LinkIcon, Check, ChevronDown, Image as ImageIcon, Send, Share2, Copy, ArrowUpRight } from "lucide-react";
 import type { MediaiArticle } from "@/lib/mediai";
 import CardActions from "./CardActions";
+import { cardBadge } from "@/lib/card-label";
+import { wikiBlocks, wordCount as countWords } from "@/lib/wiki-text";
 
 type WikiSummary = {
   extract: string;
@@ -12,6 +14,7 @@ type WikiSummary = {
   thumbnail?: string;
   desktopUrl?: string;
   fullText?: string;
+  disambiguation?: boolean;
 };
 
 async function fetchWikiSummary(topic: string): Promise<WikiSummary | null> {
@@ -39,6 +42,7 @@ async function fetchWikiSummary(topic: string): Promise<WikiSummary | null> {
       thumbnail: summary?.thumbnail?.source,
       desktopUrl: summary?.content_urls?.desktop?.page,
       fullText,
+      disambiguation: summary?.type === "disambiguation",
     };
   } catch {
     return null;
@@ -77,7 +81,7 @@ export default function MediaDetailSheet({
       setWiki(null);
       return;
     }
-    if (item.provider === "chatgpt") {
+    if (item.provider === "chatgpt" || item.book) {
       setWiki(null);
       setLoadingWiki(false);
       return;
@@ -129,16 +133,22 @@ export default function MediaDetailSheet({
   const wikaiTopic = item.topic.replaceAll(" ", "_").replaceAll("/", "_");
   const heroImage = item.imageUrl ?? wiki?.thumbnail ?? null;
   const scrollerHref = `/items/${encodeURIComponent(`wiki:${wikaiTopic}`)}/scroller`;
-  const wordCount = wiki?.fullText ? wiki.fullText.split(/\s+/).length : wiki?.extract ? wiki.extract.split(/\s+/).length : 0;
+  const wordCount = countWords(wiki?.fullText ?? wiki?.extract ?? "");
+  const blocks = wiki?.disambiguation ? [] : wikiBlocks(wiki?.fullText ?? wiki?.extract ?? "");
 
+  const description = item.book ? item.book.part : wiki?.description ?? item.description ?? null;
   const shortDesc = item.provider === "chatgpt"
     ? item.prompt
-    : wiki?.description ?? (wiki?.extract ? wiki.extract.split(/[.!?]/)[0]?.trim() : null);
+    : item.book
+      ? item.book.tease
+      : wiki?.extract
+        ? wiki.extract.split(/(?<=[.!?])\s/)[0]?.trim()
+        : null;
   const assetChips = [
     item.imageUrl ? "image" : null,
     item.videoUrls.length ? `${item.videoUrls.length} video${item.videoUrls.length === 1 ? "" : "s"}` : null,
     item.audioUrl ? "audio" : null,
-    `${item.assetCount} asset${item.assetCount === 1 ? "" : "s"}`,
+    item.assetCount > 0 ? `${item.assetCount} asset${item.assetCount === 1 ? "" : "s"}` : null,
   ].filter(Boolean) as string[];
 
   const body = (
@@ -162,10 +172,10 @@ export default function MediaDetailSheet({
 
       {/* Header: Title · tagline · tags · short description · like/favorite */}
       <div className="border-b border-zinc-800 px-4 pt-4 pb-3 space-y-2">
-        <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">{item.provider === "chatgpt" ? "ChatGPT · Archive" : "Wikipedia · Mediai"}</div>
+        <div className="text-[10px] uppercase tracking-wider text-[var(--accent)] font-mono">{cardBadge(item)}</div>
         <h2 className="text-lg font-black tracking-tight text-zinc-100 break-words leading-tight">{item.topic}</h2>
-        {wiki?.description && (
-          <p className="text-xs uppercase tracking-wide text-zinc-400">{wiki.description}</p>
+        {description && (
+          <p className="text-xs uppercase tracking-wide text-zinc-400">{description}</p>
         )}
         {assetChips.length > 0 && (
           <div className="flex flex-wrap gap-1.5 pt-1">
@@ -186,9 +196,9 @@ export default function MediaDetailSheet({
 
       <div className="flex-1">
         <Section
-          title={item.provider === "chatgpt" ? "Prompt" : "Article"}
+          title={item.provider === "chatgpt" ? "Prompt" : item.book ? "Chapter" : "Article"}
           icon={<BookOpen className="h-4 w-4" />}
-          chip={item.provider === "chatgpt" ? (item.prompt ? "saved" : "no prompt") : loadingWiki ? "…" : wordCount ? `${wordCount} words` : "no copy"}
+          chip={item.provider === "chatgpt" ? (item.prompt ? "saved" : "no prompt") : item.book ? `${item.book.chapter} of ${item.book.chapters}` : loadingWiki ? "…" : wordCount ? `${wordCount} words` : "no copy"}
           open={open.article}
           onToggle={() => toggle("article")}
         >
@@ -196,27 +206,54 @@ export default function MediaDetailSheet({
             <p className="whitespace-pre-line text-sm leading-6 text-zinc-300">
               {item.prompt || "No generation prompt was available in the imported metadata."}
             </p>
+          ) : item.book ? (
+            <div className="space-y-3 text-sm leading-6 text-zinc-300">
+              <p>{item.book.tease}</p>
+              {item.book.facts.length > 0 && (
+                <dl className="grid grid-cols-3 gap-2">
+                  {item.book.facts.map((fact) => (
+                    <div key={fact.label} className="rounded-md border border-zinc-800 bg-zinc-900/60 p-2">
+                      <dt className="text-[10px] uppercase tracking-wide text-zinc-500">{fact.label}</dt>
+                      <dd className="text-sm font-bold text-zinc-100">{fact.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
+              <div className="flex flex-wrap gap-2 pt-1">
+                {item.book.read && (
+                  <a href={item.book.read} target="_blank" rel="noopener" className="flex items-center gap-1.5 rounded-md border border-emerald-700/40 bg-emerald-950/40 px-3 py-2 text-xs text-emerald-300 hover:border-emerald-500">
+                    <ArrowUpRight className="h-3.5 w-3.5" /> {item.book.free ? "Read this chapter free" : "Read the chapter"}
+                  </a>
+                )}
+                {item.book.buy && (
+                  <a href={item.book.buy} target="_blank" rel="noopener" className="flex items-center gap-1.5 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-2 text-xs text-zinc-200 hover:border-zinc-500">
+                    <BookOpen className="h-3.5 w-3.5" /> {item.book.price ? `Get the book · £${item.book.price}` : "Get the book"}
+                  </a>
+                )}
+              </div>
+            </div>
           ) : (
             <>
               {loadingWiki && <p className="text-xs text-zinc-500">Loading article…</p>}
-              {!loadingWiki && (wiki?.fullText || wiki?.extract) && (
+              {!loadingWiki && wiki?.disambiguation && (
+                <p className="text-xs italic text-zinc-500">“{item.topic}” is a Wikipedia disambiguation page, so there is no article to show.</p>
+              )}
+              {!loadingWiki && blocks.length > 0 && (
                 <div className="space-y-2 text-sm leading-6 text-zinc-300">
-                  {(wiki?.fullText ?? wiki?.extract ?? "")
-                    .split(/\n{2,}/)
-                    .filter((para) => para.trim().length > 0)
-                    .slice(0, 20)
-                    .map((para, i) => {
-                      const heading = para.match(/^==+\s*(.+?)\s*==+$/);
-                      if (heading) {
-                        return (
-                          <h3 key={i} className="mt-3 text-[11px] font-black uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>{heading[1]}</h3>
-                        );
-                      }
-                      return <p key={i} className="whitespace-pre-line">{para}</p>;
-                    })}
+                  {blocks.map((block, i) =>
+                    block.type === "heading" ? (
+                      block.level <= 2 ? (
+                        <h3 key={i} className="pt-3 text-[11px] font-black uppercase tracking-[0.14em]" style={{ color: "var(--accent)" }}>{block.text}</h3>
+                      ) : (
+                        <h4 key={i} className="pt-2 text-[13px] font-bold text-zinc-100">{block.text}</h4>
+                      )
+                    ) : (
+                      <p key={i} className="whitespace-pre-line">{block.text}</p>
+                    ),
+                  )}
                 </div>
               )}
-              {!loadingWiki && !wiki?.fullText && !wiki?.extract && (
+              {!loadingWiki && !wiki?.disambiguation && blocks.length === 0 && (
                 <p className="text-xs text-zinc-500 italic">No Wikipedia article available for this topic.</p>
               )}
               <div className="flex flex-wrap gap-2 pt-3">

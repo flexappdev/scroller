@@ -125,7 +125,13 @@ async function enrich(titles) {
       titles: batch.map((t) => t.replaceAll("_", " ")).join("|"),
       maxlag: "5",
     });
-    const json = await getJson(`https://en.wikipedia.org/w/api.php?${params}`);
+    let json = await getJson(`https://en.wikipedia.org/w/api.php?${params}`);
+    for (let i = 0; json?.error && i < 5; i += 1) {
+      // maxlag and other soft errors come back as HTTP 200 with an error body.
+      console.warn(`api error ${json.error.code}; retrying`);
+      await sleep(5000 * (i + 1));
+      json = await getJson(`https://en.wikipedia.org/w/api.php?${params}`);
+    }
     const q = json?.query ?? {};
     const alias = new Map();
     for (const n of q.normalized ?? []) alias.set(n.to, n.from);

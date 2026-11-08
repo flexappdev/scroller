@@ -9,6 +9,7 @@ import AdSenseFeedCard from "./AdSenseFeedCard";
 import { Heart } from "lucide-react";
 import CardActions from "./CardActions";
 import { pushHistory, useLikesSaves } from "@/lib/likes-saves";
+import { cardBadge, cardSource } from "@/lib/card-label";
 
 function mergeArticles(current: MediaiArticle[], incoming: MediaiArticle[]): MediaiArticle[] {
   const byId = new Map(current.map((item) => [item.id, { ...item, videoUrls: [...item.videoUrls] }]));
@@ -48,8 +49,10 @@ export default function MediaiFeed({
   adsenseClient,
   adsenseSlot,
   provider = null,
+  source = "mediai",
 }: {
   initial: MediaiPage;
+  source?: "mediai" | "home";
   showAds?: boolean;
   adsenseClient?: string | null;
   adsenseSlot?: string | null;
@@ -112,6 +115,8 @@ export default function MediaiFeed({
       kind: "mediai",
       href: item.provider === "chatgpt"
         ? `/chatgpt?card=${encodeURIComponent(item.id)}`
+        : item.book
+          ? `/?card=${encodeURIComponent(item.id)}`
         : `/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}`,
     });
     if (typeof window === "undefined") return;
@@ -127,17 +132,21 @@ export default function MediaiFeed({
     setLoadingMore(true);
     try {
       const providerQuery = provider ? `&provider=${encodeURIComponent(provider)}` : "";
-      const response = await fetch(`/api/mediai?offset=${nextOffset}&limit=220${providerQuery}`);
+      const url = source === "home"
+        ? `/api/home?seed=${initial.seed ?? 0}&offset=${nextOffset}&limit=40`
+        : `/api/mediai?offset=${nextOffset}&limit=220${providerQuery}`;
+      const response = await fetch(url);
       if (!response.ok) return;
       const page = (await response.json()) as MediaiPage;
-      setItems((current) => mergeArticles(current, shuffled(page.items)));
+      // The home feed is already in a seeded random order; Mediai pages are not.
+      setItems((current) => mergeArticles(current, source === "home" ? page.items : shuffled(page.items)));
       setNextOffset(page.nextOffset);
     } catch (error) {
       console.warn("[mediai-feed] load more failed", error);
     } finally {
       setLoadingMore(false);
     }
-  }, [loadingMore, nextOffset, provider]);
+  }, [loadingMore, nextOffset, provider, source, initial.seed]);
 
   useEffect(() => {
     if (activeIndex >= items.length - 6) void loadMore();
@@ -218,7 +227,10 @@ export default function MediaiFeed({
     setRefreshing(true);
     setItems((current) => {
       if (mode === "alpha") return [...current].sort((a, b) => a.topic.localeCompare(b.topic));
-      if (mode === "ranked") return [...current].sort((a, b) => (b.assetCount ?? 0) - (a.assetCount ?? 0));
+      if (mode === "ranked") {
+        return [...current].sort((a, b) =>
+          (a.rank ?? Number.MAX_SAFE_INTEGER) - (b.rank ?? Number.MAX_SAFE_INTEGER) || (b.assetCount ?? 0) - (a.assetCount ?? 0));
+      }
       return shuffled(current);
     });
     setActiveIndex(0);
@@ -333,7 +345,7 @@ export default function MediaiFeed({
                     <img src={item.imageUrl} alt="" className="h-10 w-10 shrink-0 rounded object-cover" loading="lazy" />
                   )}
                   <span className="min-w-0 flex-1 truncate text-sm font-medium">{item.topic}</span>
-                  <span className="shrink-0 rounded-full border border-zinc-800 px-2 py-0.5 text-[10px] font-mono text-zinc-500">{item.provider === "chatgpt" ? "chatgpt" : "mediai"}</span>
+                  <span className="shrink-0 rounded-full border border-zinc-800 px-2 py-0.5 text-[10px] font-mono text-zinc-500">{cardSource(item)}</span>
                 </button>
               </li>
             ))}
@@ -449,6 +461,12 @@ function MediaCard({
     item.videoUrls.length ? `${item.videoUrls.length} motion` : null,
     item.audioUrl ? "audio" : null,
   ].filter(Boolean).join(" · ");
+  const tagline = item.book
+    ? [item.book.part, item.book.minutes ? `${item.book.minutes} min read` : null].filter(Boolean).join(" · ")
+    : item.kind === "wiki"
+      ? item.description || mediaLabel
+      : mediaLabel || `${item.assetCount} generated assets`;
+  const blurb = item.book ? item.book.tease : "Tap card for details · ↑↓ or swipe to scroll.";
 
   return (
     <section data-card-index={index} className="relative h-[100dvh] w-full snap-start snap-always overflow-hidden bg-zinc-950" aria-label={item.topic}>
@@ -508,7 +526,19 @@ function MediaCard({
           </Action>
         )}
         <Action label="Share" onClick={share}><Share2 className="h-5 w-5" /></Action>
-        {item.provider !== "chatgpt" && (
+        {item.book ? (
+          <a
+            href={item.book.read ?? item.sourceUrl}
+            target="_blank"
+            rel="noopener"
+            className="flex min-w-12 flex-col items-center gap-1 text-white/90"
+            aria-label={`Read ${item.topic}`}
+            onClick={(e) => e.stopPropagation()}
+          >
+            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-black/35 backdrop-blur-xl"><ExternalLink className="h-5 w-5" /></span>
+            <span className="text-[10px] font-bold [text-shadow:0_1px_3px_rgba(0,0,0,.8)]">Read</span>
+          </a>
+        ) : item.provider !== "chatgpt" && (
           <Link
             href={`/items/${encodeURIComponent(`wiki:${item.topic.replaceAll(" ", "_")}`)}/scroller`}
             className="flex min-w-12 flex-col items-center gap-1 text-white/90"
@@ -533,12 +563,12 @@ function MediaCard({
         }}
       >
         <div className="mb-2 flex items-center gap-2">
-          <span className="rounded-full border border-[color-mix(in_oklch,var(--accent)_52%,transparent)] bg-[color-mix(in_oklch,var(--accent)_16%,transparent)] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[var(--accent)] backdrop-blur">{item.provider === "chatgpt" ? "ChatGPT · Archive" : "Wikipedia · Mediai"}</span>
-          <span className="text-[10px] font-bold tabular-nums text-white/55">{index + 1} / {total}</span>
+          <span className="min-w-0 truncate rounded-full border border-[color-mix(in_oklch,var(--accent)_52%,transparent)] bg-[color-mix(in_oklch,var(--accent)_16%,transparent)] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-[0.13em] text-[var(--accent)] backdrop-blur">{cardBadge(item)}</span>
+          <span className="shrink-0 whitespace-nowrap text-[10px] font-bold tabular-nums text-white/55">{index + 1} / {total}</span>
         </div>
         <h1 className="scroller-display line-clamp-2 max-w-5xl text-[clamp(1.5rem,6.5vw,3.25rem)] font-black uppercase leading-[0.95] tracking-[-0.055em] text-white [text-shadow:0_2px_24px_rgba(0,0,0,.75)]">{item.topic}</h1>
-        <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--accent)]/85">{mediaLabel || `${item.assetCount} generated assets`}</p>
-        <p className="mt-1 text-sm font-medium text-white/70 line-clamp-1">Tap card for details · ↑↓ or swipe to scroll.</p>
+        {tagline && <p className="mt-2 line-clamp-1 text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--accent)]/85">{tagline}</p>}
+        <p className={["mt-1 text-sm font-medium text-white/70", item.book ? "line-clamp-3" : "line-clamp-1"].join(" ")}>{blurb}</p>
       </div>
     </section>
   );
@@ -552,3 +582,4 @@ function Action({ label, onClick, children }: { label: string; onClick: () => vo
     </button>
   );
 }
+
