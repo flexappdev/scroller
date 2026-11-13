@@ -26,6 +26,7 @@ export function fromScrollerCard(card: LegacyScrollerCard): ContentItem {
         source: "youtube",
         href: card.url,
         createdAt: card.published,
+        provenance: { sourceUrl: card.url, attribution: "YouTube" },
         media: card.thumbnail ? [{ kind: "image", src: card.thumbnail, alt: card.title }] : undefined,
       };
     case "star":
@@ -36,6 +37,8 @@ export function fromScrollerCard(card: LegacyScrollerCard): ContentItem {
         body: card.description ?? undefined,
         source: "github",
         href: card.html_url,
+        code: { repo: card.html_url },
+        provenance: { sourceUrl: card.html_url, attribution: "GitHub" },
         media: [{ kind: "image", src: `https://opengraph.githubassets.com/1/${card.full_name}`, alt: card.full_name }],
         meta: { stars: card.stars, language: card.language, full_name: card.full_name },
       };
@@ -79,6 +82,11 @@ export function fromScrollerCard(card: LegacyScrollerCard): ContentItem {
         body: card.extract,
         source: card.source,
         href: card.url,
+        provenance: {
+          sourceUrl: card.url,
+          licence: "CC BY-SA 4.0",
+          attribution: card.source === "wikivoyage" ? "Wikivoyage" : "Wikipedia",
+        },
         media: card.thumbnail ? [{ kind: "image", src: card.thumbnail, alt: card.title }] : undefined,
       };
     case "amazon":
