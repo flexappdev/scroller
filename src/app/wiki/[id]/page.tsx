@@ -1,3 +1,4 @@
+import { snippet } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { fetchFullArticleByTitle } from "@/lib/wiki/fetch";
@@ -42,12 +43,13 @@ async function loadArticle(pageid: number): Promise<{
 export async function generateMetadata({ params }: PageProps) {
   const { id } = await params;
   const pageid = Number(id);
-  if (!Number.isFinite(pageid)) return { title: "Wiki · Scroller" };
+  if (!Number.isFinite(pageid)) return { title: "Wikipedia article", robots: { index: false } };
   const index = await getWikiIndexByPageid(pageid);
-  if (!index) return { title: "Wiki article · Scroller" };
+  if (!index) return { title: "Wikipedia article", robots: { index: false } };
   return {
-    title: `${index.title} · Scroller Wiki`,
-    description: index.extract ?? index.description ?? `Wikipedia article: ${index.title}`,
+    title: `${index.title}: Wikipedia summary`,
+    description: snippet(index.extract ?? index.description ?? `Wikipedia article: ${index.title}`),
+    alternates: { canonical: `/wiki/${pageid}` },
     openGraph: {
       title: index.title,
       description: index.extract ?? index.description ?? undefined,

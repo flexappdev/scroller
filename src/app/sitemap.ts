@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { listSites } from "@/lib/cms/sites";
 import { listScrollerPacks } from "@/lib/scroller";
+import { SITE_URL } from "@/lib/seo";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://scroller-psi.vercel.app";
+const BASE_URL = SITE_URL;
 
 const STATIC_PATHS = [
   { path: "/", priority: 1.0, changeFrequency: "daily" as const },
@@ -57,5 +58,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // An invalid pack must not take the sitemap down; scroller:validate catches it in CI.
   }
 
-  return [...staticEntries, ...siteEntries, ...packEntries];
+  // Hub pages that link out to many items: kept in their own list so the
+  // STATIC_PATHS block above stays easy to merge with open PRs.
+  const hubEntries: MetadataRoute.Sitemap = [
+    { path: "/scroller", priority: 0.8 },
+    { path: "/explore", priority: 0.7 },
+    { path: "/daily", priority: 0.7 },
+    { path: "/wiki", priority: 0.6 },
+    { path: "/wikivoyage", priority: 0.6 },
+    { path: "/amazon", priority: 0.6 },
+    { path: "/images", priority: 0.5 },
+    { path: "/tv", priority: 0.5 },
+  ].map((p) => ({ url: `${BASE_URL}${p.path}`, lastModified: now, changeFrequency: "weekly" as const, priority: p.priority }));
+
+  const seen = new Set<string>();
+  return [...staticEntries, ...hubEntries, ...siteEntries, ...packEntries].filter((e) =>
+    seen.has(e.url) ? false : (seen.add(e.url), true),
+  );
 }

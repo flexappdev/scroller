@@ -5,8 +5,9 @@ import { cardToMediai } from "@/lib/scroll/toMediai";
 export const revalidate = 1800;
 
 export const metadata = {
-  title: "GitHub Stars · Scroller",
-  description: "Fullscreen GitHub stars feed.",
+  title: "GitHub stars: open-source projects to watch",
+  description: "Starred open-source repositories as full-screen cards: what each project does, its language and its star count.",
+  alternates: { canonical: "/github" },
 };
 
 export default async function GithubPage() {

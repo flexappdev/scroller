@@ -51,7 +51,7 @@ export default function OpengraphImage() {
         </div>
 
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 18, color: "#71717a", fontFamily: "monospace" }}>
-          <div>scroller-psi.vercel.app</div>
+          <div>scroller.tv</div>
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <div style={{ display: "block", width: 10, height: 10, borderRadius: 5, background: "#10b981" }} />
             v0.3.0

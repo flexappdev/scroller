@@ -32,14 +32,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
   if (!pack) {
     return {
-      title: "ScrollAI Daily | Scroller",
-      description: "The latest ScrollAI Daily news pack.",
+      title: "ScrollAI Daily: AI news in ten cards",
+      description: "The day's AI news as a short full-screen scroll: what happened, why it matters and where to read more.",
+      alternates: { canonical: "/daily" },
     };
   }
 
   return {
     title: `${pack.manifest.name} | ScrollAI Daily`,
     description: pack.manifest.description,
+    alternates: { canonical: "/daily" },
   };
 }
 

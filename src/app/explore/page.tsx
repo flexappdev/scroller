@@ -11,8 +11,9 @@ import { funnyThings } from "@/lib/funny";
 export const revalidate = 300;
 
 export const metadata = {
-  title: "Explore · Scroller",
-  description: "Every source, live — asset counts and by-type breakdown.",
+  title: "Explore every source",
+  description: "Every Scroller source in one place: Wikipedia, WikiVoyage, videos, GitHub, AI prompts, apps, Amazon picks and images, with live counts.",
+  alternates: { canonical: "/explore" },
 };
 
 async function safe<T>(fn: () => Promise<T>, fallback: T): Promise<T> {

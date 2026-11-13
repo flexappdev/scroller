@@ -6,14 +6,22 @@ import ItemActionsClient from "./ItemActionsClient";
 
 export const dynamic = "force-dynamic";
 
+// Same shape as the sitemap: `kind:` prefix kept, the rest URL-encoded.
+function itemPath(rawId: string): string {
+  const id = decodeURIComponent(rawId);
+  const i = id.indexOf(":");
+  return i < 0 ? `/items/${encodeURIComponent(id)}` : `/items/${id.slice(0, i)}:${encodeURIComponent(id.slice(i + 1))}`;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const detail = await resolveDetail(id);
-  if (!detail) return { title: "Item not found" };
+  if (!detail) return { title: "Item not found", robots: { index: false } };
   const description = (detail.description ?? `${detail.subtitle} — open in Scroller.`).slice(0, 160);
   return {
     title: detail.title,
     description,
+    alternates: { canonical: itemPath(id) },
     openGraph: {
       title: detail.title,
       description,
