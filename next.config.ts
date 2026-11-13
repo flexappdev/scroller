@@ -10,7 +10,11 @@ const SECURITY_HEADERS = [
 
 const nextConfig: NextConfig = {
   async rewrites() {
-    return [{ source: "/top100/cinema", destination: "/top100/cinema/index.html" }];
+    return [
+      { source: "/top100/cinema", destination: "/top100/cinema/index.html" },
+      // vidai Scroller: static build from flexappdev/vidai plugins/vad-scroller
+      { source: "/vidai", destination: "/vidai/index.html" },
+    ];
   },
   images: {
     remotePatterns: [
