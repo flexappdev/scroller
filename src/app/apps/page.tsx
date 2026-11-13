@@ -5,8 +5,9 @@ import { cardToMediai } from "@/lib/scroll/toMediai";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Apps · Scroller",
-  description: "Fullscreen fleet apps feed.",
+  title: "Apps: small, useful web apps",
+  description: "A full-screen feed of small web apps from the ScrollAI fleet, each with a screenshot and a one-line pitch.",
+  alternates: { canonical: "/apps" },
 };
 
 export default async function AppsPage() {

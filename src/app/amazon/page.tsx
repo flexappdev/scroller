@@ -6,8 +6,9 @@ export const dynamic = "force-dynamic";
 export const revalidate = 3600;
 
 export const metadata = {
-  title: "Amazon · Scroller",
-  description: "Fullscreen Amazon Best-Sellers feed.",
+  title: "Amazon best sellers to scroll",
+  description: "Amazon best sellers across books, tech and home as full-screen cards with prices and ratings. Some links are affiliate links.",
+  alternates: { canonical: "/amazon" },
 };
 
 export default async function AmazonPage() {

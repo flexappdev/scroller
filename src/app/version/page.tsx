@@ -3,8 +3,9 @@ import { GitCommit, ExternalLink, Tag } from "lucide-react";
 import pkg from "../../../package.json";
 
 export const metadata = {
-  title: "Version history · Scroller",
+  title: "Version history",
   description: "Scroller release notes — every version with a short summary of what shipped.",
+  alternates: { canonical: "/version" },
 };
 
 // Fully static — no data deps. Cached at the edge indefinitely once built.

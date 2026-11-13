@@ -4,8 +4,9 @@ import AppShell from "@/components/AppShell";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import AnalyticsBridge from "@/components/AnalyticsBridge";
 import { CONSENT_INIT } from "@/lib/consent";
+import { SITE_URL, jsonLdHtml, websiteJsonLd } from "@/lib/seo";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://scroller-psi.vercel.app";
+const BASE_URL = SITE_URL;
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim();
 const DEFAULT_DESCRIPTION =
   "One feed for everything worth scrolling — videos, GitHub stars, AI prompts, apps, curated sites, Wikipedia, WikiVoyage, Amazon picks, and images.";
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Scroller",
+    locale: "en_GB",
     title: "Scroller",
     description: DEFAULT_DESCRIPTION,
     url: BASE_URL,
@@ -58,6 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             crossOrigin="anonymous"
           />
         ) : null}
+        <script type="application/ld+json" dangerouslySetInnerHTML={jsonLdHtml(websiteJsonLd())} />
       </head>
       <body suppressHydrationWarning className="min-h-screen">
         <AppShell>{children}</AppShell>

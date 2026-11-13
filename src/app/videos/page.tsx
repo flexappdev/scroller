@@ -5,8 +5,9 @@ import { cardToMediai } from "@/lib/scroll/toMediai";
 export const revalidate = 600;
 
 export const metadata = {
-  title: "Videos · Scroller",
-  description: "Fullscreen video feed from @MatSiems + @mat-siems-production.",
+  title: "Videos: short films and channel uploads",
+  description: "Scroll Mat Siems' latest YouTube uploads full-screen, one video at a time, with a grid view for the whole catalogue.",
+  alternates: { canonical: "/videos" },
 };
 
 export default async function VideosPage() {

@@ -1,11 +1,12 @@
 import { listScrollerPacks } from "@/lib/scroller";
+import { SITE_URL } from "@/lib/seo";
 
 // MSB-034 — RSS of ScrollAI Daily and other Scroller packs, newest first.
 // Feeds RSS-to-email and RSS-to-social tools so each daily links back here.
 
 export const revalidate = 3600;
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://scroller-psi.vercel.app";
+const BASE_URL = SITE_URL;
 
 function esc(s: string): string {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

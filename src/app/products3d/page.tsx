@@ -2,8 +2,9 @@ import Script from "next/script";
 import Product3DClient from "./Product3DClient";
 
 export const metadata = {
-  title: "3D Products · Scroller",
+  title: "3D product lab",
   description: "Interactive 3D TTShop product lab for Scroller and premium ad production.",
+  robots: { index: false, follow: true },
 };
 
 export default function Product3DPage() {

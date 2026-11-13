@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!pack) return {};
 
   return {
-    title: `${pack.manifest.name} | Scroller`,
+    title: pack.manifest.name,
     description: pack.manifest.description,
   };
 }

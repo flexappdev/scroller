@@ -7,8 +7,9 @@ import { liveUrl as fleetLiveUrl } from "@/lib/scroll/fleet-urls";
 export const dynamic = "force-dynamic";
 
 export const metadata = {
-  title: "Sites · Scroller",
-  description: "The fleet, curated picks, and every scroll source.",
+  title: "Sites: the best of the web, curated",
+  description: "Hand-picked websites, the ScrollAI fleet (scroller.tv, wikai.tv, mediai.tv) and every source Scroller pulls from.",
+  alternates: { canonical: "/sites" },
 };
 
 const S3_PUBLIC_BASE = "https://com27.s3.eu-west-2.amazonaws.com";

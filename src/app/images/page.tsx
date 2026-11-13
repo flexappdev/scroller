@@ -6,8 +6,9 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
 export const metadata = {
-  title: "Images · Scroller",
-  description: "Fullscreen S3 image feed.",
+  title: "Images: a full-screen picture feed",
+  description: "A full-screen feed of AI-made and curated images from the Scroller library. Swipe through or switch to the grid.",
+  alternates: { canonical: "/images" },
 };
 
 export default async function ImagesPage() {

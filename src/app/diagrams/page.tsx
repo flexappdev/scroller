@@ -9,9 +9,10 @@ import { AuthGate } from "@/components/admin/diagrams/AuthGate";
 import { StackOverview } from "@/components/admin/diagrams/StackOverview";
 
 export const metadata: Metadata = {
-  title: "Diagrams · Scroller",
-  description:
-    "Eight editorial tech diagrams of the Scroller codebase — stack, architecture, cache flow, source fetchers, image resolver, mobile card anatomy, auth gate, content pipeline.",
+  title: "Diagrams of the Scroller codebase",
+  description: "Eight editorial tech diagrams of the Scroller codebase — stack, architecture, cache flow, source fetchers, image resolver, mobile card anatomy, auth gate, content pipeline.",
+  alternates: { canonical: "/diagrams" },
+  robots: { index: false, follow: true },
 };
 
 const ACCENT = "#10b981";

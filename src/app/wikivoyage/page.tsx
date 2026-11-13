@@ -6,8 +6,9 @@ export const dynamic = "force-dynamic";
 export const revalidate = 600;
 
 export const metadata = {
-  title: "WikiVoyage · Scroller",
-  description: "Fullscreen WikiVoyage feed.",
+  title: "WikiVoyage feed: travel guides to scroll",
+  description: "Destinations from WikiVoyage as full-screen travel cards: where to go, what to see and how to get around.",
+  alternates: { canonical: "/wikivoyage" },
 };
 
 export default async function WikiVoyagePage() {

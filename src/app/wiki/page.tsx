@@ -5,8 +5,9 @@ import { cardToMediai } from "@/lib/scroll/toMediai";
 export const revalidate = 600;
 
 export const metadata = {
-  title: "Wiki · Scroller",
-  description: "Fullscreen Wikipedia feed.",
+  title: "Wikipedia feed: the most-read articles",
+  description: "Scroll Wikipedia's most-read articles as full-screen cards: a short summary first, the full article one tap away.",
+  alternates: { canonical: "/wiki" },
 };
 
 export default async function WikiPage() {
