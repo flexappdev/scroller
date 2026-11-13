@@ -13,6 +13,8 @@ const STATIC_PATHS = [
   { path: "/prompts", priority: 0.7, changeFrequency: "monthly" as const },
   { path: "/funny", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/top100", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/books", priority: 0.9, changeFrequency: "weekly" as const },
+  { path: "/books/scroll", priority: 0.7, changeFrequency: "weekly" as const },
   { path: "/top100/cinema", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/about", priority: 0.4, changeFrequency: "monthly" as const },
 ];
