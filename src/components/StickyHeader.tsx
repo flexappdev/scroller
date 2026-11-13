@@ -245,7 +245,7 @@ export default function StickyHeader() {
           <span className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,.5),transparent_48%)]" />
           <ScrollText className="relative h-[20px] w-[20px]" />
         </span>
-        <span className="min-w-0">
+        <span className="hidden min-w-0 sm:block">
           <span className="scroller-display block text-[22px] font-black uppercase leading-none tracking-[-0.035em]">SCROLLER</span>
           <span
             className="mt-1 hidden text-[9px] font-semibold uppercase tracking-[0.16em] opacity-0 transition-opacity duration-150 group-hover:opacity-100 sm:block"
@@ -333,7 +333,7 @@ export default function StickyHeader() {
         </button>
         <Link
           href="/about"
-          className="flex h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)]"
+          className="hidden h-9 items-center gap-1.5 rounded-xl border px-2.5 text-xs font-bold transition-colors hover:bg-[var(--surface-hover)] sm:flex"
           style={{ borderColor: "var(--border)", background: "var(--surface-soft)" }}
           title="About Scroller"
         >
