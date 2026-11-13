@@ -34,6 +34,8 @@ export default async function HomePage() {
       showAds={!loggedIn}
       adsenseClient={process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || null}
       adsenseSlot={process.env.NEXT_PUBLIC_ADSENSE_FEED_SLOT?.trim() || null}
+      amazonTag={process.env.AMAZON_ASSOCIATES_TAG?.trim() || null}
+      amazonMarketplace={process.env.AMAZON_MARKETPLACE?.trim() || "www.amazon.co.uk"}
     />
   );
 }
