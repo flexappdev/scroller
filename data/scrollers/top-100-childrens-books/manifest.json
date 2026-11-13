@@ -1,0 +1,33 @@
+{
+  "slug": "top-100-childrens-books",
+  "name": "Top 100 Children's Books of All Time",
+  "tagline": "The children's books every family should own.",
+  "description": "The 100 best children's books of all time, ranked: picture books, bedtime stories, early readers and classic novels, from The Very Hungry Caterpillar and The Gruffalo to Matilda, Narnia and Harry Potter. Every card has a source and a link to buy the book.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Shop best childrens books on Amazon",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=best+childrens+books&tag=fs08-21",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "scroller",
+  "topic": "books",
+  "kind": "product",
+  "sources": [
+    {
+      "title": "BBC Culture: The 100 greatest children's books of all time",
+      "url": "https://www.bbc.com/culture/article/20230522-the-100-greatest-childrens-books-of-all-time"
+    },
+    {
+      "title": "CILIP Carnegie Medal",
+      "url": "https://yotocarnegies.co.uk/"
+    },
+    {
+      "title": "Wikipedia: Children's literature",
+      "url": "https://en.wikipedia.org/wiki/Children%27s_literature"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-11-13"
+}

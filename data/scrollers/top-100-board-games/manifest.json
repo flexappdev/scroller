@@ -1,0 +1,33 @@
+{
+  "slug": "top-100-board-games",
+  "name": "Top 100 Board Games of All Time",
+  "tagline": "The best board games ever made, from Catan to Chess.",
+  "description": "The 100 best board games of all time, ranked: modern classics like Catan, Ticket to Ride and Wingspan, family favourites, party games, co-ops and timeless traditional games. Every card has a source and a link to buy the game.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Shop best board games on Amazon",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=best+board+games&tag=fs08-21",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "scroller",
+  "topic": "games",
+  "kind": "product",
+  "sources": [
+    {
+      "title": "BoardGameGeek rankings",
+      "url": "https://boardgamegeek.com/browse/boardgame"
+    },
+    {
+      "title": "Spiel des Jahres winners",
+      "url": "https://www.spiel-des-jahres.de/en/"
+    },
+    {
+      "title": "Wikipedia: Board game",
+      "url": "https://en.wikipedia.org/wiki/Board_game"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-11-13"
+}

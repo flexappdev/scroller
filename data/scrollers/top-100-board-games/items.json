@@ -1,0 +1,3802 @@
+[
+  {
+    "id": "001",
+    "rank": 1,
+    "title": "Catan",
+    "content": "Trade wood for sheep, build roads and race to ten points. The game that brought modern European board games to the mainstream.",
+    "hook": "#1 · Klaus Teuber, 1995",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Catan+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Catan",
+        "url": "https://en.wikipedia.org/wiki/Catan"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Catan board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Catan+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Catan",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "002",
+    "rank": 2,
+    "title": "Ticket to Ride",
+    "content": "Collect coloured train cards and claim railway routes across the map. Won the Spiel des Jahres in 2004 and still the best gateway game going.",
+    "hook": "#2 · Alan R. Moon, 2004",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Ticket+to+Ride+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Ticket to Ride (board game)",
+        "url": "https://en.wikipedia.org/wiki/Ticket_to_Ride_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Ticket to Ride board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Ticket+to+Ride+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Ticket to Ride (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "003",
+    "rank": 3,
+    "title": "Carcassonne",
+    "content": "Draw a tile, place it, drop a meeple. A medieval landscape of cities, roads and monasteries grows on the table every game.",
+    "hook": "#3 · Klaus-Jürgen Wrede, 2000",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Carcassonne+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Carcassonne (board game)",
+        "url": "https://en.wikipedia.org/wiki/Carcassonne_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Carcassonne board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Carcassonne+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Carcassonne (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "004",
+    "rank": 4,
+    "title": "Pandemic",
+    "content": "Four diseases spread across the world and the whole table works together to cure them. The game that made co-operative play mainstream.",
+    "hook": "#4 · Matt Leacock, 2008",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Pandemic+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Pandemic (board game)",
+        "url": "https://en.wikipedia.org/wiki/Pandemic_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Pandemic board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Pandemic+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Pandemic (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "005",
+    "rank": 5,
+    "title": "Codenames",
+    "content": "Two spymasters give one-word clues to link their team's secret agents. The party game for people who like a puzzle.",
+    "hook": "#5 · Vlaada Chvátil, 2015",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Codenames+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Codenames (board game)",
+        "url": "https://en.wikipedia.org/wiki/Codenames_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Codenames board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Codenames+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Codenames (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "006",
+    "rank": 6,
+    "title": "Azul",
+    "content": "Draft beautiful Portuguese tiles and lay them on your wall without wasting any. Quick to learn, quietly cut-throat.",
+    "hook": "#6 · Michael Kiesling, 2017",
+    "tags": [
+      "Abstract"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Azul+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Azul (board game)",
+        "url": "https://en.wikipedia.org/wiki/Azul_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Azul board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Azul+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Azul (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "007",
+    "rank": 7,
+    "title": "Wingspan",
+    "content": "Attract birds to your wildlife reserves with an engine of food, eggs and habitats. Over 170 illustrated birds and a dice-tower birdfeeder.",
+    "hook": "#7 · Elizabeth Hargrave, 2019",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Wingspan+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Wingspan (board game)",
+        "url": "https://en.wikipedia.org/wiki/Wingspan_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Wingspan board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Wingspan+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Wingspan (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "008",
+    "rank": 8,
+    "title": "7 Wonders",
+    "content": "Draft cards over three ages to build an ancient civilisation. Plays up to seven people in about half an hour.",
+    "hook": "#8 · Antoine Bauza, 2010",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=7+Wonders+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: 7 Wonders (board game)",
+        "url": "https://en.wikipedia.org/wiki/7_Wonders_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "7 Wonders board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=7+Wonders+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "7 Wonders (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "009",
+    "rank": 9,
+    "title": "Dominion",
+    "content": "The game that invented deck-building. Start with copper and estates and buy your way to a kingdom.",
+    "hook": "#9 · Donald X. Vaccarino, 2008",
+    "tags": [
+      "Card game"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Dominion+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dominion (card game)",
+        "url": "https://en.wikipedia.org/wiki/Dominion_(card_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dominion board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dominion+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Dominion (card game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "010",
+    "rank": 10,
+    "title": "Terraforming Mars",
+    "content": "Raise the temperature, oxygen and oceans of Mars as rival corporations. Hundreds of unique project cards.",
+    "hook": "#10 · Jacob Fryxelius, 2016",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Terraforming+Mars+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Terraforming Mars (board game)",
+        "url": "https://en.wikipedia.org/wiki/Terraforming_Mars_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Terraforming Mars board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Terraforming+Mars+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Terraforming Mars (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "011",
+    "rank": 11,
+    "title": "Gloomhaven",
+    "content": "A huge tactical dungeon campaign in a box that weighs nearly 10 kg. Topped BoardGameGeek's ranking for years.",
+    "hook": "#11 · Isaac Childres, 2017",
+    "tags": [
+      "Campaign"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Gloomhaven+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Gloomhaven",
+        "url": "https://en.wikipedia.org/wiki/Gloomhaven"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Gloomhaven board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Gloomhaven+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Gloomhaven",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "012",
+    "rank": 12,
+    "title": "Splendor",
+    "content": "Collect gem tokens, buy development cards and attract nobles. Twenty minutes of satisfying engine-building.",
+    "hook": "#12 · Marc André, 2014",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Splendor+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Splendor (game)",
+        "url": "https://en.wikipedia.org/wiki/Splendor_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Splendor board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Splendor+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Splendor (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "013",
+    "rank": 13,
+    "title": "Scythe",
+    "content": "An alternate-history 1920s Europe of farms and giant mechs. Gorgeous art by Jakub Różalski.",
+    "hook": "#13 · Jamey Stegmaier, 2016",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Scythe+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Scythe (board game)",
+        "url": "https://en.wikipedia.org/wiki/Scythe_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Scythe board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Scythe+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Scythe (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "014",
+    "rank": 14,
+    "title": "Twilight Struggle",
+    "content": "The entire Cold War in one two-player game. The USA against the USSR, card by card.",
+    "hook": "#14 · Ananda Gupta and Jason Matthews, 2005",
+    "tags": [
+      "Two-player"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Twilight+Struggle+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Twilight Struggle",
+        "url": "https://en.wikipedia.org/wiki/Twilight_Struggle"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Twilight Struggle board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Twilight+Struggle+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Twilight Struggle",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "015",
+    "rank": 15,
+    "title": "Agricola",
+    "content": "Feed your 17th-century farming family through harsh harvests. Worker placement at its most tense.",
+    "hook": "#15 · Uwe Rosenberg, 2007",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Agricola+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Agricola (board game)",
+        "url": "https://en.wikipedia.org/wiki/Agricola_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Agricola board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Agricola+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Agricola (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "016",
+    "rank": 16,
+    "title": "Puerto Rico",
+    "content": "Choose roles, plant crops and ship goods. The long-time number one on BoardGameGeek.",
+    "hook": "#16 · Andreas Seyfarth, 2002",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Puerto+Rico+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Puerto Rico (board game)",
+        "url": "https://en.wikipedia.org/wiki/Puerto_Rico_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Puerto Rico board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Puerto+Rico+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Puerto Rico (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "017",
+    "rank": 17,
+    "title": "Power Grid",
+    "content": "Buy power plants, fuel them and connect cities. An economic game where the leader pays more.",
+    "hook": "#17 · Friedemann Friese, 2004",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Power+Grid+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Power Grid",
+        "url": "https://en.wikipedia.org/wiki/Power_Grid"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Power Grid board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Power+Grid+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Power Grid",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "018",
+    "rank": 18,
+    "title": "Dixit",
+    "content": "Dreamlike picture cards and clues that are neither too obvious nor too obscure. Won the Spiel des Jahres in 2010.",
+    "hook": "#18 · Jean-Louis Roubira, 2008",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Dixit+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dixit (board game)",
+        "url": "https://en.wikipedia.org/wiki/Dixit_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dixit board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dixit+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Dixit (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "019",
+    "rank": 19,
+    "title": "Kingdomino",
+    "content": "Domino-style tiles build a five-by-five kingdom in fifteen minutes. Spiel des Jahres 2017.",
+    "hook": "#19 · Bruno Cathala, 2016",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Kingdomino+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Kingdomino",
+        "url": "https://en.wikipedia.org/wiki/Kingdomino"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Kingdomino board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Kingdomino+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Kingdomino",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "020",
+    "rank": 20,
+    "title": "Root",
+    "content": "Woodland creatures fight asymmetric wars. Every faction plays a completely different game.",
+    "hook": "#20 · Cole Wehrle, 2018",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Root+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Root (board game)",
+        "url": "https://en.wikipedia.org/wiki/Root_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Root board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Root+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Root (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "021",
+    "rank": 21,
+    "title": "Brass: Birmingham",
+    "content": "Build canals, railways and industries in the Industrial Revolution West Midlands. A heavy economic classic.",
+    "hook": "#21 · Gavan Brown, Matt Tolman and Martin Wallace, 2018",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Brass%3A+Birmingham+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Brass (board game)",
+        "url": "https://en.wikipedia.org/wiki/Brass_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Brass: Birmingham board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Brass%3A+Birmingham+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Brass (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "022",
+    "rank": 22,
+    "title": "Spirit Island",
+    "content": "Island spirits drive off colonising invaders together. A co-op with real strategic depth.",
+    "hook": "#22 · R. Eric Reuss, 2017",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Spirit+Island+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Spirit Island",
+        "url": "https://en.wikipedia.org/wiki/Spirit_Island"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Spirit Island board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Spirit+Island+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Spirit Island",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "023",
+    "rank": 23,
+    "title": "Everdell",
+    "content": "Woodland critters build a city under a three-dimensional Ever Tree. Lovely art and tight worker placement.",
+    "hook": "#23 · James A. Wilson, 2018",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Everdell+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Everdell",
+        "url": "https://en.wikipedia.org/wiki/Everdell"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Everdell board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Everdell+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Everdell",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "024",
+    "rank": 24,
+    "title": "Cascadia",
+    "content": "Draft habitats and wildlife of the Pacific Northwest. Spiel des Jahres 2022.",
+    "hook": "#24 · Randy Flynn, 2021",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Cascadia+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cascadia (board game)",
+        "url": "https://en.wikipedia.org/wiki/Cascadia_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cascadia board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cascadia+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Cascadia (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "025",
+    "rank": 25,
+    "title": "Patchwork",
+    "content": "A two-player quilting race with Tetris-shaped patches and buttons for currency.",
+    "hook": "#25 · Uwe Rosenberg, 2014",
+    "tags": [
+      "Two-player"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Patchwork+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Patchwork (board game)",
+        "url": "https://en.wikipedia.org/wiki/Patchwork_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Patchwork board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Patchwork+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Patchwork (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "026",
+    "rank": 26,
+    "title": "Jaipur",
+    "content": "Trade spices, cloth and camels to become the Maharaja's merchant. The perfect two-player card game.",
+    "hook": "#26 · Sébastien Pauchon, 2009",
+    "tags": [
+      "Two-player"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Jaipur+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Jaipur (card game)",
+        "url": "https://en.wikipedia.org/wiki/Jaipur_(card_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Jaipur board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Jaipur+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Jaipur (card game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "027",
+    "rank": 27,
+    "title": "Love Letter",
+    "content": "Sixteen cards, one tiny box, endless deduction. Get your letter to the princess.",
+    "hook": "#27 · Seiji Kanai, 2012",
+    "tags": [
+      "Card game"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Love+Letter+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Love Letter (card game)",
+        "url": "https://en.wikipedia.org/wiki/Love_Letter_(card_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Love Letter board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Love+Letter+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Love Letter (card game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "028",
+    "rank": 28,
+    "title": "The Resistance: Avalon",
+    "content": "Loyal knights against hidden servants of Mordred. Social deduction for five to ten players.",
+    "hook": "#28 · Don Eskridge, 2012",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Resistance%3A+Avalon+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Resistance (game)",
+        "url": "https://en.wikipedia.org/wiki/The_Resistance_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Resistance: Avalon board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Resistance%3A+Avalon+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Resistance (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "029",
+    "rank": 29,
+    "title": "Secret Hitler",
+    "content": "Liberals and fascists in 1930s Germany, with one player hiding the worst secret.",
+    "hook": "#29 · Mike Boxleiter, Tommy Maranges and Max Temkin, 2016",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Secret+Hitler+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Secret Hitler",
+        "url": "https://en.wikipedia.org/wiki/Secret_Hitler"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Secret Hitler board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Secret+Hitler+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Secret Hitler",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "030",
+    "rank": 30,
+    "title": "Werewolf",
+    "content": "Villagers by day, wolves by night. The original social deduction game.",
+    "hook": "#30 · Dimitry Davidoff (as Mafia), 1986",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Werewolf+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mafia (party game)",
+        "url": "https://en.wikipedia.org/wiki/Mafia_(party_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Werewolf board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Werewolf+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mafia (party game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "031",
+    "rank": 31,
+    "title": "Chess",
+    "content": "Sixty-four squares and thirty-two pieces. The strategy game against which every other is measured.",
+    "hook": "#31 · Traditional, c. 6th century",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Chess+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Chess",
+        "url": "https://en.wikipedia.org/wiki/Chess"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Chess board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Chess+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Chess",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "032",
+    "rank": 32,
+    "title": "Go",
+    "content": "Black and white stones on a 19x19 grid. Simple rules, near-infinite depth.",
+    "hook": "#32 · Traditional, over 2,500 years old",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Go+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Go (game)",
+        "url": "https://en.wikipedia.org/wiki/Go_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Go board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Go+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Go (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "033",
+    "rank": 33,
+    "title": "Backgammon",
+    "content": "One of the oldest board games known, mixing dice luck with real skill.",
+    "hook": "#33 · Traditional, ancient",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Backgammon+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Backgammon",
+        "url": "https://en.wikipedia.org/wiki/Backgammon"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Backgammon board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Backgammon+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Backgammon",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "034",
+    "rank": 34,
+    "title": "Scrabble",
+    "content": "Seven letter tiles and a board of premium squares. The world's best-known word game.",
+    "hook": "#34 · Alfred Mosher Butts, 1938",
+    "tags": [
+      "Word"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Scrabble+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Scrabble",
+        "url": "https://en.wikipedia.org/wiki/Scrabble"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Scrabble board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Scrabble+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Scrabble",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "035",
+    "rank": 35,
+    "title": "Monopoly",
+    "content": "Buy property, build hotels and bankrupt your family. Based on Lizzie Magie's The Landlord's Game.",
+    "hook": "#35 · Charles Darrow and Lizzie Magie, 1935",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Monopoly+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Monopoly (game)",
+        "url": "https://en.wikipedia.org/wiki/Monopoly_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Monopoly board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Monopoly+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Monopoly (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "036",
+    "rank": 36,
+    "title": "Cluedo",
+    "content": "Who did it, where, and with what? Colonel Mustard in the library with the candlestick. Invented in Birmingham.",
+    "hook": "#36 · Anthony E. Pratt, 1949",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Cluedo+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cluedo",
+        "url": "https://en.wikipedia.org/wiki/Cluedo"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cluedo board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cluedo+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Cluedo",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "037",
+    "rank": 37,
+    "title": "Risk",
+    "content": "World domination by dice. The conquest game that started countless family arguments.",
+    "hook": "#37 · Albert Lamorisse, 1957",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Risk+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Risk (game)",
+        "url": "https://en.wikipedia.org/wiki/Risk_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Risk board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Risk+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Risk (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "038",
+    "rank": 38,
+    "title": "Trivial Pursuit",
+    "content": "Six categories, six wedges, a lot of general knowledge. The pub quiz in a box.",
+    "hook": "#38 · Chris Haney and Scott Abbott, 1981",
+    "tags": [
+      "Quiz"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Trivial+Pursuit+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Trivial Pursuit",
+        "url": "https://en.wikipedia.org/wiki/Trivial_Pursuit"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Trivial Pursuit board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Trivial+Pursuit+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Trivial Pursuit",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "039",
+    "rank": 39,
+    "title": "Mastermind",
+    "content": "Crack the hidden four-peg colour code with logic. A two-player deduction classic.",
+    "hook": "#39 · Mordecai Meirowitz, 1970",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Mastermind+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mastermind (board game)",
+        "url": "https://en.wikipedia.org/wiki/Mastermind_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mastermind board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mastermind+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mastermind (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "040",
+    "rank": 40,
+    "title": "Connect Four",
+    "content": "Drop discs into a vertical grid to get four in a row.",
+    "hook": "#40 · Howard Wexler and Ned Strongin, 1974",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Connect+Four+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Connect Four",
+        "url": "https://en.wikipedia.org/wiki/Connect_Four"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Connect Four board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Connect+Four+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Connect Four",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "041",
+    "rank": 41,
+    "title": "Pictionary",
+    "content": "Draw it, don't say it. The drawing game for any party.",
+    "hook": "#41 · Robert Angel, 1985",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Pictionary+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Pictionary",
+        "url": "https://en.wikipedia.org/wiki/Pictionary"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Pictionary board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Pictionary+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Pictionary",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "042",
+    "rank": 42,
+    "title": "Articulate!",
+    "content": "Describe as many words as you can in thirty seconds. A British party favourite.",
+    "hook": "#42 · Andrew Bolton, 1992",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Articulate%21+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Articulate!",
+        "url": "https://en.wikipedia.org/wiki/Articulate!"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Articulate! board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Articulate%21+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Articulate!",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "043",
+    "rank": 43,
+    "title": "Exploding Kittens",
+    "content": "A kitten-powered version of Russian roulette that broke Kickstarter records.",
+    "hook": "#43 · Elan Lee, Matthew Inman and Shane Small, 2015",
+    "tags": [
+      "Card game"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Exploding+Kittens+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Exploding Kittens",
+        "url": "https://en.wikipedia.org/wiki/Exploding_Kittens"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Exploding Kittens board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Exploding+Kittens+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Exploding Kittens",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "044",
+    "rank": 44,
+    "title": "Sushi Go!",
+    "content": "Pass the plates and pick the best sushi combos. A pocket-sized drafting game.",
+    "hook": "#44 · Phil Walker-Harding, 2013",
+    "tags": [
+      "Card game"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Sushi+Go%21+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Sushi Go!",
+        "url": "https://en.wikipedia.org/wiki/Sushi_Go!"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sushi Go! board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sushi+Go%21+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Sushi Go!",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "045",
+    "rank": 45,
+    "title": "Takenoko",
+    "content": "Grow bamboo, irrigate gardens and keep a hungry panda fed for the Emperor.",
+    "hook": "#45 · Antoine Bauza, 2011",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Takenoko+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Takenoko",
+        "url": "https://en.wikipedia.org/wiki/Takenoko"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Takenoko board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Takenoko+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Takenoko",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "046",
+    "rank": 46,
+    "title": "King of Tokyo",
+    "content": "Giant monsters roll dice to smash Tokyo. Yahtzee with claws.",
+    "hook": "#46 · Richard Garfield, 2011",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=King+of+Tokyo+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: King of Tokyo",
+        "url": "https://en.wikipedia.org/wiki/King_of_Tokyo"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "King of Tokyo board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=King+of+Tokyo+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "King of Tokyo",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "047",
+    "rank": 47,
+    "title": "Small World",
+    "content": "Fantasy races rise, conquer and decline on a map too small for all of them.",
+    "hook": "#47 · Philippe Keyaerts, 2009",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Small+World+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Small World (board game)",
+        "url": "https://en.wikipedia.org/wiki/Small_World_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Small World board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Small+World+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Small World (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "048",
+    "rank": 48,
+    "title": "Lords of Waterdeep",
+    "content": "Secret lords recruit adventurers to complete quests in the Dungeons & Dragons city.",
+    "hook": "#48 · Peter Lee and Rodney Thompson, 2012",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Lords+of+Waterdeep+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Lords of Waterdeep",
+        "url": "https://en.wikipedia.org/wiki/Lords_of_Waterdeep"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Lords of Waterdeep board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Lords+of+Waterdeep+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Lords of Waterdeep",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "049",
+    "rank": 49,
+    "title": "Concordia",
+    "content": "Build a trading network across the Roman Empire using a hand of personality cards.",
+    "hook": "#49 · Mac Gerdts, 2013",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Concordia+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Concordia (board game)",
+        "url": "https://en.wikipedia.org/wiki/Concordia_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Concordia board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Concordia+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Concordia (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "050",
+    "rank": 50,
+    "title": "Great Western Trail",
+    "content": "Drive cattle from Texas to Kansas City in a big, satisfying strategy game.",
+    "hook": "#50 · Alexander Pfister, 2016",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Great+Western+Trail+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Great Western Trail",
+        "url": "https://en.wikipedia.org/wiki/Great_Western_Trail"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Great Western Trail board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Great+Western+Trail+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Great Western Trail",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "051",
+    "rank": 51,
+    "title": "Viticulture",
+    "content": "Inherit a Tuscan vineyard and turn it into a winery. Worker placement through the seasons.",
+    "hook": "#51 · Jamey Stegmaier and Alan Stone, 2013",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Viticulture+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Viticulture (board game)",
+        "url": "https://en.wikipedia.org/wiki/Viticulture_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Viticulture board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Viticulture+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Viticulture (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "052",
+    "rank": 52,
+    "title": "Mysterium",
+    "content": "A ghost sends dream visions to psychics to solve its murder.",
+    "hook": "#52 · Oleksandr Nevskiy and Oleg Sidorenko, 2015",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Mysterium+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mysterium (board game)",
+        "url": "https://en.wikipedia.org/wiki/Mysterium_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mysterium board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mysterium+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mysterium (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "053",
+    "rank": 53,
+    "title": "Sagrada",
+    "content": "Draft dice to build a stained-glass window that follows strict colour rules.",
+    "hook": "#53 · Daryl Andrews and Adrian Adamescu, 2017",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Sagrada+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Sagrada (board game)",
+        "url": "https://en.wikipedia.org/wiki/Sagrada_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sagrada board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sagrada+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Sagrada (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "054",
+    "rank": 54,
+    "title": "Hanabi",
+    "content": "Build a fireworks display while holding cards you can't see. Spiel des Jahres 2013.",
+    "hook": "#54 · Antoine Bauza, 2010",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Hanabi+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hanabi (card game)",
+        "url": "https://en.wikipedia.org/wiki/Hanabi_(card_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hanabi board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hanabi+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Hanabi (card game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "055",
+    "rank": 55,
+    "title": "The Crew",
+    "content": "A co-operative trick-taking card game told across fifty space missions.",
+    "hook": "#55 · Thomas Sing, 2019",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Crew+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Crew: The Quest for Planet Nine",
+        "url": "https://en.wikipedia.org/wiki/The_Crew:_The_Quest_for_Planet_Nine"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Crew board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Crew+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Crew: The Quest for Planet Nine",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "056",
+    "rank": 56,
+    "title": "Arkham Horror: The Card Game",
+    "content": "Investigators face Lovecraftian horrors in a story-driven living card game.",
+    "hook": "#56 · Nate French and Matthew Newman, 2016",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Arkham+Horror%3A+The+Card+Game+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Arkham Horror: The Card Game",
+        "url": "https://en.wikipedia.org/wiki/Arkham_Horror:_The_Card_Game"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Arkham Horror: The Card Game board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Arkham+Horror%3A+The+Card+Game+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Arkham Horror: The Card Game",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "057",
+    "rank": 57,
+    "title": "Betrayal at House on the Hill",
+    "content": "Explore a haunted house until one player turns traitor. Fifty possible scenarios.",
+    "hook": "#57 · Bruce Glassco, 2004",
+    "tags": [
+      "Horror"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Betrayal+at+House+on+the+Hill+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Betrayal at House on the Hill",
+        "url": "https://en.wikipedia.org/wiki/Betrayal_at_House_on_the_Hill"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Betrayal at House on the Hill board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Betrayal+at+House+on+the+Hill+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Betrayal at House on the Hill",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "058",
+    "rank": 58,
+    "title": "Dead of Winter",
+    "content": "Survivors hold a colony through a zombie winter, each with a secret objective.",
+    "hook": "#58 · Jonathan Gilmour and Isaac Vega, 2014",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Dead+of+Winter+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dead of Winter (board game)",
+        "url": "https://en.wikipedia.org/wiki/Dead_of_Winter_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dead of Winter board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dead+of+Winter+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Dead of Winter (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "059",
+    "rank": 59,
+    "title": "Star Wars: Rebellion",
+    "content": "The whole original trilogy as a two-player hunt for the hidden Rebel base.",
+    "hook": "#59 · Corey Konieczka, 2016",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Star+Wars%3A+Rebellion+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Star Wars: Rebellion (board game)",
+        "url": "https://en.wikipedia.org/wiki/Star_Wars:_Rebellion_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Star Wars: Rebellion board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Star+Wars%3A+Rebellion+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Star Wars: Rebellion (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "060",
+    "rank": 60,
+    "title": "Twilight Imperium",
+    "content": "An all-day space opera of diplomacy, trade and war for the galactic throne.",
+    "hook": "#60 · Christian T. Petersen, 1997",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Twilight+Imperium+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Twilight Imperium",
+        "url": "https://en.wikipedia.org/wiki/Twilight_Imperium"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Twilight Imperium board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Twilight+Imperium+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Twilight Imperium",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "061",
+    "rank": 61,
+    "title": "War of the Ring",
+    "content": "The Fellowship sneaks to Mount Doom while the armies of Sauron advance.",
+    "hook": "#61 · Roberto Di Meglio, Marco Maggi and Francesco Nepitello, 2004",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=War+of+the+Ring+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: War of the Ring (2004 board game)",
+        "url": "https://en.wikipedia.org/wiki/War_of_the_Ring_(2004_board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "War of the Ring board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=War+of+the+Ring+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "War of the Ring (2004 board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "062",
+    "rank": 62,
+    "title": "Blood Rage",
+    "content": "Viking clans battle for glory as Ragnarök destroys the world.",
+    "hook": "#62 · Eric M. Lang, 2015",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Blood+Rage+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Blood Rage",
+        "url": "https://en.wikipedia.org/wiki/Blood_Rage"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Blood Rage board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Blood+Rage+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Blood Rage",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "063",
+    "rank": 63,
+    "title": "Inis",
+    "content": "Celtic clans compete to become king of Ireland through card drafting and diplomacy.",
+    "hook": "#63 · Christian Martinez, 2016",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Inis+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Inis (board game)",
+        "url": "https://en.wikipedia.org/wiki/Inis_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Inis board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Inis+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Inis (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "064",
+    "rank": 64,
+    "title": "Through the Ages",
+    "content": "Build a civilisation from antiquity to the modern age through cards.",
+    "hook": "#64 · Vlaada Chvátil, 2006",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Through+the+Ages+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Through the Ages: A Story of Civilization",
+        "url": "https://en.wikipedia.org/wiki/Through_the_Ages:_A_Story_of_Civilization"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Through the Ages board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Through+the+Ages+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Through the Ages: A Story of Civilization",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "065",
+    "rank": 65,
+    "title": "Castles of Burgundy",
+    "content": "Develop an estate in the Loire Valley with dice and hexagonal tiles.",
+    "hook": "#65 · Stefan Feld, 2011",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Castles+of+Burgundy+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Castles of Burgundy",
+        "url": "https://en.wikipedia.org/wiki/The_Castles_of_Burgundy"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Castles of Burgundy board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Castles+of+Burgundy+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Castles of Burgundy",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "066",
+    "rank": 66,
+    "title": "Orléans",
+    "content": "Draw followers from a bag to grow your influence in medieval France.",
+    "hook": "#66 · Reiner Stockhausen, 2014",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Orl%C3%A9ans+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Orléans (board game)",
+        "url": "https://en.wikipedia.org/wiki/Orl%C3%A9ans_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Orléans board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Orl%C3%A9ans+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Orléans (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "067",
+    "rank": 67,
+    "title": "Istanbul",
+    "content": "Move your merchant and assistants through the bazaar to collect rubies.",
+    "hook": "#67 · Rüdiger Dorn, 2014",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Istanbul+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Istanbul (board game)",
+        "url": "https://en.wikipedia.org/wiki/Istanbul_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Istanbul board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Istanbul+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Istanbul (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "068",
+    "rank": 68,
+    "title": "Tigris & Euphrates",
+    "content": "Knizia's masterpiece of conflict between ancient Mesopotamian dynasties.",
+    "hook": "#68 · Reiner Knizia, 1997",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Tigris+%26+Euphrates+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tigris and Euphrates",
+        "url": "https://en.wikipedia.org/wiki/Tigris_and_Euphrates"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tigris & Euphrates board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tigris+%26+Euphrates+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Tigris and Euphrates",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "069",
+    "rank": 69,
+    "title": "Lost Cities",
+    "content": "Fund expeditions in a two-player card game of risky investment.",
+    "hook": "#69 · Reiner Knizia, 1999",
+    "tags": [
+      "Two-player"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Lost+Cities+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Lost Cities",
+        "url": "https://en.wikipedia.org/wiki/Lost_Cities"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Lost Cities board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Lost+Cities+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Lost Cities",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "070",
+    "rank": 70,
+    "title": "Modern Art",
+    "content": "Auction paintings and decide what the market thinks art is worth.",
+    "hook": "#70 · Reiner Knizia, 1992",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Modern+Art+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Modern Art (game)",
+        "url": "https://en.wikipedia.org/wiki/Modern_Art_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Modern Art board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Modern+Art+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Modern Art (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "071",
+    "rank": 71,
+    "title": "El Grande",
+    "content": "Grandees fight for control of the regions of medieval Spain.",
+    "hook": "#71 · Wolfgang Kramer and Richard Ulrich, 1995",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=El+Grande+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: El Grande",
+        "url": "https://en.wikipedia.org/wiki/El_Grande"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "El Grande board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=El+Grande+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "El Grande",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "072",
+    "rank": 72,
+    "title": "Acquire",
+    "content": "Build hotel chains, buy shares and profit from mergers. An early classic of business games.",
+    "hook": "#72 · Sid Sackson, 1964",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Acquire+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Acquire",
+        "url": "https://en.wikipedia.org/wiki/Acquire"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Acquire board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Acquire+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Acquire",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "073",
+    "rank": 73,
+    "title": "Diplomacy",
+    "content": "Pre-First World War Europe with no dice, only negotiation and betrayal.",
+    "hook": "#73 · Allan B. Calhamer, 1959",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Diplomacy+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Diplomacy (game)",
+        "url": "https://en.wikipedia.org/wiki/Diplomacy_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Diplomacy board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Diplomacy+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Diplomacy (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "074",
+    "rank": 74,
+    "title": "Stratego",
+    "content": "Hidden ranks and a captured flag. A two-player battle of bluff.",
+    "hook": "#74 · Jacques Johan Mogendorff, 1946",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Stratego+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Stratego",
+        "url": "https://en.wikipedia.org/wiki/Stratego"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Stratego board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Stratego+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Stratego",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "075",
+    "rank": 75,
+    "title": "Blokus",
+    "content": "Place polyomino pieces corner to corner and block your rivals.",
+    "hook": "#75 · Bernard Tavitian, 2000",
+    "tags": [
+      "Abstract"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Blokus+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Blokus",
+        "url": "https://en.wikipedia.org/wiki/Blokus"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Blokus board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Blokus+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Blokus",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "076",
+    "rank": 76,
+    "title": "Santorini",
+    "content": "Build and climb Greek towers. Simple rules with god powers on top.",
+    "hook": "#76 · Gordon Hamilton, 2016",
+    "tags": [
+      "Abstract"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Santorini+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Santorini (game)",
+        "url": "https://en.wikipedia.org/wiki/Santorini_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Santorini board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Santorini+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Santorini (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "077",
+    "rank": 77,
+    "title": "Hive",
+    "content": "A boardless two-player game of surrounding the opposing queen bee.",
+    "hook": "#77 · John Yianni, 2001",
+    "tags": [
+      "Abstract"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Hive+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hive (game)",
+        "url": "https://en.wikipedia.org/wiki/Hive_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hive board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hive+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Hive (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "078",
+    "rank": 78,
+    "title": "Quoridor",
+    "content": "Race to the other side while placing walls to block your opponent.",
+    "hook": "#78 · Mirko Marchesi, 1997",
+    "tags": [
+      "Abstract"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Quoridor+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Quoridor",
+        "url": "https://en.wikipedia.org/wiki/Quoridor"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Quoridor board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Quoridor+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Quoridor",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "079",
+    "rank": 79,
+    "title": "Onitama",
+    "content": "A five-by-five martial arts chess variant with shifting move cards.",
+    "hook": "#79 · Shimpei Sato, 2014",
+    "tags": [
+      "Abstract"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Onitama+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Onitama",
+        "url": "https://en.wikipedia.org/wiki/Onitama"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Onitama board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Onitama+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Onitama",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "080",
+    "rank": 80,
+    "title": "Telestrations",
+    "content": "The telephone game with drawings. Guaranteed laughs.",
+    "hook": "#80 · Uncredited (USAopoly), 2009",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Telestrations+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Telestrations",
+        "url": "https://en.wikipedia.org/wiki/Telestrations"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Telestrations board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Telestrations+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Telestrations",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "081",
+    "rank": 81,
+    "title": "Wavelength",
+    "content": "Guess where a clue falls on a spectrum between two ideas.",
+    "hook": "#81 · Wolfgang Warsch, Alex Hague and Justin Vickers, 2019",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Wavelength+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Wavelength (game)",
+        "url": "https://en.wikipedia.org/wiki/Wavelength_(game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Wavelength board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Wavelength+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Wavelength (game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "082",
+    "rank": 82,
+    "title": "Just One",
+    "content": "Everyone writes one-word clues, and duplicates cancel out. Spiel des Jahres 2019.",
+    "hook": "#82 · Ludovic Roudy and Bruno Sautter, 2018",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Just+One+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Just One (board game)",
+        "url": "https://en.wikipedia.org/wiki/Just_One_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Just One board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Just+One+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Just One (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "083",
+    "rank": 83,
+    "title": "Decrypto",
+    "content": "Pass coded messages to your team without the other team cracking them.",
+    "hook": "#83 · Thomas Dagenais-Lespérance, 2018",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Decrypto+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Decrypto",
+        "url": "https://en.wikipedia.org/wiki/Decrypto"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Decrypto board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Decrypto+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Decrypto",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "084",
+    "rank": 84,
+    "title": "Camel Up",
+    "content": "Bet on a chaotic camel race where camels stack on each other. Spiel des Jahres 2014.",
+    "hook": "#84 · Steffen Bogen, 2014",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Camel+Up+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Camel Up",
+        "url": "https://en.wikipedia.org/wiki/Camel_Up"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Camel Up board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Camel+Up+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Camel Up",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "085",
+    "rank": 85,
+    "title": "Qwirkle",
+    "content": "Match colours and shapes on wooden tiles. Abstract and family friendly.",
+    "hook": "#85 · Susan McKinley Ross, 2006",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Qwirkle+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Qwirkle",
+        "url": "https://en.wikipedia.org/wiki/Qwirkle"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Qwirkle board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Qwirkle+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Qwirkle",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "086",
+    "rank": 86,
+    "title": "Ra",
+    "content": "Auction for ancient Egyptian treasures before the Sun God's era ends.",
+    "hook": "#86 · Reiner Knizia, 1999",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Ra+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Ra (board game)",
+        "url": "https://en.wikipedia.org/wiki/Ra_(board_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Ra board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Ra+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Ra (board game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "087",
+    "rank": 87,
+    "title": "Mansions of Madness",
+    "content": "App-driven Lovecraftian investigations in creepy mansions.",
+    "hook": "#87 · Corey Konieczka, 2011",
+    "tags": [
+      "Horror"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Mansions+of+Madness+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mansions of Madness",
+        "url": "https://en.wikipedia.org/wiki/Mansions_of_Madness"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mansions of Madness board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mansions+of+Madness+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mansions of Madness",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "088",
+    "rank": 88,
+    "title": "Descent: Journeys in the Dark",
+    "content": "A dungeon crawl of heroes against an overlord player.",
+    "hook": "#88 · Kevin Wilson, 2005",
+    "tags": [
+      "Campaign"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Descent%3A+Journeys+in+the+Dark+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Descent: Journeys in the Dark",
+        "url": "https://en.wikipedia.org/wiki/Descent:_Journeys_in_the_Dark"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Descent: Journeys in the Dark board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Descent%3A+Journeys+in+the+Dark+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Descent: Journeys in the Dark",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "089",
+    "rank": 89,
+    "title": "HeroQuest",
+    "content": "The fantasy dungeon game from Milton Bradley and Games Workshop, reissued in 2021.",
+    "hook": "#89 · Stephen Baker, 1989",
+    "tags": [
+      "Campaign"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=HeroQuest+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: HeroQuest",
+        "url": "https://en.wikipedia.org/wiki/HeroQuest"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "HeroQuest board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=HeroQuest+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "HeroQuest",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "090",
+    "rank": 90,
+    "title": "Space Hulk",
+    "content": "Space Marines and Genestealers in claustrophobic corridors. Tense and deadly.",
+    "hook": "#90 · Richard Halliwell, 1989",
+    "tags": [
+      "Two-player"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Space+Hulk+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Space Hulk",
+        "url": "https://en.wikipedia.org/wiki/Space_Hulk"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Space Hulk board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Space+Hulk+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Space Hulk",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "091",
+    "rank": 91,
+    "title": "Arkham Horror",
+    "content": "Investigators close gates before an Ancient One awakens.",
+    "hook": "#91 · Richard Launius, 1987",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Arkham+Horror+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Arkham Horror",
+        "url": "https://en.wikipedia.org/wiki/Arkham_Horror"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Arkham Horror board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Arkham+Horror+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Arkham Horror",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "092",
+    "rank": 92,
+    "title": "Eldritch Horror",
+    "content": "Globe-trotting Lovecraftian mysteries to stop the end of the world.",
+    "hook": "#92 · Corey Konieczka and Nikki Valens, 2013",
+    "tags": [
+      "Co-op"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Eldritch+Horror+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Eldritch Horror",
+        "url": "https://en.wikipedia.org/wiki/Eldritch_Horror"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Eldritch Horror board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Eldritch+Horror+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Eldritch Horror",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "093",
+    "rank": 93,
+    "title": "Clank!",
+    "content": "Deck-building through a dungeon where every noise wakes the dragon.",
+    "hook": "#93 · Paul Dennen, 2016",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Clank%21+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Clank!",
+        "url": "https://en.wikipedia.org/wiki/Clank!"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Clank! board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Clank%21+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Clank!",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "094",
+    "rank": 94,
+    "title": "Heat: Pedal to the Metal",
+    "content": "1960s motor racing where you manage speed, heat and corners.",
+    "hook": "#94 · Asger Harding Granerud and Daniel Skjold Pedersen, 2022",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Heat%3A+Pedal+to+the+Metal+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Heat: Pedal to the Metal",
+        "url": "https://en.wikipedia.org/wiki/Heat:_Pedal_to_the_Metal"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Heat: Pedal to the Metal board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Heat%3A+Pedal+to+the+Metal+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Heat: Pedal to the Metal",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "095",
+    "rank": 95,
+    "title": "Ark Nova",
+    "content": "Plan and build a modern, scientifically managed zoo. Hundreds of animal cards.",
+    "hook": "#95 · Mathias Wigge, 2021",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Ark+Nova+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Ark Nova",
+        "url": "https://en.wikipedia.org/wiki/Ark_Nova"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Ark Nova board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Ark+Nova+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Ark Nova",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "096",
+    "rank": 96,
+    "title": "Dune: Imperium",
+    "content": "Deck-building and worker placement on Arrakis.",
+    "hook": "#96 · Paul Dennen, 2020",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Dune%3A+Imperium+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dune: Imperium",
+        "url": "https://en.wikipedia.org/wiki/Dune:_Imperium"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dune: Imperium board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dune%3A+Imperium+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Dune: Imperium",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "097",
+    "rank": 97,
+    "title": "The Quacks of Quedlinburg",
+    "content": "Push your luck brewing potions from a bag of ingredients.",
+    "hook": "#97 · Wolfgang Warsch, 2018",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Quacks+of+Quedlinburg+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Quacks of Quedlinburg",
+        "url": "https://en.wikipedia.org/wiki/The_Quacks_of_Quedlinburg"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Quacks of Quedlinburg board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Quacks+of+Quedlinburg+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Quacks of Quedlinburg",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "098",
+    "rank": 98,
+    "title": "Uno",
+    "content": "Match colour or number, then shout Uno when you have one card left. One of the best-selling card games ever made.",
+    "hook": "#98 · Merle Robbins, 1971",
+    "tags": [
+      "Card game"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Uno+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Uno (card game)",
+        "url": "https://en.wikipedia.org/wiki/Uno_(card_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Uno board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Uno+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Uno (card game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "099",
+    "rank": 99,
+    "title": "Dobble",
+    "content": "Every pair of cards shares exactly one symbol. Spot it first.",
+    "hook": "#99 · Denis Blanchot, 2009",
+    "tags": [
+      "Family"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Dobble+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Spot It!",
+        "url": "https://en.wikipedia.org/wiki/Spot_It!"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dobble board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dobble+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Spot It!",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "100",
+    "rank": 100,
+    "title": "Jenga",
+    "content": "Pull blocks from the tower without letting it fall. Designed by a British games maker.",
+    "hook": "#100 · Leslie Scott, 1983",
+    "tags": [
+      "Classic"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Buy the game",
+      "url": "https://www.amazon.co.uk/s?k=Jenga+board+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Jenga",
+        "url": "https://en.wikipedia.org/wiki/Jenga"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Jenga board game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Jenga+board+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Jenga",
+      "wiki_alt": null,
+      "domain": null
+    }
+  }
+]

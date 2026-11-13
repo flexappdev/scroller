@@ -1,0 +1,33 @@
+{
+  "slug": "top-100-tv-series",
+  "name": "Top 100 TV Series of All Time",
+  "tagline": "The box sets worth your evenings, from The Sopranos to Fleabag.",
+  "description": "The 100 best TV series of all time, ranked: prestige drama, British comedy, crime, sci-fi and landmark documentaries, from The Sopranos and The Wire to Fawlty Towers and Blue Planet. Every card has a source and a link to the box set.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Shop TV box sets on Amazon",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=TV+box+sets&tag=fs08-21",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "scroller",
+  "topic": "tv",
+  "kind": "product",
+  "sources": [
+    {
+      "title": "BBC Culture: The 100 greatest TV series of the 21st century",
+      "url": "https://www.bbc.com/culture/article/20211015-the-100-greatest-tv-series-of-the-21st-century"
+    },
+    {
+      "title": "BFI: TV 100",
+      "url": "https://www.bfi.org.uk/"
+    },
+    {
+      "title": "Wikipedia: List of television series considered the best",
+      "url": "https://en.wikipedia.org/wiki/List_of_television_programs_considered_the_best"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-11-13"
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "top-100-video-games",
+  "name": "Top 100 Video Games of All Time",
+  "tagline": "The games that defined play, from Tetris to Elden Ring.",
+  "description": "The 100 greatest video games of all time, ranked: Zelda, Mario, Minecraft, Half-Life, The Last of Us, Elden Ring and the classics that shaped gaming. Every card has a source and a link to find the game.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Shop classic video games on Amazon",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=classic+video+games&tag=fs08-21",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "scroller",
+  "topic": "games",
+  "kind": "product",
+  "sources": [
+    {
+      "title": "Wikipedia: List of video games considered the best",
+      "url": "https://en.wikipedia.org/wiki/List_of_video_games_considered_the_best"
+    },
+    {
+      "title": "Metacritic all-time best games",
+      "url": "https://www.metacritic.com/browse/game/"
+    },
+    {
+      "title": "Wikipedia: List of best-selling video games",
+      "url": "https://en.wikipedia.org/wiki/List_of_best-selling_video_games"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-11-13"
+}

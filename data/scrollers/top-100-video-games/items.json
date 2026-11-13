@@ -1,0 +1,3802 @@
+[
+  {
+    "id": "001",
+    "rank": 1,
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "content": "An open Hyrule where you can climb anything, cook anything and tackle the final boss whenever you dare. Redefined open-world design.",
+    "hook": "#1 · Nintendo, 2017",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+Breath+of+the+Wild+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Legend of Zelda: Breath of the Wild",
+        "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Legend of Zelda: Breath of the Wild game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+Breath+of+the+Wild+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Legend of Zelda: Breath of the Wild",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "002",
+    "rank": 2,
+    "title": "Super Mario 64",
+    "content": "Mario's leap into three dimensions wrote the rulebook for 3D cameras and movement.",
+    "hook": "#2 · Nintendo, 1996",
+    "tags": [
+      "Platformer"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Super+Mario+64+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Super Mario 64",
+        "url": "https://en.wikipedia.org/wiki/Super_Mario_64"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Super Mario 64 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Super+Mario+64+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Super Mario 64",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "003",
+    "rank": 3,
+    "title": "The Legend of Zelda: Ocarina of Time",
+    "content": "Z-targeting, time travel and the Temple of Time. Long held the highest Metacritic score of any game.",
+    "hook": "#3 · Nintendo, 1998",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+Ocarina+of+Time+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Legend of Zelda: Ocarina of Time",
+        "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Ocarina_of_Time"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Legend of Zelda: Ocarina of Time game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+Ocarina+of+Time+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Legend of Zelda: Ocarina of Time",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "004",
+    "rank": 4,
+    "title": "Tetris",
+    "content": "Seven falling shapes and a line to clear. Created in Moscow, a hit on every platform since.",
+    "hook": "#4 · Alexey Pajitnov, 1984",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Tetris+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tetris",
+        "url": "https://en.wikipedia.org/wiki/Tetris"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tetris game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tetris+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Tetris",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "005",
+    "rank": 5,
+    "title": "Minecraft",
+    "content": "Blocks, creepers and infinite worlds. The best-selling video game of all time.",
+    "hook": "#5 · Mojang, 2011",
+    "tags": [
+      "Sandbox"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Minecraft+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Minecraft",
+        "url": "https://en.wikipedia.org/wiki/Minecraft"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Minecraft game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Minecraft+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Minecraft",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "006",
+    "rank": 6,
+    "title": "Grand Theft Auto V",
+    "content": "Three criminals, one sprawling Los Santos. One of the best-selling entertainment products ever.",
+    "hook": "#6 · Rockstar North, 2013",
+    "tags": [
+      "Action"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Grand+Theft+Auto+V+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Grand Theft Auto V",
+        "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_V"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Grand Theft Auto V game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Grand+Theft+Auto+V+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Grand Theft Auto V",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "007",
+    "rank": 7,
+    "title": "Red Dead Redemption 2",
+    "content": "Arthur Morgan rides through the end of the Wild West in astonishing detail.",
+    "hook": "#7 · Rockstar Games, 2018",
+    "tags": [
+      "Action"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Red+Dead+Redemption+2+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Red Dead Redemption 2",
+        "url": "https://en.wikipedia.org/wiki/Red_Dead_Redemption_2"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Red Dead Redemption 2 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Red+Dead+Redemption+2+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Red Dead Redemption 2",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "008",
+    "rank": 8,
+    "title": "The Witcher 3: Wild Hunt",
+    "content": "Geralt searches for Ciri across a war-torn world full of side quests worth playing.",
+    "hook": "#8 · CD Projekt Red, 2015",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Witcher+3%3A+Wild+Hunt+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Witcher 3: Wild Hunt",
+        "url": "https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Witcher 3: Wild Hunt game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Witcher+3%3A+Wild+Hunt+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Witcher 3: Wild Hunt",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "009",
+    "rank": 9,
+    "title": "Elden Ring",
+    "content": "FromSoftware's open world with worldbuilding by George R. R. Martin. Brutal and beautiful.",
+    "hook": "#9 · FromSoftware, 2022",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Elden+Ring+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Elden Ring",
+        "url": "https://en.wikipedia.org/wiki/Elden_Ring"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Elden Ring game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Elden+Ring+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Elden Ring",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "010",
+    "rank": 10,
+    "title": "Dark Souls",
+    "content": "Interlocking Lordran, bonfires and hard-won victories. Created a whole genre.",
+    "hook": "#10 · FromSoftware, 2011",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Dark+Souls+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dark Souls (video game)",
+        "url": "https://en.wikipedia.org/wiki/Dark_Souls_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dark Souls game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dark+Souls+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Dark Souls (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "011",
+    "rank": 11,
+    "title": "Half-Life 2",
+    "content": "Gordon Freeman, the gravity gun and City 17. A landmark in physics and storytelling.",
+    "hook": "#11 · Valve, 2004",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Half-Life+2+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Half-Life 2",
+        "url": "https://en.wikipedia.org/wiki/Half-Life_2"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Half-Life 2 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Half-Life+2+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Half-Life 2",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "012",
+    "rank": 12,
+    "title": "Portal 2",
+    "content": "Think with portals, outwit GLaDOS and meet Wheatley. Funny and brilliant.",
+    "hook": "#12 · Valve, 2011",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Portal+2+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Portal 2",
+        "url": "https://en.wikipedia.org/wiki/Portal_2"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Portal 2 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Portal+2+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Portal 2",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "013",
+    "rank": 13,
+    "title": "Portal",
+    "content": "A short puzzle game with a portal gun, a sinister AI and a cake that is a lie.",
+    "hook": "#13 · Valve, 2007",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Portal+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Portal (video game)",
+        "url": "https://en.wikipedia.org/wiki/Portal_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Portal game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Portal+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Portal (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "014",
+    "rank": 14,
+    "title": "Super Mario Bros.",
+    "content": "World 1-1 taught a generation how to play. Saved the home console market.",
+    "hook": "#14 · Nintendo, 1985",
+    "tags": [
+      "Platformer"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Super+Mario+Bros.+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Super Mario Bros.",
+        "url": "https://en.wikipedia.org/wiki/Super_Mario_Bros."
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Super Mario Bros. game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Super+Mario+Bros.+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Super Mario Bros.",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "015",
+    "rank": 15,
+    "title": "Super Mario World",
+    "content": "Yoshi's debut and a map full of secret exits on the Super Nintendo.",
+    "hook": "#15 · Nintendo, 1990",
+    "tags": [
+      "Platformer"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Super+Mario+World+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Super Mario World",
+        "url": "https://en.wikipedia.org/wiki/Super_Mario_World"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Super Mario World game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Super+Mario+World+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Super Mario World",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "016",
+    "rank": 16,
+    "title": "Super Mario Odyssey",
+    "content": "Throw Cappy to possess enemies across colourful kingdoms.",
+    "hook": "#16 · Nintendo, 2017",
+    "tags": [
+      "Platformer"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Super+Mario+Odyssey+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Super Mario Odyssey",
+        "url": "https://en.wikipedia.org/wiki/Super_Mario_Odyssey"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Super Mario Odyssey game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Super+Mario+Odyssey+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Super Mario Odyssey",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "017",
+    "rank": 17,
+    "title": "Super Mario Galaxy",
+    "content": "Gravity-bending planetoids and a sweeping orchestral score.",
+    "hook": "#17 · Nintendo, 2007",
+    "tags": [
+      "Platformer"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Super+Mario+Galaxy+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Super Mario Galaxy",
+        "url": "https://en.wikipedia.org/wiki/Super_Mario_Galaxy"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Super Mario Galaxy game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Super+Mario+Galaxy+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Super Mario Galaxy",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "018",
+    "rank": 18,
+    "title": "The Legend of Zelda: A Link to the Past",
+    "content": "The Light World and the Dark World. The 2D Zelda template.",
+    "hook": "#18 · Nintendo, 1991",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+A+Link+to+the+Past+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Legend of Zelda: A Link to the Past",
+        "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_A_Link_to_the_Past"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Legend of Zelda: A Link to the Past game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+A+Link+to+the+Past+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Legend of Zelda: A Link to the Past",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "019",
+    "rank": 19,
+    "title": "The Legend of Zelda: Tears of the Kingdom",
+    "content": "Build vehicles from anything and explore the skies and depths of Hyrule.",
+    "hook": "#19 · Nintendo, 2023",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+Tears+of+the+Kingdom+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Legend of Zelda: Tears of the Kingdom",
+        "url": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Legend of Zelda: Tears of the Kingdom game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Legend+of+Zelda%3A+Tears+of+the+Kingdom+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Legend of Zelda: Tears of the Kingdom",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "020",
+    "rank": 20,
+    "title": "Metroid Prime",
+    "content": "Samus Aran in first person on Tallon IV. Proof that a series could move to 3D perfectly.",
+    "hook": "#20 · Retro Studios, 2002",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Metroid+Prime+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Metroid Prime",
+        "url": "https://en.wikipedia.org/wiki/Metroid_Prime"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Metroid Prime game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Metroid+Prime+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Metroid Prime",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "021",
+    "rank": 21,
+    "title": "Super Metroid",
+    "content": "Planet Zebes and a map that opens with every power-up. Half of the Metroidvania name.",
+    "hook": "#21 · Nintendo, 1994",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Super+Metroid+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Super Metroid",
+        "url": "https://en.wikipedia.org/wiki/Super_Metroid"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Super Metroid game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Super+Metroid+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Super Metroid",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "022",
+    "rank": 22,
+    "title": "Castlevania: Symphony of the Night",
+    "content": "Alucard explores Dracula's castle. The other half of Metroidvania.",
+    "hook": "#22 · Konami, 1997",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Castlevania%3A+Symphony+of+the+Night+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Castlevania: Symphony of the Night",
+        "url": "https://en.wikipedia.org/wiki/Castlevania:_Symphony_of_the_Night"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Castlevania: Symphony of the Night game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Castlevania%3A+Symphony+of+the+Night+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Castlevania: Symphony of the Night",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "023",
+    "rank": 23,
+    "title": "Final Fantasy VII",
+    "content": "Cloud, Sephiroth and Midgar. Brought Japanese role-playing games to the world.",
+    "hook": "#23 · Square, 1997",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Final+Fantasy+VII+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Final Fantasy VII",
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VII"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Final Fantasy VII game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Final+Fantasy+VII+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Final Fantasy VII",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "024",
+    "rank": 24,
+    "title": "Chrono Trigger",
+    "content": "Time travel and multiple endings from a dream team of designers.",
+    "hook": "#24 · Square, 1995",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Chrono+Trigger+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Chrono Trigger",
+        "url": "https://en.wikipedia.org/wiki/Chrono_Trigger"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Chrono Trigger game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Chrono+Trigger+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Chrono Trigger",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "025",
+    "rank": 25,
+    "title": "Final Fantasy VI",
+    "content": "An ensemble cast, an opera scene and Kefka. A 16-bit high point.",
+    "hook": "#25 · Square, 1994",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Final+Fantasy+VI+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Final Fantasy VI",
+        "url": "https://en.wikipedia.org/wiki/Final_Fantasy_VI"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Final Fantasy VI game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Final+Fantasy+VI+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Final Fantasy VI",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "026",
+    "rank": 26,
+    "title": "Pokémon Red and Blue",
+    "content": "Gotta catch them all, and trade via link cable. Launched the biggest media franchise in the world.",
+    "hook": "#26 · Game Freak, 1996",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Pok%C3%A9mon+Red+and+Blue+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Pokémon Red and Blue",
+        "url": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_Red_and_Blue"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Pokémon Red and Blue game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Pok%C3%A9mon+Red+and+Blue+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Pokémon Red and Blue",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "027",
+    "rank": 27,
+    "title": "Mass Effect 2",
+    "content": "Commander Shepard assembles a team for a suicide mission. Choices that carry across games.",
+    "hook": "#27 · BioWare, 2010",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Mass+Effect+2+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mass Effect 2",
+        "url": "https://en.wikipedia.org/wiki/Mass_Effect_2"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mass Effect 2 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mass+Effect+2+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mass Effect 2",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "028",
+    "rank": 28,
+    "title": "Baldur's Gate 3",
+    "content": "Dungeons & Dragons with astonishing freedom and reactivity. Game of the Year 2023.",
+    "hook": "#28 · Larian Studios, 2023",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Baldur%27s+Gate+3+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Baldur's Gate 3",
+        "url": "https://en.wikipedia.org/wiki/Baldur's_Gate_3"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Baldur's Gate 3 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Baldur%27s+Gate+3+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Baldur's Gate 3",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "029",
+    "rank": 29,
+    "title": "The Elder Scrolls V: Skyrim",
+    "content": "Dragons, shouts and endless mods. Released on almost every machine since.",
+    "hook": "#29 · Bethesda, 2011",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Elder+Scrolls+V%3A+Skyrim+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Elder Scrolls V: Skyrim",
+        "url": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Elder Scrolls V: Skyrim game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Elder+Scrolls+V%3A+Skyrim+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Elder Scrolls V: Skyrim",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "030",
+    "rank": 30,
+    "title": "Fallout: New Vegas",
+    "content": "The Mojave wasteland and four factions fighting over the Hoover Dam.",
+    "hook": "#30 · Obsidian, 2010",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Fallout%3A+New+Vegas+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Fallout: New Vegas",
+        "url": "https://en.wikipedia.org/wiki/Fallout:_New_Vegas"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Fallout: New Vegas game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Fallout%3A+New+Vegas+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Fallout: New Vegas",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "031",
+    "rank": 31,
+    "title": "Fallout 3",
+    "content": "Leave Vault 101 for the Capital Wasteland.",
+    "hook": "#31 · Bethesda, 2008",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Fallout+3+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Fallout 3",
+        "url": "https://en.wikipedia.org/wiki/Fallout_3"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Fallout 3 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Fallout+3+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Fallout 3",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "032",
+    "rank": 32,
+    "title": "Diablo II",
+    "content": "Click, loot, repeat. The action role-playing game that refined the formula.",
+    "hook": "#32 · Blizzard North, 2000",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Diablo+II+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Diablo II",
+        "url": "https://en.wikipedia.org/wiki/Diablo_II"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Diablo II game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Diablo+II+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Diablo II",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "033",
+    "rank": 33,
+    "title": "World of Warcraft",
+    "content": "The massively multiplayer game that peaked at over twelve million subscribers.",
+    "hook": "#33 · Blizzard, 2004",
+    "tags": [
+      "MMO"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=World+of+Warcraft+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: World of Warcraft",
+        "url": "https://en.wikipedia.org/wiki/World_of_Warcraft"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "World of Warcraft game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=World+of+Warcraft+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "World of Warcraft",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "034",
+    "rank": 34,
+    "title": "StarCraft",
+    "content": "Terran, Zerg and Protoss. Practically a national sport in South Korea.",
+    "hook": "#34 · Blizzard, 1998",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=StarCraft+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: StarCraft (video game)",
+        "url": "https://en.wikipedia.org/wiki/StarCraft_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "StarCraft game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=StarCraft+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "StarCraft (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "035",
+    "rank": 35,
+    "title": "Age of Empires II",
+    "content": "Medieval real-time strategy that is still played competitively today.",
+    "hook": "#35 · Ensemble Studios, 1999",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Age+of+Empires+II+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Age of Empires II",
+        "url": "https://en.wikipedia.org/wiki/Age_of_Empires_II"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Age of Empires II game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Age+of+Empires+II+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Age of Empires II",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "036",
+    "rank": 36,
+    "title": "Civilization IV",
+    "content": "One more turn. With a Grammy-winning theme song.",
+    "hook": "#36 · Firaxis, 2005",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Civilization+IV+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Civilization IV",
+        "url": "https://en.wikipedia.org/wiki/Civilization_IV"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Civilization IV game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Civilization+IV+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Civilization IV",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "037",
+    "rank": 37,
+    "title": "Sid Meier's Civilization",
+    "content": "Lead a people from the Stone Age to the stars. The original 4X game.",
+    "hook": "#37 · MicroProse, 1991",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Sid+Meier%27s+Civilization+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Civilization (video game)",
+        "url": "https://en.wikipedia.org/wiki/Civilization_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sid Meier's Civilization game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sid+Meier%27s+Civilization+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Civilization (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "038",
+    "rank": 38,
+    "title": "XCOM: Enemy Unknown",
+    "content": "Turn-based squad tactics against aliens, with permanent death.",
+    "hook": "#38 · Firaxis, 2012",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=XCOM%3A+Enemy+Unknown+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: XCOM: Enemy Unknown",
+        "url": "https://en.wikipedia.org/wiki/XCOM:_Enemy_Unknown"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "XCOM: Enemy Unknown game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=XCOM%3A+Enemy+Unknown+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "XCOM: Enemy Unknown",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "039",
+    "rank": 39,
+    "title": "The Sims",
+    "content": "Build houses and run little lives. Will Wright's people simulator.",
+    "hook": "#39 · Maxis, 2000",
+    "tags": [
+      "Simulation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Sims+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Sims (video game)",
+        "url": "https://en.wikipedia.org/wiki/The_Sims_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Sims game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Sims+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Sims (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "040",
+    "rank": 40,
+    "title": "SimCity 2000",
+    "content": "Zone, build and handle disasters as mayor.",
+    "hook": "#40 · Maxis, 1993",
+    "tags": [
+      "Simulation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=SimCity+2000+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: SimCity 2000",
+        "url": "https://en.wikipedia.org/wiki/SimCity_2000"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "SimCity 2000 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=SimCity+2000+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "SimCity 2000",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "041",
+    "rank": 41,
+    "title": "Stardew Valley",
+    "content": "Leave the office, inherit a farm and become part of Pelican Town. Made by one person.",
+    "hook": "#41 · ConcernedApe, 2016",
+    "tags": [
+      "Simulation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Stardew+Valley+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Stardew Valley",
+        "url": "https://en.wikipedia.org/wiki/Stardew_Valley"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Stardew Valley game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Stardew+Valley+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Stardew Valley",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "042",
+    "rank": 42,
+    "title": "Animal Crossing: New Horizons",
+    "content": "A desert island getaway that defined the 2020 lockdown.",
+    "hook": "#42 · Nintendo, 2020",
+    "tags": [
+      "Simulation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Animal+Crossing%3A+New+Horizons+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Animal Crossing: New Horizons",
+        "url": "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Animal Crossing: New Horizons game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Animal+Crossing%3A+New+Horizons+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Animal Crossing: New Horizons",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "043",
+    "rank": 43,
+    "title": "Doom",
+    "content": "Rip and tear through Mars bases and Hell. Popularised the first-person shooter.",
+    "hook": "#43 · id Software, 1993",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Doom+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Doom (1993 video game)",
+        "url": "https://en.wikipedia.org/wiki/Doom_(1993_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Doom game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Doom+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Doom (1993 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "044",
+    "rank": 44,
+    "title": "Quake",
+    "content": "True 3D, internet deathmatch and a Nine Inch Nails soundtrack.",
+    "hook": "#44 · id Software, 1996",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Quake+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Quake (video game)",
+        "url": "https://en.wikipedia.org/wiki/Quake_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Quake game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Quake+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Quake (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "045",
+    "rank": 45,
+    "title": "GoldenEye 007",
+    "content": "Four-player split screen and the proof that shooters could work on consoles.",
+    "hook": "#45 · Rare, 1997",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=GoldenEye+007+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: GoldenEye 007 (1997 video game)",
+        "url": "https://en.wikipedia.org/wiki/GoldenEye_007_(1997_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "GoldenEye 007 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=GoldenEye+007+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "GoldenEye 007 (1997 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "046",
+    "rank": 46,
+    "title": "Halo: Combat Evolved",
+    "content": "Master Chief on the ringworld. The game that sold the Xbox.",
+    "hook": "#46 · Bungie, 2001",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Halo%3A+Combat+Evolved+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Halo: Combat Evolved",
+        "url": "https://en.wikipedia.org/wiki/Halo:_Combat_Evolved"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Halo: Combat Evolved game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Halo%3A+Combat+Evolved+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Halo: Combat Evolved",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "047",
+    "rank": 47,
+    "title": "Call of Duty 4: Modern Warfare",
+    "content": "Modern settings and online progression that the whole industry copied.",
+    "hook": "#47 · Infinity Ward, 2007",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Call+of+Duty+4%3A+Modern+Warfare+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Call of Duty 4: Modern Warfare",
+        "url": "https://en.wikipedia.org/wiki/Call_of_Duty_4:_Modern_Warfare"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Call of Duty 4: Modern Warfare game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Call+of+Duty+4%3A+Modern+Warfare+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Call of Duty 4: Modern Warfare",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "048",
+    "rank": 48,
+    "title": "BioShock",
+    "content": "Would you kindly explore Rapture, the art deco city under the sea.",
+    "hook": "#48 · 2K Boston, 2007",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=BioShock+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: BioShock",
+        "url": "https://en.wikipedia.org/wiki/BioShock"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "BioShock game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=BioShock+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "BioShock",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "049",
+    "rank": 49,
+    "title": "Deus Ex",
+    "content": "A cyberpunk conspiracy where every problem has several solutions.",
+    "hook": "#49 · Ion Storm, 2000",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Deus+Ex+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Deus Ex (video game)",
+        "url": "https://en.wikipedia.org/wiki/Deus_Ex_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Deus Ex game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Deus+Ex+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Deus Ex (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "050",
+    "rank": 50,
+    "title": "System Shock 2",
+    "content": "Survival horror in space with the rogue AI SHODAN.",
+    "hook": "#50 · Irrational and Looking Glass, 1999",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=System+Shock+2+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: System Shock 2",
+        "url": "https://en.wikipedia.org/wiki/System_Shock_2"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "System Shock 2 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=System+Shock+2+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "System Shock 2",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "051",
+    "rank": 51,
+    "title": "Thief: The Dark Project",
+    "content": "Light, shadow and sound. The game that defined first-person stealth.",
+    "hook": "#51 · Looking Glass Studios, 1998",
+    "tags": [
+      "Stealth"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Thief%3A+The+Dark+Project+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Thief: The Dark Project",
+        "url": "https://en.wikipedia.org/wiki/Thief:_The_Dark_Project"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Thief: The Dark Project game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Thief%3A+The+Dark+Project+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Thief: The Dark Project",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "052",
+    "rank": 52,
+    "title": "Metal Gear Solid",
+    "content": "Hideo Kojima's cinematic stealth action on Shadow Moses.",
+    "hook": "#52 · Konami, 1998",
+    "tags": [
+      "Stealth"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Metal+Gear+Solid+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Metal Gear Solid",
+        "url": "https://en.wikipedia.org/wiki/Metal_Gear_Solid"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Metal Gear Solid game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Metal+Gear+Solid+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Metal Gear Solid",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "053",
+    "rank": 53,
+    "title": "Metal Gear Solid 3: Snake Eater",
+    "content": "Cold War jungle survival and The Boss.",
+    "hook": "#53 · Konami, 2004",
+    "tags": [
+      "Stealth"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Metal+Gear+Solid+3%3A+Snake+Eater+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Metal Gear Solid 3: Snake Eater",
+        "url": "https://en.wikipedia.org/wiki/Metal_Gear_Solid_3:_Snake_Eater"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Metal Gear Solid 3: Snake Eater game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Metal+Gear+Solid+3%3A+Snake+Eater+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Metal Gear Solid 3: Snake Eater",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "054",
+    "rank": 54,
+    "title": "Resident Evil 4",
+    "content": "Over-the-shoulder action horror in rural Spain. Remade in 2023.",
+    "hook": "#54 · Capcom, 2005",
+    "tags": [
+      "Horror"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Resident+Evil+4+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Resident Evil 4",
+        "url": "https://en.wikipedia.org/wiki/Resident_Evil_4"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Resident Evil 4 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Resident+Evil+4+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Resident Evil 4",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "055",
+    "rank": 55,
+    "title": "Resident Evil",
+    "content": "The Spencer Mansion and the start of survival horror's popularity.",
+    "hook": "#55 · Capcom, 1996",
+    "tags": [
+      "Horror"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Resident+Evil+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Resident Evil (1996 video game)",
+        "url": "https://en.wikipedia.org/wiki/Resident_Evil_(1996_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Resident Evil game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Resident+Evil+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Resident Evil (1996 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "056",
+    "rank": 56,
+    "title": "Silent Hill 2",
+    "content": "A letter from a dead wife draws James into the fog. Psychological horror's peak.",
+    "hook": "#56 · Konami, 2001",
+    "tags": [
+      "Horror"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Silent+Hill+2+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Silent Hill 2",
+        "url": "https://en.wikipedia.org/wiki/Silent_Hill_2"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Silent Hill 2 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Silent+Hill+2+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Silent Hill 2",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "057",
+    "rank": 57,
+    "title": "The Last of Us",
+    "content": "Joel and Ellie cross a broken America. A landmark in game storytelling.",
+    "hook": "#57 · Naughty Dog, 2013",
+    "tags": [
+      "Action"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=The+Last+of+Us+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Last of Us",
+        "url": "https://en.wikipedia.org/wiki/The_Last_of_Us"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Last of Us game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Last+of+Us+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Last of Us",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "058",
+    "rank": 58,
+    "title": "Uncharted 2: Among Thieves",
+    "content": "Cinematic set pieces with Nathan Drake, from a train to the Himalayas.",
+    "hook": "#58 · Naughty Dog, 2009",
+    "tags": [
+      "Action"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Uncharted+2%3A+Among+Thieves+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Uncharted 2: Among Thieves",
+        "url": "https://en.wikipedia.org/wiki/Uncharted_2:_Among_Thieves"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Uncharted 2: Among Thieves game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Uncharted+2%3A+Among+Thieves+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Uncharted 2: Among Thieves",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "059",
+    "rank": 59,
+    "title": "God of War",
+    "content": "Kratos and his son Atreus journey through Norse myth in a single unbroken shot.",
+    "hook": "#59 · Santa Monica Studio, 2018",
+    "tags": [
+      "Action"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=God+of+War+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: God of War (2018 video game)",
+        "url": "https://en.wikipedia.org/wiki/God_of_War_(2018_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "God of War game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=God+of+War+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "God of War (2018 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "060",
+    "rank": 60,
+    "title": "Shadow of the Colossus",
+    "content": "Sixteen giants, one horse and a lonely forbidden land.",
+    "hook": "#60 · Team Ico, 2005",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Shadow+of+the+Colossus+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Shadow of the Colossus",
+        "url": "https://en.wikipedia.org/wiki/Shadow_of_the_Colossus"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Shadow of the Colossus game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Shadow+of+the+Colossus+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Shadow of the Colossus",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "061",
+    "rank": 61,
+    "title": "Ico",
+    "content": "A horned boy leads a girl by the hand through a vast castle.",
+    "hook": "#61 · Team Ico, 2001",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Ico+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Ico (video game)",
+        "url": "https://en.wikipedia.org/wiki/Ico_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Ico game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Ico+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Ico (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "062",
+    "rank": 62,
+    "title": "Journey",
+    "content": "A wordless pilgrimage across sand with anonymous strangers.",
+    "hook": "#62 · Thatgamecompany, 2012",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Journey+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Journey (2012 video game)",
+        "url": "https://en.wikipedia.org/wiki/Journey_(2012_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Journey game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Journey+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Journey (2012 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "063",
+    "rank": 63,
+    "title": "Hades",
+    "content": "Zagreus tries to escape the underworld, run after stylish run.",
+    "hook": "#63 · Supergiant Games, 2020",
+    "tags": [
+      "Roguelike"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Hades+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hades (video game)",
+        "url": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hades game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hades+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Hades (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "064",
+    "rank": 64,
+    "title": "Hollow Knight",
+    "content": "A hand-drawn bug kingdom and one of the finest Metroidvanias.",
+    "hook": "#64 · Team Cherry, 2017",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Hollow+Knight+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hollow Knight",
+        "url": "https://en.wikipedia.org/wiki/Hollow_Knight"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hollow Knight game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hollow+Knight+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Hollow Knight",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "065",
+    "rank": 65,
+    "title": "Celeste",
+    "content": "Precise platforming up a mountain and a story about anxiety.",
+    "hook": "#65 · Maddy Makes Games, 2018",
+    "tags": [
+      "Platformer"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Celeste+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Celeste (video game)",
+        "url": "https://en.wikipedia.org/wiki/Celeste_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Celeste game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Celeste+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Celeste (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "066",
+    "rank": 66,
+    "title": "Undertale",
+    "content": "The role-playing game where nobody has to die.",
+    "hook": "#66 · Toby Fox, 2015",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Undertale+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Undertale",
+        "url": "https://en.wikipedia.org/wiki/Undertale"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Undertale game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Undertale+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Undertale",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "067",
+    "rank": 67,
+    "title": "Braid",
+    "content": "Rewind time to solve puzzles. A defining indie game.",
+    "hook": "#67 · Number None, 2008",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Braid+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Braid (video game)",
+        "url": "https://en.wikipedia.org/wiki/Braid_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Braid game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Braid+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Braid (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "068",
+    "rank": 68,
+    "title": "Limbo",
+    "content": "A boy in black and white searches for his sister in a deadly world.",
+    "hook": "#68 · Playdead, 2010",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Limbo+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Limbo (video game)",
+        "url": "https://en.wikipedia.org/wiki/Limbo_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Limbo game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Limbo+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Limbo (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "069",
+    "rank": 69,
+    "title": "Inside",
+    "content": "A boy runs from something terrible, towards something worse.",
+    "hook": "#69 · Playdead, 2016",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Inside+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Inside (video game)",
+        "url": "https://en.wikipedia.org/wiki/Inside_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Inside game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Inside+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Inside (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "070",
+    "rank": 70,
+    "title": "Outer Wilds",
+    "content": "A solar system on a 22-minute time loop, full of secrets.",
+    "hook": "#70 · Mobius Digital, 2019",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Outer+Wilds+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Outer Wilds",
+        "url": "https://en.wikipedia.org/wiki/Outer_Wilds"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Outer Wilds game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Outer+Wilds+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Outer Wilds",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "071",
+    "rank": 71,
+    "title": "Disco Elysium",
+    "content": "A detective with amnesia, whose own skills argue in his head.",
+    "hook": "#71 · ZA/UM, 2019",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Disco+Elysium+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Disco Elysium",
+        "url": "https://en.wikipedia.org/wiki/Disco_Elysium"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Disco Elysium game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Disco+Elysium+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Disco Elysium",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "072",
+    "rank": 72,
+    "title": "Street Fighter II",
+    "content": "Hadoken. The game that launched the fighting game boom in arcades.",
+    "hook": "#72 · Capcom, 1991",
+    "tags": [
+      "Fighting"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Street+Fighter+II+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Street Fighter II",
+        "url": "https://en.wikipedia.org/wiki/Street_Fighter_II"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Street Fighter II game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Street+Fighter+II+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Street Fighter II",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "073",
+    "rank": 73,
+    "title": "Super Smash Bros. Melee",
+    "content": "Nintendo's all-stars brawl. Still a competitive staple.",
+    "hook": "#73 · HAL Laboratory, 2001",
+    "tags": [
+      "Fighting"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Super+Smash+Bros.+Melee+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Super Smash Bros. Melee",
+        "url": "https://en.wikipedia.org/wiki/Super_Smash_Bros._Melee"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Super Smash Bros. Melee game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Super+Smash+Bros.+Melee+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Super Smash Bros. Melee",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "074",
+    "rank": 74,
+    "title": "Mortal Kombat",
+    "content": "Digitised fighters and fatalities. Helped create age ratings.",
+    "hook": "#74 · Midway, 1992",
+    "tags": [
+      "Fighting"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Mortal+Kombat+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mortal Kombat (1992 video game)",
+        "url": "https://en.wikipedia.org/wiki/Mortal_Kombat_(1992_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mortal Kombat game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mortal+Kombat+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mortal Kombat (1992 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "075",
+    "rank": 75,
+    "title": "Tekken 3",
+    "content": "Arcade-perfect 3D fighting on the PlayStation.",
+    "hook": "#75 · Namco, 1997",
+    "tags": [
+      "Fighting"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Tekken+3+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tekken 3",
+        "url": "https://en.wikipedia.org/wiki/Tekken_3"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tekken 3 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tekken+3+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Tekken 3",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "076",
+    "rank": 76,
+    "title": "Mario Kart 8 Deluxe",
+    "content": "Anti-gravity karts and blue shells. The best-selling Switch game.",
+    "hook": "#76 · Nintendo, 2017",
+    "tags": [
+      "Racing"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Mario+Kart+8+Deluxe+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mario Kart 8 Deluxe",
+        "url": "https://en.wikipedia.org/wiki/Mario_Kart_8_Deluxe"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mario Kart 8 Deluxe game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mario+Kart+8+Deluxe+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mario Kart 8 Deluxe",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "077",
+    "rank": 77,
+    "title": "Gran Turismo",
+    "content": "The real driving simulator. Hundreds of real cars.",
+    "hook": "#77 · Polyphony Digital, 1997",
+    "tags": [
+      "Racing"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Gran+Turismo+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Gran Turismo (1997 video game)",
+        "url": "https://en.wikipedia.org/wiki/Gran_Turismo_(1997_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Gran Turismo game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Gran+Turismo+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Gran Turismo (1997 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "078",
+    "rank": 78,
+    "title": "Forza Horizon 4",
+    "content": "A racing festival across a shrunken Great Britain, through the seasons.",
+    "hook": "#78 · Playground Games, 2018",
+    "tags": [
+      "Racing"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Forza+Horizon+4+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Forza Horizon 4",
+        "url": "https://en.wikipedia.org/wiki/Forza_Horizon_4"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Forza Horizon 4 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Forza+Horizon+4+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Forza Horizon 4",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "079",
+    "rank": 79,
+    "title": "Burnout 3: Takedown",
+    "content": "Speed, crashes and takedowns, from a studio in Guildford.",
+    "hook": "#79 · Criterion Games, 2004",
+    "tags": [
+      "Racing"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Burnout+3%3A+Takedown+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Burnout 3: Takedown",
+        "url": "https://en.wikipedia.org/wiki/Burnout_3:_Takedown"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Burnout 3: Takedown game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Burnout+3%3A+Takedown+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Burnout 3: Takedown",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "080",
+    "rank": 80,
+    "title": "Tony Hawk's Pro Skater 2",
+    "content": "Manuals, combos and a punk soundtrack.",
+    "hook": "#80 · Neversoft, 2000",
+    "tags": [
+      "Sports"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Tony+Hawk%27s+Pro+Skater+2+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tony Hawk's Pro Skater 2",
+        "url": "https://en.wikipedia.org/wiki/Tony_Hawk's_Pro_Skater_2"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tony Hawk's Pro Skater 2 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tony+Hawk%27s+Pro+Skater+2+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Tony Hawk's Pro Skater 2",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "081",
+    "rank": 81,
+    "title": "FIFA 23",
+    "content": "The last game with the FIFA licence, before the series became EA Sports FC.",
+    "hook": "#81 · EA Vancouver, 2022",
+    "tags": [
+      "Sports"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=FIFA+23+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: FIFA 23",
+        "url": "https://en.wikipedia.org/wiki/FIFA_23"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "FIFA 23 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=FIFA+23+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "FIFA 23",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "082",
+    "rank": 82,
+    "title": "Pro Evolution Soccer 6",
+    "content": "The high point of PES and a cult football favourite.",
+    "hook": "#82 · Konami, 2006",
+    "tags": [
+      "Sports"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Pro+Evolution+Soccer+6+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Pro Evolution Soccer 6",
+        "url": "https://en.wikipedia.org/wiki/Pro_Evolution_Soccer_6"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Pro Evolution Soccer 6 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Pro+Evolution+Soccer+6+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Pro Evolution Soccer 6",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "083",
+    "rank": 83,
+    "title": "Wii Sports",
+    "content": "Motion-controlled bowling that got grandparents gaming.",
+    "hook": "#83 · Nintendo, 2006",
+    "tags": [
+      "Sports"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Wii+Sports+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Wii Sports",
+        "url": "https://en.wikipedia.org/wiki/Wii_Sports"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Wii Sports game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Wii+Sports+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Wii Sports",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "084",
+    "rank": 84,
+    "title": "Rocket League",
+    "content": "Rocket-powered cars play football. Simple to start, hard to master.",
+    "hook": "#84 · Psyonix, 2015",
+    "tags": [
+      "Sports"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Rocket+League+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Rocket League",
+        "url": "https://en.wikipedia.org/wiki/Rocket_League"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Rocket League game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Rocket+League+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Rocket League",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "085",
+    "rank": 85,
+    "title": "Fortnite",
+    "content": "One hundred players, building and battle royale. A cultural phenomenon.",
+    "hook": "#85 · Epic Games, 2017",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Fortnite+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Fortnite",
+        "url": "https://en.wikipedia.org/wiki/Fortnite"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Fortnite game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Fortnite+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Fortnite",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "086",
+    "rank": 86,
+    "title": "League of Legends",
+    "content": "The multiplayer online battle arena with the world's biggest esports audience.",
+    "hook": "#86 · Riot Games, 2009",
+    "tags": [
+      "Strategy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=League+of+Legends+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: League of Legends",
+        "url": "https://en.wikipedia.org/wiki/League_of_Legends"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "League of Legends game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=League+of+Legends+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "League of Legends",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "087",
+    "rank": 87,
+    "title": "Counter-Strike",
+    "content": "Terrorists against counter-terrorists. Started as a Half-Life mod.",
+    "hook": "#87 · Valve, 2000",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Counter-Strike+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Counter-Strike",
+        "url": "https://en.wikipedia.org/wiki/Counter-Strike"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Counter-Strike game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Counter-Strike+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Counter-Strike",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "088",
+    "rank": 88,
+    "title": "Overwatch",
+    "content": "Team-based hero shooter with a colourful cast.",
+    "hook": "#88 · Blizzard, 2016",
+    "tags": [
+      "Shooter"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Overwatch+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Overwatch (video game)",
+        "url": "https://en.wikipedia.org/wiki/Overwatch_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Overwatch game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Overwatch+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Overwatch (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "089",
+    "rank": 89,
+    "title": "Among Us",
+    "content": "Find the impostor on the spaceship. The 2020 social hit.",
+    "hook": "#89 · Innersloth, 2018",
+    "tags": [
+      "Party"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Among+Us+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Among Us",
+        "url": "https://en.wikipedia.org/wiki/Among_Us"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Among Us game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Among+Us+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Among Us",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "090",
+    "rank": 90,
+    "title": "Pac-Man",
+    "content": "Eat the dots, dodge the ghosts. The first video game icon.",
+    "hook": "#90 · Namco, 1980",
+    "tags": [
+      "Arcade"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Pac-Man+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Pac-Man",
+        "url": "https://en.wikipedia.org/wiki/Pac-Man"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Pac-Man game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Pac-Man+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Pac-Man",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "091",
+    "rank": 91,
+    "title": "Space Invaders",
+    "content": "Rows of descending aliens that started the golden age of arcades.",
+    "hook": "#91 · Taito, 1978",
+    "tags": [
+      "Arcade"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Space+Invaders+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Space Invaders",
+        "url": "https://en.wikipedia.org/wiki/Space_Invaders"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Space Invaders game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Space+Invaders+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Space Invaders",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "092",
+    "rank": 92,
+    "title": "Donkey Kong",
+    "content": "Jumpman, the future Mario, climbs to rescue Pauline.",
+    "hook": "#92 · Nintendo, 1981",
+    "tags": [
+      "Arcade"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Donkey+Kong+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Donkey Kong (1981 video game)",
+        "url": "https://en.wikipedia.org/wiki/Donkey_Kong_(1981_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Donkey Kong game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Donkey+Kong+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Donkey Kong (1981 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "093",
+    "rank": 93,
+    "title": "Sonic the Hedgehog",
+    "content": "Blue blur speed that powered the Mega Drive.",
+    "hook": "#93 · Sega, 1991",
+    "tags": [
+      "Platformer"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Sonic+the+Hedgehog+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Sonic the Hedgehog (1991 video game)",
+        "url": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sonic the Hedgehog game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sonic+the+Hedgehog+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Sonic the Hedgehog (1991 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "094",
+    "rank": 94,
+    "title": "Lemmings",
+    "content": "Save the lemmings from walking off cliffs. Made in Dundee.",
+    "hook": "#94 · DMA Design, 1991",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Lemmings+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Lemmings (video game)",
+        "url": "https://en.wikipedia.org/wiki/Lemmings_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Lemmings game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Lemmings+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Lemmings (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "095",
+    "rank": 95,
+    "title": "Elite",
+    "content": "An open universe on the BBC Micro. The space trading pioneer.",
+    "hook": "#95 · David Braben and Ian Bell, 1984",
+    "tags": [
+      "Simulation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Elite+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Elite (video game)",
+        "url": "https://en.wikipedia.org/wiki/Elite_(video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Elite game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Elite+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Elite (video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "096",
+    "rank": 96,
+    "title": "Myst",
+    "content": "Explore a mysterious island in pre-rendered images. A CD-ROM landmark.",
+    "hook": "#96 · Cyan, 1993",
+    "tags": [
+      "Puzzle"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Myst+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Myst",
+        "url": "https://en.wikipedia.org/wiki/Myst"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Myst game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Myst+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Myst",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "097",
+    "rank": 97,
+    "title": "Monkey Island 2: LeChuck's Revenge",
+    "content": "Guybrush Threepwood's piratical adventure, full of jokes.",
+    "hook": "#97 · LucasArts, 1991",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Monkey+Island+2%3A+LeChuck%27s+Revenge+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Monkey Island 2: LeChuck's Revenge",
+        "url": "https://en.wikipedia.org/wiki/Monkey_Island_2:_LeChuck's_Revenge"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Monkey Island 2: LeChuck's Revenge game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Monkey+Island+2%3A+LeChuck%27s+Revenge+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Monkey Island 2: LeChuck's Revenge",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "098",
+    "rank": 98,
+    "title": "Grim Fandango",
+    "content": "A film noir travel agent in the Land of the Dead.",
+    "hook": "#98 · LucasArts, 1998",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Grim+Fandango+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Grim Fandango",
+        "url": "https://en.wikipedia.org/wiki/Grim_Fandango"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Grim Fandango game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Grim+Fandango+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Grim Fandango",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "099",
+    "rank": 99,
+    "title": "Tomb Raider",
+    "content": "Lara Croft explores tombs in 3D. A British-made icon from Derby.",
+    "hook": "#99 · Core Design, 1996",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Tomb+Raider+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tomb Raider (1996 video game)",
+        "url": "https://en.wikipedia.org/wiki/Tomb_Raider_(1996_video_game)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tomb Raider game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tomb+Raider+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Tomb Raider (1996 video game)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "100",
+    "rank": 100,
+    "title": "Cyberpunk 2077",
+    "content": "Night City and Keanu Reeves's Johnny Silverhand. Rebuilt after a rocky launch.",
+    "hook": "#100 · CD Projekt Red, 2020",
+    "tags": [
+      "RPG"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Find the game",
+      "url": "https://www.amazon.co.uk/s?k=Cyberpunk+2077+game&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cyberpunk 2077",
+        "url": "https://en.wikipedia.org/wiki/Cyberpunk_2077"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cyberpunk 2077 game",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cyberpunk+2077+game&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Cyberpunk 2077",
+      "wiki_alt": null,
+      "domain": null
+    }
+  }
+]
