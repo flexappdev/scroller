@@ -266,7 +266,7 @@ export default function StickyHeader() {
 
       <span className="ml-1 hidden h-5 w-px sm:block" style={{ background: "var(--border)" }} />
 
-      <div className="ml-auto flex items-center gap-1.5">
+      <div className="ml-auto flex shrink-0 items-center gap-1.5">
         <button
           type="button"
           onClick={() => setOpen((current) => (current === "sort" ? null : "sort"))}
