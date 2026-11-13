@@ -31,6 +31,17 @@ const scrollerSite: SiteConfig = {
     saved: true,
     profile: true,
   },
+  monetisation: {
+    feedAdEvery: 20,
+    adsAnonymousOnly: true,
+    affiliate: { provider: "amazon", every: 10, tagEnv: "AMAZON_ASSOCIATES_TAG", marketplace: "www.amazon.co.uk" },
+  },
+  channel: {
+    domains: ["scroller.tv", "www.scroller.tv"],
+    defaultMode: "scroll",
+    analyticsChannel: "scroller",
+    servedBy: "flexappdev/scroller",
+  },
 };
 
 export default scrollerSite;

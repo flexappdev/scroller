@@ -12,6 +12,7 @@ export type {
   BrandTokens,
   NavItem,
   MonetisationFlags,
+  ChannelManifest,
   ScrollerMode,
   SiteContent,
   SiteScroller,

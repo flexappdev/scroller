@@ -30,6 +30,31 @@ export interface MonetisationFlags {
   stripeEnabled?: boolean;
   adsenseSlot?: string;
   affiliateTag?: string;
+  /** MSS-011 — one display ad after every N content items (0 = no feed ads). */
+  feedAdEvery?: number;
+  /** MSS-011 — signed-in feeds stay ad-free. */
+  adsAnonymousOnly?: boolean;
+  /** Affiliate cards between items. Tag values come from env, never the manifest. */
+  affiliate?: {
+    provider: "amazon" | "booking";
+    every: number;
+    tagEnv: string;
+    marketplace?: string;
+  };
+}
+
+/** MSS-002 — how a channel opens and what it is called on the wire. */
+export interface ChannelManifest {
+  /** Production hostnames that resolve to this channel (first is canonical). */
+  domains: string[];
+  /** Mobile default per MSS-003; TV stays one tap away. */
+  defaultMode: "scroll" | "tv";
+  /** Value of the `channel` parameter on every analytics event (MSS-010). */
+  analyticsChannel: string;
+  /** Repo that currently serves the channel until MSS-017 migration lands. */
+  servedBy: string;
+  /** Feature flags the shared runtime can switch on per channel. */
+  features?: Record<string, boolean>;
 }
 
 export type ScrollerMode = "media" | "article" | "product" | "mixed";
@@ -76,6 +101,8 @@ export interface SiteConfig {
   nav?: NavItem[];
   monetisation?: MonetisationFlags;
   baseUrl?: string;
+  /** MSS-002 — executable channel manifest. */
+  channel?: ChannelManifest;
 }
 
 /** Identity helper for authoring a site.config.ts with type-checking. */
