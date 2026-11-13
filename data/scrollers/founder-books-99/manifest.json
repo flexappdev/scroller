@@ -1,0 +1,27 @@
+{
+  "slug": "founder-books-99",
+  "name": "99 Books Every Solo Founder Should Read",
+  "tagline": "The founder bookshelf, ranked: validation, sales, money, systems and mindset.",
+  "description": "99 Books Every Solo Founder Should Read, ranked from 1 to 99. The founder bookshelf, ranked: validation, sales, money, systems and mindset.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Browse founder books on Amazon",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=books+for+solo+founders&tag=fs08-21",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "msscroll",
+  "topic": "business",
+  "kind": "book",
+  "sources": [
+    {
+      "title": "Editorial selection of widely known published works; verify before publishing (titles, authors, editions, years)."
+    },
+    {
+      "title": "No web sources used. Prices deliberately null; score is an editorial rank-derived relevance score, not a rating or sales figure. year_published is first publication (approximate for ancient works)."
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-10-22"
+}

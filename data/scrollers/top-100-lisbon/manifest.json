@@ -1,0 +1,30 @@
+{
+  "slug": "top-100-lisbon",
+  "name": "Top 100 Things to Do in Lisbon",
+  "tagline": "Monasteries, miradouros, pastéis and day trips: Lisbon ranked for a first visit.",
+  "description": "Top 100 Things to Do in Lisbon, ranked from 1 to 100. Monasteries, miradouros, pastéis and day trips: Lisbon ranked for a first visit.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Get a Lisbon travel guide",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=Lisbon+travel+guide&tag=fs08-21",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "msscroll",
+  "topic": "travel",
+  "kind": "place",
+  "sources": [
+    {
+      "title": "WebSearch 2026-10-07: 'best things to do in Lisbon 2026 guide' (timeout.com/lisbon 101 things to do; winetraveler.com; thetourguy.com)"
+    },
+    {
+      "title": "WebSearch 2026-10-07: Lisbon museums (timeout.com/lisbon best museums; artvisitguide.com)"
+    },
+    {
+      "title": "Editorial knowledge of long-established Lisbon landmarks; no opening hours, prices, ratings or quotes included"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-10-22"
+}
