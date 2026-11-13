@@ -1,0 +1,33 @@
+{
+  "slug": "top-100-non-fiction-books",
+  "name": "Top 100 Non-Fiction Books of All Time",
+  "tagline": "The non-fiction that changed how we think.",
+  "description": "The 100 best non-fiction books of all time, ranked: history, science, memoir, philosophy, business and money, from Sapiens and A Brief History of Time to Meditations and Atomic Habits. Every card has a source and a link to buy the book.",
+  "theme": "dark",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Shop best non fiction books on Amazon",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=best+non+fiction+books&tag=fs08-21",
+    "offer": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links."
+  },
+  "site": "scroller",
+  "topic": "books",
+  "kind": "product",
+  "sources": [
+    {
+      "title": "The Guardian: 100 best non-fiction books of all time",
+      "url": "https://www.theguardian.com/books/2017/may/08/robert-mccrum-100-best-nonfiction-books-all-time-the-final-list"
+    },
+    {
+      "title": "Pulitzer Prize: General Nonfiction",
+      "url": "https://www.pulitzer.org/prize-winners-by-category/223"
+    },
+    {
+      "title": "Wikipedia: Non-fiction",
+      "url": "https://en.wikipedia.org/wiki/Non-fiction"
+    }
+  ],
+  "disclosure": "As an Amazon Associate we earn from qualifying purchases. Some links are affiliate links.",
+  "schema": "scroller-pack/1",
+  "generated": "2026-11-13"
+}

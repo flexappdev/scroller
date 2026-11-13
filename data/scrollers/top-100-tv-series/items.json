@@ -1,0 +1,3802 @@
+[
+  {
+    "id": "001",
+    "rank": 1,
+    "title": "The Sopranos",
+    "content": "A New Jersey mob boss in therapy. The show that started television's golden age.",
+    "hook": "#1 · HBO, 1999 to 2007",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Sopranos+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Sopranos",
+        "url": "https://en.wikipedia.org/wiki/The_Sopranos"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Sopranos complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Sopranos+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Sopranos",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "002",
+    "rank": 2,
+    "title": "The Wire",
+    "content": "Baltimore's drug trade, police, docks, politics, schools and press, one season at a time.",
+    "hook": "#2 · HBO, 2002 to 2008",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Wire+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Wire",
+        "url": "https://en.wikipedia.org/wiki/The_Wire"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Wire complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Wire+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Wire",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "003",
+    "rank": 3,
+    "title": "Breaking Bad",
+    "content": "A chemistry teacher becomes a drug kingpin. Mr Chips to Scarface in five seasons.",
+    "hook": "#3 · AMC, 2008 to 2013",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Breaking+Bad+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Breaking Bad",
+        "url": "https://en.wikipedia.org/wiki/Breaking_Bad"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Breaking Bad complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Breaking+Bad+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Breaking Bad",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "004",
+    "rank": 4,
+    "title": "Mad Men",
+    "content": "Don Draper and 1960s Madison Avenue advertising.",
+    "hook": "#4 · AMC, 2007 to 2015",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Mad+Men+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mad Men",
+        "url": "https://en.wikipedia.org/wiki/Mad_Men"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mad Men complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mad+Men+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mad Men",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "005",
+    "rank": 5,
+    "title": "Game of Thrones",
+    "content": "Westeros, dragons and the fight for the Iron Throne. A global phenomenon.",
+    "hook": "#5 · HBO, 2011 to 2019",
+    "tags": [
+      "Fantasy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Game+of+Thrones+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Game of Thrones (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Game_of_Thrones_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Game of Thrones complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Game+of+Thrones+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Game of Thrones (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "006",
+    "rank": 6,
+    "title": "Fleabag",
+    "content": "Phoebe Waller-Bridge breaks the fourth wall, and then there's the Hot Priest.",
+    "hook": "#6 · BBC Three, 2016 to 2019",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Fleabag+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Fleabag",
+        "url": "https://en.wikipedia.org/wiki/Fleabag"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Fleabag complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Fleabag+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Fleabag",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "007",
+    "rank": 7,
+    "title": "The Office",
+    "content": "David Brent at Wernham Hogg in Slough. Twelve episodes and two specials that changed comedy.",
+    "hook": "#7 · BBC Two, 2001 to 2003",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Office+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Office (British TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Office_(British_TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Office complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Office+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Office (British TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "008",
+    "rank": 8,
+    "title": "Fawlty Towers",
+    "content": "Basil Fawlty runs a Torquay hotel very badly. Only twelve episodes, all classics.",
+    "hook": "#8 · BBC Two, 1975 and 1979",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Fawlty+Towers+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Fawlty Towers",
+        "url": "https://en.wikipedia.org/wiki/Fawlty_Towers"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Fawlty Towers complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Fawlty+Towers+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Fawlty Towers",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "009",
+    "rank": 9,
+    "title": "Blackadder",
+    "content": "Edmund Blackadder through four eras of British history, ending in the trenches.",
+    "hook": "#9 · BBC One, 1983 to 1989",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Blackadder+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Blackadder",
+        "url": "https://en.wikipedia.org/wiki/Blackadder"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Blackadder complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Blackadder+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Blackadder",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "010",
+    "rank": 10,
+    "title": "Only Fools and Horses",
+    "content": "Del Boy and Rodney in Peckham. This time next year we'll be millionaires.",
+    "hook": "#10 · BBC One, 1981 to 2003",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Only+Fools+and+Horses+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Only Fools and Horses",
+        "url": "https://en.wikipedia.org/wiki/Only_Fools_and_Horses"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Only Fools and Horses complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Only+Fools+and+Horses+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Only Fools and Horses",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "011",
+    "rank": 11,
+    "title": "Seinfeld",
+    "content": "A show about nothing, and the template for the modern sitcom.",
+    "hook": "#11 · NBC, 1989 to 1998",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Seinfeld+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Seinfeld",
+        "url": "https://en.wikipedia.org/wiki/Seinfeld"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Seinfeld complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Seinfeld+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Seinfeld",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "012",
+    "rank": 12,
+    "title": "Friends",
+    "content": "Six friends, Central Perk and a decade of New York.",
+    "hook": "#12 · NBC, 1994 to 2004",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Friends+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Friends",
+        "url": "https://en.wikipedia.org/wiki/Friends"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Friends complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Friends+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Friends",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "013",
+    "rank": 13,
+    "title": "The Simpsons",
+    "content": "Springfield's yellow family. The longest-running American scripted primetime series.",
+    "hook": "#13 · Fox, 1989 to present",
+    "tags": [
+      "Animation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Simpsons+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Simpsons",
+        "url": "https://en.wikipedia.org/wiki/The_Simpsons"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Simpsons complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Simpsons+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Simpsons",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "014",
+    "rank": 14,
+    "title": "Succession",
+    "content": "The Roy family fight over a media empire.",
+    "hook": "#14 · HBO, 2018 to 2023",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Succession+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Succession (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Succession_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Succession complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Succession+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Succession (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "015",
+    "rank": 15,
+    "title": "True Detective",
+    "content": "Season one's Louisiana investigation with McConaughey and Harrelson.",
+    "hook": "#15 · HBO, 2014 to present",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=True+Detective+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: True Detective",
+        "url": "https://en.wikipedia.org/wiki/True_Detective"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "True Detective complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=True+Detective+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "True Detective",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "016",
+    "rank": 16,
+    "title": "Twin Peaks",
+    "content": "Who killed Laura Palmer? David Lynch's surreal small town.",
+    "hook": "#16 · ABC, 1990 to 1991",
+    "tags": [
+      "Mystery"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Twin+Peaks+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Twin Peaks",
+        "url": "https://en.wikipedia.org/wiki/Twin_Peaks"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Twin Peaks complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Twin+Peaks+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Twin Peaks",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "017",
+    "rank": 17,
+    "title": "The X-Files",
+    "content": "Mulder and Scully investigate the paranormal. The truth is out there.",
+    "hook": "#17 · Fox, 1993 to 2018",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+X-Files+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The X-Files",
+        "url": "https://en.wikipedia.org/wiki/The_X-Files"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The X-Files complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+X-Files+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The X-Files",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "018",
+    "rank": 18,
+    "title": "Doctor Who",
+    "content": "A time-travelling alien in a blue police box. The longest-running science fiction series.",
+    "hook": "#18 · BBC, 1963 to present",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Doctor+Who+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Doctor Who",
+        "url": "https://en.wikipedia.org/wiki/Doctor_Who"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Doctor Who complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Doctor+Who+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Doctor Who",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "019",
+    "rank": 19,
+    "title": "Sherlock",
+    "content": "Cumberbatch and Freeman bring Holmes and Watson to modern London.",
+    "hook": "#19 · BBC One, 2010 to 2017",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Sherlock+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Sherlock (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sherlock complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sherlock+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Sherlock (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "020",
+    "rank": 20,
+    "title": "Line of Duty",
+    "content": "AC-12 hunt bent coppers in interrogation scenes that run for twenty minutes.",
+    "hook": "#20 · BBC, 2012 to 2021",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Line+of+Duty+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Line of Duty",
+        "url": "https://en.wikipedia.org/wiki/Line_of_Duty"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Line of Duty complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Line+of+Duty+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Line of Duty",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "021",
+    "rank": 21,
+    "title": "Happy Valley",
+    "content": "Sergeant Catherine Cawood in West Yorkshire. Sarah Lancashire at her best.",
+    "hook": "#21 · BBC One, 2014 to 2023",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Happy+Valley+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Happy Valley (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Happy_Valley_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Happy Valley complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Happy+Valley+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Happy Valley (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "022",
+    "rank": 22,
+    "title": "Peaky Blinders",
+    "content": "The Shelby family run Birmingham's post-war underworld.",
+    "hook": "#22 · BBC, 2013 to 2022",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Peaky+Blinders+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Peaky Blinders (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Peaky_Blinders_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Peaky Blinders complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Peaky+Blinders+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Peaky Blinders (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "023",
+    "rank": 23,
+    "title": "Downton Abbey",
+    "content": "Upstairs and downstairs at a Yorkshire country house.",
+    "hook": "#23 · ITV, 2010 to 2015",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Downton+Abbey+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Downton Abbey",
+        "url": "https://en.wikipedia.org/wiki/Downton_Abbey"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Downton Abbey complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Downton+Abbey+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Downton Abbey",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "024",
+    "rank": 24,
+    "title": "The Crown",
+    "content": "The reign of Elizabeth II, with three actresses in the lead.",
+    "hook": "#24 · Netflix, 2016 to 2023",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Crown+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Crown (TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Crown_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Crown complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Crown+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Crown (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "025",
+    "rank": 25,
+    "title": "Chernobyl",
+    "content": "The 1986 nuclear disaster and its cover-up, in five devastating episodes.",
+    "hook": "#25 · HBO and Sky, 2019",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Chernobyl+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Chernobyl (miniseries)",
+        "url": "https://en.wikipedia.org/wiki/Chernobyl_(miniseries)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Chernobyl complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Chernobyl+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Chernobyl (miniseries)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "026",
+    "rank": 26,
+    "title": "Band of Brothers",
+    "content": "Easy Company from D-Day to the end of the Second World War.",
+    "hook": "#26 · HBO, 2001",
+    "tags": [
+      "War"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Band+of+Brothers+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Band of Brothers (miniseries)",
+        "url": "https://en.wikipedia.org/wiki/Band_of_Brothers_(miniseries)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Band of Brothers complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Band+of+Brothers+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Band of Brothers (miniseries)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "027",
+    "rank": 27,
+    "title": "Planet Earth",
+    "content": "David Attenborough's high-definition tour of the natural world.",
+    "hook": "#27 · BBC, 2006",
+    "tags": [
+      "Documentary"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Planet+Earth+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Planet Earth (2006 TV series)",
+        "url": "https://en.wikipedia.org/wiki/Planet_Earth_(2006_TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Planet Earth complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Planet+Earth+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Planet Earth (2006 TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "028",
+    "rank": 28,
+    "title": "Blue Planet II",
+    "content": "The oceans in stunning detail. Sparked a national campaign against plastic.",
+    "hook": "#28 · BBC, 2017",
+    "tags": [
+      "Documentary"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Blue+Planet+II+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Blue Planet II",
+        "url": "https://en.wikipedia.org/wiki/Blue_Planet_II"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Blue Planet II complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Blue+Planet+II+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Blue Planet II",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "029",
+    "rank": 29,
+    "title": "Our Planet",
+    "content": "Attenborough narrates the planet's wild places and what is at stake.",
+    "hook": "#29 · Netflix, 2019",
+    "tags": [
+      "Documentary"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Our+Planet+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Our Planet",
+        "url": "https://en.wikipedia.org/wiki/Our_Planet"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Our Planet complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Our+Planet+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Our Planet",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "030",
+    "rank": 30,
+    "title": "The Last Dance",
+    "content": "Michael Jordan and the 1990s Chicago Bulls.",
+    "hook": "#30 · ESPN and Netflix, 2020",
+    "tags": [
+      "Documentary"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Last+Dance+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Last Dance (miniseries)",
+        "url": "https://en.wikipedia.org/wiki/The_Last_Dance_(miniseries)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Last Dance complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Last+Dance+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Last Dance (miniseries)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "031",
+    "rank": 31,
+    "title": "Stranger Things",
+    "content": "1980s Indiana kids against the Upside Down.",
+    "hook": "#31 · Netflix, 2016 to 2025",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Stranger+Things+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Stranger Things",
+        "url": "https://en.wikipedia.org/wiki/Stranger_Things"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Stranger Things complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Stranger+Things+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Stranger Things",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "032",
+    "rank": 32,
+    "title": "Black Mirror",
+    "content": "Standalone stories about technology gone wrong.",
+    "hook": "#32 · Channel 4 and Netflix, 2011 to present",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Black+Mirror+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Black Mirror",
+        "url": "https://en.wikipedia.org/wiki/Black_Mirror"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Black Mirror complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Black+Mirror+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Black Mirror",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "033",
+    "rank": 33,
+    "title": "Better Call Saul",
+    "content": "Jimmy McGill becomes Saul Goodman. A prequel to rival the original.",
+    "hook": "#33 · AMC, 2015 to 2022",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Better+Call+Saul+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Better Call Saul",
+        "url": "https://en.wikipedia.org/wiki/Better_Call_Saul"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Better Call Saul complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Better+Call+Saul+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Better Call Saul",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "034",
+    "rank": 34,
+    "title": "Six Feet Under",
+    "content": "A family of funeral directors in Los Angeles. Famous final episode.",
+    "hook": "#34 · HBO, 2001 to 2005",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Six+Feet+Under+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Six Feet Under",
+        "url": "https://en.wikipedia.org/wiki/Six_Feet_Under"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Six Feet Under complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Six+Feet+Under+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Six Feet Under",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "035",
+    "rank": 35,
+    "title": "Deadwood",
+    "content": "A lawless mining camp and Al Swearengen's magnificent profanity.",
+    "hook": "#35 · HBO, 2004 to 2006",
+    "tags": [
+      "Western"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Deadwood+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Deadwood (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Deadwood_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Deadwood complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Deadwood+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Deadwood (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "036",
+    "rank": 36,
+    "title": "The West Wing",
+    "content": "Aaron Sorkin's idealistic White House, walk and talk.",
+    "hook": "#36 · NBC, 1999 to 2006",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+West+Wing+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The West Wing",
+        "url": "https://en.wikipedia.org/wiki/The_West_Wing"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The West Wing complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+West+Wing+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The West Wing",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "037",
+    "rank": 37,
+    "title": "ER",
+    "content": "Chicago's County General emergency room over fifteen seasons.",
+    "hook": "#37 · NBC, 1994 to 2009",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=ER+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: ER (TV series)",
+        "url": "https://en.wikipedia.org/wiki/ER_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "ER complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=ER+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "ER (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "038",
+    "rank": 38,
+    "title": "Buffy the Vampire Slayer",
+    "content": "A teenage girl, the Hellmouth and a lot of quips.",
+    "hook": "#38 · The WB and UPN, 1997 to 2003",
+    "tags": [
+      "Fantasy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Buffy+the+Vampire+Slayer+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Buffy the Vampire Slayer",
+        "url": "https://en.wikipedia.org/wiki/Buffy_the_Vampire_Slayer"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Buffy the Vampire Slayer complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Buffy+the+Vampire+Slayer+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Buffy the Vampire Slayer",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "039",
+    "rank": 39,
+    "title": "Lost",
+    "content": "Plane crash survivors on a very strange island.",
+    "hook": "#39 · ABC, 2004 to 2010",
+    "tags": [
+      "Mystery"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Lost+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Lost (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Lost_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Lost complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Lost+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Lost (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "040",
+    "rank": 40,
+    "title": "Battlestar Galactica",
+    "content": "Humanity's survivors flee the Cylons across space.",
+    "hook": "#40 · Sci Fi Channel, 2004 to 2009",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Battlestar+Galactica+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Battlestar Galactica (2004 TV series)",
+        "url": "https://en.wikipedia.org/wiki/Battlestar_Galactica_(2004_TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Battlestar Galactica complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Battlestar+Galactica+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Battlestar Galactica (2004 TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "041",
+    "rank": 41,
+    "title": "Star Trek: The Next Generation",
+    "content": "Captain Picard and the Enterprise-D. Make it so.",
+    "hook": "#41 · Syndication, 1987 to 1994",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Star+Trek%3A+The+Next+Generation+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Star Trek: The Next Generation",
+        "url": "https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Star Trek: The Next Generation complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Star+Trek%3A+The+Next+Generation+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Star Trek: The Next Generation",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "042",
+    "rank": 42,
+    "title": "The Twilight Zone",
+    "content": "Rod Serling's anthology of the strange and moral.",
+    "hook": "#42 · CBS, 1959 to 1964",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Twilight+Zone+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Twilight Zone (1959 TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Twilight_Zone_(1959_TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Twilight Zone complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Twilight+Zone+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Twilight Zone (1959 TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "043",
+    "rank": 43,
+    "title": "Cheers",
+    "content": "A Boston bar where everybody knows your name.",
+    "hook": "#43 · NBC, 1982 to 1993",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Cheers+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cheers",
+        "url": "https://en.wikipedia.org/wiki/Cheers"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cheers complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cheers+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Cheers",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "044",
+    "rank": 44,
+    "title": "Frasier",
+    "content": "The Crane brothers' Seattle farce. A spin-off that outshone the original.",
+    "hook": "#44 · NBC, 1993 to 2004",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Frasier+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Frasier",
+        "url": "https://en.wikipedia.org/wiki/Frasier"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Frasier complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Frasier+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Frasier",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "045",
+    "rank": 45,
+    "title": "Arrested Development",
+    "content": "The Bluth family's fortune and Michael's attempts to keep them together.",
+    "hook": "#45 · Fox and Netflix, 2003 to 2019",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Arrested+Development+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Arrested Development",
+        "url": "https://en.wikipedia.org/wiki/Arrested_Development"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Arrested Development complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Arrested+Development+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Arrested Development",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "046",
+    "rank": 46,
+    "title": "Parks and Recreation",
+    "content": "Leslie Knope's relentless optimism in Pawnee, Indiana.",
+    "hook": "#46 · NBC, 2009 to 2015",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Parks+and+Recreation+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Parks and Recreation",
+        "url": "https://en.wikipedia.org/wiki/Parks_and_Recreation"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Parks and Recreation complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Parks+and+Recreation+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Parks and Recreation",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "047",
+    "rank": 47,
+    "title": "The Office (US)",
+    "content": "Michael Scott and Dunder Mifflin in Scranton.",
+    "hook": "#47 · NBC, 2005 to 2013",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Office+%28US%29+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Office (American TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Office (US) complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Office+%28US%29+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Office (American TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "048",
+    "rank": 48,
+    "title": "Curb Your Enthusiasm",
+    "content": "Larry David plays himself, badly behaved and pretty, pretty good.",
+    "hook": "#48 · HBO, 2000 to 2024",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Curb+Your+Enthusiasm+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Curb Your Enthusiasm",
+        "url": "https://en.wikipedia.org/wiki/Curb_Your_Enthusiasm"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Curb Your Enthusiasm complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Curb+Your+Enthusiasm+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Curb Your Enthusiasm",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "049",
+    "rank": 49,
+    "title": "Peep Show",
+    "content": "Mark and Jeremy's inner monologues in Croydon.",
+    "hook": "#49 · Channel 4, 2003 to 2015",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Peep+Show+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Peep Show",
+        "url": "https://en.wikipedia.org/wiki/Peep_Show"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Peep Show complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Peep+Show+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Peep Show",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "050",
+    "rank": 50,
+    "title": "The Thick of It",
+    "content": "Malcolm Tucker and the chaos of British government.",
+    "hook": "#50 · BBC, 2005 to 2012",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Thick+of+It+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Thick of It",
+        "url": "https://en.wikipedia.org/wiki/The_Thick_of_It"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Thick of It complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Thick+of+It+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Thick of It",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "051",
+    "rank": 51,
+    "title": "I'm Alan Partridge",
+    "content": "Steve Coogan's Norwich broadcaster at the Linton Travel Tavern.",
+    "hook": "#51 · BBC Two, 1997 to 2002",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=I%27m+Alan+Partridge+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: I'm Alan Partridge",
+        "url": "https://en.wikipedia.org/wiki/I'm_Alan_Partridge"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "I'm Alan Partridge complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=I%27m+Alan+Partridge+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "I'm Alan Partridge",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "052",
+    "rank": 52,
+    "title": "Father Ted",
+    "content": "Three priests on Craggy Island. Down with this sort of thing.",
+    "hook": "#52 · Channel 4, 1995 to 1998",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Father+Ted+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Father Ted",
+        "url": "https://en.wikipedia.org/wiki/Father_Ted"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Father Ted complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Father+Ted+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Father Ted",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "053",
+    "rank": 53,
+    "title": "Gavin & Stacey",
+    "content": "Essex meets Barry Island, and what's occurring.",
+    "hook": "#53 · BBC, 2007 to 2019",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Gavin+%26+Stacey+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Gavin & Stacey",
+        "url": "https://en.wikipedia.org/wiki/Gavin_%26_Stacey"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Gavin & Stacey complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Gavin+%26+Stacey+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Gavin & Stacey",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "054",
+    "rank": 54,
+    "title": "The IT Crowd",
+    "content": "Have you tried turning it off and on again?",
+    "hook": "#54 · Channel 4, 2006 to 2013",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+IT+Crowd+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The IT Crowd",
+        "url": "https://en.wikipedia.org/wiki/The_IT_Crowd"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The IT Crowd complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+IT+Crowd+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The IT Crowd",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "055",
+    "rank": 55,
+    "title": "Spaced",
+    "content": "Simon Pegg and Jessica Hynes pose as a couple to rent a flat.",
+    "hook": "#55 · Channel 4, 1999 to 2001",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Spaced+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Spaced",
+        "url": "https://en.wikipedia.org/wiki/Spaced"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Spaced complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Spaced+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Spaced",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "056",
+    "rank": 56,
+    "title": "Monty Python's Flying Circus",
+    "content": "Dead parrots, silly walks and the Spanish Inquisition.",
+    "hook": "#56 · BBC, 1969 to 1974",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Monty+Python%27s+Flying+Circus+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Monty Python's Flying Circus",
+        "url": "https://en.wikipedia.org/wiki/Monty_Python's_Flying_Circus"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Monty Python's Flying Circus complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Monty+Python%27s+Flying+Circus+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Monty Python's Flying Circus",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "057",
+    "rank": 57,
+    "title": "Detectorists",
+    "content": "Two metal detectorists in a gentle English field.",
+    "hook": "#57 · BBC Four, 2014 to 2022",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Detectorists+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Detectorists",
+        "url": "https://en.wikipedia.org/wiki/Detectorists"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Detectorists complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Detectorists+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Detectorists",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "058",
+    "rank": 58,
+    "title": "Schitt's Creek",
+    "content": "A rich family lose everything except a town they once bought as a joke.",
+    "hook": "#58 · CBC, 2015 to 2020",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Schitt%27s+Creek+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Schitt's Creek",
+        "url": "https://en.wikipedia.org/wiki/Schitt's_Creek"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Schitt's Creek complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Schitt%27s+Creek+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Schitt's Creek",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "059",
+    "rank": 59,
+    "title": "BoJack Horseman",
+    "content": "A washed-up sitcom horse, and a surprisingly deep look at depression.",
+    "hook": "#59 · Netflix, 2014 to 2020",
+    "tags": [
+      "Animation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=BoJack+Horseman+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: BoJack Horseman",
+        "url": "https://en.wikipedia.org/wiki/BoJack_Horseman"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "BoJack Horseman complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=BoJack+Horseman+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "BoJack Horseman",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "060",
+    "rank": 60,
+    "title": "Avatar: The Last Airbender",
+    "content": "Aang masters the four elements to end a hundred-year war.",
+    "hook": "#60 · Nickelodeon, 2005 to 2008",
+    "tags": [
+      "Animation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Avatar%3A+The+Last+Airbender+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Avatar: The Last Airbender",
+        "url": "https://en.wikipedia.org/wiki/Avatar:_The_Last_Airbender"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Avatar: The Last Airbender complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Avatar%3A+The+Last+Airbender+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Avatar: The Last Airbender",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "061",
+    "rank": 61,
+    "title": "Rick and Morty",
+    "content": "A nihilistic scientist and his grandson across the multiverse.",
+    "hook": "#61 · Adult Swim, 2013 to present",
+    "tags": [
+      "Animation"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Rick+and+Morty+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Rick and Morty",
+        "url": "https://en.wikipedia.org/wiki/Rick_and_Morty"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Rick and Morty complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Rick+and+Morty+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Rick and Morty",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "062",
+    "rank": 62,
+    "title": "The Leftovers",
+    "content": "Two percent of the world vanished. What about the rest?",
+    "hook": "#62 · HBO, 2014 to 2017",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Leftovers+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Leftovers (TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Leftovers_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Leftovers complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Leftovers+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Leftovers (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "063",
+    "rank": 63,
+    "title": "Mr. Robot",
+    "content": "A hacker with an unreliable mind takes on E Corp.",
+    "hook": "#63 · USA Network, 2015 to 2019",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Mr.+Robot+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mr. Robot",
+        "url": "https://en.wikipedia.org/wiki/Mr._Robot"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mr. Robot complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mr.+Robot+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mr. Robot",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "064",
+    "rank": 64,
+    "title": "Severance",
+    "content": "Office workers whose memories are split between work and home.",
+    "hook": "#64 · Apple TV+, 2022 to present",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Severance+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Severance (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Severance_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Severance complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Severance+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Severance (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "065",
+    "rank": 65,
+    "title": "The Bear",
+    "content": "A fine-dining chef takes over his late brother's Chicago sandwich shop.",
+    "hook": "#65 · FX, 2022 to present",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Bear+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Bear (TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Bear_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Bear complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Bear+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Bear (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "066",
+    "rank": 66,
+    "title": "Atlanta",
+    "content": "Donald Glover's surreal look at the Atlanta rap scene.",
+    "hook": "#66 · FX, 2016 to 2022",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Atlanta+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Atlanta (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Atlanta_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Atlanta complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Atlanta+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Atlanta (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "067",
+    "rank": 67,
+    "title": "Sex and the City",
+    "content": "Carrie Bradshaw and friends in Manhattan.",
+    "hook": "#67 · HBO, 1998 to 2004",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Sex+and+the+City+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Sex and the City",
+        "url": "https://en.wikipedia.org/wiki/Sex_and_the_City"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sex and the City complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sex+and+the+City+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Sex and the City",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "068",
+    "rank": 68,
+    "title": "Frozen Planet",
+    "content": "The polar regions filmed across a full year.",
+    "hook": "#68 · BBC, 2011",
+    "tags": [
+      "Documentary"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Frozen+Planet+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Frozen Planet",
+        "url": "https://en.wikipedia.org/wiki/Frozen_Planet"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Frozen Planet complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Frozen+Planet+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Frozen Planet",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "069",
+    "rank": 69,
+    "title": "Narcos",
+    "content": "The DEA's hunt for Pablo Escobar.",
+    "hook": "#69 · Netflix, 2015 to 2017",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Narcos+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Narcos",
+        "url": "https://en.wikipedia.org/wiki/Narcos"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Narcos complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Narcos+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Narcos",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "070",
+    "rank": 70,
+    "title": "Ozark",
+    "content": "A financial adviser launders cartel money in the Missouri Ozarks.",
+    "hook": "#70 · Netflix, 2017 to 2022",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Ozark+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Ozark (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Ozark_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Ozark complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Ozark+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Ozark (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "071",
+    "rank": 71,
+    "title": "Mindhunter",
+    "content": "FBI agents invent criminal profiling by interviewing serial killers.",
+    "hook": "#71 · Netflix, 2017 to 2019",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Mindhunter+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mindhunter (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Mindhunter_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mindhunter complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mindhunter+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Mindhunter (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "072",
+    "rank": 72,
+    "title": "Dark",
+    "content": "A German time-travel mystery across generations of four families.",
+    "hook": "#72 · Netflix, 2017 to 2020",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Dark+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dark (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Dark_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dark complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dark+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Dark (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "073",
+    "rank": 73,
+    "title": "Money Heist",
+    "content": "The Professor's gang raid the Royal Mint of Spain.",
+    "hook": "#73 · Netflix, 2017 to 2021",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Money+Heist+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Money Heist",
+        "url": "https://en.wikipedia.org/wiki/Money_Heist"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Money Heist complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Money+Heist+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Money Heist",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "074",
+    "rank": 74,
+    "title": "Squid Game",
+    "content": "Debtors play deadly children's games for a fortune. Netflix's biggest series.",
+    "hook": "#74 · Netflix, 2021 to 2025",
+    "tags": [
+      "Thriller"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Squid+Game+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Squid Game",
+        "url": "https://en.wikipedia.org/wiki/Squid_Game"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Squid Game complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Squid+Game+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Squid Game",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "075",
+    "rank": 75,
+    "title": "The Mandalorian",
+    "content": "A bounty hunter and Grogu. Star Wars at its best on television.",
+    "hook": "#75 · Disney+, 2019 to 2023",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Mandalorian+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Mandalorian",
+        "url": "https://en.wikipedia.org/wiki/The_Mandalorian"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Mandalorian complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Mandalorian+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Mandalorian",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "076",
+    "rank": 76,
+    "title": "Andor",
+    "content": "How a rebellion is born, told with grown-up seriousness.",
+    "hook": "#76 · Disney+, 2022 to 2025",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Andor+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Andor (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Andor_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Andor complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Andor+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Andor (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "077",
+    "rank": 77,
+    "title": "Shōgun",
+    "content": "Feudal Japan through politics and an English sailor's eyes. Record Emmy winner.",
+    "hook": "#77 · FX, 2024",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Sh%C5%8Dgun+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Shōgun (2024 TV series)",
+        "url": "https://en.wikipedia.org/wiki/Sh%C5%8Dgun_(2024_TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Shōgun complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sh%C5%8Dgun+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Shōgun (2024 TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "078",
+    "rank": 78,
+    "title": "The Expanse",
+    "content": "A solar system on the brink of war, with realistic physics.",
+    "hook": "#78 · Syfy and Prime Video, 2015 to 2022",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Expanse+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Expanse (TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Expanse_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Expanse complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Expanse+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Expanse (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "079",
+    "rank": 79,
+    "title": "Westworld",
+    "content": "Android hosts in a Western theme park begin to wake up.",
+    "hook": "#79 · HBO, 2016 to 2022",
+    "tags": [
+      "Sci-fi"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Westworld+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Westworld (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Westworld_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Westworld complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Westworld+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Westworld (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "080",
+    "rank": 80,
+    "title": "Boardwalk Empire",
+    "content": "Prohibition-era Atlantic City and Nucky Thompson.",
+    "hook": "#80 · HBO, 2010 to 2014",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Boardwalk+Empire+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Boardwalk Empire",
+        "url": "https://en.wikipedia.org/wiki/Boardwalk_Empire"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Boardwalk Empire complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Boardwalk+Empire+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Boardwalk Empire",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "081",
+    "rank": 81,
+    "title": "Homeland",
+    "content": "CIA officer Carrie Mathison suspects a returning marine.",
+    "hook": "#81 · Showtime, 2011 to 2020",
+    "tags": [
+      "Thriller"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Homeland+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Homeland (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Homeland_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Homeland complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Homeland+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Homeland (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "082",
+    "rank": 82,
+    "title": "24",
+    "content": "Jack Bauer's days told in real time, hour by hour.",
+    "hook": "#82 · Fox, 2001 to 2014",
+    "tags": [
+      "Thriller"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=24+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: 24 (TV series)",
+        "url": "https://en.wikipedia.org/wiki/24_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "24 complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=24+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "24 (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "083",
+    "rank": 83,
+    "title": "House",
+    "content": "Hugh Laurie's misanthropic diagnostic genius.",
+    "hook": "#83 · Fox, 2004 to 2012",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=House+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: House (TV series)",
+        "url": "https://en.wikipedia.org/wiki/House_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "House complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=House+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "House (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "084",
+    "rank": 84,
+    "title": "The Good Place",
+    "content": "Moral philosophy disguised as an afterlife sitcom.",
+    "hook": "#84 · NBC, 2016 to 2020",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Good+Place+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Good Place",
+        "url": "https://en.wikipedia.org/wiki/The_Good_Place"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Good Place complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Good+Place+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Good Place",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "085",
+    "rank": 85,
+    "title": "Brooklyn Nine-Nine",
+    "content": "A goofy but effective detective squad in Brooklyn.",
+    "hook": "#85 · Fox and NBC, 2013 to 2021",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Brooklyn+Nine-Nine+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Brooklyn Nine-Nine",
+        "url": "https://en.wikipedia.org/wiki/Brooklyn_Nine-Nine"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Brooklyn Nine-Nine complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Brooklyn+Nine-Nine+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Brooklyn Nine-Nine",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "086",
+    "rank": 86,
+    "title": "Ted Lasso",
+    "content": "An American football coach takes over AFC Richmond.",
+    "hook": "#86 · Apple TV+, 2020 to 2023",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Ted+Lasso+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Ted Lasso",
+        "url": "https://en.wikipedia.org/wiki/Ted_Lasso"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Ted Lasso complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Ted+Lasso+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Ted Lasso",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "087",
+    "rank": 87,
+    "title": "It's Always Sunny in Philadelphia",
+    "content": "The worst people in Philadelphia run a bar.",
+    "hook": "#87 · FX, 2005 to present",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=It%27s+Always+Sunny+in+Philadelphia+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: It's Always Sunny in Philadelphia",
+        "url": "https://en.wikipedia.org/wiki/It's_Always_Sunny_in_Philadelphia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "It's Always Sunny in Philadelphia complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=It%27s+Always+Sunny+in+Philadelphia+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "It's Always Sunny in Philadelphia",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "088",
+    "rank": 88,
+    "title": "Derry Girls",
+    "content": "Teenage girls in 1990s Northern Ireland.",
+    "hook": "#88 · Channel 4, 2018 to 2022",
+    "tags": [
+      "Comedy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Derry+Girls+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Derry Girls",
+        "url": "https://en.wikipedia.org/wiki/Derry_Girls"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Derry Girls complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Derry+Girls+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Derry Girls",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "089",
+    "rank": 89,
+    "title": "Inside No. 9",
+    "content": "Reece Shearsmith and Steve Pemberton's half-hour twist anthology.",
+    "hook": "#89 · BBC Two, 2014 to 2024",
+    "tags": [
+      "Anthology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Inside+No.+9+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Inside No. 9",
+        "url": "https://en.wikipedia.org/wiki/Inside_No._9"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Inside No. 9 complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Inside+No.+9+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Inside No. 9",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "090",
+    "rank": 90,
+    "title": "Normal People",
+    "content": "Sally Rooney's tender story of Connell and Marianne.",
+    "hook": "#90 · BBC Three and Hulu, 2020",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Normal+People+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Normal People (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Normal_People_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Normal People complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Normal+People+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Normal People (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "091",
+    "rank": 91,
+    "title": "I May Destroy You",
+    "content": "Michaela Coel's searing, funny look at consent and recovery.",
+    "hook": "#91 · BBC One and HBO, 2020",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=I+May+Destroy+You+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: I May Destroy You",
+        "url": "https://en.wikipedia.org/wiki/I_May_Destroy_You"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "I May Destroy You complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=I+May+Destroy+You+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "I May Destroy You",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "092",
+    "rank": 92,
+    "title": "Prime Suspect",
+    "content": "Helen Mirren as DCI Jane Tennison in a male-dominated force.",
+    "hook": "#92 · ITV, 1991 to 2006",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Prime+Suspect+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Prime Suspect",
+        "url": "https://en.wikipedia.org/wiki/Prime_Suspect"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Prime Suspect complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Prime+Suspect+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Prime Suspect",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "093",
+    "rank": 93,
+    "title": "Broadchurch",
+    "content": "A boy's death shatters a Dorset coastal town.",
+    "hook": "#93 · ITV, 2013 to 2017",
+    "tags": [
+      "Crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Broadchurch+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Broadchurch",
+        "url": "https://en.wikipedia.org/wiki/Broadchurch"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Broadchurch complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Broadchurch+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Broadchurch",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "094",
+    "rank": 94,
+    "title": "The Night Manager",
+    "content": "Le Carré's arms-dealer thriller with Hiddleston and Laurie.",
+    "hook": "#94 · BBC One, 2016",
+    "tags": [
+      "Thriller"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=The+Night+Manager+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Night Manager (TV series)",
+        "url": "https://en.wikipedia.org/wiki/The_Night_Manager_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Night Manager complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Night+Manager+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Night Manager (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "095",
+    "rank": 95,
+    "title": "Tinker Tailor Soldier Spy",
+    "content": "Alec Guinness as George Smiley hunting a mole in the Circus.",
+    "hook": "#95 · BBC Two, 1979",
+    "tags": [
+      "Thriller"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Tinker+Tailor+Soldier+Spy+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tinker Tailor Soldier Spy (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Tinker_Tailor_Soldier_Spy_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tinker Tailor Soldier Spy complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tinker+Tailor+Soldier+Spy+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Tinker Tailor Soldier Spy (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "096",
+    "rank": 96,
+    "title": "I, Claudius",
+    "content": "Derek Jacobi's Claudius survives the poisonous Roman court.",
+    "hook": "#96 · BBC Two, 1976",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=I%2C+Claudius+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: I, Claudius (TV series)",
+        "url": "https://en.wikipedia.org/wiki/I,_Claudius_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "I, Claudius complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=I%2C+Claudius+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "I, Claudius (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "097",
+    "rank": 97,
+    "title": "Pride and Prejudice",
+    "content": "Colin Firth's Darcy and that lake scene.",
+    "hook": "#97 · BBC One, 1995",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Pride+and+Prejudice+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Pride and Prejudice (1995 TV series)",
+        "url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice_(1995_TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Pride and Prejudice complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Pride+and+Prejudice+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Pride and Prejudice (1995 TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "098",
+    "rank": 98,
+    "title": "Slow Horses",
+    "content": "Gary Oldman's Jackson Lamb leads MI5's rejects.",
+    "hook": "#98 · Apple TV+, 2022 to present",
+    "tags": [
+      "Thriller"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Slow+Horses+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Slow Horses (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Slow_Horses_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Slow Horses complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Slow+Horses+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Slow Horses (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "099",
+    "rank": 99,
+    "title": "Baby Reindeer",
+    "content": "Richard Gadd's true-ish story of being stalked.",
+    "hook": "#99 · Netflix, 2024",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Baby+Reindeer+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Baby Reindeer",
+        "url": "https://en.wikipedia.org/wiki/Baby_Reindeer"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Baby Reindeer complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Baby+Reindeer+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Baby Reindeer",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "100",
+    "rank": 100,
+    "title": "Adolescence",
+    "content": "A 13-year-old is arrested for murder. Each episode one continuous shot.",
+    "hook": "#100 · Netflix, 2025",
+    "tags": [
+      "Drama"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the box set",
+      "url": "https://www.amazon.co.uk/s?k=Adolescence+complete+series+DVD&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Adolescence (TV series)",
+        "url": "https://en.wikipedia.org/wiki/Adolescence_(TV_series)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Adolescence complete series DVD",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Adolescence+complete+series+DVD&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Adolescence (TV series)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  }
+]

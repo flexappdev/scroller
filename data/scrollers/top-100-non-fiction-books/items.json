@@ -1,0 +1,3802 @@
+[
+  {
+    "id": "001",
+    "rank": 1,
+    "title": "Sapiens",
+    "content": "How one ape species came to rule the world, through fiction, money and empire.",
+    "hook": "#1 · Yuval Noah Harari, 2011",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Sapiens+Yuval+Noah+Harari+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Sapiens: A Brief History of Humankind",
+        "url": "https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sapiens Yuval Noah Harari book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sapiens+Yuval+Noah+Harari+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Sapiens: A Brief History of Humankind",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "002",
+    "rank": 2,
+    "title": "A Brief History of Time",
+    "content": "Black holes, the Big Bang and time, for the general reader. Over 25 million copies sold.",
+    "hook": "#2 · Stephen Hawking, 1988",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=A+Brief+History+of+Time+Stephen+Hawking+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: A Brief History of Time",
+        "url": "https://en.wikipedia.org/wiki/A_Brief_History_of_Time"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "A Brief History of Time Stephen Hawking book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=A+Brief+History+of+Time+Stephen+Hawking+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "A Brief History of Time",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "003",
+    "rank": 3,
+    "title": "The Diary of a Young Girl",
+    "content": "Two years in hiding in Amsterdam, written by a teenage girl.",
+    "hook": "#3 · Anne Frank, 1947",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Diary+of+a+Young+Girl+Anne+Frank+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Diary of a Young Girl",
+        "url": "https://en.wikipedia.org/wiki/The_Diary_of_a_Young_Girl"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Diary of a Young Girl Anne Frank book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Diary+of+a+Young+Girl+Anne+Frank+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Diary of a Young Girl",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "004",
+    "rank": 4,
+    "title": "Thinking, Fast and Slow",
+    "content": "System 1 and System 2, and the biases that shape our judgement.",
+    "hook": "#4 · Daniel Kahneman, 2011",
+    "tags": [
+      "Psychology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Thinking%2C+Fast+and+Slow+Daniel+Kahneman+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Thinking, Fast and Slow",
+        "url": "https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Thinking, Fast and Slow Daniel Kahneman book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Thinking%2C+Fast+and+Slow+Daniel+Kahneman+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Thinking, Fast and Slow",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "005",
+    "rank": 5,
+    "title": "Guns, Germs, and Steel",
+    "content": "Why some societies conquered others. Geography as destiny. Pulitzer Prize winner.",
+    "hook": "#5 · Jared Diamond, 1997",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Guns%2C+Germs%2C+and+Steel+Jared+Diamond+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Guns, Germs, and Steel",
+        "url": "https://en.wikipedia.org/wiki/Guns,_Germs,_and_Steel"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Guns, Germs, and Steel Jared Diamond book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Guns%2C+Germs%2C+and+Steel+Jared+Diamond+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Guns, Germs, and Steel",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "006",
+    "rank": 6,
+    "title": "The Selfish Gene",
+    "content": "Evolution from the gene's point of view. Also coined the word meme.",
+    "hook": "#6 · Richard Dawkins, 1976",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Selfish+Gene+Richard+Dawkins+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Selfish Gene",
+        "url": "https://en.wikipedia.org/wiki/The_Selfish_Gene"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Selfish Gene Richard Dawkins book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Selfish+Gene+Richard+Dawkins+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Selfish Gene",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "007",
+    "rank": 7,
+    "title": "On the Origin of Species",
+    "content": "Natural selection, the idea that changed biology forever.",
+    "hook": "#7 · Charles Darwin, 1859",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=On+the+Origin+of+Species+Charles+Darwin+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: On the Origin of Species",
+        "url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "On the Origin of Species Charles Darwin book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=On+the+Origin+of+Species+Charles+Darwin+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "On the Origin of Species",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "008",
+    "rank": 8,
+    "title": "Silent Spring",
+    "content": "Pesticides and the environment. Helped launch the modern green movement.",
+    "hook": "#8 · Rachel Carson, 1962",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Silent+Spring+Rachel+Carson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Silent Spring",
+        "url": "https://en.wikipedia.org/wiki/Silent_Spring"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Silent Spring Rachel Carson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Silent+Spring+Rachel+Carson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Silent Spring",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "009",
+    "rank": 9,
+    "title": "In Cold Blood",
+    "content": "The murder of a Kansas family, told as a non-fiction novel.",
+    "hook": "#9 · Truman Capote, 1966",
+    "tags": [
+      "True crime"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=In+Cold+Blood+Truman+Capote+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: In Cold Blood",
+        "url": "https://en.wikipedia.org/wiki/In_Cold_Blood"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "In Cold Blood Truman Capote book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=In+Cold+Blood+Truman+Capote+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "In Cold Blood",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "010",
+    "rank": 10,
+    "title": "The Immortal Life of Henrietta Lacks",
+    "content": "The woman whose cells, taken without consent, changed medicine.",
+    "hook": "#10 · Rebecca Skloot, 2010",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Immortal+Life+of+Henrietta+Lacks+Rebecca+Skloot+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Immortal Life of Henrietta Lacks",
+        "url": "https://en.wikipedia.org/wiki/The_Immortal_Life_of_Henrietta_Lacks"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Immortal Life of Henrietta Lacks Rebecca Skloot book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Immortal+Life+of+Henrietta+Lacks+Rebecca+Skloot+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Immortal Life of Henrietta Lacks",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "011",
+    "rank": 11,
+    "title": "Educated",
+    "content": "From a survivalist Idaho family with no schooling to a Cambridge PhD.",
+    "hook": "#11 · Tara Westover, 2018",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Educated+Tara+Westover+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Educated (memoir)",
+        "url": "https://en.wikipedia.org/wiki/Educated_(memoir)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Educated Tara Westover book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Educated+Tara+Westover+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Educated (memoir)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "012",
+    "rank": 12,
+    "title": "Becoming",
+    "content": "From Chicago's South Side to the White House. One of the best-selling memoirs ever.",
+    "hook": "#12 · Michelle Obama, 2018",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Becoming+Michelle+Obama+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Becoming (book)",
+        "url": "https://en.wikipedia.org/wiki/Becoming_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Becoming Michelle Obama book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Becoming+Michelle+Obama+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Becoming (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "013",
+    "rank": 13,
+    "title": "Man's Search for Meaning",
+    "content": "A psychiatrist's experience of Auschwitz and why meaning keeps us alive.",
+    "hook": "#13 · Viktor Frankl, 1946",
+    "tags": [
+      "Psychology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Man%27s+Search+for+Meaning+Viktor+Frankl+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Man's Search for Meaning",
+        "url": "https://en.wikipedia.org/wiki/Man's_Search_for_Meaning"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Man's Search for Meaning Viktor Frankl book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Man%27s+Search+for+Meaning+Viktor+Frankl+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Man's Search for Meaning",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "014",
+    "rank": 14,
+    "title": "The Art of War",
+    "content": "Ancient Chinese military strategy, now quoted in boardrooms.",
+    "hook": "#14 · Sun Tzu, 5th century BC",
+    "tags": [
+      "Philosophy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Art+of+War+Sun+Tzu+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Art of War",
+        "url": "https://en.wikipedia.org/wiki/The_Art_of_War"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Art of War Sun Tzu book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Art+of+War+Sun+Tzu+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Art of War",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "015",
+    "rank": 15,
+    "title": "Meditations",
+    "content": "A Roman emperor's private notes on stoic calm.",
+    "hook": "#15 · Marcus Aurelius, 2nd century",
+    "tags": [
+      "Philosophy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Meditations+Marcus+Aurelius+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Meditations",
+        "url": "https://en.wikipedia.org/wiki/Meditations"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Meditations Marcus Aurelius book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Meditations+Marcus+Aurelius+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Meditations",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "016",
+    "rank": 16,
+    "title": "The Prince",
+    "content": "Hard-headed advice on gaining and holding power.",
+    "hook": "#16 · Niccolò Machiavelli, 1532",
+    "tags": [
+      "Philosophy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Prince+Niccol%C3%B2+Machiavelli+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Prince",
+        "url": "https://en.wikipedia.org/wiki/The_Prince"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Prince Niccolò Machiavelli book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Prince+Niccol%C3%B2+Machiavelli+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Prince",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "017",
+    "rank": 17,
+    "title": "The Wealth of Nations",
+    "content": "The invisible hand and the founding text of economics.",
+    "hook": "#17 · Adam Smith, 1776",
+    "tags": [
+      "Economics"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Wealth+of+Nations+Adam+Smith+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Wealth of Nations",
+        "url": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Wealth of Nations Adam Smith book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Wealth+of+Nations+Adam+Smith+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Wealth of Nations",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "018",
+    "rank": 18,
+    "title": "Freakonomics",
+    "content": "The hidden side of everything, from sumo wrestlers to drug dealers.",
+    "hook": "#18 · Steven Levitt and Stephen Dubner, 2005",
+    "tags": [
+      "Economics"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Freakonomics+Steven+Levitt+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Freakonomics",
+        "url": "https://en.wikipedia.org/wiki/Freakonomics"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Freakonomics Steven Levitt book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Freakonomics+Steven+Levitt+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Freakonomics",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "019",
+    "rank": 19,
+    "title": "The Tipping Point",
+    "content": "How little things make a big difference and ideas spread like epidemics.",
+    "hook": "#19 · Malcolm Gladwell, 2000",
+    "tags": [
+      "Psychology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Tipping+Point+Malcolm+Gladwell+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Tipping Point",
+        "url": "https://en.wikipedia.org/wiki/The_Tipping_Point"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Tipping Point Malcolm Gladwell book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Tipping+Point+Malcolm+Gladwell+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Tipping Point",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "020",
+    "rank": 20,
+    "title": "Outliers",
+    "content": "The story of success, and the famous ten thousand hours.",
+    "hook": "#20 · Malcolm Gladwell, 2008",
+    "tags": [
+      "Psychology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Outliers+Malcolm+Gladwell+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Outliers (book)",
+        "url": "https://en.wikipedia.org/wiki/Outliers_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Outliers Malcolm Gladwell book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Outliers+Malcolm+Gladwell+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Outliers (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "021",
+    "rank": 21,
+    "title": "Atomic Habits",
+    "content": "Tiny changes, remarkable results. The habit book that sold over 15 million copies.",
+    "hook": "#21 · James Clear, 2018",
+    "tags": [
+      "Self-help"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Atomic+Habits+James+Clear+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Atomic Habits",
+        "url": "https://en.wikipedia.org/wiki/Atomic_Habits"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Atomic Habits James Clear book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Atomic+Habits+James+Clear+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Atomic Habits",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "022",
+    "rank": 22,
+    "title": "How to Win Friends and Influence People",
+    "content": "The original people-skills bestseller, still in print.",
+    "hook": "#22 · Dale Carnegie, 1936",
+    "tags": [
+      "Self-help"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=How+to+Win+Friends+and+Influence+People+Dale+Carnegie+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: How to Win Friends and Influence People",
+        "url": "https://en.wikipedia.org/wiki/How_to_Win_Friends_and_Influence_People"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "How to Win Friends and Influence People Dale Carnegie book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=How+to+Win+Friends+and+Influence+People+Dale+Carnegie+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "How to Win Friends and Influence People",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "023",
+    "rank": 23,
+    "title": "The 7 Habits of Highly Effective People",
+    "content": "Begin with the end in mind, and six more principles.",
+    "hook": "#23 · Stephen Covey, 1989",
+    "tags": [
+      "Self-help"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+7+Habits+of+Highly+Effective+People+Stephen+Covey+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The 7 Habits of Highly Effective People",
+        "url": "https://en.wikipedia.org/wiki/The_7_Habits_of_Highly_Effective_People"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The 7 Habits of Highly Effective People Stephen Covey book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+7+Habits+of+Highly+Effective+People+Stephen+Covey+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The 7 Habits of Highly Effective People",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "024",
+    "rank": 24,
+    "title": "Quiet",
+    "content": "The power of introverts in a world that won't stop talking.",
+    "hook": "#24 · Susan Cain, 2012",
+    "tags": [
+      "Psychology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Quiet+Susan+Cain+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Quiet: The Power of Introverts in a World That Can't Stop Talking",
+        "url": "https://en.wikipedia.org/wiki/Quiet:_The_Power_of_Introverts_in_a_World_That_Can't_Stop_Talking"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Quiet Susan Cain book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Quiet+Susan+Cain+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "025",
+    "rank": 25,
+    "title": "The Power of Habit",
+    "content": "Cue, routine, reward. Why we do what we do.",
+    "hook": "#25 · Charles Duhigg, 2012",
+    "tags": [
+      "Psychology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Power+of+Habit+Charles+Duhigg+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Power of Habit",
+        "url": "https://en.wikipedia.org/wiki/The_Power_of_Habit"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Power of Habit Charles Duhigg book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Power+of+Habit+Charles+Duhigg+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Power of Habit",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "026",
+    "rank": 26,
+    "title": "Homo Deus",
+    "content": "What happens when humans aim for immortality, happiness and divinity.",
+    "hook": "#26 · Yuval Noah Harari, 2015",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Homo+Deus+Yuval+Noah+Harari+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Homo Deus: A Brief History of Tomorrow",
+        "url": "https://en.wikipedia.org/wiki/Homo_Deus:_A_Brief_History_of_Tomorrow"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Homo Deus Yuval Noah Harari book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Homo+Deus+Yuval+Noah+Harari+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Homo Deus: A Brief History of Tomorrow",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "027",
+    "rank": 27,
+    "title": "The Body",
+    "content": "A tour of the human body in Bryson's warm and funny style.",
+    "hook": "#27 · Bill Bryson, 2019",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Body+Bill+Bryson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Body: A Guide for Occupants",
+        "url": "https://en.wikipedia.org/wiki/The_Body:_A_Guide_for_Occupants"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Body Bill Bryson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Body+Bill+Bryson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Body: A Guide for Occupants",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "028",
+    "rank": 28,
+    "title": "A Short History of Nearly Everything",
+    "content": "How we know what we know about the universe, explained with jokes.",
+    "hook": "#28 · Bill Bryson, 2003",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=A+Short+History+of+Nearly+Everything+Bill+Bryson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: A Short History of Nearly Everything",
+        "url": "https://en.wikipedia.org/wiki/A_Short_History_of_Nearly_Everything"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "A Short History of Nearly Everything Bill Bryson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=A+Short+History+of+Nearly+Everything+Bill+Bryson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "A Short History of Nearly Everything",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "029",
+    "rank": 29,
+    "title": "Notes from a Small Island",
+    "content": "An American's affectionate farewell tour of Britain.",
+    "hook": "#29 · Bill Bryson, 1995",
+    "tags": [
+      "Travel"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Notes+from+a+Small+Island+Bill+Bryson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Notes from a Small Island",
+        "url": "https://en.wikipedia.org/wiki/Notes_from_a_Small_Island"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Notes from a Small Island Bill Bryson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Notes+from+a+Small+Island+Bill+Bryson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Notes from a Small Island",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "030",
+    "rank": 30,
+    "title": "The Gene",
+    "content": "The history of genetics, woven with the author's family history.",
+    "hook": "#30 · Siddhartha Mukherjee, 2016",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Gene+Siddhartha+Mukherjee+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Gene: An Intimate History",
+        "url": "https://en.wikipedia.org/wiki/The_Gene:_An_Intimate_History"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Gene Siddhartha Mukherjee book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Gene+Siddhartha+Mukherjee+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Gene: An Intimate History",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "031",
+    "rank": 31,
+    "title": "The Emperor of All Maladies",
+    "content": "A biography of cancer. Pulitzer Prize winner.",
+    "hook": "#31 · Siddhartha Mukherjee, 2010",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Emperor+of+All+Maladies+Siddhartha+Mukherjee+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Emperor of All Maladies",
+        "url": "https://en.wikipedia.org/wiki/The_Emperor_of_All_Maladies"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Emperor of All Maladies Siddhartha Mukherjee book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Emperor+of+All+Maladies+Siddhartha+Mukherjee+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Emperor of All Maladies",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "032",
+    "rank": 32,
+    "title": "Cosmos",
+    "content": "The universe and our place in it, from the companion book to the TV series.",
+    "hook": "#32 · Carl Sagan, 1980",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Cosmos+Carl+Sagan+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cosmos (Sagan book)",
+        "url": "https://en.wikipedia.org/wiki/Cosmos_(Sagan_book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cosmos Carl Sagan book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cosmos+Carl+Sagan+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Cosmos (Sagan book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "033",
+    "rank": 33,
+    "title": "The Demon-Haunted World",
+    "content": "Science as a candle in the dark against pseudoscience.",
+    "hook": "#33 · Carl Sagan, 1995",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Demon-Haunted+World+Carl+Sagan+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Demon-Haunted World",
+        "url": "https://en.wikipedia.org/wiki/The_Demon-Haunted_World"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Demon-Haunted World Carl Sagan book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Demon-Haunted+World+Carl+Sagan+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Demon-Haunted World",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "034",
+    "rank": 34,
+    "title": "The Structure of Scientific Revolutions",
+    "content": "Introduced the idea of paradigm shifts.",
+    "hook": "#34 · Thomas Kuhn, 1962",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Structure+of+Scientific+Revolutions+Thomas+Kuhn+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Structure of Scientific Revolutions",
+        "url": "https://en.wikipedia.org/wiki/The_Structure_of_Scientific_Revolutions"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Structure of Scientific Revolutions Thomas Kuhn book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Structure+of+Scientific+Revolutions+Thomas+Kuhn+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Structure of Scientific Revolutions",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "035",
+    "rank": 35,
+    "title": "Gödel, Escher, Bach",
+    "content": "Self-reference, minds and music. Pulitzer Prize winner.",
+    "hook": "#35 · Douglas Hofstadter, 1979",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=G%C3%B6del%2C+Escher%2C+Bach+Douglas+Hofstadter+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Gödel, Escher, Bach",
+        "url": "https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Gödel, Escher, Bach Douglas Hofstadter book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=G%C3%B6del%2C+Escher%2C+Bach+Douglas+Hofstadter+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Gödel, Escher, Bach",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "036",
+    "rank": 36,
+    "title": "The Man Who Mistook His Wife for a Hat",
+    "content": "Neurological case studies told with deep humanity.",
+    "hook": "#36 · Oliver Sacks, 1985",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Man+Who+Mistook+His+Wife+for+a+Hat+Oliver+Sacks+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Man Who Mistook His Wife for a Hat",
+        "url": "https://en.wikipedia.org/wiki/The_Man_Who_Mistook_His_Wife_for_a_Hat"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Man Who Mistook His Wife for a Hat Oliver Sacks book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Man+Who+Mistook+His+Wife+for+a+Hat+Oliver+Sacks+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Man Who Mistook His Wife for a Hat",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "037",
+    "rank": 37,
+    "title": "The Right Stuff",
+    "content": "Test pilots and the Mercury Seven astronauts.",
+    "hook": "#37 · Tom Wolfe, 1979",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Right+Stuff+Tom+Wolfe+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Right Stuff (book)",
+        "url": "https://en.wikipedia.org/wiki/The_Right_Stuff_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Right Stuff Tom Wolfe book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Right+Stuff+Tom+Wolfe+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Right Stuff (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "038",
+    "rank": 38,
+    "title": "Into Thin Air",
+    "content": "The deadly 1996 Everest season, from a journalist who was there.",
+    "hook": "#38 · Jon Krakauer, 1997",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Into+Thin+Air+Jon+Krakauer+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Into Thin Air",
+        "url": "https://en.wikipedia.org/wiki/Into_Thin_Air"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Into Thin Air Jon Krakauer book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Into+Thin+Air+Jon+Krakauer+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Into Thin Air",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "039",
+    "rank": 39,
+    "title": "Into the Wild",
+    "content": "Chris McCandless walks into the Alaskan wilderness.",
+    "hook": "#39 · Jon Krakauer, 1996",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Into+the+Wild+Jon+Krakauer+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Into the Wild (book)",
+        "url": "https://en.wikipedia.org/wiki/Into_the_Wild_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Into the Wild Jon Krakauer book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Into+the+Wild+Jon+Krakauer+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Into the Wild (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "040",
+    "rank": 40,
+    "title": "The Perfect Storm",
+    "content": "The 1991 storm and the crew of the Andrea Gail.",
+    "hook": "#40 · Sebastian Junger, 1997",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Perfect+Storm+Sebastian+Junger+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Perfect Storm (book)",
+        "url": "https://en.wikipedia.org/wiki/The_Perfect_Storm_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Perfect Storm Sebastian Junger book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Perfect+Storm+Sebastian+Junger+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Perfect Storm (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "041",
+    "rank": 41,
+    "title": "Endurance",
+    "content": "Shackleton's crew survive after their ship is crushed by Antarctic ice.",
+    "hook": "#41 · Alfred Lansing, 1959",
+    "tags": [
+      "Adventure"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Endurance+Alfred+Lansing+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Endurance: Shackleton's Incredible Voyage",
+        "url": "https://en.wikipedia.org/wiki/Endurance:_Shackleton's_Incredible_Voyage"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Endurance Alfred Lansing book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Endurance+Alfred+Lansing+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Endurance: Shackleton's Incredible Voyage",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "042",
+    "rank": 42,
+    "title": "Seabiscuit",
+    "content": "An unlikely racehorse lifts Depression-era America.",
+    "hook": "#42 · Laura Hillenbrand, 2001",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Seabiscuit+Laura+Hillenbrand+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Seabiscuit: An American Legend",
+        "url": "https://en.wikipedia.org/wiki/Seabiscuit:_An_American_Legend"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Seabiscuit Laura Hillenbrand book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Seabiscuit+Laura+Hillenbrand+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Seabiscuit: An American Legend",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "043",
+    "rank": 43,
+    "title": "Unbroken",
+    "content": "Olympian Louis Zamperini survives the Pacific and Japanese prison camps.",
+    "hook": "#43 · Laura Hillenbrand, 2010",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Unbroken+Laura+Hillenbrand+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Unbroken (book)",
+        "url": "https://en.wikipedia.org/wiki/Unbroken_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Unbroken Laura Hillenbrand book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Unbroken+Laura+Hillenbrand+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Unbroken (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "044",
+    "rank": 44,
+    "title": "The Boys in the Boat",
+    "content": "The American rowing crew who won gold at the 1936 Berlin Olympics.",
+    "hook": "#44 · Daniel James Brown, 2013",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Boys+in+the+Boat+Daniel+James+Brown+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Boys in the Boat",
+        "url": "https://en.wikipedia.org/wiki/The_Boys_in_the_Boat"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Boys in the Boat Daniel James Brown book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Boys+in+the+Boat+Daniel+James+Brown+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Boys in the Boat",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "045",
+    "rank": 45,
+    "title": "Band of Brothers",
+    "content": "Easy Company from Normandy to the Eagle's Nest.",
+    "hook": "#45 · Stephen E. Ambrose, 1992",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Band+of+Brothers+Stephen+E.+Ambrose+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Band of Brothers (book)",
+        "url": "https://en.wikipedia.org/wiki/Band_of_Brothers_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Band of Brothers Stephen E. Ambrose book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Band+of+Brothers+Stephen+E.+Ambrose+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Band of Brothers (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "046",
+    "rank": 46,
+    "title": "The Guns of August",
+    "content": "The first month of the First World War. Pulitzer Prize winner.",
+    "hook": "#46 · Barbara Tuchman, 1962",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Guns+of+August+Barbara+Tuchman+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Guns of August",
+        "url": "https://en.wikipedia.org/wiki/The_Guns_of_August"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Guns of August Barbara Tuchman book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Guns+of+August+Barbara+Tuchman+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Guns of August",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "047",
+    "rank": 47,
+    "title": "The Rise and Fall of the Third Reich",
+    "content": "A journalist's history of Nazi Germany.",
+    "hook": "#47 · William L. Shirer, 1960",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Rise+and+Fall+of+the+Third+Reich+William+L.+Shirer+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Rise and Fall of the Third Reich",
+        "url": "https://en.wikipedia.org/wiki/The_Rise_and_Fall_of_the_Third_Reich"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Rise and Fall of the Third Reich William L. Shirer book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Rise+and+Fall+of+the+Third+Reich+William+L.+Shirer+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Rise and Fall of the Third Reich",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "048",
+    "rank": 48,
+    "title": "SPQR",
+    "content": "A thousand years of ancient Rome from Britain's best-known classicist.",
+    "hook": "#48 · Mary Beard, 2015",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=SPQR+Mary+Beard+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: SPQR: A History of Ancient Rome",
+        "url": "https://en.wikipedia.org/wiki/SPQR:_A_History_of_Ancient_Rome"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "SPQR Mary Beard book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=SPQR+Mary+Beard+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "SPQR: A History of Ancient Rome",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "049",
+    "rank": 49,
+    "title": "The Silk Roads",
+    "content": "World history retold from the East.",
+    "hook": "#49 · Peter Frankopan, 2015",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Silk+Roads+Peter+Frankopan+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Silk Roads: A New History of the World",
+        "url": "https://en.wikipedia.org/wiki/The_Silk_Roads:_A_New_History_of_the_World"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Silk Roads Peter Frankopan book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Silk+Roads+Peter+Frankopan+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Silk Roads: A New History of the World",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "050",
+    "rank": 50,
+    "title": "Stalingrad",
+    "content": "The battle that turned the Second World War.",
+    "hook": "#50 · Antony Beevor, 1998",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Stalingrad+Antony+Beevor+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Stalingrad (book)",
+        "url": "https://en.wikipedia.org/wiki/Stalingrad_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Stalingrad Antony Beevor book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Stalingrad+Antony+Beevor+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Stalingrad (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "051",
+    "rank": 51,
+    "title": "A People's History of the United States",
+    "content": "American history told from below.",
+    "hook": "#51 · Howard Zinn, 1980",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=A+People%27s+History+of+the+United+States+Howard+Zinn+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: A People's History of the United States",
+        "url": "https://en.wikipedia.org/wiki/A_People's_History_of_the_United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "A People's History of the United States Howard Zinn book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=A+People%27s+History+of+the+United+States+Howard+Zinn+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "A People's History of the United States",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "052",
+    "rank": 52,
+    "title": "The Histories",
+    "content": "The first great work of history, on the Greek and Persian wars.",
+    "hook": "#52 · Herodotus, 5th century BC",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Histories+Herodotus+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Histories (Herodotus)",
+        "url": "https://en.wikipedia.org/wiki/Histories_(Herodotus)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Histories Herodotus book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Histories+Herodotus+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Histories (Herodotus)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "053",
+    "rank": 53,
+    "title": "I Know Why the Caged Bird Sings",
+    "content": "Angelou's childhood in the segregated American South.",
+    "hook": "#53 · Maya Angelou, 1969",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=I+Know+Why+the+Caged+Bird+Sings+Maya+Angelou+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: I Know Why the Caged Bird Sings",
+        "url": "https://en.wikipedia.org/wiki/I_Know_Why_the_Caged_Bird_Sings"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "I Know Why the Caged Bird Sings Maya Angelou book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=I+Know+Why+the+Caged+Bird+Sings+Maya+Angelou+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "I Know Why the Caged Bird Sings",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "054",
+    "rank": 54,
+    "title": "Long Walk to Freedom",
+    "content": "Mandela's life from his village to the presidency.",
+    "hook": "#54 · Nelson Mandela, 1994",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Long+Walk+to+Freedom+Nelson+Mandela+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Long Walk to Freedom",
+        "url": "https://en.wikipedia.org/wiki/Long_Walk_to_Freedom"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Long Walk to Freedom Nelson Mandela book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Long+Walk+to+Freedom+Nelson+Mandela+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Long Walk to Freedom",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "055",
+    "rank": 55,
+    "title": "The Autobiography of Malcolm X",
+    "content": "A life of transformation, told to Alex Haley.",
+    "hook": "#55 · Malcolm X and Alex Haley, 1965",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Autobiography+of+Malcolm+X+Malcolm+X+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Autobiography of Malcolm X",
+        "url": "https://en.wikipedia.org/wiki/The_Autobiography_of_Malcolm_X"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Autobiography of Malcolm X Malcolm X book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Autobiography+of+Malcolm+X+Malcolm+X+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Autobiography of Malcolm X",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "056",
+    "rank": 56,
+    "title": "Night",
+    "content": "A teenager's account of Auschwitz and Buchenwald.",
+    "hook": "#56 · Elie Wiesel, 1956",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Night+Elie+Wiesel+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Night (memoir)",
+        "url": "https://en.wikipedia.org/wiki/Night_(memoir)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Night Elie Wiesel book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Night+Elie+Wiesel+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Night (memoir)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "057",
+    "rank": 57,
+    "title": "When Breath Becomes Air",
+    "content": "A young neurosurgeon faces terminal cancer.",
+    "hook": "#57 · Paul Kalanithi, 2016",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=When+Breath+Becomes+Air+Paul+Kalanithi+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: When Breath Becomes Air",
+        "url": "https://en.wikipedia.org/wiki/When_Breath_Becomes_Air"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "When Breath Becomes Air Paul Kalanithi book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=When+Breath+Becomes+Air+Paul+Kalanithi+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "When Breath Becomes Air",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "058",
+    "rank": 58,
+    "title": "Being Mortal",
+    "content": "Medicine, ageing and what matters at the end.",
+    "hook": "#58 · Atul Gawande, 2014",
+    "tags": [
+      "Medicine"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Being+Mortal+Atul+Gawande+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Being Mortal",
+        "url": "https://en.wikipedia.org/wiki/Being_Mortal"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Being Mortal Atul Gawande book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Being+Mortal+Atul+Gawande+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Being Mortal",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "059",
+    "rank": 59,
+    "title": "This Is Going to Hurt",
+    "content": "Secret diaries of a junior doctor in the NHS. Very funny and very sad.",
+    "hook": "#59 · Adam Kay, 2017",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=This+Is+Going+to+Hurt+Adam+Kay+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: This Is Going to Hurt",
+        "url": "https://en.wikipedia.org/wiki/This_Is_Going_to_Hurt"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "This Is Going to Hurt Adam Kay book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=This+Is+Going+to+Hurt+Adam+Kay+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "This Is Going to Hurt",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "060",
+    "rank": 60,
+    "title": "H Is for Hawk",
+    "content": "Grief and the training of a goshawk. Samuel Johnson Prize winner.",
+    "hook": "#60 · Helen Macdonald, 2014",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=H+Is+for+Hawk+Helen+Macdonald+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: H Is for Hawk",
+        "url": "https://en.wikipedia.org/wiki/H_Is_for_Hawk"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "H Is for Hawk Helen Macdonald book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=H+Is+for+Hawk+Helen+Macdonald+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "H Is for Hawk",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "061",
+    "rank": 61,
+    "title": "Just Kids",
+    "content": "Patti Smith and Robert Mapplethorpe in 1970s New York.",
+    "hook": "#61 · Patti Smith, 2010",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Just+Kids+Patti+Smith+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Just Kids (book)",
+        "url": "https://en.wikipedia.org/wiki/Just_Kids_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Just Kids Patti Smith book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Just+Kids+Patti+Smith+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Just Kids (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "062",
+    "rank": 62,
+    "title": "Kitchen Confidential",
+    "content": "The chaos behind restaurant kitchen doors.",
+    "hook": "#62 · Anthony Bourdain, 2000",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Kitchen+Confidential+Anthony+Bourdain+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Kitchen Confidential",
+        "url": "https://en.wikipedia.org/wiki/Kitchen_Confidential"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Kitchen Confidential Anthony Bourdain book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Kitchen+Confidential+Anthony+Bourdain+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Kitchen Confidential",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "063",
+    "rank": 63,
+    "title": "Steve Jobs",
+    "content": "The authorised biography of Apple's co-founder.",
+    "hook": "#63 · Walter Isaacson, 2011",
+    "tags": [
+      "Biography"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Steve+Jobs+Walter+Isaacson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Steve Jobs (book)",
+        "url": "https://en.wikipedia.org/wiki/Steve_Jobs_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Steve Jobs Walter Isaacson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Steve+Jobs+Walter+Isaacson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Steve Jobs (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "064",
+    "rank": 64,
+    "title": "The Wright Brothers",
+    "content": "Two bicycle makers from Ohio who learned to fly.",
+    "hook": "#64 · David McCullough, 2015",
+    "tags": [
+      "Biography"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Wright+Brothers+David+McCullough+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Wright Brothers (book)",
+        "url": "https://en.wikipedia.org/wiki/The_Wright_Brothers_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Wright Brothers David McCullough book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Wright+Brothers+David+McCullough+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Wright Brothers (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "065",
+    "rank": 65,
+    "title": "Alexander Hamilton",
+    "content": "The biography that inspired the musical Hamilton.",
+    "hook": "#65 · Ron Chernow, 2004",
+    "tags": [
+      "Biography"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Alexander+Hamilton+Ron+Chernow+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Alexander Hamilton (book)",
+        "url": "https://en.wikipedia.org/wiki/Alexander_Hamilton_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Alexander Hamilton Ron Chernow book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Alexander+Hamilton+Ron+Chernow+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Alexander Hamilton (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "066",
+    "rank": 66,
+    "title": "Shoe Dog",
+    "content": "Nike's founder on building the company from a car boot.",
+    "hook": "#66 · Phil Knight, 2016",
+    "tags": [
+      "Business"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Shoe+Dog+Phil+Knight+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Shoe Dog",
+        "url": "https://en.wikipedia.org/wiki/Shoe_Dog"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Shoe Dog Phil Knight book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Shoe+Dog+Phil+Knight+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Shoe Dog",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "067",
+    "rank": 67,
+    "title": "Good to Great",
+    "content": "Why some companies make the leap and others don't.",
+    "hook": "#67 · Jim Collins, 2001",
+    "tags": [
+      "Business"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Good+to+Great+Jim+Collins+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Good to Great",
+        "url": "https://en.wikipedia.org/wiki/Good_to_Great"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Good to Great Jim Collins book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Good+to+Great+Jim+Collins+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Good to Great",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "068",
+    "rank": 68,
+    "title": "The Lean Startup",
+    "content": "Build, measure, learn. The playbook for startups.",
+    "hook": "#68 · Eric Ries, 2011",
+    "tags": [
+      "Business"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Lean+Startup+Eric+Ries+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Lean Startup",
+        "url": "https://en.wikipedia.org/wiki/The_Lean_Startup"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Lean Startup Eric Ries book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Lean+Startup+Eric+Ries+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Lean Startup",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "069",
+    "rank": 69,
+    "title": "Zero to One",
+    "content": "Notes on startups and building the future.",
+    "hook": "#69 · Peter Thiel and Blake Masters, 2014",
+    "tags": [
+      "Business"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Zero+to+One+Peter+Thiel+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Zero to One",
+        "url": "https://en.wikipedia.org/wiki/Zero_to_One"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Zero to One Peter Thiel book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Zero+to+One+Peter+Thiel+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Zero to One",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "070",
+    "rank": 70,
+    "title": "The Intelligent Investor",
+    "content": "Value investing, recommended by Warren Buffett.",
+    "hook": "#70 · Benjamin Graham, 1949",
+    "tags": [
+      "Finance"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Intelligent+Investor+Benjamin+Graham+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Intelligent Investor",
+        "url": "https://en.wikipedia.org/wiki/The_Intelligent_Investor"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Intelligent Investor Benjamin Graham book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Intelligent+Investor+Benjamin+Graham+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Intelligent Investor",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "071",
+    "rank": 71,
+    "title": "Rich Dad Poor Dad",
+    "content": "Lessons about money from two father figures. A long-running bestseller.",
+    "hook": "#71 · Robert Kiyosaki, 1997",
+    "tags": [
+      "Finance"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Rich+Dad+Poor+Dad+Robert+Kiyosaki+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Rich Dad Poor Dad",
+        "url": "https://en.wikipedia.org/wiki/Rich_Dad_Poor_Dad"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Rich Dad Poor Dad Robert Kiyosaki book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Rich+Dad+Poor+Dad+Robert+Kiyosaki+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Rich Dad Poor Dad",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "072",
+    "rank": 72,
+    "title": "The Psychology of Money",
+    "content": "Timeless lessons on wealth, greed and happiness.",
+    "hook": "#72 · Morgan Housel, 2020",
+    "tags": [
+      "Finance"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Psychology+of+Money+Morgan+Housel+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Psychology of Money",
+        "url": "https://en.wikipedia.org/wiki/The_Psychology_of_Money"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Psychology of Money Morgan Housel book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Psychology+of+Money+Morgan+Housel+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Psychology of Money",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "073",
+    "rank": 73,
+    "title": "The Big Short",
+    "content": "The few who saw the 2008 crash coming.",
+    "hook": "#73 · Michael Lewis, 2010",
+    "tags": [
+      "Finance"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Big+Short+Michael+Lewis+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Big Short",
+        "url": "https://en.wikipedia.org/wiki/The_Big_Short"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Big Short Michael Lewis book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Big+Short+Michael+Lewis+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Big Short",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "074",
+    "rank": 74,
+    "title": "Moneyball",
+    "content": "The Oakland A's use data to win on a budget.",
+    "hook": "#74 · Michael Lewis, 2003",
+    "tags": [
+      "Sport"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Moneyball+Michael+Lewis+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Moneyball",
+        "url": "https://en.wikipedia.org/wiki/Moneyball"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Moneyball Michael Lewis book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Moneyball+Michael+Lewis+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Moneyball",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "075",
+    "rank": 75,
+    "title": "Bad Blood",
+    "content": "The rise and fall of Theranos.",
+    "hook": "#75 · John Carreyrou, 2018",
+    "tags": [
+      "Business"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Bad+Blood+John+Carreyrou+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+        "url": "https://en.wikipedia.org/wiki/Bad_Blood:_Secrets_and_Lies_in_a_Silicon_Valley_Startup"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Bad Blood John Carreyrou book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Bad+Blood+John+Carreyrou+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "076",
+    "rank": 76,
+    "title": "Fast Food Nation",
+    "content": "The dark side of the all-American meal.",
+    "hook": "#76 · Eric Schlosser, 2001",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Fast+Food+Nation+Eric+Schlosser+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Fast Food Nation",
+        "url": "https://en.wikipedia.org/wiki/Fast_Food_Nation"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Fast Food Nation Eric Schlosser book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Fast+Food+Nation+Eric+Schlosser+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Fast Food Nation",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "077",
+    "rank": 77,
+    "title": "Nickel and Dimed",
+    "content": "Trying to live on low-wage jobs in America.",
+    "hook": "#77 · Barbara Ehrenreich, 2001",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Nickel+and+Dimed+Barbara+Ehrenreich+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Nickel and Dimed",
+        "url": "https://en.wikipedia.org/wiki/Nickel_and_Dimed"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Nickel and Dimed Barbara Ehrenreich book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Nickel+and+Dimed+Barbara+Ehrenreich+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Nickel and Dimed",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "078",
+    "rank": 78,
+    "title": "The Feminine Mystique",
+    "content": "The book that sparked second-wave feminism.",
+    "hook": "#78 · Betty Friedan, 1963",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Feminine+Mystique+Betty+Friedan+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Feminine Mystique",
+        "url": "https://en.wikipedia.org/wiki/The_Feminine_Mystique"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Feminine Mystique Betty Friedan book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Feminine+Mystique+Betty+Friedan+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Feminine Mystique",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "079",
+    "rank": 79,
+    "title": "A Room of One's Own",
+    "content": "A woman must have money and a room of her own to write fiction.",
+    "hook": "#79 · Virginia Woolf, 1929",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=A+Room+of+One%27s+Own+Virginia+Woolf+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: A Room of One's Own",
+        "url": "https://en.wikipedia.org/wiki/A_Room_of_One's_Own"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "A Room of One's Own Virginia Woolf book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=A+Room+of+One%27s+Own+Virginia+Woolf+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "A Room of One's Own",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "080",
+    "rank": 80,
+    "title": "The Second Sex",
+    "content": "One is not born, but rather becomes, a woman.",
+    "hook": "#80 · Simone de Beauvoir, 1949",
+    "tags": [
+      "Philosophy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Second+Sex+Simone+de+Beauvoir+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Second Sex",
+        "url": "https://en.wikipedia.org/wiki/The_Second_Sex"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Second Sex Simone de Beauvoir book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Second+Sex+Simone+de+Beauvoir+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Second Sex",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "081",
+    "rank": 81,
+    "title": "Invisible Women",
+    "content": "The data gap that designs the world around men.",
+    "hook": "#81 · Caroline Criado Perez, 2019",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Invisible+Women+Caroline+Criado+Perez+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Invisible Women: Exposing Data Bias in a World Designed for Men",
+        "url": "https://en.wikipedia.org/wiki/Invisible_Women:_Exposing_Data_Bias_in_a_World_Designed_for_Men"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Invisible Women Caroline Criado Perez book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Invisible+Women+Caroline+Criado+Perez+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Invisible Women: Exposing Data Bias in a World Designed for Men",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "082",
+    "rank": 82,
+    "title": "Factfulness",
+    "content": "Ten reasons we are wrong about the world, and why things are better than we think.",
+    "hook": "#82 · Hans Rosling, 2018",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Factfulness+Hans+Rosling+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Factfulness",
+        "url": "https://en.wikipedia.org/wiki/Factfulness"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Factfulness Hans Rosling book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Factfulness+Hans+Rosling+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Factfulness",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "083",
+    "rank": 83,
+    "title": "Humankind",
+    "content": "The case that most people are decent.",
+    "hook": "#83 · Rutger Bregman, 2019",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Humankind+Rutger+Bregman+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Humankind: A Hopeful History",
+        "url": "https://en.wikipedia.org/wiki/Humankind:_A_Hopeful_History"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Humankind Rutger Bregman book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Humankind+Rutger+Bregman+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Humankind: A Hopeful History",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "084",
+    "rank": 84,
+    "title": "The Sixth Extinction",
+    "content": "How humans are causing a mass extinction. Pulitzer Prize winner.",
+    "hook": "#84 · Elizabeth Kolbert, 2014",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Sixth+Extinction+Elizabeth+Kolbert+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Sixth Extinction: An Unnatural History",
+        "url": "https://en.wikipedia.org/wiki/The_Sixth_Extinction:_An_Unnatural_History"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Sixth Extinction Elizabeth Kolbert book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Sixth+Extinction+Elizabeth+Kolbert+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Sixth Extinction: An Unnatural History",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "085",
+    "rank": 85,
+    "title": "Why We Sleep",
+    "content": "The science of sleep and dreams.",
+    "hook": "#85 · Matthew Walker, 2017",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Why+We+Sleep+Matthew+Walker+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Why We Sleep",
+        "url": "https://en.wikipedia.org/wiki/Why_We_Sleep"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Why We Sleep Matthew Walker book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Why+We+Sleep+Matthew+Walker+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Why We Sleep",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "086",
+    "rank": 86,
+    "title": "The Hidden Life of Trees",
+    "content": "How trees feel and communicate, by a German forester.",
+    "hook": "#86 · Peter Wohlleben, 2015",
+    "tags": [
+      "Nature"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Hidden+Life+of+Trees+Peter+Wohlleben+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Hidden Life of Trees",
+        "url": "https://en.wikipedia.org/wiki/The_Hidden_Life_of_Trees"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Hidden Life of Trees Peter Wohlleben book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Hidden+Life+of+Trees+Peter+Wohlleben+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Hidden Life of Trees",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "087",
+    "rank": 87,
+    "title": "Entangled Life",
+    "content": "How fungi make our worlds, change our minds and shape our futures.",
+    "hook": "#87 · Merlin Sheldrake, 2020",
+    "tags": [
+      "Nature"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Entangled+Life+Merlin+Sheldrake+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Entangled Life",
+        "url": "https://en.wikipedia.org/wiki/Entangled_Life"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Entangled Life Merlin Sheldrake book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Entangled+Life+Merlin+Sheldrake+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Entangled Life",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "088",
+    "rank": 88,
+    "title": "The Code Breaker",
+    "content": "Jennifer Doudna and the gene-editing revolution.",
+    "hook": "#88 · Walter Isaacson, 2021",
+    "tags": [
+      "Science"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Code+Breaker+Walter+Isaacson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Code Breaker",
+        "url": "https://en.wikipedia.org/wiki/The_Code_Breaker"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Code Breaker Walter Isaacson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Code+Breaker+Walter+Isaacson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Code Breaker",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "089",
+    "rank": 89,
+    "title": "Superintelligence",
+    "content": "What happens when machines outsmart us.",
+    "hook": "#89 · Nick Bostrom, 2014",
+    "tags": [
+      "Technology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Superintelligence+Nick+Bostrom+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Superintelligence: Paths, Dangers, Strategies",
+        "url": "https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Superintelligence Nick Bostrom book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Superintelligence+Nick+Bostrom+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Superintelligence: Paths, Dangers, Strategies",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "090",
+    "rank": 90,
+    "title": "Life 3.0",
+    "content": "Being human in the age of artificial intelligence.",
+    "hook": "#90 · Max Tegmark, 2017",
+    "tags": [
+      "Technology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Life+3.0+Max+Tegmark+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Life 3.0",
+        "url": "https://en.wikipedia.org/wiki/Life_3.0"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Life 3.0 Max Tegmark book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Life+3.0+Max+Tegmark+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Life 3.0",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "091",
+    "rank": 91,
+    "title": "The Innovators",
+    "content": "The hackers, geniuses and geeks who created the digital revolution.",
+    "hook": "#91 · Walter Isaacson, 2014",
+    "tags": [
+      "Technology"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Innovators+Walter+Isaacson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Innovators (book)",
+        "url": "https://en.wikipedia.org/wiki/The_Innovators_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Innovators Walter Isaacson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Innovators+Walter+Isaacson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Innovators (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "092",
+    "rank": 92,
+    "title": "The Ascent of Money",
+    "content": "A financial history of the world.",
+    "hook": "#92 · Niall Ferguson, 2008",
+    "tags": [
+      "Finance"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Ascent+of+Money+Niall+Ferguson+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Ascent of Money",
+        "url": "https://en.wikipedia.org/wiki/The_Ascent_of_Money"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Ascent of Money Niall Ferguson book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Ascent+of+Money+Niall+Ferguson+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Ascent of Money",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "093",
+    "rank": 93,
+    "title": "Walden",
+    "content": "Two years in a cabin by a pond, living simply.",
+    "hook": "#93 · Henry David Thoreau, 1854",
+    "tags": [
+      "Philosophy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Walden+Henry+David+Thoreau+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Walden",
+        "url": "https://en.wikipedia.org/wiki/Walden"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Walden Henry David Thoreau book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Walden+Henry+David+Thoreau+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Walden",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "094",
+    "rank": 94,
+    "title": "The Republic",
+    "content": "Justice, the ideal state and the allegory of the cave.",
+    "hook": "#94 · Plato, c. 375 BC",
+    "tags": [
+      "Philosophy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Republic+Plato+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Republic (Plato)",
+        "url": "https://en.wikipedia.org/wiki/Republic_(Plato)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Republic Plato book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Republic+Plato+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Republic (Plato)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "095",
+    "rank": 95,
+    "title": "Leviathan",
+    "content": "The life of man, solitary, poor, nasty, brutish and short.",
+    "hook": "#95 · Thomas Hobbes, 1651",
+    "tags": [
+      "Philosophy"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Leviathan+Thomas+Hobbes+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Leviathan (Hobbes book)",
+        "url": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Leviathan Thomas Hobbes book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Leviathan+Thomas+Hobbes+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Leviathan (Hobbes book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "096",
+    "rank": 96,
+    "title": "Orientalism",
+    "content": "How the West imagined the East.",
+    "hook": "#96 · Edward Said, 1978",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Orientalism+Edward+Said+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Orientalism (book)",
+        "url": "https://en.wikipedia.org/wiki/Orientalism_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Orientalism Edward Said book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Orientalism+Edward+Said+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Orientalism (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "097",
+    "rank": 97,
+    "title": "The Road to Wigan Pier",
+    "content": "Working-class life in the industrial north of England.",
+    "hook": "#97 · George Orwell, 1937",
+    "tags": [
+      "Society"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Road+to+Wigan+Pier+George+Orwell+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Road to Wigan Pier",
+        "url": "https://en.wikipedia.org/wiki/The_Road_to_Wigan_Pier"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Road to Wigan Pier George Orwell book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Road+to+Wigan+Pier+George+Orwell+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Road to Wigan Pier",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "098",
+    "rank": 98,
+    "title": "Down and Out in Paris and London",
+    "content": "Orwell's years of poverty in two great cities.",
+    "hook": "#98 · George Orwell, 1933",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Down+and+Out+in+Paris+and+London+George+Orwell+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Down and Out in Paris and London",
+        "url": "https://en.wikipedia.org/wiki/Down_and_Out_in_Paris_and_London"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Down and Out in Paris and London George Orwell book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Down+and+Out+in+Paris+and+London+George+Orwell+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Down and Out in Paris and London",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "099",
+    "rank": 99,
+    "title": "The Year of Magical Thinking",
+    "content": "A year of grief after her husband's sudden death.",
+    "hook": "#99 · Joan Didion, 2005",
+    "tags": [
+      "Memoir"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=The+Year+of+Magical+Thinking+Joan+Didion+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: The Year of Magical Thinking",
+        "url": "https://en.wikipedia.org/wiki/The_Year_of_Magical_Thinking"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "The Year of Magical Thinking Joan Didion book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=The+Year+of+Magical+Thinking+Joan+Didion+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "The Year of Magical Thinking",
+      "wiki_alt": null,
+      "domain": null
+    }
+  },
+  {
+    "id": "100",
+    "rank": 100,
+    "title": "Hiroshima",
+    "content": "Six survivors of the atomic bomb, first published as a whole issue of The New Yorker.",
+    "hook": "#100 · John Hersey, 1946",
+    "tags": [
+      "History"
+    ],
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the book",
+      "url": "https://www.amazon.co.uk/s?k=Hiroshima+John+Hersey+book&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hiroshima (book)",
+        "url": "https://en.wikipedia.org/wiki/Hiroshima_(book)"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hiroshima John Hersey book",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hiroshima+John+Hersey+book&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "product",
+      "wiki": "Hiroshima (book)",
+      "wiki_alt": null,
+      "domain": null
+    }
+  }
+]
