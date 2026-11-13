@@ -1,0 +1,28 @@
+{
+  "slug": "kbit-2026-11-08-claude-code-ai-employee",
+  "name": "Claude Code as an AI Employee",
+  "tagline": "Give Claude Code what you would give a new hire: eight things that turn a chat box into a colleague.",
+  "description": "A Scroller KBIT derived from The Startup Ideas Podcast episode \"How to use Claude Code better than 99% of People\" (17 Aug 2026). Built from the episode description and chapter notes; it does not reproduce the episode's prompts or narration.",
+  "theme": "dark",
+  "accent": "#006699",
+  "updatedAt": "2026-11-08",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "pending",
+    "audio": "pending",
+    "video": "pending"
+  },
+  "media": {
+    "imageProvider": "MediaAI",
+    "audioProvider": "MediaAI/TTS",
+    "videoPreferred": "provider-neutral",
+    "videoFallback": "Runware"
+  },
+  "navigation": ["home", "explore", "create", "saved", "me"]
+}
