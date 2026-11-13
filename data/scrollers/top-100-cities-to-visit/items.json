@@ -1,0 +1,4302 @@
+[
+  {
+    "id": "001",
+    "rank": 1,
+    "title": "Paris",
+    "content": "Home to the Louvre, Notre-Dame and the Eiffel Tower, with café-lined boulevards and riverbanks made for walking.",
+    "hook": "#1 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/960px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Paris+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Paris",
+        "url": "https://en.wikipedia.org/wiki/Paris"
+      },
+      {
+        "title": "Wikipedia: France",
+        "url": "https://en.wikipedia.org/wiki/France"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Paris travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Paris+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Paris",
+      "wiki_alt": "France",
+      "domain": null
+    }
+  },
+  {
+    "id": "002",
+    "rank": 2,
+    "title": "Rome",
+    "content": "Two and a half thousand years of layered history, from the Colosseum and Forum to the Vatican and Trevi Fountain.",
+    "hook": "#2 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg/960px-Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Rome+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Rome",
+        "url": "https://en.wikipedia.org/wiki/Rome"
+      },
+      {
+        "title": "Wikipedia: Italy",
+        "url": "https://en.wikipedia.org/wiki/Italy"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Rome travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Rome+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Rome",
+      "wiki_alt": "Italy",
+      "domain": null
+    }
+  },
+  {
+    "id": "003",
+    "rank": 3,
+    "title": "Tokyo",
+    "content": "A vast, orderly metropolis pairing neon districts and shrines with some of the best food anywhere on earth.",
+    "hook": "#3 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Skyscrapers_of_Shinjuku_2009_January.jpg/960px-Skyscrapers_of_Shinjuku_2009_January.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Tokyo+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tokyo",
+        "url": "https://en.wikipedia.org/wiki/Tokyo"
+      },
+      {
+        "title": "Wikipedia: Japan",
+        "url": "https://en.wikipedia.org/wiki/Japan"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tokyo travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tokyo+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Tokyo",
+      "wiki_alt": "Japan",
+      "domain": null
+    }
+  },
+  {
+    "id": "004",
+    "rank": 4,
+    "title": "London",
+    "content": "Royal palaces, world-class free museums, theatres and markets in a city shaped by two thousand years of history.",
+    "hook": "#4 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/960px-London_Skyline_%28125508655%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=London+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: London",
+        "url": "https://en.wikipedia.org/wiki/London"
+      },
+      {
+        "title": "Wikipedia: England",
+        "url": "https://en.wikipedia.org/wiki/England"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "London travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=London+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "London",
+      "wiki_alt": "England",
+      "domain": null
+    }
+  },
+  {
+    "id": "005",
+    "rank": 5,
+    "title": "New York City",
+    "content": "Skyscrapers, Central Park, Broadway and museums packed into five boroughs that reward days of exploring.",
+    "hook": "#5 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/960px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=New+York+City+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: New York City",
+        "url": "https://en.wikipedia.org/wiki/New_York_City"
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "New York City travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=New+York+City+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "New York City",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "006",
+    "rank": 6,
+    "title": "Barcelona",
+    "content": "Gaudí's Sagrada Família and Park Güell, a Gothic Quarter, city beaches and a lively tapas and market scene.",
+    "hook": "#6 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Evening_light_over_Barcelona.jpg/960px-Evening_light_over_Barcelona.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Barcelona+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Barcelona",
+        "url": "https://en.wikipedia.org/wiki/Barcelona"
+      },
+      {
+        "title": "Wikipedia: Spain",
+        "url": "https://en.wikipedia.org/wiki/Spain"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Barcelona travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Barcelona+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Barcelona",
+      "wiki_alt": "Spain",
+      "domain": null
+    }
+  },
+  {
+    "id": "007",
+    "rank": 7,
+    "title": "Istanbul",
+    "content": "A city on two continents, with Hagia Sophia, the Blue Mosque, the Grand Bazaar and ferries across the Bosphorus.",
+    "hook": "#7 of 100",
+    "tags": [
+      "Europe & Middle East"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg/960px-Historical_peninsula_and_modern_skyline_of_Istanbul.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Istanbul+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Istanbul",
+        "url": "https://en.wikipedia.org/wiki/Istanbul"
+      },
+      {
+        "title": "Wikipedia: Turkey",
+        "url": "https://en.wikipedia.org/wiki/Turkey"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Istanbul travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Istanbul+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Istanbul",
+      "wiki_alt": "Turkey",
+      "domain": null
+    }
+  },
+  {
+    "id": "008",
+    "rank": 8,
+    "title": "Kyoto",
+    "content": "Japan's former capital holds around 1,600 temples, geisha districts, bamboo groves and traditional tea houses.",
+    "hook": "#8 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Kyoto%2C_Japan_%2849667780482%29.jpg/960px-Kyoto%2C_Japan_%2849667780482%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Kyoto+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Kyoto",
+        "url": "https://en.wikipedia.org/wiki/Kyoto"
+      },
+      {
+        "title": "Wikipedia: Japan",
+        "url": "https://en.wikipedia.org/wiki/Japan"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Kyoto travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Kyoto+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Kyoto",
+      "wiki_alt": "Japan",
+      "domain": null
+    }
+  },
+  {
+    "id": "009",
+    "rank": 9,
+    "title": "Prague",
+    "content": "A remarkably intact medieval centre of spires, Charles Bridge and a hilltop castle above the Vltava river.",
+    "hook": "#9 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Prague_%286365119737%29.jpg/960px-Prague_%286365119737%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Prague+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Prague",
+        "url": "https://en.wikipedia.org/wiki/Prague"
+      },
+      {
+        "title": "Wikipedia: Czech Republic",
+        "url": "https://en.wikipedia.org/wiki/Czech_Republic"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Prague travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Prague+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Prague",
+      "wiki_alt": "Czech Republic",
+      "domain": null
+    }
+  },
+  {
+    "id": "010",
+    "rank": 10,
+    "title": "Amsterdam",
+    "content": "Canal rings, the Rijksmuseum, Van Gogh Museum and Anne Frank House make a compact, bike-friendly city break.",
+    "hook": "#10 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png/960px-Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Amsterdam+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Amsterdam",
+        "url": "https://en.wikipedia.org/wiki/Amsterdam"
+      },
+      {
+        "title": "Wikipedia: Netherlands",
+        "url": "https://en.wikipedia.org/wiki/Netherlands"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Amsterdam travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Amsterdam+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Amsterdam",
+      "wiki_alt": "Netherlands",
+      "domain": null
+    }
+  },
+  {
+    "id": "011",
+    "rank": 11,
+    "title": "Vienna",
+    "content": "Imperial palaces, grand coffee houses and a world-leading classical music tradition on the Danube.",
+    "hook": "#11 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/960px-Schoenbrunn_philharmoniker_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Vienna+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Vienna",
+        "url": "https://en.wikipedia.org/wiki/Vienna"
+      },
+      {
+        "title": "Wikipedia: Austria",
+        "url": "https://en.wikipedia.org/wiki/Austria"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Vienna travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Vienna+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Vienna",
+      "wiki_alt": "Austria",
+      "domain": null
+    }
+  },
+  {
+    "id": "012",
+    "rank": 12,
+    "title": "Lisbon",
+    "content": "Hilly, tiled and sunlit, with Alfama's alleys, yellow trams, custard tarts and views over the Tagus estuary.",
+    "hook": "#12 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Lisboa_-_Portugal_%2852597836992%29.jpg/960px-Lisboa_-_Portugal_%2852597836992%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Lisbon+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Lisbon",
+        "url": "https://en.wikipedia.org/wiki/Lisbon"
+      },
+      {
+        "title": "Wikipedia: Portugal",
+        "url": "https://en.wikipedia.org/wiki/Portugal"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Lisbon travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Lisbon+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Lisbon",
+      "wiki_alt": "Portugal",
+      "domain": null
+    }
+  },
+  {
+    "id": "013",
+    "rank": 13,
+    "title": "Florence",
+    "content": "The cradle of the Renaissance, home to the Uffizi, Michelangelo's David and Brunelleschi's great dome.",
+    "hook": "#13 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Firenze_-_Piazzale_Michelangelo%2C_Firenze%2C_Italy_-_April_6%2C_2015_02.jpg/960px-Firenze_-_Piazzale_Michelangelo%2C_Firenze%2C_Italy_-_April_6%2C_2015_02.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Florence+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Florence",
+        "url": "https://en.wikipedia.org/wiki/Florence"
+      },
+      {
+        "title": "Wikipedia: Italy",
+        "url": "https://en.wikipedia.org/wiki/Italy"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Florence travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Florence+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Florence",
+      "wiki_alt": "Italy",
+      "domain": null
+    }
+  },
+  {
+    "id": "014",
+    "rank": 14,
+    "title": "Venice",
+    "content": "A car-free city built on a lagoon, with the Grand Canal, St Mark's Basilica and the Doge's Palace.",
+    "hook": "#14 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/960px-Venezia_aerial_view.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Venice+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Venice",
+        "url": "https://en.wikipedia.org/wiki/Venice"
+      },
+      {
+        "title": "Wikipedia: Italy",
+        "url": "https://en.wikipedia.org/wiki/Italy"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Venice travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Venice+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Venice",
+      "wiki_alt": "Italy",
+      "domain": null
+    }
+  },
+  {
+    "id": "015",
+    "rank": 15,
+    "title": "Singapore",
+    "content": "A clean, green island city-state known for Gardens by the Bay, hawker centres and a mix of Chinese, Malay and Indian cultures.",
+    "hook": "#15 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/960px-Flag_of_Singapore.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Singapore+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Singapore",
+        "url": "https://en.wikipedia.org/wiki/Singapore"
+      },
+      {
+        "title": "Wikipedia: Singapore",
+        "url": "https://en.wikipedia.org/wiki/Singapore"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Singapore travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Singapore+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Singapore",
+      "wiki_alt": "Singapore",
+      "domain": null
+    }
+  },
+  {
+    "id": "016",
+    "rank": 16,
+    "title": "Hong Kong",
+    "content": "Dense skyscrapers set against green hills and harbour, with dim sum, night markets and the Peak tram.",
+    "hook": "#16 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Hong+Kong+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hong Kong",
+        "url": "https://en.wikipedia.org/wiki/Hong_Kong"
+      },
+      {
+        "title": "Wikipedia: China",
+        "url": "https://en.wikipedia.org/wiki/China"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hong Kong travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hong+Kong+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Hong Kong",
+      "wiki_alt": "China",
+      "domain": null
+    }
+  },
+  {
+    "id": "017",
+    "rank": 17,
+    "title": "Sydney",
+    "content": "A harbour city with the Opera House, Harbour Bridge and Bondi Beach within easy reach of each other.",
+    "hook": "#17 of 100",
+    "tags": [
+      "Oceania"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/960px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Sydney+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Sydney",
+        "url": "https://en.wikipedia.org/wiki/Sydney"
+      },
+      {
+        "title": "Wikipedia: Australia",
+        "url": "https://en.wikipedia.org/wiki/Australia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Sydney travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Sydney+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Sydney",
+      "wiki_alt": "Australia",
+      "domain": null
+    }
+  },
+  {
+    "id": "018",
+    "rank": 18,
+    "title": "Cape Town",
+    "content": "Table Mountain rises over beaches, vineyards and the Cape Peninsula, with Robben Island nearby.",
+    "hook": "#18 of 100",
+    "tags": [
+      "Africa"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Camps_bay_%2853460319478%29_%28cropped%29.jpg/960px-Camps_bay_%2853460319478%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Cape+Town+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cape Town",
+        "url": "https://en.wikipedia.org/wiki/Cape_Town"
+      },
+      {
+        "title": "Wikipedia: South Africa",
+        "url": "https://en.wikipedia.org/wiki/South_Africa"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cape Town travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cape+Town+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Cape Town",
+      "wiki_alt": "South Africa",
+      "domain": null
+    }
+  },
+  {
+    "id": "019",
+    "rank": 19,
+    "title": "Buenos Aires",
+    "content": "Tango halls, grand European-style avenues, steakhouses and the colourful streets of La Boca and Recoleta.",
+    "hook": "#19 of 100",
+    "tags": [
+      "South America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Puerto_Madero%2C_Buenos_Aires_%2840689219792%29_%28cropped%29.jpg/960px-Puerto_Madero%2C_Buenos_Aires_%2840689219792%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Buenos+Aires+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Buenos Aires",
+        "url": "https://en.wikipedia.org/wiki/Buenos_Aires"
+      },
+      {
+        "title": "Wikipedia: Argentina",
+        "url": "https://en.wikipedia.org/wiki/Argentina"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Buenos Aires travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Buenos+Aires+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Buenos Aires",
+      "wiki_alt": "Argentina",
+      "domain": null
+    }
+  },
+  {
+    "id": "020",
+    "rank": 20,
+    "title": "Rio de Janeiro",
+    "content": "Copacabana and Ipanema beaches sit beneath Sugarloaf Mountain and the Christ the Redeemer statue.",
+    "hook": "#20 of 100",
+    "tags": [
+      "South America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Cidade_Maravilhosa.jpg/960px-Cidade_Maravilhosa.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Rio+de+Janeiro+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Rio de Janeiro",
+        "url": "https://en.wikipedia.org/wiki/Rio_de_Janeiro"
+      },
+      {
+        "title": "Wikipedia: Brazil",
+        "url": "https://en.wikipedia.org/wiki/Brazil"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Rio de Janeiro travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Rio+de+Janeiro+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Rio de Janeiro",
+      "wiki_alt": "Brazil",
+      "domain": null
+    }
+  },
+  {
+    "id": "021",
+    "rank": 21,
+    "title": "Marrakesh",
+    "content": "The red city of souks, riads and the Jemaa el-Fnaa square, with the Atlas Mountains on the horizon.",
+    "hook": "#21 of 100",
+    "tags": [
+      "Africa"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Pavillon_Menarag%C3%A4rten.jpg/960px-Pavillon_Menarag%C3%A4rten.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Marrakesh+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Marrakesh",
+        "url": "https://en.wikipedia.org/wiki/Marrakesh"
+      },
+      {
+        "title": "Wikipedia: Morocco",
+        "url": "https://en.wikipedia.org/wiki/Morocco"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Marrakesh travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Marrakesh+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Marrakesh",
+      "wiki_alt": "Morocco",
+      "domain": null
+    }
+  },
+  {
+    "id": "022",
+    "rank": 22,
+    "title": "Dubai",
+    "content": "Home to the Burj Khalifa, the world's tallest building, plus huge malls, desert safaris and man-made islands.",
+    "hook": "#22 of 100",
+    "tags": [
+      "Middle East"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/en/thumb/c/c7/Burj_Khalifa_2021.jpg/960px-Burj_Khalifa_2021.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Dubai+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dubai",
+        "url": "https://en.wikipedia.org/wiki/Dubai"
+      },
+      {
+        "title": "Wikipedia: United Arab Emirates",
+        "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dubai travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dubai+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Dubai",
+      "wiki_alt": "United Arab Emirates",
+      "domain": null
+    }
+  },
+  {
+    "id": "023",
+    "rank": 23,
+    "title": "Bangkok",
+    "content": "Gilded temples, river boats, street food and markets in Thailand's energetic capital.",
+    "hook": "#23 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/4Y1A1159_Bangkok_%2833536795515%29.jpg/960px-4Y1A1159_Bangkok_%2833536795515%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Bangkok+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Bangkok",
+        "url": "https://en.wikipedia.org/wiki/Bangkok"
+      },
+      {
+        "title": "Wikipedia: Thailand",
+        "url": "https://en.wikipedia.org/wiki/Thailand"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Bangkok travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Bangkok+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Bangkok",
+      "wiki_alt": "Thailand",
+      "domain": null
+    }
+  },
+  {
+    "id": "024",
+    "rank": 24,
+    "title": "Seoul",
+    "content": "Royal palaces and hanok villages sit alongside K-pop culture, fast tech and outstanding Korean barbecue.",
+    "hook": "#24 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg/960px-%EC%A4%91%ED%99%94%EC%A0%84%EC%9D%98_%EB%82%AE.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Seoul+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Seoul",
+        "url": "https://en.wikipedia.org/wiki/Seoul"
+      },
+      {
+        "title": "Wikipedia: South Korea",
+        "url": "https://en.wikipedia.org/wiki/South_Korea"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Seoul travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Seoul+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Seoul",
+      "wiki_alt": "South Korea",
+      "domain": null
+    }
+  },
+  {
+    "id": "025",
+    "rank": 25,
+    "title": "San Francisco",
+    "content": "The Golden Gate Bridge, cable cars, Alcatraz and steep, colourful streets above a fog-prone bay.",
+    "hook": "#25 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Zeppelin-ride-020100925-195_%285029394846%29.jpg/960px-Zeppelin-ride-020100925-195_%285029394846%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=San+Francisco+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: San Francisco",
+        "url": "https://en.wikipedia.org/wiki/San_Francisco"
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "San Francisco travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=San+Francisco+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "San Francisco",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "026",
+    "rank": 26,
+    "title": "Edinburgh",
+    "content": "A castle-topped volcanic skyline, a medieval Old Town and Georgian New Town, and the world's largest arts festival.",
+    "hook": "#26 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Skyline_of_Edinburgh.jpg/960px-Skyline_of_Edinburgh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Edinburgh+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Edinburgh",
+        "url": "https://en.wikipedia.org/wiki/Edinburgh"
+      },
+      {
+        "title": "Wikipedia: Scotland",
+        "url": "https://en.wikipedia.org/wiki/Scotland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Edinburgh travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Edinburgh+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Edinburgh",
+      "wiki_alt": "Scotland",
+      "domain": null
+    }
+  },
+  {
+    "id": "027",
+    "rank": 27,
+    "title": "Budapest",
+    "content": "Two cities on the Danube, with thermal baths, a Parliament building and ruin bars in the old Jewish quarter.",
+    "hook": "#27 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/View_from_Gell%C3%A9rt_Hill_to_the_Danube%2C_Hungary_-_Budapest_%2828493220635%29.jpg/960px-View_from_Gell%C3%A9rt_Hill_to_the_Danube%2C_Hungary_-_Budapest_%2828493220635%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Budapest+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Budapest",
+        "url": "https://en.wikipedia.org/wiki/Budapest"
+      },
+      {
+        "title": "Wikipedia: Hungary",
+        "url": "https://en.wikipedia.org/wiki/Hungary"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Budapest travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Budapest+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Budapest",
+      "wiki_alt": "Hungary",
+      "domain": null
+    }
+  },
+  {
+    "id": "028",
+    "rank": 28,
+    "title": "Copenhagen",
+    "content": "Colourful Nyhavn, Tivoli Gardens, cycling culture and a leading reputation for New Nordic dining.",
+    "hook": "#28 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/2018_-_Christiansborg_from_the_Marble_Bridge.jpg/960px-2018_-_Christiansborg_from_the_Marble_Bridge.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Copenhagen+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Copenhagen",
+        "url": "https://en.wikipedia.org/wiki/Copenhagen"
+      },
+      {
+        "title": "Wikipedia: Denmark",
+        "url": "https://en.wikipedia.org/wiki/Denmark"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Copenhagen travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Copenhagen+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Copenhagen",
+      "wiki_alt": "Denmark",
+      "domain": null
+    }
+  },
+  {
+    "id": "029",
+    "rank": 29,
+    "title": "Berlin",
+    "content": "A city of living history, from the Brandenburg Gate and Berlin Wall remnants to galleries, clubs and Museum Island.",
+    "hook": "#29 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg/960px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Berlin+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Berlin",
+        "url": "https://en.wikipedia.org/wiki/Berlin"
+      },
+      {
+        "title": "Wikipedia: Germany",
+        "url": "https://en.wikipedia.org/wiki/Germany"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Berlin travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Berlin+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Berlin",
+      "wiki_alt": "Germany",
+      "domain": null
+    }
+  },
+  {
+    "id": "030",
+    "rank": 30,
+    "title": "Madrid",
+    "content": "The Prado, Reina Sofía and Retiro Park anchor a city famed for late-night tapas and lively plazas.",
+    "hook": "#30 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg/960px-Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Madrid+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Madrid",
+        "url": "https://en.wikipedia.org/wiki/Madrid"
+      },
+      {
+        "title": "Wikipedia: Spain",
+        "url": "https://en.wikipedia.org/wiki/Spain"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Madrid travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Madrid+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Madrid",
+      "wiki_alt": "Spain",
+      "domain": null
+    }
+  },
+  {
+    "id": "031",
+    "rank": 31,
+    "title": "Athens",
+    "content": "The Acropolis and Parthenon overlook a city that holds the origins of democracy, plus tavernas in Plaka.",
+    "hook": "#31 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Athens_Acropolis_at_Daybreak.jpg/960px-Athens_Acropolis_at_Daybreak.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Athens+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Athens",
+        "url": "https://en.wikipedia.org/wiki/Athens"
+      },
+      {
+        "title": "Wikipedia: Greece",
+        "url": "https://en.wikipedia.org/wiki/Greece"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Athens travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Athens+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Athens",
+      "wiki_alt": "Greece",
+      "domain": null
+    }
+  },
+  {
+    "id": "032",
+    "rank": 32,
+    "title": "Cairo",
+    "content": "Africa's largest city sits beside the Giza pyramids and the Sphinx, with a vast Egyptian Museum collection.",
+    "hook": "#32 of 100",
+    "tags": [
+      "Africa"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg/960px-Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Cairo+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cairo",
+        "url": "https://en.wikipedia.org/wiki/Cairo"
+      },
+      {
+        "title": "Wikipedia: Egypt",
+        "url": "https://en.wikipedia.org/wiki/Egypt"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cairo travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cairo+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Cairo",
+      "wiki_alt": "Egypt",
+      "domain": null
+    }
+  },
+  {
+    "id": "033",
+    "rank": 33,
+    "title": "Mexico City",
+    "content": "Built on an Aztec island capital, with Zócalo, Frida Kahlo's house, grand museums and exceptional street food.",
+    "hook": "#33 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg/960px-Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Mexico+City+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mexico City",
+        "url": "https://en.wikipedia.org/wiki/Mexico_City"
+      },
+      {
+        "title": "Wikipedia: Mexico",
+        "url": "https://en.wikipedia.org/wiki/Mexico"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mexico City travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mexico+City+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Mexico City",
+      "wiki_alt": "Mexico",
+      "domain": null
+    }
+  },
+  {
+    "id": "034",
+    "rank": 34,
+    "title": "Vancouver",
+    "content": "Mountains, forest and ocean meet in a relaxed Pacific city with Stanley Park and strong Asian food.",
+    "hook": "#34 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Skyline_of_Vancouver%2C_Canada.jpg/960px-Skyline_of_Vancouver%2C_Canada.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Vancouver+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Vancouver",
+        "url": "https://en.wikipedia.org/wiki/Vancouver"
+      },
+      {
+        "title": "Wikipedia: Canada",
+        "url": "https://en.wikipedia.org/wiki/Canada"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Vancouver travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Vancouver+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Vancouver",
+      "wiki_alt": "Canada",
+      "domain": null
+    }
+  },
+  {
+    "id": "035",
+    "rank": 35,
+    "title": "Cusco",
+    "content": "The old Inca capital at 3,400 metres, with Spanish colonial streets and the gateway to Machu Picchu.",
+    "hook": "#35 of 100",
+    "tags": [
+      "South America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Vista_Calle_Suecia.jpg/960px-Vista_Calle_Suecia.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Cusco+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cusco",
+        "url": "https://en.wikipedia.org/wiki/Cusco"
+      },
+      {
+        "title": "Wikipedia: Peru",
+        "url": "https://en.wikipedia.org/wiki/Peru"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cusco travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cusco+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Cusco",
+      "wiki_alt": "Peru",
+      "domain": null
+    }
+  },
+  {
+    "id": "036",
+    "rank": 36,
+    "title": "Hanoi",
+    "content": "A thousand-year-old capital of lakes, French colonial buildings, a tangled Old Quarter and superb street food.",
+    "hook": "#36 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Hanoi_skyline_with_Ba_Vi_Mountain.jpg/960px-Hanoi_skyline_with_Ba_Vi_Mountain.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Hanoi+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hanoi",
+        "url": "https://en.wikipedia.org/wiki/Hanoi"
+      },
+      {
+        "title": "Wikipedia: Vietnam",
+        "url": "https://en.wikipedia.org/wiki/Vietnam"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hanoi travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hanoi+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Hanoi",
+      "wiki_alt": "Vietnam",
+      "domain": null
+    }
+  },
+  {
+    "id": "037",
+    "rank": 37,
+    "title": "Hoi An",
+    "content": "A lantern-lit ancient trading port with preserved wooden merchant houses, tailors and riverside cafés.",
+    "hook": "#37 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/960px-Flag_of_Vietnam.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Hoi+An+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hội An",
+        "url": "https://en.wikipedia.org/wiki/H%E1%BB%99i_An"
+      },
+      {
+        "title": "Wikipedia: Vietnam",
+        "url": "https://en.wikipedia.org/wiki/Vietnam"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hoi An travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hoi+An+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Hội An",
+      "wiki_alt": "Vietnam",
+      "domain": null
+    }
+  },
+  {
+    "id": "038",
+    "rank": 38,
+    "title": "Siem Reap",
+    "content": "The base for visiting the temples of Angkor, including Angkor Wat, one of the world's largest religious monuments.",
+    "hook": "#38 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Front_porch_of_Wat_Damnak.jpg/960px-Front_porch_of_Wat_Damnak.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Siem+Reap+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Siem Reap",
+        "url": "https://en.wikipedia.org/wiki/Siem_Reap"
+      },
+      {
+        "title": "Wikipedia: Cambodia",
+        "url": "https://en.wikipedia.org/wiki/Cambodia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Siem Reap travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Siem+Reap+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Siem Reap",
+      "wiki_alt": "Cambodia",
+      "domain": null
+    }
+  },
+  {
+    "id": "039",
+    "rank": 39,
+    "title": "Luang Prabang",
+    "content": "A UNESCO-listed town of golden temples at the meeting of the Mekong and Nam Khan rivers, known for dawn alms rounds.",
+    "hook": "#39 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Phou_si_Luang_Prabang_Laos_%E3%83%97%E3%83%BC%E3%82%B7%E3%83%BC%E3%81%AE%E4%B8%98_%E3%83%A9%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%AB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%A9%E3%83%90%E3%83%BC%E3%83%B3_DSCF6777.jpg/960px-Phou_si_Luang_Prabang_Laos_%E3%83%97%E3%83%BC%E3%82%B7%E3%83%BC%E3%81%AE%E4%B8%98_%E3%83%A9%E3%82%AA%E3%82%B9%E3%83%BB%E3%83%AB%E3%82%A2%E3%83%B3%E3%83%97%E3%83%A9%E3%83%90%E3%83%BC%E3%83%B3_DSCF6777.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Luang+Prabang+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Luang Prabang",
+        "url": "https://en.wikipedia.org/wiki/Luang_Prabang"
+      },
+      {
+        "title": "Wikipedia: Laos",
+        "url": "https://en.wikipedia.org/wiki/Laos"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Luang Prabang travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Luang+Prabang+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Luang Prabang",
+      "wiki_alt": "Laos",
+      "domain": null
+    }
+  },
+  {
+    "id": "040",
+    "rank": 40,
+    "title": "Salzburg",
+    "content": "Mozart's birthplace is a baroque city below a fortress, set against the Alps and famed for The Sound of Music.",
+    "hook": "#40 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Salzburg_%2848489551981%29.jpg/960px-Salzburg_%2848489551981%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Salzburg+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Salzburg",
+        "url": "https://en.wikipedia.org/wiki/Salzburg"
+      },
+      {
+        "title": "Wikipedia: Austria",
+        "url": "https://en.wikipedia.org/wiki/Austria"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Salzburg travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Salzburg+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Salzburg",
+      "wiki_alt": "Austria",
+      "domain": null
+    }
+  },
+  {
+    "id": "041",
+    "rank": 41,
+    "title": "Munich",
+    "content": "Beer halls, Marienplatz, the Alps nearby and top museums in Bavaria's confident capital.",
+    "hook": "#41 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/960px-Stadtbild_M%C3%BCnchen.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Munich+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Munich",
+        "url": "https://en.wikipedia.org/wiki/Munich"
+      },
+      {
+        "title": "Wikipedia: Germany",
+        "url": "https://en.wikipedia.org/wiki/Germany"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Munich travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Munich+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Munich",
+      "wiki_alt": "Germany",
+      "domain": null
+    }
+  },
+  {
+    "id": "042",
+    "rank": 42,
+    "title": "Dublin",
+    "content": "Georgian squares, the Book of Kells, literary pubs and the Guinness Storehouse in a friendly, walkable capital.",
+    "hook": "#42 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/960px-Dublin_-_aerial_-_2025-07-07_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Dublin+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dublin",
+        "url": "https://en.wikipedia.org/wiki/Dublin"
+      },
+      {
+        "title": "Wikipedia: Ireland",
+        "url": "https://en.wikipedia.org/wiki/Ireland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dublin travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dublin+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Dublin",
+      "wiki_alt": "Ireland",
+      "domain": null
+    }
+  },
+  {
+    "id": "043",
+    "rank": 43,
+    "title": "Stockholm",
+    "content": "Spread across 14 islands, with a Gamla Stan old town, the Vasa warship museum and a long archipelago.",
+    "hook": "#43 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Royal_Dramatic_Theatre_Stockholm.jpg/960px-Royal_Dramatic_Theatre_Stockholm.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Stockholm+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Stockholm",
+        "url": "https://en.wikipedia.org/wiki/Stockholm"
+      },
+      {
+        "title": "Wikipedia: Sweden",
+        "url": "https://en.wikipedia.org/wiki/Sweden"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Stockholm travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Stockholm+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Stockholm",
+      "wiki_alt": "Sweden",
+      "domain": null
+    }
+  },
+  {
+    "id": "044",
+    "rank": 44,
+    "title": "Oslo",
+    "content": "A fjord-side capital with the Viking Ship Museum, a striking opera house and quick access to forest and sea.",
+    "hook": "#44 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Nationaltheatret_evening.jpg/960px-Nationaltheatret_evening.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Oslo+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Oslo",
+        "url": "https://en.wikipedia.org/wiki/Oslo"
+      },
+      {
+        "title": "Wikipedia: Norway",
+        "url": "https://en.wikipedia.org/wiki/Norway"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Oslo travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Oslo+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Oslo",
+      "wiki_alt": "Norway",
+      "domain": null
+    }
+  },
+  {
+    "id": "045",
+    "rank": 45,
+    "title": "Helsinki",
+    "content": "Design, neoclassical architecture, saunas and sea fortress island Suomenlinna in a compact Baltic capital.",
+    "hook": "#45 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Suomenlinna_%28cropped%29.jpg/960px-Suomenlinna_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Helsinki+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Helsinki",
+        "url": "https://en.wikipedia.org/wiki/Helsinki"
+      },
+      {
+        "title": "Wikipedia: Finland",
+        "url": "https://en.wikipedia.org/wiki/Finland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Helsinki travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Helsinki+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Helsinki",
+      "wiki_alt": "Finland",
+      "domain": null
+    }
+  },
+  {
+    "id": "046",
+    "rank": 46,
+    "title": "Tallinn",
+    "content": "One of Europe's best-preserved medieval old towns, with walls, towers and a lively tech-minded modern side.",
+    "hook": "#46 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Raekoja_plats_at_night.jpg/960px-Raekoja_plats_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Tallinn+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Tallinn",
+        "url": "https://en.wikipedia.org/wiki/Tallinn"
+      },
+      {
+        "title": "Wikipedia: Estonia",
+        "url": "https://en.wikipedia.org/wiki/Estonia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Tallinn travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Tallinn+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Tallinn",
+      "wiki_alt": "Estonia",
+      "domain": null
+    }
+  },
+  {
+    "id": "047",
+    "rank": 47,
+    "title": "Kraków",
+    "content": "A grand market square, Wawel Castle and the Kazimierz district, with Auschwitz and a salt mine within reach.",
+    "hook": "#47 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Krakow_Rynek_Glowny_panorama_2.jpg/960px-Krakow_Rynek_Glowny_panorama_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Krak%C3%B3w+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Kraków",
+        "url": "https://en.wikipedia.org/wiki/Krak%C3%B3w"
+      },
+      {
+        "title": "Wikipedia: Poland",
+        "url": "https://en.wikipedia.org/wiki/Poland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Kraków travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Krak%C3%B3w+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Kraków",
+      "wiki_alt": "Poland",
+      "domain": null
+    }
+  },
+  {
+    "id": "048",
+    "rank": 48,
+    "title": "Dubrovnik",
+    "content": "A walled Adriatic port with limestone streets, city walls you can walk and Game of Thrones filming locations.",
+    "hook": "#48 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg/960px-The_walls_of_the_fortress_and_View_of_the_old_city._panorama.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Dubrovnik+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Dubrovnik",
+        "url": "https://en.wikipedia.org/wiki/Dubrovnik"
+      },
+      {
+        "title": "Wikipedia: Croatia",
+        "url": "https://en.wikipedia.org/wiki/Croatia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Dubrovnik travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Dubrovnik+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Dubrovnik",
+      "wiki_alt": "Croatia",
+      "domain": null
+    }
+  },
+  {
+    "id": "049",
+    "rank": 49,
+    "title": "Seville",
+    "content": "Flamenco, orange trees, the Alcázar and a vast cathedral in Andalusia's hot, tile-covered capital.",
+    "hook": "#49 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Sevilla_Cathedral_-_Southeast.jpg/960px-Sevilla_Cathedral_-_Southeast.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Seville+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Seville",
+        "url": "https://en.wikipedia.org/wiki/Seville"
+      },
+      {
+        "title": "Wikipedia: Spain",
+        "url": "https://en.wikipedia.org/wiki/Spain"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Seville travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Seville+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Seville",
+      "wiki_alt": "Spain",
+      "domain": null
+    }
+  },
+  {
+    "id": "050",
+    "rank": 50,
+    "title": "Granada",
+    "content": "The Alhambra palace sits above the Albaicín quarter, with free tapas and the Sierra Nevada behind.",
+    "hook": "#50 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Granada_%2825987961022%29.jpg/960px-Granada_%2825987961022%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Granada+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Granada",
+        "url": "https://en.wikipedia.org/wiki/Granada"
+      },
+      {
+        "title": "Wikipedia: Spain",
+        "url": "https://en.wikipedia.org/wiki/Spain"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Granada travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Granada+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Granada",
+      "wiki_alt": "Spain",
+      "domain": null
+    }
+  },
+  {
+    "id": "051",
+    "rank": 51,
+    "title": "Porto",
+    "content": "Tiled churches, steep riverside lanes and port wine lodges across the Douro from Vila Nova de Gaia.",
+    "hook": "#51 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Puente_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_13.JPG/960px-Puente_Don_Luis_I%2C_Oporto%2C_Portugal%2C_2012-05-09%2C_DD_13.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Porto+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Porto",
+        "url": "https://en.wikipedia.org/wiki/Porto"
+      },
+      {
+        "title": "Wikipedia: Portugal",
+        "url": "https://en.wikipedia.org/wiki/Portugal"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Porto travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Porto+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Porto",
+      "wiki_alt": "Portugal",
+      "domain": null
+    }
+  },
+  {
+    "id": "052",
+    "rank": 52,
+    "title": "Naples",
+    "content": "The birthplace of pizza sits in the shadow of Vesuvius, close to Pompeii and a superb archaeological museum.",
+    "hook": "#52 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Napoli_-_Maschio_Angioino_-_202209302342_3.jpg/960px-Napoli_-_Maschio_Angioino_-_202209302342_3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Naples+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Naples",
+        "url": "https://en.wikipedia.org/wiki/Naples"
+      },
+      {
+        "title": "Wikipedia: Italy",
+        "url": "https://en.wikipedia.org/wiki/Italy"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Naples travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Naples+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Naples",
+      "wiki_alt": "Italy",
+      "domain": null
+    }
+  },
+  {
+    "id": "053",
+    "rank": 53,
+    "title": "Milan",
+    "content": "Italy's fashion and design capital, with the Duomo, La Scala and Leonardo's The Last Supper.",
+    "hook": "#53 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Milan_Cathedral_from_Piazza_del_Duomo.jpg/960px-Milan_Cathedral_from_Piazza_del_Duomo.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Milan+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Milan",
+        "url": "https://en.wikipedia.org/wiki/Milan"
+      },
+      {
+        "title": "Wikipedia: Italy",
+        "url": "https://en.wikipedia.org/wiki/Italy"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Milan travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Milan+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Milan",
+      "wiki_alt": "Italy",
+      "domain": null
+    }
+  },
+  {
+    "id": "054",
+    "rank": 54,
+    "title": "Bruges",
+    "content": "A preserved medieval canal city of cobbles, belfry and chocolate shops, easily seen on foot in a weekend.",
+    "hook": "#54 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Br%C3%BCgge_Blick_vom_Belfried_4.jpg/960px-Br%C3%BCgge_Blick_vom_Belfried_4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Bruges+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Bruges",
+        "url": "https://en.wikipedia.org/wiki/Bruges"
+      },
+      {
+        "title": "Wikipedia: Belgium",
+        "url": "https://en.wikipedia.org/wiki/Belgium"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Bruges travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Bruges+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Bruges",
+      "wiki_alt": "Belgium",
+      "domain": null
+    }
+  },
+  {
+    "id": "055",
+    "rank": 55,
+    "title": "Brussels",
+    "content": "The Grand-Place, art nouveau townhouses, comics murals, chocolate, waffles and a huge beer culture.",
+    "hook": "#55 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Grand_Place_Bruselas_2.jpg/960px-Grand_Place_Bruselas_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Brussels+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Brussels",
+        "url": "https://en.wikipedia.org/wiki/Brussels"
+      },
+      {
+        "title": "Wikipedia: Belgium",
+        "url": "https://en.wikipedia.org/wiki/Belgium"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Brussels travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Brussels+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Brussels",
+      "wiki_alt": "Belgium",
+      "domain": null
+    }
+  },
+  {
+    "id": "056",
+    "rank": 56,
+    "title": "Zürich",
+    "content": "A lakeside old town with clean air, chocolate and watches, set between mountains and the Limmat river.",
+    "hook": "#56 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Altstadt_Z%C3%BCrich_2015.jpg/960px-Altstadt_Z%C3%BCrich_2015.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Z%C3%BCrich+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Zurich",
+        "url": "https://en.wikipedia.org/wiki/Zurich"
+      },
+      {
+        "title": "Wikipedia: Switzerland",
+        "url": "https://en.wikipedia.org/wiki/Switzerland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Zürich travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Z%C3%BCrich+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Zurich",
+      "wiki_alt": "Switzerland",
+      "domain": null
+    }
+  },
+  {
+    "id": "057",
+    "rank": 57,
+    "title": "Geneva",
+    "content": "A lakeside city with the Jet d'Eau, a cluster of international organisations and views to Mont Blanc.",
+    "hook": "#57 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Geneve_2005_001_Ork.ch.jpg/960px-Geneve_2005_001_Ork.ch.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Geneva+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Geneva",
+        "url": "https://en.wikipedia.org/wiki/Geneva"
+      },
+      {
+        "title": "Wikipedia: Switzerland",
+        "url": "https://en.wikipedia.org/wiki/Switzerland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Geneva travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Geneva+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Geneva",
+      "wiki_alt": "Switzerland",
+      "domain": null
+    }
+  },
+  {
+    "id": "058",
+    "rank": 58,
+    "title": "Lyon",
+    "content": "France's gastronomic capital, with bouchon restaurants, Roman remains and a Renaissance old town.",
+    "hook": "#58 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Lyon-part-dieu-2023.jpg/960px-Lyon-part-dieu-2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Lyon+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Lyon",
+        "url": "https://en.wikipedia.org/wiki/Lyon"
+      },
+      {
+        "title": "Wikipedia: France",
+        "url": "https://en.wikipedia.org/wiki/France"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Lyon travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Lyon+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Lyon",
+      "wiki_alt": "France",
+      "domain": null
+    }
+  },
+  {
+    "id": "059",
+    "rank": 59,
+    "title": "Bordeaux",
+    "content": "A grand 18th-century riverside city at the heart of the world's most famous wine region.",
+    "hook": "#59 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Bordeaux_Place_de_la_Bourse_de_nuit.jpg/960px-Bordeaux_Place_de_la_Bourse_de_nuit.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Bordeaux+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Bordeaux",
+        "url": "https://en.wikipedia.org/wiki/Bordeaux"
+      },
+      {
+        "title": "Wikipedia: France",
+        "url": "https://en.wikipedia.org/wiki/France"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Bordeaux travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Bordeaux+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Bordeaux",
+      "wiki_alt": "France",
+      "domain": null
+    }
+  },
+  {
+    "id": "060",
+    "rank": 60,
+    "title": "Nice",
+    "content": "The Promenade des Anglais, a colourful old town and Matisse and Chagall museums on the French Riviera.",
+    "hook": "#60 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Promenade_des_Anglais_Nice_IMG_1255.jpg/960px-Promenade_des_Anglais_Nice_IMG_1255.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Nice+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Nice",
+        "url": "https://en.wikipedia.org/wiki/Nice"
+      },
+      {
+        "title": "Wikipedia: France",
+        "url": "https://en.wikipedia.org/wiki/France"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Nice travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Nice+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Nice",
+      "wiki_alt": "France",
+      "domain": null
+    }
+  },
+  {
+    "id": "061",
+    "rank": 61,
+    "title": "Glasgow",
+    "content": "Victorian and art nouveau architecture, the Kelvingrove museum, live music and a strong Mackintosh legacy.",
+    "hook": "#61 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Glasgow_-_aerial_-_2025-04-17_14.jpg/960px-Glasgow_-_aerial_-_2025-04-17_14.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Glasgow+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Glasgow",
+        "url": "https://en.wikipedia.org/wiki/Glasgow"
+      },
+      {
+        "title": "Wikipedia: Scotland",
+        "url": "https://en.wikipedia.org/wiki/Scotland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Glasgow travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Glasgow+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Glasgow",
+      "wiki_alt": "Scotland",
+      "domain": null
+    }
+  },
+  {
+    "id": "062",
+    "rank": 62,
+    "title": "Valletta",
+    "content": "A tiny fortified capital of honey-coloured baroque buildings, with St John's Co-Cathedral and harbour views.",
+    "hook": "#62 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/St_Sebastian_Curtain_%28cropped%29.jpg/960px-St_Sebastian_Curtain_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Valletta+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Valletta",
+        "url": "https://en.wikipedia.org/wiki/Valletta"
+      },
+      {
+        "title": "Wikipedia: Malta",
+        "url": "https://en.wikipedia.org/wiki/Malta"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Valletta travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Valletta+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Valletta",
+      "wiki_alt": "Malta",
+      "domain": null
+    }
+  },
+  {
+    "id": "063",
+    "rank": 63,
+    "title": "Reykjavík",
+    "content": "The world's northernmost capital, a base for geothermal pools, the Northern Lights and the Golden Circle.",
+    "hook": "#63 of 100",
+    "tags": [
+      "Europe"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Reykjav%C3%ADk%2C_view_from_Hallgr%C3%ADmskirkja_%282%29.jpg/960px-Reykjav%C3%ADk%2C_view_from_Hallgr%C3%ADmskirkja_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Reykjav%C3%ADk+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Reykjavík",
+        "url": "https://en.wikipedia.org/wiki/Reykjav%C3%ADk"
+      },
+      {
+        "title": "Wikipedia: Iceland",
+        "url": "https://en.wikipedia.org/wiki/Iceland"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Reykjavík travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Reykjav%C3%ADk+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Reykjavík",
+      "wiki_alt": "Iceland",
+      "domain": null
+    }
+  },
+  {
+    "id": "064",
+    "rank": 64,
+    "title": "Jerusalem",
+    "content": "The Old City holds sites sacred to three faiths, including the Western Wall, Church of the Holy Sepulchre and Dome of the Rock.",
+    "hook": "#64 of 100",
+    "tags": [
+      "Middle East"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Temple_Mount_%28Aerial_view%2C_2007%29_07.jpg/960px-Temple_Mount_%28Aerial_view%2C_2007%29_07.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Jerusalem+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Jerusalem",
+        "url": "https://en.wikipedia.org/wiki/Jerusalem"
+      },
+      {
+        "title": "Wikipedia: Israel",
+        "url": "https://en.wikipedia.org/wiki/Israel"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Jerusalem travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Jerusalem+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Jerusalem",
+      "wiki_alt": "Israel",
+      "domain": null
+    }
+  },
+  {
+    "id": "065",
+    "rank": 65,
+    "title": "Petra",
+    "content": "A rose-red city carved into canyon walls by the Nabataeans, reached through the narrow Siq gorge.",
+    "hook": "#65 of 100",
+    "tags": [
+      "Middle East"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/960px-Al_Deir_Petra.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Petra+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Petra",
+        "url": "https://en.wikipedia.org/wiki/Petra"
+      },
+      {
+        "title": "Wikipedia: Jordan",
+        "url": "https://en.wikipedia.org/wiki/Jordan"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Petra travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Petra+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Petra",
+      "wiki_alt": "Jordan",
+      "domain": null
+    }
+  },
+  {
+    "id": "066",
+    "rank": 66,
+    "title": "Muscat",
+    "content": "A calm, white-washed Gulf capital with the Sultan Qaboos Grand Mosque, a harbour souk and mountains behind.",
+    "hook": "#66 of 100",
+    "tags": [
+      "Middle East"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Al_Alam_Palace.jpg/960px-Al_Alam_Palace.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Muscat+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Muscat",
+        "url": "https://en.wikipedia.org/wiki/Muscat"
+      },
+      {
+        "title": "Wikipedia: Oman",
+        "url": "https://en.wikipedia.org/wiki/Oman"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Muscat travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Muscat+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Muscat",
+      "wiki_alt": "Oman",
+      "domain": null
+    }
+  },
+  {
+    "id": "067",
+    "rank": 67,
+    "title": "Abu Dhabi",
+    "content": "The Sheikh Zayed Grand Mosque, Louvre Abu Dhabi and Yas Island sit within one of the Gulf's wealthiest cities.",
+    "hook": "#67 of 100",
+    "tags": [
+      "Middle East"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Abu_dhabi_skylines_2014.jpg/960px-Abu_dhabi_skylines_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Abu+Dhabi+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Abu Dhabi",
+        "url": "https://en.wikipedia.org/wiki/Abu_Dhabi"
+      },
+      {
+        "title": "Wikipedia: United Arab Emirates",
+        "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Abu Dhabi travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Abu+Dhabi+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Abu Dhabi",
+      "wiki_alt": "United Arab Emirates",
+      "domain": null
+    }
+  },
+  {
+    "id": "068",
+    "rank": 68,
+    "title": "Fez",
+    "content": "Home to the world's oldest continuously operating university and a huge car-free medina of tanneries and craft workshops.",
+    "hook": "#68 of 100",
+    "tags": [
+      "Africa"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/960px-Flag_of_Morocco.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Fez+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Fez",
+        "url": "https://en.wikipedia.org/wiki/Fez"
+      },
+      {
+        "title": "Wikipedia: Morocco",
+        "url": "https://en.wikipedia.org/wiki/Morocco"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Fez travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Fez+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Fez",
+      "wiki_alt": "Morocco",
+      "domain": null
+    }
+  },
+  {
+    "id": "069",
+    "rank": 69,
+    "title": "Zanzibar City",
+    "content": "Stone Town's alleyways, carved doors and spice-trade history sit beside Indian Ocean beaches.",
+    "hook": "#69 of 100",
+    "tags": [
+      "Africa"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Malawi_Rd%2C_Zanzibar_Town%2C_Tanzania_-_panoramio.jpg/960px-Malawi_Rd%2C_Zanzibar_Town%2C_Tanzania_-_panoramio.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Zanzibar+City+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Zanzibar City",
+        "url": "https://en.wikipedia.org/wiki/Zanzibar_City"
+      },
+      {
+        "title": "Wikipedia: Tanzania",
+        "url": "https://en.wikipedia.org/wiki/Tanzania"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Zanzibar City travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Zanzibar+City+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Zanzibar City",
+      "wiki_alt": "Tanzania",
+      "domain": null
+    }
+  },
+  {
+    "id": "070",
+    "rank": 70,
+    "title": "Nairobi",
+    "content": "Africa's only capital with a national park on its edge, where lions and giraffes can be seen against the skyline.",
+    "hook": "#70 of 100",
+    "tags": [
+      "Africa"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Nairobi_skyline_from_Gem_Hotel.jpg/960px-Nairobi_skyline_from_Gem_Hotel.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Nairobi+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Nairobi",
+        "url": "https://en.wikipedia.org/wiki/Nairobi"
+      },
+      {
+        "title": "Wikipedia: Kenya",
+        "url": "https://en.wikipedia.org/wiki/Kenya"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Nairobi travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Nairobi+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Nairobi",
+      "wiki_alt": "Kenya",
+      "domain": null
+    }
+  },
+  {
+    "id": "071",
+    "rank": 71,
+    "title": "Mumbai",
+    "content": "India's film and finance capital, with the Gateway of India, colonial Gothic buildings and street snacks.",
+    "hook": "#71 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Mumbai_Bandra-Worli_Sea_Link.jpg/960px-Mumbai_Bandra-Worli_Sea_Link.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Mumbai+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Mumbai",
+        "url": "https://en.wikipedia.org/wiki/Mumbai"
+      },
+      {
+        "title": "Wikipedia: India",
+        "url": "https://en.wikipedia.org/wiki/India"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Mumbai travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Mumbai+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Mumbai",
+      "wiki_alt": "India",
+      "domain": null
+    }
+  },
+  {
+    "id": "072",
+    "rank": 72,
+    "title": "Delhi",
+    "content": "Mughal monuments such as Red Fort and Humayun's Tomb stand alongside colonial avenues and busy bazaars.",
+    "hook": "#72 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Jama_Masjid_2011.jpg/960px-Jama_Masjid_2011.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Delhi+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Delhi",
+        "url": "https://en.wikipedia.org/wiki/Delhi"
+      },
+      {
+        "title": "Wikipedia: India",
+        "url": "https://en.wikipedia.org/wiki/India"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Delhi travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Delhi+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Delhi",
+      "wiki_alt": "India",
+      "domain": null
+    }
+  },
+  {
+    "id": "073",
+    "rank": 73,
+    "title": "Jaipur",
+    "content": "The Pink City, with Amber Fort, the City Palace and Hawa Mahal on the Golden Triangle route.",
+    "hook": "#73 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Jaipur+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Jaipur",
+        "url": "https://en.wikipedia.org/wiki/Jaipur"
+      },
+      {
+        "title": "Wikipedia: India",
+        "url": "https://en.wikipedia.org/wiki/India"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Jaipur travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Jaipur+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Jaipur",
+      "wiki_alt": "India",
+      "domain": null
+    }
+  },
+  {
+    "id": "074",
+    "rank": 74,
+    "title": "Agra",
+    "content": "Home to the Taj Mahal, built by Shah Jahan in memory of his wife, and the red sandstone Agra Fort.",
+    "hook": "#74 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/960px-Taj_Mahal%2C_Agra%2C_India.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Agra+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Agra",
+        "url": "https://en.wikipedia.org/wiki/Agra"
+      },
+      {
+        "title": "Wikipedia: India",
+        "url": "https://en.wikipedia.org/wiki/India"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Agra travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Agra+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Agra",
+      "wiki_alt": "India",
+      "domain": null
+    }
+  },
+  {
+    "id": "075",
+    "rank": 75,
+    "title": "Varanasi",
+    "content": "One of the world's oldest living cities, where pilgrims bathe and perform rites on the ghats of the Ganges.",
+    "hook": "#75 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg/960px-Varanasi%2C_India%2C_Ghats%2C_Cremation_ceremony_in_progress.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Varanasi+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Varanasi",
+        "url": "https://en.wikipedia.org/wiki/Varanasi"
+      },
+      {
+        "title": "Wikipedia: India",
+        "url": "https://en.wikipedia.org/wiki/India"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Varanasi travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Varanasi+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Varanasi",
+      "wiki_alt": "India",
+      "domain": null
+    }
+  },
+  {
+    "id": "076",
+    "rank": 76,
+    "title": "Kathmandu",
+    "content": "A valley of temples and stupas, including Boudhanath and Swayambhunath, and the usual start point for Himalayan treks.",
+    "hook": "#76 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Kathmandu-Durbar_Square-06-Mahavishnu-Kuh-Vishnu-Pratapamalla-Jagannath-2007-gje.jpg/960px-Kathmandu-Durbar_Square-06-Mahavishnu-Kuh-Vishnu-Pratapamalla-Jagannath-2007-gje.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Kathmandu+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Kathmandu",
+        "url": "https://en.wikipedia.org/wiki/Kathmandu"
+      },
+      {
+        "title": "Wikipedia: Nepal",
+        "url": "https://en.wikipedia.org/wiki/Nepal"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Kathmandu travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Kathmandu+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Kathmandu",
+      "wiki_alt": "Nepal",
+      "domain": null
+    }
+  },
+  {
+    "id": "077",
+    "rank": 77,
+    "title": "Beijing",
+    "content": "The Forbidden City, Temple of Heaven and Tiananmen Square, with the Great Wall within a day trip.",
+    "hook": "#77 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg/960px-Skyline_of_Beijing_CBD_with_B-5906_approaching_%2820211016171955%29_%281%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Beijing+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Beijing",
+        "url": "https://en.wikipedia.org/wiki/Beijing"
+      },
+      {
+        "title": "Wikipedia: China",
+        "url": "https://en.wikipedia.org/wiki/China"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Beijing travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Beijing+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Beijing",
+      "wiki_alt": "China",
+      "domain": null
+    }
+  },
+  {
+    "id": "078",
+    "rank": 78,
+    "title": "Shanghai",
+    "content": "The Bund's colonial waterfront faces the futuristic skyline of Pudong, with gardens and strong dumplings.",
+    "hook": "#78 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg/960px-Huangpu_Park_20124-Shanghai_%2832208802494%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Shanghai+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Shanghai",
+        "url": "https://en.wikipedia.org/wiki/Shanghai"
+      },
+      {
+        "title": "Wikipedia: China",
+        "url": "https://en.wikipedia.org/wiki/China"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Shanghai travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Shanghai+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Shanghai",
+      "wiki_alt": "China",
+      "domain": null
+    }
+  },
+  {
+    "id": "079",
+    "rank": 79,
+    "title": "Xi'an",
+    "content": "The ancient Silk Road capital, guarding the Terracotta Army and a complete Ming dynasty city wall.",
+    "hook": "#79 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/City_wall_of_Xi%27an_51550-Xian_%2827959363326%29.jpg/960px-City_wall_of_Xi%27an_51550-Xian_%2827959363326%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Xi%27an+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Xi'an",
+        "url": "https://en.wikipedia.org/wiki/Xi%27an"
+      },
+      {
+        "title": "Wikipedia: China",
+        "url": "https://en.wikipedia.org/wiki/China"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Xi'an travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Xi%27an+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Xi'an",
+      "wiki_alt": "China",
+      "domain": null
+    }
+  },
+  {
+    "id": "080",
+    "rank": 80,
+    "title": "Taipei",
+    "content": "Night markets, hot springs, a thriving tea and café culture and the Taipei 101 tower.",
+    "hook": "#80 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Taipei_Skyline_2022.06.29.jpg/960px-Taipei_Skyline_2022.06.29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Taipei+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Taipei",
+        "url": "https://en.wikipedia.org/wiki/Taipei"
+      },
+      {
+        "title": "Wikipedia: Taiwan",
+        "url": "https://en.wikipedia.org/wiki/Taiwan"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Taipei travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Taipei+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Taipei",
+      "wiki_alt": "Taiwan",
+      "domain": null
+    }
+  },
+  {
+    "id": "081",
+    "rank": 81,
+    "title": "Osaka",
+    "content": "Japan's kitchen, famed for street food in Dotonbori and takoyaki, with a castle and a lively nightlife.",
+    "hook": "#81 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Osaka_Castle_03bs3200.jpg/960px-Osaka_Castle_03bs3200.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Osaka+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Osaka",
+        "url": "https://en.wikipedia.org/wiki/Osaka"
+      },
+      {
+        "title": "Wikipedia: Japan",
+        "url": "https://en.wikipedia.org/wiki/Japan"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Osaka travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Osaka+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Osaka",
+      "wiki_alt": "Japan",
+      "domain": null
+    }
+  },
+  {
+    "id": "082",
+    "rank": 82,
+    "title": "Hiroshima",
+    "content": "The Peace Memorial Park and Atomic Bomb Dome offer a moving history, with Miyajima island close by.",
+    "hook": "#82 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Atomic_Bomb_Dome_and_Motoyaso_River%2C_Hiroshima%2C_Northwest_view_20190417_1.jpg/960px-Atomic_Bomb_Dome_and_Motoyaso_River%2C_Hiroshima%2C_Northwest_view_20190417_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Hiroshima+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Hiroshima",
+        "url": "https://en.wikipedia.org/wiki/Hiroshima"
+      },
+      {
+        "title": "Wikipedia: Japan",
+        "url": "https://en.wikipedia.org/wiki/Japan"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Hiroshima travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Hiroshima+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Hiroshima",
+      "wiki_alt": "Japan",
+      "domain": null
+    }
+  },
+  {
+    "id": "083",
+    "rank": 83,
+    "title": "Kuala Lumpur",
+    "content": "The Petronas Towers rise above a multicultural food scene and the Batu Caves Hindu shrine.",
+    "hook": "#83 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bukit_Bintang_junction_in_2024_2.jpg/960px-Bukit_Bintang_junction_in_2024_2.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Kuala+Lumpur+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Kuala Lumpur",
+        "url": "https://en.wikipedia.org/wiki/Kuala_Lumpur"
+      },
+      {
+        "title": "Wikipedia: Malaysia",
+        "url": "https://en.wikipedia.org/wiki/Malaysia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Kuala Lumpur travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Kuala+Lumpur+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Kuala Lumpur",
+      "wiki_alt": "Malaysia",
+      "domain": null
+    }
+  },
+  {
+    "id": "084",
+    "rank": 84,
+    "title": "Chiang Mai",
+    "content": "A walled northern Thai city with over 300 temples, night bazaars, cooking schools and elephant sanctuaries.",
+    "hook": "#84 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/0020-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3.jpg/960px-0020-%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B4%E0%B8%87%E0%B8%AB%E0%B9%8C%E0%B8%A7%E0%B8%A3%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Chiang+Mai+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Chiang Mai",
+        "url": "https://en.wikipedia.org/wiki/Chiang_Mai"
+      },
+      {
+        "title": "Wikipedia: Thailand",
+        "url": "https://en.wikipedia.org/wiki/Thailand"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Chiang Mai travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Chiang+Mai+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Chiang Mai",
+      "wiki_alt": "Thailand",
+      "domain": null
+    }
+  },
+  {
+    "id": "085",
+    "rank": 85,
+    "title": "Ho Chi Minh City",
+    "content": "Scooters, French colonial landmarks, the War Remnants Museum and the Cu Chi tunnels in Vietnam's southern hub.",
+    "hook": "#85 of 100",
+    "tags": [
+      "Asia"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Ho_Chi_Minh_City%2C_City_Hall%2C_2020-01_CN-03.jpg/960px-Ho_Chi_Minh_City%2C_City_Hall%2C_2020-01_CN-03.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Ho+Chi+Minh+City+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Ho Chi Minh City",
+        "url": "https://en.wikipedia.org/wiki/Ho_Chi_Minh_City"
+      },
+      {
+        "title": "Wikipedia: Vietnam",
+        "url": "https://en.wikipedia.org/wiki/Vietnam"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Ho Chi Minh City travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Ho+Chi+Minh+City+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Ho Chi Minh City",
+      "wiki_alt": "Vietnam",
+      "domain": null
+    }
+  },
+  {
+    "id": "086",
+    "rank": 86,
+    "title": "Melbourne",
+    "content": "Laneway cafés, street art, sport and a leading coffee scene make this Australia's cultural capital.",
+    "hook": "#86 of 100",
+    "tags": [
+      "Oceania"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Melbourne_skyline_sor.jpg/960px-Melbourne_skyline_sor.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Melbourne+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Melbourne",
+        "url": "https://en.wikipedia.org/wiki/Melbourne"
+      },
+      {
+        "title": "Wikipedia: Australia",
+        "url": "https://en.wikipedia.org/wiki/Australia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Melbourne travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Melbourne+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Melbourne",
+      "wiki_alt": "Australia",
+      "domain": null
+    }
+  },
+  {
+    "id": "087",
+    "rank": 87,
+    "title": "Auckland",
+    "content": "Built across volcanic cones between two harbours, with islands, wineries and beaches within easy reach.",
+    "hook": "#87 of 100",
+    "tags": [
+      "Oceania"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Auckland_skyline_-_May_2024_%282%29.jpg/960px-Auckland_skyline_-_May_2024_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Auckland+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Auckland",
+        "url": "https://en.wikipedia.org/wiki/Auckland"
+      },
+      {
+        "title": "Wikipedia: New Zealand",
+        "url": "https://en.wikipedia.org/wiki/New_Zealand"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Auckland travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Auckland+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Auckland",
+      "wiki_alt": "New Zealand",
+      "domain": null
+    }
+  },
+  {
+    "id": "088",
+    "rank": 88,
+    "title": "Queenstown",
+    "content": "New Zealand's adventure capital on Lake Wakatipu, surrounded by mountains and gateway to Milford Sound.",
+    "hook": "#88 of 100",
+    "tags": [
+      "Oceania"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/960px-Flag_of_New_Zealand.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Queenstown+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Queenstown",
+        "url": "https://en.wikipedia.org/wiki/Queenstown"
+      },
+      {
+        "title": "Wikipedia: New Zealand",
+        "url": "https://en.wikipedia.org/wiki/New_Zealand"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Queenstown travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Queenstown+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Queenstown",
+      "wiki_alt": "New Zealand",
+      "domain": null
+    }
+  },
+  {
+    "id": "089",
+    "rank": 89,
+    "title": "Toronto",
+    "content": "The CN Tower, Kensington Market and a diverse food scene, with Niagara Falls an easy day trip away.",
+    "hook": "#89 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Toronto_Skyline_from_Snake_Island%2C_September_11_2026_%2801%29.jpg/960px-Toronto_Skyline_from_Snake_Island%2C_September_11_2026_%2801%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Toronto+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Toronto",
+        "url": "https://en.wikipedia.org/wiki/Toronto"
+      },
+      {
+        "title": "Wikipedia: Canada",
+        "url": "https://en.wikipedia.org/wiki/Canada"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Toronto travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Toronto+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Toronto",
+      "wiki_alt": "Canada",
+      "domain": null
+    }
+  },
+  {
+    "id": "090",
+    "rank": 90,
+    "title": "Montreal",
+    "content": "A French-speaking city of cobbled Old Montreal, festivals, bagels and a strong cafe culture.",
+    "hook": "#90 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Montreal%2C_Quebec_skyline.jpg/960px-Montreal%2C_Quebec_skyline.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Montreal+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Montreal",
+        "url": "https://en.wikipedia.org/wiki/Montreal"
+      },
+      {
+        "title": "Wikipedia: Canada",
+        "url": "https://en.wikipedia.org/wiki/Canada"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Montreal travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Montreal+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Montreal",
+      "wiki_alt": "Canada",
+      "domain": null
+    }
+  },
+  {
+    "id": "091",
+    "rank": 91,
+    "title": "Quebec City",
+    "content": "North America's only walled city north of Mexico, with the Château Frontenac and a fortified old quarter.",
+    "hook": "#91 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Quebec_City_skyline_from_L%C3%A9vis.jpg/960px-Quebec_City_skyline_from_L%C3%A9vis.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Quebec+City+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Quebec City",
+        "url": "https://en.wikipedia.org/wiki/Quebec_City"
+      },
+      {
+        "title": "Wikipedia: Canada",
+        "url": "https://en.wikipedia.org/wiki/Canada"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Quebec City travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Quebec+City+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Quebec City",
+      "wiki_alt": "Canada",
+      "domain": null
+    }
+  },
+  {
+    "id": "092",
+    "rank": 92,
+    "title": "Chicago",
+    "content": "Pioneering skyscraper architecture, deep-dish pizza, the Art Institute and a lakefront park system.",
+    "hook": "#92 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Chicago_River_ferry_b.jpg/960px-Chicago_River_ferry_b.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Chicago+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Chicago",
+        "url": "https://en.wikipedia.org/wiki/Chicago"
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Chicago travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Chicago+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Chicago",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "093",
+    "rank": 93,
+    "title": "New Orleans",
+    "content": "Jazz, Creole food and the French Quarter, plus Mardi Gras, in one of the most distinctive US cities.",
+    "hook": "#93 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/New_Orleans_from_the_Air_September_2019_-_Central_Business_District_Skyline_%28cropped%29.jpg/960px-New_Orleans_from_the_Air_September_2019_-_Central_Business_District_Skyline_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=New+Orleans+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: New Orleans",
+        "url": "https://en.wikipedia.org/wiki/New_Orleans"
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "New Orleans travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=New+Orleans+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "New Orleans",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "094",
+    "rank": 94,
+    "title": "Boston",
+    "content": "The Freedom Trail links colonial sites, and Harvard and MIT sit across the river in Cambridge.",
+    "hook": "#94 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/ISH_WC_Boston4.jpg/960px-ISH_WC_Boston4.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Boston+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Boston",
+        "url": "https://en.wikipedia.org/wiki/Boston"
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Boston travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Boston+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Boston",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "095",
+    "rank": 95,
+    "title": "Washington, D.C.",
+    "content": "Free Smithsonian museums, the National Mall, the White House and the Lincoln Memorial.",
+    "hook": "#95 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/12-07-13-washington-by-RalfR-08.jpg/960px-12-07-13-washington-by-RalfR-08.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Washington%2C+D.C.+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Washington, D.C.",
+        "url": "https://en.wikipedia.org/wiki/Washington,_D.C."
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Washington, D.C. travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Washington%2C+D.C.+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Washington, D.C.",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "096",
+    "rank": 96,
+    "title": "Los Angeles",
+    "content": "Hollywood, Venice Beach, Getty Center and Griffith Observatory spread across a car-led sprawl.",
+    "hook": "#96 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Hollywood_sign_%288485145044%29.jpg/960px-Hollywood_sign_%288485145044%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Los+Angeles+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Los Angeles",
+        "url": "https://en.wikipedia.org/wiki/Los_Angeles"
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Los Angeles travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Los+Angeles+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Los Angeles",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "097",
+    "rank": 97,
+    "title": "Las Vegas",
+    "content": "The Strip's themed casinos, shows and neon, with the Grand Canyon and Hoover Dam in reach.",
+    "hook": "#97 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Las_Vegas_from_above_%2840064746644%29.jpg/960px-Las_Vegas_from_above_%2840064746644%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Las+Vegas+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Las Vegas",
+        "url": "https://en.wikipedia.org/wiki/Las_Vegas"
+      },
+      {
+        "title": "Wikipedia: United States",
+        "url": "https://en.wikipedia.org/wiki/United_States"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Las Vegas travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Las+Vegas+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Las Vegas",
+      "wiki_alt": "United States",
+      "domain": null
+    }
+  },
+  {
+    "id": "098",
+    "rank": 98,
+    "title": "Havana",
+    "content": "Classic American cars, crumbling colonial grandeur, salsa and the Malecón seafront in the Cuban capital.",
+    "hook": "#98 of 100",
+    "tags": [
+      "North America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/DJI_0197_crp_wiki.jpg/960px-DJI_0197_crp_wiki.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Havana+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Havana",
+        "url": "https://en.wikipedia.org/wiki/Havana"
+      },
+      {
+        "title": "Wikipedia: Cuba",
+        "url": "https://en.wikipedia.org/wiki/Cuba"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Havana travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Havana+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Havana",
+      "wiki_alt": "Cuba",
+      "domain": null
+    }
+  },
+  {
+    "id": "099",
+    "rank": 99,
+    "title": "Cartagena",
+    "content": "A walled Caribbean port of pastel balconies and plazas, with warm evenings and colonial fortress San Felipe de Barajas.",
+    "hook": "#99 of 100",
+    "tags": [
+      "South America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Museo_Naval_del_Caribe.JPG/960px-Museo_Naval_del_Caribe.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Cartagena+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Cartagena, Colombia",
+        "url": "https://en.wikipedia.org/wiki/Cartagena,_Colombia"
+      },
+      {
+        "title": "Wikipedia: Colombia",
+        "url": "https://en.wikipedia.org/wiki/Colombia"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Cartagena travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Cartagena+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Cartagena, Colombia",
+      "wiki_alt": "Colombia",
+      "domain": null
+    }
+  },
+  {
+    "id": "100",
+    "rank": 100,
+    "title": "Lima",
+    "content": "Peru's capital is a leading South American food destination, with colonial centre and Pacific clifftop views.",
+    "hook": "#100 of 100",
+    "tags": [
+      "South America"
+    ],
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Bas%C3%ADlica_Catedral_Metropolitana_de_Lima_%28cropped%29.jpg/960px-Bas%C3%ADlica_Catedral_Metropolitana_de_Lima_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "cta": {
+      "type": "affiliate",
+      "label": "Get the travel guide",
+      "url": "https://www.amazon.co.uk/s?k=Lima+travel+guide&tag=fs08-21"
+    },
+    "sources": [
+      {
+        "title": "Wikipedia: Lima",
+        "url": "https://en.wikipedia.org/wiki/Lima"
+      },
+      {
+        "title": "Wikipedia: Peru",
+        "url": "https://en.wikipedia.org/wiki/Peru"
+      }
+    ],
+    "affiliate": [
+      {
+        "slot": "primary",
+        "programme": "amazon-uk",
+        "tracking_id": "fs08-21",
+        "query": "Lima travel guide",
+        "asin": null,
+        "url": "https://www.amazon.co.uk/s?k=Lima+travel+guide&tag=fs08-21",
+        "status": "search-link"
+      }
+    ],
+    "entity": {
+      "kind": "place",
+      "wiki": "Lima",
+      "wiki_alt": "Peru",
+      "domain": null
+    }
+  }
+]

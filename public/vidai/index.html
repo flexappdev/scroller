@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<base href="/vidai/">
+<title>vidai Scroller</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>body{margin:0}
+/* Layout: one full-height snap feed; a 9:16 stage centred on a blurred copy of its own poster; chrome floats over the stage. */
+/* Single dark look on purpose: it is a video wall, the frame must disappear. */
+:root {
+  --ink: #0b0a0f;          /* page ground, between cards */
+  --paper: #f4f2fb;        /* text on video */
+  --muted: #b6b1c8;        /* secondary text */
+  --glass: rgba(16, 14, 24, .62);
+  --line: rgba(244, 242, 251, .16);
+  --fresh: #ffb224;        /* the fresh batch: amber, like a tally light */
+  --fresh-ink: #1d1300;
+  --rec: #ff4d6d;          /* progress / live dot */
+  --f-display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --f-body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  color-scheme: dark;
+}
+[hidden] { display: none !important; }
+html, body { height: 100%; }
+body { background: var(--ink); color: var(--paper); font-family: var(--f-body); overflow: hidden; }
+body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ink); }
+button, select { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--fresh); outline-offset: 2px; }
+
+.top {
+  position: fixed; z-index: 5; left: 0; right: 0; top: env(safe-area-inset-top, 0px);
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  padding-top: 12px; padding-bottom: 12px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: linear-gradient(var(--ink), transparent); pointer-events: none;
+}
+.top > * { pointer-events: auto; }
+.brand { font-family: var(--f-display); font-weight: 800; font-size: 22px; letter-spacing: -.02em; display: flex; align-items: center; gap: 8px; }
+.brand i { width: 9px; height: 9px; border-radius: 50%; background: var(--rec); box-shadow: 0 0 12px var(--rec); }
+.seg { display: flex; background: var(--glass); border: 1px solid var(--line); border-radius: 999px; padding: 3px; -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.seg button { border: 0; background: none; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; cursor: pointer; color: var(--muted); }
+.seg button[aria-pressed="true"] { background: var(--paper); color: var(--ink); }
+.by { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.by select { background: var(--glass); border: 1px solid var(--line); border-radius: 8px; padding: 5px 8px; text-transform: none; letter-spacing: 0; font-size: 13px; }
+.count { margin-left: auto; font-family: var(--f-mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.feed { height: 100%; overflow-y: scroll; scroll-snap-type: y mandatory; overscroll-behavior: contain; scrollbar-width: none; }
+.feed::-webkit-scrollbar { display: none; }
+.card { position: relative; height: 100%; scroll-snap-align: start; scroll-snap-stop: always; display: grid; place-items: center; overflow: hidden; }
+.card .bg { position: absolute; top: -40px; right: -40px; bottom: -40px; left: -40px; background-size: cover; background-position: center; filter: blur(40px) brightness(.35) saturate(1.2); }
+.stage { position: relative; height: 100%; aspect-ratio: 9 / 16; max-width: 100%; background: #000; overflow: hidden; }
+@media (min-width: 700px) { .stage { height: calc(100% - 32px); border-radius: 18px; box-shadow: 0 30px 80px rgba(0,0,0,.6); } }
+.stage video { width: 100%; height: 100%; object-fit: cover; display: block; background: #000; }
+.shade { position: absolute; left: 0; right: 0; bottom: 0; height: 48%; background: linear-gradient(transparent, rgba(5,4,9,.88)); pointer-events: none; }
+
+.meta {
+  position: absolute; left: 0; right: 64px; bottom: 0; display: grid; gap: 8px;
+  padding-top: 0; padding-bottom: calc(22px + env(safe-area-inset-bottom, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: 0;
+}
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { font-family: var(--f-mono); font-size: 11px; font-weight: 600; letter-spacing: .04em; padding: 3px 8px; border-radius: 4px; background: var(--glass); border: 1px solid var(--line); text-transform: uppercase; }
+.tag.fresh { background: var(--fresh); color: var(--fresh-ink); border-color: var(--fresh); }
+.title { font-family: var(--f-display); font-weight: 800; font-size: clamp(22px, 5.4vh, 32px); line-height: 1.02; letter-spacing: -.02em; text-wrap: balance; margin: 0; }
+.sub { font-size: 14px; color: var(--muted); margin: 0; }
+.signals { display: flex; gap: 10px; flex-wrap: wrap; font-family: var(--f-mono); font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.signals b { color: var(--paper); font-weight: 600; }
+
+.rail { position: absolute; right: 10px; bottom: calc(26px + env(safe-area-inset-bottom, 0px)); display: grid; gap: 14px; justify-items: center; }
+.rbtn { width: 46px; height: 46px; border-radius: 50%; display: grid; place-items: center; background: var(--glass); border: 1px solid var(--line); cursor: pointer; text-decoration: none; color: var(--paper); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.rbtn svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.place { font-family: var(--f-display); font-weight: 800; font-size: 26px; line-height: 1; text-align: center; font-variant-numeric: tabular-nums; }
+.place small { display: block; font-family: var(--f-mono); font-size: 10px; font-weight: 400; color: var(--muted); margin-top: 3px; letter-spacing: .06em; }
+.card.is-fresh .place { color: var(--fresh); }
+
+.bar { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: var(--line); }
+.bar i { display: block; height: 100%; width: 0; background: var(--rec); }
+.paused::after { content: ""; position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; margin: -36px; border-radius: 50%; background: var(--glass) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 7l9 5-9 5z' fill='%23f4f2fb'/%3E%3C/svg%3E") center/38px no-repeat; pointer-events: none; }
+
+.divider { height: 100%; scroll-snap-align: start; display: grid; place-items: center; text-align: center; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.divider h2 { font-family: var(--f-display); font-size: clamp(28px, 7vw, 54px); font-weight: 800; letter-spacing: -.03em; margin: 0 0 8px; }
+.divider p { color: var(--muted); margin: 0; max-width: 34ch; }
+
+.hint { position: fixed; z-index: 6; left: 50%; top: calc(108px + env(safe-area-inset-top, 0px)); transform: translateX(-50%); background: var(--paper); color: var(--ink); padding: 8px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; border: 0; cursor: pointer; }
+
+dialog { background: #16141f; color: var(--paper); border: 1px solid var(--line); border-radius: 14px; max-width: min(460px, calc(100% - 32px)); padding: 20px; }
+dialog::backdrop { background: rgba(0,0,0,.6); }
+/* Older Safari has no <dialog>: show it as a fixed sheet instead. */
+dialog.sheet[open] { display: block; position: fixed; z-index: 20; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: calc(100% - 32px); max-height: 80%; overflow: auto; box-shadow: 0 0 0 100vmax rgba(0,0,0,.6); }
+/* Older Safari (before 15): no aspect-ratio and no flex gap. */
+@supports not (aspect-ratio: 1) {
+  .stage { width: 56.25vh; height: 100vh; }
+  @media (min-width: 700px) { .stage { width: calc((100vh - 32px) * .5625); height: calc(100vh - 32px); } }
+  .top > * { margin-right: 12px; }
+  .brand i { margin-right: 8px; }
+  .by select { margin-left: 6px; }
+  .tags .tag, .signals span { margin: 0 6px 6px 0; }
+  .meta > * + * { margin-top: 8px; }
+}
+dialog h3 { font-family: var(--f-display); margin: 0 0 10px; font-size: 20px; }
+dialog p, dialog li { color: var(--muted); font-size: 14px; line-height: 1.5; }
+dialog code { font-family: var(--f-mono); font-size: 12px; color: var(--paper); }
+dialog table { width: 100%; border-collapse: collapse; font-family: var(--f-mono); font-size: 12px; font-variant-numeric: tabular-nums; }
+dialog td { padding: 4px 0; border-bottom: 1px solid var(--line); }
+dialog td:last-child { text-align: right; color: var(--paper); }
+dialog form { margin-top: 14px; text-align: right; }
+dialog form button { background: var(--paper); color: var(--ink); border: 0; padding: 7px 16px; border-radius: 999px; font-weight: 600; cursor: pointer; }
+.empty { height: 100%; display: grid; place-items: center; color: var(--muted); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); text-align: center; }
+@media (prefers-reduced-motion: reduce) { .feed { scroll-behavior: auto; } }
+
+/* List view: every video, grouped by template. */
+.list { height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-top: calc(118px + env(safe-area-inset-top, 0px)); padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.filters { display: grid; gap: 10px; margin-bottom: 22px; }
+.chips { display: flex; flex-wrap: wrap; }
+.chip { margin: 0 6px 6px 0; border: 1px solid var(--line); background: var(--glass); color: var(--muted); border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.chip b { font-family: var(--f-mono); font-weight: 400; margin-left: 6px; font-size: 11px; }
+.chip[aria-pressed="true"] { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.group { margin-bottom: 30px; }
+.group h2 { font-family: var(--f-display); font-weight: 800; font-size: clamp(22px, 4vw, 30px); letter-spacing: -.02em; margin: 0 0 4px; }
+.group .sum { color: var(--muted); font-size: 13px; margin: 0 0 14px; font-family: var(--f-mono); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.tile { display: grid; grid-template-rows: auto auto; gap: 6px; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; color: var(--paper); min-width: 0; }
+.thumb { position: relative; width: 100%; padding-top: 177.78%; background: #000 center / cover no-repeat; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.thumb.a-1-1 { padding-top: 100%; }
+.thumb.a-16-9 { padding-top: 56.25%; }
+.thumb .badge { position: absolute; left: 6px; top: 6px; font-family: var(--f-mono); font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 4px; background: var(--glass); }
+.thumb .badge.fresh { background: var(--fresh); color: var(--fresh-ink); }
+.thumb .dur { position: absolute; right: 6px; bottom: 6px; font-family: var(--f-mono); font-size: 10px; padding: 2px 6px; border-radius: 4px; background: var(--glass); }
+.tile .t { font-size: 13px; font-weight: 600; line-height: 1.25; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.tile .m { font-family: var(--f-mono); font-size: 10px; color: var(--muted); }
+.card.a-wide .stage { aspect-ratio: auto; width: 100%; }
+.card.a-wide .stage video { object-fit: contain; }
+.back { position: fixed; z-index: 6; left: max(12px, env(safe-area-inset-left, 0px)); top: calc(108px + env(safe-area-inset-top, 0px)); background: var(--glass); color: var(--paper); border: 1px solid var(--line); padding: 7px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; cursor: pointer; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+</style>
+
+<header class="top">
+  <div class="brand"><i aria-hidden="true"></i>vidai</div>
+  <div class="seg" role="group" aria-label="Show">
+    <button type="button" id="show-all" aria-pressed="true">Feed</button>
+    <button type="button" id="show-fresh" aria-pressed="false">Fresh</button>
+    <button type="button" id="show-list" aria-pressed="false">List</button>
+  </div>
+  <label class="by" for="mode">Order
+    <select id="mode">
+      <option value="random">Random</option>
+      <option value="blend">Best (blend)</option>
+      <option value="pace">Visual pace</option>
+      <option value="engagement">Engagement</option>
+      <option value="picks">My picks</option>
+    </select>
+  </label>
+  <span class="count" id="count" aria-live="polite"></span>
+</header>
+
+<main class="feed" id="feed"><div class="empty">Loading the latest videos…</div></main>
+<main class="list" id="list" hidden></main>
+<button type="button" class="back" id="back" hidden>‹ List</button>
+<button type="button" class="hint" id="sound" hidden>Tap for sound</button>
+
+<dialog id="why">
+  <h3 id="why-title">Why this rank</h3>
+  <div id="why-body"></div>
+  <form method="dialog"><button>Close</button></form>
+</dialog>
+
+<script src="rank.js"></script>
+<script>
+(function () {
+  "use strict";
+  var feedEl = document.getElementById("feed");
+  var countEl = document.getElementById("count");
+  var modeEl = document.getElementById("mode");
+  var soundBtn = document.getElementById("sound");
+  var state = { feed: null, mode: "random", only: "all", muted: true, ranked: null, current: null, queue: null, seed: Math.floor(Math.random() * 4294967296) };
+  try { state.mode = localStorage.getItem("vidai.scroller.order") || "random"; } catch (e) {}
+  modeEl.value = state.mode;
+
+  var ICON = {
+    sound: '<svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>',
+    mute: '<svg viewBox="0 0 24 24"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>',
+    book: '<svg viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5 2.5 2.5 0 0 0 6.5 24H20"/></svg>',
+    info: '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>'
+  };
+
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function day(iso) {
+    var d = new Date(iso);
+    return isNaN(d) ? "" : d.toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+  }
+  function secs(n) { n = Math.round(n || 0); return Math.floor(n / 60) + ":" + String(n % 60).padStart(2, "0"); }
+
+  function render() {
+    if (state.queue) { renderQueue(); return; }
+    var cfg = Object.assign({}, state.feed.config || {}, { mode: VidaiRank.MODES[state.mode] && state.mode !== "blend" ? state.mode : undefined });
+    var fa = cfg.feedAspect;
+    var feedItems = state.feed.items.filter(function (i) { return !fa || !i.aspect || i.aspect === fa; });
+    var r = VidaiRank.rankFeed(feedItems, cfg);
+    state.ranked = r;
+    var rnd = state.mode === "random";
+    var list = state.only === "fresh" ? r.fresh : r.ordered;
+    if (rnd) list = VidaiRank.shuffle(list, state.seed);
+    feedEl.innerHTML = "";
+    if (!list.length) { feedEl.innerHTML = '<div class="empty">No videos yet. Run build_feed.py on a media folder.</div>'; return; }
+    var batchDay = r.fresh.length ? day(r.fresh[0].item.made) : "";
+    list.forEach(function (s, k) {
+      if (!rnd && k === r.fresh.length && state.only === "all") {
+        var dv = document.createElement("section");
+        dv.className = "divider";
+        dv.innerHTML = "<div><h2>That was the fresh batch</h2><p>" + r.fresh.length + " videos from " + esc(batchDay) + ", best first. Everything older follows, " + (r.config.rest === "best" ? "best first" : "newest first") + ".</p></div>";
+        feedEl.appendChild(dv);
+      }
+      feedEl.appendChild(card(s, r));
+    });
+    observe();
+  }
+
+  // Swipe feed of the List's videos, every cut, in list order, starting at the tapped one.
+  function renderQueue() {
+    var q = state.queue;
+    feedEl.innerHTML = "";
+    q.list.forEach(function (s) { feedEl.appendChild(card(s, q.r)); });
+    observe(feedEl.querySelectorAll(".card")[q.start]);
+  }
+
+  function card(s, r) {
+    var i = s.item;
+    var el = document.createElement("section");
+    el.className = "card" + (s.fresh ? " is-fresh" : "") + (i.aspect && i.aspect !== "9:16" ? " a-wide" : "");
+    el.dataset.place = s.place;
+    var poster = i.poster ? esc(i.poster) : "";
+    var tags = s.fresh
+      ? '<span class="tag fresh">Fresh · #' + s.place + " of " + r.fresh.length + "</span>"
+      : '<span class="tag">' + esc(day(i.made)) + "</span>";
+    tags += '<span class="tag">' + esc(i.kind) + "</span>";
+    if (i.aspect && i.aspect !== "9:16") tags += '<span class="tag">' + esc(i.aspect) + "</span>";
+    if (i.pick) tags += '<span class="tag">Pick</span>';
+    if (i.live) tags += '<span class="tag">On sale</span>';
+    (i.posted || []).forEach(function (p) { tags += '<span class="tag">' + esc(p) + "</span>"; });
+    var views = i.engagement && i.engagement.views;
+    el.innerHTML =
+      (poster ? '<div class="bg" style="background-image:url(\'' + poster + '\')"></div>' : "") +
+      '<div class="stage">' +
+        '<video playsinline muted loop preload="none"' + (poster ? ' poster="' + poster + '"' : "") + ' data-src="' + esc(i.src) + '"></video>' +
+        '<div class="shade"></div>' +
+        '<div class="meta"><div class="tags">' + tags + "</div>" +
+          '<h2 class="title">' + esc(i.title) + "</h2>" +
+          (i.subtitle ? '<p class="sub">' + esc(i.subtitle) + "</p>" : "") +
+          '<div class="signals"><span>score <b>' + Math.round(s.score * 100) + "</b></span><span>pace <b>" + Math.round(s.signals.pace * 100) + "</b></span><span>" + secs(i.duration) + "</span>" + (views ? "<span><b>" + views.toLocaleString("en-GB") + "</b> views</span>" : "") + "</div>" +
+        "</div>" +
+        '<div class="rail">' +
+          '<div class="place">' + s.place + "<small>RANK</small></div>" +
+          '<button type="button" class="rbtn" data-act="sound" aria-label="Toggle sound">' + (state.muted ? ICON.mute : ICON.sound) + "</button>" +
+          (i.link ? '<a class="rbtn" href="' + esc(i.link) + '" target="_blank" rel="noopener" aria-label="Open the book">' + ICON.book + "</a>" : "") +
+          '<button type="button" class="rbtn" data-act="why" aria-label="Why this rank">' + ICON.info + "</button>" +
+        "</div>" +
+        '<div class="bar"><i></i></div>' +
+      "</div>";
+    el._rank = s;
+    return el;
+  }
+
+  var io;
+  function observe(start) {
+    if (io) io.disconnect();
+    io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting && e.intersectionRatio > 0.6) activate(e.target); });
+    }, { root: feedEl, threshold: [0.6] });
+    feedEl.querySelectorAll(".card").forEach(function (c) { io.observe(c); });
+    var first = start || feedEl.querySelector(".card");
+    if (!first) return;
+    if (start) feedEl.scrollTop = start.offsetTop;
+    activate(first);
+  }
+
+  function load(c) {
+    if (!c || !c.classList.contains("card")) return;
+    var v = c.querySelector("video");
+    if (v && !v.src) { v.src = v.dataset.src; v.preload = "auto"; }
+  }
+
+  function activate(c) {
+    if (state.current === c) return;
+    state.current = c;
+    feedEl.querySelectorAll("video").forEach(function (v) { if (!c.contains(v)) v.pause(); });
+    load(c);
+    load(next(c, 1)); load(next(c, -1));
+    var v = c.querySelector("video");
+    v.muted = state.muted;
+    var p = v.play();
+    if (p && p.catch) p.catch(function () { c.querySelector(".stage").classList.add("paused"); });
+    var cards = feedEl.querySelectorAll(".card");
+    countEl.textContent = (Array.prototype.indexOf.call(cards, c) + 1) + " / " + cards.length + (state.queue ? " · " + state.queue.label : c._rank.fresh ? " · fresh" : "");
+  }
+
+  function next(c, dir) {
+    var n = dir > 0 ? c.nextElementSibling : c.previousElementSibling;
+    while (n && !n.classList.contains("card")) n = dir > 0 ? n.nextElementSibling : n.previousElementSibling;
+    return n;
+  }
+
+  function setMuted(m) {
+    state.muted = m;
+    soundBtn.hidden = !m;
+    feedEl.querySelectorAll("video").forEach(function (v) { v.muted = m; });
+    feedEl.querySelectorAll('[data-act="sound"]').forEach(function (b) { b.innerHTML = m ? ICON.mute : ICON.sound; });
+  }
+
+  function why(c) {
+    var s = c._rank, w = state.ranked.config.weights, i = s.item;
+    var rows = Object.keys(s.signals).map(function (k) {
+      var on = s.active.indexOf(k) >= 0;
+      return "<tr><td>" + k + " × " + (on ? w[k] : "0 (no data yet)") + "</td><td>" + Math.round(s.signals[k] * 100) + "</td></tr>";
+    }).join("");
+    document.getElementById("why-title").textContent = "#" + s.place + " " + i.title;
+    document.getElementById("why-body").innerHTML =
+      "<p>" + (s.fresh ? "In the fresh batch (" + esc(day(i.made)) + "), so it sits above every older video. Within the batch it is ordered by score." : "Older batch, " + esc(day(i.made)) + ". Shown after the fresh batch.") + "</p>" +
+      "<table>" + rows + "<tr><td><b>Score</b></td><td><b>" + Math.round(s.score * 100) + "</b></td></tr></table>" +
+      "<p>Signals are 0–100 across the whole feed. Change the weights, picks and batch gap in <code>plugins/vad-scroller/config.json</code>.</p>" +
+      "<p><code>" + esc(i.src) + "</code></p>";
+    var d = document.getElementById("why");
+    if (typeof d.showModal === "function") d.showModal();
+    else { d.classList.add("sheet"); d.setAttribute("open", ""); }
+  }
+
+  document.getElementById("why").addEventListener("click", function (e) {
+    var d = this;
+    if (e.target.closest("button") && typeof d.close !== "function") { e.preventDefault(); d.removeAttribute("open"); }
+  });
+  feedEl.addEventListener("click", function (e) {
+    var act = e.target.closest("[data-act]");
+    var c = e.target.closest(".card");
+    if (act && act.dataset.act === "sound") { setMuted(!state.muted); return; }
+    if (act && act.dataset.act === "why") { why(c); return; }
+    if (e.target.closest("a")) return;
+    if (c && e.target.closest(".stage")) {
+      var v = c.querySelector("video"), st = c.querySelector(".stage");
+      if (state.muted) { setMuted(false); v.play(); st.classList.remove("paused"); return; }
+      if (v.paused) { v.play(); st.classList.remove("paused"); } else { v.pause(); st.classList.add("paused"); }
+    }
+  });
+  feedEl.addEventListener("timeupdate", function (e) {
+    var v = e.target;
+    if (v.duration) v.closest(".stage").querySelector(".bar i").style.width = (100 * v.currentTime / v.duration) + "%";
+  }, true);
+  soundBtn.addEventListener("click", function () { setMuted(false); if (state.current) state.current.querySelector("video").play(); });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && state.queue) { only("list"); return; }
+    if (!listEl.hidden) return;
+    if (e.target.closest && e.target.closest("select, dialog")) return;
+    var c = state.current; if (!c) return;
+    var go = null;
+    if (e.key === "ArrowDown" || e.key === "j") go = next(c, 1);
+    if (e.key === "ArrowUp" || e.key === "k") go = next(c, -1);
+    if (e.key === "m") setMuted(!state.muted);
+    if (e.key === " ") { e.preventDefault(); c.querySelector(".stage").click(); }
+    if (go) { e.preventDefault(); go.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
+  });
+
+  modeEl.addEventListener("change", function () {
+    state.mode = modeEl.value;
+    try { localStorage.setItem("vidai.scroller.order", state.mode); } catch (e) {}
+    if (!listEl.hidden) { renderList(); return; }
+    state.current = null; render(); feedEl.scrollTop = 0;
+  });
+  function only(which) {
+    document.getElementById("show-all").setAttribute("aria-pressed", which === "all");
+    document.getElementById("show-fresh").setAttribute("aria-pressed", which === "fresh");
+    document.getElementById("show-list").setAttribute("aria-pressed", which === "list");
+    var isList = which === "list";
+    state.queue = null;
+    backBtn.hidden = true;
+    try { history.replaceState(null, "", isList ? "#list" : location.pathname); } catch (e) {}
+    listEl.hidden = !isList;
+    feedEl.hidden = isList;
+    soundBtn.hidden = isList || !state.muted;
+    if (isList) {
+      feedEl.querySelectorAll("video").forEach(function (v) { v.pause(); });
+      renderList();
+      listEl.scrollTop = listScroll;
+      countEl.textContent = state.feed.items.length + " videos";
+      return;
+    }
+    state.only = which;
+    state.current = null; render(); feedEl.scrollTop = 0;
+  }
+  document.getElementById("show-all").addEventListener("click", function () { only("all"); });
+  document.getElementById("show-fresh").addEventListener("click", function () { only("fresh"); });
+  document.getElementById("show-list").addEventListener("click", function () { only("list"); });
+
+  /* ---- List view ---- */
+  var listEl = document.getElementById("list");
+  var lf = { template: "all", aspect: "all" };
+  var listRank = null, listScroll = 0;
+  var backBtn = document.getElementById("back");
+  backBtn.addEventListener("click", function () { only("list"); });
+
+  function aspectClass(a) { return a === "1:1" ? " a-1-1" : a === "16:9" ? " a-16-9" : ""; }
+
+  function renderList() {
+    var cfg = Object.assign({}, state.feed.config || {}, { mode: VidaiRank.MODES[state.mode] && state.mode !== "blend" ? state.mode : undefined });
+    var r = VidaiRank.rankFeed(state.feed.items, cfg);
+    var rows = r.ordered;
+    listRank = { r: r, by: {} };
+    rows.forEach(function (s) { listRank.by[s.item.id] = s; });
+    var order = [];
+    var tcount = {}, acount = {};
+    rows.forEach(function (s) {
+      var t = s.item.template || s.item.kind, a = s.item.aspect || "other";
+      if (!(t in tcount)) { tcount[t] = 0; order.push(t); }
+      tcount[t]++;
+      acount[a] = (acount[a] || 0) + 1;
+    });
+    var tpl = state.feed.config && state.feed.config.templates;
+    if (tpl) {  // keep the configured template order, newest templates first otherwise
+      var known = Object.keys(tpl).map(function (k) { return tpl[k]; });
+      order.sort(function (x, y) {
+        var ix = known.indexOf(x), iy = known.indexOf(y);
+        return (ix < 0 ? 99 : ix) - (iy < 0 ? 99 : iy);
+      });
+    }
+    function chip(group, val, label, n) {
+      var on = lf[group] === val;
+      return '<button type="button" class="chip" data-f="' + group + '" data-v="' + esc(val) + '" aria-pressed="' + on + '">' + esc(label) + "<b>" + n + "</b></button>";
+    }
+    var html = '<div class="filters"><div class="chips" role="group" aria-label="Template">' + chip("template", "all", "All templates", rows.length);
+    order.forEach(function (t) { html += chip("template", t, t, tcount[t]); });
+    html += '</div><div class="chips" role="group" aria-label="Cut">' + chip("aspect", "all", "All cuts", rows.length);
+    ["9:16", "1:1", "16:9"].concat(Object.keys(acount).filter(function (a) { return ["9:16", "1:1", "16:9"].indexOf(a) < 0; }))
+      .forEach(function (a) { if (acount[a]) html += chip("aspect", a, a === "other" ? "Other" : a, acount[a]); });
+    html += "</div></div>";
+    order.forEach(function (t) {
+      if (lf.template !== "all" && lf.template !== t) return;
+      var g = rows.filter(function (s) { return (s.item.template || s.item.kind) === t && (lf.aspect === "all" || (s.item.aspect || "other") === lf.aspect); });
+      if (!g.length) return;
+      // Same cut together so each row of tiles lines up; rank order within a cut.
+      var cuts = ["9:16", "1:1", "16:9"];
+      g = g.map(function (x, k) { return [x, k]; }).sort(function (x, y) {
+        var cx = cuts.indexOf(x[0].item.aspect), cy = cuts.indexOf(y[0].item.aspect);
+        return (cx < 0 ? 9 : cx) - (cy < 0 ? 9 : cy) || x[1] - y[1];
+      }).map(function (x) { return x[0]; });
+      var books = {};
+      g.forEach(function (s) { books[s.item.slug] = 1; });
+      html += '<section class="group"><h2>' + esc(t) + '</h2><p class="sum">' + g.length + " videos · " + Object.keys(books).length + " titles</p><div class=\"tiles\">";
+      g.forEach(function (s) {
+        var i = s.item;
+        html += '<button type="button" class="tile" data-id="' + esc(i.id) + '">' +
+          '<span class="thumb' + aspectClass(i.aspect) + '"' + (i.poster ? ' style="background-image:url(\'' + esc(i.poster) + '\')"' : "") + ">" +
+          '<span class="badge' + (s.fresh ? " fresh" : "") + '">' + esc(i.aspect || "") + (s.fresh ? " · fresh" : "") + "</span>" +
+          '<span class="dur">' + secs(i.duration) + "</span></span>" +
+          '<span class="t">' + esc(i.title) + "</span>" +
+          '<span class="m">' + esc(day(i.made)) + " · score " + Math.round(s.score * 100) + "</span></button>";
+      });
+      html += "</div></section>";
+    });
+    listEl.innerHTML = html;
+  }
+
+  listEl.addEventListener("click", function (e) {
+    var c = e.target.closest(".chip");
+    if (c) { lf[c.dataset.f] = c.dataset.v; renderList(); return; }
+    var t = e.target.closest(".tile");
+    if (t) playFrom(t.dataset.id);
+  });
+
+  function playFrom(id) {
+    var list = [], start = 0;
+    listEl.querySelectorAll(".tile").forEach(function (el) {
+      var x = listRank.by[el.dataset.id];
+      if (!x) return;
+      if (el.dataset.id === id) start = list.length;
+      list.push(x);
+    });
+    if (!list.length) return;
+    listScroll = listEl.scrollTop;
+    state.queue = { list: list, start: start, r: listRank.r, label: lf.template === "all" ? "list" : lf.template };
+    listEl.hidden = true;
+    feedEl.hidden = false;
+    backBtn.hidden = false;
+    soundBtn.hidden = !state.muted;
+    state.current = null;
+    render();
+  }
+
+  fetch("feed.json", { cache: "no-cache" }).then(function (r) {
+    if (!r.ok) throw new Error(r.status);
+    return r.json();
+  }).then(function (f) {
+    state.feed = f;
+    soundBtn.hidden = false;
+    render();
+    if (location.hash === "#list") only("list");
+  }).catch(function () {
+    feedEl.innerHTML = '<div class="empty">feed.json is missing. Run <code>build_feed.py ROOT --install</code> and serve ROOT.</div>';
+  });
+})();
+</script>

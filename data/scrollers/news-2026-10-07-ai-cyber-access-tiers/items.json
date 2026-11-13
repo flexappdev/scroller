@@ -1,0 +1,514 @@
+[
+  {
+    "id": "001",
+    "title": "AI cyber power is now handed out in tiers",
+    "content": "On 6 October 2026 Anthropic expanded its Cyber Verification Program into three access tiers that decide how much offensive-security help Claude will give a verified organisation.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Defense, Red Team and Specialized",
+    "content": "The three tiers are Defense Access, Red Team Access and Specialized Access. Each adds permissions on top of the last.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "The public model still refuses",
+    "content": "In Anthropic's own tests, the generally available Claude Opus 5.5 blocked every one of the cyber tasks on the first prompt.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "Verified red teams get the full capability",
+    "content": "Under Red Team Access the model blocked nothing and completed 34 of 50 test tasks, which Anthropic says matches unrestricted performance.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "Glasswing folds into the programme",
+    "content": "Members of Project Glasswing, Anthropic's earlier Mythos security partnership, move automatically into the new Specialized Access tier without reapplying.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "The same week, AI-linked hacks hit Korean banks",
+    "content": "Shinhan Bank, KB Kookmin Bank and Hana Bank all disclosed customer data leaks around 2 October 2026, with analysts pointing to AI tooling in at least one attack.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "Seoul ordered emergency checks",
+    "content": "South Korea's Financial Services Commission held an emergency meeting and ordered checks of externally accessible banking systems.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "Wall Street is worried too",
+    "content": "JPMorgan Chase CEO Jamie Dimon told Bloomberg Television that \"risks from AI went up 10-fold after Mythos\", according to Fox News' live coverage on 6 October.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "The labs won't promise perfect safety",
+    "content": "At a New York City Council hearing on 6 October, OpenAI, Anthropic, Meta and Google representatives declined to guarantee their systems will always follow safeguards.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "The story in one line",
+    "content": "Frontier labs are rationing AI hacking ability by identity and purpose, just as evidence grows that attackers already have capable AI tools of their own.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "Defense Access: the entry tier",
+    "content": "Defense Access covers defensive work: security operations centres, incident response, malware reverse-engineering and vulnerability analysis.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "Who can get Defense Access",
+    "content": "Corporate security teams, nonprofits, universities, government bodies, critical infrastructure operators, smaller security firms, open-source maintainers and individual researchers with a disclosure record.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "Defense Access is fast",
+    "content": "Anthropic says it aims to review Defense Access applications in a few days.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "Red Team Access: authorised attacks",
+    "content": "Red Team Access adds authorised penetration testing and red-teaming on top of everything in Defense Access.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "Who can get Red Team Access",
+    "content": "In-house red teams, government red teams and professional security or penetration-testing firms. Individual researchers are not eligible.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "Red Team Access is slower",
+    "content": "Applications take a few weeks to review. Organisations get Defense Access while they wait.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "Some lines stay closed even for red teams",
+    "content": "Real-time blocks still stop actions that could cause physical harm or mass disruption, such as deploying ransomware or damaging physical systems.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "Specialized Access: safety-critical systems",
+    "content": "Specialized Access permits testing systems that affect public welfare: flight operating systems, power grids, telecom networks, interbank transfer infrastructure and government administrative networks.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "Specialized Access involves Washington",
+    "content": "Anthropic says Specialized Access applications are reviewed in collaboration with the US government and are limited to verified organisations.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Where the programme runs",
+    "content": "The programme is available on the Claude Platform, Google Cloud Vertex AI and Microsoft Foundry. On Amazon Bedrock it is limited to customers eligible for Enterprise Frontier Safeguards.",
+    "tags": [
+      "tiers"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "How Anthropic tested the tiers",
+    "content": "Anthropic ran 50 trials on Claude Opus 5.5: five attempts on each of 10 challenges from its CyScenarioBench evaluation.",
+    "tags": [
+      "test-results"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "General availability: everything blocked",
+    "content": "Without any verified access, the model blocked all tasks at the first prompt.",
+    "tags": [
+      "test-results"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "Defense Access: 46 of 50 blocked",
+    "content": "With Defense Access, 46 of the 50 offensive trials were still blocked and four succeeded.",
+    "tags": [
+      "test-results"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "Red Team Access: zero blocks",
+    "content": "With Red Team Access, no trials were blocked and 34 of 50 tasks were completed.",
+    "tags": [
+      "test-results"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "Why the tests matter",
+    "content": "The results show the tiers are enforced by the model's behaviour at run time, not just by a contract or a sign-up form.",
+    "tags": [
+      "test-results"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Defence is not a loophole",
+    "content": "Four successes out of 50 under Defense Access suggests the defensive tier leaks a little offensive capability, which Anthropic chose to publish.",
+    "tags": [
+      "test-results"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "129,000 vulnerabilities from Glasswing partners",
+    "content": "Anthropic says Project Glasswing partners found 129,000 verified vulnerabilities between April and July 2026.",
+    "tags": [
+      "glasswing-numbers"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "5,500 more in open source",
+    "content": "Anthropic's own open-source scanning added 5,500 verified vulnerabilities between April and October 2026.",
+    "tags": [
+      "glasswing-numbers"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "Over 33,000 critical or high",
+    "content": "Of the combined total, more than 33,000 were rated critical or high severity.",
+    "tags": [
+      "glasswing-numbers"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "The real count is likely higher",
+    "content": "Anthropic says the true impact is likely \"at least five times higher\" because it only collected partial data.",
+    "tags": [
+      "glasswing-numbers"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Months or years of work, compressed",
+    "content": "\"Several partners told us that the models had increased their rate of vulnerability finding by months or even years,\" Anthropic wrote.",
+    "tags": [
+      "glasswing-numbers"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Why Mythos was held back",
+    "content": "Bloomberg Law reported in July that Anthropic judged its Mythos model too good at finding software flaws to release safely to the general public.",
+    "tags": [
+      "glasswing-numbers"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "Dimon's earlier warning",
+    "content": "In July, Bloomberg Law reported Dimon calling broad Mythos access a \"real issue\" that government officials were addressing.",
+    "tags": [
+      "glasswing-numbers"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "Shinhan Bank: about 25,000 customers",
+    "content": "Shinhan Bank said roughly 25,000 customers' information was exposed through a mobile loan inquiry service.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "KB Kookmin: 119 customers",
+    "content": "KB Kookmin Bank said 119 customers' information was compromised through an employee mobile support system.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "Hana Bank: 89 customers",
+    "content": "Hana Bank said 89 customers' data was exposed through a sales support system, and that no financial transaction data leaked.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "BNK: outsourced staff records",
+    "content": "BNK Financial Group reported 11 records of outsourced employees leaked.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "What leaked",
+    "content": "Across the incidents, exposed data included names, resident registration numbers, addresses, phone numbers, employment details, annual income and loan limits.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "Core banking held",
+    "content": "All of the breaches went through loan inquiry or employee support systems rather than core banking platforms, the Korea Herald reported.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "ARTEX AI on a Shinhan-linked server",
+    "content": "Security analysts found traces of ARTEX AI, an AI penetration-testing tool, on a server linked to the Shinhan attack. Neither Shinhan nor regulators had officially confirmed its use.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "Experts suspect AI agents",
+    "content": "Yonhap, cited by Insurance Journal, reported experts believe attackers used sophisticated AI agents to probe for vulnerabilities.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "A Korean warning on shared code",
+    "content": "\"Source codes are being shared indiscriminately and used for malicious AI hacking attempts,\" said Mun Chong-hyun of security firm Genians.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "The president weighs in",
+    "content": "President Lee Jae Myung said: \"In some hacking incidents, signs have emerged of AI being used,\" according to Fox News' live coverage.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "Regulators move",
+    "content": "The Financial Supervisory Service launched an emergency on-site inspection, and the FSC demanded stronger authentication, tighter access controls and faster threat sharing.",
+    "tags": [
+      "korea-attacks"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "Europe's energy grid is exposed",
+    "content": "Dutch researchers found 8,547 internet-facing solar and wind systems across 35 European countries, with about 181 sites potentially fully compromisable, Fox News reported.",
+    "tags": [
+      "wider-picture"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "Labs: perfection isn't possible",
+    "content": "\"It is not possible for me to commit or guarantee that any technology is without risk,\" OpenAI's Morgan Dwyer told the New York City Council.",
+    "tags": [
+      "wider-picture"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "Anthropic: the science is unsettled",
+    "content": "\"Candidly, the science of doing this is fundamentally hard and unsettled,\" said Anthropic's Logan Graham at the same hearing.",
+    "tags": [
+      "wider-picture"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "The council's reply",
+    "content": "\"We're just asking for accountability, transparency and safety overall,\" said Council Speaker Julie Menin.",
+    "tags": [
+      "wider-picture"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "OpenAI adds a kill switch for agents",
+    "content": "OpenAI's Jason Kwon said the company added monitoring so staff can intervene immediately when models reach the internet unintentionally, and that it has already caught another incident.",
+    "tags": [
+      "wider-picture"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "South Korea goes sovereign",
+    "content": "South Korea plans a $3.5 billion programme from March 2027 to build its own frontier AI model, Fox News reported.",
+    "tags": [
+      "wider-picture"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "Identity becomes the safety control",
+    "content": "Instead of one model for everyone, the most capable cyber behaviour is unlocked by who you are and what you are verified to do.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "Defenders get a head start",
+    "content": "Tiered access aims to let banks, utilities and maintainers find flaws before attackers do, which is the case Glasswing's numbers are meant to support.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "Attackers don't apply for access",
+    "content": "The Korean bank incidents show attackers can use open-source or foreign AI tools that sit outside any lab's verification scheme.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "Loan portals are the soft target",
+    "content": "The Korean breaches hit peripheral systems such as loan inquiry tools, which suggests the edges of a network matter as much as its core.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "055",
+    "title": "Governments are in the loop",
+    "content": "US government involvement in Specialized Access makes national security reviews part of how commercial AI is distributed.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "056",
+    "title": "Cloud partners become gatekeepers",
+    "content": "Running the programme through Google, Microsoft and Amazon clouds means access rules travel with the platforms enterprises already use.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "057",
+    "title": "Disclosure is becoming the norm",
+    "content": "Anthropic published test numbers that show its own tier leaking, and OpenAI disclosed new agent incidents. Public reporting is turning into an expectation.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "058",
+    "title": "Will other labs copy the tiers?",
+    "content": "Watch whether OpenAI, Google and Meta adopt similar identity-based tiers for cyber capability.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "059",
+    "title": "Korea's official findings",
+    "content": "Watch for regulators to confirm or rule out ARTEX AI in the Shinhan breach.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "060",
+    "title": "More bank disclosures",
+    "content": "Watch whether other Korean financial firms report breaches as emergency checks continue.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "061",
+    "title": "Specialized Access approvals",
+    "content": "Watch for the first named grid, telecom or interbank operators to join the Specialized tier.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "062",
+    "title": "New York's next move",
+    "content": "Watch whether the New York City Council turns the hearing into AI safety rules.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "063",
+    "title": "Patch speed",
+    "content": "Watch whether the flood of AI-found vulnerabilities outpaces maintainers' ability to fix them.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "064",
+    "title": "Snapshot date",
+    "content": "This pack reflects sources opened on 7 October 2026. Later evidence should go in a new dated pack.",
+    "tags": [
+      "watch-next"
+    ]
+  }
+]
