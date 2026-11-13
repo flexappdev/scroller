@@ -1,0 +1,466 @@
+[
+  {
+    "id": "001",
+    "title": "Two AI launches on the same day",
+    "content": "On 7 October 2026 Anthropic released Claude Haiku 5.5 and OpenAI began rolling GPT-6 out across every ChatGPT tier.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Anthropic went cheap",
+    "content": "Anthropic called Haiku 5.5 \"the cheapest, fastest, and most capable small model we've ever released\".",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "About 75% cheaper on average",
+    "content": "Anthropic says Haiku 5.5 costs about 75% less than Haiku 4.5 on average: 90% less for requests up to 100,000 tokens and 50% less above that.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "OpenAI went visual",
+    "content": "OpenAI launched Intelligent UI, which puts interactive buttons, calculators, charts and editable graphs inside ChatGPT answers, TechCrunch reported.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "GPT-6 for paying users first",
+    "content": "GPT-6 with Intelligent UI rolled out globally to Pro, Plus, Business and Enterprise users on Wednesday 7 October.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "Free users the next day",
+    "content": "ChatGPT's free and lower-cost Go tiers get GPT-6 and Intelligent UI on Thursday 8 October, according to TechCrunch.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "The story in one line",
+    "content": "Capable AI is getting much cheaper for developers and far more widely available to consumers, both on the same day.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "Input: $0.10 per million tokens",
+    "content": "For requests up to 100,000 tokens, Haiku 5.5 input costs $0.10 per million tokens, against $1.00 for Haiku 4.5.",
+    "tags": [
+      "haiku-pricing"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "Output: $0.50 per million tokens",
+    "content": "Output costs $0.50 per million tokens up to 100,000 tokens, against $5.00 for Haiku 4.5.",
+    "tags": [
+      "haiku-pricing"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "Long requests cost more",
+    "content": "Above 100,000 tokens, Haiku 5.5 costs $0.50 per million input tokens and $2.50 per million output tokens.",
+    "tags": [
+      "haiku-pricing"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "Cache reads at a cent",
+    "content": "Cache reads cost $0.01 per million tokens for shorter requests and $0.05 above 100,000 tokens.",
+    "tags": [
+      "haiku-pricing"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "Compared with Sonnet 5.5",
+    "content": "Sonnet 5.5 costs $2.00 per million input tokens and $10.00 per million output tokens, so Haiku 5.5 is a fraction of the price for short requests.",
+    "tags": [
+      "haiku-pricing"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "Sonnet got cheaper too",
+    "content": "Anthropic cut Sonnet 5.5 cache reads by 50%, from $0.20 to $0.10 per million tokens, which it says lowers most agentic task costs by about 20%.",
+    "tags": [
+      "haiku-pricing"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "A catch: more tokens per task",
+    "content": "Haiku 5.5 uses the same updated tokenizer as Sonnet 5.5 and Opus 5.5, so Anthropic says it uses slightly more tokens per task.",
+    "tags": [
+      "haiku-pricing"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "Built for volume",
+    "content": "Anthropic aims Haiku 5.5 at high-volume, cost-sensitive work such as summarisation, compaction, database queries and classification.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "A subagent for bigger models",
+    "content": "Anthropic positions Haiku 5.5 as a subagent working alongside Opus 5.5 and Sonnet 5.5 on coding tasks.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "Also for support and browsing",
+    "content": "Anthropic says Haiku 5.5 suits live customer support and browser use.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "The fastest at standard speed",
+    "content": "Haiku 5.5 is Anthropic's fastest model at standard speed, though Opus models in Fast Mode are quicker.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "First Haiku with an effort dial",
+    "content": "Haiku 5.5 is the first Haiku-class model with adjustable effort, from Low through Med, High and Xhigh to Max.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Trade cost for intelligence",
+    "content": "The effort setting lets developers choose how much reasoning, and therefore cost, each request gets.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "Model ID",
+    "content": "Developers call it as claude-haiku-5-5.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "Available everywhere",
+    "content": "Haiku 5.5 is available on the Claude Platform, Amazon Web Services, Google Cloud and Microsoft Azure.",
+    "tags": [
+      "haiku-features"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "Office work: 1620 vs 735",
+    "content": "On GDPval-AA v2.1, Haiku 5.5 scored 1620, against 735 for Haiku 4.5 and 1840 for Sonnet 5.5.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "Beating GPT-6 Luna on office tasks",
+    "content": "Anthropic's table puts GPT-6 Luna at 1437 on GDPval-AA v2.1, below Haiku 5.5's 1620.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "Computer use: 72.4%",
+    "content": "On an offline subset of OSWorld 2.1, Haiku 5.5 scored 72.4%, up from 15.7% for Haiku 4.5. Anthropic lists GPT-6 Luna at 48.9%.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Humanity's Last Exam: 45.9%",
+    "content": "Without tools, Haiku 5.5 scored 45.9% on Humanity's Last Exam, against 10.2% for Haiku 4.5. With tools it scored 57.4%.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "Terminal-Bench 4.0: 39.2%",
+    "content": "Haiku 5.5 scored 39.2% on Terminal-Bench 4.0, against 0.0% for Haiku 4.5 and 70.6% for Sonnet 5.5.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "Coding: 46.4% on FrontierCode",
+    "content": "Haiku 5.5 scored 46.4% on FrontierCode 1.1 Main, against 42.4% for GPT-6 Luna in Anthropic's table.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "Charts: 46.4% without tools",
+    "content": "On Chartography without tools, Haiku 5.5 scored 46.4%, against 6.4% for Haiku 4.5.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "Still not a Sonnet",
+    "content": "Anthropic says Sonnet 5.5 and Opus 5.5 remain better for complex agentic coding.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Vendor numbers",
+    "content": "These are Anthropic's own reported results. Independent tests may differ.",
+    "tags": [
+      "benchmarks"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Asana: over 30% lower latency",
+    "content": "Asana reported over 30% lower latency on task completions and up to 2.5 times faster inference per agent turn.",
+    "tags": [
+      "customers"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "HubSpot: 92.8% on CRM tests",
+    "content": "HubSpot reported a 92.8% average over three runs on its CRM evaluation suite, the best it had seen from a smaller model.",
+    "tags": [
+      "customers"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "AlphaSense: 0.84 vs 0.76",
+    "content": "AlphaSense scored Haiku 5.5 at 0.84 against 0.76 for Haiku 4.5 across 400 queries.",
+    "tags": [
+      "customers"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "Box: 11 points higher",
+    "content": "Box said Haiku 5.5 scored 11 points higher than Haiku 4.5 at about half the latency.",
+    "tags": [
+      "customers"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "Rogo: quick lookups",
+    "content": "Rogo uses it as a subagent for jobs such as pulling segment revenue from a 10-K filing.",
+    "tags": [
+      "customers"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "Cognition: a sidekick in Devin",
+    "content": "Cognition added Haiku 5.5 as a sidekick in Devin Fusion, alongside Opus 5.5 as lead, to cut cost and latency.",
+    "tags": [
+      "customers"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "Fewer misaligned behaviours",
+    "content": "Anthropic reports major alignment improvements over Haiku 4.5, including less willingness to cooperate with misuse.",
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "Cyber safeguards in the middle",
+    "content": "Haiku 5.5's cyber safeguards are stricter than Haiku 4.5's but looser than Sonnet 5.5's. It allows more defensive work but blocks penetration testing.",
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "Biology rules match Sonnet",
+    "content": "Haiku 5.5 uses the same biology safeguards as Sonnet 5, Sonnet 5.5 and Opus 5.",
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "Verification still applies",
+    "content": "Organisations needing more can apply to Anthropic's Life Sciences and Cyber Verification Programs.",
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "ChatGPT stops being just text",
+    "content": "OpenAI product manager Aarush Selvan said ChatGPT \"has predominantly been a text-based interface\".",
+    "tags": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "Better answers aren't just words",
+    "content": "Selvan said the most helpful answers \"aren't just text\".",
+    "tags": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "The aeroplane wing demo",
+    "content": "In a demo, Selvan asked ChatGPT how an aeroplane wing generates lift, and it answered with several diagrams.",
+    "tags": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "Recipes, bikes and hikes",
+    "content": "OpenAI's examples included recipe visuals, a bicycle mechanics diagram, a multi-day hiking map and a personal savings calculator.",
+    "tags": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "You can turn it down",
+    "content": "Users can reduce the number of visuals in answers, like other ChatGPT personality settings.",
+    "tags": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "Aimed at learning",
+    "content": "OpenAI says the goal is to make \"learning complex topics easier\".",
+    "tags": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "GPT-6's long road",
+    "content": "Bloomberg reported on 3 September that GPT-6 Astra first went to approved business testers, with a guardrailed version planned for paid ChatGPT users.",
+    "tags": [
+      "chatgpt"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "API credits for subscribers",
+    "content": "Anthropic now gives Max 5x subscribers $100 a month in API credits, Max 20x subscribers $200 and Team plans up to $500, pooled across users.",
+    "tags": [
+      "developers"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "SDKs gain computer use",
+    "content": "Anthropic's Python and TypeScript SDKs now support computer use and browser use in beta.",
+    "tags": [
+      "developers"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "Small models do big jobs",
+    "content": "Haiku 5.5's scores show a small, cheap model now handling office and computer-use tasks that older small models failed.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "Agents get cheaper to run",
+    "content": "Multi-agent systems spend most tokens on routine subtasks, so a cheaper subagent cuts the cost of the whole system.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "The consumer front moves to interface",
+    "content": "OpenAI's bet is that how answers look and behave matters as much as the model behind them.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "Benchmarks name rivals",
+    "content": "Anthropic's launch table compares directly with GPT-6 Luna, a sign of how closely the labs now track each other.",
+    "tags": [
+      "implications"
+    ]
+  },
+  {
+    "id": "055",
+    "title": "Independent benchmarks",
+    "content": "Watch for third-party tests of Haiku 5.5 and GPT-6.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "056",
+    "title": "OpenAI's price response",
+    "content": "Watch whether OpenAI cuts prices on its small models in response.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "057",
+    "title": "Free-tier reception",
+    "content": "Watch how ChatGPT's free users take to Intelligent UI after the rollout.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "058",
+    "title": "Snapshot date",
+    "content": "This pack reflects sources opened on 8 October 2026. Later evidence should go in a new dated pack.",
+    "tags": [
+      "watch-next"
+    ]
+  }
+]

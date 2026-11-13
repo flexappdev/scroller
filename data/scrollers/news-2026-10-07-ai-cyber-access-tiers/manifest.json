@@ -1,0 +1,28 @@
+{
+  "slug": "news-2026-10-07-ai-cyber-access-tiers",
+  "name": "AI Cyber Power Gets Gatekept",
+  "tagline": "64 things to know about Anthropic's tiered Cyber Verification Program and the AI-linked hacks hitting Korean banks.",
+  "description": "A 64-card ScrollAI Daily snapshot on 7 October 2026 covering Anthropic's three-tier Cyber Verification Program, its test results and Glasswing vulnerability counts, the Korean bank breaches linked to AI tooling, and the wider push for AI accountability.",
+  "theme": "dark",
+  "accent": "#ec4899",
+  "updatedAt": "2026-10-07",
+  "snapshotTimezone": "Europe/London",
+  "defaultView": "scroller",
+  "verification": "source_checked",
+  "publishState": "ready_for_validation",
+  "pipeline": {
+    "page": "ready",
+    "list": "ready",
+    "verification": "ready",
+    "images": "queued",
+    "audio": "queued",
+    "video": "queued"
+  },
+  "navigation": [
+    "home",
+    "explore",
+    "create",
+    "saved",
+    "me"
+  ]
+}
