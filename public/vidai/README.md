@@ -5,3 +5,6 @@ Served at `/vidai` (rewrite in `next.config.ts`). Videos are 720p web copies.
 
 Refresh: run `build_feed.py <media> --install --base /vidai/`, transcode the
 videos to 720p, copy `index.html`, `rank.js`, `feed.json` and the media here.
+
+All 255 videos (every cut) are here. The feed plays 9:16 only; `/vidai/#list`
+lists every video grouped by template, with template and cut filters.

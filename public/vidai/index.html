@@ -24,6 +24,7 @@
   --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
   color-scheme: dark;
 }
+[hidden] { display: none !important; }
 html, body { height: 100%; }
 body { background: var(--ink); color: var(--paper); font-family: var(--f-body); overflow: hidden; }
 body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--ink); }
@@ -108,17 +109,43 @@ dialog form { margin-top: 14px; text-align: right; }
 dialog form button { background: var(--paper); color: var(--ink); border: 0; padding: 7px 16px; border-radius: 999px; font-weight: 600; cursor: pointer; }
 .empty { height: 100%; display: grid; place-items: center; color: var(--muted); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); text-align: center; }
 @media (prefers-reduced-motion: reduce) { .feed { scroll-behavior: auto; } }
+
+/* List view: every video, grouped by template. */
+.list { height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; padding-top: calc(118px + env(safe-area-inset-top, 0px)); padding-bottom: calc(40px + env(safe-area-inset-bottom, 0px)); padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.filters { display: grid; gap: 10px; margin-bottom: 22px; }
+.chips { display: flex; flex-wrap: wrap; }
+.chip { margin: 0 6px 6px 0; border: 1px solid var(--line); background: var(--glass); color: var(--muted); border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.chip b { font-family: var(--f-mono); font-weight: 400; margin-left: 6px; font-size: 11px; }
+.chip[aria-pressed="true"] { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.group { margin-bottom: 30px; }
+.group h2 { font-family: var(--f-display); font-weight: 800; font-size: clamp(22px, 4vw, 30px); letter-spacing: -.02em; margin: 0 0 4px; }
+.group .sum { color: var(--muted); font-size: 13px; margin: 0 0 14px; font-family: var(--f-mono); }
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.tile { display: grid; grid-template-rows: auto auto; gap: 6px; text-align: left; background: none; border: 0; padding: 0; cursor: pointer; color: var(--paper); min-width: 0; }
+.thumb { position: relative; width: 100%; padding-top: 177.78%; background: #000 center / cover no-repeat; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); }
+.thumb.a-1-1 { padding-top: 100%; }
+.thumb.a-16-9 { padding-top: 56.25%; }
+.thumb .badge { position: absolute; left: 6px; top: 6px; font-family: var(--f-mono); font-size: 10px; font-weight: 600; padding: 2px 6px; border-radius: 4px; background: var(--glass); }
+.thumb .badge.fresh { background: var(--fresh); color: var(--fresh-ink); }
+.thumb .dur { position: absolute; right: 6px; bottom: 6px; font-family: var(--f-mono); font-size: 10px; padding: 2px 6px; border-radius: 4px; background: var(--glass); }
+.tile .t { font-size: 13px; font-weight: 600; line-height: 1.25; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.tile .m { font-family: var(--f-mono); font-size: 10px; color: var(--muted); }
+.card.a-wide .stage { aspect-ratio: auto; width: 100%; }
+.card.a-wide .stage video { object-fit: contain; }
+.back { position: fixed; z-index: 6; left: max(12px, env(safe-area-inset-left, 0px)); top: calc(108px + env(safe-area-inset-top, 0px)); background: var(--glass); color: var(--paper); border: 1px solid var(--line); padding: 7px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; cursor: pointer; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
 </style>
 
 <header class="top">
   <div class="brand"><i aria-hidden="true"></i>vidai</div>
   <div class="seg" role="group" aria-label="Show">
-    <button type="button" id="show-all" aria-pressed="true">All</button>
+    <button type="button" id="show-all" aria-pressed="true">Feed</button>
     <button type="button" id="show-fresh" aria-pressed="false">Fresh</button>
+    <button type="button" id="show-list" aria-pressed="false">List</button>
   </div>
-  <label class="by" for="mode">Best by
+  <label class="by" for="mode">Order
     <select id="mode">
-      <option value="blend">Blend</option>
+      <option value="random">Random</option>
+      <option value="blend">Best (blend)</option>
       <option value="pace">Visual pace</option>
       <option value="engagement">Engagement</option>
       <option value="picks">My picks</option>
@@ -128,6 +155,8 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
 </header>
 
 <main class="feed" id="feed"><div class="empty">Loading the latest videos…</div></main>
+<main class="list" id="list" hidden></main>
+<button type="button" class="back" id="back" hidden>‹ List</button>
 <button type="button" class="hint" id="sound" hidden>Tap for sound</button>
 
 <dialog id="why">
@@ -144,8 +173,8 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
   var countEl = document.getElementById("count");
   var modeEl = document.getElementById("mode");
   var soundBtn = document.getElementById("sound");
-  var state = { feed: null, mode: "blend", only: "all", muted: true, ranked: null, current: null };
-  try { state.mode = localStorage.getItem("vidai.scroller.mode") || "blend"; } catch (e) {}
+  var state = { feed: null, mode: "random", only: "all", muted: true, ranked: null, current: null, queue: null, seed: Math.floor(Math.random() * 4294967296) };
+  try { state.mode = localStorage.getItem("vidai.scroller.order") || "random"; } catch (e) {}
   modeEl.value = state.mode;
 
   var ICON = {
@@ -163,15 +192,20 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
   function secs(n) { n = Math.round(n || 0); return Math.floor(n / 60) + ":" + String(n % 60).padStart(2, "0"); }
 
   function render() {
-    var cfg = Object.assign({}, state.feed.config || {}, { mode: state.mode === "blend" ? undefined : state.mode });
-    var r = VidaiRank.rankFeed(state.feed.items, cfg);
+    if (state.queue) { renderQueue(); return; }
+    var cfg = Object.assign({}, state.feed.config || {}, { mode: VidaiRank.MODES[state.mode] && state.mode !== "blend" ? state.mode : undefined });
+    var fa = cfg.feedAspect;
+    var feedItems = state.feed.items.filter(function (i) { return !fa || !i.aspect || i.aspect === fa; });
+    var r = VidaiRank.rankFeed(feedItems, cfg);
     state.ranked = r;
+    var rnd = state.mode === "random";
     var list = state.only === "fresh" ? r.fresh : r.ordered;
+    if (rnd) list = VidaiRank.shuffle(list, state.seed);
     feedEl.innerHTML = "";
     if (!list.length) { feedEl.innerHTML = '<div class="empty">No videos yet. Run build_feed.py on a media folder.</div>'; return; }
     var batchDay = r.fresh.length ? day(r.fresh[0].item.made) : "";
     list.forEach(function (s, k) {
-      if (k === r.fresh.length && state.only === "all") {
+      if (!rnd && k === r.fresh.length && state.only === "all") {
         var dv = document.createElement("section");
         dv.className = "divider";
         dv.innerHTML = "<div><h2>That was the fresh batch</h2><p>" + r.fresh.length + " videos from " + esc(batchDay) + ", best first. Everything older follows, " + (r.config.rest === "best" ? "best first" : "newest first") + ".</p></div>";
@@ -182,16 +216,25 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
     observe();
   }
 
+  // Swipe feed of the List's videos, every cut, in list order, starting at the tapped one.
+  function renderQueue() {
+    var q = state.queue;
+    feedEl.innerHTML = "";
+    q.list.forEach(function (s) { feedEl.appendChild(card(s, q.r)); });
+    observe(feedEl.querySelectorAll(".card")[q.start]);
+  }
+
   function card(s, r) {
     var i = s.item;
     var el = document.createElement("section");
-    el.className = "card" + (s.fresh ? " is-fresh" : "");
+    el.className = "card" + (s.fresh ? " is-fresh" : "") + (i.aspect && i.aspect !== "9:16" ? " a-wide" : "");
     el.dataset.place = s.place;
     var poster = i.poster ? esc(i.poster) : "";
     var tags = s.fresh
       ? '<span class="tag fresh">Fresh · #' + s.place + " of " + r.fresh.length + "</span>"
       : '<span class="tag">' + esc(day(i.made)) + "</span>";
     tags += '<span class="tag">' + esc(i.kind) + "</span>";
+    if (i.aspect && i.aspect !== "9:16") tags += '<span class="tag">' + esc(i.aspect) + "</span>";
     if (i.pick) tags += '<span class="tag">Pick</span>';
     if (i.live) tags += '<span class="tag">On sale</span>';
     (i.posted || []).forEach(function (p) { tags += '<span class="tag">' + esc(p) + "</span>"; });
@@ -219,14 +262,16 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
   }
 
   var io;
-  function observe() {
+  function observe(start) {
     if (io) io.disconnect();
     io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) { if (e.isIntersecting && e.intersectionRatio > 0.6) activate(e.target); });
     }, { root: feedEl, threshold: [0.6] });
     feedEl.querySelectorAll(".card").forEach(function (c) { io.observe(c); });
-    var first = feedEl.querySelector(".card");
-    if (first) activate(first);
+    var first = start || feedEl.querySelector(".card");
+    if (!first) return;
+    if (start) feedEl.scrollTop = start.offsetTop;
+    activate(first);
   }
 
   function load(c) {
@@ -246,7 +291,7 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
     var p = v.play();
     if (p && p.catch) p.catch(function () { c.querySelector(".stage").classList.add("paused"); });
     var cards = feedEl.querySelectorAll(".card");
-    countEl.textContent = (Array.prototype.indexOf.call(cards, c) + 1) + " / " + cards.length + (c._rank.fresh ? " · fresh" : "");
+    countEl.textContent = (Array.prototype.indexOf.call(cards, c) + 1) + " / " + cards.length + (state.queue ? " · " + state.queue.label : c._rank.fresh ? " · fresh" : "");
   }
 
   function next(c, dir) {
@@ -302,6 +347,8 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
   soundBtn.addEventListener("click", function () { setMuted(false); if (state.current) state.current.querySelector("video").play(); });
 
   document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && state.queue) { only("list"); return; }
+    if (!listEl.hidden) return;
     if (e.target.closest && e.target.closest("select, dialog")) return;
     var c = state.current; if (!c) return;
     var go = null;
@@ -314,17 +361,128 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
 
   modeEl.addEventListener("change", function () {
     state.mode = modeEl.value;
-    try { localStorage.setItem("vidai.scroller.mode", state.mode); } catch (e) {}
+    try { localStorage.setItem("vidai.scroller.order", state.mode); } catch (e) {}
+    if (!listEl.hidden) { renderList(); return; }
     state.current = null; render(); feedEl.scrollTop = 0;
   });
   function only(which) {
-    state.only = which;
     document.getElementById("show-all").setAttribute("aria-pressed", which === "all");
     document.getElementById("show-fresh").setAttribute("aria-pressed", which === "fresh");
+    document.getElementById("show-list").setAttribute("aria-pressed", which === "list");
+    var isList = which === "list";
+    state.queue = null;
+    backBtn.hidden = true;
+    try { history.replaceState(null, "", isList ? "#list" : location.pathname); } catch (e) {}
+    listEl.hidden = !isList;
+    feedEl.hidden = isList;
+    soundBtn.hidden = isList || !state.muted;
+    if (isList) {
+      feedEl.querySelectorAll("video").forEach(function (v) { v.pause(); });
+      renderList();
+      listEl.scrollTop = listScroll;
+      countEl.textContent = state.feed.items.length + " videos";
+      return;
+    }
+    state.only = which;
     state.current = null; render(); feedEl.scrollTop = 0;
   }
   document.getElementById("show-all").addEventListener("click", function () { only("all"); });
   document.getElementById("show-fresh").addEventListener("click", function () { only("fresh"); });
+  document.getElementById("show-list").addEventListener("click", function () { only("list"); });
+
+  /* ---- List view ---- */
+  var listEl = document.getElementById("list");
+  var lf = { template: "all", aspect: "all" };
+  var listRank = null, listScroll = 0;
+  var backBtn = document.getElementById("back");
+  backBtn.addEventListener("click", function () { only("list"); });
+
+  function aspectClass(a) { return a === "1:1" ? " a-1-1" : a === "16:9" ? " a-16-9" : ""; }
+
+  function renderList() {
+    var cfg = Object.assign({}, state.feed.config || {}, { mode: VidaiRank.MODES[state.mode] && state.mode !== "blend" ? state.mode : undefined });
+    var r = VidaiRank.rankFeed(state.feed.items, cfg);
+    var rows = r.ordered;
+    listRank = { r: r, by: {} };
+    rows.forEach(function (s) { listRank.by[s.item.id] = s; });
+    var order = [];
+    var tcount = {}, acount = {};
+    rows.forEach(function (s) {
+      var t = s.item.template || s.item.kind, a = s.item.aspect || "other";
+      if (!(t in tcount)) { tcount[t] = 0; order.push(t); }
+      tcount[t]++;
+      acount[a] = (acount[a] || 0) + 1;
+    });
+    var tpl = state.feed.config && state.feed.config.templates;
+    if (tpl) {  // keep the configured template order, newest templates first otherwise
+      var known = Object.keys(tpl).map(function (k) { return tpl[k]; });
+      order.sort(function (x, y) {
+        var ix = known.indexOf(x), iy = known.indexOf(y);
+        return (ix < 0 ? 99 : ix) - (iy < 0 ? 99 : iy);
+      });
+    }
+    function chip(group, val, label, n) {
+      var on = lf[group] === val;
+      return '<button type="button" class="chip" data-f="' + group + '" data-v="' + esc(val) + '" aria-pressed="' + on + '">' + esc(label) + "<b>" + n + "</b></button>";
+    }
+    var html = '<div class="filters"><div class="chips" role="group" aria-label="Template">' + chip("template", "all", "All templates", rows.length);
+    order.forEach(function (t) { html += chip("template", t, t, tcount[t]); });
+    html += '</div><div class="chips" role="group" aria-label="Cut">' + chip("aspect", "all", "All cuts", rows.length);
+    ["9:16", "1:1", "16:9"].concat(Object.keys(acount).filter(function (a) { return ["9:16", "1:1", "16:9"].indexOf(a) < 0; }))
+      .forEach(function (a) { if (acount[a]) html += chip("aspect", a, a === "other" ? "Other" : a, acount[a]); });
+    html += "</div></div>";
+    order.forEach(function (t) {
+      if (lf.template !== "all" && lf.template !== t) return;
+      var g = rows.filter(function (s) { return (s.item.template || s.item.kind) === t && (lf.aspect === "all" || (s.item.aspect || "other") === lf.aspect); });
+      if (!g.length) return;
+      // Same cut together so each row of tiles lines up; rank order within a cut.
+      var cuts = ["9:16", "1:1", "16:9"];
+      g = g.map(function (x, k) { return [x, k]; }).sort(function (x, y) {
+        var cx = cuts.indexOf(x[0].item.aspect), cy = cuts.indexOf(y[0].item.aspect);
+        return (cx < 0 ? 9 : cx) - (cy < 0 ? 9 : cy) || x[1] - y[1];
+      }).map(function (x) { return x[0]; });
+      var books = {};
+      g.forEach(function (s) { books[s.item.slug] = 1; });
+      html += '<section class="group"><h2>' + esc(t) + '</h2><p class="sum">' + g.length + " videos · " + Object.keys(books).length + " titles</p><div class=\"tiles\">";
+      g.forEach(function (s) {
+        var i = s.item;
+        html += '<button type="button" class="tile" data-id="' + esc(i.id) + '">' +
+          '<span class="thumb' + aspectClass(i.aspect) + '"' + (i.poster ? ' style="background-image:url(\'' + esc(i.poster) + '\')"' : "") + ">" +
+          '<span class="badge' + (s.fresh ? " fresh" : "") + '">' + esc(i.aspect || "") + (s.fresh ? " · fresh" : "") + "</span>" +
+          '<span class="dur">' + secs(i.duration) + "</span></span>" +
+          '<span class="t">' + esc(i.title) + "</span>" +
+          '<span class="m">' + esc(day(i.made)) + " · score " + Math.round(s.score * 100) + "</span></button>";
+      });
+      html += "</div></section>";
+    });
+    listEl.innerHTML = html;
+  }
+
+  listEl.addEventListener("click", function (e) {
+    var c = e.target.closest(".chip");
+    if (c) { lf[c.dataset.f] = c.dataset.v; renderList(); return; }
+    var t = e.target.closest(".tile");
+    if (t) playFrom(t.dataset.id);
+  });
+
+  function playFrom(id) {
+    var list = [], start = 0;
+    listEl.querySelectorAll(".tile").forEach(function (el) {
+      var x = listRank.by[el.dataset.id];
+      if (!x) return;
+      if (el.dataset.id === id) start = list.length;
+      list.push(x);
+    });
+    if (!list.length) return;
+    listScroll = listEl.scrollTop;
+    state.queue = { list: list, start: start, r: listRank.r, label: lf.template === "all" ? "list" : lf.template };
+    listEl.hidden = true;
+    feedEl.hidden = false;
+    backBtn.hidden = false;
+    soundBtn.hidden = !state.muted;
+    state.current = null;
+    render();
+  }
 
   fetch("feed.json", { cache: "no-cache" }).then(function (r) {
     if (!r.ok) throw new Error(r.status);
@@ -333,6 +491,7 @@ dialog form button { background: var(--paper); color: var(--ink); border: 0; pad
     state.feed = f;
     soundBtn.hidden = false;
     render();
+    if (location.hash === "#list") only("list");
   }).catch(function () {
     feedEl.innerHTML = '<div class="empty">feed.json is missing. Run <code>build_feed.py ROOT --install</code> and serve ROOT.</div>';
   });
