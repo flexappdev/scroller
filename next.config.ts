@@ -9,6 +9,11 @@ const SECURITY_HEADERS = [
 ];
 
 const nextConfig: NextConfig = {
+  // /random reads these at request time; make sure they ship with the functions.
+  outputFileTracingIncludes: {
+    "/random": ["./data/scrollers/**/*.json", "./data/wiki/*.json", "./data/books/channel.json", "./data/books/bookai/*.json"],
+    "/api/random": ["./data/scrollers/**/*.json", "./data/wiki/*.json", "./data/books/channel.json", "./data/books/bookai/*.json"],
+  },
   async rewrites() {
     return [
       { source: "/top100/cinema", destination: "/top100/cinema/index.html" },

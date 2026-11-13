@@ -17,7 +17,7 @@ type Item = {
 const ITEMS: Item[] = [
   { id: "home", label: "Home", href: "/", icon: Home, active: (p) => p === "/" || p.startsWith("/scroller/"), onClick: "home" },
   { id: "explore", label: "Explore", href: "/explore", icon: Compass, active: (p) => p === "/explore" || p.startsWith("/browse") },
-  { id: "random", label: "Random", icon: Dices, primary: true, active: () => false, onClick: "random" },
+  { id: "random", label: "Random", icon: Dices, primary: true, active: (p) => p === "/random", onClick: "random" },
   { id: "saved", label: "Saved", href: "/saved", icon: Bookmark, active: (p) => p === "/saved" },
   { id: "me", label: "Me", href: "/me", icon: UserRound, active: (p) => p === "/me" },
 ];
@@ -38,6 +38,11 @@ export default function StickyFooter() {
   function fireRandom() {
     if (typeof navigator !== "undefined" && typeof navigator.vibrate === "function") {
       try { navigator.vibrate(20); } catch {}
+    }
+    // Home and /random shuffle in place; everywhere else opens the random feed.
+    if (pathname !== "/" && pathname !== "/random") {
+      router.push("/random");
+      return;
     }
     window.dispatchEvent(new CustomEvent("scroller:random"));
   }
