@@ -1,0 +1,434 @@
+[
+  {
+    "id": "001",
+    "title": "AI agents are getting their own desks",
+    "content": "On 8 October 2026 Google Cloud announced a universal AI agent for the workplace at its Gemini at Work 2026 event.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "002",
+    "title": "A coworker, not just a chatbot",
+    "content": "Google says the agent can research, create documents, write code, coordinate other agents and complete tasks that last hours or days.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "003",
+    "title": "Its own email address",
+    "content": "A coworker agent can receive its own Workspace account, email address, calendar, Drive storage and a place in the company directory, VentureBeat reported.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "004",
+    "title": "Give it a goal, get finished work",
+    "content": "Users hand one agent an objective; it decides how to complete it, reaches into company systems and returns finished work.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "005",
+    "title": "It remembers who it is",
+    "content": "The agent keeps the same memory, business context and identity across apps and devices.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "006",
+    "title": "No new app to learn",
+    "content": "It works through Gemini Enterprise and familiar tools such as Google Workspace, Microsoft 365 and Slack rather than a dedicated app.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "007",
+    "title": "The story in one line",
+    "content": "The big AI platforms are turning agents into persistent digital colleagues with their own identities, inboxes and budgets.",
+    "tags": [
+      "what-happened"
+    ]
+  },
+  {
+    "id": "008",
+    "title": "Assistant or coworker",
+    "content": "Agents can be set up as personal assistants or as persistent coworkers with shared team responsibilities.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "009",
+    "title": "The Event Planner Agent",
+    "content": "VentureBeat's example is an \"Event Planner Agent\" with its own Workspace identity.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "010",
+    "title": "Assign work in chat",
+    "content": "Employees can give it work by mentioning it in Google Chat or asking it to edit a document.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "011",
+    "title": "Runs in the cloud",
+    "content": "Tasks run in the cloud, so you can start on one device and pick up on another without rebuilding context.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "012",
+    "title": "Multi-day workflows",
+    "content": "The agent can manage workflows over several days, run assignments in parallel and react to schedules or events.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "013",
+    "title": "It builds its own teams",
+    "content": "It can assemble temporary teams of specialised sub-agents and split responsibilities between them.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "014",
+    "title": "Everywhere you work",
+    "content": "One interface and API span the web, iOS, Android, Windows, Mac and command-line tools.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "015",
+    "title": "Not only Gemini",
+    "content": "The agent already supports Anthropic's Claude models, with more proprietary and open-weight models planned.",
+    "tags": [
+      "how-it-works"
+    ]
+  },
+  {
+    "id": "016",
+    "title": "Four kinds of memory",
+    "content": "Google describes session, semantic, procedural and episodic memory for its agents.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "017",
+    "title": "Session memory",
+    "content": "Session memory tracks the tasks currently in progress.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "018",
+    "title": "Semantic memory",
+    "content": "Semantic memory holds knowledge the agent builds up over time.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "019",
+    "title": "Procedural memory",
+    "content": "Procedural memory stores workflows the agent has learned.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "020",
+    "title": "Episodic memory",
+    "content": "Episodic memory records the agent's previous work.",
+    "tags": [
+      "memory"
+    ]
+  },
+  {
+    "id": "021",
+    "title": "A verifiable identity",
+    "content": "Each agent has a cryptographically attested identity, with permissions managed through enterprise security systems.",
+    "tags": [
+      "controls"
+    ]
+  },
+  {
+    "id": "022",
+    "title": "Everything is logged",
+    "content": "Agent actions go into audit logs, including when it creates isolated environments to run code.",
+    "tags": [
+      "controls"
+    ]
+  },
+  {
+    "id": "023",
+    "title": "An Agent Gateway",
+    "content": "An Agent Gateway enforces company-wide policies on how agents talk to outside systems.",
+    "tags": [
+      "controls"
+    ]
+  },
+  {
+    "id": "024",
+    "title": "Sandboxed code",
+    "content": "Sandboxing limits what code the agent can run.",
+    "tags": [
+      "controls"
+    ]
+  },
+  {
+    "id": "025",
+    "title": "Only what you share",
+    "content": "Coworker agents can reach only information team members explicitly share, rather than inheriting a person's full permissions.",
+    "tags": [
+      "controls"
+    ]
+  },
+  {
+    "id": "026",
+    "title": "Spending caps",
+    "content": "Project-level spending limits can pause an agent when its budget runs out, and costs can be charged to departments.",
+    "tags": [
+      "controls"
+    ]
+  },
+  {
+    "id": "027",
+    "title": "Smart Routing",
+    "content": "Smart Routing picks a model for each workload based on performance and cost.",
+    "tags": [
+      "controls"
+    ]
+  },
+  {
+    "id": "028",
+    "title": "Plugs into business software",
+    "content": "Supported tools include Salesforce, ServiceNow, Jira, Git, BigQuery, Snowflake, Databricks and Microsoft Teams.",
+    "tags": [
+      "integrations"
+    ]
+  },
+  {
+    "id": "029",
+    "title": "MCP built in",
+    "content": "Companies can connect Model Context Protocol servers and publish reusable instructions and tools to internal registries.",
+    "tags": [
+      "integrations"
+    ]
+  },
+  {
+    "id": "030",
+    "title": "Finance agents",
+    "content": "A Financial Services offering in preview includes more than 50 foundational skills and connects to FactSet and LSEG.",
+    "tags": [
+      "integrations"
+    ]
+  },
+  {
+    "id": "031",
+    "title": "Legal agents",
+    "content": "The Legal offering supports NetDocuments and iManage, with a focus on document permissions and confidentiality.",
+    "tags": [
+      "integrations"
+    ]
+  },
+  {
+    "id": "032",
+    "title": "Most of the Fortune 100",
+    "content": "Google says nearly 90% of Fortune 100 companies use Gemini Enterprise.",
+    "tags": [
+      "adoption"
+    ]
+  },
+  {
+    "id": "033",
+    "title": "BNP Paribas: 65,000 staff",
+    "content": "BNP Paribas is rolling Gemini Enterprise out to more than 65,000 employees.",
+    "tags": [
+      "adoption"
+    ]
+  },
+  {
+    "id": "034",
+    "title": "SOMPO: 10,000 agents",
+    "content": "Japanese insurer SOMPO has built more than 10,000 custom agents.",
+    "tags": [
+      "adoption"
+    ]
+  },
+  {
+    "id": "035",
+    "title": "Those numbers are for the old product",
+    "content": "These figures describe the existing Gemini Enterprise product, not necessarily the new universal agent.",
+    "tags": [
+      "adoption"
+    ]
+  },
+  {
+    "id": "036",
+    "title": "No price yet",
+    "content": "Google has not announced a separate price for the universal agent.",
+    "tags": [
+      "unknowns"
+    ]
+  },
+  {
+    "id": "037",
+    "title": "No launch date",
+    "content": "Google has not given a general-availability date or said whether existing subscriptions include it.",
+    "tags": [
+      "unknowns"
+    ]
+  },
+  {
+    "id": "038",
+    "title": "Licensing questions",
+    "content": "Google has not said how agent accounts will be provisioned or licensed, or whether every agent needs its own Workspace seat.",
+    "tags": [
+      "unknowns"
+    ]
+  },
+  {
+    "id": "039",
+    "title": "No independent tests",
+    "content": "Google has not published independent benchmarks of how reliably the agent handles long, cross-application tasks.",
+    "tags": [
+      "unknowns"
+    ]
+  },
+  {
+    "id": "040",
+    "title": "Microsoft Autopilot",
+    "content": "On 25 September Microsoft announced Copilot Autopilot, which runs in the background with its own identity, memory and workspace. It is in private preview.",
+    "tags": [
+      "rivals"
+    ]
+  },
+  {
+    "id": "041",
+    "title": "OpenAI Dots",
+    "content": "At DevDay on 29 September OpenAI introduced Dots, always-on agents that work across connected apps.",
+    "tags": [
+      "rivals"
+    ]
+  },
+  {
+    "id": "042",
+    "title": "Anthropic in Google Docs",
+    "content": "On 6 October Anthropic launched Claude integration with Google Docs, Sheets and Slides.",
+    "tags": [
+      "rivals"
+    ]
+  },
+  {
+    "id": "043",
+    "title": "Grok Team Bots",
+    "content": "SpaceXAI's Team Bots, persistent agents with their own cloud computers, entered public beta on 28 September.",
+    "tags": [
+      "rivals"
+    ]
+  },
+  {
+    "id": "044",
+    "title": "Everyone wants the always-on agent",
+    "content": "Within about two weeks, Microsoft, OpenAI and Google all announced persistent agents with their own identity or memory.",
+    "tags": [
+      "rivals"
+    ]
+  },
+  {
+    "id": "045",
+    "title": "Agents are targets too",
+    "content": "At Pwn2Own Ireland 2026, researchers exploited 32 unique zero-days and earned $388,500 on the opening day, Cyber Security News reported.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "046",
+    "title": "OpenAI Codex fell",
+    "content": "Ikotas Labs exploited OpenAI Codex with a single argument-injection flaw and earned $40,000.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "047",
+    "title": "LiteLLM fell twice",
+    "content": "Taisic Yun of Xint got a reverse shell on LiteLLM for $40,000, and Out of Bounds exploited it through four bugs for $15,000.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "048",
+    "title": "An AI database too",
+    "content": "VinSOC chained five flaws in Oracle's Autonomous AI Database for $40,000.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "049",
+    "title": "Contest, not attacks",
+    "content": "These demonstrations took place under contest rules and are not evidence of attacks on real users.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "050",
+    "title": "Why identity matters",
+    "content": "An agent with its own inbox and file access is a new account to secure, which is why attested identity, audit logs and gateways feature so heavily.",
+    "tags": [
+      "security"
+    ]
+  },
+  {
+    "id": "051",
+    "title": "Pricing and seats",
+    "content": "Watch how Google prices agent accounts and whether they count as Workspace seats.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "052",
+    "title": "Real-world reliability",
+    "content": "Watch for independent tests of multi-day agent work.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "053",
+    "title": "Admin controls",
+    "content": "Watch whether admins can switch individual Workspace features on or off for agents.",
+    "tags": [
+      "watch-next"
+    ]
+  },
+  {
+    "id": "054",
+    "title": "Snapshot date",
+    "content": "This pack reflects sources opened on 9 October 2026. Later evidence should go in a new dated pack.",
+    "tags": [
+      "watch-next"
+    ]
+  }
+]
