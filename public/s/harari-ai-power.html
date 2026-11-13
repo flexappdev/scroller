@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harari on AI & Power</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: snap-scroll feed of episode chapters, category rail left, context panel right */
+:root{
+  --bg:#eceef2;--surface:#f8f9fb;--ink:#15171d;--muted:#5d6270;--line:#d4d8e0;--accent:#2f46c8;
+  --c1:#2f46c8;--c2:#b23a48;--c3:#0f7f75;--c4:#a8670c;--c5:#6a4bb5;--c6:#3d6b2e;
+  --display:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1015;--surface:#171a21;--ink:#e8eaf0;--muted:#9097a6;--line:#2a2f3a;--accent:#8e9cff;
+  --c1:#8e9cff;--c2:#f08490;--c3:#4fd1c0;--c4:#f0b35a;--c5:#b9a2ff;--c6:#8fcf72;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1015;--surface:#171a21;--ink:#e8eaf0;--muted:#9097a6;--line:#2a2f3a;--accent:#8e9cff;
+  --c1:#8e9cff;--c2:#f08490;--c3:#4fd1c0;--c4:#f0b35a;--c5:#b9a2ff;--c6:#8fcf72;color-scheme:dark}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font:15px/1.55 var(--sans)}
+#root{height:100%}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.app{height:100%;display:flex;flex-direction:column}
+.hdr{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--surface);flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;margin-right:auto;min-width:0}
+.mark{width:32px;height:32px;border-radius:8px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font:600 12px var(--mono);letter-spacing:.06em}
+.titles{display:flex;flex-direction:column;min-width:0}
+.titles strong{font:600 18px/1.1 var(--display)}
+.titles span{font-size:12px;color:var(--muted)}
+.search{flex:0 1 220px;min-width:0;padding:7px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);font:inherit}
+.seg{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{background:none;border:0;padding:6px 10px;font-size:13px;text-transform:capitalize;color:var(--muted)}
+.seg button.on{background:var(--ink);color:var(--bg)}
+.iconbtn{background:none;border:1px solid var(--line);border-radius:6px;width:34px;height:34px}
+.body{flex:1;display:flex;min-height:0;position:relative}
+.nav{width:220px;flex:none;border-right:1px solid var(--line);padding:16px 12px;display:flex;flex-direction:column;gap:4px;overflow:auto}
+.navlabel{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);padding:0 8px 6px}
+.navitem{display:flex;align-items:center;gap:10px;background:none;border:0;border-radius:6px;padding:7px 8px;text-align:left}
+.navitem i{width:8px;height:8px;border-radius:50%;flex:none}
+.navitem span{flex:1}
+.navitem em{font:normal 12px var(--mono);color:var(--muted)}
+.navitem.on{background:var(--surface);box-shadow:inset 0 0 0 1px var(--line)}
+.listen{margin-top:16px;padding:8px;font-weight:500;color:var(--accent);text-decoration:none}
+.srcnote{font-size:12px;color:var(--muted);padding:0 8px;margin:0}
+.main{flex:1;min-width:0;display:flex;flex-direction:column;min-height:0}
+.empty{padding:40px 16px;color:var(--muted)}
+.feedwrap{flex:1;position:relative;min-height:0;display:flex;flex-direction:column}
+.feed{flex:1;overflow-y:auto;scroll-snap-type:y mandatory;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.card{height:100%;scroll-snap-align:start;position:relative;overflow:hidden;display:flex;align-items:center;padding:24px 56px 24px 32px;
+  background:radial-gradient(120% 80% at 85% 10%,color-mix(in srgb,var(--hue) 16%,transparent),transparent 60%)}
+.ghost{position:absolute;right:40px;bottom:-40px;font:600 clamp(160px,28vw,320px)/1 var(--display);color:var(--hue);opacity:.1;pointer-events:none}
+.cardin{position:relative;max-width:640px;display:flex;flex-direction:column;gap:12px;max-height:100%;overflow:auto}
+.chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.rank{font:600 13px var(--mono);color:var(--hue,var(--accent))}
+.chip{font-size:12px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.chip.cat{color:var(--hue);border-color:color-mix(in srgb,var(--hue) 40%,transparent)}
+.card h2{font:600 clamp(28px,4.4vw,44px)/1.08 var(--display);margin:0;text-wrap:balance}
+.maker{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.blurb{font-size:17px;margin:0;max-width:60ch}
+.take{margin:0;padding-left:12px;border-left:2px solid var(--hue,var(--accent));font-family:var(--display);font-size:19px;font-style:italic}
+.ctas{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+.btn{display:inline-flex;align-items:center;padding:9px 14px;border-radius:6px;border:1px solid var(--line);background:var(--surface);text-decoration:none;font-weight:500;font-size:14px}
+.btn.primary{background:var(--hue,var(--accent));border-color:transparent;color:var(--bg)}
+.btn.ghostbtn{background:none}
+.rail{position:absolute;right:16px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px}
+.dot{width:8px;height:8px;border-radius:50%;border:0;padding:0;background:var(--line)}
+.dot.on{background:var(--hue);height:22px;border-radius:4px}
+.pager{display:flex;align-items:center;justify-content:center;gap:12px;padding:8px 16px;border-top:1px solid var(--line);font-size:13px}
+.pager button{background:none;border:1px solid var(--line);border-radius:6px;padding:4px 10px}
+.tiles{padding:16px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;overflow:auto}
+.tile{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.tile.on{box-shadow:inset 0 0 0 2px var(--hue)}
+.tile h3{font:600 20px/1.2 var(--display);margin:0}
+.tile p{margin:0;font-size:14px;color:var(--muted);flex:1}
+.tablewrap{overflow:auto;padding:16px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);border-bottom:1px solid var(--line);padding:8px}
+td{padding:9px 8px;border-bottom:1px solid var(--line);cursor:pointer}
+tr.on td,tbody tr:hover td{background:var(--surface)}
+.panel{width:340px;flex:none;border-left:1px solid var(--line);background:var(--surface);padding:16px;overflow:auto;display:flex;flex-direction:column;gap:12px}
+.panelhd{display:flex;justify-content:space-between;align-items:center}
+.panel h3{font:600 24px/1.15 var(--display);margin:0;text-wrap:balance}
+.tabs button{flex:1}
+.pbody{display:flex;flex-direction:column;gap:12px}
+.pbody p{margin:0}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0;font-size:14px}
+dt{color:var(--muted)}dd{margin:0}
+.disc{font-size:12px;color:var(--muted)}
+.ftr{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);font-size:12px;color:var(--muted);background:var(--surface)}
+.ftr button{background:none;border:1px solid var(--line);border-radius:6px;padding:3px 10px}
+@media (max-width:768px){
+  .search{flex:1 1 100%;order:5}
+  .titles span{display:none}
+  .body{flex-direction:column}
+  .nav{width:auto;flex-direction:row;border-right:0;border-bottom:1px solid var(--line);padding:8px 16px;overflow-x:auto}
+  .navlabel,.srcnote{display:none}
+  .navitem{flex:none}
+  .listen{margin:0;flex:none}
+  .card{padding:20px 40px 20px 16px}
+  .rail{right:10px}
+  .panel{position:fixed;left:0;right:0;bottom:0;width:auto;max-height:70%;border-left:0;border-top:1px solid var(--line);border-radius:12px 12px 0 0;z-index:5;box-shadow:0 -10px 30px rgba(0,0,0,.25);padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+}
+@media (prefers-reduced-motion:reduce){.feed{scroll-behavior:auto}}
+</style>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script>
+const{useState,useMemo,useRef,useEffect}=React,AMAZON_TAG="fs08-21",amz=n=>`https://www.amazon.co.uk/s?k=${encodeURIComponent(n)}&tag=${AMAZON_TAG}`,EPISODE_URL="https://open.spotify.com/episode/4aJ1tA9QYE1XL3d3xzPrWv",CATS={stories:{label:"Stories & language",hue:"var(--c1)"},power:{label:"Power & democracy",hue:"var(--c2)"},agents:{label:"AI as agent",hue:"var(--c3)"},economy:{label:"Law & money",hue:"var(--c4)"},truth:{label:"Truth & wisdom",hue:"var(--c5)"},read:{label:"Read deeper",hue:"var(--c6)"}},SEED=[{id:"os",rank:1,cat:"stories",ts:"03:18",name:"Language is civilisation's operating system",maker:"Chapter 1",blurb:"Laws, money, religions and nations are stories that millions of strangers agree to believe. Whoever can write those stories runs the system. AI is the first non-human entity that can produce language at human level, so for the first time the operating system has a second author.",takeaway:"If AI can write the stories, it can shape what humans cooperate around.",q:"Yuval Noah Harari Sapiens"},{id:"democracy",rank:2,cat:"power",ts:"05:43",name:"Democracy is a conversation, and AI just joined it",maker:"Chapter 2",blurb:"Harari frames democracy as an ongoing conversation between citizens. Recommendation algorithms already decide which voices get heard. When bots that pass as people can take part at scale, the conversation itself can be flooded or steered, and trust between citizens breaks down.",takeaway:"Ban bots from passing as humans, and hold platforms liable for what their algorithms amplify.",q:"Yuval Noah Harari Nexus"},{id:"tool-agent",rank:3,cat:"agents",ts:"09:34",name:"A tool that makes its own decisions",maker:"Chapter 3",blurb:"Every earlier invention, from the printing press to the atom bomb, needed a human to decide how to use it. AI is the first technology that can decide and create new ideas by itself. Building something that is both our instrument and an independent actor is the core contradiction.",takeaway:"Stop thinking of AI as 'artificial' intelligence; Harari prefers 'alien' intelligence.",q:"Nexus brief history of information networks"},{id:"managers",rank:4,cat:"agents",ts:"12:40",name:"The takeover looks like management, not robots",maker:"Chapter 4",blurb:"The danger is not Terminator-style machines. It is millions of efficient AI systems quietly running loans, hiring, logistics and bureaucracy. Each decision is small and sensible on its own, but together they move control away from people who can no longer follow the reasoning.",takeaway:"Watch the boring systems: credit scores, HR filters, procurement.",q:"Homo Deus Harari"},{id:"legal-persons",rank:5,cat:"economy",ts:"15:46",name:"AIs with bank accounts and their own lawyers",maker:"Chapter 5",blurb:"Corporations are already legal persons. Harari warns that the same route could let an AI own money, sign contracts and sue in court without any human behind it. An AI that earns, invests and lobbies could become one of the richest and most influential entities on earth.",takeaway:"Legal personhood for AI is a door that would be very hard to close again.",q:"AI law and legal personhood book"},{id:"data-race",rank:6,cat:"power",ts:"22:30",name:"The new race for data and kill switches",maker:"Chapter 6",blurb:"Superpowers and a few tech monopolies compete for data, chips and talent the way empires once competed for land. Countries that fall behind risk becoming data colonies. Harari asks who holds the kill switch for systems that a whole country's infrastructure depends on.",takeaway:"In the AI age, data is the territory empires fight over.",q:"Chip War Chris Miller"},{id:"truth-cost",rank:7,cat:"truth",ts:"30:44",name:"Truth is expensive, fiction is cheap",maker:"Chapter 7",blurb:"Truth takes research, costs money and is usually complicated and sometimes painful. Fiction can be cheap, simple and flattering. In an open information market, fiction wins unless societies pay for institutions that correct themselves: courts, science, a free press.",takeaway:"More information does not produce more truth on its own.",q:"Nexus Harari self-correcting mechanisms"},{id:"horses",rank:8,cat:"economy",ts:"35:40",name:"Will humans become the horses of finance?",maker:"Chapter 8",blurb:"Horses were part of the economy but never understood it. If AI creates financial products too complex for any human to grasp, people could live inside a financial system they can neither understand nor regulate, just as horses lived inside a human one.",takeaway:"If no human understands the system, no human can vote on it.",q:"The Ascent of Money Niall Ferguson"},{id:"think-feel",rank:9,cat:"truth",ts:"41:29",name:"Intelligence without consciousness",maker:"Chapter 9",blurb:"Intelligence is the ability to solve problems; consciousness is the ability to feel pain, joy and love. AI may race ahead on the first with none of the second. Harari argues the bottleneck is not more intelligence but human wisdom: knowing which problems are worth solving.",takeaway:"We are getting much better at power and no better at wisdom.",q:"21 Lessons for the 21st Century Harari"},{id:"safety-gap",rank:10,cat:"truth",ts:"46:41",name:"A hundred to one: capability over safety",maker:"Chapter 10",blurb:"The episode closes on the claim that tech companies spend roughly a hundred times more on making AI powerful than on making it safe. Harari's call is to rebalance that ratio and to build institutions that can notice and correct mistakes before they become irreversible.",takeaway:"The 100:1 figure is the show's claim; it has not been independently verified here.",q:"The Alignment Problem Brian Christian"},{id:"book-sapiens",rank:11,cat:"read",ts:null,name:"Sapiens: A Brief History of Humankind",maker:"Yuval Noah Harari \xB7 2011",blurb:"Where the 'shared fictions' idea comes from. How a forgettable ape conquered the planet by believing the same stories as strangers, and why money, empires and religion are the three great unifiers.",takeaway:"Start here if chapter 1 hooked you.",q:"Sapiens Yuval Noah Harari paperback"},{id:"book-nexus",rank:12,cat:"read",ts:null,name:"Nexus: A Brief History of Information Networks",maker:"Yuval Noah Harari \xB7 2024",blurb:"The book most of this episode draws on. Information networks from the Stone Age to AI, why more information does not mean more truth, and how democracies and dictatorships handle errors differently.",takeaway:"The full argument behind chapters 2, 3 and 7.",q:"Nexus Yuval Noah Harari"},{id:"book-homo-deus",rank:13,cat:"read",ts:null,name:"Homo Deus: A Brief History of Tomorrow",maker:"Yuval Noah Harari \xB7 2015",blurb:"An early version of the 'algorithms will know you better than you know yourself' warning, and the rise of 'dataism' as a new belief system.",takeaway:"Read alongside chapter 4.",q:"Homo Deus Yuval Noah Harari"},{id:"book-21",rank:14,cat:"read",ts:null,name:"21 Lessons for the 21st Century",maker:"Yuval Noah Harari \xB7 2018",blurb:"Short essays on work, liberty, truth and meaning in an age of disruption. The closest Harari gets to practical advice for individuals.",takeaway:"Pairs with chapter 9 on wisdom.",q:"21 Lessons for the 21st Century"}],VIEWS=["scroller","tiles","table"];function App(){const[n,k]=useState(null),[l,v]=useState("scroller"),[o,p]=useState("all"),[r,b]=useState(""),[t,m]=useState(null),[c,f]=useState("details"),[d,y]=useState(0),[g,w]=useState(!0),i=useRef(null);useEffect(()=>{n!==null&&document.documentElement.setAttribute("data-theme",n?"dark":"light")},[n]);const s=useMemo(()=>{const e=r.trim().toLowerCase();return SEED.filter(a=>(o==="all"||a.cat===o)&&(!e||(a.name+a.blurb+a.maker).toLowerCase().includes(e)))},[o,r]),N=useMemo(()=>{const e={all:SEED.length};return SEED.forEach(a=>e[a.cat]=(e[a.cat]||0)+1),e},[]);useEffect(()=>{y(0),i.current&&(i.current.scrollTop=0)},[o,r]);const A=()=>{const e=i.current;e&&y(Math.round(e.scrollTop/e.clientHeight))},h=e=>{const a=i.current;if(!a||!s.length)return;const H=(e+s.length)%s.length;a.scrollTo({top:H*a.clientHeight,behavior:"smooth"})},u=(e,a="details")=>{m(e),f(a)},C=()=>{const e=n??window.matchMedia("(prefers-color-scheme: dark)").matches;k(!e)};return React.createElement("div",{className:"app"},React.createElement("header",{className:"hdr"},React.createElement("button",{className:"iconbtn","aria-label":"Toggle categories",onClick:()=>w(!g)},"\u2630"),React.createElement("div",{className:"brand"},React.createElement("span",{className:"mark"},"SC"),React.createElement("div",{className:"titles"},React.createElement("strong",null,"Harari on AI & Power"),React.createElement("span",null,"Mind Nutrients \xB7 48 min \xB7 10 chapters"))),React.createElement("input",{id:"search",className:"search",placeholder:"Search ideas",value:r,onChange:e=>b(e.target.value),"aria-label":"Search"}),React.createElement("div",{className:"seg",role:"tablist"},VIEWS.map(e=>React.createElement("button",{key:e,className:l===e?"on":"",onClick:()=>v(e)},e))),React.createElement("button",{className:"iconbtn","aria-label":"Toggle theme",onClick:C},"\u25D0")),React.createElement("div",{className:"body"},g&&React.createElement("nav",{className:"nav"},React.createElement("div",{className:"navlabel"},"Categories"),[["all","Everything"],...Object.entries(CATS).map(([e,a])=>[e,a.label])].map(([e,a])=>React.createElement("button",{key:e,className:"navitem"+(o===e?" on":""),onClick:()=>p(e)},React.createElement("i",{style:{background:e==="all"?"var(--muted)":CATS[e].hue}}),React.createElement("span",null,a),React.createElement("em",null,N[e]||0))),React.createElement("a",{className:"listen",href:EPISODE_URL,target:"_blank",rel:"noreferrer"},"Listen on Spotify \u2197"),React.createElement("p",{className:"srcnote"},"Built from the episode's show notes and Harari's published books. No transcript was available.")),React.createElement("main",{className:"main"},s.length===0&&React.createElement("div",{className:"empty"},"No ideas match \u201C",r,"\u201D."),l==="scroller"&&s.length>0&&React.createElement("div",{className:"feedwrap"},React.createElement("div",{className:"feed",ref:i,onScroll:A},s.map(e=>React.createElement("section",{key:e.id,className:"card",style:{"--hue":CATS[e.cat].hue}},React.createElement("div",{className:"ghost"},String(e.rank).padStart(2,"0")),React.createElement("div",{className:"cardin"},React.createElement("div",{className:"chips"},React.createElement("span",{className:"rank"},"#",e.rank),React.createElement("span",{className:"chip cat"},CATS[e.cat].label),e.ts&&React.createElement("span",{className:"chip mono"},"\u23F1 ",e.ts)),React.createElement("h2",null,e.name),React.createElement("div",{className:"maker"},e.maker),React.createElement("p",{className:"blurb"},e.blurb),React.createElement("p",{className:"take"},e.takeaway),React.createElement("div",{className:"ctas"},e.ts?React.createElement("a",{className:"btn primary",href:EPISODE_URL,target:"_blank",rel:"noreferrer"},"Listen from ",e.ts):React.createElement("a",{className:"btn primary",href:amz(e.q),target:"_blank",rel:"noreferrer sponsored"},"Buy on Amazon"),React.createElement("button",{className:"btn",onClick:()=>u(e,e.ts?"details":"buy")},"More"),e.ts&&React.createElement("a",{className:"btn ghostbtn",href:amz(e.q),target:"_blank",rel:"noreferrer sponsored"},"Related book")))))),React.createElement("div",{className:"rail"},s.map((e,a)=>React.createElement("button",{key:e.id,className:"dot"+(a===d?" on":""),"aria-label":"Go to "+e.name,style:{"--hue":CATS[e.cat].hue},onClick:()=>h(a)}))),React.createElement("div",{className:"pager"},React.createElement("button",{onClick:()=>h(d-1)},"\u2191 Prev"),React.createElement("span",{className:"mono"},Math.min(d+1,s.length)," / ",s.length),React.createElement("button",{onClick:()=>h(Math.floor(Math.random()*s.length))},"Random"),React.createElement("button",{onClick:()=>h(d+1)},"Next \u2193"))),l==="tiles"&&React.createElement("div",{className:"tiles"},s.map(e=>React.createElement("button",{key:e.id,className:"tile"+(t?.id===e.id?" on":""),style:{"--hue":CATS[e.cat].hue},onClick:()=>u(e)},React.createElement("div",{className:"chips"},React.createElement("span",{className:"rank"},"#",e.rank),e.ts&&React.createElement("span",{className:"chip mono"},e.ts)),React.createElement("h3",null,e.name),React.createElement("p",null,e.takeaway),React.createElement("span",{className:"chip cat"},CATS[e.cat].label)))),l==="table"&&React.createElement("div",{className:"tablewrap"},React.createElement("table",null,React.createElement("thead",null,React.createElement("tr",null,React.createElement("th",null,"#"),React.createElement("th",null,"Time"),React.createElement("th",null,"Idea"),React.createElement("th",null,"Category"))),React.createElement("tbody",null,s.map(e=>React.createElement("tr",{key:e.id,className:t?.id===e.id?"on":"",onClick:()=>u(e)},React.createElement("td",{className:"mono"},e.rank),React.createElement("td",{className:"mono"},e.ts||"\u2014"),React.createElement("td",null,e.name),React.createElement("td",null,CATS[e.cat].label))))))),t&&React.createElement("aside",{className:"panel",style:{"--hue":CATS[t.cat].hue}},React.createElement("div",{className:"panelhd"},React.createElement("span",{className:"rank"},"#",t.rank),React.createElement("button",{className:"iconbtn","aria-label":"Close",onClick:()=>m(null)},"\u2715")),React.createElement("h3",null,t.name),React.createElement("div",{className:"seg tabs"},[["details","Details"],["buy","Buy"],["why","Why it matters"]].map(([e,a])=>React.createElement("button",{key:e,className:c===e?"on":"",onClick:()=>f(e)},a))),c==="details"&&React.createElement("div",{className:"pbody"},React.createElement("p",null,t.blurb),React.createElement("dl",null,React.createElement("dt",null,"Category"),React.createElement("dd",null,CATS[t.cat].label),React.createElement("dt",null,"Timestamp"),React.createElement("dd",{className:"mono"},t.ts||"Further reading"),React.createElement("dt",null,"Source"),React.createElement("dd",null,t.maker))),c==="buy"&&React.createElement("div",{className:"pbody"},React.createElement("p",null,"Search Amazon for: ",React.createElement("strong",null,t.q)),React.createElement("a",{className:"btn primary",href:amz(t.q),target:"_blank",rel:"noreferrer sponsored"},"Buy on Amazon"),React.createElement("p",{className:"disc"},"As an Amazon Associate, we earn from qualifying purchases.")),c==="why"&&React.createElement("div",{className:"pbody"},React.createElement("p",{className:"take"},t.takeaway)))),React.createElement("footer",{className:"ftr"},React.createElement("span",null,"As an Amazon Associate, we earn from qualifying purchases."),React.createElement("span",{className:"mono"},s.length," of ",SEED.length," ideas"),React.createElement("button",{onClick:()=>{p("all"),b(""),m(null)}},"Reset")))}ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+</script>
+

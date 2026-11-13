@@ -1,0 +1,15 @@
+{
+  "slug": "top-100-20th-century-novels",
+  "name": "Top 100 Novels of the 20th Century",
+  "tagline": "The century's essential novels, from Ulysses to 2666.",
+  "description": "A ranked reading list of the 100 novels that shaped 20th-century fiction: modernism, the American century, post-colonial voices, dystopias and the Latin American boom. One card per book, with a link to find each one.",
+  "theme": "dark",
+  "updatedAt": "2026-10-07",
+  "source": "MediaAI top100/top-100-novels-of-the-20th-century.json",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Browse classic novels on Amazon",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=20th+century+classic+novels&i=stripbooks",
+    "offer": "Start your reading list"
+  }
+}

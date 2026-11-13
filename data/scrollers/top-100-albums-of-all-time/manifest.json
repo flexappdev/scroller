@@ -1,0 +1,15 @@
+{
+  "slug": "top-100-albums-of-all-time",
+  "name": "Top 100 Albums of All Time",
+  "tagline": "One hundred records worth owning on vinyl.",
+  "description": "A ranked guide to the 100 greatest albums across rock, soul, jazz, hip-hop, folk and electronic music, from The Dark Side of the Moon to Endtroducing. One card per album, with a link to find it on vinyl or CD.",
+  "theme": "dark",
+  "updatedAt": "2026-10-07",
+  "source": "MediaAI top100/top-100-albums-of-all-time.json",
+  "monetization": {
+    "type": "affiliate",
+    "ctaLabel": "Browse classic albums on vinyl",
+    "ctaUrl": "https://www.amazon.co.uk/s?k=classic+albums+vinyl&i=popular",
+    "offer": "Build the record collection"
+  }
+}
