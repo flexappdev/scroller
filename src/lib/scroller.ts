@@ -13,6 +13,8 @@ export type ScrollerItem = {
   tags?: string[];
   image?: string;
   video?: string;
+  /** Reference URL the item was sourced from (e.g. Wikipedia). */
+  source?: string;
   cta?: {
     type: ScrollerCtaType;
     label: string;

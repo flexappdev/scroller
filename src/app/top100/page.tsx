@@ -8,7 +8,16 @@ export const metadata: Metadata = {
   alternates: { canonical: "/top100" },
 };
 
-const collections = [
+type Collection = {
+  href: string;
+  image?: string;
+  alt?: string;
+  label: string;
+  title: string;
+  description: string;
+};
+
+const collections: Collection[] = [
   {
     href: "/top100/cinema",
     image: "/top100/cinema/images/001.webp",
@@ -25,6 +34,24 @@ const collections = [
     title: "Top 100 Funniest Things Ever",
     description: "A subjective ranking of the tiny disasters that make being alive worthwhile.",
   },
+  {
+    href: "/scroller/top-100-20th-century-novels",
+    label: "Reading list · 100 books",
+    title: "Top 100 Novels of the 20th Century",
+    description: "From Ulysses to 2666: the century's essential novels, one card per book.",
+  },
+  {
+    href: "/scroller/top-100-albums-of-all-time",
+    label: "Record collection · 100 albums",
+    title: "Top 100 Albums of All Time",
+    description: "Rock, soul, jazz, hip-hop and electronic: one hundred records worth owning.",
+  },
+  {
+    href: "/scroller/top-100-iconic-films",
+    label: "Watchlist · 100 films",
+    title: "Top 100 Iconic Films of All Time",
+    description: "Silent cinema to Parasite: the films every film lover should see once.",
+  },
 ];
 
 export default function Top100Page() {
@@ -38,9 +65,15 @@ export default function Top100Page() {
       <section className="grid gap-5 md:grid-cols-2" aria-label="Top 100 collections">
         {collections.map((collection) => (
           <Link key={collection.href} href={collection.href} className="group overflow-hidden rounded-2xl border border-zinc-700 bg-zinc-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-amber-400">
-            <div className="relative aspect-video overflow-hidden">
-              <Image src={collection.image} alt={collection.alt} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
-            </div>
+            {collection.image ? (
+              <div className="relative aspect-video overflow-hidden">
+                <Image src={collection.image} alt={collection.alt ?? collection.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+              </div>
+            ) : (
+              <div className="flex aspect-video items-end bg-gradient-to-br from-[#006699]/40 via-zinc-900 to-zinc-950 p-6">
+                <span className="text-6xl font-bold tracking-tight text-white/90 transition-transform duration-300 group-hover:scale-105">100</span>
+              </div>
+            )}
             <div className="p-5">
               <p className="text-sm uppercase tracking-wider text-amber-400">{collection.label}</p>
               <h2 className="mt-2 text-2xl font-semibold">{collection.title}</h2>

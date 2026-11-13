@@ -1,0 +1,4 @@
+{
+  "note": "Evidence-only revenue that has no reporting API (Amazon Associates). One entry per site, day and source, copied from the provider dashboard. Missing days stay unknown, never zero.",
+  "entries": []
+}

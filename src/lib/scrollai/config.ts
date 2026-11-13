@@ -31,7 +31,7 @@ export function getScrollAIStatus() {
       ga4: {
         configured: isAnalyticsEnabled(),
         measurement_id: isAnalyticsEnabled() ? GA_ID : null,
-        reporting_telemetry: "not-connected",
+        reporting_telemetry: process.env.GA4_PROPERTY_ID?.trim() ? "api:/api/revenue" : "not-connected",
         network_strategy: "one MS Scroll web stream; compare by hostname/channel",
       },
     },
@@ -41,15 +41,16 @@ export function getScrollAIStatus() {
         feed_slot_configured: Boolean(adsenseFeedSlot),
         account_status: adsenseAccountStatus,
         anonymous_feed_cadence: "after every 20 content items when configured",
-        revenue_telemetry: "not-connected",
+        revenue_telemetry: process.env.GOOGLE_OAUTH_REFRESH_TOKEN?.trim() ? "api:/api/revenue" : "not-connected",
       },
       amazon: {
         configured: Boolean(amazonTag),
         tag: amazonTag,
-        revenue_telemetry: "not-connected",
+        revenue_telemetry: "ledger:data/revenue/ledger.json via /api/revenue",
       },
     },
     abc_reporting: {
+      endpoint: "/api/revenue",
       revenue: "evidence-only",
       unknown_policy: "missing telemetry is null/unknown, never zero",
     },

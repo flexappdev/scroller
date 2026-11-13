@@ -8,6 +8,19 @@ function isExternalUrl(url: string) {
   return /^https?:\/\//.test(url);
 }
 
+function affiliateProvider(url: string): string | undefined {
+  try {
+    return /(^|\.)amazon\./i.test(new URL(url).hostname) ? "amazon" : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+function linkRel(url: string, sponsored: boolean) {
+  if (!isExternalUrl(url)) return undefined;
+  return sponsored ? "sponsored nofollow noopener noreferrer" : "noreferrer";
+}
+
 export default function ScrollerFeed({
   manifest,
   items,
@@ -26,6 +39,8 @@ export default function ScrollerFeed({
   const adsEnabled = Boolean(showAds && adsenseClient && adsenseSlot);
   const monetization = manifest.monetization;
   const dark = manifest.theme !== "light";
+  const hasAffiliateLinks =
+    monetization?.type === "affiliate" || items.some((item) => item.cta?.type === "affiliate");
 
   return (
     <main
@@ -38,7 +53,10 @@ export default function ScrollerFeed({
         <a href="/scroller" className="font-semibold tracking-tight">
           {manifest.name}
         </a>
-        <span className="text-xs text-white/60">{totalCount} cards</span>
+        <span className="text-xs text-white/60">
+          {hasAffiliateLinks ? <span className="mr-3 hidden sm:inline">#CommissionsEarned</span> : null}
+          {totalCount} cards
+        </span>
       </header>
 
       {items.map((item, index) => (
@@ -87,7 +105,8 @@ export default function ScrollerFeed({
                   <a
                     href={item.cta.url}
                     target={isExternalUrl(item.cta.url) ? "_blank" : undefined}
-                    rel={isExternalUrl(item.cta.url) ? "noreferrer" : undefined}
+                    rel={linkRel(item.cta.url, item.cta.type === "affiliate")}
+                    data-affiliate={item.cta.type === "affiliate" ? affiliateProvider(item.cta.url) : undefined}
                     className="mt-8 inline-flex rounded-full bg-[#006699] px-5 py-3 text-sm font-semibold text-white transition hover:brightness-110"
                   >
                     {item.cta.label}
@@ -124,11 +143,17 @@ export default function ScrollerFeed({
             <a
               href={monetization.ctaUrl}
               target={isExternalUrl(monetization.ctaUrl) ? "_blank" : undefined}
-              rel={isExternalUrl(monetization.ctaUrl) ? "noreferrer" : undefined}
+              rel={linkRel(monetization.ctaUrl, monetization.type === "affiliate")}
+              data-affiliate={monetization.type === "affiliate" ? affiliateProvider(monetization.ctaUrl) : undefined}
               className="mt-8 inline-flex rounded-full bg-[#006699] px-6 py-3 font-semibold text-white transition hover:brightness-110"
             >
               {monetization.ctaLabel}
             </a>
+            {hasAffiliateLinks ? (
+              <p className="mx-auto mt-6 max-w-xl text-xs leading-5 text-white/45">
+                As an Amazon Associate, Scroller earns from qualifying purchases. Links on this page may be affiliate links.
+              </p>
+            ) : null}
           </article>
         </section>
       ) : null}
